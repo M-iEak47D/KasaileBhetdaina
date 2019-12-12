@@ -1,0 +1,1405 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Righteous|Varela+Round&display=swap');
+
+/*
+font-family: 'Varela Round', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Righteous', cursive;
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.mybtn{
+    background: linear-gradient(235deg, #36ea5f, #00b693);
+    text-shadow: 1px 2px 3px #928e8e;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.mybtn:hover{
+  background: linear-gradient(45deg, #36ea5f, #00b693);
+  color: white;
+  text-decoration: none;
+}
+/* Style the navbar */
+#navbar {
+ 
+  background: #f4f4f4;
+  padding: 15px 90px;
+  z-index: 9;
+
+}
+
+.addnavbar {
+  background: #fff !important;
+  -webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: navbar;
+  animation-duration: 0.5s;
+  box-shadow: 0px 2px 5px #e6fbe6;
+}
+
+@-webkit-keyframes navbar {
+  from {
+    background-color: #f3f3f3;
+  }
+
+  to {
+    background-color: #fff;
+  }
+
+}
+
+/* Standard syntax */
+@keyframes navbar {
+  from {
+    background-color: #f3f3f3;
+  }
+
+  to {
+    background-color: #fff;
+  }
+
+}
+
+/* Navbar links */
+#navbar .nav a {
+  float: left;
+  display: block;
+  color: #28a745;
+  text-align: center;
+  padding: 10px 0px;
+  margin-right: 30px;
+  text-shadow: 1px 2px 3px #d6d5d5;
+    text-decoration: none;
+    font-size: 20px;
+  font-weight: 400;
+  font-family: 'Righteous', cursive;
+  position: relative;
+}
+
+#navbar .nav a>.active {
+  transition: all 0.2s linear 0s;
+  content: "";
+  border-top: 4px solid #5bbc2e;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: -15px;
+  position: absolute;
+  width: 100%;
+}
+
+#navbar .nav a:hover::before {
+  transition: all 0.2s linear 0s;
+  content: "";
+  border-top: 4px solid #28a745;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: -15px;
+  position: absolute;
+  width: 100%;
+}
+
+#navbar .nav a:hover {
+      color: #ffffff;
+    text-shadow: 1px 2px 3px #c2b8b8;
+}
+
+
+.logo-container {
+  vertical-align: center;
+}
+
+.logo-container img {
+  width: 160px;
+}
+
+#navbar span {
+  padding-top: 10px;
+  font-size: 30px;
+  color: #4a8a16;
+}
+
+#navbar .button-container {
+  display: block;
+}
+
+#navbar .button-container .login {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+#navbar .button-container .login a {
+  background: linear-gradient(17deg, #dddbdb, #ffffff);
+    color: #28a745;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #bcb2b2;
+}
+
+#navbar .button-container .join-now {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+#navbar .button-container .join-now a {
+  background: linear-gradient(235deg, #36ea5f, #00b693);
+ text-shadow: 1px 2px 3px #928e8e;
+  color: white;
+  border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#navbar .button-container a:hover {
+  border: 2px solid #fff;
+}
+
+#navbar .dropdown{
+  display: initial;
+}
+#navbar .dropdown-menu{
+  border: none;
+}
+#navbar .dropdown-menu a:hover::before{
+display: none;
+}
+#navbar .dropdown-menu .dropdown-item:active{
+  background: #28a745;
+}
+/*--------------------mobile navbar----------------------------*/
+#myNav {
+  height: 100%;
+}
+
+/* The Overlay (background) */
+.overlay {
+
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+
+  background-color: #5bbc2e; /* Black fallback color */
+  background-color: #3cc95cf2; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 5px 50px;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+        position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 60px;
+    padding: 0px 35px;
+}
+
+
+@media (max-width:756px) {
+  #navbar {
+    padding: 5px 10px;
+  }
+  #navbar .button-container .join-now {
+    margin:5px auto;
+  }
+ 
+  #navbar .button-container .join-now a{
+        padding: 10px 5px;
+    font-size: 12px;
+  }
+  #navbar .button-container .login a{
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .logo-container img {
+   width: 110px;
+    padding-top: 5px;
+  }
+  #navbar span{
+    padding-top: 0px;
+  }
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+#myNav .dropdown-menu{
+  right: 0;
+  left:0;
+}
+#myNav .dropdown-menu a{
+  text-align: center;
+    color: green;
+}
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height:450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  transform: translateY(0);
+  width: 100%;
+  transition: transform 2s linear;
+}
+
+/*---------------------------------------- banner-------------------------------*/
+.banner {
+  background: url('./images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 160px 0px 160px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.banner .title {
+     font-size: 60px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
+    text-shadow: 1px 3px 4px #8e9b92;
+    color: #28a745;
+}
+
+.banner .subtitle {
+  margin: 10px auto;
+  font-size: 22px;
+  color: #8a8a8a;
+  max-width: 700px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*-------------------------------join now-----------------------*/
+.banner .join-now-form {
+  max-width: 400px;
+  margin: 30px auto;
+  border: 1px solid #12c78200;
+  background: white;
+  font-size: 20px;
+  font-weight: normal;
+      box-shadow: 1px 2px 5px #2de2664d;
+  border-radius: 5px;
+ 
+}
+/* .banner .join-now-form .row{
+
+} */
+
+.banner .join-now-form .country-code {
+  padding: 9px 0px;
+  border-right: 1px solid #28a745;
+}
+
+.banner .join-now-form .phone-number {
+  padding: 7px 0px;
+}
+
+.banner .join-now-form .phone-number input {
+  border: none;
+}
+
+.banner .join-now-form .phone-number input:focus {
+  outline: none;
+}
+
+.banner .join-now-form .submit {
+  padding: 5px 0px;
+  margin-right: -15px;
+  background: #28a745;
+  background: linear-gradient(235deg, #36ea5f, #00b693);
+  text-shadow: 1px 2px 3px #3d3a3a;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.banner .join-now-form .submit:hover{
+   background: linear-gradient(45deg, #36ea5f, #00b693);
+   text-shadow: 1px 0px 0px #3d3a3a;
+}
+.banner .join-now-form .submit a{
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+.banner .app-download{
+  display: flex;
+  justify-content: center;
+}
+.banner .app-download .play-store{
+    background: #14ac5b;
+    padding: 10px 20px;
+    border-radius: 5px;
+  
+    box-shadow: 1px 2px 2px 1px #979a97c4;
+    margin-right: 10px;
+}
+.banner .app-download .app-store{
+   background: #9ea09d;
+    padding: 10px 20px;
+    border-radius: 5px;
+  
+    box-shadow: 1px 2px 2px 1px #979a97c4;
+    margin-right: 10px;
+}
+.banner .app-download .play-store:hover{
+  background: grey;
+}
+.banner .app-download .app-store:hover{
+  background: #496f5a;
+}
+
+/*------------------------join-us modal -----------------*/
+.join .modal-body {
+  padding: 20px 30px;
+}
+
+.join .modal-body .title {
+      font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 3px 4px #035a21;
+    margin-bottom: 40px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 25px;
+   
+}
+.join .modal-body .form-control{
+  border:none;
+      background: #fbfbfb;
+}
+
+.join .modal-body:hover .title {
+     color: #28a745;
+    text-shadow: 1px 3px 4px #d1d9d4;
+}
+
+.join .modal-body form input {
+  height: 50px;
+  margin:35px auto;
+    padding: 0px 40px;
+}
+
+.join .modal-body .button-container {
+  text-align: center;
+}
+
+.join .modal-body .button-container button {
+      width: 80%;
+    border-radius: 50px;
+    font-size: 18px;
+    height: 50px;
+    color: #28a745;
+    margin-bottom: 20px;
+    background: #fdfffd;
+    box-shadow: 1px 2px 4px #bfc3c1;
+     font-family: 'Righteous', cursive;
+    text-align: center;
+    border:0px;
+}
+.join .modal-body .button-container button:hover{
+background: #28a745;
+    color: white;
+  }
+.join .modal-content button{
+  text-align: right;
+    padding-right: 10px;
+}
+#invite_code {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #28a745;
+}
+
+.join .modal-body .button-container a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #8bfea6;
+  box-shadow: 0 0 0 0.1rem rgb(66, 183, 92);
+}
+
+@media (max-width: 756px)
+{
+  .banner{
+    padding: 140px 10px 140px 10px;
+  }
+   .banner .title {
+    font-size: 30px;
+    text-shadow: 1px 3px 4px #b3b4b3;
+  }
+  .banner .subtitle{
+    font-size: 16px;
+  }
+  .overlay-content{
+    top: 15%;
+  }
+}
+.banner .banner-wave{
+  display: block;
+}
+.banner .wave-img {
+    width: 100%;
+    
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.banner .app-download{
+  padding: 0px 30px;
+}
+.banner .app-download .play-store, .banner .app-download .app-store{
+  padding: 5px 10px;
+}
+
+/*----------------end of banner ----------------*/
+/*---------------------features-----------------*/
+
+.feature-container{
+ padding: 20px;
+   
+}
+.feature-container .title{
+  font-size: 40px;
+    color: #28a745;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 10px;
+    text-shadow: 1px 2px 3px #b0a7a7;
+}
+.feature-container .description{
+  font-size: 16px;
+  color: grey;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.feature-container .button-container{
+  text-align: right;
+}
+.feature-container .button-container .mybtn{
+  padding: 12px 20px;
+  color: white;
+  text-shadow: 1px 2px 3px #928e8e;
+  background: linear-gradient(45deg, #36ea5f, #00b693);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.feature-container .button-container .mybtn:hover{
+   background: linear-gradient(235deg, #36ea5f, #00b693);
+}
+.feature-container .button-container a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.feature-container .button-container a:hover{
+  color: white;
+}
+
+.question-feature{
+padding: 90px 0px;
+
+}
+.analysis-feature{
+padding: 90px 0px;
+background: #f1fef18a;
+}
+.syllabus-feature{
+padding: 90px 0px;
+}
+
+@media (max-width: 756px)
+{
+  .feature-container .title{
+    font-size: 26px;
+  }
+  .syllabus-feature, .question-feature, .analysis-feature{
+    padding: 60px 0px;
+  }
+
+}
+/*-----------------end of features--------------*/
+/*-------------------testimonial-----------------*/
+.testimonial-container{
+  padding: 90px 30px;
+}
+.testimonial-container .title{
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  margin-bottom: 60px;
+   color: #28a745;
+   text-shadow: 1px 2px 3px #cec0c0;
+}
+.testimonial{
+    margin: 0 15px;
+}
+.testimonial .content{
+    padding: 15px 10px;
+    border-radius:6px;
+    margin-bottom: 15px;
+    position: relative;
+    background:#e67e22;
+    min-height: 100px;
+}
+.testimonial .content:after{
+    content: "";
+    border-top: 10px solid #e67e22;
+    border-left: 10px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 16%;
+}
+#testimonial-slider div.owl-item:nth-child(2n) .content{
+    background: #1abc9c;
+}
+#testimonial-slider div.owl-item:nth-child(2n) .content:after{
+    content: "";
+    border-top: 10px solid #1abc9c;
+    border-left: 10px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 16%;
+}
+#testimonial-slider div.owl-item:nth-child(3n+1) .content{
+    background: #5bbc2e;
+}
+#testimonial-slider div.owl-item:nth-child(3n+1) .content:after{
+    content: "";
+    border-top: 10px solid #9b59b6;
+    border-left: 10px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 16%;
+}
+.testimonial .description{
+    margin-bottom: 10px;
+    color:#fff;
+}
+.testimonial-pic{
+    float:left;
+    width: 80px;
+    height: 80px;
+}
+.testimonial-pic > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    margin-left: 20px;
+}
+.testimonial .testimonial-review{
+    margin:3px 0 0 30px;
+    float: left;
+}
+.testimonial .testimonial-title{
+    font-size:16px;
+    text-transform:capitalize;
+    font-weight: bold;
+    margin:0;
+}
+.testimonial > .testimonial-review span{
+    color: darkgray;
+    display: block;
+    font-size: 13px;
+    margin-bottom:5px;
+}
+.testimonial .social-links{
+    padding:0;
+    margin:0;
+}
+.testimonial .social-links > li{
+    list-style:none;
+    display:inline-block;
+    margin-right:10px;
+}
+.testimonial .social-links > li > a.fa-twitter{
+    color:#00aced;
+}
+.testimonial .social-links > li > a.fa-facebook{
+    color: #3b599a;
+}
+.testimonial .social-links > li > a.fa-pinterest{
+    color:#E14782;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #1abc9c;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #333;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 10px;
+    height:10px;
+    margin: 5px 6px;
+}
+.testimonial-container .owl-nav{
+     font-size: 60px;
+    top: 25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -30px;
+}
+.testimonial-container .owl-nav button{
+  background: green;
+}
+.testimonial-container .owl-nav button span{
+  color: #28a745;
+  padding: 0px 10px;
+}
+@media (max-width: 756px)
+{
+ .testimonial-container .title{
+  font-size: 26px;
+ }
+}
+/*-------------------end of testimonial-------------*/
+/*-----------------app download container---------------*/
+.app-container{
+  padding: 120px 60px;
+  background: #3cc95c;
+}
+.app-container .title{
+  font-size: 40px;
+  color: #fff;
+    text-shadow: 0px 1px 5px #4a4848;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+ 
+  margin-bottom: 20px;
+}
+.app-container .subtitle{
+  color: white;
+  font-size: 24px;
+
+  margin-bottom: 50px;
+}
+.app-container .app-download .play-store, .app-container .app-download .app-store{
+background: black;
+margin: 0px 10px;
+border-radius: 5px;
+padding: 5px 10px;
+}
+@media (max-width: 756px)
+{
+  .app-container{
+    padding: 90px 30px;
+  }
+  .app-container .title{
+    font-size: 30px;
+  }
+  .app-container .subtitle{
+    font-size: 18px;
+  }
+}
+/*----------------hit question-----------------*/
+.hit-question{
+  padding: 60px 90px;
+  background: #3cc95c;
+
+}
+.hit-question .title{
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 1px 5px #7c7474;
+  font-weight: bold;
+}
+.hit-question .subtitle{
+  color: white;
+  font-size: 20px;
+}
+.hit-question .button-container{
+  text-align: center;
+}
+.hit-question .button-container .ask-button{
+  padding: 10px 20px;
+  background: #333333;
+  color: white;
+  width: 100%;
+      text-shadow: 1px 2px 3px #032f0d;
+      font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  margin-top: 45px;
+}
+.hit-question .button-container .ask-button:hover{
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 756px)
+{
+  .hit-question{
+    padding: 60px 30px;
+  }
+  .hit-question .title{
+    font-size: 26px;
+  }
+  .hit-question .subtitle{
+    font-size: 18px;
+  }
+}
+/*------------------footer--------------*/
+.footer{
+  padding:60px 90px 0px 90px;
+  background: #222222;
+  color: white;
+}
+.footer .title{
+      color: #28a745;
+    font-size: 24px;
+    font-family: 'Righteous', cursive;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+.footer .description{
+  text-align: justify;
+  padding-right: 40px;
+}
+.footer .footer-list .phone , .footer .footer-list .email{
+
+  cursor: pointer;
+}
+.footer .footer-list .phone i, .footer .footer-list .email i{
+    margin-right: 10px;
+}
+.footer .footer-list ul{
+  list-style: none;
+}
+.footer .footer-list ul a{
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-list ul a:hover{
+  color: #28a745;
+}
+.footer .newsletter-container{
+      background: #cdd4cf14;
+    padding: 30px 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.footer .newsletter-container .subscribe-title{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.footer .newsletter-container .button-container{
+margin-top: 30px;
+text-align: right;
+}
+.footer .newsletter-container form .button-container .btn {
+  
+  border-radius: 5px !important;
+  
+}
+.footer .buttom-footer{
+  text-align: center;
+ border-top: 1px solid #fffdfd4d;
+  padding: 15px 0px 5px 0px;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 756px)
+{
+  .footer{
+    padding: 60px 10px 0px 10px;
+  }
+  .footer .description{
+    padding-right: 0px;
+  }
+  .footer .newsletter-container .subscribe-title{
+    font-size: 20px;
+  }
+  .footer .buttom-footer{
+    font-size: 18px;
+  }
+  .footer .title{
+    font-size: 20px;
+  }
+  .footer .footer-list ul{
+    padding: 0;
+  }
+}
+
+
+
+
+
+/*----------------------------------quiz style------------------*/
+/*----------quiz.css---------------*/
+.quiz{
+  position: relative;
+}
+.quiz nav{
+  height: 80px;
+}
+.quiz .quit-section{
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  z-index: 1;
+}
+.quiz .quit-section .quit a{
+  border:2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  z-index: 999999;
+}
+.quiz .quit-section .quit:hover a{
+background-color: white;
+color: green;
+text-decoration: none;
+}
+.test-section{
+  margin-top: 100px;
+}
+.timer-container{
+  margin:0px auto;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 0px;
+
+}
+.timer-wrapper{
+  margin:10px auto;
+  width: 140px;
+  height: 140px;
+  background:white;
+  border-radius: 50%;
+  box-shadow: 0px 5px #eaf3ec;
+}
+.timer-wrapper .time{
+  line-height: 5.5;
+  font-size: 25px;
+  color: #1ba01b;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
+
+.question-container{
+  margin: 20px auto;
+}
+.question-title{
+  font-size: 24px;
+  color:green;
+  font-weight: bold;    
+}
+/* .answer-container{
+
+} */
+.answer-wrapper{
+      border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px #cac5c5;
+}
+.answer-wrapper:hover{
+  background-color: #ccffd8;
+}
+.option-number{
+  border: 0.5px solid #47b15f;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding:0px 7px;
+  margin:0 auto;
+  color: slategray;
+  border-radius: 5px;
+
+
+}
+.option{
+  flex: 1;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #069426;
+  font-weight: bold;
+}
+.option-tick{
+  display: none;
+  color: green;
+}
+.answer-wrapper:hover .option-number{
+  padding: 0px 20px;
+  transition: padding 0.2s ease-in;
+  background-color: #1cb13e;
+  color: white;
+}
+.answer-wrapper:hover .option-tick{
+  display: block;
+}
+.progress-container{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  
+}
+.progress-container .progress{
+  height: 30px;
+}
+.progress-container .progress .progress-bar{
+  background-color: #47b15f;
+}
+.quiz .button-section{
+  margin: 30px auto;
+}
+.quiz .button-section .button-row{
+  display: flex;
+}
+.quiz .button-section .button-row .prev-btn{
+  background:linear-gradient(235deg, #36ea5f, #00b693);
+   padding-top: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{
+  color: white;
+}
+.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
+  color: #fff;
+  font-size: 18px;
+}
+.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {
+  background:linear-gradient(45deg, #36ea5f, #00b693);
+  
+  transition:  background-color 0.2s linear;
+  color: white;
+  border: none;
+
+
+}
+.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  transition:  visibility 0s, opacity 0.4s linear;
+}
+.quiz .button-section .button-row .next-btn{
+    background:linear-gradient(235deg, #36ea5f, #00b693);
+   padding: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  justify-content: right;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+@media (max-width: 768px)
+{
+  .answer-wrapper{
+  
+  padding: 5px 5px;
+  
+  }
+  .quiz nav {
+    height: 70px;
+  }
+  .timer-wrapper {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+  }
+  .timer-wrapper .time {
+    line-height: 6;
+    font-size: 16px;
+  }
+  .question-title {
+    font-size: 16px;
+  }
+  .quiz .quit-section {
+    top:25px;
+  }
+  .test-section {
+    margin-top: 80px;
+  }
+  .option{
+    font-size: 14px;
+  }
+  .option-number{
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  .question-container {
+    margin: 20px auto 10px auto;
+  }
+  .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
+  color: #47b15f;
+  font-size: 18px;
+  }
+  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{
+    display: none;
+  }
+  .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{
+  visibility: visible;
+  opacity: 1;
+  transition:  visibility 0s, opacity 0.4s linear;
+  }
+  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{
+    width: 40px;
+  }
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #4a8457 ; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+ right: -30px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+
+
+
+.off-canvas-btn{
+  position: fixed;
+  top:15%;
+  left: -80px;
+  width: 120px;
+  height: 50px;
+  background: #0ae196;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; 
+  z-index: 1;
+}
+.off-canvas-btn:hover{
+  left: 0px;
+  transition: left 0.3s linear;
+}
+.off-canvas-btn .canvas-btn{
+  line-height: 3;
+  color: white;
+  padding: 0px 5px  0px 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.off-canvas-btn .canvas-btn i{
+  padding-left: 15px;
+}
+
+
+/*------------------------------class page -section --------------*/
+.class-section .title{
+   font-size: 36px;
+  font-weight: bold;
+  color: #28a745;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 26px;
+  text-shadow: 1px 2px 3px #c7bebe;
+  font-family: 'Righteous', cursive;
+}
+
+/*-----syllabus section---------*/
+
+.class-section .syllabus-section{
+  
+  padding: 30px 20px;
+  background: #fff;
+
+}
+
+.class-section .syllabus-section .content{
+  margin: 40px auto;
+}
+.class-section .syllabus-section .content .subject{
+  background: #ffffff;
+  padding: 16px;
+     border-radius: 5px;
+    box-shadow: 0px 2px 3px 1px #b6b6b691;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.class-section .syllabus-section .content .subject .subject-name{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #28a745;
+  letter-spacing: 2px;
+    font-family: 'Righteous', cursive;
+  text-align: center;
+}
+.class-section .syllabus-section .demo-box{ 
+  padding: 60px 30px;
+  background: #00800005;
+  border-radius: 5px;
+}
+/*---------------overview-section-----------*/
+.class-section .overview-section{
+  padding:60px 0px;
+}
+
+.class-section .overview-section p{
+  text-align: justify;
+  padding: 0px 20px;
+}
+
+/*---------------------test-section--------------*/
+.class-section .test-section {
+  margin-top: 20px;
+  padding: 90px 0px;
+  background: #eaf1ea;
+}
+.class-section .test-section .select-container{
+  display: flex;
+  justify-content: flex-end;
+  margin:40px 0px 20px 0px;
+}
+.class-section .test-section .select-container select{
+  border: 1px solid green;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: transparent;
+    color: green;
+    font-weight: bold;
+}
+.class-section .test-section .select-container select option{
+  background: #eaf1ea !important;
+}
+.class-section .test-section .test{
+     box-shadow: 1px 1px 15px 0px #dee5de;
+    background: #fff;
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+.class-section .test-section .test .title{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+      text-shadow: 1px 2px 3px #d6d6d6;
+}
+.class-section .test-section .test .test-wrapper a{
+  text-decoration: none;
+  color: green;
+  z-index: 1;
+}
+.class-section .test-section  .owl-nav{
+     font-size: 40px;
+    top: 18%;
+    position: absolute;
+    left: 0;
+    height: 120px;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -30px;
+}
+.class-section .test-section .owl-nav button{
+  background: #3cc95c;
+}
+.class-section .test-section .owl-nav button span{
+  color: #fff;
+  padding: 0px 10px;
+}
+/*--------mobile view---------------*/
+@media only screen and (max-width: 768px){
+  .class-section .syllabus-section{
+    padding: 30px 0px 0px 0px;
+  }
+.class-section .syllabus-section .content .subject{
+  padding: 5px 30px;
+}
+.class-section .syllabus-section .content .subject .subject-name{
+  line-height: 60px;
+}
+.class-section .test-section .test{
+ 
+  margin:15px auto;
+}
+.class-section .test-section .owl-nav{
+  margin: 0px 15px;
+  z-index: 1;
+}
+.class-section .test-section .owl-nav{
+  top: 15%;
+  z-index: 1;
+  height: 70px;
+}
+.class-section .title{
+  font-size: 26px;
+}
+}
+
+/*----------------------end of class page----------------------*/
+/*-----------------------preparation page----------------------*/
+.preparation-section{
+  padding: 0px 0px;
+  margin-bottom: 30px;
+}
+.preparation-section .curve-section{
+    box-shadow: 1px 2px 8px 2px #d2cccc;
+    border-radius: 10px;
+}
+.preparation-section .curve-section .preparation-container{
+  padding: 30px 60px;
+}
+.preparation-section .curve-section .preparation-container .title{
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #606060;
+
+    letter-spacing: 2px;
+    font-family: 'Righteous', cursive;
+}
+.preparation-section .curve-section .preparation-container .subtitle{
+  display: block;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+@media (max-width: 756px)
+{
+  .preparation-section .curve-section .preparation-container .title{
+    font-size: 18px;
+  }
+  .preparation-section .curve-section .preparation-container .subtitle{
+    font-size: 14px;
+  }
+  .preparation-section .curve-section .preparation-container {
+    padding: 30px 25px;
+}
+}
