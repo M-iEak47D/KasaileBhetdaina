@@ -1,0 +1,80 @@
+[
+    {   
+        "id": 1,
+        "name": "What temperature does water boil at?",
+        "answer": [
+            {"id": 1,
+            "answer": "apple",
+            "correct": 1,
+            "marks": 1
+            },
+            {"id": 2,
+            "answer": "ball",
+            "correct": 0,
+            "marks": 1
+             },
+            {"id": 3,
+            "answer": "cat",
+            "correct": 0,
+            "marks": 1
+             },
+             {"id": 4,
+             "answer": "dog",
+             "correct": 0,
+             "marks": 1
+            }
+        ]
+    },
+    {   
+        "id": 2,
+        "name": "What temperature does ball boil at?",
+        "answer": [
+            {"id": 1,
+            "answer": "dog",
+            "correct": 1,
+            "marks": 1
+            },
+            {"id": 2,
+            "answer": "ball",
+            "correct": 0,
+            "marks": 1
+             },
+            {"id": 3,
+            "answer": "cat",
+            "correct": 0,
+            "marks": 1
+             },
+             {"id": 4,
+             "answer": "dog",
+             "correct": 0,
+             "marks": 1
+            }
+        ]
+    },
+    {   
+        "id": 3,
+        "name": "What temperature does cat boil at?",
+        "answer": [
+            {"id": 1,
+            "answer": "apple",
+            "correct": 1,
+            "marks": 1
+            },
+            {"id": 2,
+            "answer": "cat",
+            "correct": 0,
+            "marks": 1
+             },
+            {"id": 3,
+            "answer": "dog",
+            "correct": 0,
+            "marks": 1
+             },
+             {"id": 4,
+             "answer": "ball",
+             "correct": 0,
+             "marks": 1
+            }
+        ]
+    }
+]

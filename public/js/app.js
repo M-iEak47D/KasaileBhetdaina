@@ -74484,14 +74484,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Homepage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Homepage */ "./resources/js/pages/Homepage.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
 
 
 function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
     exact: true,
     path: "/",
     component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -74622,6 +74624,272 @@ module.exports = "/images/syllabus.jpg?837005f4a40b4208663f56221e423b79";
 /***/ (function(module, exports) {
 
 module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
+
+/***/ }),
+
+/***/ "./resources/js/quiz/question.json":
+/*!*****************************************!*\
+  !*** ./resources/js/quiz/question.json ***!
+  \*****************************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"name\":\"What temperature does water boil at?\",\"answer\":[{\"id\":1,\"answer\":\"apple\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"ball\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"dog\",\"correct\":0,\"marks\":1}]},{\"id\":2,\"name\":\"What temperature does ball boil at?\",\"answer\":[{\"id\":1,\"answer\":\"dog\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"ball\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"dog\",\"correct\":0,\"marks\":1}]},{\"id\":3,\"name\":\"What temperature does cat boil at?\",\"answer\":[{\"id\":1,\"answer\":\"apple\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"dog\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"ball\",\"correct\":0,\"marks\":1}]}]");
+
+/***/ }),
+
+/***/ "./resources/js/quiz/quizlayout.js":
+/*!*****************************************!*\
+  !*** ./resources/js/quiz/quizlayout.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Newquiz; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _question_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./question.json */ "./resources/js/quiz/question.json");
+var _question_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./question.json */ "./resources/js/quiz/question.json", 1);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var start = false;
+function Newquiz(props) {
+  var allQuestion = _question_json__WEBPACK_IMPORTED_MODULE_2__.length;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      currentQuestionIndex = _useState2[0],
+      setCurrentQuestionIndex = _useState2[1];
+
+  var currentQuestion = useCurrentQuestion(currentQuestionIndex);
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Score = _useState4[0],
+      setScore = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      SpecificMark = _useState6[0],
+      setSpecificMark = _useState6[1];
+
+  function handleChange(Correct, Index) {
+    SpecificMark.filter(function (_ref) {
+      var datas = _extends({}, _ref);
+
+      return Score[Index] = Correct;
+    });
+    setSpecificMark([].concat(_toConsumableArray(SpecificMark), [{
+      index: Index,
+      correct: Correct
+    }]));
+    Score[Index] = Correct;
+  }
+
+  function FinishQuiz() {
+    var _markCounter$Total = _slicedToArray(markCounter.Total, 2),
+        TotalMarks = _markCounter$Total[0],
+        setTotalMarks = _markCounter$Total[1];
+  }
+
+  var markCounter = useMarkCounter(Score);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quit-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quit"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: ""
+  }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-stop-circle"
+  }), " Quit"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "navbar navbar-expand-sm",
+    style: {
+      background: "linear-gradient(45deg, #0be788, #09d6af)",
+      boxShadow: "0px 2px 4px #a1a4a4"
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "time"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hour"
+  }, "02"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "minute"
+  }, ":56"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "second"
+  }, ":34"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container test-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "question-number"
+  }, currentQuestionIndex + 1, "."), currentQuestion.initialQuestion.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper",
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[0].correct, currentQuestionIndex);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[0].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper",
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[1].correct, currentQuestionIndex);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[1].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper",
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "C"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[2].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper",
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[3].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-row justify-content-between"
+  }, currentQuestionIndex > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "prev-btn",
+    onClick: function onClick() {
+      return setCurrentQuestionIndex(currentQuestionIndex - 1);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-left"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Previous")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "prev-btn",
+    style: {
+      display: "none"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-left"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Previous")), currentQuestionIndex + 1 != allQuestion ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "next-btn",
+    onClick: function onClick() {
+      return setCurrentQuestionIndex(currentQuestionIndex + 1);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Next"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-right"
+  })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "next-btn",
+    onClick: function onClick() {
+      return FinishQuiz;
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Finish "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-right"
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress-bar",
+    role: "progressbar",
+    style: {
+      width: "75%"
+    },
+    "aria-valuenow": "75",
+    "aria-valuemin": "0",
+    "aria-valuemax": "100"
+  }))));
+}
+
+function useCurrentQuestion(initialValue) {
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]),
+      _useState8 = _slicedToArray(_useState7, 2),
+      initialQuestion = _useState8[0],
+      setQuestions = _useState8[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setQuestions(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]);
+  }, [initialValue]);
+  return {
+    initialValue: initialValue,
+    initialQuestion: initialQuestion
+  };
+}
+
+function useMarkCounter(Score) {
+  var Total = Score.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  console.log(Total);
+  return Total;
+}
 
 /***/ }),
 
