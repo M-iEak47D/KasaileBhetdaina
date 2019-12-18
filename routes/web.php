@@ -11,4 +11,66 @@
 |
 */
 
-Route::view('/{path?}', 'welcome');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', function (){
+    return view('admin.index');
+});
+
+Route::group([
+    'prefix' => '/admin',
+    'as' => 'admin.',
+    'namespace'=>'admin'
+], function (){
+
+
+    Route::get('/quiz','QuizController@index')->name('quiz');
+    Route::post('/store/quiz', 'QuizController@store')->name('store.quiz');
+    Route::get('/json/quiz', 'QuizController@getJson')->name('json.quiz');
+    Route::get('/edit/quiz/{id}', 'QuizController@edit')->name('edit.quiz');
+    Route::post('/update/quiz', 'QuizController@update')->name('update.quiz');
+    Route::get('/delete/quiz/{id}', 'QuizController@destroy')->name('delete.quiz');
+
+    Route::get('/dashboard','DashboardController@index')->name('dashboard');
+
+    Route::group(['prefix' => '/categories'], function (){
+        Route::get('/','CategoryController@index')->name('categories');
+        Route::post('/store','CategoryController@store')->name('store_categories');
+        Route::post('/destroy','CategoryController@destroy')->name('destroy_categories');
+        Route::get('/edit','CategoryController@edit')->name('edit_categories');
+        Route::post('/edit/{id}','CategoryController@update')->name('post_edit_categories');
+    });
+
+    Route::group(['prefix' => '/courses'], function (){
+       Route::get('/','CourseController@index')->name('courses');
+       Route::post('/store','CourseController@store')->name('store_course');
+       Route::post('/destroy','CourseController@destroy')->name('destroy_course');
+       Route::get('/edit','CourseController@edit')->name('edit_course');
+       Route::post('/edit/{id}','CourseController@update')->name('post_edit_course');
+    });
+
+    Route::group(['prefix' => '/subjects'], function (){
+        Route::get('/','CourseController@index')->name('subjects');
+        Route::post('/store','CourseController@store')->name('store_subject');
+        Route::post('/destroy','CourseController@destroy')->name('destroy_subject');
+        Route::get('/edit','CourseController@edit')->name('edit_subject');
+        Route::post('/edit/{id}','CourseController@update')->name('post_edit_subject');
+    });
+
+    Route::group(['prefix' => '/chapters'], function (){
+        Route::get('/','CourseController@index')->name('chapters');
+        Route::post('/store','CourseController@store')->name('store_chapters');
+        Route::post('/destroy','CourseController@destroy')->name('destroy_chapters');
+        Route::get('/edit','CourseController@edit')->name('edit_chapters');
+        Route::post('/edit/{id}','CourseController@update')->name('post_edit_chapters');
+    });
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,0 +1,15 @@
+Models:
+    Answer => 'name', 'correct', 'image',
+    Chapter => 'name','sub_subject_id'
+    Course => 'name'
+    Question => 'name', 'year', 'importance', 'image', 'marks'
+    Subject => 'name',
+    SubSubject => 'name','subject_id', 'sub_subject_id'
+
+CRUD Routes name
+    Eg: Course
+        index (get) => admin_courses
+        add (post) => store_course
+        delete (post,id) => destroy_course
+        edit (get, id) => edit_course
+        edit (post, id) => post_edit_course
