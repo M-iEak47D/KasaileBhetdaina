@@ -6324,7 +6324,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Righteous|Varela+Round&display=swap);", ""]);
 
 // module
-exports.push([module.i, "/*\r\nfont-family: 'Varela Round', sans-serif;\r\nfont-family: 'Quicksand', sans-serif;\r\nfont-family: 'Righteous', cursive;\r\n*/\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Quicksand', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n/* Style the navbar */\r\n#navbar {\r\n \r\n  background: #f4f4f4;\r\n  padding: 15px 90px;\r\n  z-index: 9;\r\n\r\n}\r\n\r\n.addnavbar {\r\n  background: #fff !important;\r\n  -webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */\r\n  animation-name: navbar;\r\n  animation-duration: 0.5s;\r\n  box-shadow: 0px 2px 5px #e6fbe6;\r\n}\r\n\r\n@-webkit-keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Navbar links */\r\n#navbar .nav a {\r\n  float: left;\r\n  display: block;\r\n  color: #28a745;\r\n  text-align: center;\r\n  padding: 10px 0px;\r\n  margin-right: 30px;\r\n  text-shadow: 1px 2px 3px #d6d5d5;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n  font-weight: 400;\r\n  font-family: 'Righteous', cursive;\r\n  position: relative;\r\n}\r\n\r\n#navbar .nav a>.active {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #5bbc2e;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover::before {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #28a745;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover {\r\n      color: #ffffff;\r\n    text-shadow: 1px 2px 3px #c2b8b8;\r\n}\r\n\r\n\r\n.logo-container {\r\n  vertical-align: center;\r\n}\r\n\r\n.logo-container img {\r\n  width: 160px;\r\n}\r\n\r\n#navbar span {\r\n  padding-top: 10px;\r\n  font-size: 30px;\r\n  color: #4a8a16;\r\n}\r\n\r\n#navbar .button-container {\r\n  display: block;\r\n}\r\n\r\n#navbar .button-container .login {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .login a {\r\n  background: linear-gradient(17deg, #dddbdb, #ffffff);\r\n    color: #28a745;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    text-shadow: 1px 2px 3px #bcb2b2;\r\n}\r\n\r\n#navbar .button-container .join-now {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .join-now a {\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n text-shadow: 1px 2px 3px #928e8e;\r\n  color: white;\r\n  border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n  font-size: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\n#navbar .button-container a:hover {\r\n  border: 2px solid #fff;\r\n}\r\n\r\n#navbar .dropdown{\r\n  display: initial;\r\n}\r\n#navbar .dropdown-menu{\r\n  border: none;\r\n}\r\n#navbar .dropdown-menu a:hover::before{\r\ndisplay: none;\r\n}\r\n#navbar .dropdown-menu .dropdown-item:active{\r\n  background: #28a745;\r\n}\r\n/*--------------------mobile navbar----------------------------*/\r\n#myNav {\r\n  height: 100%;\r\n}\r\n\r\n/* The Overlay (background) */\r\n.overlay {\r\n\r\n  /* Height & width depends on how you want to reveal the overlay (see JS below) */   \r\n  height: 100%;\r\n  width: 0;\r\n  position: fixed; /* Stay in place */\r\n  z-index: 10; /* Sit on top */\r\n  left: 0;\r\n  top: 0;\r\n\r\n  background-color: #5bbc2e; /* Black fallback color */\r\n  background-color: #3cc95cf2; /* Black w/opacity */\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */\r\n}\r\n\r\n/* Position the content inside the overlay */\r\n.overlay-content {\r\n  position: relative;\r\n  top: 25%; /* 25% from the top */\r\n  width: 100%; /* 100% width */\r\n  text-align: center; /* Centered text/links */\r\n  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */\r\n}\r\n\r\n/* The navigation links inside the overlay */\r\n.overlay a {\r\n    padding: 5px 50px;\r\n    text-decoration: none;\r\n    font-size: 26px;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    text-align: left;\r\n    display: block;\r\n    -webkit-transition: 0.3s;\r\n    transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.overlay a:hover, .overlay a:focus {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position the close button (top right corner) */\r\n.overlay .closebtn {\r\n        position: absolute;\r\n    top: 0px;\r\n    right: 0px;\r\n    font-size: 60px;\r\n    padding: 0px 35px;\r\n}\r\n\r\n\r\n@media (max-width:756px) {\r\n  #navbar {\r\n    padding: 5px 10px;\r\n  }\r\n  #navbar .button-container .join-now {\r\n    margin:5px auto;\r\n  }\r\n \r\n  #navbar .button-container .join-now a{\r\n        padding: 10px 5px;\r\n    font-size: 12px;\r\n  }\r\n  #navbar .button-container .login a{\r\n    padding: 10px 15px;\r\n    font-size: 12px;\r\n  }\r\n\r\n  .logo-container img {\r\n   width: 110px;\r\n    padding-top: 5px;\r\n  }\r\n  #navbar span{\r\n    padding-top: 0px;\r\n  }\r\n.modal-dialog {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.modal-content {\r\n  height: auto;\r\n  min-height: 100%;\r\n  border-radius: 0;\r\n}\r\n#myNav .dropdown-menu{\r\n  right: 0;\r\n  left:0;\r\n}\r\n#myNav .dropdown-menu a{\r\n  text-align: center;\r\n    color: green;\r\n}\r\n}\r\n\r\n/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */\r\n@media screen and (max-height:450px) {\r\n  .overlay a {\r\n    font-size: 20px\r\n  }\r\n\r\n  .overlay .closebtn {\r\n    font-size: 40px;\r\n    top: 15px;\r\n    right: 35px;\r\n  }\r\n\r\n}\r\n\r\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\r\n.sticky {\r\n  position: fixed;\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n  width: 100%;\r\n  -webkit-transition: -webkit-transform 2s linear;\r\n  transition: -webkit-transform 2s linear;\r\n  transition: transform 2s linear;\r\n  transition: transform 2s linear, -webkit-transform 2s linear;\r\n}\r\n\r\n/*---------------------------------------- banner-------------------------------*/\r\n.banner {\r\n  background: url(" + escape(__webpack_require__(/*! ./images/banner.jpg */ "./resources/js/pages/images/banner.jpg")) + ");\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  padding: 160px 0px 160px 0px;\r\n  text-align: center;\r\n  position: relative;\r\n}\r\n\r\n.banner .title {\r\n     font-size: 60px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 1px;\r\n    text-shadow: 1px 3px 4px #8e9b92;\r\n    color: #28a745;\r\n}\r\n\r\n.banner .subtitle {\r\n  margin: 10px auto;\r\n  font-size: 22px;\r\n  color: #8a8a8a;\r\n  max-width: 700px;\r\n  font-family: 'Varela Round', sans-serif;\r\n}\r\n\r\n/*-------------------------------join now-----------------------*/\r\n.banner .join-now-form {\r\n  max-width: 400px;\r\n  margin: 30px auto;\r\n  border: 1px solid #12c78200;\r\n  background: white;\r\n  font-size: 20px;\r\n  font-weight: normal;\r\n      box-shadow: 1px 2px 5px #2de2664d;\r\n  border-radius: 5px;\r\n \r\n}\r\n/* .banner .join-now-form .row{\r\n\r\n} */\r\n\r\n.banner .join-now-form .country-code {\r\n  padding: 9px 0px;\r\n  border-right: 1px solid #28a745;\r\n}\r\n\r\n.banner .join-now-form .phone-number {\r\n  padding: 7px 0px;\r\n}\r\n\r\n.banner .join-now-form .phone-number input {\r\n  border: none;\r\n}\r\n\r\n.banner .join-now-form .phone-number input:focus {\r\n  outline: none;\r\n}\r\n\r\n.banner .join-now-form .submit {\r\n  padding: 5px 0px;\r\n  margin-right: -15px;\r\n  background: #28a745;\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n  text-shadow: 1px 2px 3px #3d3a3a;\r\n  border-bottom-right-radius: 5px;\r\n  border-top-right-radius: 5px;\r\n}\r\n.banner .join-now-form .submit:hover{\r\n   background: linear-gradient(45deg, #36ea5f, #00b693);\r\n   text-shadow: 1px 0px 0px #3d3a3a;\r\n}\r\n.banner .join-now-form .submit a{\r\n  font-size: 26px;\r\n  text-decoration: none;\r\n  font-weight: bolder;\r\n  color: white;\r\n}\r\n.banner .app-download{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n}\r\n.banner .app-download .play-store{\r\n    background: #14ac5b;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .app-store{\r\n   background: #9ea09d;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .play-store:hover{\r\n  background: grey;\r\n}\r\n.banner .app-download .app-store:hover{\r\n  background: #496f5a;\r\n}\r\n\r\n/*------------------------join-us modal -----------------*/\r\n.join .modal-body {\r\n  padding: 20px 30px;\r\n}\r\n\r\n.join .modal-body .title {\r\n      font-size: 40px;\r\n    color: #ffffff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 3px 4px #035a21;\r\n    margin-bottom: 40px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 2px;\r\n    text-align: center;\r\n    padding-bottom: 25px;\r\n   \r\n}\r\n.join .modal-body .form-control{\r\n  border:none;\r\n      background: #fbfbfb;\r\n}\r\n\r\n.join .modal-body:hover .title {\r\n     color: #28a745;\r\n    text-shadow: 1px 3px 4px #d1d9d4;\r\n}\r\n\r\n.join .modal-body form input {\r\n  height: 50px;\r\n  margin:35px auto;\r\n    padding: 0px 40px;\r\n}\r\n\r\n.join .modal-body .button-container {\r\n  text-align: center;\r\n}\r\n\r\n.join .modal-body .button-container button {\r\n      width: 80%;\r\n    border-radius: 50px;\r\n    font-size: 18px;\r\n    height: 50px;\r\n    color: #28a745;\r\n    margin-bottom: 20px;\r\n    background: #fdfffd;\r\n    box-shadow: 1px 2px 4px #bfc3c1;\r\n     font-family: 'Righteous', cursive;\r\n    text-align: center;\r\n    border:0px;\r\n}\r\n.join .modal-body .button-container button:hover{\r\nbackground: #28a745;\r\n    color: white;\r\n  }\r\n.join .modal-content button{\r\n  text-align: right;\r\n    padding-right: 10px;\r\n}\r\n#invite_code {\r\n  cursor: pointer;\r\n  margin-top: 10px;\r\n  margin-bottom: 30px;\r\n  color: #28a745;\r\n}\r\n\r\n.join .modal-body .button-container a {\r\n  text-align: center;\r\n  text-decoration: none;\r\n  font-weight: bold;\r\n  color: grey;\r\n}\r\n\r\n.form-control:focus {\r\n  background-color: #fff;\r\n  border-color: #8bfea6;\r\n  box-shadow: 0 0 0 0.1rem rgb(66, 183, 92);\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .banner{\r\n    padding: 140px 10px 140px 10px;\r\n  }\r\n   .banner .title {\r\n    font-size: 30px;\r\n    text-shadow: 1px 3px 4px #b3b4b3;\r\n  }\r\n  .banner .subtitle{\r\n    font-size: 16px;\r\n  }\r\n  .overlay-content{\r\n    top: 15%;\r\n  }\r\n}\r\n.banner .banner-wave{\r\n  display: block;\r\n}\r\n.banner .wave-img {\r\n    width: 100%;\r\n    \r\n    background-position: bottom;\r\n    background-size: cover;\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n}\r\n.banner .app-download{\r\n  padding: 0px 30px;\r\n}\r\n.banner .app-download .play-store, .banner .app-download .app-store{\r\n  padding: 5px 10px;\r\n}\r\n\r\n/*----------------end of banner ----------------*/\r\n/*---------------------features-----------------*/\r\n\r\n.feature-container{\r\n padding: 20px;\r\n   \r\n}\r\n.feature-container .title{\r\n  font-size: 40px;\r\n    color: #28a745;\r\n    font-family: 'Righteous', cursive;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 2px 3px #b0a7a7;\r\n}\r\n.feature-container .description{\r\n  font-size: 16px;\r\n  color: grey;\r\n  text-align: justify;\r\n  margin-bottom: 30px;\r\n}\r\n.feature-container .button-container{\r\n  text-align: right;\r\n}\r\n.feature-container .button-container .mybtn{\r\n  padding: 12px 20px;\r\n  color: white;\r\n  text-shadow: 1px 2px 3px #928e8e;\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  border-radius: 5px;\r\n  text-decoration: none;\r\n}\r\n.feature-container .button-container .mybtn:hover{\r\n   background: linear-gradient(235deg, #36ea5f, #00b693);\r\n}\r\n.feature-container .button-container a{\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bolder;\r\n  cursor: pointer;\r\n}\r\n.feature-container .button-container a:hover{\r\n  color: white;\r\n}\r\n\r\n.question-feature{\r\npadding: 90px 0px;\r\n\r\n}\r\n.analysis-feature{\r\npadding: 90px 0px;\r\nbackground: #f1fef18a;\r\n}\r\n.syllabus-feature{\r\npadding: 90px 0px;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .feature-container .title{\r\n    font-size: 26px;\r\n  }\r\n  .syllabus-feature, .question-feature, .analysis-feature{\r\n    padding: 60px 0px;\r\n  }\r\n\r\n}\r\n/*-----------------end of features--------------*/\r\n/*-------------------testimonial-----------------*/\r\n.testimonial-container{\r\n  padding: 90px 30px;\r\n}\r\n.testimonial-container .title{\r\n  font-size: 40px;\r\n  font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n  margin-bottom: 60px;\r\n   color: #28a745;\r\n   text-shadow: 1px 2px 3px #cec0c0;\r\n}\r\n.testimonial{\r\n    margin: 0 15px;\r\n}\r\n.testimonial .content{\r\n    padding: 15px 10px;\r\n    border-radius:6px;\r\n    margin-bottom: 15px;\r\n    position: relative;\r\n    background:#e67e22;\r\n    min-height: 100px;\r\n}\r\n.testimonial .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #e67e22;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content{\r\n    background: #1abc9c;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #1abc9c;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content{\r\n    background: #5bbc2e;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #9b59b6;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n.testimonial .description{\r\n    margin-bottom: 10px;\r\n    color:#fff;\r\n}\r\n.testimonial-pic{\r\n    float:left;\r\n    width: 80px;\r\n    height: 80px;\r\n}\r\n.testimonial-pic > img{\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    border: 2px solid #e5e5e5;\r\n    margin-left: 20px;\r\n}\r\n.testimonial .testimonial-review{\r\n    margin:3px 0 0 30px;\r\n    float: left;\r\n}\r\n.testimonial .testimonial-title{\r\n    font-size:16px;\r\n    text-transform:capitalize;\r\n    font-weight: bold;\r\n    margin:0;\r\n}\r\n.testimonial > .testimonial-review span{\r\n    color: darkgray;\r\n    display: block;\r\n    font-size: 13px;\r\n    margin-bottom:5px;\r\n}\r\n.testimonial .social-links{\r\n    padding:0;\r\n    margin:0;\r\n}\r\n.testimonial .social-links > li{\r\n    list-style:none;\r\n    display:inline-block;\r\n    margin-right:10px;\r\n}\r\n.testimonial .social-links > li > a.fa-twitter{\r\n    color:#00aced;\r\n}\r\n.testimonial .social-links > li > a.fa-facebook{\r\n    color: #3b599a;\r\n}\r\n.testimonial .social-links > li > a.fa-pinterest{\r\n    color:#E14782;\r\n}\r\n.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{\r\n    background: #1abc9c;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    background: #333;\r\n    opacity: 1;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    width: 10px;\r\n    height:10px;\r\n    margin: 5px 6px;\r\n}\r\n.testimonial-container .owl-nav{\r\n     font-size: 60px;\r\n    top: 25%;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.testimonial-container .owl-nav button{\r\n  background: green;\r\n}\r\n.testimonial-container .owl-nav button span{\r\n  color: #28a745;\r\n  padding: 0px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n .testimonial-container .title{\r\n  font-size: 26px;\r\n }\r\n}\r\n/*-------------------end of testimonial-------------*/\r\n/*-----------------app download container---------------*/\r\n.app-container{\r\n  padding: 120px 60px;\r\n  background: #3cc95c;\r\n}\r\n.app-container .title{\r\n  font-size: 40px;\r\n  color: #fff;\r\n    text-shadow: 0px 1px 5px #4a4848;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n \r\n  margin-bottom: 20px;\r\n}\r\n.app-container .subtitle{\r\n  color: white;\r\n  font-size: 24px;\r\n\r\n  margin-bottom: 50px;\r\n}\r\n.app-container .app-download .play-store, .app-container .app-download .app-store{\r\nbackground: black;\r\nmargin: 0px 10px;\r\nborder-radius: 5px;\r\npadding: 5px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .app-container{\r\n    padding: 90px 30px;\r\n  }\r\n  .app-container .title{\r\n    font-size: 30px;\r\n  }\r\n  .app-container .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*----------------hit question-----------------*/\r\n.hit-question{\r\n  padding: 60px 90px;\r\n  background: #3cc95c;\r\n\r\n}\r\n.hit-question .title{\r\n  color: white;\r\n  font-size: 40px;\r\n  text-shadow: 0px 1px 5px #7c7474;\r\n  font-weight: bold;\r\n}\r\n.hit-question .subtitle{\r\n  color: white;\r\n  font-size: 20px;\r\n}\r\n.hit-question .button-container{\r\n  text-align: center;\r\n}\r\n.hit-question .button-container .ask-button{\r\n  padding: 10px 20px;\r\n  background: #333333;\r\n  color: white;\r\n  width: 100%;\r\n      text-shadow: 1px 2px 3px #032f0d;\r\n      font-weight: bolder;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n\r\n  margin-top: 45px;\r\n}\r\n.hit-question .button-container .ask-button:hover{\r\n  background: #fff;\r\n  color: #000;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .hit-question{\r\n    padding: 60px 30px;\r\n  }\r\n  .hit-question .title{\r\n    font-size: 26px;\r\n  }\r\n  .hit-question .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*------------------footer--------------*/\r\n.footer{\r\n  padding:60px 90px 0px 90px;\r\n  background: #222222;\r\n  color: white;\r\n}\r\n.footer .title{\r\n      color: #28a745;\r\n    font-size: 24px;\r\n    font-family: 'Righteous', cursive;\r\n    margin-top: 30px;\r\n    letter-spacing: 1px;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 1px 3px black;\r\n}\r\n.footer .description{\r\n  text-align: justify;\r\n  padding-right: 40px;\r\n}\r\n.footer .footer-list .phone , .footer .footer-list .email{\r\n\r\n  cursor: pointer;\r\n}\r\n.footer .footer-list .phone i, .footer .footer-list .email i{\r\n    margin-right: 10px;\r\n}\r\n.footer .footer-list ul{\r\n  list-style: none;\r\n}\r\n.footer .footer-list ul a{\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n.footer .footer-list ul a:hover{\r\n  color: #28a745;\r\n}\r\n.footer .newsletter-container{\r\n      background: #cdd4cf14;\r\n    padding: 30px 30px;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.footer .newsletter-container .subscribe-title{\r\n  font-size: 24px;\r\n  margin-bottom: 20px;\r\n}\r\n.footer .newsletter-container .button-container{\r\nmargin-top: 30px;\r\ntext-align: right;\r\n}\r\n.footer .newsletter-container form .button-container .btn {\r\n  \r\n  border-radius: 5px !important;\r\n  \r\n}\r\n.footer .buttom-footer{\r\n  text-align: center;\r\n border-top: 1px solid #fffdfd4d;\r\n  padding: 15px 0px 5px 0px;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .footer{\r\n    padding: 60px 10px 0px 10px;\r\n  }\r\n  .footer .description{\r\n    padding-right: 0px;\r\n  }\r\n  .footer .newsletter-container .subscribe-title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .buttom-footer{\r\n    font-size: 18px;\r\n  }\r\n  .footer .title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .footer-list ul{\r\n    padding: 0;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*----------------------------------quiz style------------------*/\r\n/*----------quiz.css---------------*/\r\n.quiz{\r\n  position: relative;\r\n}\r\n.quiz nav{\r\n  height: 80px;\r\n}\r\n.quiz .quit-section{\r\n  position: absolute;\r\n  top: 30px;\r\n  right: 5%;\r\n  z-index: 1;\r\n}\r\n.quiz .quit-section .quit a{\r\n  border:2px solid white;\r\n  padding: 5px 10px;\r\n  border-radius: 5px;\r\n  color: white;\r\n  z-index: 999999;\r\n}\r\n.quiz .quit-section .quit:hover a{\r\nbackground-color: white;\r\ncolor: green;\r\ntext-decoration: none;\r\n}\r\n.test-section{\r\n  margin-top: 100px;\r\n}\r\n.timer-container{\r\n  margin:0px auto;\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 200px;\r\n  top: 0px;\r\n\r\n}\r\n.timer-wrapper{\r\n  margin:10px auto;\r\n  width: 140px;\r\n  height: 140px;\r\n  background:white;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px #eaf3ec;\r\n}\r\n.timer-wrapper .time{\r\n  line-height: 5.5;\r\n  font-size: 25px;\r\n  color: #1ba01b;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n.question-container{\r\n  margin: 20px auto;\r\n}\r\n.question-title{\r\n  font-size: 24px;\r\n  color:green;\r\n  font-weight: bold;    \r\n}\r\n/* .answer-container{\r\n\r\n} */\r\n.answer-wrapper{\r\n      border-radius: 5px;\r\n    padding: 10px 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    margin-top: 5px;\r\n    margin-bottom: 20px;\r\n    box-shadow: 1px 1px 4px #cac5c5;\r\n}\r\n.answer-wrapper:hover{\r\n  background-color: #ccffd8;\r\n}\r\n.option-number{\r\n  border: 0.5px solid #47b15f;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  padding:0px 7px;\r\n  margin:0 auto;\r\n  color: slategray;\r\n  border-radius: 5px;\r\n\r\n\r\n}\r\n.option{\r\n  -webkit-box-flex: 1;\r\n          flex: 1;\r\n  margin-left: 10px;\r\n  font-size: 18px;\r\n  color: #069426;\r\n  font-weight: bold;\r\n}\r\n.option-tick{\r\n  display: none;\r\n  color: green;\r\n}\r\n.answer-wrapper:hover .option-number{\r\n  padding: 0px 20px;\r\n  -webkit-transition: padding 0.2s ease-in;\r\n  transition: padding 0.2s ease-in;\r\n  background-color: #1cb13e;\r\n  color: white;\r\n}\r\n.answer-wrapper:hover .option-tick{\r\n  display: block;\r\n}\r\n.progress-container{\r\n  position: fixed;\r\n  left: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  \r\n}\r\n.progress-container .progress{\r\n  height: 30px;\r\n}\r\n.progress-container .progress .progress-bar{\r\n  background-color: #47b15f;\r\n}\r\n.quiz .button-section{\r\n  margin: 30px auto;\r\n}\r\n.quiz .button-section .button-row{\r\n  display: -webkit-box;\r\n  display: flex;\r\n}\r\n.quiz .button-section .button-row .prev-btn{\r\n  background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding-top: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  width: 100px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n  color: white;\r\n}\r\n.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #fff;\r\n  font-size: 18px;\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {\r\n  background:linear-gradient(45deg, #36ea5f, #00b693);\r\n  \r\n  -webkit-transition:  background-color 0.2s linear;\r\n  \r\n  transition:  background-color 0.2s linear;\r\n  color: white;\r\n  border: none;\r\n\r\n\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  color: white;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n}\r\n.quiz .button-section .button-row .next-btn{\r\n    background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  -webkit-box-pack: right;\r\n          justify-content: right;\r\n  width: 100px;\r\n  cursor: pointer;\r\n  text-align: center;\r\n}\r\n\r\n\r\n@media (max-width: 768px)\r\n{\r\n  .answer-wrapper{\r\n  \r\n  padding: 5px 5px;\r\n  \r\n  }\r\n  .quiz nav {\r\n    height: 70px;\r\n  }\r\n  .timer-wrapper {\r\n    margin: 20px auto;\r\n    width: 100px;\r\n    height: 100px;\r\n  }\r\n  .timer-wrapper .time {\r\n    line-height: 6;\r\n    font-size: 16px;\r\n  }\r\n  .question-title {\r\n    font-size: 16px;\r\n  }\r\n  .quiz .quit-section {\r\n    top:25px;\r\n  }\r\n  .test-section {\r\n    margin-top: 80px;\r\n  }\r\n  .option{\r\n    font-size: 14px;\r\n  }\r\n  .option-number{\r\n    font-size: 12px;\r\n    padding: 0px 5px;\r\n  }\r\n  .question-container {\r\n    margin: 20px auto 10px auto;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #47b15f;\r\n  font-size: 18px;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n    display: none;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{\r\n    width: 40px;\r\n  }\r\n}\r\n/* The side navigation menu */\r\n.sidenav {\r\n  height: 100%; /* 100% Full-height */\r\n  width: 0; /* 0 width - change this with JavaScript */\r\n  position: fixed; /* Stay in place */\r\n  z-index: 1; /* Stay on top */\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #4a8457 ; /* Black*/\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  padding-top: 60px; /* Place content 60px from the top */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n  padding: 8px 8px 8px 32px;\r\n  text-decoration: none;\r\n  font-size: 25px;\r\n  color: #818181;\r\n  display: block;\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  \r\n}\r\n\r\n/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */\r\n@media screen and (max-height: 450px) {\r\n  .sidenav {padding-top: 15px;}\r\n  .sidenav a {font-size: 18px;}\r\n}\r\n\r\n#mySidenav a {\r\n  position: absolute; /* Position them relative to the browser window */\r\n right: -30px; /* Position them outside of the screen */\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s; /* Add transition on hover */\r\n  padding: 15px; /* 15px padding */\r\n  width: 100px; /* Set a specific width */\r\n  text-decoration: none; /* Remove underline */\r\n  font-size: 20px; /* Increase font size */\r\n  color: white; /* White text color */\r\n  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */\r\n}\r\n\r\n\r\n\r\n\r\n.off-canvas-btn{\r\n  position: fixed;\r\n  top:15%;\r\n  left: -80px;\r\n  width: 120px;\r\n  height: 50px;\r\n  background: #0ae196;\r\n  border-top-right-radius: 5px;\r\n  border-bottom-right-radius: 5px; \r\n  z-index: 1;\r\n}\r\n.off-canvas-btn:hover{\r\n  left: 0px;\r\n  -webkit-transition: left 0.3s linear;\r\n  transition: left 0.3s linear;\r\n}\r\n.off-canvas-btn .canvas-btn{\r\n  line-height: 3;\r\n  color: white;\r\n  padding: 0px 5px  0px 25px;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n.off-canvas-btn .canvas-btn i{\r\n  padding-left: 15px;\r\n}\r\n\r\n\r\n/*------------------------------class page -section --------------*/\r\n.class-section .title{\r\n   font-size: 36px;\r\n  font-weight: bold;\r\n  color: #28a745;\r\n  letter-spacing: 1px;\r\n  text-align: center;\r\n  margin-bottom: 26px;\r\n  text-shadow: 1px 2px 3px #c7bebe;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n/*-----syllabus section---------*/\r\n\r\n.class-section .syllabus-section{\r\n  \r\n  padding: 30px 20px;\r\n  background: #fff;\r\n\r\n}\r\n\r\n.class-section .syllabus-section .content{\r\n  margin: 40px auto;\r\n}\r\n.class-section .syllabus-section .content .subject{\r\n  background: #ffffff;\r\n  padding: 16px;\r\n     border-radius: 5px;\r\n    box-shadow: 0px 2px 3px 1px #b6b6b691;\r\n  margin-bottom: 25px;\r\n  cursor: pointer;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  font-family: sans-serif;\r\n  font-size: 20px;\r\n  color: #28a745;\r\n  letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n}\r\n.class-section .syllabus-section .demo-box{ \r\n  padding: 60px 30px;\r\n  background: #00800005;\r\n  border-radius: 5px;\r\n}\r\n/*---------------overview-section-----------*/\r\n.class-section .overview-section{\r\n  padding:60px 0px;\r\n}\r\n\r\n.class-section .overview-section p{\r\n  text-align: justify;\r\n  padding: 0px 20px;\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n.class-section .test-section {\r\n  margin-top: 20px;\r\n  padding: 90px 0px;\r\n  background: #eaf1ea;\r\n}\r\n.class-section .test-section .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.class-section .test-section .select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.class-section .test-section .select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n.class-section .test-section .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 30px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n.class-section .test-section .test .title{\r\n  font-size: 20px;\r\n  margin-top: 10px;\r\n  margin-bottom: 60px;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.class-section .test-section .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.class-section .test-section .owl-nav button{\r\n  background: #3cc95c;\r\n}\r\n.class-section .test-section .owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n  .class-section .syllabus-section{\r\n    padding: 30px 0px 0px 0px;\r\n  }\r\n.class-section .syllabus-section .content .subject{\r\n  padding: 5px 30px;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  line-height: 60px;\r\n}\r\n.class-section .test-section .test{\r\n \r\n  margin:15px auto;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n.class-section .title{\r\n  font-size: 26px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/*-----------------------preparation page----------------------*/\r\n.preparation-section{\r\n  padding: 0px 0px;\r\n  margin-bottom: 30px;\r\n}\r\n.preparation-section .curve-section{\r\n    box-shadow: 1px 2px 8px 2px #d2cccc;\r\n    border-radius: 10px;\r\n}\r\n.preparation-section .curve-section .preparation-container{\r\n  padding: 30px 60px;\r\n}\r\n.preparation-section .curve-section .preparation-container .title{\r\n  display: block;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: #606060;\r\n\r\n    letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n}\r\n.preparation-section .curve-section .preparation-container .subtitle{\r\n  display: block;\r\n    font-size: 18px;\r\n    color: black;\r\n    margin-bottom: 20px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .preparation-section .curve-section .preparation-container .title{\r\n    font-size: 18px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container .subtitle{\r\n    font-size: 14px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container {\r\n    padding: 30px 25px;\r\n}\r\n}", ""]);
+exports.push([module.i, "/*\r\nfont-family: 'Varela Round', sans-serif;\r\nfont-family: 'Quicksand', sans-serif;\r\nfont-family: 'Righteous', cursive;\r\n*/\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Quicksand', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n/* Style the navbar */\r\n#navbar {\r\n \r\n  background: #f4f4f4;\r\n  padding: 15px 90px;\r\n  z-index: 9;\r\n\r\n}\r\n\r\n.addnavbar {\r\n  background: #fff !important;\r\n  -webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */\r\n  animation-name: navbar;\r\n  animation-duration: 0.5s;\r\n  box-shadow: 0px 2px 5px #e6fbe6;\r\n}\r\n\r\n@-webkit-keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Navbar links */\r\n#navbar .nav a {\r\n  float: left;\r\n  display: block;\r\n  color: #28a745;\r\n  text-align: center;\r\n  padding: 10px 0px;\r\n  margin-right: 30px;\r\n  text-shadow: 1px 2px 3px #d6d5d5;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n  font-weight: 400;\r\n  font-family: 'Righteous', cursive;\r\n  position: relative;\r\n}\r\n\r\n#navbar .nav a>.active {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #5bbc2e;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover::before {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #28a745;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover {\r\n      color: #ffffff;\r\n    text-shadow: 1px 2px 3px #c2b8b8;\r\n}\r\n\r\n\r\n.logo-container {\r\n  vertical-align: center;\r\n}\r\n\r\n.logo-container img {\r\n  width: 160px;\r\n}\r\n\r\n#navbar span {\r\n  padding-top: 10px;\r\n  font-size: 30px;\r\n  color: #4a8a16;\r\n}\r\n\r\n#navbar .button-container {\r\n  display: block;\r\n}\r\n\r\n#navbar .button-container .login {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .login a {\r\n  background: linear-gradient(17deg, #dddbdb, #ffffff);\r\n    color: #28a745;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    text-shadow: 1px 2px 3px #bcb2b2;\r\n}\r\n\r\n#navbar .button-container .join-now {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .join-now a {\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n text-shadow: 1px 2px 3px #928e8e;\r\n  color: white;\r\n  border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n  font-size: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\n#navbar .button-container a:hover {\r\n  border: 2px solid #fff;\r\n}\r\n\r\n#navbar .dropdown{\r\n  display: initial;\r\n}\r\n#navbar .dropdown-menu{\r\n  border: none;\r\n}\r\n#navbar .dropdown-menu a:hover::before{\r\ndisplay: none;\r\n}\r\n#navbar .dropdown-menu .dropdown-item:active{\r\n  background: #28a745;\r\n}\r\n/*--------------------mobile navbar----------------------------*/\r\n#myNav {\r\n  height: 100%;\r\n}\r\n\r\n/* The Overlay (background) */\r\n.overlay {\r\n\r\n  /* Height & width depends on how you want to reveal the overlay (see JS below) */   \r\n  height: 100%;\r\n  width: 0;\r\n  position: fixed; /* Stay in place */\r\n  z-index: 10; /* Sit on top */\r\n  left: 0;\r\n  top: 0;\r\n\r\n  background-color: #5bbc2e; /* Black fallback color */\r\n  background-color: #3cc95cf2; /* Black w/opacity */\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */\r\n}\r\n\r\n/* Position the content inside the overlay */\r\n.overlay-content {\r\n  position: relative;\r\n  top: 25%; /* 25% from the top */\r\n  width: 100%; /* 100% width */\r\n  text-align: center; /* Centered text/links */\r\n  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */\r\n}\r\n\r\n/* The navigation links inside the overlay */\r\n.overlay a {\r\n    padding: 5px 50px;\r\n    text-decoration: none;\r\n    font-size: 26px;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    text-align: left;\r\n    display: block;\r\n    -webkit-transition: 0.3s;\r\n    transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.overlay a:hover, .overlay a:focus {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position the close button (top right corner) */\r\n.overlay .closebtn {\r\n        position: absolute;\r\n    top: 0px;\r\n    right: 0px;\r\n    font-size: 60px;\r\n    padding: 0px 35px;\r\n}\r\n\r\n\r\n@media (max-width:756px) {\r\n  #navbar {\r\n    padding: 5px 10px;\r\n  }\r\n  #navbar .button-container .join-now {\r\n    margin:5px auto;\r\n  }\r\n \r\n  #navbar .button-container .join-now a{\r\n        padding: 10px 5px;\r\n    font-size: 12px;\r\n  }\r\n  #navbar .button-container .login a{\r\n    padding: 10px 15px;\r\n    font-size: 12px;\r\n  }\r\n\r\n  .logo-container img {\r\n   width: 110px;\r\n    padding-top: 5px;\r\n  }\r\n  #navbar span{\r\n    padding-top: 0px;\r\n  }\r\n.modal-dialog {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.modal-content {\r\n  height: auto;\r\n  min-height: 100%;\r\n  border-radius: 0;\r\n}\r\n#myNav .dropdown-menu{\r\n  right: 0;\r\n  left:0;\r\n}\r\n#myNav .dropdown-menu a{\r\n  text-align: center;\r\n    color: green;\r\n}\r\n}\r\n\r\n/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */\r\n@media screen and (max-height:450px) {\r\n  .overlay a {\r\n    font-size: 20px\r\n  }\r\n\r\n  .overlay .closebtn {\r\n    font-size: 40px;\r\n    top: 15px;\r\n    right: 35px;\r\n  }\r\n\r\n}\r\n\r\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\r\n.sticky {\r\n  position: fixed;\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n  width: 100%;\r\n  -webkit-transition: -webkit-transform 2s linear;\r\n  transition: -webkit-transform 2s linear;\r\n  transition: transform 2s linear;\r\n  transition: transform 2s linear, -webkit-transform 2s linear;\r\n}\r\n\r\n/*---------------------------------------- banner-------------------------------*/\r\n.banner {\r\n  background: url(" + escape(__webpack_require__(/*! ./images/banner.jpg */ "./resources/js/pages/images/banner.jpg")) + ");\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  padding: 160px 0px 160px 0px;\r\n  text-align: center;\r\n  position: relative;\r\n}\r\n\r\n.banner .title {\r\n     font-size: 60px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 1px;\r\n    text-shadow: 1px 3px 4px #8e9b92;\r\n    color: #28a745;\r\n}\r\n\r\n.banner .subtitle {\r\n  margin: 10px auto;\r\n  font-size: 22px;\r\n  color: #8a8a8a;\r\n  max-width: 700px;\r\n  font-family: 'Varela Round', sans-serif;\r\n}\r\n\r\n/*-------------------------------join now-----------------------*/\r\n.banner .join-now-form {\r\n  max-width: 400px;\r\n  margin: 30px auto;\r\n  border: 1px solid #12c78200;\r\n  background: white;\r\n  font-size: 20px;\r\n  font-weight: normal;\r\n      box-shadow: 1px 2px 5px #2de2664d;\r\n  border-radius: 5px;\r\n \r\n}\r\n/* .banner .join-now-form .row{\r\n\r\n} */\r\n\r\n.banner .join-now-form .country-code {\r\n  padding: 9px 0px;\r\n  border-right: 1px solid #28a745;\r\n}\r\n\r\n.banner .join-now-form .phone-number {\r\n  padding: 7px 0px;\r\n}\r\n\r\n.banner .join-now-form .phone-number input {\r\n  border: none;\r\n}\r\n\r\n.banner .join-now-form .phone-number input:focus {\r\n  outline: none;\r\n}\r\n\r\n.banner .join-now-form .submit {\r\n  padding: 5px 0px;\r\n  margin-right: -15px;\r\n  background: #28a745;\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n  text-shadow: 1px 2px 3px #3d3a3a;\r\n  border-bottom-right-radius: 5px;\r\n  border-top-right-radius: 5px;\r\n}\r\n.banner .join-now-form .submit:hover{\r\n   background: linear-gradient(45deg, #36ea5f, #00b693);\r\n   text-shadow: 1px 0px 0px #3d3a3a;\r\n}\r\n.banner .join-now-form .submit a{\r\n  font-size: 26px;\r\n  text-decoration: none;\r\n  font-weight: bolder;\r\n  color: white;\r\n}\r\n.banner .app-download{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n}\r\n.banner .app-download .play-store{\r\n    background: #14ac5b;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .app-store{\r\n   background: #9ea09d;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .play-store:hover{\r\n  background: grey;\r\n}\r\n.banner .app-download .app-store:hover{\r\n  background: #496f5a;\r\n}\r\n\r\n/*------------------------join-us modal -----------------*/\r\n.join .modal-body {\r\n  padding: 20px 30px;\r\n}\r\n\r\n.join .modal-body .title {\r\n      font-size: 40px;\r\n    color: #ffffff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 3px 4px #035a21;\r\n    margin-bottom: 40px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 2px;\r\n    text-align: center;\r\n    padding-bottom: 25px;\r\n   \r\n}\r\n.join .modal-body .form-control{\r\n  border:none;\r\n      background: #fbfbfb;\r\n}\r\n\r\n.join .modal-body:hover .title {\r\n     color: #28a745;\r\n    text-shadow: 1px 3px 4px #d1d9d4;\r\n}\r\n\r\n.join .modal-body form input {\r\n  height: 50px;\r\n  margin:35px auto;\r\n    padding: 0px 40px;\r\n}\r\n\r\n.join .modal-body .button-container {\r\n  text-align: center;\r\n}\r\n\r\n.join .modal-body .button-container button {\r\n      width: 80%;\r\n    border-radius: 50px;\r\n    font-size: 18px;\r\n    height: 50px;\r\n    color: #28a745;\r\n    margin-bottom: 20px;\r\n    background: #fdfffd;\r\n    box-shadow: 1px 2px 4px #bfc3c1;\r\n     font-family: 'Righteous', cursive;\r\n    text-align: center;\r\n    border:0px;\r\n}\r\n.join .modal-body .button-container button:hover{\r\nbackground: #28a745;\r\n    color: white;\r\n  }\r\n.join .modal-content button{\r\n  text-align: right;\r\n    padding-right: 10px;\r\n}\r\n#invite_code {\r\n  cursor: pointer;\r\n  margin-top: 10px;\r\n  margin-bottom: 30px;\r\n  color: #28a745;\r\n}\r\n\r\n.join .modal-body .button-container a {\r\n  text-align: center;\r\n  text-decoration: none;\r\n  font-weight: bold;\r\n  color: grey;\r\n}\r\n\r\n.form-control:focus {\r\n  background-color: #fff;\r\n  border-color: #8bfea6;\r\n  box-shadow: 0 0 0 0.1rem rgb(66, 183, 92);\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .banner{\r\n    padding: 140px 10px 140px 10px;\r\n  }\r\n   .banner .title {\r\n    font-size: 30px;\r\n    text-shadow: 1px 3px 4px #b3b4b3;\r\n  }\r\n  .banner .subtitle{\r\n    font-size: 16px;\r\n  }\r\n  .overlay-content{\r\n    top: 15%;\r\n  }\r\n}\r\n.banner .banner-wave{\r\n  display: block;\r\n}\r\n.banner .wave-img {\r\n    width: 100%;\r\n    \r\n    background-position: bottom;\r\n    background-size: cover;\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n}\r\n.banner .app-download{\r\n  padding: 0px 30px;\r\n}\r\n.banner .app-download .play-store, .banner .app-download .app-store{\r\n  padding: 5px 10px;\r\n}\r\n\r\n/*----------------end of banner ----------------*/\r\n/*---------------------features-----------------*/\r\n\r\n.feature-container{\r\n padding: 20px;\r\n   \r\n}\r\n.feature-container .title{\r\n  font-size: 40px;\r\n    color: #28a745;\r\n    font-family: 'Righteous', cursive;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 2px 3px #b0a7a7;\r\n}\r\n.feature-container .description{\r\n  font-size: 16px;\r\n  color: grey;\r\n  text-align: justify;\r\n  margin-bottom: 30px;\r\n}\r\n.feature-container .button-container{\r\n  text-align: right;\r\n}\r\n.feature-container .button-container .mybtn{\r\n  padding: 12px 20px;\r\n  color: white;\r\n  text-shadow: 1px 2px 3px #928e8e;\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  border-radius: 5px;\r\n  text-decoration: none;\r\n}\r\n.feature-container .button-container .mybtn:hover{\r\n   background: linear-gradient(235deg, #36ea5f, #00b693);\r\n}\r\n.feature-container .button-container a{\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bolder;\r\n  cursor: pointer;\r\n}\r\n.feature-container .button-container a:hover{\r\n  color: white;\r\n}\r\n\r\n.question-feature{\r\npadding: 90px 0px;\r\n\r\n}\r\n.analysis-feature{\r\npadding: 90px 0px;\r\nbackground: #f1fef18a;\r\n}\r\n.syllabus-feature{\r\npadding: 90px 0px;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .feature-container .title{\r\n    font-size: 26px;\r\n  }\r\n  .syllabus-feature, .question-feature, .analysis-feature{\r\n    padding: 60px 0px;\r\n  }\r\n\r\n}\r\n/*-----------------end of features--------------*/\r\n/*-------------------testimonial-----------------*/\r\n.testimonial-container{\r\n  padding: 90px 30px;\r\n}\r\n.testimonial-container .title{\r\n  font-size: 40px;\r\n  font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n  margin-bottom: 60px;\r\n   color: #28a745;\r\n   text-shadow: 1px 2px 3px #cec0c0;\r\n}\r\n.testimonial{\r\n    margin: 0 15px;\r\n}\r\n.testimonial .content{\r\n    padding: 15px 10px;\r\n    border-radius:6px;\r\n    margin-bottom: 15px;\r\n    position: relative;\r\n    background:#e67e22;\r\n    min-height: 100px;\r\n}\r\n.testimonial .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #e67e22;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content{\r\n    background: #1abc9c;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #1abc9c;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content{\r\n    background: #5bbc2e;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #9b59b6;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n.testimonial .description{\r\n    margin-bottom: 10px;\r\n    color:#fff;\r\n}\r\n.testimonial-pic{\r\n    float:left;\r\n    width: 80px;\r\n    height: 80px;\r\n}\r\n.testimonial-pic > img{\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    border: 2px solid #e5e5e5;\r\n    margin-left: 20px;\r\n}\r\n.testimonial .testimonial-review{\r\n    margin:3px 0 0 30px;\r\n    float: left;\r\n}\r\n.testimonial .testimonial-title{\r\n    font-size:16px;\r\n    text-transform:capitalize;\r\n    font-weight: bold;\r\n    margin:0;\r\n}\r\n.testimonial > .testimonial-review span{\r\n    color: darkgray;\r\n    display: block;\r\n    font-size: 13px;\r\n    margin-bottom:5px;\r\n}\r\n.testimonial .social-links{\r\n    padding:0;\r\n    margin:0;\r\n}\r\n.testimonial .social-links > li{\r\n    list-style:none;\r\n    display:inline-block;\r\n    margin-right:10px;\r\n}\r\n.testimonial .social-links > li > a.fa-twitter{\r\n    color:#00aced;\r\n}\r\n.testimonial .social-links > li > a.fa-facebook{\r\n    color: #3b599a;\r\n}\r\n.testimonial .social-links > li > a.fa-pinterest{\r\n    color:#E14782;\r\n}\r\n.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{\r\n    background: #1abc9c;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    background: #333;\r\n    opacity: 1;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    width: 10px;\r\n    height:10px;\r\n    margin: 5px 6px;\r\n}\r\n.testimonial-container .owl-nav{\r\n     font-size: 60px;\r\n    top: 25%;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.testimonial-container .owl-nav button{\r\n  background: green;\r\n}\r\n.testimonial-container .owl-nav button span{\r\n  color: #28a745;\r\n  padding: 0px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n .testimonial-container .title{\r\n  font-size: 26px;\r\n }\r\n}\r\n/*-------------------end of testimonial-------------*/\r\n/*-----------------app download container---------------*/\r\n.app-container{\r\n  padding: 120px 60px;\r\n  background: #3cc95c;\r\n}\r\n.app-container .title{\r\n  font-size: 40px;\r\n  color: #fff;\r\n    text-shadow: 0px 1px 5px #4a4848;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n \r\n  margin-bottom: 20px;\r\n}\r\n.app-container .subtitle{\r\n  color: white;\r\n  font-size: 24px;\r\n\r\n  margin-bottom: 50px;\r\n}\r\n.app-container .app-download .play-store, .app-container .app-download .app-store{\r\nbackground: black;\r\nmargin: 0px 10px;\r\nborder-radius: 5px;\r\npadding: 5px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .app-container{\r\n    padding: 90px 30px;\r\n  }\r\n  .app-container .title{\r\n    font-size: 30px;\r\n  }\r\n  .app-container .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*----------------hit question-----------------*/\r\n.hit-question{\r\n  padding: 60px 90px;\r\n  background: #3cc95c;\r\n\r\n}\r\n.hit-question .title{\r\n  color: white;\r\n  font-size: 40px;\r\n  text-shadow: 0px 1px 5px #7c7474;\r\n  font-weight: bold;\r\n}\r\n.hit-question .subtitle{\r\n  color: white;\r\n  font-size: 20px;\r\n}\r\n.hit-question .button-container{\r\n  text-align: center;\r\n}\r\n.hit-question .button-container .ask-button{\r\n  padding: 10px 20px;\r\n  background: #333333;\r\n  color: white;\r\n  width: 100%;\r\n      text-shadow: 1px 2px 3px #032f0d;\r\n      font-weight: bolder;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n\r\n  margin-top: 45px;\r\n}\r\n.hit-question .button-container .ask-button:hover{\r\n  background: #fff;\r\n  color: #000;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .hit-question{\r\n    padding: 60px 30px;\r\n  }\r\n  .hit-question .title{\r\n    font-size: 26px;\r\n  }\r\n  .hit-question .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*------------------footer--------------*/\r\n.footer{\r\n  padding:60px 90px 0px 90px;\r\n  background: #222222;\r\n  color: white;\r\n}\r\n.footer .title{\r\n      color: #28a745;\r\n    font-size: 24px;\r\n    font-family: 'Righteous', cursive;\r\n    margin-top: 30px;\r\n    letter-spacing: 1px;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 1px 3px black;\r\n}\r\n.footer .description{\r\n  text-align: justify;\r\n  padding-right: 40px;\r\n}\r\n.footer .footer-list .phone , .footer .footer-list .email{\r\n\r\n  cursor: pointer;\r\n}\r\n.footer .footer-list .phone i, .footer .footer-list .email i{\r\n    margin-right: 10px;\r\n}\r\n.footer .footer-list ul{\r\n  list-style: none;\r\n}\r\n.footer .footer-list ul a{\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n.footer .footer-list ul a:hover{\r\n  color: #28a745;\r\n}\r\n.footer .newsletter-container{\r\n      background: #cdd4cf14;\r\n    padding: 30px 30px;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.footer .newsletter-container .subscribe-title{\r\n  font-size: 24px;\r\n  margin-bottom: 20px;\r\n}\r\n.footer .newsletter-container .button-container{\r\nmargin-top: 30px;\r\ntext-align: right;\r\n}\r\n.footer .newsletter-container form .button-container .btn {\r\n  \r\n  border-radius: 5px !important;\r\n  \r\n}\r\n.footer .buttom-footer{\r\n  text-align: center;\r\n border-top: 1px solid #fffdfd4d;\r\n  padding: 15px 0px 5px 0px;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .footer{\r\n    padding: 60px 10px 0px 10px;\r\n  }\r\n  .footer .description{\r\n    padding-right: 0px;\r\n  }\r\n  .footer .newsletter-container .subscribe-title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .buttom-footer{\r\n    font-size: 18px;\r\n  }\r\n  .footer .title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .footer-list ul{\r\n    padding: 0;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*----------------------------------quiz style------------------*/\r\n/*----------quiz.css---------------*/\r\n.quiz{\r\n  position: relative;\r\n}\r\n.quiz nav{\r\n  height: 80px;\r\n}\r\n.quiz .quit-section{\r\n  position: absolute;\r\n  top: 30px;\r\n  right: 5%;\r\n  z-index: 1;\r\n}\r\n.quiz .quit-section .quit a{\r\n  border:2px solid white;\r\n  padding: 5px 10px;\r\n  border-radius: 5px;\r\n  color: white;\r\n  z-index: 999999;\r\n}\r\n.quiz .quit-section .quit:hover a{\r\nbackground-color: white;\r\ncolor: green;\r\ntext-decoration: none;\r\n}\r\n.test-section{\r\n  margin-top: 100px;\r\n}\r\n.timer-container{\r\n  margin:0px auto;\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 200px;\r\n  top: 0px;\r\n\r\n}\r\n.timer-wrapper{\r\n  margin:10px auto;\r\n  width: 140px;\r\n  height: 140px;\r\n  background:white;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px #eaf3ec;\r\n}\r\n.timer-wrapper .time{\r\n  line-height: 5.5;\r\n  font-size: 25px;\r\n  color: #1ba01b;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n.question-container{\r\n  margin: 20px auto;\r\n}\r\n.question-title{\r\n  font-size: 24px;\r\n  color:green;\r\n  font-weight: bold;    \r\n}\r\n/* .answer-container{\r\n\r\n} */\r\n.answer-wrapper{\r\n      border-radius: 5px;\r\n    padding: 10px 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    margin-top: 5px;\r\n    margin-bottom: 20px;\r\n    box-shadow: 1px 1px 4px #cac5c5;\r\n}\r\n.answer-wrapper:hover{\r\n  background-color: #ccffd8;\r\n}\r\n.answer-container  .active{\r\n  background-color: #ccffd8 !important;\r\n}\r\n\r\n.option-number{\r\n  border: 0.5px solid #47b15f;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  padding:0px 7px;\r\n  margin:0 auto;\r\n  color: slategray;\r\n  border-radius: 5px;\r\n\r\n\r\n}\r\n.option{\r\n  -webkit-box-flex: 1;\r\n          flex: 1;\r\n  margin-left: 10px;\r\n  font-size: 18px;\r\n  color: #069426;\r\n  font-weight: bold;\r\n}\r\n.option-tick{\r\n  display: none;\r\n  color: green;\r\n}\r\n.answer-wrapper:hover .option-number, .answer-container  .active .option-number{\r\n  padding: 0px 20px;\r\n  -webkit-transition: padding 0.2s ease-in;\r\n  transition: padding 0.2s ease-in;\r\n  background-color: #1cb13e;\r\n  color: white;\r\n}\r\n.answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{\r\n  display: block;\r\n}\r\n.progress-container{\r\n  position: fixed;\r\n  left: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  \r\n}\r\n.progress-container .progress{\r\n  height: 30px;\r\n}\r\n.progress-container .progress .progress-bar{\r\n  background-color: #47b15f;\r\n}\r\n.quiz .button-section{\r\n  margin: 30px auto;\r\n}\r\n.quiz .button-section .button-row{\r\n  display: -webkit-box;\r\n  display: flex;\r\n}\r\n.quiz .button-section .button-row .prev-btn{\r\n  background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding-top: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  width: 100px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n  color: white;\r\n}\r\n.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #fff;\r\n  font-size: 18px;\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {\r\n  background:linear-gradient(45deg, #36ea5f, #00b693);\r\n  \r\n  -webkit-transition:  background-color 0.2s linear;\r\n  \r\n  transition:  background-color 0.2s linear;\r\n  color: white;\r\n  border: none;\r\n\r\n\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  color: white;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n}\r\n.quiz .button-section .button-row .next-btn{\r\n    background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  -webkit-box-pack: right;\r\n          justify-content: right;\r\n  width: 100px;\r\n  cursor: pointer;\r\n  text-align: center;\r\n}\r\n\r\n\r\n@media (max-width: 768px)\r\n{\r\n  .answer-wrapper{\r\n  \r\n  padding: 5px 5px;\r\n  \r\n  }\r\n  .quiz nav {\r\n    height: 70px;\r\n  }\r\n  .timer-wrapper {\r\n    margin: 20px auto;\r\n    width: 100px;\r\n    height: 100px;\r\n  }\r\n  .timer-wrapper .time {\r\n    line-height: 6;\r\n    font-size: 16px;\r\n  }\r\n  .question-title {\r\n    font-size: 16px;\r\n  }\r\n  .quiz .quit-section {\r\n    top:25px;\r\n  }\r\n  .test-section {\r\n    margin-top: 80px;\r\n  }\r\n  .option{\r\n    font-size: 14px;\r\n  }\r\n  .option-number{\r\n    font-size: 12px;\r\n    padding: 0px 5px;\r\n  }\r\n  .question-container {\r\n    margin: 20px auto 10px auto;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #47b15f;\r\n  font-size: 18px;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n    display: none;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{\r\n    width: 40px;\r\n  }\r\n}\r\n/* The side navigation menu */\r\n.sidenav {\r\n  height: 100%; /* 100% Full-height */\r\n  width: 0; /* 0 width - change this with JavaScript */\r\n  position: fixed; /* Stay in place */\r\n  z-index: 1; /* Stay on top */\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #4a8457 ; /* Black*/\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  padding-top: 60px; /* Place content 60px from the top */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n  padding: 8px 8px 8px 32px;\r\n  text-decoration: none;\r\n  font-size: 25px;\r\n  color: #818181;\r\n  display: block;\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  \r\n}\r\n\r\n/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */\r\n@media screen and (max-height: 450px) {\r\n  .sidenav {padding-top: 15px;}\r\n  .sidenav a {font-size: 18px;}\r\n}\r\n\r\n#mySidenav a {\r\n  position: absolute; /* Position them relative to the browser window */\r\n right: -30px; /* Position them outside of the screen */\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s; /* Add transition on hover */\r\n  padding: 15px; /* 15px padding */\r\n  width: 100px; /* Set a specific width */\r\n  text-decoration: none; /* Remove underline */\r\n  font-size: 20px; /* Increase font size */\r\n  color: white; /* White text color */\r\n  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */\r\n}\r\n\r\n\r\n\r\n\r\n.off-canvas-btn{\r\n  position: fixed;\r\n  top:15%;\r\n  left: -80px;\r\n  width: 120px;\r\n  height: 50px;\r\n  background: #0ae196;\r\n  border-top-right-radius: 5px;\r\n  border-bottom-right-radius: 5px; \r\n  z-index: 1;\r\n}\r\n.off-canvas-btn:hover{\r\n  left: 0px;\r\n  -webkit-transition: left 0.3s linear;\r\n  transition: left 0.3s linear;\r\n}\r\n.off-canvas-btn .canvas-btn{\r\n  line-height: 3;\r\n  color: white;\r\n  padding: 0px 5px  0px 25px;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n.off-canvas-btn .canvas-btn i{\r\n  padding-left: 15px;\r\n}\r\n\r\n\r\n/*------------------------------class page -section --------------*/\r\n.class-section .title{\r\n   font-size: 36px;\r\n  font-weight: bold;\r\n  color: #28a745;\r\n  letter-spacing: 1px;\r\n  text-align: center;\r\n  margin-bottom: 26px;\r\n  text-shadow: 1px 2px 3px #c7bebe;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n/*-----syllabus section---------*/\r\n\r\n.class-section .syllabus-section{\r\n  \r\n  padding: 30px 20px;\r\n  background: #fff;\r\n\r\n}\r\n\r\n.class-section .syllabus-section .content{\r\n  margin: 40px auto;\r\n}\r\n.class-section .syllabus-section .content .subject{\r\n  background: #ffffff;\r\n  padding: 16px;\r\n     border-radius: 5px;\r\n    box-shadow: 0px 2px 3px 1px #b6b6b691;\r\n  margin-bottom: 25px;\r\n  cursor: pointer;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  font-family: sans-serif;\r\n  font-size: 20px;\r\n  color: #28a745;\r\n  letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n}\r\n.class-section .syllabus-section .demo-box{ \r\n  padding: 60px 30px;\r\n  background: #00800005;\r\n  border-radius: 5px;\r\n}\r\n/*---------------overview-section-----------*/\r\n.class-section .overview-section{\r\n  padding:60px 0px;\r\n}\r\n\r\n.class-section .overview-section p{\r\n  text-align: justify;\r\n  padding: 0px 20px;\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n.class-section .test-section {\r\n  margin-top: 20px;\r\n  padding: 90px 0px;\r\n  background: #eaf1ea;\r\n}\r\n.class-section .test-section .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.class-section .test-section .select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.class-section .test-section .select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n.class-section .test-section .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 30px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n.class-section .test-section .test .title{\r\n  font-size: 20px;\r\n  margin-top: 10px;\r\n  margin-bottom: 60px;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.class-section .test-section .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.class-section .test-section .owl-nav button{\r\n  background: #3cc95c;\r\n}\r\n.class-section .test-section .owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n  .class-section .syllabus-section{\r\n    padding: 30px 0px 0px 0px;\r\n  }\r\n.class-section .syllabus-section .content .subject{\r\n  padding: 5px 30px;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  line-height: 60px;\r\n}\r\n.class-section .test-section .test{\r\n \r\n  margin:15px auto;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n.class-section .title{\r\n  font-size: 26px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/*-----------------------preparation page----------------------*/\r\n.preparation-section{\r\n  padding: 0px 0px;\r\n  margin-bottom: 30px;\r\n}\r\n.preparation-section .curve-section{\r\n    box-shadow: 1px 2px 8px 2px #d2cccc;\r\n    border-radius: 10px;\r\n}\r\n.preparation-section .curve-section .preparation-container{\r\n  padding: 30px 60px;\r\n}\r\n.preparation-section .curve-section .preparation-container .title{\r\n  display: block;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: #606060;\r\n\r\n    letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n}\r\n.preparation-section .curve-section .preparation-container .subtitle{\r\n  display: block;\r\n    font-size: 18px;\r\n    color: black;\r\n    margin-bottom: 20px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .preparation-section .curve-section .preparation-container .title{\r\n    font-size: 18px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container .subtitle{\r\n    font-size: 14px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container {\r\n    padding: 30px 25px;\r\n}\r\n}", ""]);
 
 // exports
 
@@ -73485,104 +73485,46 @@ if (token) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Allpage/ClassNavbarsub.js":
-/*!***********************************************************!*\
-  !*** ./resources/js/components/Allpage/ClassNavbarsub.js ***!
-  \***********************************************************/
+/***/ "./resources/js/components/Allpage/Dropdown.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Allpage/Dropdown.js ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dropdown; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _DropdownItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DropdownItem */ "./resources/js/components/Allpage/DropdownItem.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Dropdown(props) {
+  // console.log(props);
+  var data = props.data;
+  var courses = data.courses;
+  var loading = props.loading;
+  var display;
+  console.log(courses);
 
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-function ClassNavbarsub() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      navbarItems = _useState2[0],
-      setNavbar = _useState2[1]; //  console.log(navbarItems);
-  // console.log('http://192.168.1.67')   
-
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://192.168.1.67/api/navs').then(function (response) {
-      setNavbar(response.data);
-    });
-  }, []);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, navbarItems.map(function (_ref) {
-    var id = _ref.id,
-        datas = _objectWithoutProperties(_ref, ["id"]);
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DropdownItem__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({
-      key: id
-    }, datas));
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (ClassNavbarsub);
-
-/***/ }),
-
-/***/ "./resources/js/components/Allpage/DropdownItem.js":
-/*!*********************************************************!*\
-  !*** ./resources/js/components/Allpage/DropdownItem.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-
-function DropdownItem(_ref) {
-  var courses = _ref.courses,
-      name = _ref.name;
-
-  if (name == "Class") {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, courses.map(function (course) {
+  if (loading == false) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "dropdown"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: " dropdown-toggle",
+      "data-toggle": "dropdown"
+    }, data.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "dropdown-menu"
+    }, courses.map(function (course) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "dropdown-item",
         key: course.id,
         href: "#"
       }, course.name);
-    }));
+    })));
   } else {
-    return null;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "....");
   }
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(DropdownItem));
 
 /***/ }),
 
@@ -73595,19 +73537,40 @@ function DropdownItem(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Nav; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ClassNavbarsub__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ClassNavbarsub */ "./resources/js/components/Allpage/ClassNavbarsub.js");
-/* harmony import */ var _PreparationNavbarsub__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PreparationNavbarsub */ "./resources/js/components/Allpage/PreparationNavbarsub.js");
+/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dropdown */ "./resources/js/components/Allpage/Dropdown.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+function Nav() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      navbarItems = _useState2[0],
+      setNavbarItems = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      loading = _useState4[0],
+      setLoading = _useState4[1];
 
-function Navbar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  console.log(loading); // console.log('http://192.168.1.67')   
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios.get('http://192.168.1.86/api/navs').then(function (response) {
+      setNavbarItems(response.data.data);
+      setLoading(false);
+    });
+  }, []);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "navbar",
     className: "d-flex justify-content-between sticky  "
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -73620,21 +73583,12 @@ function Navbar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "index.html",
     className: "active"
-  }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: " dropdown-toggle",
-    "data-toggle": "dropdown"
-  }, "Classes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown-menu"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClassNavbarsub__WEBPACK_IMPORTED_MODULE_2__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: " dropdown-toggle",
-    "data-toggle": "dropdown"
-  }, "Preparation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown-menu"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PreparationNavbarsub__WEBPACK_IMPORTED_MODULE_3__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Home"), navbarItems.map(function (data, id) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dropdown__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      data: data,
+      loading: loading
+    });
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#features"
   }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#blog"
@@ -73704,112 +73658,6 @@ function Navbar() {
     href: "quiz.html"
   }, "Blog"))));
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (Navbar);
-
-/***/ }),
-
-/***/ "./resources/js/components/Allpage/PreparationDropdown.js":
-/*!****************************************************************!*\
-  !*** ./resources/js/components/Allpage/PreparationDropdown.js ***!
-  \****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-
-function PreparationDropdownItem(_ref) {
-  var courses = _ref.courses,
-      name = _ref.name;
-
-  if (name == "Preparation") {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, courses.map(function (course) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "dropdown-item",
-        key: course.id,
-        href: "#"
-      }, course.name);
-    }));
-  } else {
-    return null;
-  }
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(PreparationDropdownItem));
-
-/***/ }),
-
-/***/ "./resources/js/components/Allpage/PreparationNavbarsub.js":
-/*!*****************************************************************!*\
-  !*** ./resources/js/components/Allpage/PreparationNavbarsub.js ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _PreparationDropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PreparationDropdown */ "./resources/js/components/Allpage/PreparationDropdown.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-function PreparationNavbarsub() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      navbarItems = _useState2[0],
-      setNavbar = _useState2[1]; //  console.log(navbarItems);
-  // console.log('http://192.168.1.67')   
-
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://192.168.1.67/api/navs').then(function (response) {
-      setNavbar(response.data);
-    });
-  }, []); // useEffect(()=>{
-  //     setNavbar()
-  // },[])
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, navbarItems.map(function (_ref) {
-    var id = _ref.id,
-        datas = _objectWithoutProperties(_ref, ["id"]);
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PreparationDropdown__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({
-      key: id
-    }, datas));
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (PreparationNavbarsub);
 
 /***/ }),
 
@@ -74627,6 +74475,94 @@ module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
 
 /***/ }),
 
+/***/ "./resources/js/quiz/Timer.js":
+/*!************************************!*\
+  !*** ./resources/js/quiz/Timer.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+function Timer() {
+  // var counter = 0;
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      Minute = _useState2[0],
+      setMinute = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Second = _useState4[0],
+      setSecond = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState6 = _slicedToArray(_useState5, 2),
+      Hour = _useState6[0],
+      setHour = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(10),
+      _useState8 = _slicedToArray(_useState7, 2),
+      Time = _useState8[0],
+      setTime = _useState8[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var interval = setInterval(function () {
+      if (Time != 0) {
+        setSecond(Time % 60);
+        setMinute(Math.floor(Time / 60 % 60));
+        setHour(Math.floor(Time / 60 / 60));
+        setTime(function (Time) {
+          return Time - 1;
+        });
+      } else {
+        setSecond(0);
+        setMinute(0);
+        setHour(0);
+        setTime(function (Time) {
+          return 0;
+        });
+      }
+    }, 1000);
+    return function () {
+      return clearInterval(interval);
+    };
+  }, [Time]);
+  console.log(Time);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "time"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hour"
+  }, Hour), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "minute"
+  }, ":", Minute), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "second"
+  }, ":", Second))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Timer);
+
+/***/ }),
+
 /***/ "./resources/js/quiz/question.json":
 /*!*****************************************!*\
   !*** ./resources/js/quiz/question.json ***!
@@ -74654,6 +74590,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _question_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./question.json */ "./resources/js/quiz/question.json");
 var _question_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./question.json */ "./resources/js/quiz/question.json", 1);
+/* harmony import */ var _Timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Timer */ "./resources/js/quiz/Timer.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -74675,30 +74612,49 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var start = false;
 function Newquiz(props) {
   var allQuestion = _question_json__WEBPACK_IMPORTED_MODULE_2__.length;
+  var localData = localStorage.getItem('initialValue');
+  var localActive = localStorage.getItem('active');
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localActive ? JSON.parse(localActive) : []),
       _useState2 = _slicedToArray(_useState, 2),
-      currentQuestionIndex = _useState2[0],
-      setCurrentQuestionIndex = _useState2[1];
+      active = _useState2[0],
+      setActive = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localData ? JSON.parse(localData) : 0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      currentQuestionIndex = _useState4[0],
+      setCurrentQuestionIndex = _useState4[1];
 
   var currentQuestion = useCurrentQuestion(currentQuestionIndex);
+  var totalMarks = localStorage.getItem('score');
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-      _useState4 = _slicedToArray(_useState3, 2),
-      Score = _useState4[0],
-      setScore = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(totalMarks ? JSON.parse(totalMarks) : []),
       _useState6 = _slicedToArray(_useState5, 2),
-      SpecificMark = _useState6[0],
-      setSpecificMark = _useState6[1];
+      Score = _useState6[0],
+      setScore = _useState6[1];
 
-  function handleChange(Correct, Index) {
-    SpecificMark.filter(function (_ref) {
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState8 = _slicedToArray(_useState7, 2),
+      SpecificMark = _useState8[0],
+      setSpecificMark = _useState8[1];
+
+  console.log(active);
+
+  function handleChange(Correct, Index, activeId) {
+    active.filter(function (_ref) {
       var datas = _extends({}, _ref);
+
+      return active[Index] = {
+        questionId: Index,
+        answerId: activeId
+      };
+    });
+    SpecificMark.filter(function (_ref2) {
+      var datas = _extends({}, _ref2);
 
       return Score[Index] = Correct;
     });
@@ -74707,15 +74663,32 @@ function Newquiz(props) {
       correct: Correct
     }]));
     Score[Index] = Correct;
-  }
-
-  function FinishQuiz() {
-    var _markCounter$Total = _slicedToArray(markCounter.Total, 2),
-        TotalMarks = _markCounter$Total[0],
-        setTotalMarks = _markCounter$Total[1];
+    active[Index] = {
+      questionId: Index,
+      answerId: activeId
+    };
+    localStorage.setItem('active', JSON.stringify(active));
+    localStorage.setItem('score', JSON.stringify(Score));
   }
 
   var markCounter = useMarkCounter(Score);
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(markCounter),
+      _useState10 = _slicedToArray(_useState9, 2),
+      Total = _useState10[0],
+      setTotal = _useState10[1];
+
+  function is_active(qid, aid) {
+    var value = false; // console.log(active);
+
+    active.map(function (active) {
+      if (active.questionId == qid && active.answerId == aid) {
+        value = true;
+      }
+    });
+    return value;
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "quiz"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74734,19 +74707,7 @@ function Newquiz(props) {
       background: "linear-gradient(45deg, #0be788, #09d6af)",
       boxShadow: "0px 2px 4px #a1a4a4"
     }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timer-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timer-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "time"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "hour"
-  }, "02"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "minute"
-  }, ":56"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "second"
-  }, ":34"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Timer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container test-section"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "question-container"
@@ -74761,9 +74722,9 @@ function Newquiz(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-6 col-sm-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "answer-wrapper",
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[0].id) ? "active" : ""),
     onClick: function onClick() {
-      return handleChange(currentQuestion.initialQuestion.answer[0].correct, currentQuestionIndex);
+      return handleChange(currentQuestion.initialQuestion.answer[0].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[0].id);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "option-number"
@@ -74776,9 +74737,9 @@ function Newquiz(props) {
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-6 col-sm-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "answer-wrapper",
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[1].id) ? "active" : ""),
     onClick: function onClick() {
-      return handleChange(currentQuestion.initialQuestion.answer[1].correct, currentQuestionIndex);
+      return handleChange(currentQuestion.initialQuestion.answer[1].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[1].id);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "option-number"
@@ -74791,9 +74752,9 @@ function Newquiz(props) {
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-6 col-sm-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "answer-wrapper",
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[2].id) ? "active" : ""),
     onClick: function onClick() {
-      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex);
+      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[2].id);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "option-number"
@@ -74808,7 +74769,7 @@ function Newquiz(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "answer-wrapper",
     onClick: function onClick() {
-      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex);
+      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[3].id);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "option-number"
@@ -74860,7 +74821,7 @@ function Newquiz(props) {
     className: "progress-bar",
     role: "progressbar",
     style: {
-      width: "75%"
+      width: currentQuestionIndex / allQuestion * 100 + "%"
     },
     "aria-valuenow": "75",
     "aria-valuemin": "0",
@@ -74869,12 +74830,13 @@ function Newquiz(props) {
 }
 
 function useCurrentQuestion(initialValue) {
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]),
-      _useState8 = _slicedToArray(_useState7, 2),
-      initialQuestion = _useState8[0],
-      setQuestions = _useState8[1];
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]),
+      _useState12 = _slicedToArray(_useState11, 2),
+      initialQuestion = _useState12[0],
+      setQuestions = _useState12[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    localStorage.setItem('initialValue', JSON.stringify(initialValue));
     setQuestions(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]);
   }, [initialValue]);
   return {
@@ -74883,11 +74845,10 @@ function useCurrentQuestion(initialValue) {
   };
 }
 
-function useMarkCounter(Score) {
-  var Total = Score.reduce(function (a, b) {
+function useMarkCounter(myMarks) {
+  var Total = myMarks.reduce(function (a, b) {
     return a + b;
   }, 0);
-  console.log(Total);
   return Total;
 }
 

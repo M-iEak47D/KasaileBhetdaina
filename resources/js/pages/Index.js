@@ -10,9 +10,9 @@ function Index(){
         <BrowserRouter>
             <Switch>    
                 <Route exact path="/" component={Homepage} />
+                {/* <Route path= */}
             </Switch>
-            {/* <Newquiz></Newquiz> */}
-        </BrowserRouter>
+         </BrowserRouter>
     )
 }
 
