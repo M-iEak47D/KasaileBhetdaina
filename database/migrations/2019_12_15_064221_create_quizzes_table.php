@@ -19,6 +19,7 @@ class CreateQuizzesTable extends Migration
             $table->integer('time')->unsigned();
             $table->boolean('status')->default(1);
             $table->longText('description')->nullable();
+            $table->integer('total_question')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });

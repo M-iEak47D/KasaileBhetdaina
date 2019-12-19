@@ -58,6 +58,7 @@ class QuizController extends Controller
         $quiz->title = $request->title;
         $quiz->time = $request->time;
         $quiz->description = $request->description;
+        $quiz->total_question = $request->total_question;
         $quiz->status = $request->status;
 
         $return = $quiz->save();
@@ -116,6 +117,7 @@ class QuizController extends Controller
         $quiz->title = $request->title;
         $quiz->time = $request->time;
         $quiz->description = $request->description;
+        $quiz->total_question = $request->total_question;
         $quiz->status = $request->status;
 
         $return = $quiz->Update();

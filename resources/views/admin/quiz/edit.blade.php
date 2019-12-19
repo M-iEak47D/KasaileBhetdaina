@@ -43,6 +43,10 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label>Total Question To Assign</label>
+                    <input type="number" class="form-control" name="total_question" value="{{ $quiz->total_question }}" placeholder="Total Question To Assign"/>
+                </div>
+                <div class="form-group">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" checked value="1" class="custom-control-input" id="hideFormModal" data-parsley-multiple="groups"
                         >
