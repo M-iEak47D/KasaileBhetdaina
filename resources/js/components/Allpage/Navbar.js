@@ -6,6 +6,19 @@ import PreparationNavbarsub from "./PreparationNavbarsub"
 
 
 function Navbar(){
+
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
+
     return(
 <div>
      <div id="navbar" className="d-flex justify-content-between sticky  ">
@@ -42,7 +55,7 @@ function Navbar(){
                 <a href="" data-toggle="modal" data-target="#myModal2">Login</a>
             </div>
         </div>
-        <span  className="d-block d-sm-none"><i className="fa fa-bars"></i></span>
+        <span  className="d-block d-sm-none" onClick={openNav}><i className="fa fa-bars"></i></span>
     </div>
 
     {/* // <!-- The overlay --> */}

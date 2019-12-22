@@ -12,3 +12,4 @@
 */
 
 Route::view('/{path?}', 'welcome');
+Route::view('/dashboard/{path?}', 'welcome');
