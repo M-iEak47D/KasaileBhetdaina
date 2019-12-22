@@ -9,10 +9,10 @@ export default function Learn(){
         </div>
         <div className="container learn-subject">
             <div className="row">
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#ffed6a'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-atom"></i>
                             </div>
                             <div className="title">
@@ -21,10 +21,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: "#ff8282"}}>
+                            <div className="img-container" >
                                 <i className="fa fa-flask"></i>
                             </div>
                             <div className="title">
@@ -33,10 +33,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#6c97f9'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-dna"></i>
                             </div>
                             <div className="title">
@@ -45,10 +45,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#8af966'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-calculator"></i>
                             </div>
                             <div className="title">
@@ -57,10 +57,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#ff836f'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-book"></i>
                             </div>
                             <div className="title">
@@ -69,10 +69,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#ee8fff'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-users"></i>
                             </div>
                             <div className="title">
@@ -81,10 +81,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#bb98ff'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-mountain"></i>
                             </div>
                             <div className="title">
@@ -93,10 +93,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{ backgroundColor: '#ffed6a'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-laptop"></i>
                             </div>
                             <div className="title">
@@ -105,10 +105,10 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
-                            <div className="img-container" style={{backgroundColor: '#6c97f9'}}>
+                            <div className="img-container" >
                                 <i className="fa fa-file-invoice"></i>
                             </div>
                             <div className="title">
@@ -117,7 +117,7 @@ export default function Learn(){
                         </div>
                     </a>
                 </div>
-                <div className="col-md-3 col-lg-3 col-3">
+                <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
                         <div className="subject-container">
                             <div className="img-container">

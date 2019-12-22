@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
   z-index: 2; 
   top: 0; 
   left: 0;
-  background:linear-gradient(180deg, #2ad181, #2ad181d1);
+  background:linear-gradient(180deg, #2ad181, #009d98);
   overflow-x: hidden; 
    -ms-overflow-style: none;
   transition: 0.5s; 
@@ -97,7 +97,7 @@ width: 100%;
     z-index: 9;
     padding: 5px 15px;
      transition: 0.5s; 
-    background: #2ad181;
+    background: #27cd81;
 }
 .userSidenav .company-container .img-container{
   width:  50px;
@@ -190,7 +190,7 @@ width: 100%;
     padding-bottom: 60px;
   }
   .userSidenav .company-container .img-container{
-  width:  40px;
+  width:  70px;
   
   
 }
@@ -200,7 +200,7 @@ width: 100%;
   }
   .userSidenav .company-container{
    position: relative;
-    padding: 5px 5px;
+    padding: 12px 5px 5px 5px;
   }
 
   
@@ -260,6 +260,7 @@ width: 100%;
 #main {
   transition: margin-left .5s;
   margin-left: 250px;
+  background: #fff;
   
 }
 .navbar{
@@ -355,7 +356,7 @@ width: 100%;
 .main-title{
   text-align: center;
   font-size: 36px;
-  color: #656565;
+  color: #009d6db3;
   font-family: 'Righteous', cursive;
   letter-spacing: 1px;
 }
@@ -374,33 +375,40 @@ width: 100%;
   color: black;
 }
 .learn-subject .img-container{
-      background: #67f9eb;
+     
     color: white;
     border-radius: 50px;
-    padding: 20px;
+    padding: 15px 0px 5px 0px;
     text-align: center;
 }
-.learn-subject .img-container{
- 
-  
-  
-  
-  background: #74ffd2;
-}
+
 .learn-subject .img-container i{
+  color: #31d285;
   font-size: 40px;
-  text-shadow: 1px 2px 3px #868686;
+  
 }
 .learn-subject .subject-container{
- margin-bottom: 30px;
+  margin: 10px 15px 20px 15px;
+  padding: 15px;
+ border-radius: 10px;
+ background: #fff;
+ box-shadow: 1px 0px 5px 1px #e9efec;
+}
+.learn-subject .subject-container:hover{
+  background:linear-gradient(135deg, #2ad181, #009d98);
 }
 .learn-subject .subject-container:hover .img-container i{
+  color: white;
   transform: scale(1.3);
   transition: transform 0.3s ease-out;
+}
+.learn-subject .subject-container:hover .title{
+  color: white;
 }
 .learn-subject .subject-container .title{
   text-align: center;
   margin:5px auto;
+  color:#686868;
   font-weight: bold;
 }
 
@@ -411,11 +419,16 @@ width: 100%;
   .learn-subject{
     padding: 30px 0px;
   }
-  .learn-subject .img-container i{
-  font-size: 26px;
-}
+
 .learn-subject .img-container{
   padding: 15px;
+}
+.learn-subject .subject-container{
+  margin:0px;
+  margin-bottom: 25px;
+}
+.learn-subject .img-container i {
+  font-size: 56px;
 }
 .learn-subject .subject-container .title{
   font-size: 14px;
@@ -430,6 +443,7 @@ width: 100%;
   margin-top: 30px;
     padding: 5px;
     border-radius: 5px;
+    background: #fff;
     box-shadow: 0px 0px 5px 1px #ebe9e9;
 }
 .practise-subject .practise-wrapper a{
@@ -474,7 +488,7 @@ width: 100%;
   padding: 15px 10px;
 }
 .practise-report .report-wrapper{
-  
+  background:#fff;
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
