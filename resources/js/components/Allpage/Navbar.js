@@ -1,12 +1,10 @@
 import React, { Component, useState, setState, useEffect } from 'react'
 import Dropdown from './Dropdown'
 
-<<<<<<< HEAD
-import ClassNavbarsub from "./ClassNavbarsub";
-import PreparationNavbarsub from "./PreparationNavbarsub"
 
 
-function Navbar(){
+
+export default function Navbar(){
 
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -20,20 +18,6 @@ function closeNav() {
 
 
 
-=======
-export default function Nav(){
-    const [navbarItems, setNavbarItems] = useState([]);
-    const [loading,setLoading] = useState(true);
-     console.log(loading);
-        // console.log('http://192.168.1.67')   
-        useEffect(()=>{
-            axios.get('http://192.168.1.86/api/navs')
-            .then(response=>{
-                setNavbarItems(response.data.data);
-                setLoading(false)
-            })  
-        }, []);
->>>>>>> a6f298ecaac314deb1a1e35b66516fec19751c97
     return(
         <React.Fragment>
      <div id="navbar" className="d-flex justify-content-between sticky  ">
@@ -42,9 +26,9 @@ export default function Nav(){
         </div>
         <div className="nav d-none d-sm-block">
             <a href="index.html" className="active">Home</a>
-            {navbarItems.map((data,id) => 
+            {/* {navbarItems.map((data,id) => 
               <Dropdown data={data} loading={loading}/>
-            )}
+            )} */}
            {/* <div className="dropdown">
               <a className=" dropdown-toggle" data-toggle="dropdown">
                 Classs
