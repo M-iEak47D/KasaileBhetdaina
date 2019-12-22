@@ -2,10 +2,6 @@ import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import questions from "./question.json";
 import Timer from "./Timer"
-<<<<<<< HEAD
-
-=======
->>>>>>> 788be5ea29cbdcd4a1c58fdd21e2198c01fa3bd5
 
 export default function Newquiz(props) {
     const allQuestion = questions.length;
