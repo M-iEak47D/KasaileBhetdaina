@@ -985,6 +985,10 @@ text-decoration: none;
 .answer-wrapper:hover{
   background-color: #ccffd8;
 }
+.answer-container  .active{
+  background-color: #ccffd8 !important;
+}
+
 .option-number{
   border: 0.5px solid #47b15f;
   font-weight: bold;
@@ -1007,13 +1011,13 @@ text-decoration: none;
   display: none;
   color: green;
 }
-.answer-wrapper:hover .option-number{
+.answer-wrapper:hover .option-number, .answer-container  .active .option-number{
   padding: 0px 20px;
   transition: padding 0.2s ease-in;
   background-color: #1cb13e;
   color: white;
 }
-.answer-wrapper:hover .option-tick{
+.answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{
   display: block;
 }
 .progress-container{
