@@ -2,6 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function Banner(){
+    // invite code collapse in join form
+function displayCode() {
+    document.getElementById('invite_code_collapse').style.display = 'block';
+}
     return(
         <div>
         <div className="banner">
@@ -63,7 +67,7 @@ function Banner(){
                         <input type="text" className="form-control" placeholder="Your Name" />
                     </div>
                     <div className="text-center my-2">
-                        <div href="" id="invite_code" >I HAVE INVITE CODE</div>
+                        <div href="" id="invite_code"  onClick={displayCode}>I HAVE INVITE CODE</div>
                         <div id="invite_code_collapse" style={{display:'none'}}>
                             <input name="text" type="tel" value="" placeholder="Invite Code" className="form-control" />
                         </div>

@@ -1,5 +1,6 @@
 import React, { Component, useState, setState, useEffect } from 'react'
 import Dropdown from './Dropdown'
+<<<<<<< HEAD
 
 export default function Nav(){
     const [navbarItems, setNavbarItems] = useState([]);
@@ -13,6 +14,26 @@ export default function Nav(){
                 setLoading(false)
             })  
         }, []);
+=======
+
+
+
+
+export default function Navbar(){
+
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
+
+>>>>>>> 788be5ea29cbdcd4a1c58fdd21e2198c01fa3bd5
     return(
         <React.Fragment>
      <div id="navbar" className="d-flex justify-content-between sticky  ">
@@ -21,9 +42,15 @@ export default function Nav(){
         </div>
         <div className="nav d-none d-sm-block">
             <a href="index.html" className="active">Home</a>
+<<<<<<< HEAD
             {navbarItems.map((data,id) => 
               <Dropdown data={data} loading={loading}/>
             )}
+=======
+            {/* {navbarItems.map((data,id) => 
+              <Dropdown data={data} loading={loading}/>
+            )} */}
+>>>>>>> 788be5ea29cbdcd4a1c58fdd21e2198c01fa3bd5
            {/* <div className="dropdown">
               <a className=" dropdown-toggle" data-toggle="dropdown">
                 Classs
@@ -52,7 +79,7 @@ export default function Nav(){
                 <a href="" data-toggle="modal" data-target="#myModal2">Login</a>
             </div>
         </div>
-        <span  className="d-block d-sm-none"><i className="fa fa-bars"></i></span>
+        <span  className="d-block d-sm-none" onClick={openNav}><i className="fa fa-bars"></i></span>
     </div>
 
     {/* // <!-- The overlay --> */}
