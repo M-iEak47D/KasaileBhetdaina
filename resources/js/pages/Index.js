@@ -7,12 +7,7 @@ import {BrowserRouter,Route, Switch} from 'react-router-dom'
 
 function Index(){
     return(
-        <BrowserRouter>
-            <Switch>    
-                <Route exact path="/" component={Homepage} />
-            </Switch>
-            {/* <Newquiz></Newquiz> */}
-        </BrowserRouter>
+        <Newquiz />
     )
 }
 
