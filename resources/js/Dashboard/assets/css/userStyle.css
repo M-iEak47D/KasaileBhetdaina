@@ -260,7 +260,7 @@ width: 100%;
 #main {
   transition: margin-left .5s;
   margin-left: 250px;
-  background: #fff;
+  background: #f8f8f9;
   
 }
 .navbar{
@@ -350,15 +350,16 @@ width: 100%;
 
 /*---------------------------------------Dynamic Page CSS---------------------*/
 .main-content{
-      padding: 90px 20px;
+      padding: 60px 0px;
       z-index: 0;
 }
 .main-title{
   text-align: center;
   font-size: 36px;
   color: #009d6db3;
-  font-family: 'Righteous', cursive;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
+  margin-top: 60px;
 }
 .sub-title{
       font-size: 26px;
@@ -392,7 +393,7 @@ width: 100%;
   padding: 15px;
  border-radius: 10px;
  background: #fff;
- box-shadow: 1px 0px 5px 1px #e9efec;
+ box-shadow:1px 0px 10px 1px #e2e2e4;
 }
 .learn-subject .subject-container:hover{
   background:linear-gradient(135deg, #2ad181, #009d98);
@@ -437,7 +438,7 @@ width: 100%;
 }
 /*--------------------------practise-subject-----------------------*/
 .practise-subject{
-  padding: 30px 30px;
+  padding: 30px 60px;
 }
 .practise-subject .practise-wrapper{
   margin-top: 30px;
@@ -455,7 +456,7 @@ width: 100%;
   display: inline-block;
   height: 50px;
   margin-left: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 30px;
   color: white;
   border-radius: 5px;
@@ -485,7 +486,7 @@ width: 100%;
 }
 
 .practise-report{
-  padding: 15px 10px;
+  padding: 15px 60px;
 }
 .practise-report .report-wrapper{
   background:#fff;
@@ -618,3 +619,88 @@ width: 100%;
 }
 
 /*----------------------end of class page----------------------*/
+/* subject page */
+.main-subject-containter{
+  background: #fff;
+}
+.subject-navbar{
+  padding: 60px 60px 15px 60px;
+  position: relative;
+ 
+  border-bottom: 2px solid #ffffff;
+}
+.subject-navbar span{
+  position: absolute;
+  top: 15px;
+  font-size: 24px;
+  left: 15px;
+}
+
+.subject-navbar .icon-box{
+  display: inline-block;
+  padding: 15px;
+  vertical-align: top;
+  background: white;
+  box-shadow: 0px 0px 5px 1px #d8d3d3;
+  border-radius: 5px;
+  color: #25cb83;
+  font-size: 36px;
+}
+.subject-navbar .title-box{
+  display: inline-block;
+  padding-left: 20px;
+}
+.subject-navbar .title-box h2{
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.subject-navbar .nav{
+  margin-top: 15px;
+}
+.subject-navbar .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: white;
+    color: #26cc83;
+    border: 1px solid #b5d8c8bf;
+    box-shadow: 0px 5px 10px #a7ccbc;
+    border-radius: 10px;
+    border-bottom: 5px solid #4bc38e;
+}
+.subject-navbar .nav-pills li{
+padding-right: 15px;
+}
+.subject-navbar .nav-pills li a{
+  color: #262828;
+}
+.subject-content{
+  margin-top: 30px;
+}
+.subject-content .chapter-wrapper{
+  padding: 30px;
+    
+  box-shadow: 0px 2px 3px #f6f6f6;
+    margin-bottom: 10px;
+}
+.subject-content .chapter-wrapper .chapter-title{
+  font-size: 22px;
+}
+.subject-content .chapter-wrapper .chapter-title span{
+  padding-right: 10px;
+  color: #25cb83;
+}
+.subject-content .chapter-wrapper .option{
+  
+  text-align: right;
+}
+.subject-content .chapter-wrapper .option a{
+  display: inline-block;
+  padding-right: 30px;
+  margin-top: 5px;
+  color: #2ad181;
+  font-size: 20px;
+}
+.subject-content .chapter-wrapper .option a:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out, color 0.5s linear;
+  color: #009d98;
+}

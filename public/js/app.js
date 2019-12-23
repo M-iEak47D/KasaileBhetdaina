@@ -6323,7 +6323,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato:700,900|Mukta:400,500,600&display=swap);", ""]);
 
 // module
-exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Mukta', sans-serif;\r\n\r\n}\r\nh1, h2, h3, h4, h5, h6{\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n  height: 100%; \r\n  width: 250px; \r\n  position: fixed; \r\n  z-index: 2; \r\n  top: 0; \r\n  left: 0;\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n  background:linear-gradient(180deg, #2ad181, #009d98);\r\n  overflow-x: hidden; \r\n   -ms-overflow-style: none;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; \r\n  padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.userSidenav .sideTab{\r\n\tdisplay: inline-block;\r\n      padding-left: 10px;\r\n       -webkit-transition: 0.5s;\r\n       transition: 0.5s; \r\n}\r\n.userSidenav .profile-container{\r\n\ttext-align: center;\r\n\tpadding: 20px 10px;\r\n  margin-top: 60px;\r\n\t}\r\n.userSidenav .profile-container .img-container{\r\n\twidth:40%;\r\n\tbox-shadow: 0px 0px 5px 4px #5753538f;\r\n\tmargin:0px auto;\r\n\toverflow: hidden;\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name{\r\n\tfont-size: 18px;\r\n\t    padding-bottom: 10px;\r\n  color: white;\r\n\r\n\t    text-shadow: 1px 2px 3px #3b3939;\r\n      font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\ndisplay: block;\r\n\ttext-align: center !important;\r\n\tborder-bottom:1px solid #c7c7c7;\r\n}\r\n.userSidenav .title-name+.sideTab{\r\nwidth: 100%;\r\n}\r\n.userSidenav .title-name .grade{\r\n  font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n\r\n}\r\n.userSidenav .title-name a{\r\n        display:block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n    \r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container{\r\n    position: fixed;\r\n    top:0;\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n     -webkit-transition: 0.5s;\r\n     transition: 0.5s; \r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container{\r\n  width:  50px;\r\n  display: inline-block;\r\n  \r\n}\r\n.userSidenav .company-container .img-container img{\r\n  border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name{\r\n  display: inline-block;\r\n  border: none;\r\n  \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: none;\r\n}\r\n.userSidenav .download-title{\r\n    font-size: 18px;\r\n      padding-bottom: 10px;\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #3b3939;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n  text-align: center !important;\r\n\r\n}\r\n.userSidenav .download-app .play-store, .userSidenav .download-app .app-store{\r\n  background: black;\r\n  margin: 0px 10px;\r\n  border-radius: 5px;\r\n  padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a, .userSidenav .download-app .app-store a{\r\n  padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n  padding: 10px 8px 10px 32px;\r\n  text-decoration: none;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  display: block;\r\n  -webkit-transition: 0.1s;\r\n  transition: 0.1s;\r\n  position: relative;\r\n}\r\n.userSidenav a::after{\r\n  content:'';\r\n  position: absolute;\r\n  top:0;\r\n  left: 0;\r\n  right:0;\r\n  bottom: 0;\r\n  background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n  color: #000;\r\n}\r\n.userSidenav .active{\r\n  background: #fff;\r\n  color: #036c17;\r\n}\r\n\r\n\r\n.userSidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav{\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px  solid #fff;\r\n    \r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a{\r\n  display: inline-block;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  #userSideNav{\r\n    padding-bottom: 60px;\r\n  }\r\n  .userSidenav .company-container .img-container{\r\n  width:  70px;\r\n  \r\n  \r\n}\r\n  .userSidenav{\r\n    width: 0px;\r\n        background: #eeeeee;\r\n  }\r\n  .userSidenav .company-container{\r\n   position: relative;\r\n    padding: 12px 5px 5px 5px;\r\n  }\r\n\r\n  \r\n.userSidenav .profile-container{\r\n  margin-top: 0;\r\n}\r\n.userSidenav a{\r\n      color: #3d3b3b;\r\n    font-weight: bold;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    \r\n    color: #32c24d;\r\n    text-shadow: 1px 2px 3px #f4f1f1;\r\n   \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: inline-block;\r\n  margin-left: 12px;\r\n}\r\n .userSidenav .company-container .title-name{\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #767575;\r\n\r\n }\r\n.userSidenav .footer-nav{\r\n  padding: 3px 15px;\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n          justify-content: space-between;\r\n      box-shadow:0px -1px 5px #d2d2d2;\r\n\r\n}\r\n.userSidenav .footer-nav a i{\r\n  display: block;\r\n}\r\n.userSidenav .footer-nav a{\r\n     padding: 5px;\r\n    color: #3b3a3a;\r\n}\r\n.userSidenav .footer-nav .active {\r\n  color:green;\r\n}\r\n.userSidenav .footer-nav a span{\r\n  font-size: 14px;\r\n    font-weight: normal;\r\n}\r\n.userSidenav .title-name{\r\n  font-size: 16px;\r\n \r\n}\r\n.userSidenav .profile-container .img-container{\r\n  width: 40%;\r\n}\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  margin-left: 250px;\r\n  background: #fff;\r\n  \r\n}\r\n.navbar{\r\n\theight: 60px;\r\n\tbackground: #fff;\r\n\tbox-shadow: 1px 0px 5px #cbc7c7;\r\n  position: fixed;\r\n  width: calc(100% - 250px);\r\n  z-index: 1;\r\n}\r\n.navbar .invite{\r\n  display: block;\r\n  height: 44px;\r\n  overflow: hidden;\r\n   padding: 10px 0px 10px 15px;\r\n  border-radius: 5px;\r\n  \r\n}\r\n.navbar .invite i, .navbar .logout i{\r\n  padding: 5px;\r\n}\r\n.navbar .invite a{\r\n  margin-right: -95px;\r\n  font-size: 18px;\r\n  text-decoration: none;\r\n  color: #32c24d;\r\n\r\n}\r\n.navbar .invite:hover a{\r\n  margin-right: 20px;\r\n  -webkit-transition: margin-right 0.3s linear;\r\n  transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout{\r\n\tdisplay: block;\r\n\theight: 44px;\r\n\toverflow: hidden;\r\n\t\r\n\tpadding: 10px 0px 10px 15px;\r\n\tborder-radius: 5px;\r\n\r\n}\r\n.navbar .logout a{\r\n\tmargin-right: -50px;\r\n\tfont-size: 18px;\r\n\ttext-decoration: none;\r\n\tcolor: #008862;\r\n}\r\n.navbar .logout:hover a{\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: margin-right 0.3s linear;\r\n\ttransition: margin-right 0.3s linear;\r\n}\r\n.navbar #view{\r\n\tdisplay: none;\r\n}\r\n.navbar #view i, .navbar #hide i{\r\n\t    font-size: 36px;\r\n    color: #2ad181;\r\n    \r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .navbar{\r\n    width: 100%;\r\n    height: 50px;\r\n    padding: 0px 15px;\r\n  }\r\n  #main{\r\n    margin-left:0px;\r\n  }\r\n  .navbar #view{\r\n  display: block;\r\n}\r\n.navbar #hide{\r\n  display: none;\r\n}\r\n.navbar #view i, .navbar #hide i {\r\n    font-size: 26px;\r\n    \r\n}\r\n}\r\n@media screen and (max-height: 450px) {\r\n  .userSidenav {padding-top: 15px;}\r\n  .userSidenav a {font-size: 18px;}\r\n}\r\n\r\n\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content{\r\n      padding: 90px 20px;\r\n      z-index: 0;\r\n}\r\n.main-title{\r\n  text-align: center;\r\n  font-size: 36px;\r\n  color: #009d6db3;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n}\r\n.sub-title{\r\n      font-size: 26px;\r\n    text-align: center;\r\n        margin-top: 30px;\r\n}\r\n.learn-subject{\r\n  padding: 30px 60px;\r\n}\r\n.learn-subject a{\r\n  text-decoration: none;\r\n}\r\n.learn-subject a:hover{\r\n  color: black;\r\n}\r\n.learn-subject .img-container{\r\n     \r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i{\r\n  color: #31d285;\r\n  font-size: 40px;\r\n  \r\n}\r\n.learn-subject .subject-container{\r\n  margin: 10px 15px 20px 15px;\r\n  padding: 15px;\r\n border-radius: 10px;\r\n background: #fff;\r\n box-shadow: 1px 0px 5px 1px #e9efec;\r\n}\r\n.learn-subject .subject-container:hover{\r\n  background:linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i{\r\n  color: white;\r\n  -webkit-transform: scale(1.3);\r\n          transform: scale(1.3);\r\n  -webkit-transition: -webkit-transform 0.3s ease-out;\r\n  transition: -webkit-transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title{\r\n  color: white;\r\n}\r\n.learn-subject .subject-container .title{\r\n  text-align: center;\r\n  margin:5px auto;\r\n  color:#686868;\r\n  font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px){\r\n  .main-title{\r\n    font-size: 24px;\r\n  }\r\n  .learn-subject{\r\n    padding: 30px 0px;\r\n  }\r\n\r\n.learn-subject .img-container{\r\n  padding: 15px;\r\n}\r\n.learn-subject .subject-container{\r\n  margin:0px;\r\n  margin-bottom: 25px;\r\n}\r\n.learn-subject .img-container i {\r\n  font-size: 56px;\r\n}\r\n.learn-subject .subject-container .title{\r\n  font-size: 14px;\r\n  font-weight: normal;\r\n}\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject{\r\n  padding: 30px 30px;\r\n}\r\n.practise-subject .practise-wrapper{\r\n  margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box{\r\n  display: inline-block;\r\n  height: 50px;\r\n  margin-left: 5px;\r\n  padding: 5px 10px;\r\n  font-size: 30px;\r\n  color: white;\r\n  border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name{\r\n  margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i{\r\n      \r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i{\r\n  margin-left:40%;\r\n  -webkit-transition: margin-left 0.4s linear;\r\n  transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress{\r\n  height: 0.5rem;\r\n  border-radius: 0;\r\n\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar{\r\n  background: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper .progress-percent{\r\n  font-size: 12px;\r\n}\r\n\r\n.practise-report{\r\n  padding: 15px 10px;\r\n}\r\n.practise-report .report-wrapper{\r\n  background:#fff;\r\n  padding: 10px;\r\n  border-radius: 5px;\r\n  margin-top: 10px;\r\n  box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report{\r\n  font-size: 120px;\r\n  color: #00ce6f;\r\n  text-shadow: 1px 4px 5px #716e6e;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title{\r\n  font-size: 24px;\r\n  color: black;\r\n  text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title{\r\n  text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next, .practise-report .report-wrapper .title .prev{\r\n  color: #32c24d\r\n}\r\n.practise-report .report-wrapper .title span{\r\n  cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong{\r\n  display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n  margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title{\r\n  width: 50%;\r\n  display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small{\r\n  display: block;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .practise-subject{\r\n    padding: 10px;\r\n  }\r\n  .practise-subject .practise-wrapper .icon-box {\r\n    \r\n    height: 55px;\r\n    padding: 5px 15px;\r\n    margin-left: 10px;\r\n   \r\n}\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n .test .title{\r\n  font-size: 20px;\r\n  text-align: center;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n .owl-nav button{\r\n  background: #3cc95c!important;\r\n}\r\n.owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n\r\n .test{\r\n \r\n  margin:15px auto;\r\n}\r\n .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n", ""]);
+exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Mukta', sans-serif;\r\n\r\n}\r\nh1, h2, h3, h4, h5, h6{\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n  height: 100%; \r\n  width: 250px; \r\n  position: fixed; \r\n  z-index: 2; \r\n  top: 0; \r\n  left: 0;\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n  background:linear-gradient(180deg, #2ad181, #009d98);\r\n  overflow-x: hidden; \r\n   -ms-overflow-style: none;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; \r\n  padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.userSidenav .sideTab{\r\n\tdisplay: inline-block;\r\n      padding-left: 10px;\r\n       -webkit-transition: 0.5s;\r\n       transition: 0.5s; \r\n}\r\n.userSidenav .profile-container{\r\n\ttext-align: center;\r\n\tpadding: 20px 10px;\r\n  margin-top: 60px;\r\n\t}\r\n.userSidenav .profile-container .img-container{\r\n\twidth:40%;\r\n\tbox-shadow: 0px 0px 5px 4px #5753538f;\r\n\tmargin:0px auto;\r\n\toverflow: hidden;\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name{\r\n\tfont-size: 18px;\r\n\t    padding-bottom: 10px;\r\n  color: white;\r\n\r\n\t    text-shadow: 1px 2px 3px #3b3939;\r\n      font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\ndisplay: block;\r\n\ttext-align: center !important;\r\n\tborder-bottom:1px solid #c7c7c7;\r\n}\r\n.userSidenav .title-name+.sideTab{\r\nwidth: 100%;\r\n}\r\n.userSidenav .title-name .grade{\r\n  font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n\r\n}\r\n.userSidenav .title-name a{\r\n        display:block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n    \r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container{\r\n    position: fixed;\r\n    top:0;\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n     -webkit-transition: 0.5s;\r\n     transition: 0.5s; \r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container{\r\n  width:  50px;\r\n  display: inline-block;\r\n  \r\n}\r\n.userSidenav .company-container .img-container img{\r\n  border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name{\r\n  display: inline-block;\r\n  border: none;\r\n  \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: none;\r\n}\r\n.userSidenav .download-title{\r\n    font-size: 18px;\r\n      padding-bottom: 10px;\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #3b3939;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n  text-align: center !important;\r\n\r\n}\r\n.userSidenav .download-app .play-store, .userSidenav .download-app .app-store{\r\n  background: black;\r\n  margin: 0px 10px;\r\n  border-radius: 5px;\r\n  padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a, .userSidenav .download-app .app-store a{\r\n  padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n  padding: 10px 8px 10px 32px;\r\n  text-decoration: none;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  display: block;\r\n  -webkit-transition: 0.1s;\r\n  transition: 0.1s;\r\n  position: relative;\r\n}\r\n.userSidenav a::after{\r\n  content:'';\r\n  position: absolute;\r\n  top:0;\r\n  left: 0;\r\n  right:0;\r\n  bottom: 0;\r\n  background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n  color: #000;\r\n}\r\n.userSidenav .active{\r\n  background: #fff;\r\n  color: #036c17;\r\n}\r\n\r\n\r\n.userSidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav{\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px  solid #fff;\r\n    \r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a{\r\n  display: inline-block;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  #userSideNav{\r\n    padding-bottom: 60px;\r\n  }\r\n  .userSidenav .company-container .img-container{\r\n  width:  70px;\r\n  \r\n  \r\n}\r\n  .userSidenav{\r\n    width: 0px;\r\n        background: #eeeeee;\r\n  }\r\n  .userSidenav .company-container{\r\n   position: relative;\r\n    padding: 12px 5px 5px 5px;\r\n  }\r\n\r\n  \r\n.userSidenav .profile-container{\r\n  margin-top: 0;\r\n}\r\n.userSidenav a{\r\n      color: #3d3b3b;\r\n    font-weight: bold;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    \r\n    color: #32c24d;\r\n    text-shadow: 1px 2px 3px #f4f1f1;\r\n   \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: inline-block;\r\n  margin-left: 12px;\r\n}\r\n .userSidenav .company-container .title-name{\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #767575;\r\n\r\n }\r\n.userSidenav .footer-nav{\r\n  padding: 3px 15px;\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n          justify-content: space-between;\r\n      box-shadow:0px -1px 5px #d2d2d2;\r\n\r\n}\r\n.userSidenav .footer-nav a i{\r\n  display: block;\r\n}\r\n.userSidenav .footer-nav a{\r\n     padding: 5px;\r\n    color: #3b3a3a;\r\n}\r\n.userSidenav .footer-nav .active {\r\n  color:green;\r\n}\r\n.userSidenav .footer-nav a span{\r\n  font-size: 14px;\r\n    font-weight: normal;\r\n}\r\n.userSidenav .title-name{\r\n  font-size: 16px;\r\n \r\n}\r\n.userSidenav .profile-container .img-container{\r\n  width: 40%;\r\n}\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  margin-left: 250px;\r\n  background: #f8f8f9;\r\n  \r\n}\r\n.navbar{\r\n\theight: 60px;\r\n\tbackground: #fff;\r\n\tbox-shadow: 1px 0px 5px #cbc7c7;\r\n  position: fixed;\r\n  width: calc(100% - 250px);\r\n  z-index: 1;\r\n}\r\n.navbar .invite{\r\n  display: block;\r\n  height: 44px;\r\n  overflow: hidden;\r\n   padding: 10px 0px 10px 15px;\r\n  border-radius: 5px;\r\n  \r\n}\r\n.navbar .invite i, .navbar .logout i{\r\n  padding: 5px;\r\n}\r\n.navbar .invite a{\r\n  margin-right: -95px;\r\n  font-size: 18px;\r\n  text-decoration: none;\r\n  color: #32c24d;\r\n\r\n}\r\n.navbar .invite:hover a{\r\n  margin-right: 20px;\r\n  -webkit-transition: margin-right 0.3s linear;\r\n  transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout{\r\n\tdisplay: block;\r\n\theight: 44px;\r\n\toverflow: hidden;\r\n\t\r\n\tpadding: 10px 0px 10px 15px;\r\n\tborder-radius: 5px;\r\n\r\n}\r\n.navbar .logout a{\r\n\tmargin-right: -50px;\r\n\tfont-size: 18px;\r\n\ttext-decoration: none;\r\n\tcolor: #008862;\r\n}\r\n.navbar .logout:hover a{\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: margin-right 0.3s linear;\r\n\ttransition: margin-right 0.3s linear;\r\n}\r\n.navbar #view{\r\n\tdisplay: none;\r\n}\r\n.navbar #view i, .navbar #hide i{\r\n\t    font-size: 36px;\r\n    color: #2ad181;\r\n    \r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .navbar{\r\n    width: 100%;\r\n    height: 50px;\r\n    padding: 0px 15px;\r\n  }\r\n  #main{\r\n    margin-left:0px;\r\n  }\r\n  .navbar #view{\r\n  display: block;\r\n}\r\n.navbar #hide{\r\n  display: none;\r\n}\r\n.navbar #view i, .navbar #hide i {\r\n    font-size: 26px;\r\n    \r\n}\r\n}\r\n@media screen and (max-height: 450px) {\r\n  .userSidenav {padding-top: 15px;}\r\n  .userSidenav a {font-size: 18px;}\r\n}\r\n\r\n\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content{\r\n      padding: 60px 0px;\r\n      z-index: 0;\r\n}\r\n.main-title{\r\n  text-align: center;\r\n  font-size: 36px;\r\n  color: #009d6db3;\r\n  font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\n  margin-top: 60px;\r\n}\r\n.sub-title{\r\n      font-size: 26px;\r\n    text-align: center;\r\n        margin-top: 30px;\r\n}\r\n.learn-subject{\r\n  padding: 30px 60px;\r\n}\r\n.learn-subject a{\r\n  text-decoration: none;\r\n}\r\n.learn-subject a:hover{\r\n  color: black;\r\n}\r\n.learn-subject .img-container{\r\n     \r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i{\r\n  color: #31d285;\r\n  font-size: 40px;\r\n  \r\n}\r\n.learn-subject .subject-container{\r\n  margin: 10px 15px 20px 15px;\r\n  padding: 15px;\r\n border-radius: 10px;\r\n background: #fff;\r\n box-shadow:1px 0px 10px 1px #e2e2e4;\r\n}\r\n.learn-subject .subject-container:hover{\r\n  background:linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i{\r\n  color: white;\r\n  -webkit-transform: scale(1.3);\r\n          transform: scale(1.3);\r\n  -webkit-transition: -webkit-transform 0.3s ease-out;\r\n  transition: -webkit-transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title{\r\n  color: white;\r\n}\r\n.learn-subject .subject-container .title{\r\n  text-align: center;\r\n  margin:5px auto;\r\n  color:#686868;\r\n  font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px){\r\n  .main-title{\r\n    font-size: 24px;\r\n  }\r\n  .learn-subject{\r\n    padding: 30px 0px;\r\n  }\r\n\r\n.learn-subject .img-container{\r\n  padding: 15px;\r\n}\r\n.learn-subject .subject-container{\r\n  margin:0px;\r\n  margin-bottom: 25px;\r\n}\r\n.learn-subject .img-container i {\r\n  font-size: 56px;\r\n}\r\n.learn-subject .subject-container .title{\r\n  font-size: 14px;\r\n  font-weight: normal;\r\n}\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject{\r\n  padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper{\r\n  margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box{\r\n  display: inline-block;\r\n  height: 50px;\r\n  margin-left: 5px;\r\n  padding: 10px 10px;\r\n  font-size: 30px;\r\n  color: white;\r\n  border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name{\r\n  margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i{\r\n      \r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i{\r\n  margin-left:40%;\r\n  -webkit-transition: margin-left 0.4s linear;\r\n  transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress{\r\n  height: 0.5rem;\r\n  border-radius: 0;\r\n\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar{\r\n  background: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper .progress-percent{\r\n  font-size: 12px;\r\n}\r\n\r\n.practise-report{\r\n  padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper{\r\n  background:#fff;\r\n  padding: 10px;\r\n  border-radius: 5px;\r\n  margin-top: 10px;\r\n  box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report{\r\n  font-size: 120px;\r\n  color: #00ce6f;\r\n  text-shadow: 1px 4px 5px #716e6e;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title{\r\n  font-size: 24px;\r\n  color: black;\r\n  text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title{\r\n  text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next, .practise-report .report-wrapper .title .prev{\r\n  color: #32c24d\r\n}\r\n.practise-report .report-wrapper .title span{\r\n  cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong{\r\n  display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n  margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title{\r\n  width: 50%;\r\n  display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small{\r\n  display: block;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .practise-subject{\r\n    padding: 10px;\r\n  }\r\n  .practise-subject .practise-wrapper .icon-box {\r\n    \r\n    height: 55px;\r\n    padding: 5px 15px;\r\n    margin-left: 10px;\r\n   \r\n}\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n .test .title{\r\n  font-size: 20px;\r\n  text-align: center;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n .owl-nav button{\r\n  background: #3cc95c!important;\r\n}\r\n.owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n\r\n .test{\r\n \r\n  margin:15px auto;\r\n}\r\n .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter{\r\n  background: #fff;\r\n}\r\n.subject-navbar{\r\n  padding: 60px 60px 15px 60px;\r\n  position: relative;\r\n \r\n  border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar span{\r\n  position: absolute;\r\n  top: 15px;\r\n  font-size: 24px;\r\n  left: 15px;\r\n}\r\n\r\n.subject-navbar .icon-box{\r\n  display: inline-block;\r\n  padding: 15px;\r\n  vertical-align: top;\r\n  background: white;\r\n  box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n  border-radius: 5px;\r\n  color: #25cb83;\r\n  font-size: 36px;\r\n}\r\n.subject-navbar .title-box{\r\n  display: inline-block;\r\n  padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2{\r\n  line-height: 1;\r\n  margin-top: 5px;\r\n  margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav{\r\n  margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active, .nav-pills .show>.nav-link{\r\n  background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li{\r\npadding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a{\r\n  color: #262828;\r\n}\r\n.subject-content{\r\n  margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper{\r\n  padding: 30px;\r\n    \r\n  box-shadow: 0px 2px 3px #f6f6f6;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title{\r\n  font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span{\r\n  padding-right: 10px;\r\n  color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option{\r\n  \r\n  text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a{\r\n  display: inline-block;\r\n  padding-right: 30px;\r\n  margin-top: 5px;\r\n  color: #2ad181;\r\n  font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover{\r\n  -webkit-transform: scale(1.2);\r\n          transform: scale(1.2);\r\n  -webkit-transition: color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  transition: color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  transition: transform 0.5s ease-in-out, color 0.5s linear;\r\n  transition: transform 0.5s ease-in-out, color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  color: #009d98;\r\n}", ""]);
 
 // exports
 
@@ -73439,7 +73439,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_Learn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/Learn */ "./resources/js/Dashboard/component/Learn.js");
 /* harmony import */ var _component_Practise__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/Practise */ "./resources/js/Dashboard/component/Practise.js");
 /* harmony import */ var _component_Test__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/Test */ "./resources/js/Dashboard/component/Test.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _component_Subject__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/Subject */ "./resources/js/Dashboard/component/Subject.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -73547,7 +73549,7 @@ function Dashboard() {
     href: ""
   }, "Change >")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-sm-block d-none"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/learn',
     className: "active test-class",
     onClick: function onClick(event) {
@@ -73557,7 +73559,7 @@ function Dashboard() {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/practise',
     className: "test-class",
     onClick: handleActive
@@ -73565,15 +73567,17 @@ function Dashboard() {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/test',
+    className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
+  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/subject',
+    onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-comment"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -73634,7 +73638,7 @@ function Dashboard() {
     className: "copywrite text-center mt-2"
   }, "\xA9 Copywrite EduNepal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/learn',
     className: "active",
     onClick: handleActive
@@ -73642,14 +73646,14 @@ function Dashboard() {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/practise',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: '/dashboard/test',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73694,15 +73698,18 @@ function Dashboard() {
     className: "fa fa-power-off"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Logout"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     path: "/dashboard/practise",
     component: _component_Practise__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     path: "/dashboard/learn",
     component: _component_Learn__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     path: "/dashboard/test",
     component: _component_Test__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard/subject",
+    component: _component_Subject__WEBPACK_IMPORTED_MODULE_5__["default"]
   })))));
 } // ReactDOM.render(<Dashboard />, document.getElementById(""));
 
@@ -74225,6 +74232,236 @@ function Practise() {
     style: {
       color: 'red'
     }
+  })))))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/component/Subject.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/Dashboard/component/Subject.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Subject; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Subject() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "main-subject-containter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-navbar d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-left"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-subject-navbar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-atom"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Physics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-number"
+  }, "10 Chapters"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link active",
+    "data-toggle": "pill",
+    href: "#note"
+  }, "Notes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#flash"
+  }, "Flash Cards")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#past-question"
+  }, "Question Set")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container active",
+    id: "note"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Power"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "04"), "Heat"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "05"), "Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "flash"
+  }, "..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "past-question"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2063"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2073"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
   })))))))));
 }
 
