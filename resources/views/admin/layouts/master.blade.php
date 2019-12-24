@@ -18,6 +18,7 @@
 
     <link href="{{ asset('admin/assets/plugins/summernote/summernote-bs4.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin/assets/css/icons.css') }}" rel="stylesheet" type="text/css">
+
     <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css">
 
     @stack('styles')
@@ -83,6 +84,7 @@
 <script src="{{ asset('admin/assets/js/jquery.nicescroll.js') }}"></script>
 <script src="{{ asset('admin/assets/js/jquery.scrollTo.min.js') }}"></script>
 
+<script src="{{ asset('admin/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
 <!-- skycons -->
 <script src="{{ asset('admin/assets/plugins/skycons/skycons.min.js') }}"></script>
 

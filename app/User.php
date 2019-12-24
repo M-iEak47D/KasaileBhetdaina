@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Model\UserInfo;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -16,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'status', 'mpin'
     ];
 
     /**
@@ -36,4 +37,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function userInfo(){
+
+        return $this->hasOne(UserInfo::class);
+    }
+
+    public function dataCollecton(){
+
+        return $this->belongsTo(User::class);
+
+    }
 }

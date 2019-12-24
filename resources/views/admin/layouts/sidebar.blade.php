@@ -55,6 +55,13 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{ route('admin.user') }}" class="waves-effect">
+                        <i class="dripicons-meter"></i>
+                        <span> User <span class="badge badge-success badge-pill float-right">3</span></span>
+                    </a>
+                </li>
+
 
             </ul>
         </div>

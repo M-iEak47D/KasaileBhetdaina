@@ -37,6 +37,21 @@ Route::group([
     Route::post('/update/quiz', 'QuizController@update')->name('update.quiz');
     Route::get('/delete/quiz/{id}', 'QuizController@destroy')->name('delete.quiz');
 
+    Route::get('/user', 'UserController@index')->name('user');
+    Route::post('/store/user', 'UserController@store')->name('store.user');
+    Route::get('/json/user', 'UserController@getJson')->name('json.user');
+    Route::get('/edit/user/{id}', 'UserController@edit')->name('edit.user');
+    Route::get('/changestatus/user/{id}', 'UserController@changeStatus')->name('changestatus.user');
+    Route::get('/add/userinfo/{id}', 'UserController@addUserInfo')->name('add.userinfo');
+    Route::post('/store/userinfo', 'UserController@storeUserInfo')->name('store.userinfo');
+
+
+
+
+
+
+
+
     Route::get('/dashboard','DashboardController@index')->name('dashboard');
 
     Route::group(['prefix' => '/categories'], function (){
@@ -63,6 +78,7 @@ Route::group([
         Route::post('/edit/{id}','CourseController@update')->name('post_edit_subject');
     });
 
+
     Route::group(['prefix' => '/chapters'], function (){
         Route::get('/','CourseController@index')->name('chapters');
         Route::post('/store','CourseController@store')->name('store_chapters');
@@ -71,6 +87,8 @@ Route::group([
         Route::post('/edit/{id}','CourseController@update')->name('post_edit_chapters');
     });
 });
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

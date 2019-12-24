@@ -16,4 +16,10 @@ class Quiz extends Model
         'status',
         'total_question'
     ];
+
+    public function Question(){
+
+        return $this->hasMany(Question::class);
+    }
 }
+

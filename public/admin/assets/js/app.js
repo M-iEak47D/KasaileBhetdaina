@@ -47,7 +47,7 @@
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
         },
-        
+
         //full screen
         MainApp.prototype.initMenu = function () {
             var $this = this;
@@ -131,3 +131,4 @@
         "use strict";
         $.MainApp.init();
     }(window.jQuery);
+
