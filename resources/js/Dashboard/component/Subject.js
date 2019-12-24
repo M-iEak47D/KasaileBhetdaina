@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Subject(){
-
+   
     return(
         <React.Fragment>
             <div className="main-subject-containter">
@@ -90,7 +90,148 @@ export default function Subject(){
           </div>
       </div>
   </div>
-  <div className="tab-pane container fade" id="flash">...</div>
+  <div className="tab-pane container fade" id="flash">
+  <div className="chapter-title">
+           <span>01</span>Measurement
+    </div>
+  <div className="top-content">
+    <div className="container-fluid">
+        <div id="carousel-one" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner row w-100 mx-auto" role="listbox">
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                  <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>           
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+            </div>
+            <a className="carousel-control-prev" href="#carousel-one" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carousel-one" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div className="chapter-title">
+           <span>02</span>Force
+    </div>
+  <div className="top-content">
+    <div className="container-fluid">
+        <div id="carousel-two" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner row w-100 mx-auto" role="listbox">
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                  <div className="carousel-box">
+                  <a href="" className="question" data-toggle="modal" data-target="#carouselModalTwo"> What is Force? </a>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <a href="" className="question" data-toggle="modal" data-target="#carouselModalTwo"> What is Measurement? </a>
+                  </div>           
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+                <div className="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="carousel-box">
+                     <div className="question"> What is Measurement? </div>
+                  </div>
+                </div>
+            </div>
+            <a className="carousel-control-prev" href="#carousel-two" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carousel-two" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div className="modal" id="carouselModalTwo">
+  <div className="modal-dialog">
+    <div className="modal-content">
+
+     
+      <div className="modal-body">
+      <button type="button" className="close" data-dismiss="modal">&times;</button>
+        <strong>What is Force?</strong>
+        <p style={{fontWeight:"lighter"}}>The original form of Newton's second law states that the net force acting
+             upon an object is equal to the rate at which its momentum changes with time.
+              If the mass of the object is constant, this law implies that the acceleration
+               of an object is directly proportional to the net force acting on the object,
+                is in the direction of the net force, and is inversely proportional to the 
+                mass of the object.</p>
+      </div>
+
+     
+
+    </div>
+  </div>
+</div>
+  </div>
   <div className="tab-pane container fade" id="past-question">
   <div className="subject-content">
           <div className="chapter-wrapper d-flex justify-content-between">

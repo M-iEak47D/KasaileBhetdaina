@@ -10,6 +10,10 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
+.logo-box{
+  width: 100px;
+  margin: 0 auto;
+}
 .mybtn{
     background: linear-gradient(235deg, #36ea5f, #00b693);
     text-shadow: 1px 2px 3px #928e8e;
@@ -421,11 +425,11 @@ display: none;
     color: #ffffff;
     font-weight: bold;
     text-shadow: 1px 3px 4px #035a21;
-    margin-bottom: 40px;
+    
     font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     text-align: center;
-    padding-bottom: 25px;
+    
    
 }
 .join .modal-body .form-control{
@@ -439,8 +443,8 @@ display: none;
 }
 
 .join .modal-body form input {
-  height: 50px;
-  margin:35px auto;
+  height: 45px;
+  margin:25px auto;
     padding: 0px 40px;
 }
 
@@ -468,7 +472,7 @@ background: #28a745;
 .join .modal-content button{
   text-align: right;
   padding-right: 25px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 #invite_code {
   cursor: pointer;
