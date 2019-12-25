@@ -14,8 +14,7 @@ export default function Index(){
         <BrowserRouter>
             <Switch>    
                 <Route exact path="/" component={Homepage} />
-                <Route path="/dashboard" component={Dashboard} />
-                <Route path="/viewer" component={Viewer} />
+                <Route path="/new-quiz" component={Newquiz} />
             </Switch>
          </BrowserRouter>
     )
