@@ -73542,7 +73542,7 @@ function Dashboard() {
   }, "Change >")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-sm-block d-none"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: '/dashboard/learn',
+    to: '/learn',
     className: "active test-class",
     onClick: function onClick(event) {
       handleActive(event);
@@ -73552,7 +73552,7 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: '/dashboard/practise',
+    to: '/practise',
     className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73631,7 +73631,7 @@ function Dashboard() {
   }, "\xA9 Copywrite EduNepal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: '/dashboard/learn',
+    to: '/learn',
     className: "active",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73639,14 +73639,14 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: '/dashboard/practise',
+    to: '/practise',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: '/dashboard/test',
+    to: '/test',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
@@ -76090,6 +76090,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Dashboard/Viewer */ "./resources/js/Dashboard/Viewer.js");
 /* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./test */ "./resources/js/pages/test.js");
+
 
 
 
@@ -76103,11 +76105,8 @@ function Index() {
     path: "/",
     component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "/dashboard",
-    component: _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "/viewer",
-    component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__["default"]
+    path: "/new-quiz",
+    component: _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__["default"]
   })));
 }
 
