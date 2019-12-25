@@ -21,7 +21,6 @@ function Homepage(){
          <Interactive />
          <Testimonial />
          <Question />
-
          <Footer />
         </React.Fragment>
     )

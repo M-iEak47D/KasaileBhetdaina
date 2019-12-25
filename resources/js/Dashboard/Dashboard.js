@@ -5,12 +5,6 @@ import Practise from './component/Practise';
 import Test from './component/Test';
 import { BrowserRouter as Router,Switch,Route, Link} from 'react-router-dom';
 export default  function Dashboard (){
-    // function handleActive(){
-    //     var ram = $('#userSideNav a');
-    //     console.log(this);
-    //     $('#userSideNav a').removeClass('active');
-    //     $(this).addClass('active');
-    // };
     function closeNav() {
         function myFunction(x) {
             if (x.matches) {
@@ -82,19 +76,19 @@ export default  function Dashboard (){
                  <img src={require("./assets/images/testimonial-1.jpg")} alt="" className="img-fluid" />
              </div>
          </div>
-         <div className="title-name sideTab" style={{ width: "100%;"}}>
+         <div className="title-name sideTab" style={{ width: "100%"}}>
              Hot Babe
              <div className="grade">| Class 10</div>
              <a href="">Change ></a>
          </div>
          <div className="d-sm-block d-none">
-            <Link to={'/dashboard/learn'} className="active test-class"  onClick={(event) => {handleActive(event)}}> 
+            <Link to={'/learn'} className="active test-class"  onClick={(event) => {handleActive(event)}}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
             </Link>
-            <Link to={'/dashboard/practise'} className="test-class" onClick={handleActive} >
+            <Link to={'/practise'} className="test-class" onClick={handleActive} >
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={'/dashboard/test'} onClick={handleActive}>
+             <Link to={'/test'} onClick={handleActive}>
                  <i className="fa fa-file-alt"></i><span className="sideTab"> Test</span>
              </Link>
              <a href="#"><i className="fa fa-comment"></i> <span className="sideTab"> Doubts</span></a>
@@ -122,13 +116,13 @@ export default  function Dashboard (){
              &copy; Copywrite EduNepal
          </div>
          <div className="footer-nav">
-         <Link to={'/dashboard/learn'} className="active"  onClick={handleActive}> 
+         <Link to={'/learn'} className="active"  onClick={handleActive}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
         </Link>
-            <Link to={'/dashboard/practise'} onClick={handleActive}>
+            <Link to={'/practise'} onClick={handleActive}>
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={'/dashboard/test'}  onClick={handleActive}>
+             <Link to={'/test'}  onClick={handleActive}>
        <i className="fa fa-file-alt"></i><span> Test</span>
        </Link>
              <a href="#"><i className="fa fa-comment"></i> <span> Doubts</span></a>
@@ -152,24 +146,15 @@ export default  function Dashboard (){
              </div>
          </div>
          <div className="main-content">
-            
-                
-                 
                  <Switch>
-                
-                 <Route  path='/dashboard/practise' component={Practise} />
-                 <Route path='/dashboard/learn' component={Learn}  /> 
-                 <Route  path='/dashboard/test' component={Test} />    
-                     
-                
+                 <Route  path='/learn/' component={Learn}  /> 
+                 <Route  path='/practise/' component={Practise} />
+                 <Route  path='/test/' component={Test} />    
                 </Switch>
-                
-            
-        
          </div>
     </div>
         </React.Fragment>
      )
 }
 
-// ReactDOM.render(<Dashboard />, document.getElementById(""));
+ 

@@ -1,20 +1,5 @@
 import React, { Component, useState, setState, useEffect } from 'react'
 import Dropdown from './Dropdown'
-<<<<<<< HEAD
-
-export default function Nav(){
-    const [navbarItems, setNavbarItems] = useState([]);
-    const [loading,setLoading] = useState(true);
-     console.log(loading);
-        // console.log('http://192.168.1.67')   
-        useEffect(()=>{
-            axios.get('http://192.168.1.86/api/navs')
-            .then(response=>{
-                setNavbarItems(response.data.data);
-                setLoading(false)
-            })  
-        }, []);
-=======
 
 
 
@@ -33,7 +18,6 @@ function closeNav() {
 
 
 
->>>>>>> 788be5ea29cbdcd4a1c58fdd21e2198c01fa3bd5
     return(
         <React.Fragment>
      <div id="navbar" className="d-flex justify-content-between sticky  ">
@@ -42,15 +26,9 @@ function closeNav() {
         </div>
         <div className="nav d-none d-sm-block">
             <a href="index.html" className="active">Home</a>
-<<<<<<< HEAD
-            {navbarItems.map((data,id) => 
-              <Dropdown data={data} loading={loading}/>
-            )}
-=======
             {/* {navbarItems.map((data,id) => 
               <Dropdown data={data} loading={loading}/>
             )} */}
->>>>>>> 788be5ea29cbdcd4a1c58fdd21e2198c01fa3bd5
            {/* <div className="dropdown">
               <a className=" dropdown-toggle" data-toggle="dropdown">
                 Classs
