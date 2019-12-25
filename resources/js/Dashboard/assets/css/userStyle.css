@@ -624,16 +624,17 @@ width: 100%;
   background: #fff;
 }
 .subject-navbar{
-  padding: 60px 60px 15px 60px;
+  padding: 90px 60px 15px 90px;
   position: relative;
  
   border-bottom: 2px solid #ffffff;
 }
-.subject-navbar span{
+.subject-navbar .back{
   position: absolute;
-  top: 15px;
+  top: 45px;
   font-size: 24px;
   left: 15px;
+  color: black;
 }
 
 .subject-navbar .icon-box{

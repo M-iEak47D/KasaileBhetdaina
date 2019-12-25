@@ -3,8 +3,8 @@ import './assets/css/userStyle.css';
 import Learn from './component/Learn';
 import Practise from './component/Practise';
 import Test from './component/Test';
-import Subject from './component/Subject';
-import { BrowserRouter as Router,Switch,Route, Link} from 'react-router-dom';
+import LearnSubject from './component/LearnSubject';
+import { BrowserRouter as Router,Switch,Route, Link, useRouteMatch} from 'react-router-dom';
 export default  function Dashboard (){
     function closeNav() {
         function myFunction(x) {
@@ -59,6 +59,7 @@ export default  function Dashboard (){
         event.target.classList.add('active');
     }
     
+    let {path , url} = useRouteMatch();
 
     return(
         <React.Fragment>
@@ -83,18 +84,18 @@ export default  function Dashboard (){
              <a href="">Change ></a>
          </div>
          <div className="d-sm-block d-none">
-            <Link to={'/learn'} className="active test-class"  onClick={(event) => {handleActive(event)}}> 
+            <Link to={`${url}/learn`} className="active test-class"  onClick={(event) => {handleActive(event)}}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
             </Link>
-            <Link to={'/practise'} className="test-class" onClick={handleActive} >
+            <Link to={`${url}/practise`} className="test-class" onClick={handleActive} >
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={'/dashboard/test'} className="test-class" onClick={handleActive}>
+             <Link to={`${url}/test`} className="test-class" onClick={handleActive}>
                  <i className="fa fa-file-alt"></i><span className="sideTab"> Test</span>
              </Link>
-             <Link to={'/dashboard/subject'} onClick={handleActive}>
+             <a href='#'>
              <i className="fa fa-comment"></i> <span className="sideTab"> Doubts</span>
-             </Link>
+             </a>
              <a href="#"><i className="fa fa-bookmark"></i> <span className="sideTab"> Bookmarks</span></a>
           
              <hr />
@@ -119,13 +120,13 @@ export default  function Dashboard (){
              &copy; Copywrite EduNepal
          </div>
          <div className="footer-nav">
-         <Link to={'/learn'} className="active"  onClick={handleActive}> 
+         <Link to={`${url}/learn`} className="active"  onClick={handleActive}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
         </Link>
-            <Link to={'/practise'} onClick={handleActive}>
+            <Link to={`${url}/practise`} onClick={handleActive}>
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={'/test'}  onClick={handleActive}>
+             <Link to={`${url}/test`}  onClick={handleActive}>
        <i className="fa fa-file-alt"></i><span> Test</span>
        </Link>
              <a href="#"><i className="fa fa-comment"></i> <span> Doubts</span></a>
@@ -151,10 +152,10 @@ export default  function Dashboard (){
          <div className="main-content">
                  <Switch>
                 
-                 <Route  path='/dashboard/practise' component={Practise} />
-                 <Route path='/dashboard/learn' component={Learn}  /> 
-                 <Route  path='/dashboard/test' component={Test} />    
-                 <Route  path='/dashboard/subject' component={Subject} />  
+                 <Route  path={`${path}/practise`} component={Practise} />
+                 <Route path={`${path}/learn`} component={Learn}  /> 
+                 <Route  path={`${path}/test`} component={Test} />    
+                 {/* <Route  path='/learn/subject' component={LearnSubject} />   */}
                      
                 
                 </Switch>

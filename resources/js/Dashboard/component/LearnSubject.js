@@ -1,12 +1,17 @@
 import React from 'react';
+import {Link, Switch, Route, useRouteMatch} from 'react-router-dom';
 
-export default function Subject(){
-   
+
+export default function LearnSubject(){
+   let {path, url} = useRouteMatch();
+ 
     return(
         <React.Fragment>
-            <div className="main-subject-containter">
+          <div className="main-subject-containter">
             <div className="subject-navbar d-flex justify-content-between">
-                <span><i className="fa fa-arrow-left"></i></span>
+                <Link to={`${url}`} className="back">
+                  <i className="fa fa-arrow-left"></i>
+                  </Link>
                 <div className="top-subject-navbar">
                     <div className="icon-box">
                         <i className="fa fa-atom"></i>
@@ -44,7 +49,7 @@ export default function Subject(){
             </div>
             <div className="option">
                 <a href="#"><i className="fa fa-download"></i></a>
-                <a href="#"><i className="fa fa-eye"></i></a>
+                <Link to={`/viewer/measure`}><i className="fa fa-eye"></i></Link>
                 <a href="#"><i className="fa fa-bookmark"></i></a>
             </div>
           </div>
@@ -240,7 +245,7 @@ export default function Subject(){
             </div>
             <div className="option">
                 <a href="#"><i className="fa fa-download"></i></a>
-                <a href="#"><i className="fa fa-eye"></i></a>
+                <Link to={'/viewer/OEQ2063'}><i className="fa fa-eye"></i></Link>
                 
             </div>
           </div>
@@ -250,7 +255,7 @@ export default function Subject(){
             </div>
             <div className="option">
                 <a href="#"><i className="fa fa-download"></i></a>
-                <a href="#"><i className="fa fa-eye"></i></a>
+                <Link to={'/viewer/OEQ2073'}><i className="fa fa-eye"></i></Link>
                
             </div>
           </div>
@@ -288,6 +293,9 @@ export default function Subject(){
   </div>
 </div>
 </div>
+         
+         
+      
         </React.Fragment>
     )
 }
