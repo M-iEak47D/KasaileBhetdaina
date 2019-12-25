@@ -1,16 +1,21 @@
 import React from 'react';
-
+import {Link , Switch , Route, useRouteMatch} from 'react-router-dom';
+import LearnSubject from '../component/LearnSubject';
 export default function Learn(){
+
+    let {path, url} = useRouteMatch();
     return(
         <React.Fragment>
-        
+ <Switch>
+            <Route exact path={path} >
+                            
         <div className="main-title">
             What do you want to learn today?
         </div>
         <div className="container learn-subject">
             <div className="row">
                 <div className="col-md-3 col-lg-3 col-6">
-                    <a href="">
+                    <Link to={`${url}/physics`}>
                         <div className="subject-container">
                             <div className="img-container" >
                                 <i className="fa fa-atom"></i>
@@ -19,10 +24,10 @@ export default function Learn(){
                                 Physics
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="col-md-3 col-lg-3 col-6">
-                    <a href="">
+                    <Link to={`${url}/chemistry`}>
                         <div className="subject-container">
                             <div className="img-container" >
                                 <i className="fa fa-flask"></i>
@@ -31,7 +36,7 @@ export default function Learn(){
                                 Chemistry
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="col-md-3 col-lg-3 col-6">
                     <a href="">
@@ -133,7 +138,12 @@ export default function Learn(){
         </div>
         
 
-
+       
+            </Route>
+            <Route path={`${path}/physics`}>
+                <LearnSubject />
+            </Route>
+        </Switch>
 </React.Fragment>
     )
 }
