@@ -76127,8 +76127,11 @@ function Index() {
     path: "/",
     component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "/new-quiz",
-    component: _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__["default"]
+    path: "/dashboard",
+    component: _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/viewer",
+    component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__["default"]
   })));
 }
 
