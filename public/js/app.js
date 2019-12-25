@@ -6323,7 +6323,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato:700,900|Mukta:400,500,600&display=swap);", ""]);
 
 // module
-exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Mukta', sans-serif;\r\n\r\n}\r\nh1, h2, h3, h4, h5, h6{\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n  height: 100%; \r\n  width: 250px; \r\n  position: fixed; \r\n  z-index: 2; \r\n  top: 0; \r\n  left: 0;\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#2ad181d1));\r\n  background:linear-gradient(180deg, #2ad181, #2ad181d1);\r\n  overflow-x: hidden; \r\n   -ms-overflow-style: none;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; \r\n  padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.userSidenav .sideTab{\r\n\tdisplay: inline-block;\r\n      padding-left: 10px;\r\n       -webkit-transition: 0.5s;\r\n       transition: 0.5s; \r\n}\r\n.userSidenav .profile-container{\r\n\ttext-align: center;\r\n\tpadding: 20px 10px;\r\n  margin-top: 60px;\r\n\t}\r\n.userSidenav .profile-container .img-container{\r\n\twidth:40%;\r\n\tbox-shadow: 0px 0px 5px 4px #5753538f;\r\n\tmargin:0px auto;\r\n\toverflow: hidden;\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name{\r\n\tfont-size: 18px;\r\n\t    padding-bottom: 10px;\r\n  color: white;\r\n\r\n\t    text-shadow: 1px 2px 3px #3b3939;\r\n      font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\ndisplay: block;\r\n\ttext-align: center !important;\r\n\tborder-bottom:1px solid #c7c7c7;\r\n}\r\n.userSidenav .title-name+.sideTab{\r\nwidth: 100%;\r\n}\r\n.userSidenav .title-name .grade{\r\n  font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n\r\n}\r\n.userSidenav .title-name a{\r\n        display:block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n    \r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container{\r\n    position: fixed;\r\n    top:0;\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n     -webkit-transition: 0.5s;\r\n     transition: 0.5s; \r\n    background: #2ad181;\r\n}\r\n.userSidenav .company-container .img-container{\r\n  width:  50px;\r\n  display: inline-block;\r\n  \r\n}\r\n.userSidenav .company-container .img-container img{\r\n  border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name{\r\n  display: inline-block;\r\n  border: none;\r\n  \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: none;\r\n}\r\n.userSidenav .download-title{\r\n    font-size: 18px;\r\n      padding-bottom: 10px;\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #3b3939;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n  text-align: center !important;\r\n\r\n}\r\n.userSidenav .download-app .play-store, .userSidenav .download-app .app-store{\r\n  background: black;\r\n  margin: 0px 10px;\r\n  border-radius: 5px;\r\n  padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a, .userSidenav .download-app .app-store a{\r\n  padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n  padding: 10px 8px 10px 32px;\r\n  text-decoration: none;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  display: block;\r\n  -webkit-transition: 0.1s;\r\n  transition: 0.1s;\r\n  position: relative;\r\n}\r\n.userSidenav a::after{\r\n  content:'';\r\n  position: absolute;\r\n  top:0;\r\n  left: 0;\r\n  right:0;\r\n  bottom: 0;\r\n  background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n  color: #000;\r\n}\r\n.userSidenav .active{\r\n  background: #fff;\r\n  color: #036c17;\r\n}\r\n\r\n\r\n.userSidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav{\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px  solid #fff;\r\n    \r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a{\r\n  display: inline-block;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  #userSideNav{\r\n    padding-bottom: 60px;\r\n  }\r\n  .userSidenav .company-container .img-container{\r\n  width:  40px;\r\n  \r\n  \r\n}\r\n  .userSidenav{\r\n    width: 0px;\r\n        background: #eeeeee;\r\n  }\r\n  .userSidenav .company-container{\r\n   position: relative;\r\n    padding: 5px 5px;\r\n  }\r\n\r\n  \r\n.userSidenav .profile-container{\r\n  margin-top: 0;\r\n}\r\n.userSidenav a{\r\n      color: #3d3b3b;\r\n    font-weight: bold;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    \r\n    color: #32c24d;\r\n    text-shadow: 1px 2px 3px #f4f1f1;\r\n   \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: inline-block;\r\n  margin-left: 12px;\r\n}\r\n .userSidenav .company-container .title-name{\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #767575;\r\n\r\n }\r\n.userSidenav .footer-nav{\r\n  padding: 3px 15px;\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n          justify-content: space-between;\r\n      box-shadow:0px -1px 5px #d2d2d2;\r\n\r\n}\r\n.userSidenav .footer-nav a i{\r\n  display: block;\r\n}\r\n.userSidenav .footer-nav a{\r\n     padding: 5px;\r\n    color: #3b3a3a;\r\n}\r\n.userSidenav .footer-nav .active {\r\n  color:green;\r\n}\r\n.userSidenav .footer-nav a span{\r\n  font-size: 14px;\r\n    font-weight: normal;\r\n}\r\n.userSidenav .title-name{\r\n  font-size: 16px;\r\n \r\n}\r\n.userSidenav .profile-container .img-container{\r\n  width: 40%;\r\n}\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  margin-left: 250px;\r\n  \r\n}\r\n.navbar{\r\n\theight: 60px;\r\n\tbackground: #fff;\r\n\tbox-shadow: 1px 0px 5px #cbc7c7;\r\n  position: fixed;\r\n  width: calc(100% - 250px);\r\n  z-index: 1;\r\n}\r\n.navbar .invite{\r\n  display: block;\r\n  height: 44px;\r\n  overflow: hidden;\r\n   padding: 10px 0px 10px 15px;\r\n  border-radius: 5px;\r\n  \r\n}\r\n.navbar .invite i, .navbar .logout i{\r\n  padding: 5px;\r\n}\r\n.navbar .invite a{\r\n  margin-right: -95px;\r\n  font-size: 18px;\r\n  text-decoration: none;\r\n  color: #32c24d;\r\n\r\n}\r\n.navbar .invite:hover a{\r\n  margin-right: 20px;\r\n  -webkit-transition: margin-right 0.3s linear;\r\n  transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout{\r\n\tdisplay: block;\r\n\theight: 44px;\r\n\toverflow: hidden;\r\n\t\r\n\tpadding: 10px 0px 10px 15px;\r\n\tborder-radius: 5px;\r\n\r\n}\r\n.navbar .logout a{\r\n\tmargin-right: -50px;\r\n\tfont-size: 18px;\r\n\ttext-decoration: none;\r\n\tcolor: #008862;\r\n}\r\n.navbar .logout:hover a{\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: margin-right 0.3s linear;\r\n\ttransition: margin-right 0.3s linear;\r\n}\r\n.navbar #view{\r\n\tdisplay: none;\r\n}\r\n.navbar #view i, .navbar #hide i{\r\n\t    font-size: 36px;\r\n    color: #2ad181;\r\n    \r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .navbar{\r\n    width: 100%;\r\n    height: 50px;\r\n    padding: 0px 15px;\r\n  }\r\n  #main{\r\n    margin-left:0px;\r\n  }\r\n  .navbar #view{\r\n  display: block;\r\n}\r\n.navbar #hide{\r\n  display: none;\r\n}\r\n.navbar #view i, .navbar #hide i {\r\n    font-size: 26px;\r\n    \r\n}\r\n}\r\n@media screen and (max-height: 450px) {\r\n  .userSidenav {padding-top: 15px;}\r\n  .userSidenav a {font-size: 18px;}\r\n}\r\n\r\n\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content{\r\n      padding: 90px 20px;\r\n      z-index: 0;\r\n}\r\n.main-title{\r\n  text-align: center;\r\n  font-size: 36px;\r\n  color: #656565;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n}\r\n.sub-title{\r\n      font-size: 26px;\r\n    text-align: center;\r\n        margin-top: 30px;\r\n}\r\n.learn-subject{\r\n  padding: 30px 60px;\r\n}\r\n.learn-subject a{\r\n  text-decoration: none;\r\n}\r\n.learn-subject a:hover{\r\n  color: black;\r\n}\r\n.learn-subject .img-container{\r\n      background: #67f9eb;\r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 20px;\r\n    text-align: center;\r\n}\r\n.learn-subject .img-container{\r\n \r\n  \r\n  \r\n  \r\n  background: #74ffd2;\r\n}\r\n.learn-subject .img-container i{\r\n  font-size: 40px;\r\n  text-shadow: 1px 2px 3px #868686;\r\n}\r\n.learn-subject .subject-container{\r\n margin-bottom: 30px;\r\n}\r\n.learn-subject .subject-container:hover .img-container i{\r\n  -webkit-transform: scale(1.3);\r\n          transform: scale(1.3);\r\n  -webkit-transition: -webkit-transform 0.3s ease-out;\r\n  transition: -webkit-transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container .title{\r\n  text-align: center;\r\n  margin:5px auto;\r\n  font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px){\r\n  .main-title{\r\n    font-size: 24px;\r\n  }\r\n  .learn-subject{\r\n    padding: 30px 0px;\r\n  }\r\n  .learn-subject .img-container i{\r\n  font-size: 26px;\r\n}\r\n.learn-subject .img-container{\r\n  padding: 15px;\r\n}\r\n.learn-subject .subject-container .title{\r\n  font-size: 14px;\r\n  font-weight: normal;\r\n}\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject{\r\n  padding: 30px 30px;\r\n}\r\n.practise-subject .practise-wrapper{\r\n  margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box{\r\n  display: inline-block;\r\n  height: 50px;\r\n  margin-left: 5px;\r\n  padding: 5px 10px;\r\n  font-size: 30px;\r\n  color: white;\r\n  border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name{\r\n  margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i{\r\n      \r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i{\r\n  margin-left:40%;\r\n  -webkit-transition: margin-left 0.4s linear;\r\n  transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress{\r\n  height: 0.5rem;\r\n  border-radius: 0;\r\n\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar{\r\n  background: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper .progress-percent{\r\n  font-size: 12px;\r\n}\r\n\r\n.practise-report{\r\n  padding: 15px 10px;\r\n}\r\n.practise-report .report-wrapper{\r\n  \r\n  padding: 10px;\r\n  border-radius: 5px;\r\n  margin-top: 10px;\r\n  box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report{\r\n  font-size: 120px;\r\n  color: #00ce6f;\r\n  text-shadow: 1px 4px 5px #716e6e;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title{\r\n  font-size: 24px;\r\n  color: black;\r\n  text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title{\r\n  text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next, .practise-report .report-wrapper .title .prev{\r\n  color: #32c24d\r\n}\r\n.practise-report .report-wrapper .title span{\r\n  cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong{\r\n  display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n  margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title{\r\n  width: 50%;\r\n  display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small{\r\n  display: block;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .practise-subject{\r\n    padding: 10px;\r\n  }\r\n  .practise-subject .practise-wrapper .icon-box {\r\n    \r\n    height: 55px;\r\n    padding: 5px 15px;\r\n    margin-left: 10px;\r\n   \r\n}\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n .test .title{\r\n  font-size: 20px;\r\n  text-align: center;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n .owl-nav button{\r\n  background: #3cc95c!important;\r\n}\r\n.owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n\r\n .test{\r\n \r\n  margin:15px auto;\r\n}\r\n .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n", ""]);
+exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Mukta', sans-serif;\r\n  overflow-x: hidden;\r\n}\r\nh1, h2, h3, h4, h5, h6{\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n  height: 100%; \r\n  width: 250px; \r\n  position: fixed; \r\n  z-index: 2; \r\n  top: 0; \r\n  left: 0;\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n  background:linear-gradient(180deg, #2ad181, #009d98);\r\n  overflow-x: hidden; \r\n   -ms-overflow-style: none;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; \r\n  padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.userSidenav .sideTab{\r\n\tdisplay: inline-block;\r\n      padding-left: 10px;\r\n       -webkit-transition: 0.5s;\r\n       transition: 0.5s; \r\n}\r\n.userSidenav .profile-container{\r\n\ttext-align: center;\r\n\tpadding: 20px 10px;\r\n  margin-top: 60px;\r\n\t}\r\n.userSidenav .profile-container .img-container{\r\n\twidth:40%;\r\n\tbox-shadow: 0px 0px 5px 4px #5753538f;\r\n\tmargin:0px auto;\r\n\toverflow: hidden;\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name{\r\n\tfont-size: 18px;\r\n\t    padding-bottom: 10px;\r\n  color: white;\r\n\r\n\t    text-shadow: 1px 2px 3px #3b3939;\r\n      font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\ndisplay: block;\r\n\ttext-align: center !important;\r\n\tborder-bottom:1px solid #c7c7c7;\r\n}\r\n.userSidenav .title-name+.sideTab{\r\nwidth: 100%;\r\n}\r\n.userSidenav .title-name .grade{\r\n  font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n\r\n}\r\n.userSidenav .title-name a{\r\n        display:block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n    \r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container{\r\n    position: fixed;\r\n    top:0;\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n     -webkit-transition: 0.5s;\r\n     transition: 0.5s; \r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container{\r\n  width:  50px;\r\n  display: inline-block;\r\n  \r\n}\r\n.userSidenav .company-container .img-container img{\r\n  border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name{\r\n  display: inline-block;\r\n  border: none;\r\n  \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: none;\r\n}\r\n.userSidenav .download-title{\r\n    font-size: 18px;\r\n      padding-bottom: 10px;\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #3b3939;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n  text-align: center !important;\r\n\r\n}\r\n.userSidenav .download-app .play-store, .userSidenav .download-app .app-store{\r\n  background: black;\r\n  margin: 0px 10px;\r\n  border-radius: 5px;\r\n  padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a, .userSidenav .download-app .app-store a{\r\n  padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n  padding: 10px 8px 10px 32px;\r\n  text-decoration: none;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  display: block;\r\n  -webkit-transition: 0.1s;\r\n  transition: 0.1s;\r\n  position: relative;\r\n}\r\n.userSidenav a::after{\r\n  content:'';\r\n  position: absolute;\r\n  top:0;\r\n  left: 0;\r\n  right:0;\r\n  bottom: 0;\r\n  background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n  color: #000;\r\n}\r\n.userSidenav .active{\r\n  background: #fff;\r\n  color: #036c17;\r\n}\r\n\r\n\r\n.userSidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav{\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px  solid #fff;\r\n    \r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a{\r\n  display: inline-block;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  #userSideNav{\r\n    padding-bottom: 60px;\r\n  }\r\n  .userSidenav .company-container .img-container{\r\n  width:  70px;\r\n  \r\n  \r\n}\r\n  .userSidenav{\r\n    width: 0px;\r\n        background: #eeeeee;\r\n  }\r\n  .userSidenav .company-container{\r\n   position: relative;\r\n    padding: 12px 5px 5px 5px;\r\n  }\r\n\r\n  \r\n.userSidenav .profile-container{\r\n  margin-top: 0;\r\n}\r\n.userSidenav a{\r\n      color: #3d3b3b;\r\n    font-weight: bold;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    \r\n    color: #32c24d;\r\n    text-shadow: 1px 2px 3px #f4f1f1;\r\n   \r\n}\r\n.userSidenav .company-container .title-name span{\r\n  display: inline-block;\r\n  margin-left: 12px;\r\n}\r\n .userSidenav .company-container .title-name{\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #767575;\r\n\r\n }\r\n.userSidenav .footer-nav{\r\n  padding: 3px 15px;\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n          justify-content: space-between;\r\n      box-shadow:0px -1px 5px #d2d2d2;\r\n\r\n}\r\n.userSidenav .footer-nav a i{\r\n  display: block;\r\n}\r\n.userSidenav .footer-nav a{\r\n     padding: 5px;\r\n    color: #3b3a3a;\r\n}\r\n.userSidenav .footer-nav .active {\r\n  color:green;\r\n}\r\n.userSidenav .footer-nav a span{\r\n  font-size: 14px;\r\n    font-weight: normal;\r\n}\r\n.userSidenav .title-name{\r\n  font-size: 16px;\r\n \r\n}\r\n.userSidenav .profile-container .img-container{\r\n  width: 40%;\r\n}\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  margin-left: 250px;\r\n  background: #f8f8f9;\r\n  \r\n}\r\n.navbar{\r\n\theight: 60px;\r\n\tbackground: #fff;\r\n\tbox-shadow: 1px 0px 5px #cbc7c7;\r\n  position: fixed;\r\n  width: calc(100% - 250px);\r\n  z-index: 1;\r\n}\r\n.navbar .invite{\r\n  display: block;\r\n  height: 44px;\r\n  overflow: hidden;\r\n   padding: 10px 0px 10px 15px;\r\n  border-radius: 5px;\r\n  \r\n}\r\n.navbar .invite i, .navbar .logout i{\r\n  padding: 5px;\r\n}\r\n.navbar .invite a{\r\n  margin-right: -95px;\r\n  font-size: 18px;\r\n  text-decoration: none;\r\n  color: #32c24d;\r\n\r\n}\r\n.navbar .invite:hover a{\r\n  margin-right: 20px;\r\n  -webkit-transition: margin-right 0.3s linear;\r\n  transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout{\r\n\tdisplay: block;\r\n\theight: 44px;\r\n\toverflow: hidden;\r\n\t\r\n\tpadding: 10px 0px 10px 15px;\r\n\tborder-radius: 5px;\r\n\r\n}\r\n.navbar .logout a{\r\n\tmargin-right: -50px;\r\n\tfont-size: 18px;\r\n\ttext-decoration: none;\r\n\tcolor: #008862;\r\n}\r\n.navbar .logout:hover a{\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: margin-right 0.3s linear;\r\n\ttransition: margin-right 0.3s linear;\r\n}\r\n.navbar #view{\r\n\tdisplay: none;\r\n}\r\n.navbar #view i, .navbar #hide i{\r\n\t    font-size: 36px;\r\n    color: #2ad181;\r\n    \r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .navbar{\r\n    width: 100%;\r\n    height: 50px;\r\n    padding: 0px 15px;\r\n  }\r\n  #main{\r\n    margin-left:0px;\r\n  }\r\n  .navbar #view{\r\n  display: block;\r\n}\r\n.navbar #hide{\r\n  display: none;\r\n}\r\n.navbar #view i, .navbar #hide i {\r\n    font-size: 26px;\r\n    \r\n}\r\n}\r\n@media screen and (max-height: 450px) {\r\n  .userSidenav {padding-top: 15px;}\r\n  .userSidenav a {font-size: 18px;}\r\n}\r\n\r\n\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content{\r\n      padding: 30px 0px;\r\n      z-index: 0;\r\n}\r\n.main-title{\r\n  text-align: center;\r\n  font-size: 36px;\r\n  color: #009d6db3;\r\n  font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\n  margin-top: 60px;\r\n}\r\n.sub-title{\r\n      font-size: 26px;\r\n    text-align: center;\r\n        margin-top: 30px;\r\n}\r\n.learn-subject{\r\n  padding: 30px 60px;\r\n}\r\n.learn-subject a{\r\n  text-decoration: none;\r\n}\r\n.learn-subject a:hover{\r\n  color: black;\r\n}\r\n.learn-subject .img-container{\r\n     \r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i{\r\n  color: #31d285;\r\n  font-size: 40px;\r\n  \r\n}\r\n.learn-subject .subject-container{\r\n  margin: 10px 15px 20px 15px;\r\n  padding: 15px;\r\n border-radius: 10px;\r\n background: #fff;\r\n box-shadow:1px 0px 10px 1px #e2e2e4;\r\n}\r\n.learn-subject .subject-container:hover{\r\n  background:linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i{\r\n  color: white;\r\n  -webkit-transform: scale(1.3);\r\n          transform: scale(1.3);\r\n  -webkit-transition: -webkit-transform 0.3s ease-out;\r\n  transition: -webkit-transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out;\r\n  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title{\r\n  color: white;\r\n}\r\n.learn-subject .subject-container .title{\r\n  text-align: center;\r\n  margin:5px auto;\r\n  color:#686868;\r\n  font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px){\r\n  .main-title{\r\n    font-size: 24px;\r\n  }\r\n  .learn-subject{\r\n    padding: 30px 0px;\r\n  }\r\n\r\n.learn-subject .img-container{\r\n  padding: 15px;\r\n}\r\n.learn-subject .subject-container{\r\n  margin:0px;\r\n  margin-bottom: 25px;\r\n}\r\n.learn-subject .img-container i {\r\n  font-size: 56px;\r\n}\r\n.learn-subject .subject-container .title{\r\n  font-size: 14px;\r\n  font-weight: normal;\r\n}\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject{\r\n  padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper{\r\n  margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box{\r\n  display: inline-block;\r\n  height: 50px;\r\n  margin-left: 5px;\r\n  padding: 10px 10px;\r\n  font-size: 30px;\r\n  color: white;\r\n  border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name{\r\n  margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i{\r\n      \r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i{\r\n  margin-left:40%;\r\n  -webkit-transition: margin-left 0.4s linear;\r\n  transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress{\r\n  height: 0.5rem;\r\n  border-radius: 0;\r\n\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar{\r\n  background: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper .progress-percent{\r\n  font-size: 12px;\r\n}\r\n\r\n.practise-report{\r\n  padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper{\r\n  background:#fff;\r\n  padding: 10px;\r\n  border-radius: 5px;\r\n  margin-top: 10px;\r\n  box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report{\r\n  font-size: 120px;\r\n  color: #00ce6f;\r\n  text-shadow: 1px 4px 5px #716e6e;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title{\r\n  font-size: 24px;\r\n  color: black;\r\n  text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title{\r\n  text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next, .practise-report .report-wrapper .title .prev{\r\n  color: #32c24d\r\n}\r\n.practise-report .report-wrapper .title span{\r\n  cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong{\r\n  display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n  margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title{\r\n  width: 50%;\r\n  display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small{\r\n  display: block;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .practise-subject{\r\n    padding: 10px;\r\n  }\r\n  .practise-subject .practise-wrapper .icon-box {\r\n    \r\n    height: 55px;\r\n    padding: 5px 15px;\r\n    margin-left: 10px;\r\n   \r\n}\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n .test .title{\r\n  font-size: 20px;\r\n  text-align: center;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n .owl-nav button{\r\n  background: #3cc95c!important;\r\n}\r\n.owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n\r\n .test{\r\n \r\n  margin:15px auto;\r\n}\r\n .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter{\r\n  background: #fff;\r\n}\r\n.subject-navbar{\r\n  padding: 60px 60px 15px 60px;\r\n  position: relative;\r\n \r\n  border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar span{\r\n  position: absolute;\r\n  top: 15px;\r\n  font-size: 24px;\r\n  left: 15px;\r\n}\r\n\r\n.subject-navbar .icon-box{\r\n  display: inline-block;\r\n  padding: 15px;\r\n  vertical-align: top;\r\n  background: white;\r\n  box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n  border-radius: 5px;\r\n  color: #25cb83;\r\n  font-size: 36px;\r\n}\r\n.subject-navbar .title-box{\r\n  display: inline-block;\r\n  padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2{\r\n  line-height: 1;\r\n  margin-top: 5px;\r\n  margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav{\r\n  margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active, .nav-pills .show>.nav-link{\r\n  background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li{\r\npadding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a{\r\n  color: #262828;\r\n}\r\n.subject-content{\r\n  margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper{\r\n  padding: 30px;\r\n    \r\n  box-shadow: 0px 2px 3px #f6f6f6;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title{\r\n  font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span{\r\n  padding-right: 10px;\r\n  color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option{\r\n  \r\n  text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a{\r\n  display: inline-block;\r\n  padding-right: 30px;\r\n  margin-top: 5px;\r\n  color: #2ad181;\r\n  font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover{\r\n  -webkit-transform: scale(1.2);\r\n          transform: scale(1.2);\r\n  -webkit-transition: color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  transition: color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  transition: transform 0.5s ease-in-out, color 0.5s linear;\r\n  transition: transform 0.5s ease-in-out, color 0.5s linear, -webkit-transform 0.5s ease-in-out;\r\n  color: #009d98;\r\n}\r\n/* slideshow */\r\n#flash{\r\n  padding: 45px;\r\n}\r\n#flash .chapter-title{\r\n  margin-bottom: 5px;\r\n  margin-top: 20px;\r\n  font-size: 22px;\r\n}\r\n#flash .chapter-title span{\r\n  padding-right: 10px;\r\n  color: #25cb83;\r\n}\r\n.carousel-inner .carousel-box{\r\n  padding: 30px;\r\n  background: #f8f8f9;\r\n  color: #655d5d;\r\n  \r\n}\r\n.top-content a{\r\n  text-decoration: none;\r\n  color: #655d5d;\r\n}\r\n.top-content .carousel-control-prev {\r\n  left: -15px;\r\n  background: linear-gradient(45deg, #2ad181, #009d98);\r\n  width: 30px;\r\n  opacity: 1;\r\n}\r\n.top-content .carousel-control-next {\r\n  right: -15px;\r\n  background: linear-gradient(45deg, #2ad181, #009d98);\r\n  width: 30px;\r\n  opacity: 1;\r\n}\r\n@media (min-width: 768px) and (max-width: 991px) {\r\n  /* Show 4th slide on md if col-md-4*/\r\n\r\n  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {\r\n      position: absolute;\r\n      top: 0;\r\n      right: -33.3333%;  /*change this with javascript in the future*/\r\n      z-index: -1;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n}\r\n@media (min-width: 576px) and (max-width: 768px) {\r\n  /* Show 3rd slide on sm if col-sm-6*/\r\n  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {\r\n      position: absolute;\r\n      top: 0;\r\n      right: -50%;  /*change this with javascript in the future*/\r\n      z-index: -1;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n}\r\n@media (min-width: 576px) {\r\n  .carousel-item {\r\n      margin-right: 0;\r\n  }\r\n  /* show 2 items */\r\n  .carousel-inner .active + .carousel-item {\r\n      display: block;\r\n  }\r\n  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),\r\n  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {\r\n      -webkit-transition: none;\r\n      transition: none;\r\n  }\r\n  .carousel-inner .carousel-item-next {\r\n      position: relative;\r\n      -webkit-transform: translate3d(0, 0, 0);\r\n              transform: translate3d(0, 0, 0);\r\n  }\r\n  /* left or forward direction */\r\n  .active.carousel-item-left + .carousel-item-next.carousel-item-left,\r\n  .carousel-item-next.carousel-item-left + .carousel-item,\r\n  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(-100%, 0, 0);\r\n              transform: translate3d(-100%, 0, 0);\r\n      visibility: visible;\r\n  }\r\n  /* farthest right hidden item must be also positioned for animations */\r\n  .carousel-inner .carousel-item-prev.carousel-item-right {\r\n      position: absolute;\r\n      top: 0;\r\n      left: 0;\r\n      z-index: -1;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n  /* right or prev direction */\r\n  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,\r\n  .carousel-item-prev.carousel-item-right + .carousel-item,\r\n  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(100%, 0, 0);\r\n              transform: translate3d(100%, 0, 0);\r\n      visibility: visible;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n}\r\n/* MD */\r\n@media (min-width: 768px) {\r\n  /* show 3rd of 3 item slide */\r\n  .carousel-inner .active + .carousel-item + .carousel-item {\r\n      display: block;\r\n  }\r\n  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {\r\n      -webkit-transition: none;\r\n      transition: none;\r\n  }\r\n  .carousel-inner .carousel-item-next {\r\n      position: relative;\r\n      -webkit-transform: translate3d(0, 0, 0);\r\n              transform: translate3d(0, 0, 0);\r\n  }\r\n  /* left or forward direction */\r\n  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(-100%, 0, 0);\r\n              transform: translate3d(-100%, 0, 0);\r\n      visibility: visible;\r\n  }\r\n  /* right or prev direction */\r\n  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(100%, 0, 0);\r\n              transform: translate3d(100%, 0, 0);\r\n      visibility: visible;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n}\r\n/* LG */\r\n@media (min-width: 991px) {\r\n  /* show 4th item */\r\n  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {\r\n      display: block;\r\n  }\r\n  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {\r\n      -webkit-transition: none;\r\n      transition: none;\r\n  }\r\n  /* Show 5th slide on lg if col-lg-3 */\r\n  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {\r\n      position: absolute;\r\n      top: 0;\r\n      right: -25%;  /*change this with javascript in the future*/\r\n      z-index: -1;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n  /* left or forward direction */\r\n  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(-100%, 0, 0);\r\n              transform: translate3d(-100%, 0, 0);\r\n      visibility: visible;\r\n  }\r\n  /* right or prev direction //t - previous slide direction last item animation fix */\r\n  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {\r\n      position: relative;\r\n      -webkit-transform: translate3d(100%, 0, 0);\r\n              transform: translate3d(100%, 0, 0);\r\n      visibility: visible;\r\n      display: block;\r\n      visibility: visible;\r\n  }\r\n}\r\n\r\n\r\n/*note viewer page */\r\n/* ------------------- The side note viewer navigation menu -------------------- */\r\n.viewerSidenav {\r\n  height: 100%; \r\n  width: 250px; \r\n  position: fixed; \r\n  z-index: 2; \r\n  top: 0; \r\n  left: 0;\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n  background:linear-gradient(180deg, #2ad181, #009d98);\r\n  overflow-x: hidden; \r\n   -ms-overflow-style: none;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; \r\n  padding-bottom: 30px;\r\n}\r\n.viewerSidenav::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n\r\n\r\n.viewerSidenav .profile-container{\r\n\ttext-align: center;\r\n\tpadding: 20px 10px;\r\n  margin-top: 60px;\r\n\t}\r\n.viewerSidenav .profile-container .img-container{\r\n\twidth:40%;\r\n\tbox-shadow: 0px 0px 5px 4px #5753538f;\r\n\tmargin:0px auto;\r\n\toverflow: hidden;\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.viewerSidenav .title-name{\r\n\tfont-size: 18px;\r\n\t    padding-bottom: 10px;\r\n  color: white;\r\n\r\n\t    text-shadow: 1px 2px 3px #3b3939;\r\n      font-family: 'Lato', sans-serif;\r\n  letter-spacing: 1px;\r\ndisplay: block;\r\n\ttext-align: center !important;\r\n\tborder-bottom:1px solid #c7c7c7;\r\n}\r\n\r\n.viewerSidenav .title-name .grade{\r\n  font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n\r\n}\r\n.viewerSidenav .title-name a{\r\n        display:block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n    \r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.viewerSidenav .company-container{\r\n    \r\n    \r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n     -webkit-transition: 0.5s;\r\n     transition: 0.5s; \r\n    background: #27cd81;\r\n}\r\n.viewerSidenav .company-container .img-container{\r\n  width:  50px;\r\n  display: inline-block;\r\n  \r\n}\r\n.viewerSidenav .company-container .img-container img{\r\n  border-radius: 5px;\r\n}\r\n.viewerSidenav .company-container .title-name{\r\n  display: inline-block;\r\n  border: none;\r\n  \r\n}\r\n.viewerSidenav .company-container .title-name span{\r\n  display: none;\r\n}\r\n.viewerSidenav .download-title{\r\n    font-size: 18px;\r\n      padding-bottom: 10px;\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #3b3939;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n  text-align: center !important;\r\n\r\n}\r\n.viewerSidenav .download-app .play-store, .viewerSidenav .download-app .app-store{\r\n  background: black;\r\n  margin: 0px 10px;\r\n  border-radius: 5px;\r\n  padding: 5px;\r\n}\r\n.viewerSidenav .download-app .play-store a, .viewerSidenav .download-app .app-store a{\r\n  padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.viewerSidenav a {\r\n  padding: 10px 8px 10px 32px;\r\n  text-decoration: none;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  display: block;\r\n  -webkit-transition: 0.1s;\r\n  transition: 0.1s;\r\n  position: relative;\r\n}\r\n.viewerSidenav a::after{\r\n  content:'';\r\n  position: absolute;\r\n  top:0;\r\n  left: 0;\r\n  right:0;\r\n  bottom: 0;\r\n  background: transparent;\r\n}\r\n\r\n.viewerSidenav a:hover {\r\n  color: #000;\r\n}\r\n.viewerSidenav .active{\r\n  background: #fff;\r\n  color: #036c17;\r\n}\r\n\r\n\r\n.viewerSidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n.viewerSidenav .footer-nav{\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px  solid #fff;\r\n    \r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.viewerSidenav .footer-nav a{\r\n  display: inline-block;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  #userSideNav{\r\n    padding-bottom: 60px;\r\n  }\r\n  .viewerSidenav .company-container .img-container{\r\n  width:  70px;\r\n  \r\n  \r\n}\r\n  .viewerSidenav{\r\n    width: 0px;\r\n        background: #eeeeee;\r\n  }\r\n  .viewerSidenav .company-container{\r\n   position: relative;\r\n    padding: 12px 5px 5px 5px;\r\n  }\r\n\r\n  \r\n.viewerSidenav .profile-container{\r\n  margin-top: 0;\r\n}\r\n.viewerSidenav a{\r\n      color: #3d3b3b;\r\n    font-weight: bold;\r\n}\r\n\r\n.viewerSidenav .title-name {\r\n    \r\n    color: #32c24d;\r\n    text-shadow: 1px 2px 3px #f4f1f1;\r\n   \r\n}\r\n.viewerSidenav .company-container .title-name span{\r\n  display: inline-block;\r\n  margin-left: 12px;\r\n}\r\n .viewerSidenav .company-container .title-name{\r\n  color: white;\r\n      text-shadow: 1px 2px 3px #767575;\r\n\r\n }\r\n.viewerSidenav .footer-nav{\r\n  padding: 3px 15px;\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n          justify-content: space-between;\r\n      box-shadow:0px -1px 5px #d2d2d2;\r\n\r\n}\r\n.viewerSidenav .footer-nav a i{\r\n  display: block;\r\n}\r\n.viewerSidenav .footer-nav a{\r\n     padding: 5px;\r\n    color: #3b3a3a;\r\n}\r\n.viewerSidenav .footer-nav .active {\r\n  color:green;\r\n}\r\n.viewerSidenav .footer-nav a span{\r\n  font-size: 14px;\r\n    font-weight: normal;\r\n}\r\n.viewerSidenav .title-name{\r\n  font-size: 16px;\r\n \r\n}\r\n.viewerSidenav .profile-container .img-container{\r\n  width: 40%;\r\n}\r\n}\r\n.viewerNavbar{\r\n\theight: 60px;\r\n\tbackground: #fff;\r\n\t\r\n  position: fixed;\r\n  width: calc(100% - 250px);\r\n  z-index: 1;\r\n  padding: 10px 16px;\r\n}\r\n\r\n .viewerNavbar .close i{\r\n  padding: 5px;\r\n}\r\n\r\n\r\n.viewerNavbar .close{\r\n\tdisplay: block;\r\n\theight: 44px;\r\n\toverflow: hidden;\r\n\t\r\n\tpadding: 10px 0px 10px 15px;\r\n\tborder-radius: 5px;\r\n\r\n}\r\n.viewerNavbar .close a{\r\n\tmargin-right: 10px;\r\n\tfont-size: 18px;\r\n\ttext-decoration: none;\r\n\tcolor: #008862;\r\n}\r\n.viewerNavbar .close:hover a{\r\n\tmargin-right: 10px;\r\n\t-webkit-transition: margin-right 0.3s linear;\r\n\ttransition: margin-right 0.3s linear;\r\n}\r\n.viewerNavbar #view{\r\n\tdisplay: none;\r\n}\r\n.viewerNavbar #view i, .viewerNavbar #hide i{\r\n\t    font-size: 36px;\r\n    color: #2ad181;\r\n    \r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .viewerNavbar{\r\n    width: 100%;\r\n    height: 50px;\r\n    padding: 0px 15px;\r\n  }\r\n  #main{\r\n    margin-left:0px;\r\n  }\r\n  .viewerNavbar #view{\r\n  display: block;\r\n}\r\n.viewerNavbar #hide{\r\n  display: none;\r\n}\r\n.viewerNavbar #view i, .viewerNavbar #hide i {\r\n    font-size: 26px;\r\n    \r\n}\r\n}\r\n@media screen and (max-height: 450px) {\r\n  .userSidenav {padding-top: 15px;}\r\n  .userSidenav a {font-size: 18px;}\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -6343,7 +6343,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Righteous|Varela+Round&display=swap);", ""]);
 
 // module
-exports.push([module.i, "/*\r\nfont-family: 'Varela Round', sans-serif;\r\nfont-family: 'Quicksand', sans-serif;\r\nfont-family: 'Righteous', cursive;\r\n*/\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Quicksand', sans-serif;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n/* Style the navbar */\r\n#navbar {\r\n \r\n  background: #f4f4f4;\r\n  padding: 15px 90px;\r\n  z-index: 9;\r\n\r\n}\r\n\r\n.addnavbar {\r\n  background: #fff !important;\r\n  -webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */\r\n  animation-name: navbar;\r\n  animation-duration: 0.5s;\r\n  box-shadow: 0px 2px 5px #e6fbe6;\r\n}\r\n\r\n@-webkit-keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Navbar links */\r\n#navbar .nav a {\r\n  float: left;\r\n  display: block;\r\n  color: #28a745;\r\n  text-align: center;\r\n  padding: 10px 0px;\r\n  margin-right: 30px;\r\n  text-shadow: 1px 2px 3px #d6d5d5;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n  font-weight: 400;\r\n  font-family: 'Righteous', cursive;\r\n  position: relative;\r\n}\r\n\r\n#navbar .nav a>.active {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #5bbc2e;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover::before {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #28a745;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover {\r\n      color: #ffffff;\r\n    text-shadow: 1px 2px 3px #c2b8b8;\r\n}\r\n\r\n\r\n.logo-container {\r\n  width:  50px;\r\n}\r\n\r\n.logo-container img {\r\n  width: 160px;\r\n}\r\n\r\n#navbar span {\r\n  padding-top: 0px;\r\n  font-size: 30px;\r\n  color: #4a8a16;\r\n}\r\n\r\n#navbar .button-container {\r\n  display: block;\r\n  margin-top: 0px;\r\n}\r\n\r\n#navbar .button-container .login {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .login a {\r\n  background: linear-gradient(17deg, #dddbdb, #ffffff);\r\n    color: #28a745;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    padding: 6px 20px;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    text-shadow: 1px 2px 3px #bcb2b2;\r\n}\r\n\r\n#navbar .button-container .join-now {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n  padding: 0px 10px;\r\n}\r\n\r\n#navbar .button-container .join-now a {\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n text-shadow: 1px 2px 3px #928e8e;\r\n  color: white;\r\n  border-radius: 5px;\r\n    padding: 6px 15px;\r\n    font-weight: bold;\r\n  font-size: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\n#navbar .button-container a:hover {\r\n  border: 2px solid #fff;\r\n}\r\n\r\n#navbar .dropdown{\r\n  display: initial;\r\n}\r\n#navbar .dropdown-menu{\r\n  border: none;\r\n}\r\n#navbar .dropdown-menu a:hover::before{\r\ndisplay: none;\r\n}\r\n#navbar .dropdown-menu .dropdown-item:active{\r\n  background: #28a745;\r\n}\r\n/*--------------------mobile navbar----------------------------*/\r\n#myNav {\r\n  height: 100%;\r\n}\r\n\r\n/* The Overlay (background) */\r\n.overlay {\r\n\r\n  /* Height & width depends on how you want to reveal the overlay (see JS below) */   \r\n  height: 100%;\r\n  width: 0;\r\n  position: fixed; /* Stay in place */\r\n  z-index: 10; /* Sit on top */\r\n  left: 0;\r\n  top: 0;\r\n\r\n  background-color: #5bbc2e; /* Black fallback color */\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#2ad181d1));\r\n  background:linear-gradient(180deg, #2ad181, #2ad181d1);\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */\r\n}\r\n\r\n/* Position the content inside the overlay */\r\n.overlay-content {\r\n  position: relative;\r\n  top: 25%; /* 25% from the top */\r\n  width: 100%; /* 100% width */\r\n  text-align: center; /* Centered text/links */\r\n  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */\r\n}\r\n\r\n/* The navigation links inside the overlay */\r\n.overlay a {\r\n    padding: 5px 50px;\r\n    text-decoration: none;\r\n    font-size: 26px;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    text-align: left;\r\n    display: block;\r\n    -webkit-transition: 0.3s;\r\n    transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.overlay a:hover, .overlay a:focus {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position the close button (top right corner) */\r\n.overlay .closebtn {\r\n        position: absolute;\r\n    top: 0px;\r\n    right: 0px;\r\n    font-size: 60px;\r\n    padding: 0px 35px;\r\n}\r\n\r\n\r\n@media (max-width:756px) {\r\n  #navbar {\r\n    padding: 5px 10px;\r\n  }\r\n  #navbar .button-container .join-now {\r\n    margin:5px auto;\r\n  }\r\n \r\n  #navbar .button-container .join-now a{\r\n        padding:  5px;\r\n    font-size: 12px;\r\n  }\r\n  #navbar .button-container .login a{\r\n    padding:  5px 15px;\r\n    font-size: 12px;\r\n  }\r\n\r\n  .logo-container img {\r\n  height: 40px;\r\n    \r\n  }\r\n  #navbar span{\r\n    padding-top: 5px;\r\n  }\r\n.modal-dialog {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.modal-content {\r\n  height: auto;\r\n  min-height: 100%;\r\n  border-radius: 0;\r\n}\r\n#myNav .dropdown-menu{\r\n  right: 0;\r\n  left:0;\r\n}\r\n#myNav .dropdown-menu a{\r\n  text-align: center;\r\n    color: green;\r\n}\r\n}\r\n\r\n/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */\r\n@media screen and (max-height:450px) {\r\n  .overlay a {\r\n    font-size: 20px\r\n  }\r\n\r\n  .overlay .closebtn {\r\n    font-size: 40px;\r\n    top: 15px;\r\n    right: 35px;\r\n  }\r\n\r\n}\r\n\r\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\r\n.sticky {\r\n  position: fixed;\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n  width: 100%;\r\n  -webkit-transition: -webkit-transform 2s linear;\r\n  transition: -webkit-transform 2s linear;\r\n  transition: transform 2s linear;\r\n  transition: transform 2s linear, -webkit-transform 2s linear;\r\n}\r\n\r\n/*---------------------------------------- banner-------------------------------*/\r\n.banner {\r\n  background: url(" + escape(__webpack_require__(/*! ./images/banner.jpg */ "./resources/js/pages/images/banner.jpg")) + ");\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  padding: 160px 0px 160px 0px;\r\n  text-align: center;\r\n  height: 100vh;\r\n  position: relative;\r\n}\r\n\r\n.banner .title {\r\n     font-size: 60px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 1px;\r\n    text-shadow: 1px 3px 4px #8e9b92;\r\n    color: #28a745;\r\n}\r\n\r\n.banner .subtitle {\r\n  margin: 10px auto;\r\n  font-size: 22px;\r\n  color: #8a8a8a;\r\n  max-width: 700px;\r\n  font-family: 'Varela Round', sans-serif;\r\n}\r\n\r\n/*-------------------------------join now-----------------------*/\r\n.banner .join-now-form {\r\n  max-width: 320px;\r\n  margin: 60px auto 30px auto;\r\n  border: 1px solid #12c78200;\r\n  background: white;\r\n  font-size: 20px;\r\n  font-weight: normal;\r\n      box-shadow: 1px 2px 5px #2de2664d;\r\n  border-radius: 5px;\r\n \r\n}\r\n/* .banner .join-now-form .row{\r\n\r\n} */\r\n\r\n.banner .join-now-form .country-code {\r\n  padding: 7px 0px;\r\n  border-right: 1px solid #28a745;\r\n}\r\n\r\n.banner .join-now-form .phone-number {\r\n  padding: 5px 0px;\r\n}\r\n\r\n.banner .join-now-form .phone-number input {\r\n  border: none;\r\n}\r\n\r\n.banner .join-now-form .phone-number input:focus {\r\n  outline: none;\r\n}\r\n\r\n.banner .join-now-form .submit {\r\n  padding: 3px 0px;\r\n  margin-right: -15px;\r\n  background: #28a745;\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n  text-shadow: 1px 2px 3px #3d3a3a;\r\n  border-bottom-right-radius: 5px;\r\n  border-top-right-radius: 5px;\r\n}\r\n.banner .join-now-form .submit:hover{\r\n   background: linear-gradient(45deg, #36ea5f, #00b693);\r\n   text-shadow: 1px 0px 0px #3d3a3a;\r\n}\r\n.banner .join-now-form .submit a{\r\n  font-size: 26px;\r\n  text-decoration: none;\r\n  font-weight: bolder;\r\n  color: white;\r\n}\r\n.banner .app-download{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n}\r\n.banner .app-download .play-store{\r\n    background: #14ac5b;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .app-store{\r\n   background: #9ea09d;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .play-store:hover{\r\n  background: grey;\r\n}\r\n.banner .app-download .app-store:hover{\r\n  background: #496f5a;\r\n}\r\n\r\n/*------------------------join-us modal -----------------*/\r\n.join .modal-body {\r\n  padding: 20px 30px;\r\n}\r\n\r\n.join .modal-body .title {\r\n      font-size: 40px;\r\n    color: #ffffff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 3px 4px #035a21;\r\n    margin-bottom: 40px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 2px;\r\n    text-align: center;\r\n    padding-bottom: 25px;\r\n   \r\n}\r\n.join .modal-body .form-control{\r\n  border:none;\r\n      background: #fbfbfb;\r\n}\r\n\r\n.join .modal-body:hover .title {\r\n     color: #28a745;\r\n    text-shadow: 1px 3px 4px #d1d9d4;\r\n}\r\n\r\n.join .modal-body form input {\r\n  height: 50px;\r\n  margin:35px auto;\r\n    padding: 0px 40px;\r\n}\r\n\r\n.join .modal-body .button-container {\r\n  text-align: center;\r\n}\r\n\r\n.join .modal-body .button-container button {\r\n      width: 80%;\r\n    border-radius: 50px;\r\n    font-size: 18px;\r\n    height: 50px;\r\n    color: #28a745;\r\n    margin-bottom: 20px;\r\n    background: #fdfffd;\r\n    box-shadow: 1px 2px 4px #bfc3c1;\r\n     font-family: 'Righteous', cursive;\r\n    text-align: center;\r\n    border:0px;\r\n}\r\n.join .modal-body .button-container button:hover{\r\nbackground: #28a745;\r\n    color: white;\r\n  }\r\n.join .modal-content button{\r\n  text-align: right;\r\n  padding-right: 25px;\r\n  padding-top: 15px;\r\n}\r\n#invite_code {\r\n  cursor: pointer;\r\n  margin-top: 10px;\r\n  margin-bottom: 30px;\r\n  color: #28a745;\r\n}\r\n\r\n.join .modal-body .button-container a {\r\n  text-align: center;\r\n  text-decoration: none;\r\n  font-weight: bold;\r\n  color: grey;\r\n}\r\n\r\n.form-control:focus {\r\n  background-color: #fff;\r\n  border-color: #8bfea6;\r\n  box-shadow: 0 0 0 0.1rem rgb(66, 183, 92);\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .banner{\r\n    height: 70vh;\r\n    padding: 140px 10px 140px 10px;\r\n  }\r\n   .banner .title {\r\n    font-size: 30px;\r\n    text-shadow: 1px 3px 4px #b3b4b3;\r\n  }\r\n  .banner .subtitle{\r\n    font-size: 16px;\r\n  }\r\n  .overlay-content{\r\n    top: 15%;\r\n  }\r\n}\r\n.banner .banner-wave{\r\n  display: block;\r\n}\r\n.banner .wave-img {\r\n    width: 100%;\r\n    \r\n    background-position: bottom;\r\n    background-size: cover;\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n}\r\n.banner .app-download{\r\n  padding: 0px 30px;\r\n}\r\n.banner .app-download .play-store, .banner .app-download .app-store{\r\n  padding: 5px 10px;\r\n}\r\n\r\n/*----------------end of banner ----------------*/\r\n/*---------------------features-----------------*/\r\n\r\n.feature-container{\r\n padding: 20px;\r\n   \r\n}\r\n.feature-container .title{\r\n  font-size: 40px;\r\n    color: #28a745;\r\n    font-family: 'Righteous', cursive;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 2px 3px #b0a7a7;\r\n}\r\n.feature-container .description{\r\n  font-size: 16px;\r\n  color: grey;\r\n  text-align: justify;\r\n  margin-bottom: 30px;\r\n}\r\n.feature-container .button-container{\r\n  text-align: right;\r\n}\r\n.feature-container .button-container .mybtn{\r\n  padding: 12px 20px;\r\n  color: white;\r\n  text-shadow: 1px 2px 3px #928e8e;\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  border-radius: 5px;\r\n  text-decoration: none;\r\n}\r\n.feature-container .button-container .mybtn:hover{\r\n   background: linear-gradient(235deg, #36ea5f, #00b693);\r\n}\r\n.feature-container .button-container a{\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bolder;\r\n  cursor: pointer;\r\n}\r\n.feature-container .button-container a:hover{\r\n  color: white;\r\n}\r\n\r\n.question-feature{\r\npadding: 90px 0px;\r\n\r\n}\r\n.analysis-feature{\r\npadding: 90px 0px;\r\nbackground: #f1fef18a;\r\n}\r\n.syllabus-feature{\r\npadding: 90px 0px;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .feature-container .title{\r\n    font-size: 26px;\r\n  }\r\n  .syllabus-feature, .question-feature, .analysis-feature{\r\n    padding: 30px 0px;\r\n  }\r\n\r\n}\r\n/*-----------------end of features--------------*/\r\n/*-------------------testimonial-----------------*/\r\n.testimonial-container{\r\n  padding: 90px 30px;\r\n}\r\n.testimonial-container .title{\r\n  font-size: 40px;\r\n  font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n  margin-bottom: 60px;\r\n   color: #28a745;\r\n   text-shadow: 1px 2px 3px #cec0c0;\r\n}\r\n.testimonial{\r\n    margin: 0 15px;\r\n}\r\n.testimonial .content{\r\n    padding: 15px 10px;\r\n    border-radius:6px;\r\n    margin-bottom: 15px;\r\n    position: relative;\r\n    background:#e67e22;\r\n    min-height: 100px;\r\n}\r\n.testimonial .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #e67e22;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content{\r\n    background: #1abc9c;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #1abc9c;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content{\r\n    background: #5bbc2e;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #9b59b6;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n.testimonial .description{\r\n    margin-bottom: 10px;\r\n    color:#fff;\r\n}\r\n.testimonial-pic{\r\n    float:left;\r\n    width: 80px;\r\n    height: 80px;\r\n}\r\n.testimonial-pic > img{\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    border: 2px solid #e5e5e5;\r\n    margin-left: 20px;\r\n}\r\n.testimonial .testimonial-review{\r\n    margin:3px 0 0 30px;\r\n    float: left;\r\n}\r\n.testimonial .testimonial-title{\r\n    font-size:16px;\r\n    text-transform:capitalize;\r\n    font-weight: bold;\r\n    margin:0;\r\n}\r\n.testimonial > .testimonial-review span{\r\n    color: darkgray;\r\n    display: block;\r\n    font-size: 13px;\r\n    margin-bottom:5px;\r\n}\r\n.testimonial .social-links{\r\n    padding:0;\r\n    margin:0;\r\n}\r\n.testimonial .social-links > li{\r\n    list-style:none;\r\n    display:inline-block;\r\n    margin-right:10px;\r\n}\r\n.testimonial .social-links > li > a.fa-twitter{\r\n    color:#00aced;\r\n}\r\n.testimonial .social-links > li > a.fa-facebook{\r\n    color: #3b599a;\r\n}\r\n.testimonial .social-links > li > a.fa-pinterest{\r\n    color:#E14782;\r\n}\r\n.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{\r\n    background: #1abc9c;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    background: #333;\r\n    opacity: 1;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    width: 10px;\r\n    height:10px;\r\n    margin: 5px 6px;\r\n}\r\n.testimonial-container .owl-nav{\r\n     font-size: 60px;\r\n    top: 25%;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.testimonial-container .owl-nav button{\r\n  background: green;\r\n}\r\n.testimonial-container .owl-nav button span{\r\n  color: #28a745;\r\n  padding: 0px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n .testimonial-container .title{\r\n  font-size: 26px;\r\n }\r\n}\r\n/*-------------------end of testimonial-------------*/\r\n/*-----------------app download container---------------*/\r\n.app-container{\r\n  padding: 120px 60px;\r\n  background: #3cc95c;\r\n}\r\n.app-container .title{\r\n  font-size: 40px;\r\n  color: #fff;\r\n    text-shadow: 0px 1px 5px #4a4848;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n \r\n  margin-bottom: 20px;\r\n}\r\n.app-container .subtitle{\r\n  color: white;\r\n  font-size: 24px;\r\n\r\n  margin-bottom: 50px;\r\n}\r\n.app-container .app-download .play-store, .app-container .app-download .app-store{\r\nbackground: black;\r\nmargin: 0px 10px;\r\nborder-radius: 5px;\r\npadding: 5px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .app-container{\r\n    padding: 90px 30px;\r\n  }\r\n  .app-container .title{\r\n    font-size: 30px;\r\n  }\r\n  .app-container .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*----------------hit question-----------------*/\r\n.hit-question{\r\n  padding: 60px 90px;\r\n  background: #3cc95c;\r\n\r\n}\r\n.hit-question .title{\r\n  color: white;\r\n  font-size: 40px;\r\n  text-shadow: 0px 1px 5px #7c7474;\r\n  font-weight: bold;\r\n}\r\n.hit-question .subtitle{\r\n  color: white;\r\n  font-size: 20px;\r\n}\r\n.hit-question .button-container{\r\n  text-align: center;\r\n}\r\n.hit-question .button-container .ask-button{\r\n  padding: 10px 20px;\r\n  background: #333333;\r\n  color: white;\r\n  width: 100%;\r\n      text-shadow: 1px 2px 3px #032f0d;\r\n      font-weight: bolder;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n\r\n  margin-top: 45px;\r\n}\r\n.hit-question .button-container .ask-button:hover{\r\n  background: #fff;\r\n  color: #000;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .hit-question{\r\n    padding: 60px 30px;\r\n  }\r\n  .hit-question .title{\r\n    font-size: 26px;\r\n  }\r\n  .hit-question .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*------------------footer--------------*/\r\n.footer{\r\n  padding:60px 90px 0px 90px;\r\n  background: #222222;\r\n  color: white;\r\n}\r\n.footer .title{\r\n      color: #28a745;\r\n    font-size: 24px;\r\n    font-family: 'Righteous', cursive;\r\n    margin-top: 30px;\r\n    letter-spacing: 1px;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 1px 3px black;\r\n}\r\n.footer .description{\r\n  text-align: justify;\r\n  padding-right: 40px;\r\n}\r\n.footer .footer-list .phone , .footer .footer-list .email{\r\n\r\n  cursor: pointer;\r\n}\r\n.footer .footer-list .phone i, .footer .footer-list .email i{\r\n    margin-right: 10px;\r\n}\r\n.footer .footer-list ul{\r\n  list-style: none;\r\n}\r\n.footer .footer-list ul a{\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n.footer .footer-list ul a:hover{\r\n  color: #28a745;\r\n}\r\n.footer .newsletter-container{\r\n      background: #cdd4cf14;\r\n    padding: 30px 30px;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.footer .newsletter-container .subscribe-title{\r\n  font-size: 24px;\r\n  margin-bottom: 20px;\r\n}\r\n.footer .newsletter-container .button-container{\r\nmargin-top: 30px;\r\ntext-align: right;\r\n}\r\n.footer .newsletter-container form .button-container .btn {\r\n  \r\n  border-radius: 5px !important;\r\n  \r\n}\r\n.footer .buttom-footer{\r\n  text-align: center;\r\n border-top: 1px solid #fffdfd4d;\r\n  padding: 15px 0px 5px 0px;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .footer{\r\n    padding: 60px 10px 0px 10px;\r\n  }\r\n  .footer .description{\r\n    padding-right: 0px;\r\n  }\r\n  .footer .newsletter-container .subscribe-title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .buttom-footer{\r\n    font-size: 18px;\r\n  }\r\n  .footer .title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .footer-list ul{\r\n    padding: 0;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*----------------------------------quiz style------------------*/\r\n/*----------quiz.css---------------*/\r\n.quiz{\r\n  position: relative;\r\n}\r\n.quiz nav{\r\n  height: 80px;\r\n}\r\n.quiz .quit-section{\r\n  position: absolute;\r\n  top: 30px;\r\n  right: 5%;\r\n  z-index: 1;\r\n}\r\n.quiz .quit-section .quit a{\r\n  border:2px solid white;\r\n  padding: 5px 10px;\r\n  border-radius: 5px;\r\n  color: white;\r\n  z-index: 999999;\r\n}\r\n.quiz .quit-section .quit:hover a{\r\nbackground-color: white;\r\ncolor: green;\r\ntext-decoration: none;\r\n}\r\n.test-section{\r\n  margin-top: 100px;\r\n}\r\n.timer-container{\r\n  margin:0px auto;\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 200px;\r\n  top: 0px;\r\n\r\n}\r\n.timer-wrapper{\r\n  margin:10px auto;\r\n  width: 140px;\r\n  height: 140px;\r\n  background:white;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px #eaf3ec;\r\n}\r\n.timer-wrapper .time{\r\n  line-height: 5.5;\r\n  font-size: 25px;\r\n  color: #1ba01b;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n.question-container{\r\n  margin: 20px auto;\r\n}\r\n.question-title{\r\n  font-size: 24px;\r\n  color:green;\r\n  font-weight: bold;    \r\n}\r\n/* .answer-container{\r\n\r\n} */\r\n.answer-wrapper{\r\n      border-radius: 5px;\r\n    padding: 10px 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    margin-top: 5px;\r\n    margin-bottom: 20px;\r\n    box-shadow: 1px 1px 4px #cac5c5;\r\n}\r\n.answer-wrapper:hover{\r\n  background-color: #ccffd8;\r\n}\r\n.answer-container  .active{\r\n  background-color: #ccffd8 !important;\r\n}\r\n\r\n.option-number{\r\n  border: 0.5px solid #47b15f;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  padding:0px 7px;\r\n  margin:0 auto;\r\n  color: slategray;\r\n  border-radius: 5px;\r\n\r\n\r\n}\r\n.option{\r\n  -webkit-box-flex: 1;\r\n          flex: 1;\r\n  margin-left: 10px;\r\n  font-size: 18px;\r\n  color: #069426;\r\n  font-weight: bold;\r\n}\r\n.option-tick{\r\n  display: none;\r\n  color: green;\r\n}\r\n.answer-wrapper:hover .option-number, .answer-container  .active .option-number{\r\n  padding: 0px 20px;\r\n  -webkit-transition: padding 0.2s ease-in;\r\n  transition: padding 0.2s ease-in;\r\n  background-color: #1cb13e;\r\n  color: white;\r\n}\r\n.answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{\r\n  display: block;\r\n}\r\n.progress-container{\r\n  position: fixed;\r\n  left: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  \r\n}\r\n.progress-container .progress{\r\n  height: 30px;\r\n}\r\n.progress-container .progress .progress-bar{\r\n  background-color: #47b15f;\r\n}\r\n.quiz .button-section{\r\n  margin: 30px auto;\r\n}\r\n.quiz .button-section .button-row{\r\n  display: -webkit-box;\r\n  display: flex;\r\n}\r\n.quiz .button-section .button-row .prev-btn{\r\n  background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding-top: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  width: 100px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n  color: white;\r\n}\r\n.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #fff;\r\n  font-size: 18px;\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {\r\n  background:linear-gradient(45deg, #36ea5f, #00b693);\r\n  \r\n  -webkit-transition:  background-color 0.2s linear;\r\n  \r\n  transition:  background-color 0.2s linear;\r\n  color: white;\r\n  border: none;\r\n\r\n\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  color: white;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n}\r\n.quiz .button-section .button-row .next-btn{\r\n    background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  -webkit-box-pack: right;\r\n          justify-content: right;\r\n  width: 100px;\r\n  cursor: pointer;\r\n  text-align: center;\r\n}\r\n\r\n\r\n@media (max-width: 768px)\r\n{\r\n  .answer-wrapper{\r\n  \r\n  padding: 5px 5px;\r\n  \r\n  }\r\n  .quiz nav {\r\n    height: 70px;\r\n  }\r\n  .timer-wrapper {\r\n    margin: 20px auto;\r\n    width: 100px;\r\n    height: 100px;\r\n  }\r\n  .timer-wrapper .time {\r\n    line-height: 6;\r\n    font-size: 16px;\r\n  }\r\n  .question-title {\r\n    font-size: 16px;\r\n  }\r\n  .quiz .quit-section {\r\n    top:25px;\r\n  }\r\n  .test-section {\r\n    margin-top: 80px;\r\n  }\r\n  .option{\r\n    font-size: 14px;\r\n  }\r\n  .option-number{\r\n    font-size: 12px;\r\n    padding: 0px 5px;\r\n  }\r\n  .question-container {\r\n    margin: 20px auto 10px auto;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #47b15f;\r\n  font-size: 18px;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n    display: none;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{\r\n    width: 40px;\r\n  }\r\n}\r\n/* The side navigation menu */\r\n.sidenav {\r\n  height: 100%; /* 100% Full-height */\r\n  width: 0; /* 0 width - change this with JavaScript */\r\n  position: fixed; /* Stay in place */\r\n  z-index: 1; /* Stay on top */\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #4a8457 ; /* Black*/\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  padding-top: 60px; /* Place content 60px from the top */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n  padding: 8px 8px 8px 32px;\r\n  text-decoration: none;\r\n  font-size: 25px;\r\n  color: #818181;\r\n  display: block;\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  \r\n}\r\n\r\n/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */\r\n@media screen and (max-height: 450px) {\r\n  .sidenav {padding-top: 15px;}\r\n  .sidenav a {font-size: 18px;}\r\n}\r\n\r\n#mySidenav a {\r\n  position: absolute; /* Position them relative to the browser window */\r\n right: -30px; /* Position them outside of the screen */\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s; /* Add transition on hover */\r\n  padding: 15px; /* 15px padding */\r\n  width: 100px; /* Set a specific width */\r\n  text-decoration: none; /* Remove underline */\r\n  font-size: 20px; /* Increase font size */\r\n  color: white; /* White text color */\r\n  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */\r\n}\r\n\r\n\r\n\r\n\r\n.off-canvas-btn{\r\n  position: fixed;\r\n  top:15%;\r\n  left: -80px;\r\n  width: 120px;\r\n  height: 50px;\r\n  background: #0ae196;\r\n  border-top-right-radius: 5px;\r\n  border-bottom-right-radius: 5px; \r\n  z-index: 1;\r\n}\r\n.off-canvas-btn:hover{\r\n  left: 0px;\r\n  -webkit-transition: left 0.3s linear;\r\n  transition: left 0.3s linear;\r\n}\r\n.off-canvas-btn .canvas-btn{\r\n  line-height: 3;\r\n  color: white;\r\n  padding: 0px 5px  0px 25px;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n.off-canvas-btn .canvas-btn i{\r\n  padding-left: 15px;\r\n}\r\n\r\n\r\n/*------------------------------class page -section --------------*/\r\n.class-section .title{\r\n   font-size: 36px;\r\n  font-weight: bold;\r\n  color: #28a745;\r\n  letter-spacing: 1px;\r\n  text-align: center;\r\n  margin-bottom: 26px;\r\n  text-shadow: 1px 2px 3px #c7bebe;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n/*-----syllabus section---------*/\r\n\r\n.class-section .syllabus-section{\r\n  \r\n  padding: 30px 20px;\r\n  background: #fff;\r\n\r\n}\r\n\r\n.class-section .syllabus-section .content{\r\n  margin: 40px auto;\r\n}\r\n.class-section .syllabus-section .content .subject{\r\n  background: #ffffff;\r\n  padding: 16px;\r\n     border-radius: 5px;\r\n    box-shadow: 0px 2px 3px 1px #b6b6b691;\r\n  margin-bottom: 25px;\r\n  cursor: pointer;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  font-family: sans-serif;\r\n  font-size: 20px;\r\n  color: #28a745;\r\n  letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n}\r\n.class-section .syllabus-section .demo-box{ \r\n  padding: 60px 30px;\r\n  background: #00800005;\r\n  border-radius: 5px;\r\n}\r\n/*---------------overview-section-----------*/\r\n.class-section .overview-section{\r\n  padding:60px 0px;\r\n}\r\n\r\n.class-section .overview-section p{\r\n  text-align: justify;\r\n  padding: 0px 20px;\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n.class-section .test-section {\r\n  margin-top: 20px;\r\n  padding: 90px 0px;\r\n  background: #eaf1ea;\r\n}\r\n.class-section .test-section .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.class-section .test-section .select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.class-section .test-section .select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n.class-section .test-section .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 30px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n.class-section .test-section .test .title{\r\n  font-size: 20px;\r\n  margin-top: 10px;\r\n  margin-bottom: 60px;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.class-section .test-section .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.class-section .test-section .owl-nav button{\r\n  background: #3cc95c;\r\n}\r\n.class-section .test-section .owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n  .class-section .syllabus-section{\r\n    padding: 30px 0px 0px 0px;\r\n  }\r\n.class-section .syllabus-section .content .subject{\r\n  padding: 5px 30px;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  line-height: 60px;\r\n}\r\n.class-section .test-section .test{\r\n \r\n  margin:15px auto;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n.class-section .title{\r\n  font-size: 26px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/*-----------------------preparation page----------------------*/\r\n.preparation-section{\r\n  padding: 0px 0px;\r\n  margin-bottom: 30px;\r\n}\r\n.preparation-section .curve-section{\r\n    box-shadow: 1px 2px 8px 2px #d2cccc;\r\n    border-radius: 10px;\r\n}\r\n.preparation-section .curve-section .preparation-container{\r\n  padding: 30px 60px;\r\n}\r\n.preparation-section .curve-section .preparation-container .title{\r\n  display: block;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: #606060;\r\n\r\n    letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n}\r\n.preparation-section .curve-section .preparation-container .subtitle{\r\n  display: block;\r\n    font-size: 18px;\r\n    color: black;\r\n    margin-bottom: 20px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .preparation-section .curve-section .preparation-container .title{\r\n    font-size: 18px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container .subtitle{\r\n    font-size: 14px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container {\r\n    padding: 30px 25px;\r\n}\r\n}", ""]);
+exports.push([module.i, "/*\r\nfont-family: 'Varela Round', sans-serif;\r\nfont-family: 'Quicksand', sans-serif;\r\nfont-family: 'Righteous', cursive;\r\n*/\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Quicksand', sans-serif;\r\n}\r\n.logo-box{\r\n  width: 100px;\r\n  margin: 0 auto;\r\n}\r\n.mybtn{\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover{\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n/* Style the navbar */\r\n#navbar {\r\n \r\n  background: #f4f4f4;\r\n  padding: 15px 90px;\r\n  z-index: 9;\r\n\r\n}\r\n\r\n.addnavbar {\r\n  background: #fff !important;\r\n  -webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */\r\n  animation-name: navbar;\r\n  animation-duration: 0.5s;\r\n  box-shadow: 0px 2px 5px #e6fbe6;\r\n}\r\n\r\n@-webkit-keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes navbar {\r\n  from {\r\n    background-color: #f3f3f3;\r\n  }\r\n\r\n  to {\r\n    background-color: #fff;\r\n  }\r\n\r\n}\r\n\r\n/* Navbar links */\r\n#navbar .nav a {\r\n  float: left;\r\n  display: block;\r\n  color: #28a745;\r\n  text-align: center;\r\n  padding: 10px 0px;\r\n  margin-right: 30px;\r\n  text-shadow: 1px 2px 3px #d6d5d5;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n  font-weight: 400;\r\n  font-family: 'Righteous', cursive;\r\n  position: relative;\r\n}\r\n\r\n#navbar .nav a>.active {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #5bbc2e;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover::before {\r\n  -webkit-transition: all 0.2s linear 0s;\r\n  transition: all 0.2s linear 0s;\r\n  content: \"\";\r\n  border-top: 4px solid #28a745;\r\n  border-left: 4px solid transparent;\r\n  border-right: 4px solid transparent;\r\n  top: -15px;\r\n  position: absolute;\r\n  width: 100%;\r\n}\r\n\r\n#navbar .nav a:hover {\r\n      color: #ffffff;\r\n    text-shadow: 1px 2px 3px #c2b8b8;\r\n}\r\n\r\n\r\n.logo-container {\r\n  width:  50px;\r\n}\r\n\r\n.logo-container img {\r\n  width: 160px;\r\n}\r\n\r\n#navbar span {\r\n  padding-top: 0px;\r\n  font-size: 30px;\r\n  color: #4a8a16;\r\n}\r\n\r\n#navbar .button-container {\r\n  display: block;\r\n  margin-top: 0px;\r\n}\r\n\r\n#navbar .button-container .login {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n}\r\n\r\n#navbar .button-container .login a {\r\n  background: linear-gradient(17deg, #dddbdb, #ffffff);\r\n    color: #28a745;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    padding: 6px 20px;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    text-shadow: 1px 2px 3px #bcb2b2;\r\n}\r\n\r\n#navbar .button-container .join-now {\r\n  display: inline-block;\r\n  margin: 10px auto;\r\n  padding: 0px 10px;\r\n}\r\n\r\n#navbar .button-container .join-now a {\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n text-shadow: 1px 2px 3px #928e8e;\r\n  color: white;\r\n  border-radius: 5px;\r\n    padding: 6px 15px;\r\n    font-weight: bold;\r\n  font-size: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\n#navbar .button-container a:hover {\r\n  border: 2px solid #fff;\r\n}\r\n\r\n#navbar .dropdown{\r\n  display: initial;\r\n}\r\n#navbar .dropdown-menu{\r\n  border: none;\r\n}\r\n#navbar .dropdown-menu a:hover::before{\r\ndisplay: none;\r\n}\r\n#navbar .dropdown-menu .dropdown-item:active{\r\n  background: #28a745;\r\n}\r\n/*--------------------mobile navbar----------------------------*/\r\n#myNav {\r\n  height: 100%;\r\n}\r\n\r\n/* The Overlay (background) */\r\n.overlay {\r\n\r\n  /* Height & width depends on how you want to reveal the overlay (see JS below) */   \r\n  height: 100%;\r\n  width: 0;\r\n  position: fixed; /* Stay in place */\r\n  z-index: 10; /* Sit on top */\r\n  left: 0;\r\n  top: 0;\r\n\r\n  background-color: #5bbc2e; /* Black fallback color */\r\n  background:-webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#2ad181d1));\r\n  background:linear-gradient(180deg, #2ad181, #2ad181d1);\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */\r\n}\r\n\r\n/* Position the content inside the overlay */\r\n.overlay-content {\r\n  position: relative;\r\n  top: 25%; /* 25% from the top */\r\n  width: 100%; /* 100% width */\r\n  text-align: center; /* Centered text/links */\r\n  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */\r\n}\r\n\r\n/* The navigation links inside the overlay */\r\n.overlay a {\r\n    padding: 5px 50px;\r\n    text-decoration: none;\r\n    font-size: 26px;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    text-align: left;\r\n    display: block;\r\n    -webkit-transition: 0.3s;\r\n    transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.overlay a:hover, .overlay a:focus {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position the close button (top right corner) */\r\n.overlay .closebtn {\r\n        position: absolute;\r\n    top: 0px;\r\n    right: 0px;\r\n    font-size: 60px;\r\n    padding: 0px 35px;\r\n}\r\n\r\n\r\n@media (max-width:756px) {\r\n  #navbar {\r\n    padding: 5px 10px;\r\n  }\r\n  #navbar .button-container .join-now {\r\n    margin:5px auto;\r\n  }\r\n \r\n  #navbar .button-container .join-now a{\r\n        padding:  5px;\r\n    font-size: 12px;\r\n  }\r\n  #navbar .button-container .login a{\r\n    padding:  5px 15px;\r\n    font-size: 12px;\r\n  }\r\n\r\n  .logo-container img {\r\n  height: 40px;\r\n    \r\n  }\r\n  #navbar span{\r\n    padding-top: 5px;\r\n  }\r\n.modal-dialog {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.modal-content {\r\n  height: auto;\r\n  min-height: 100%;\r\n  border-radius: 0;\r\n}\r\n#myNav .dropdown-menu{\r\n  right: 0;\r\n  left:0;\r\n}\r\n#myNav .dropdown-menu a{\r\n  text-align: center;\r\n    color: green;\r\n}\r\n}\r\n\r\n/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */\r\n@media screen and (max-height:450px) {\r\n  .overlay a {\r\n    font-size: 20px\r\n  }\r\n\r\n  .overlay .closebtn {\r\n    font-size: 40px;\r\n    top: 15px;\r\n    right: 35px;\r\n  }\r\n\r\n}\r\n\r\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\r\n.sticky {\r\n  position: fixed;\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n  width: 100%;\r\n  -webkit-transition: -webkit-transform 2s linear;\r\n  transition: -webkit-transform 2s linear;\r\n  transition: transform 2s linear;\r\n  transition: transform 2s linear, -webkit-transform 2s linear;\r\n}\r\n\r\n/*---------------------------------------- banner-------------------------------*/\r\n.banner {\r\n  background: url(" + escape(__webpack_require__(/*! ./images/banner.jpg */ "./resources/js/pages/images/banner.jpg")) + ");\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  padding: 160px 0px 160px 0px;\r\n  text-align: center;\r\n  height: 100vh;\r\n  position: relative;\r\n}\r\n\r\n.banner .title {\r\n     font-size: 60px;\r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 1px;\r\n    text-shadow: 1px 3px 4px #8e9b92;\r\n    color: #28a745;\r\n}\r\n\r\n.banner .subtitle {\r\n  margin: 10px auto;\r\n  font-size: 22px;\r\n  color: #8a8a8a;\r\n  max-width: 700px;\r\n  font-family: 'Varela Round', sans-serif;\r\n}\r\n\r\n/*-------------------------------join now-----------------------*/\r\n.banner .join-now-form {\r\n  max-width: 320px;\r\n  margin: 60px auto 30px auto;\r\n  border: 1px solid #12c78200;\r\n  background: white;\r\n  font-size: 20px;\r\n  font-weight: normal;\r\n      box-shadow: 1px 2px 5px #2de2664d;\r\n  border-radius: 5px;\r\n \r\n}\r\n/* .banner .join-now-form .row{\r\n\r\n} */\r\n\r\n.banner .join-now-form .country-code {\r\n  padding: 7px 0px;\r\n  border-right: 1px solid #28a745;\r\n}\r\n\r\n.banner .join-now-form .phone-number {\r\n  padding: 5px 0px;\r\n}\r\n\r\n.banner .join-now-form .phone-number input {\r\n  border: none;\r\n}\r\n\r\n.banner .join-now-form .phone-number input:focus {\r\n  outline: none;\r\n}\r\n\r\n.banner .join-now-form .submit {\r\n  padding: 3px 0px;\r\n  margin-right: -15px;\r\n  background: #28a745;\r\n  background: linear-gradient(235deg, #36ea5f, #00b693);\r\n  text-shadow: 1px 2px 3px #3d3a3a;\r\n  border-bottom-right-radius: 5px;\r\n  border-top-right-radius: 5px;\r\n}\r\n.banner .join-now-form .submit:hover{\r\n   background: linear-gradient(45deg, #36ea5f, #00b693);\r\n   text-shadow: 1px 0px 0px #3d3a3a;\r\n}\r\n.banner .join-now-form .submit a{\r\n  font-size: 26px;\r\n  text-decoration: none;\r\n  font-weight: bolder;\r\n  color: white;\r\n}\r\n.banner .app-download{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n}\r\n.banner .app-download .play-store{\r\n    background: #14ac5b;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .app-store{\r\n   background: #9ea09d;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n  \r\n    box-shadow: 1px 2px 2px 1px #979a97c4;\r\n    margin-right: 10px;\r\n}\r\n.banner .app-download .play-store:hover{\r\n  background: grey;\r\n}\r\n.banner .app-download .app-store:hover{\r\n  background: #496f5a;\r\n}\r\n\r\n/*------------------------join-us modal -----------------*/\r\n.join .modal-body {\r\n  padding: 20px 30px;\r\n}\r\n\r\n.join .modal-body .title {\r\n      font-size: 40px;\r\n    color: #ffffff;\r\n    font-weight: bold;\r\n    text-shadow: 1px 3px 4px #035a21;\r\n    \r\n    font-family: 'Righteous', cursive;\r\n    letter-spacing: 2px;\r\n    text-align: center;\r\n    \r\n   \r\n}\r\n.join .modal-body .form-control{\r\n  border:none;\r\n      background: #fbfbfb;\r\n}\r\n\r\n.join .modal-body:hover .title {\r\n     color: #28a745;\r\n    text-shadow: 1px 3px 4px #d1d9d4;\r\n}\r\n\r\n.join .modal-body form input {\r\n  height: 45px;\r\n  margin:25px auto;\r\n    padding: 0px 40px;\r\n}\r\n\r\n.join .modal-body .button-container {\r\n  text-align: center;\r\n}\r\n\r\n.join .modal-body .button-container button {\r\n      width: 80%;\r\n    border-radius: 50px;\r\n    font-size: 18px;\r\n    height: 50px;\r\n    color: #28a745;\r\n    margin-bottom: 20px;\r\n    background: #fdfffd;\r\n    box-shadow: 1px 2px 4px #bfc3c1;\r\n     font-family: 'Righteous', cursive;\r\n    text-align: center;\r\n    border:0px;\r\n}\r\n.join .modal-body .button-container button:hover{\r\nbackground: #28a745;\r\n    color: white;\r\n  }\r\n.join .modal-content button{\r\n  text-align: right;\r\n  padding-right: 25px;\r\n  padding-top: 5px;\r\n}\r\n#invite_code {\r\n  cursor: pointer;\r\n  margin-top: 10px;\r\n  margin-bottom: 30px;\r\n  color: #28a745;\r\n}\r\n\r\n.join .modal-body .button-container a {\r\n  text-align: center;\r\n  text-decoration: none;\r\n  font-weight: bold;\r\n  color: grey;\r\n}\r\n\r\n.form-control:focus {\r\n  background-color: #fff;\r\n  border-color: #8bfea6;\r\n  box-shadow: 0 0 0 0.1rem rgb(66, 183, 92);\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .banner{\r\n    height: 70vh;\r\n    padding: 140px 10px 140px 10px;\r\n  }\r\n   .banner .title {\r\n    font-size: 30px;\r\n    text-shadow: 1px 3px 4px #b3b4b3;\r\n  }\r\n  .banner .subtitle{\r\n    font-size: 16px;\r\n  }\r\n  .overlay-content{\r\n    top: 15%;\r\n  }\r\n}\r\n.banner .banner-wave{\r\n  display: block;\r\n}\r\n.banner .wave-img {\r\n    width: 100%;\r\n    \r\n    background-position: bottom;\r\n    background-size: cover;\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n}\r\n.banner .app-download{\r\n  padding: 0px 30px;\r\n}\r\n.banner .app-download .play-store, .banner .app-download .app-store{\r\n  padding: 5px 10px;\r\n}\r\n\r\n/*----------------end of banner ----------------*/\r\n/*---------------------features-----------------*/\r\n\r\n.feature-container{\r\n padding: 20px;\r\n   \r\n}\r\n.feature-container .title{\r\n  font-size: 40px;\r\n    color: #28a745;\r\n    font-family: 'Righteous', cursive;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 2px 3px #b0a7a7;\r\n}\r\n.feature-container .description{\r\n  font-size: 16px;\r\n  color: grey;\r\n  text-align: justify;\r\n  margin-bottom: 30px;\r\n}\r\n.feature-container .button-container{\r\n  text-align: right;\r\n}\r\n.feature-container .button-container .mybtn{\r\n  padding: 12px 20px;\r\n  color: white;\r\n  text-shadow: 1px 2px 3px #928e8e;\r\n  background: linear-gradient(45deg, #36ea5f, #00b693);\r\n  border-radius: 5px;\r\n  text-decoration: none;\r\n}\r\n.feature-container .button-container .mybtn:hover{\r\n   background: linear-gradient(235deg, #36ea5f, #00b693);\r\n}\r\n.feature-container .button-container a{\r\n  text-decoration: none;\r\n  color: white;\r\n  font-weight: bolder;\r\n  cursor: pointer;\r\n}\r\n.feature-container .button-container a:hover{\r\n  color: white;\r\n}\r\n\r\n.question-feature{\r\npadding: 90px 0px;\r\n\r\n}\r\n.analysis-feature{\r\npadding: 90px 0px;\r\nbackground: #f1fef18a;\r\n}\r\n.syllabus-feature{\r\npadding: 90px 0px;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .feature-container .title{\r\n    font-size: 26px;\r\n  }\r\n  .syllabus-feature, .question-feature, .analysis-feature{\r\n    padding: 30px 0px;\r\n  }\r\n\r\n}\r\n/*-----------------end of features--------------*/\r\n/*-------------------testimonial-----------------*/\r\n.testimonial-container{\r\n  padding: 90px 30px;\r\n}\r\n.testimonial-container .title{\r\n  font-size: 40px;\r\n  font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n  margin-bottom: 60px;\r\n   color: #28a745;\r\n   text-shadow: 1px 2px 3px #cec0c0;\r\n}\r\n.testimonial{\r\n    margin: 0 15px;\r\n}\r\n.testimonial .content{\r\n    padding: 15px 10px;\r\n    border-radius:6px;\r\n    margin-bottom: 15px;\r\n    position: relative;\r\n    background:#e67e22;\r\n    min-height: 100px;\r\n}\r\n.testimonial .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #e67e22;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content{\r\n    background: #1abc9c;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(2n) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #1abc9c;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content{\r\n    background: #5bbc2e;\r\n}\r\n#testimonial-slider div.owl-item:nth-child(3n+1) .content:after{\r\n    content: \"\";\r\n    border-top: 10px solid #9b59b6;\r\n    border-left: 10px solid transparent;\r\n    border-right: 9px solid transparent;\r\n    position: absolute;\r\n    bottom: -8px;\r\n    left: 16%;\r\n}\r\n.testimonial .description{\r\n    margin-bottom: 10px;\r\n    color:#fff;\r\n}\r\n.testimonial-pic{\r\n    float:left;\r\n    width: 80px;\r\n    height: 80px;\r\n}\r\n.testimonial-pic > img{\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50%;\r\n    border: 2px solid #e5e5e5;\r\n    margin-left: 20px;\r\n}\r\n.testimonial .testimonial-review{\r\n    margin:3px 0 0 30px;\r\n    float: left;\r\n}\r\n.testimonial .testimonial-title{\r\n    font-size:16px;\r\n    text-transform:capitalize;\r\n    font-weight: bold;\r\n    margin:0;\r\n}\r\n.testimonial > .testimonial-review span{\r\n    color: darkgray;\r\n    display: block;\r\n    font-size: 13px;\r\n    margin-bottom:5px;\r\n}\r\n.testimonial .social-links{\r\n    padding:0;\r\n    margin:0;\r\n}\r\n.testimonial .social-links > li{\r\n    list-style:none;\r\n    display:inline-block;\r\n    margin-right:10px;\r\n}\r\n.testimonial .social-links > li > a.fa-twitter{\r\n    color:#00aced;\r\n}\r\n.testimonial .social-links > li > a.fa-facebook{\r\n    color: #3b599a;\r\n}\r\n.testimonial .social-links > li > a.fa-pinterest{\r\n    color:#E14782;\r\n}\r\n.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{\r\n    background: #1abc9c;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    background: #333;\r\n    opacity: 1;\r\n}\r\n.owl-theme .owl-controls .owl-page span{\r\n    width: 10px;\r\n    height:10px;\r\n    margin: 5px 6px;\r\n}\r\n.testimonial-container .owl-nav{\r\n     font-size: 60px;\r\n    top: 25%;\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.testimonial-container .owl-nav button{\r\n  background: green;\r\n}\r\n.testimonial-container .owl-nav button span{\r\n  color: #28a745;\r\n  padding: 0px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n .testimonial-container .title{\r\n  font-size: 26px;\r\n }\r\n}\r\n/*-------------------end of testimonial-------------*/\r\n/*-----------------app download container---------------*/\r\n.app-container{\r\n  padding: 120px 60px;\r\n  background: #3cc95c;\r\n}\r\n.app-container .title{\r\n  font-size: 40px;\r\n  color: #fff;\r\n    text-shadow: 0px 1px 5px #4a4848;\r\n  font-family: 'Righteous', cursive;\r\n  letter-spacing: 1px;\r\n \r\n  margin-bottom: 20px;\r\n}\r\n.app-container .subtitle{\r\n  color: white;\r\n  font-size: 24px;\r\n\r\n  margin-bottom: 50px;\r\n}\r\n.app-container .app-download .play-store, .app-container .app-download .app-store{\r\nbackground: black;\r\nmargin: 0px 10px;\r\nborder-radius: 5px;\r\npadding: 5px 10px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .app-container{\r\n    padding: 90px 30px;\r\n  }\r\n  .app-container .title{\r\n    font-size: 30px;\r\n  }\r\n  .app-container .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*----------------hit question-----------------*/\r\n.hit-question{\r\n  padding: 60px 90px;\r\n  background: #3cc95c;\r\n\r\n}\r\n.hit-question .title{\r\n  color: white;\r\n  font-size: 40px;\r\n  text-shadow: 0px 1px 5px #7c7474;\r\n  font-weight: bold;\r\n}\r\n.hit-question .subtitle{\r\n  color: white;\r\n  font-size: 20px;\r\n}\r\n.hit-question .button-container{\r\n  text-align: center;\r\n}\r\n.hit-question .button-container .ask-button{\r\n  padding: 10px 20px;\r\n  background: #333333;\r\n  color: white;\r\n  width: 100%;\r\n      text-shadow: 1px 2px 3px #032f0d;\r\n      font-weight: bolder;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n\r\n  margin-top: 45px;\r\n}\r\n.hit-question .button-container .ask-button:hover{\r\n  background: #fff;\r\n  color: #000;\r\n}\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .hit-question{\r\n    padding: 60px 30px;\r\n  }\r\n  .hit-question .title{\r\n    font-size: 26px;\r\n  }\r\n  .hit-question .subtitle{\r\n    font-size: 18px;\r\n  }\r\n}\r\n/*------------------footer--------------*/\r\n.footer{\r\n  padding:60px 90px 0px 90px;\r\n  background: #222222;\r\n  color: white;\r\n}\r\n.footer .title{\r\n      color: #28a745;\r\n    font-size: 24px;\r\n    font-family: 'Righteous', cursive;\r\n    margin-top: 30px;\r\n    letter-spacing: 1px;\r\n    margin-bottom: 10px;\r\n    text-shadow: 1px 1px 3px black;\r\n}\r\n.footer .description{\r\n  text-align: justify;\r\n  padding-right: 40px;\r\n}\r\n.footer .footer-list .phone , .footer .footer-list .email{\r\n\r\n  cursor: pointer;\r\n}\r\n.footer .footer-list .phone i, .footer .footer-list .email i{\r\n    margin-right: 10px;\r\n}\r\n.footer .footer-list ul{\r\n  list-style: none;\r\n}\r\n.footer .footer-list ul a{\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n.footer .footer-list ul a:hover{\r\n  color: #28a745;\r\n}\r\n.footer .newsletter-container{\r\n      background: #cdd4cf14;\r\n    padding: 30px 30px;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.footer .newsletter-container .subscribe-title{\r\n  font-size: 24px;\r\n  margin-bottom: 20px;\r\n}\r\n.footer .newsletter-container .button-container{\r\nmargin-top: 30px;\r\ntext-align: right;\r\n}\r\n.footer .newsletter-container form .button-container .btn {\r\n  \r\n  border-radius: 5px !important;\r\n  \r\n}\r\n.footer .buttom-footer{\r\n  text-align: center;\r\n border-top: 1px solid #fffdfd4d;\r\n  padding: 15px 0px 5px 0px;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n@media (max-width: 756px)\r\n{\r\n  .footer{\r\n    padding: 60px 10px 0px 10px;\r\n  }\r\n  .footer .description{\r\n    padding-right: 0px;\r\n  }\r\n  .footer .newsletter-container .subscribe-title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .buttom-footer{\r\n    font-size: 18px;\r\n  }\r\n  .footer .title{\r\n    font-size: 20px;\r\n  }\r\n  .footer .footer-list ul{\r\n    padding: 0;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/*----------------------------------quiz style------------------*/\r\n/*----------quiz.css---------------*/\r\n.quiz{\r\n  position: relative;\r\n}\r\n.quiz nav{\r\n  height: 80px;\r\n}\r\n.quiz .quit-section{\r\n  position: absolute;\r\n  top: 30px;\r\n  right: 5%;\r\n  z-index: 1;\r\n}\r\n.quiz .quit-section .quit a{\r\n  border:2px solid white;\r\n  padding: 5px 10px;\r\n  border-radius: 5px;\r\n  color: white;\r\n  z-index: 999999;\r\n}\r\n.quiz .quit-section .quit:hover a{\r\nbackground-color: white;\r\ncolor: green;\r\ntext-decoration: none;\r\n}\r\n.test-section{\r\n  margin-top: 100px;\r\n}\r\n.timer-container{\r\n  margin:0px auto;\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 200px;\r\n  top: 0px;\r\n\r\n}\r\n.timer-wrapper{\r\n  margin:10px auto;\r\n  width: 140px;\r\n  height: 140px;\r\n  background:white;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px #eaf3ec;\r\n}\r\n.timer-wrapper .time{\r\n  line-height: 5.5;\r\n  font-size: 25px;\r\n  color: #1ba01b;\r\n  text-align: center;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n.question-container{\r\n  margin: 20px auto;\r\n}\r\n.question-title{\r\n  font-size: 24px;\r\n  color:green;\r\n  font-weight: bold;    \r\n}\r\n/* .answer-container{\r\n\r\n} */\r\n.answer-wrapper{\r\n      border-radius: 5px;\r\n    padding: 10px 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    margin-top: 5px;\r\n    margin-bottom: 20px;\r\n    box-shadow: 1px 1px 4px #cac5c5;\r\n}\r\n.answer-wrapper:hover{\r\n  background-color: #ccffd8;\r\n}\r\n.answer-container  .active{\r\n  background-color: #ccffd8 !important;\r\n}\r\n\r\n.option-number{\r\n  border: 0.5px solid #47b15f;\r\n  font-weight: bold;\r\n  text-transform: uppercase;\r\n  padding:0px 7px;\r\n  margin:0 auto;\r\n  color: slategray;\r\n  border-radius: 5px;\r\n\r\n\r\n}\r\n.option{\r\n  -webkit-box-flex: 1;\r\n          flex: 1;\r\n  margin-left: 10px;\r\n  font-size: 18px;\r\n  color: #069426;\r\n  font-weight: bold;\r\n}\r\n.option-tick{\r\n  display: none;\r\n  color: green;\r\n}\r\n.answer-wrapper:hover .option-number, .answer-container  .active .option-number{\r\n  padding: 0px 20px;\r\n  -webkit-transition: padding 0.2s ease-in;\r\n  transition: padding 0.2s ease-in;\r\n  background-color: #1cb13e;\r\n  color: white;\r\n}\r\n.answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{\r\n  display: block;\r\n}\r\n.progress-container{\r\n  position: fixed;\r\n  left: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  \r\n}\r\n.progress-container .progress{\r\n  height: 30px;\r\n}\r\n.progress-container .progress .progress-bar{\r\n  background-color: #47b15f;\r\n}\r\n.quiz .button-section{\r\n  margin: 30px auto;\r\n}\r\n.quiz .button-section .button-row{\r\n  display: -webkit-box;\r\n  display: flex;\r\n}\r\n.quiz .button-section .button-row .prev-btn{\r\n  background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding-top: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  width: 100px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n  color: white;\r\n}\r\n.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #fff;\r\n  font-size: 18px;\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {\r\n  background:linear-gradient(45deg, #36ea5f, #00b693);\r\n  \r\n  -webkit-transition:  background-color 0.2s linear;\r\n  \r\n  transition:  background-color 0.2s linear;\r\n  color: white;\r\n  border: none;\r\n\r\n\r\n}\r\n.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  color: white;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n}\r\n.quiz .button-section .button-row .next-btn{\r\n    background:linear-gradient(235deg, #36ea5f, #00b693);\r\n   padding: 8px;\r\n  display: inline-block;\r\n  border-radius: 5px;\r\n  -webkit-box-pack: right;\r\n          justify-content: right;\r\n  width: 100px;\r\n  cursor: pointer;\r\n  text-align: center;\r\n}\r\n\r\n\r\n@media (max-width: 768px)\r\n{\r\n  .answer-wrapper{\r\n  \r\n  padding: 5px 5px;\r\n  \r\n  }\r\n  .quiz nav {\r\n    height: 70px;\r\n  }\r\n  .timer-wrapper {\r\n    margin: 20px auto;\r\n    width: 100px;\r\n    height: 100px;\r\n  }\r\n  .timer-wrapper .time {\r\n    line-height: 6;\r\n    font-size: 16px;\r\n  }\r\n  .question-title {\r\n    font-size: 16px;\r\n  }\r\n  .quiz .quit-section {\r\n    top:25px;\r\n  }\r\n  .test-section {\r\n    margin-top: 80px;\r\n  }\r\n  .option{\r\n    font-size: 14px;\r\n  }\r\n  .option-number{\r\n    font-size: 12px;\r\n    padding: 0px 5px;\r\n  }\r\n  .question-container {\r\n    margin: 20px auto 10px auto;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{\r\n  color: #47b15f;\r\n  font-size: 18px;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{\r\n    display: none;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{\r\n  visibility: visible;\r\n  opacity: 1;\r\n  -webkit-transition:  visibility 0s, opacity 0.4s linear;\r\n  transition:  visibility 0s, opacity 0.4s linear;\r\n  }\r\n  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{\r\n    width: 40px;\r\n  }\r\n}\r\n/* The side navigation menu */\r\n.sidenav {\r\n  height: 100%; /* 100% Full-height */\r\n  width: 0; /* 0 width - change this with JavaScript */\r\n  position: fixed; /* Stay in place */\r\n  z-index: 1; /* Stay on top */\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #4a8457 ; /* Black*/\r\n  overflow-x: hidden; /* Disable horizontal scroll */\r\n  padding-top: 60px; /* Place content 60px from the top */\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */\r\n}\r\n\r\n/* The navigation menu links */\r\n.sidenav a {\r\n  padding: 8px 8px 8px 32px;\r\n  text-decoration: none;\r\n  font-size: 25px;\r\n  color: #818181;\r\n  display: block;\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* When you mouse over the navigation links, change their color */\r\n.sidenav a:hover {\r\n  color: #f1f1f1;\r\n}\r\n\r\n/* Position and style the close button (top right corner) */\r\n.sidenav .closebtn {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 25px;\r\n  font-size: 36px;\r\n  margin-left: 50px;\r\n}\r\n\r\n/* Style page content - use this if you want to push the page content to the right when you open the side navigation */\r\n#main {\r\n  -webkit-transition: margin-left .5s;\r\n  transition: margin-left .5s;\r\n  \r\n}\r\n\r\n/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */\r\n@media screen and (max-height: 450px) {\r\n  .sidenav {padding-top: 15px;}\r\n  .sidenav a {font-size: 18px;}\r\n}\r\n\r\n#mySidenav a {\r\n  position: absolute; /* Position them relative to the browser window */\r\n right: -30px; /* Position them outside of the screen */\r\n  -webkit-transition: 0.3s;\r\n  transition: 0.3s; /* Add transition on hover */\r\n  padding: 15px; /* 15px padding */\r\n  width: 100px; /* Set a specific width */\r\n  text-decoration: none; /* Remove underline */\r\n  font-size: 20px; /* Increase font size */\r\n  color: white; /* White text color */\r\n  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */\r\n}\r\n\r\n\r\n\r\n\r\n.off-canvas-btn{\r\n  position: fixed;\r\n  top:15%;\r\n  left: -80px;\r\n  width: 120px;\r\n  height: 50px;\r\n  background: #0ae196;\r\n  border-top-right-radius: 5px;\r\n  border-bottom-right-radius: 5px; \r\n  z-index: 1;\r\n}\r\n.off-canvas-btn:hover{\r\n  left: 0px;\r\n  -webkit-transition: left 0.3s linear;\r\n  transition: left 0.3s linear;\r\n}\r\n.off-canvas-btn .canvas-btn{\r\n  line-height: 3;\r\n  color: white;\r\n  padding: 0px 5px  0px 25px;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n.off-canvas-btn .canvas-btn i{\r\n  padding-left: 15px;\r\n}\r\n\r\n\r\n/*------------------------------class page -section --------------*/\r\n.class-section .title{\r\n   font-size: 36px;\r\n  font-weight: bold;\r\n  color: #28a745;\r\n  letter-spacing: 1px;\r\n  text-align: center;\r\n  margin-bottom: 26px;\r\n  text-shadow: 1px 2px 3px #c7bebe;\r\n  font-family: 'Righteous', cursive;\r\n}\r\n\r\n/*-----syllabus section---------*/\r\n\r\n.class-section .syllabus-section{\r\n  \r\n  padding: 30px 20px;\r\n  background: #fff;\r\n\r\n}\r\n\r\n.class-section .syllabus-section .content{\r\n  margin: 40px auto;\r\n}\r\n.class-section .syllabus-section .content .subject{\r\n  background: #ffffff;\r\n  padding: 16px;\r\n     border-radius: 5px;\r\n    box-shadow: 0px 2px 3px 1px #b6b6b691;\r\n  margin-bottom: 25px;\r\n  cursor: pointer;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  font-family: sans-serif;\r\n  font-size: 20px;\r\n  color: #28a745;\r\n  letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n  text-align: center;\r\n}\r\n.class-section .syllabus-section .demo-box{ \r\n  padding: 60px 30px;\r\n  background: #00800005;\r\n  border-radius: 5px;\r\n}\r\n/*---------------overview-section-----------*/\r\n.class-section .overview-section{\r\n  padding:60px 0px;\r\n}\r\n\r\n.class-section .overview-section p{\r\n  text-align: justify;\r\n  padding: 0px 20px;\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n.class-section .test-section {\r\n  margin-top: 20px;\r\n  padding: 90px 0px;\r\n  background: #eaf1ea;\r\n}\r\n.class-section .test-section .select-container{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: end;\r\n          justify-content: flex-end;\r\n  margin:40px 0px 20px 0px;\r\n}\r\n.class-section .test-section .select-container select{\r\n  border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.class-section .test-section .select-container select option{\r\n  background: #eaf1ea !important;\r\n}\r\n.class-section .test-section .test{\r\n     box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 30px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px\r\n}\r\n.class-section .test-section .test .title{\r\n  font-size: 20px;\r\n  margin-top: 10px;\r\n  margin-bottom: 60px;\r\n      text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.class-section .test-section .test .test-wrapper a{\r\n  text-decoration: none;\r\n  color: green;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section  .owl-nav{\r\n     font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.class-section .test-section .owl-nav button{\r\n  background: #3cc95c;\r\n}\r\n.class-section .test-section .owl-nav button span{\r\n  color: #fff;\r\n  padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px){\r\n  .class-section .syllabus-section{\r\n    padding: 30px 0px 0px 0px;\r\n  }\r\n.class-section .syllabus-section .content .subject{\r\n  padding: 5px 30px;\r\n}\r\n.class-section .syllabus-section .content .subject .subject-name{\r\n  line-height: 60px;\r\n}\r\n.class-section .test-section .test{\r\n \r\n  margin:15px auto;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  margin: 0px 15px;\r\n  z-index: 1;\r\n}\r\n.class-section .test-section .owl-nav{\r\n  top: 15%;\r\n  z-index: 1;\r\n  height: 70px;\r\n}\r\n.class-section .title{\r\n  font-size: 26px;\r\n}\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/*-----------------------preparation page----------------------*/\r\n.preparation-section{\r\n  padding: 0px 0px;\r\n  margin-bottom: 30px;\r\n}\r\n.preparation-section .curve-section{\r\n    box-shadow: 1px 2px 8px 2px #d2cccc;\r\n    border-radius: 10px;\r\n}\r\n.preparation-section .curve-section .preparation-container{\r\n  padding: 30px 60px;\r\n}\r\n.preparation-section .curve-section .preparation-container .title{\r\n  display: block;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: #606060;\r\n\r\n    letter-spacing: 2px;\r\n    font-family: 'Righteous', cursive;\r\n}\r\n.preparation-section .curve-section .preparation-container .subtitle{\r\n  display: block;\r\n    font-size: 18px;\r\n    color: black;\r\n    margin-bottom: 20px;\r\n}\r\n@media (max-width: 756px)\r\n{\r\n  .preparation-section .curve-section .preparation-container .title{\r\n    font-size: 18px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container .subtitle{\r\n    font-size: 14px;\r\n  }\r\n  .preparation-section .curve-section .preparation-container {\r\n    padding: 30px 25px;\r\n}\r\n}", ""]);
 
 // exports
 
@@ -73437,7 +73437,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_Learn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/Learn */ "./resources/js/Dashboard/component/Learn.js");
 /* harmony import */ var _component_Practise__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/Practise */ "./resources/js/Dashboard/component/Practise.js");
 /* harmony import */ var _component_Test__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/Test */ "./resources/js/Dashboard/component/Test.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _component_Subject__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/Subject */ "./resources/js/Dashboard/component/Subject.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -73511,7 +73513,7 @@ function Dashboard() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ./assets/images/logo.png */ "./resources/js/Dashboard/assets/images/logo.png"),
+    src: __webpack_require__(/*! ./assets/images/logo1.png */ "./resources/js/Dashboard/assets/images/logo1.png"),
     alt: "",
     className: "img-fluid"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -73539,8 +73541,8 @@ function Dashboard() {
     href: ""
   }, "Change >")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-sm-block d-none"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/learn',
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/learn',
     className: "active test-class",
     onClick: function onClick(event) {
       handleActive(event);
@@ -73549,23 +73551,25 @@ function Dashboard() {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/practise',
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/practise',
     className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/test',
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/test',
+    className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
+  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/subject',
+    onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-comment"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -73626,23 +73630,23 @@ function Dashboard() {
     className: "copywrite text-center mt-2"
   }, "\xA9 Copywrite EduNepal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/learn',
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/learn',
     className: "active",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/practise',
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/practise',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-    to: '/test',
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: '/dashboard/test',
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
@@ -73686,17 +73690,204 @@ function Dashboard() {
     className: "fa fa-power-off"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Logout"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
-    path: "/learn/",
-    component: _component_Learn__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
-    path: "/practise/",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard/practise",
     component: _component_Practise__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
-    path: "/test/",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard/learn",
+    component: _component_Learn__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard/test",
     component: _component_Test__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard/subject",
+    component: _component_Subject__WEBPACK_IMPORTED_MODULE_5__["default"]
   })))));
 }
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Viewer.js":
+/*!******************************************!*\
+  !*** ./resources/js/Dashboard/Viewer.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Viewer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/userStyle.css */ "./resources/js/Dashboard/assets/css/userStyle.css");
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+function Viewer() {
+  function closeNav() {
+    function myFunction(x) {
+      if (x.matches) {
+        document.getElementById("viewerSideNav").style.width = "0";
+      } else {
+        document.getElementById("viewerSideNav").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+        document.getElementById("view").style.display = "block";
+        document.getElementsByClassName('company-container')[0].style.width = "0px";
+        document.getElementsByClassName('viewerNavbar')[0].style.width = "100%";
+        document.getElementById("hide").style.display = "none";
+        var elems = document.getElementsByClassName('sideTab');
+
+        for (var i = 0; i < elems.length; i++) {
+          elems[i].style.display = 'none';
+        }
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 756px)");
+    myFunction(x); // Call listener function at run time
+
+    x.addListener(myFunction);
+  }
+
+  function openNav() {
+    function myFunction(x) {
+      if (x.matches) {
+        document.getElementById("viewerSideNav").style.width = "240px";
+        document.getElementById("main").style.marginLeft = "0px";
+      } else {
+        document.getElementById("viewerSideNav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("view").style.display = "none";
+        document.getElementsByClassName('viewerNavbar')[0].style.width = "calc(100% - 250px)";
+        document.getElementsByClassName('company-container')[0].style.width = "250px";
+        document.getElementById("hide").style.display = "block";
+        var elems = document.getElementsByClassName('sideTab');
+
+        for (var i = 0; i < elems.length; i++) {
+          elems[i].style.display = 'inline-block';
+        }
+
+        document.getElementsByClassName('title-name')[1].style.display = "block";
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x); // Call listener function at run time
+
+    x.addListener(myFunction);
+  }
+
+  var handleActive = function handleActive(event) {
+    $('#userSideNav a').removeClass('active');
+    event.target.classList.add('active');
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "viewerSideNav",
+    className: "viewerSidenav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "company-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ./assets/images/logo1.png */ "./resources/js/Dashboard/assets/images/logo1.png"),
+    alt: "",
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title-name"
+  }, "Educate Nepal", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    onClick: closeNav
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-times"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-sm-block d-none mt-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: '/dashboard/learn',
+    className: "active test-class",
+    onClick: function onClick(event) {
+      handleActive(event);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " 1 Measurement")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: '/dashboard/practise',
+    className: "test-class",
+    onClick: handleActive
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " 2 Force")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: '/dashboard/test',
+    className: "test-class",
+    onClick: handleActive
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " 3 Work")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: '/dashboard/subject',
+    onClick: handleActive
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-comment"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Doubts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Bookmarks")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-user"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-folder-open"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Syllabus")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-cogs"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Setting")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-facebook"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sideTab"
+  }, " Share on Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "main"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "viewerNavbar d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bars"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    onClick: openNav,
+    id: "view"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bars"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    onClick: closeNav,
+    id: "hide"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bars"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex justify-content-end"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "close"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-times"
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "main-content"
+  })));
+} // ReactDOM.render(<Dashboard />, document.getElementById(""));
 
 /***/ }),
 
@@ -73752,14 +73943,14 @@ module.exports = "/images/graph.jpg?0b257108d6cc12897818d319e9323e79";
 
 /***/ }),
 
-/***/ "./resources/js/Dashboard/assets/images/logo.png":
-/*!*******************************************************!*\
-  !*** ./resources/js/Dashboard/assets/images/logo.png ***!
-  \*******************************************************/
+/***/ "./resources/js/Dashboard/assets/images/logo1.png":
+/*!********************************************************!*\
+  !*** ./resources/js/Dashboard/assets/images/logo1.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/logo.png?7cccf43c15bb44e37fbee0365fa69142";
+module.exports = "/images/logo1.png?7cccf43c15bb44e37fbee0365fa69142";
 
 /***/ }),
 
@@ -73806,142 +73997,115 @@ function Learn() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#ffed6a'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-atom"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Physics")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: "#ff8282"
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-flask"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Chemistry")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#6c97f9'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-dna"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Biology")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#8af966'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-calculator"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Maths")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#ff836f'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-book"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "English")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#ee8fff'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-users"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Social")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#bb98ff'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-mountain"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Nepali")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#ffed6a'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-laptop"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Computer")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container",
-    style: {
-      backgroundColor: '#6c97f9'
-    }
+    className: "img-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-invoice"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Account")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
+    className: "col-md-3 col-lg-3 col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: ""
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74244,6 +74408,421 @@ function Practise() {
     style: {
       color: 'red'
     }
+  })))))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/component/Subject.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/Dashboard/component/Subject.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Subject; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Subject() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "main-subject-containter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-navbar d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-left"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-subject-navbar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-atom"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Physics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-number"
+  }, "10 Chapters"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link active",
+    "data-toggle": "pill",
+    href: "#note"
+  }, "Notes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#flash"
+  }, "Flash Cards")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#past-question"
+  }, "Question Set")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container active",
+    id: "note"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Power"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "04"), "Heat"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "05"), "Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "flash"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "carousel-one",
+    className: "carousel slide",
+    "data-ride": "carousel"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner row w-100 mx-auto",
+    role: "listbox"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    href: "#carousel-one",
+    role: "button",
+    "data-slide": "prev"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Previous")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-next",
+    href: "#carousel-one",
+    role: "button",
+    "data-slide": "next"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Next"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "carousel-two",
+    className: "carousel slide",
+    "data-ride": "carousel"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner row w-100 mx-auto",
+    role: "listbox"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "question",
+    "data-toggle": "modal",
+    "data-target": "#carouselModalTwo"
+  }, " What is Force? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "question",
+    "data-toggle": "modal",
+    "data-target": "#carouselModalTwo"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    href: "#carousel-two",
+    role: "button",
+    "data-slide": "prev"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Previous")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-next",
+    href: "#carousel-two",
+    role: "button",
+    "data-slide": "next"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Next"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal",
+    id: "carouselModalTwo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "What is Force?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      fontWeight: "lighter"
+    }
+  }, "The original form of Newton's second law states that the net force acting upon an object is equal to the rate at which its momentum changes with time. If the mass of the object is constant, this law implies that the acceleration of an object is directly proportional to the net force acting on the object, is in the direction of the net force, and is inversely proportional to the mass of the object.")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "past-question"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2063"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2073"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
   })))))))));
 }
 
@@ -74699,7 +75278,7 @@ function Navbar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logo-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/logo.png */ "./resources/js/pages/images/logo.png"),
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
     className: "img-fluid"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "nav d-none d-sm-block"
@@ -74717,13 +75296,13 @@ function Navbar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "",
     "data-toggle": "modal",
-    "data-target": "#myModal"
+    "data-target": "#join"
   }, "Join Now")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "login"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "",
     "data-toggle": "modal",
-    "data-target": "#myModal2"
+    "data-target": "#login"
   }, "Login"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "d-block d-sm-none",
     onClick: openNav
@@ -74832,7 +75411,7 @@ function Banner() {
     href: "",
     className: "button",
     "data-toggle": "modal",
-    "data-target": "#myModal",
+    "data-target": "#join",
     name: ""
   }, "Join"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-download "
@@ -74858,7 +75437,7 @@ function Banner() {
     alt: ""
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal join fade",
-    id: "myModal"
+    id: "join"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-dialog"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74872,6 +75451,11 @@ function Banner() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: ""
@@ -74907,15 +75491,18 @@ function Banner() {
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-success"
+    className: "btn btn-success",
+    "data-dismiss": "modal",
+    "data-toggle": "modal",
+    "data-target": "#otp"
   }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "",
     "data-dismiss": "modal",
     "data-toggle": "modal",
-    "data-target": "#myModal2"
+    "data-target": "#login"
   }, "I ALREADY HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal join fade",
-    id: "myModal2"
+    id: "login"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-dialog"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74929,6 +75516,11 @@ function Banner() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     action: ""
@@ -74952,8 +75544,44 @@ function Banner() {
     href: "",
     "data-dismiss": "modal",
     "data-toggle": "modal",
-    "data-target": "#myModal"
-  }, "I DON'T HAVE ACCOUNT"))))))));
+    "data-target": "#join"
+  }, "I DON'T HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal join fade",
+    id: "otp"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-window-close mt-2"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Enter OTP Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "number",
+    className: "form-control",
+    placeholder: "OTP code"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success"
+  }, "Jump In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Resend OTP code"))))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Banner);
@@ -75459,9 +76087,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Homepage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Homepage */ "./resources/js/pages/Homepage.js");
 /* harmony import */ var _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Dashboard/Dashboard */ "./resources/js/Dashboard/Dashboard.js");
-/* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./test */ "./resources/js/pages/test.js");
+/* harmony import */ var _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Dashboard/Viewer */ "./resources/js/Dashboard/Viewer.js");
+/* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
@@ -75470,7 +76098,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_test__WEBPACK_IMPORTED_MODULE_6__["default"], null);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    exact: true,
+    path: "/",
+    component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/dashboard",
+    component: _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/viewer",
+    component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__["default"]
+  })));
 }
 
 if (document.getElementById("example")) {
@@ -75553,6 +76191,17 @@ module.exports = "/images/computer-screen.png?73e833ad8aa86210eaa2abfd7bd2ead3";
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo.png?2ec8c4fe1d38452624df5ad6adba1ebf";
+
+/***/ }),
+
+/***/ "./resources/js/pages/images/logo1.png":
+/*!*********************************************!*\
+  !*** ./resources/js/pages/images/logo1.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo1.png?7cccf43c15bb44e37fbee0365fa69142";
 
 /***/ }),
 

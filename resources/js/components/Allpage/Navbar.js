@@ -22,7 +22,7 @@ function closeNav() {
         <React.Fragment>
      <div id="navbar" className="d-flex justify-content-between sticky  ">
         <div className="logo-container">
-            <img src={require('../../pages/images/logo.png')} className="img-fluid" />
+            <img src={require('../../pages/images/logo1.png')} className="img-fluid" />
         </div>
         <div className="nav d-none d-sm-block">
             <a href="index.html" className="active">Home</a>
@@ -50,11 +50,12 @@ function closeNav() {
             <a href="#blog">Blogs</a>
         </div>
         <div className="button-container">
+          
             <div className="join-now">
-                <a href="" data-toggle="modal" data-target="#myModal">Join Now</a>
+                <a href="" data-toggle="modal" data-target="#join">Join Now</a>
             </div>
             <div className="login">
-                <a href="" data-toggle="modal" data-target="#myModal2">Login</a>
+                <a href="" data-toggle="modal" data-target="#login">Login</a>
             </div>
         </div>
         <span  className="d-block d-sm-none" onClick={openNav}><i className="fa fa-bars"></i></span>

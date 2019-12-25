@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Mukta', sans-serif;
-
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Lato', sans-serif;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
   z-index: 2; 
   top: 0; 
   left: 0;
-  background:linear-gradient(180deg, #2ad181, #2ad181d1);
+  background:linear-gradient(180deg, #2ad181, #009d98);
   overflow-x: hidden; 
    -ms-overflow-style: none;
   transition: 0.5s; 
@@ -97,7 +97,7 @@ width: 100%;
     z-index: 9;
     padding: 5px 15px;
      transition: 0.5s; 
-    background: #2ad181;
+    background: #27cd81;
 }
 .userSidenav .company-container .img-container{
   width:  50px;
@@ -190,7 +190,7 @@ width: 100%;
     padding-bottom: 60px;
   }
   .userSidenav .company-container .img-container{
-  width:  40px;
+  width:  70px;
   
   
 }
@@ -200,7 +200,7 @@ width: 100%;
   }
   .userSidenav .company-container{
    position: relative;
-    padding: 5px 5px;
+    padding: 12px 5px 5px 5px;
   }
 
   
@@ -260,6 +260,7 @@ width: 100%;
 #main {
   transition: margin-left .5s;
   margin-left: 250px;
+  background: #f8f8f9;
   
 }
 .navbar{
@@ -349,15 +350,16 @@ width: 100%;
 
 /*---------------------------------------Dynamic Page CSS---------------------*/
 .main-content{
-      padding: 90px 20px;
+      padding: 30px 0px;
       z-index: 0;
 }
 .main-title{
   text-align: center;
   font-size: 36px;
-  color: #656565;
-  font-family: 'Righteous', cursive;
+  color: #009d6db3;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
+  margin-top: 60px;
 }
 .sub-title{
       font-size: 26px;
@@ -374,33 +376,40 @@ width: 100%;
   color: black;
 }
 .learn-subject .img-container{
-      background: #67f9eb;
+     
     color: white;
     border-radius: 50px;
-    padding: 20px;
+    padding: 15px 0px 5px 0px;
     text-align: center;
 }
-.learn-subject .img-container{
- 
-  
-  
-  
-  background: #74ffd2;
-}
+
 .learn-subject .img-container i{
+  color: #31d285;
   font-size: 40px;
-  text-shadow: 1px 2px 3px #868686;
+  
 }
 .learn-subject .subject-container{
- margin-bottom: 30px;
+  margin: 10px 15px 20px 15px;
+  padding: 15px;
+ border-radius: 10px;
+ background: #fff;
+ box-shadow:1px 0px 10px 1px #e2e2e4;
+}
+.learn-subject .subject-container:hover{
+  background:linear-gradient(135deg, #2ad181, #009d98);
 }
 .learn-subject .subject-container:hover .img-container i{
+  color: white;
   transform: scale(1.3);
   transition: transform 0.3s ease-out;
+}
+.learn-subject .subject-container:hover .title{
+  color: white;
 }
 .learn-subject .subject-container .title{
   text-align: center;
   margin:5px auto;
+  color:#686868;
   font-weight: bold;
 }
 
@@ -411,11 +420,16 @@ width: 100%;
   .learn-subject{
     padding: 30px 0px;
   }
-  .learn-subject .img-container i{
-  font-size: 26px;
-}
+
 .learn-subject .img-container{
   padding: 15px;
+}
+.learn-subject .subject-container{
+  margin:0px;
+  margin-bottom: 25px;
+}
+.learn-subject .img-container i {
+  font-size: 56px;
 }
 .learn-subject .subject-container .title{
   font-size: 14px;
@@ -424,12 +438,13 @@ width: 100%;
 }
 /*--------------------------practise-subject-----------------------*/
 .practise-subject{
-  padding: 30px 30px;
+  padding: 30px 60px;
 }
 .practise-subject .practise-wrapper{
   margin-top: 30px;
     padding: 5px;
     border-radius: 5px;
+    background: #fff;
     box-shadow: 0px 0px 5px 1px #ebe9e9;
 }
 .practise-subject .practise-wrapper a{
@@ -441,7 +456,7 @@ width: 100%;
   display: inline-block;
   height: 50px;
   margin-left: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 30px;
   color: white;
   border-radius: 5px;
@@ -471,10 +486,10 @@ width: 100%;
 }
 
 .practise-report{
-  padding: 15px 10px;
+  padding: 15px 60px;
 }
 .practise-report .report-wrapper{
-  
+  background:#fff;
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
@@ -604,3 +619,548 @@ width: 100%;
 }
 
 /*----------------------end of class page----------------------*/
+/* subject page */
+.main-subject-containter{
+  background: #fff;
+}
+.subject-navbar{
+  padding: 60px 60px 15px 60px;
+  position: relative;
+ 
+  border-bottom: 2px solid #ffffff;
+}
+.subject-navbar span{
+  position: absolute;
+  top: 15px;
+  font-size: 24px;
+  left: 15px;
+}
+
+.subject-navbar .icon-box{
+  display: inline-block;
+  padding: 15px;
+  vertical-align: top;
+  background: white;
+  box-shadow: 0px 0px 5px 1px #d8d3d3;
+  border-radius: 5px;
+  color: #25cb83;
+  font-size: 36px;
+}
+.subject-navbar .title-box{
+  display: inline-block;
+  padding-left: 20px;
+}
+.subject-navbar .title-box h2{
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.subject-navbar .nav{
+  margin-top: 15px;
+}
+.subject-navbar .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: white;
+    color: #26cc83;
+    border: 1px solid #b5d8c8bf;
+    box-shadow: 0px 5px 10px #a7ccbc;
+    border-radius: 10px;
+    border-bottom: 5px solid #4bc38e;
+}
+.subject-navbar .nav-pills li{
+padding-right: 15px;
+}
+.subject-navbar .nav-pills li a{
+  color: #262828;
+}
+.subject-content{
+  margin-top: 30px;
+}
+.subject-content .chapter-wrapper{
+  padding: 30px;
+    
+  box-shadow: 0px 2px 3px #f6f6f6;
+    margin-bottom: 10px;
+}
+.subject-content .chapter-wrapper .chapter-title{
+  font-size: 22px;
+}
+.subject-content .chapter-wrapper .chapter-title span{
+  padding-right: 10px;
+  color: #25cb83;
+}
+.subject-content .chapter-wrapper .option{
+  
+  text-align: right;
+}
+.subject-content .chapter-wrapper .option a{
+  display: inline-block;
+  padding-right: 30px;
+  margin-top: 5px;
+  color: #2ad181;
+  font-size: 20px;
+}
+.subject-content .chapter-wrapper .option a:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out, color 0.5s linear;
+  color: #009d98;
+}
+/* slideshow */
+#flash{
+  padding: 45px;
+}
+#flash .chapter-title{
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 22px;
+}
+#flash .chapter-title span{
+  padding-right: 10px;
+  color: #25cb83;
+}
+.carousel-inner .carousel-box{
+  padding: 30px;
+  background: #f8f8f9;
+  color: #655d5d;
+  
+}
+.top-content a{
+  text-decoration: none;
+  color: #655d5d;
+}
+.top-content .carousel-control-prev {
+  left: -15px;
+  background: linear-gradient(45deg, #2ad181, #009d98);
+  width: 30px;
+  opacity: 1;
+}
+.top-content .carousel-control-next {
+  right: -15px;
+  background: linear-gradient(45deg, #2ad181, #009d98);
+  width: 30px;
+  opacity: 1;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Show 4th slide on md if col-md-4*/
+
+  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Show 3rd slide on sm if col-sm-6*/
+  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -50%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-item {
+      margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+      transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+/* LG */
+@media (min-width: 991px) {
+  /* show 4th item */
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+
+
+/*note viewer page */
+/* ------------------- The side note viewer navigation menu -------------------- */
+.viewerSidenav {
+  height: 100%; 
+  width: 250px; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  left: 0;
+  background:linear-gradient(180deg, #2ad181, #009d98);
+  overflow-x: hidden; 
+   -ms-overflow-style: none;
+  transition: 0.5s; 
+  padding-bottom: 30px;
+}
+.viewerSidenav::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.viewerSidenav .profile-container{
+	text-align: center;
+	padding: 20px 10px;
+  margin-top: 60px;
+	}
+.viewerSidenav .profile-container .img-container{
+	width:40%;
+	box-shadow: 0px 0px 5px 4px #5753538f;
+	margin:0px auto;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.viewerSidenav .title-name{
+	font-size: 18px;
+	    padding-bottom: 10px;
+  color: white;
+
+	    text-shadow: 1px 2px 3px #3b3939;
+      font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+display: block;
+	text-align: center !important;
+	border-bottom:1px solid #c7c7c7;
+}
+
+.viewerSidenav .title-name .grade{
+  font-size: 16px;
+    text-shadow: none;
+    display: inline-block;
+    color: black;
+
+}
+.viewerSidenav .title-name a{
+        display:block;
+    padding-left: 10px;
+    font-size: 13px;
+    
+    padding: 0px 10px 0px 5px;
+}
+.viewerSidenav .company-container{
+    
+    
+    width: 250px;
+    z-index: 9;
+    padding: 5px 15px;
+     transition: 0.5s; 
+    background: #27cd81;
+}
+.viewerSidenav .company-container .img-container{
+  width:  50px;
+  display: inline-block;
+  
+}
+.viewerSidenav .company-container .img-container img{
+  border-radius: 5px;
+}
+.viewerSidenav .company-container .title-name{
+  display: inline-block;
+  border: none;
+  
+}
+.viewerSidenav .company-container .title-name span{
+  display: none;
+}
+.viewerSidenav .download-title{
+    font-size: 18px;
+      padding-bottom: 10px;
+  color: white;
+      text-shadow: 1px 2px 3px #3b3939;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  text-align: center !important;
+
+}
+.viewerSidenav .download-app .play-store, .viewerSidenav .download-app .app-store{
+  background: black;
+  margin: 0px 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.viewerSidenav .download-app .play-store a, .viewerSidenav .download-app .app-store a{
+  padding: 0px !important;
+}
+/* ---------The navigation menu links---------------- */
+.viewerSidenav a {
+  padding: 10px 8px 10px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  transition: 0.1s;
+  position: relative;
+}
+.viewerSidenav a::after{
+  content:'';
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background: transparent;
+}
+
+.viewerSidenav a:hover {
+  color: #000;
+}
+.viewerSidenav .active{
+  background: #fff;
+  color: #036c17;
+}
+
+
+.viewerSidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.viewerSidenav .footer-nav{
+    position: fixed;
+    height: 55px;
+    display: none;
+    border-top: 1px  solid #fff;
+    
+    text-align: center;
+    background: #fff;
+    bottom: 0px;
+    width: 100%;
+}
+.viewerSidenav .footer-nav a{
+  display: inline-block;
+}
+@media (max-width: 756px)
+{
+  #userSideNav{
+    padding-bottom: 60px;
+  }
+  .viewerSidenav .company-container .img-container{
+  width:  70px;
+  
+  
+}
+  .viewerSidenav{
+    width: 0px;
+        background: #eeeeee;
+  }
+  .viewerSidenav .company-container{
+   position: relative;
+    padding: 12px 5px 5px 5px;
+  }
+
+  
+.viewerSidenav .profile-container{
+  margin-top: 0;
+}
+.viewerSidenav a{
+      color: #3d3b3b;
+    font-weight: bold;
+}
+
+.viewerSidenav .title-name {
+    
+    color: #32c24d;
+    text-shadow: 1px 2px 3px #f4f1f1;
+   
+}
+.viewerSidenav .company-container .title-name span{
+  display: inline-block;
+  margin-left: 12px;
+}
+ .viewerSidenav .company-container .title-name{
+  color: white;
+      text-shadow: 1px 2px 3px #767575;
+
+ }
+.viewerSidenav .footer-nav{
+  padding: 3px 15px;
+  display: flex;
+  justify-content: space-between;
+      box-shadow:0px -1px 5px #d2d2d2;
+
+}
+.viewerSidenav .footer-nav a i{
+  display: block;
+}
+.viewerSidenav .footer-nav a{
+     padding: 5px;
+    color: #3b3a3a;
+}
+.viewerSidenav .footer-nav .active {
+  color:green;
+}
+.viewerSidenav .footer-nav a span{
+  font-size: 14px;
+    font-weight: normal;
+}
+.viewerSidenav .title-name{
+  font-size: 16px;
+ 
+}
+.viewerSidenav .profile-container .img-container{
+  width: 40%;
+}
+}
+.viewerNavbar{
+	height: 60px;
+	background: #fff;
+	
+  position: fixed;
+  width: calc(100% - 250px);
+  z-index: 1;
+  padding: 10px 16px;
+}
+
+ .viewerNavbar .close i{
+  padding: 5px;
+}
+
+
+.viewerNavbar .close{
+	display: block;
+	height: 44px;
+	overflow: hidden;
+	
+	padding: 10px 0px 10px 15px;
+	border-radius: 5px;
+
+}
+.viewerNavbar .close a{
+	margin-right: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #008862;
+}
+.viewerNavbar .close:hover a{
+	margin-right: 10px;
+	transition: margin-right 0.3s linear;
+}
+.viewerNavbar #view{
+	display: none;
+}
+.viewerNavbar #view i, .viewerNavbar #hide i{
+	    font-size: 36px;
+    color: #2ad181;
+    
+}
+@media (max-width: 756px)
+{
+  .viewerNavbar{
+    width: 100%;
+    height: 50px;
+    padding: 0px 15px;
+  }
+  #main{
+    margin-left:0px;
+  }
+  .viewerNavbar #view{
+  display: block;
+}
+.viewerNavbar #hide{
+  display: none;
+}
+.viewerNavbar #view i, .viewerNavbar #hide i {
+    font-size: 26px;
+    
+}
+}
+@media screen and (max-height: 450px) {
+  .userSidenav {padding-top: 15px;}
+  .userSidenav a {font-size: 18px;}
+}
+

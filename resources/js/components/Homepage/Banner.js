@@ -30,7 +30,7 @@ function displayCode() {
                 </div>
                 <div className="col-md-4 col-lg-4 col-4">
                     <div className="submit">
-                        <a href="" className="button" data-toggle="modal" data-target="#myModal" name="">Join</a>
+                        <a href="" className="button" data-toggle="modal" data-target="#join" name="">Join</a>
                     </div>
                 </div>
             </div>
@@ -50,12 +50,15 @@ function displayCode() {
         </div>
     </div>
     
-    <div className="modal join fade" id="myModal">
+    <div className="modal join fade" id="join">
     <div className="modal-dialog">
         <div className="modal-content">
             {/* <!-- Modal body --> */}
             <button type="button" className="close" data-dismiss="modal"><i className="fa fa-window-close mt-2"></i></button>
             <div className="modal-body">
+                <div className="logo-box">
+                    <img src={require('../../pages/images/logo1.png')} className="img-fluid" />
+                </div>
                 <div className="title">
                     Join Now
                 </div>
@@ -73,22 +76,25 @@ function displayCode() {
                         </div>
                     </div>
                     <div className="button-container">
-                        <button className="btn btn-success">Join Now</button>
+                        <button className="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#otp">Join Now</button>
                         <br />
-                        <a href="" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">I ALREADY HAVE ACCOUNT</a>
+                        <a href="" data-dismiss="modal" data-toggle="modal" data-target="#login">I ALREADY HAVE ACCOUNT</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
-<div className="modal join fade" id="myModal2">
+    </div>
+<div className="modal join fade" id="login">
     <div className="modal-dialog">
         <div className="modal-content">
           
                  {/* <!-- Modal body --> */}
             <button type="button" className="close" data-dismiss="modal"><i className="fa fa-window-close mt-2"></i></button>
             <div className="modal-body">
+            <div className="logo-box">
+                    <img src={require('../../pages/images/logo1.png')} className="img-fluid" />
+                </div>
                 <div className="title">
                     Login
                 </div>
@@ -103,7 +109,7 @@ function displayCode() {
                     <div className="button-container">
                         <button className="btn btn-success">Login</button>
                         <br />
-                        <a href="" data-dismiss="modal" data-toggle="modal" data-target="#myModal">I DON'T HAVE ACCOUNT</a>
+                        <a href="" data-dismiss="modal" data-toggle="modal" data-target="#join">I DON'T HAVE ACCOUNT</a>
                     </div>
                 </form>
             </div>
@@ -111,6 +117,37 @@ function displayCode() {
         </div>
     </div>
 </div>
+
+    <div className="modal join fade" id="otp">
+        <div className="modal-dialog">
+            <div className="modal-content">
+            
+                    {/* <!-- Modal body --> */}
+                <button type="button" className="close" data-dismiss="modal"><i className="fa fa-window-close mt-2"></i></button>
+                <div className="modal-body">
+                <div className="logo-box">
+                    <img src={require('../../pages/images/logo1.png')} className="img-fluid" />
+                </div>
+                    <div className="title">
+                        Enter OTP Code
+                    </div>
+                    <form action="">
+                    
+                        <div className="form-group">
+                            <input type="number" className="form-control" placeholder="OTP code" />
+                        </div>
+                        
+                        <div className="button-container">
+                            <button className="btn btn-success">Jump In</button>
+                            <br />
+                            <a href="#" >Resend OTP code</a>
+                        </div>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </div>
 </div>
     )
 }
