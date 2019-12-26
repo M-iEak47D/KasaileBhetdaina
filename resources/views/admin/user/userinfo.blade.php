@@ -11,10 +11,13 @@
                 <input type="hidden" name="user_info_id" value="{{ $userInfo->id }}">
                 <div class="form-group">
                     <label>Profile Picture</label>
-                    <input type="file" class="form-control" name="image" required />
+                    <input type="file" class="form-control" name="image"  />
                     @if ($errors->has('image'))
                         <span class="help-block"><strong style="color:red;">{{ $errors->first('image') }}</strong></span>
                     @endif
+                    @if($userInfo->profile_image)
+                        <img src="{{ asset($userInfo->profile_image) }}"  alt="{{ $userInfo->User->name }}" title="{{ $userInfo->User->name }}" width="100"/>
+                        @endif
                 </div>
                 <div class="form-group">
                     <label>Gender*</label>

@@ -6,6 +6,7 @@ use App\Model\UserInfo;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 
 class UserController extends Controller
 {
@@ -74,6 +75,46 @@ class UserController extends Controller
     }
 
 
+    public function update(Request $request){
+
+        $request->validate([
+            'name' => 'required|max:255',
+            'phone' => 'required|min:10|numeric|unique:users,phone,'.$request->user_id ,
+            'email' => 'email',
+            'role' => 'required',
+            'mpin' => 'required|numeric',
+        ]);
+
+
+        $user = User::where('id', $request->user_id)->first();
+        $user->name = $request->name;
+        $user->phone = $request->phone;
+        $user->email = $request->email;
+        if($request->password) {
+            $user->password = $request->password;
+        }
+        $user->mpin = $request->mpin;
+        $return = $user->update();
+
+        if($return){
+
+            return response([
+                'status' => 'success',
+                'title' => 'Successfully Updated.',
+                'text' => 'User Successfully Updated from Your List!!',
+            ]);
+        }else{
+            return response([
+                'status' => 'error',
+                'title' => 'Error!!',
+                'text' => 'Error While Updating!!',
+            ]);
+
+        }
+
+    }
+
+
     public function changeStatus($id){
 
         $user = User::find($id);
@@ -111,14 +152,18 @@ class UserController extends Controller
         $user = UserInfo::where('id', $request->user_info_id)->first();
         $user->gender = $request->gender;
         $user->DOB = $request->DOB;
+        $user->user_ip = \Request::ip();
 
         if ($request->hasFile('image'))
         {
+            if($user->profile_image){
+                File::delete(public_path($user->profile_image));
+            }
 
             $img=$request->image;
-            $fileName=time().".".$img->getClientOriginalExtension();
+            $fileName = time().".".$img->getClientOriginalExtension();
             $destinationPath=public_path('user/profile/');
-            $img->move($destinationPath, fileName);
+            $img->move($destinationPath, $fileName);
             $user->profile_image='user/profile/'.$fileName;
 
         }

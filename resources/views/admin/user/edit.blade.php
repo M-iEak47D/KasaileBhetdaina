@@ -41,14 +41,14 @@
                 </div>
                 <div class="form-group">
                     <label>Password*</label>
-                    <input type="pasword" class="form-control" name="password" required placeholder="Enter Password"/>
+                    <input type="pasword" class="form-control" name="password"  placeholder="Enter Password"/>
                     @if ($errors->has('pasword'))
                         <span class="help-block"><strong style="color:red;">{{ $errors->first('pasword') }}</strong></span>
                     @endif
                 </div>
                 <div class="form-group">
                     <label>Password Confirmation*</label>
-                    <input type="text" class="form-control" name="password_confirmation" required placeholder="Enter Passwor"/>
+                    <input type="text" class="form-control" name="password_confirmation"  placeholder="Enter Passwor"/>
 
                 </div>
 

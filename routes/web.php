@@ -44,6 +44,7 @@ Route::group([
     Route::get('/changestatus/user/{id}', 'UserController@changeStatus')->name('changestatus.user');
     Route::get('/add/userinfo/{id}', 'UserController@addUserInfo')->name('add.userinfo');
     Route::post('/store/userinfo', 'UserController@storeUserInfo')->name('store.userinfo');
+    Route::post('/update/user', 'UserController@update')->name('update.user');
 
 
 

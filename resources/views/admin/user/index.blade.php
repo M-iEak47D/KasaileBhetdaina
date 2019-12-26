@@ -373,12 +373,12 @@
             e.preventDefault();
             $(this).attr('disabled');
             var form = new FormData($('#eduFormUpdate')[0]);
-            var params = $('#eduFormUpdate').serializeArray();
+                var params = $('#eduFormUpdate').serializeArray();
 
             var hideFormModal = $('#eduFormUpdate').val();
             console.log(hideFormModal);
 
-            var myUrl = "{{ route('admin.update.quiz') }}";
+            var myUrl = "{{ route('admin.update.user') }}";
 
             $.each(params, function (i, val) {
                 form.append(val.name, val.value)
@@ -408,7 +408,11 @@
                             type: data.status,
                         }
                     );
-                    // $('#hr-data-table').DataTable().ajax.reload();
+                    if(data.status == 'success'){
+                        $('#eduFormUpdate')[0].reset();
+                        $('.editquiz').modal('hide');
+                    }
+                    $('#edu-data-table').DataTable().ajax.reload();
                 },
                 error: function (err) {
                     if (err.status == 422) {
