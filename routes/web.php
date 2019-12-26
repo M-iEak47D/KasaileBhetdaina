@@ -11,5 +11,4 @@
 |
 */
 
-Route::view('/{path?}', 'welcome');
-Route::view('/dashboard/{path?}', 'welcome');
+Route::get('/{path?}', function($path = null){ return View::make('welcome'); })->where('path', '.*');

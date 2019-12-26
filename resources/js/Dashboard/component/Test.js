@@ -1,11 +1,15 @@
 import React from 'react';
+import {Link , Switch , Route, useRouteMatch} from 'react-router-dom';
+import TestSubject from '../component/TestSubject';
 
 export default function Test(){
+    let {path, url} = useRouteMatch();
     return(
         <React.Fragment>
         
        
-         
+        <Switch>
+            <Route exact path={path} >
         <div className="main-title">
             Are you Ready for Exam?
         </div>
@@ -14,7 +18,7 @@ export default function Test(){
                 <div className="col-md-3 col-lg-3 col-12">
                 
                         <div className="practise-wrapper">
-                             <a href="">
+                        <Link to={`${url}/physics`}>
                             <div className="row">
                                 <div className="col-md-3 col-3">
                                     <div className="icon-box" style={{backgroundColor: '#ffed6a'}}>
@@ -33,7 +37,7 @@ export default function Test(){
                                     </div>
                                 </div>
                             </div>
-                                        </a>
+                                        </Link>
                         </div>
     
                 </div>
@@ -239,7 +243,11 @@ export default function Test(){
         </div>
        
     </div>
-
+    </Route>
+    <Route path={`${path}/physics`}>
+            <TestSubject />
+    </Route>
+</Switch>
 
 </React.Fragment>
     )

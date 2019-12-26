@@ -164,7 +164,7 @@ export default  function Dashboard (){
                  <Route  path={`${path}/practise`} component={Practise} />
                  <Route path={`${path}/learn`} component={Learn}  /> 
                  <Route  path={`${path}/test`} component={Test} />    
-                 {/* <Route  path='/learn/subject' component={LearnSubject} />   */}
+                
                      
                 
                 </Switch>

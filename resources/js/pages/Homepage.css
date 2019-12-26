@@ -928,6 +928,11 @@ text-align: right;
   right: 5%;
   z-index: 1;
 }
+.quiz .quiz-header .navbar{
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
 .quiz .quit-section .quit a{
   border:2px solid white;
   padding: 5px 10px;
@@ -940,6 +945,33 @@ background-color: white;
 color: green;
 text-decoration: none;
 }
+#quitModal{
+  text-align: center;
+}
+#quitModal .title{
+  margin-top: 30px;
+  font-size: 30px;
+  color: #777d79;
+}
+#quitModal .button-container{
+  padding: 30px;
+}
+#quitModal .button-container a{
+  
+  display: inline-block;
+  color: white;
+}
+#quitModal .button-container  .yes{
+  background: #ff4e4e;
+  margin: 0px 15px;
+  padding: 10px 30px;
+}
+#quitModal .button-container  .no{
+  background: #57d957;
+  margin: 0px 15px;
+  padding: 10px 30px;
+}
+
 .test-section{
   margin-top: 100px;
 }

@@ -1,17 +1,17 @@
 import React from 'react';
-import {Link, Switch, Route, useRouteMatch} from 'react-router-dom';
+import {Link, Switch, Route, useRouteMatch, useHistory} from 'react-router-dom';
 
 
 export default function LearnSubject(){
    let {path, url} = useRouteMatch();
- 
+  let History = useHistory();
     return(
         <React.Fragment>
           <div className="main-subject-containter">
             <div className="subject-navbar d-flex justify-content-between">
-                <Link to={`${url}`} className="back">
+                <a onClick={History.goBack} className="back">
                   <i className="fa fa-arrow-left"></i>
-                  </Link>
+                  </a>
                 <div className="top-subject-navbar">
                     <div className="icon-box">
                         <i className="fa fa-atom"></i>
