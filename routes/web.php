@@ -36,6 +36,7 @@ Route::group([
     Route::get('/edit/quiz/{id}', 'QuizController@edit')->name('edit.quiz');
     Route::post('/update/quiz', 'QuizController@update')->name('update.quiz');
     Route::get('/delete/quiz/{id}', 'QuizController@destroy')->name('delete.quiz');
+    Route::get('/changestatus/quiz/{id}', 'QuizController@changeStatus')->name('changestatus.quiz');
 
     Route::get('/user', 'UserController@index')->name('user');
     Route::post('/store/user', 'UserController@store')->name('store.user');
@@ -45,6 +46,7 @@ Route::group([
     Route::get('/add/userinfo/{id}', 'UserController@addUserInfo')->name('add.userinfo');
     Route::post('/store/userinfo', 'UserController@storeUserInfo')->name('store.userinfo');
     Route::post('/update/user', 'UserController@update')->name('update.user');
+    Route::get('/delete/user/{id}', 'UserController@destroy')->name('delete.user');
 
 
 

@@ -17,6 +17,7 @@ class QuizController extends Controller
 
         foreach ($quizs as $quiz){
             $quiz->count = $count;
+            $quiz->date = $quiz->created_at->format('Y-M-d');
             $count++;
         }
         return datatables($quizs)->toJson();
@@ -143,6 +144,26 @@ class QuizController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
+    public function changeStatus($id){
+
+        $quiz = Quiz::find($id);
+        if($quiz->status == 1){
+            $quiz->status = 0;
+        }else{
+            $quiz->status = 1;
+        }
+        $return = $quiz->update();
+
+        if($return){
+
+            return response([
+                'status' => 'success',
+            ]);
+        }
+    }
+
     public function destroy($id)
     {
         $quiz = Quiz::find($id);

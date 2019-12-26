@@ -20,7 +20,7 @@
                         provides the based framework upon which plug-ins can built.
                     </p>
                 <button class="btn btn-primary waves-effect waves-light pull-right" data-toggle="modal" data-target=".addnew">Add New</button>
-                    <table id="1edu-data-table" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <table id="edu-data-table" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
                             <th>Sn</th>
@@ -31,17 +31,6 @@
                             <th>Action</th>
                         </tr>
                         </thead>
-                        @foreach($quizs as $quiz)
-                        <tr>
-                            <td>{{ $quiz->id }}</td>
-                            <td>{{ $quiz->title }}</td>
-                            <td>{{ $quiz->status }}</td>
-                            <td>{{ $quiz->time }}</td>
-                            <td>{{ $quiz->created_at }}</td>
-                            <td><button type='submit' class='btn btn-dark btn-icon-text mr-2 p-1 btn-edit-row' data-id='{{ $quiz->id }}'><i class=' mdi mdi-grease-pencil btn-icon-prepend'></i></button>
-                                <button type='submit' class='btn btn-danger btn-icon-text p-1 btn-delete-row' data-id="{{ $quiz->id }}"><i class=' mdi mdi-delete btn-icon-prepend'></i></button></td>
-                        </tr>
-                        @endforeach
                         <tbody>
 
 
@@ -105,14 +94,24 @@
                             return row.title;
                         }
                     },
-                    {
-                        data: 'status',
-                        render: function (data, type, row) {
-                            return row.short_name;
+                    {data: 'status', name: 'status',
+                        render: function(data, type, row) {
+                            if(data==1){
+                                return '<button data-id=' + row.id + ' class="btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary"><i class="ion-toggle-filled"></i> </button>';
+                            }
+                            else{
+                                return '<button data-id=' + row.id + ' class="btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger"><i class="ion-toggle"></i> </button>';
+                            }
                         }
                     },
                     {
-                        data: 'created_at',
+                        data: 'time',
+                        render: function (data, type, row) {
+                            return row.time;
+                        }
+                    },
+                    {
+                        data: 'date',
                         render: function (data, type, row) {
                             return row.date;
                         }
@@ -121,10 +120,10 @@
                         data: 'id',
                         orderable: false,
                         render: function (data, type, row) {
-                            // var actions = '';
-                            // actions += "<button type='submit' class='btn btn-dark btn-icon-text mr-2 p-1 btn-edit-row' data-id=" + row.id + "><i class=' mdi mdi-grease-pencil btn-icon-prepend'></i></button>";
-                            // actions += "<button type='submit' class='btn btn-danger btn-icon-text p-1 btn-delete-row' data-id=" + row.id + "><i class=' mdi mdi-delete btn-icon-prepend'></i></button>";
-                            // return actions;
+                            var actions = '';
+                            actions += "<button type='submit' class='btn btn-dark btn-icon-text mr-2 p-1 btn-edit-row' data-id=" + row.id + "><i class=' mdi mdi-grease-pencil btn-icon-prepend'></i></button>";
+                            actions += "<button type='submit' class='btn btn-danger btn-icon-text p-1 btn-delete-row' data-id=" + row.id + "><i class=' mdi mdi-delete btn-icon-prepend'></i></button>";
+                            return actions;
                         }
                     },
                 ]
@@ -172,7 +171,7 @@
                             type: data.status,
                         }
                     );
-                    // $('#hr-data-table').DataTable().ajax.reload();
+                    $('#edu-data-table').DataTable().ajax.reload();
                 },
                 error: function (err) {
                     if (err.status == 422) {
@@ -254,7 +253,7 @@
                             type: data.status,
                         }
                     );
-                    // $('#hr-data-table').DataTable().ajax.reload();
+                    $('#edu-data-table').DataTable().ajax.reload();
                 },
                 error: function (err) {
                     if (err.status == 422) {
@@ -275,6 +274,47 @@
 
                 }
             });
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '.btn-chnage-status', function (e) {
+            e.preventDefault();
+            var id = $(this).attr("data-id");
+            var tempDeleteUrl = "{{ route('admin.changestatus.quiz', ':id') }}";
+            tempDeleteUrl = tempDeleteUrl.replace(':id', id);
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type: "GET",
+                url: tempDeleteUrl,
+                beforeSend: function (data) {
+                    $(this).attr("disabled", true);
+
+                },
+                success: function (data) {
+
+                    if(data.status == 'success'){
+
+                        $('#edu-data-table').DataTable().ajax.reload();
+                    }
+                },
+                error: function (err) {
+                    if (err.status == 422) {
+                        $(this).attr("disabled", false);
+                    }
+                },
+                complete: function () {
+                    $(this).attr("disabled", false);
+                }
+            });
+
+
+
         });
     </script>
 
@@ -317,7 +357,7 @@
                             );
 
                         }
-                        // $('#hr-data-table').DataTable().ajax.reload();
+                        $('#edu-data-table').DataTable().ajax.reload();
                     },
                     error: function (err) {
                         if (err.status == 422) {

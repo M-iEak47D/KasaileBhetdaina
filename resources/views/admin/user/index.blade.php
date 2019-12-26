@@ -440,7 +440,7 @@
         $(document).on('click', '.btn-delete-row', function (e) {
             e.preventDefault();
             var id = $(this).attr("data-id");
-            var tempDeleteUrl = "{{ route('admin.delete.quiz', ':id') }}";
+            var tempDeleteUrl = "{{ route('admin.delete.user', ':id') }}";
             tempDeleteUrl = tempDeleteUrl.replace(':id', id);
 
             swal({
@@ -475,7 +475,7 @@
                             );
 
                         }
-                        // $('#hr-data-table').DataTable().ajax.reload();
+                        $('#edu-data-table').DataTable().ajax.reload();
                     },
                     error: function (err) {
                         if (err.status == 422) {
