@@ -158,7 +158,7 @@ width: 100%;
   color: #000;
 }
 .userSidenav .active{
-  background: linear-gradient(90deg, #00b38c, #f8f8f9);
+  background: linear-gradient(90deg, transparent,#f8f8f942, #f8f8f9);
   color: #ffffff;
 }
 
@@ -266,7 +266,7 @@ width: 100%;
 .navbar{
 	height: 60px;
 	background: #fff;
-	box-shadow: 1px 0px 5px #cbc7c7;
+	box-shadow: 1px 0px 5px #e7e7e8 ;
   position: fixed;
   width: calc(100% - 250px);
   z-index: 1;
@@ -681,7 +681,7 @@ padding-right: 15px;
 .subject-content .chapter-wrapper{
   padding: 30px;
     
-  box-shadow: 0px 2px 3px #f6f6f6;
+  box-shadow: 0px 2px 3px #c7eadd;
     margin-bottom: 10px;
 }
 .subject-content .chapter-wrapper .chapter-title{
@@ -1282,4 +1282,116 @@ background:linear-gradient(90deg, #2ad181, #009d98);
   text-decoration: none;
   color: #008862;
   box-shadow: inset 3px 3px 7px 1px #e7eeeb;
+}
+
+/* doubts-page */
+.doubts-container{
+  padding: 60px 90px;
+}
+.doubts-container .doubts-wrapper{
+  background: #27cd81;
+  padding: 15px;
+}
+.doubts-container .doubts-wrapper .icon-box{
+ 
+  color: white;
+  padding-top: 10px;
+}
+.doubts-container .doubts-wrapper .icon-box i{
+  background: #0aa165;
+  padding: 10px;
+  font-size: 24px;
+}
+.doubts-container .doubts-wrapper .title{
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.doubts-container .doubts-wrapper .subtitle{
+  font-size: 14px;
+  color: #fff;
+  
+}
+.doubts-container .doubts-wrapper .button-container{
+margin-top: 25px;
+  text-align: right;
+}
+.doubts-container .doubts-wrapper .button-container a{
+  padding: 10px 30px;
+  font-size: 16px;
+  color: white;
+  background: #3fa377;
+}
+#doubts{
+  
+  padding: 0px 60px;
+  background: #f0f0f0;
+}
+#doubts .title{
+  font-size: 14px;
+  color: grey;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+#doubts .subject-wrapper{
+  box-shadow: 0px 0px 5px 1px #d7d5d5;
+  padding: 8px 30px;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+#doubts .subject-wrapper i{
+  padding: 10px;
+  color: #25cb83;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 18px;
+  background: #f0f0f0;
+}
+#doubts .subject-wrapper .subject-name{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+}
+.doubts-container .modal-body{
+  background: #f0f0f0;
+}
+.doubts-container .modal-body .title{
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 15px;
+}
+.doubts-container .modal-body .img-container{
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 5px;
+  border: 2px dashed #fff;
+}
+.doubts-container .modal-body input[type='file']{
+  margin-top: 40%;
+}
+.doubts-container .modal-body label{
+  margin-top: 30px;
+}
+.doubts-container .modal-body textarea{
+  width: 100%;
+  min-height: 100px;
+  
+}
+.doubts-container .modal-body .btn-container{
+  text-align: right;
+}
+
+.doubts-container .modal-body .submitBtn{
+  padding: 8px 30px;
+  background: #11bc79;
+  color: white;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  
 }

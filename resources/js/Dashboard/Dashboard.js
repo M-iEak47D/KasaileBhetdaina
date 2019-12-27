@@ -3,8 +3,9 @@ import './assets/css/userStyle.css';
 import Learn from './component/Learn';
 import Practise from './component/Practise';
 import Test from './component/Test';
-import LearnSubject from './component/LearnSubject';
 import { BrowserRouter as Router,Switch,Route, Link, useRouteMatch} from 'react-router-dom';
+import Bookmark from './component/Bookmark';
+import Doubts from './component/Doubts';
 export default  function Dashboard (){
     // function handleActive(){
     //     var ram = $('#userSideNav a');
@@ -99,10 +100,12 @@ export default  function Dashboard (){
              <Link to={`${url}/test`} className="test-class" onClick={handleActive}>
                  <i className="fa fa-file-alt"></i><span className="sideTab"> Test</span>
              </Link>
-             <a href='#'>
+             <Link to={`${url}/doubts`} className="test-class" onClick={handleActive}>
              <i className="fa fa-comment"></i> <span className="sideTab"> Doubts</span>
-             </a>
-             <a href="#"><i className="fa fa-bookmark"></i> <span className="sideTab"> Bookmarks</span></a>
+             </Link>
+             <Link to={`${url}/bookmark`} className="test-class" onClick={handleActive}>
+                 <i className="fa fa-bookmark"></i> <span className="sideTab"> Bookmarks</span>
+                </Link>
           
              <hr />
          </div>
@@ -135,8 +138,10 @@ export default  function Dashboard (){
              <Link to={`${url}/test`}  onClick={handleActive}>
        <i className="fa fa-file-alt"></i><span> Test</span>
        </Link>
-             <a href="#"><i className="fa fa-comment"></i> <span> Doubts</span></a>
-             <a href="#"><i className="fa fa-bookmark"></i> <span> Bookmarks</span></a>
+             <Link to={`${url}/doubts`} onClick={handleActive}>
+                 <i className="fa fa-comment"></i> <span> Doubts</span>
+                 </Link>
+             <Link to={`${url}/bookmark`} ><i className="fa fa-bookmark"></i> <span> Bookmarks</span></Link>
          </div>
      </div>
      <div id="main">
@@ -163,7 +168,9 @@ export default  function Dashboard (){
                 
                  <Route  path={`${path}/practise`} component={Practise} />
                  <Route path={`${path}/learn`} component={Learn}  /> 
-                 <Route  path={`${path}/test`} component={Test} />    
+                 <Route  path={`${path}/test`} component={Test} />
+                 <Route path={`${path}/bookmark`} component={Bookmark} />  
+                 <Route path={`${path}/doubts`} component={Doubts} />  
                 
                      
                 
