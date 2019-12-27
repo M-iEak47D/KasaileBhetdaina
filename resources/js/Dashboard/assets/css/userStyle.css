@@ -260,7 +260,7 @@ width: 100%;
 #main {
   transition: margin-left .5s;
   margin-left: 250px;
-  background: #f8f8f9;
+
   
 }
 .navbar{
@@ -1289,7 +1289,7 @@ background:linear-gradient(90deg, #2ad181, #009d98);
   padding: 60px 90px;
 }
 .doubts-container .doubts-wrapper{
-  background: #27cd81;
+  background: #32ea9b;
   padding: 15px;
 }
 .doubts-container .doubts-wrapper .icon-box{
@@ -1298,9 +1298,9 @@ background:linear-gradient(90deg, #2ad181, #009d98);
   padding-top: 10px;
 }
 .doubts-container .doubts-wrapper .icon-box i{
-  background: #0aa165;
-  padding: 10px;
-  font-size: 24px;
+  padding: 5px;
+    font-size: 36px;
+
 }
 .doubts-container .doubts-wrapper .title{
   font-size: 16px;
@@ -1317,10 +1317,12 @@ margin-top: 25px;
   text-align: right;
 }
 .doubts-container .doubts-wrapper .button-container a{
-  padding: 10px 30px;
+  padding: 10px 45px;
   font-size: 16px;
+  border-radius: 25px;
+  font-weight: bold;
   color: white;
-  background: #3fa377;
+  box-shadow: 0px 0px 10px 2px #02a097;
 }
 #doubts{
   
