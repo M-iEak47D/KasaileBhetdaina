@@ -73420,6 +73420,428 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/Dashboard/Component/LearnSubject.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/Dashboard/Component/LearnSubject.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LearnSubject; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+function LearnSubject() {
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  console.log(history);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "main-subject-containter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-navbar d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    onClick: history.goBack,
+    className: "back"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-left"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-subject-navbar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-atom"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Physics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-number"
+  }, "10 Chapters"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link active",
+    "data-toggle": "pill",
+    href: "#note"
+  }, "Notes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#flash"
+  }, "Flash Cards")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link",
+    "data-toggle": "pill",
+    href: "#past-question"
+  }, "Question Set")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container active",
+    id: "note"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/viewer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Power"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "04"), "Heat"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "05"), "Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bookmark"
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "flash"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "carousel-one",
+    className: "carousel slide",
+    "data-ride": "carousel"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner row w-100 mx-auto",
+    role: "listbox"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    href: "#carousel-one",
+    role: "button",
+    "data-slide": "prev"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Previous")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-next",
+    href: "#carousel-one",
+    role: "button",
+    "data-slide": "next"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Next"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "carousel-two",
+    className: "carousel slide",
+    "data-ride": "carousel"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-inner row w-100 mx-auto",
+    role: "listbox"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "question",
+    "data-toggle": "modal",
+    "data-target": "#carouselModalTwo"
+  }, " What is Force? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "question",
+    "data-toggle": "modal",
+    "data-target": "#carouselModalTwo"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-item col-12 col-sm-6 col-md-4 col-lg-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question"
+  }, " What is Measurement? ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-prev",
+    href: "#carousel-two",
+    role: "button",
+    "data-slide": "prev"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Previous")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "carousel-control-next",
+    href: "#carousel-two",
+    role: "button",
+    "data-slide": "next"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "sr-only"
+  }, "Next"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal",
+    id: "carouselModalTwo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "What is Force?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      fontWeight: "lighter"
+    }
+  }, "The original form of Newton's second law states that the net force acting upon an object is equal to the rate at which its momentum changes with time. If the mass of the object is constant, this law implies that the acceleration of an object is directly proportional to the net force acting on the object, is in the direction of the net force, and is inversely proportional to the mass of the object.")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tab-pane container fade",
+    id: "past-question"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2063"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: '/viewer/OEQ2063'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2073"), "Old Exam Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: '/viewer/OEQ2073'
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chapter-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Model Question Set"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-download"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-eye"
+  })))))))));
+}
+
+/***/ }),
+
 /***/ "./resources/js/Dashboard/Dashboard.js":
 /*!*********************************************!*\
   !*** ./resources/js/Dashboard/Dashboard.js ***!
@@ -73503,11 +73925,8 @@ function Dashboard() {
   var handleActive = function handleActive(event) {
     $('#userSideNav a').removeClass('active');
     event.target.classList.add('active');
-  };
+  }; // let {path , url} = useRouteMatch();
 
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "userSideNav",
@@ -73546,7 +73965,7 @@ function Dashboard() {
   }, "Change >")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-sm-block d-none"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/learn"),
+    to: "/learn",
     className: "active test-class",
     onClick: function onClick(event) {
       handleActive(event);
@@ -73556,7 +73975,7 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/practise"),
+    to: "/practise",
     className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73564,7 +73983,7 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/test"),
+    to: "/test",
     className: "test-class",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73634,7 +74053,7 @@ function Dashboard() {
   }, "\xA9 Copywrite EduNepal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/learn"),
+    to: "/learn",
     className: "active",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -73642,14 +74061,14 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/practise"),
+    to: "/practise",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
   }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-    to: "".concat(url, "/test"),
+    to: "/test",
     onClick: handleActive
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
@@ -73694,13 +74113,13 @@ function Dashboard() {
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Logout"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-content"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "".concat(path, "/practise"),
+    path: "/practise",
     component: _component_Practise__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "".concat(path, "/learn"),
+    path: "/learn",
     component: _component_Learn__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "".concat(path, "/test"),
+    path: "/test",
     component: _component_Test__WEBPACK_IMPORTED_MODULE_4__["default"]
   })))));
 }
@@ -73989,7 +74408,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _component_LearnSubject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../component/LearnSubject */ "./resources/js/Dashboard/component/LearnSubject.js");
+/* harmony import */ var _Component_LearnSubject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Component/LearnSubject */ "./resources/js/Dashboard/Component/LearnSubject.js");
 
 
 
@@ -73997,6 +74416,9 @@ function Learn() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
+
+  var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+      subjectId = _useParams.subjectId;
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
@@ -74128,8 +74550,8 @@ function Learn() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
   }, "EPH"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "".concat(path, "/physics")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_component_LearnSubject__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
+    path: "".concat(path, "/:subjectId")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_LearnSubject__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 }
 
 /***/ }),
@@ -74150,16 +74572,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function LearnSubject() {
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
-
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  console.log(history);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-navbar d-flex justify-content-between"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url),
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    onClick: history.goBack,
     className: "back"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-arrow-left"
@@ -74211,7 +74631,7 @@ function LearnSubject() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-download"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/viewer/measure"
+    to: "/viewer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-eye"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -76113,6 +76533,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./test */ "./resources/js/pages/test.js");
+/* harmony import */ var _Dashboard_component_Learn__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Dashboard/component/Learn */ "./resources/js/Dashboard/component/Learn.js");
+
 
 
 
@@ -76122,17 +76544,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     exact: true,
     path: "/",
     component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-    path: "/dashboard",
-    component: _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     path: "/viewer",
     component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__["default"]
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
 }
 
 if (document.getElementById("example")) {

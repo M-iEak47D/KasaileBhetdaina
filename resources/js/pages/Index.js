@@ -6,19 +6,20 @@ import Viewer from '../Dashboard/Viewer';
 import Newquiz from "../quiz/quizlayout";
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Test from "./test"
-
+import Learn from '../Dashboard/component/Learn';
 
 
 export default function Index(){
     return(
+        <React.Fragment>
         <BrowserRouter>
             <Switch>    
                 <Route exact path="/" component={Homepage} />
-                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/viewer" component={Viewer} />
-                {/* <Route path="/new" component={Newquiz} /> */}
+                <Dashboard />
             </Switch>
          </BrowserRouter>
+         </React.Fragment>
     )
 }
 

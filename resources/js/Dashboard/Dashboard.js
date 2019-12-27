@@ -59,7 +59,7 @@ export default  function Dashboard (){
         event.target.classList.add('active');
     }
     
-    let {path , url} = useRouteMatch();
+    // let {path , url} = useRouteMatch();
 
     return(
         <React.Fragment>
@@ -84,13 +84,13 @@ export default  function Dashboard (){
              <a href="">Change ></a>
          </div>
          <div className="d-sm-block d-none">
-            <Link to={`${url}/learn`} className="active test-class"  onClick={(event) => {handleActive(event)}}> 
+            <Link to="/learn" className="active test-class"  onClick={(event) => {handleActive(event)}}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
             </Link>
-            <Link to={`${url}/practise`} className="test-class" onClick={handleActive} >
+            <Link to="/practise" className="test-class" onClick={handleActive} >
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={`${url}/test`} className="test-class" onClick={handleActive}>
+             <Link to="/test" className="test-class" onClick={handleActive}>
                  <i className="fa fa-file-alt"></i><span className="sideTab"> Test</span>
              </Link>
              <a href='#'>
@@ -120,13 +120,13 @@ export default  function Dashboard (){
              &copy; Copywrite EduNepal
          </div>
          <div className="footer-nav">
-         <Link to={`${url}/learn`} className="active"  onClick={handleActive}> 
+         <Link to="/learn" className="active"  onClick={handleActive}> 
             <i className="fa fa-graduation-cap"></i> <span className="sideTab"> Learn</span>
         </Link>
-            <Link to={`${url}/practise`} onClick={handleActive}>
+            <Link to="/practise" onClick={handleActive}>
              <i className="fa fa-user-md"></i> <span className="sideTab"> Practise</span>
              </Link>
-             <Link to={`${url}/test`}  onClick={handleActive}>
+             <Link to="/test"  onClick={handleActive}>
        <i className="fa fa-file-alt"></i><span> Test</span>
        </Link>
              <a href="#"><i className="fa fa-comment"></i> <span> Doubts</span></a>
@@ -151,16 +151,15 @@ export default  function Dashboard (){
          </div>
          <div className="main-content">
                  <Switch>
-                
-                 <Route  path={`${path}/practise`} component={Practise} />
-                 <Route path={`${path}/learn`} component={Learn}  /> 
-                 <Route  path={`${path}/test`} component={Test} />    
+
+                 <Route  path="/practise" component={Practise} />
+                 <Route  path="/learn" component={Learn}  /> 
+                 <Route  path="/test" component={Test} />    
                  {/* <Route  path='/learn/subject' component={LearnSubject} />   */}
-                     
-                
+
                 </Switch>
          </div>
-    </div>
+    </div>  
         </React.Fragment>
      )
 }
