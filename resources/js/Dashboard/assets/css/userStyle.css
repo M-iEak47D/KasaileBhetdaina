@@ -158,8 +158,8 @@ width: 100%;
   color: #000;
 }
 .userSidenav .active{
-  background: #fff;
-  color: #036c17;
+  background: linear-gradient(90deg, #00b38c, #f8f8f9);
+  color: #ffffff;
 }
 
 
@@ -350,7 +350,7 @@ width: 100%;
 
 /*---------------------------------------Dynamic Page CSS---------------------*/
 .main-content{
-      padding: 30px 0px;
+  padding: 60px 0px 0px 0px;
       z-index: 0;
 }
 .main-title{
@@ -479,7 +479,7 @@ width: 100%;
 
 }
 .practise-subject .practise-wrapper .progress .progress-bar{
-  background: #32c24d;
+  background: linear-gradient(128deg, #2ad181, #4dfa68);
 }
 .practise-subject .practise-wrapper .progress-percent{
   font-size: 12px;
@@ -624,16 +624,17 @@ width: 100%;
   background: #fff;
 }
 .subject-navbar{
-  padding: 90px 60px 15px 90px;
+  padding: 75px 60px 15px 90px;
   position: relative;
  
   border-bottom: 2px solid #ffffff;
 }
 .subject-navbar .back{
   position: absolute;
-  top: 45px;
+  top: 30px;
   font-size: 24px;
-  left: 15px;
+  left: 30px;
+  cursor: pointer;
   color: black;
 }
 
@@ -673,6 +674,7 @@ padding-right: 15px;
 .subject-navbar .nav-pills li a{
   color: #262828;
 }
+
 .subject-content{
   margin-top: 30px;
 }
@@ -702,7 +704,7 @@ padding-right: 15px;
 }
 .subject-content .chapter-wrapper .option a:hover{
   transform: scale(1.2);
-  transition: transform 0.5s ease-in-out, color 0.5s linear;
+  transition: transform 0.3s ease-in-out, color 0.3s linear;
   color: #009d98;
 }
 /* slideshow */
@@ -1165,3 +1167,119 @@ display: block;
   .userSidenav a {font-size: 18px;}
 }
 
+/* PractiseSubject */
+.practiseSubject{
+  padding: 30px 90px;
+}
+.practiseSubject .practiseSubjectWrapper{
+  background: #f1fff9;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+.practiseSubject .practiseSubjectWrapper a{
+  text-decoration: none;
+}
+.practiseSubject .practiseSubjectWrapper a:hover{
+  color: gray;
+}
+.practiseSubject .practiseSubjectWrapper .chapter-name{
+  font-size: 24px;
+  color: black;
+  margin-bottom: 5px;
+}
+.practiseSubject .practiseSubjectWrapper .chapter-name span{
+  padding-right: 10px;
+  color: green;
+}
+.practiseSubject .practiseSubjectWrapper .progress{
+  height: 8px;
+  width: 80%;
+  margin-bottom: 5px;
+}
+.practiseSubject .practiseSubjectWrapper .progress .progress-bar{
+background:linear-gradient(90deg, #2ad181, #009d98);
+}
+.practiseSubject .practiseSubjectWrapper .progress-percent{
+  display: inline-block;
+  padding-left: 15px;
+  color: gray;
+  font-size: 12px;
+}
+.practiseSubject .practiseSubjectWrapper .level{
+  display:inline-block;
+  padding-left: 30px;
+  font-size: 12px;
+  color: gray;
+}
+.practiseSubject .practiseSubjectWrapper .button-container{
+  
+  vertical-align: middle;
+  padding-top: 15px;
+  text-align: right;
+}
+.practiseSubject .practiseSubjectWrapper .button-container a{
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #2ad181;
+  padding: 8px;
+  display: inline-block;
+}
+.practiseSubject .practiseSubjectWrapper .button-container a:hover{
+  background: #2ad181;
+  color: white;
+  border: 2px solid #fff;
+}
+/* testsubject page */
+.testSubject{
+  padding: 30px 90px;
+}
+.testSubject .testSubjectWrapper{
+  background: #f1fff9;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.testSubject .testSubjectWrapper .title{
+
+  font-size: 36px;
+  color: black;
+}
+.testSubject .testSubjectWrapper .subtitle{
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 30px;
+}
+.testSubject .testSubjectWrapper .time{
+  color: green;
+  margin-bottom: 15px;
+}
+.testSubject .testSubjectWrapper .attempt-container{
+  padding: 10px;
+  font-size: 20px;
+  color: #019e97;
+}
+.testSubject .testSubjectWrapper .attempt-container .attempt{
+  
+  display: inline-block;
+  border-top: 1px solid #25cb83;
+  border-bottom: 1px solid #25cb83;
+  padding: 0px 15px;
+}
+.testSubject .testSubjectWrapper .attempt-container .remaining{
+  display: inline-block;
+  margin-left: 30px;
+  padding: 0px 15px;
+  border-top: 1px solid #25cb83;
+  border-bottom: 1px solid #25cb83;
+}
+.testSubject .testSubjectWrapper .button-container{
+  padding:30px;
+}
+.testSubject .testSubjectWrapper .button-container a{
+  padding:10px 30px;
+  background: white;
+  text-decoration: none;
+  color: #008862;
+  box-shadow: inset 3px 3px 7px 1px #e7eeeb;
+}

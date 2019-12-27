@@ -16,7 +16,7 @@ export default function Index(){
             <Switch>    
                 <Route exact path="/" component={Homepage} />
                 <Route path="/viewer" component={Viewer} />
-                <Dashboard />
+                <Route path="/quiz" component={Newquiz} />
             </Switch>
          </BrowserRouter>
          </React.Fragment>

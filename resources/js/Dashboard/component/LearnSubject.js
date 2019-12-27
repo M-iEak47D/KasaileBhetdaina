@@ -1,27 +1,24 @@
 import React from 'react';
-import { Link, Switch, Route, useRouteMatch, useParams, useHistory} from 'react-router-dom';
+import {Link, Switch, Route, useRouteMatch, useHistory} from 'react-router-dom';
 
 
-export default function LearnSubject() {
-  let history = useHistory();
-  console.log(history);
-  return (
-    <React.Fragment>
-      <div className="main-subject-containter">
-        <div className="subject-navbar d-flex justify-content-between">
-          {/* <Link to={`${url}`} className="back"> */}
-          <a onClick={history.goBack} className="back">
-            <i className="fa fa-arrow-left" ></i>
-          </a>
-          {/* </Link> */}
-          <div className="top-subject-navbar">
-            <div className="icon-box">
-              <i className="fa fa-atom"></i>
-            </div>
-            <div className="title-box">
-              <h2>Physics</h2>
-              <div className="chapter-number">10 Chapters</div>
-            </div>
+export default function LearnSubject(){
+    return(
+        <React.Fragment>
+          <div className="main-subject-containter">
+            <div className="subject-navbar d-flex justify-content-between">
+                <a onClick={history.goBack} className="back">
+                  <i className="fa fa-arrow-left"></i>
+                  </a>
+                <div className="top-subject-navbar">
+                    <div className="icon-box">
+                        <i className="fa fa-atom"></i>
+                        </div>
+                    <div className="title-box">
+                    <h2>Physics</h2>
+                    <div className="chapter-number">10 Chapters</div>
+                </div>
+                
 
 
           </div>

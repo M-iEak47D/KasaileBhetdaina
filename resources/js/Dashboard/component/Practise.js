@@ -1,12 +1,17 @@
 import React from 'react';
+import {Link , Switch , Route, useRouteMatch} from 'react-router-dom';
+import PractiseSubject from '../component/PractiseSubject';
 
 export default function Practise(){
+    let {path, url} = useRouteMatch();
     return(
         <React.Fragment>
         
        
          
-        <div className="main-title">
+      <Switch>
+            <Route exact path={path} >
+            <div className="main-title">
             What do you want to practise today?
         </div>
         <div className="practise-subject">
@@ -14,7 +19,7 @@ export default function Practise(){
                 <div className="col-md-3 col-lg-3 col-12">
                 
                         <div className="practise-wrapper">
-                             <a href="">
+                             <Link to={`${url}/physics`}>
                             <div className="row">
                                 <div className="col-md-3 col-3">
                                     <div className="icon-box" style={{backgroundColor: '#ffed6a'}}>
@@ -33,7 +38,7 @@ export default function Practise(){
                                     </div>
                                 </div>
                             </div>
-                                        </a>
+                                        </Link>
                         </div>
     
                 </div>
@@ -239,7 +244,12 @@ export default function Practise(){
         </div>
        
     </div>
-
+        
+            </Route>
+            <Route path={`${path}/physics`} >
+                <PractiseSubject />
+            </Route>
+        </Switch>
 
 </React.Fragment>
     )

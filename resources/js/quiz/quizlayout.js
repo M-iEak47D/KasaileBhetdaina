@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import questions from "./question.json";
+import {useHistory} from 'react-router-dom';
 import Timer from "./Timer"
 
+
+let start = false;
 export default function Newquiz(props) {
     const allQuestion = questions.length;
     const localData = localStorage.getItem('initialValue');
@@ -55,16 +58,38 @@ export default function Newquiz(props) {
         });
         return value;
     }
-    
+    let History = useHistory();
     
     return (
         <div>
             <div className="quiz">
                 <div className="quit-section">
                     <div className="quit">
-                        <a href=""> <i className="fa fa-stop-circle"></i> Quit</a>
+                        <a href="" data-toggle="modal" data-target="#quitModal"> <i className="fa fa-stop-circle"></i> Quit</a>
                     </div>
                 </div>
+                <div className="modal" id="quitModal">
+  <div className="modal-dialog">
+    <div className="modal-content">
+
+     
+      <div className="modal-body">
+      <button type="button" className="close" data-dismiss="modal">&times;</button>
+        <div className="title">
+            Really, wanna quit it?
+        </div>
+        <div className="button-container">
+            <a href="" onClick={History.goBack} data-dismiss="modal" className="yes">Yes</a> 
+            <a href="" className="no" data-dismiss="modal" >No </a>
+        </div>    
+      </div>
+
+    
+     
+
+    </div>
+  </div>
+</div>
 
                 <div className="quiz-header">
                     <nav className="navbar navbar-expand-sm" style={{
