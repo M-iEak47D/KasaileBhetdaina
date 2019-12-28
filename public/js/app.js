@@ -7587,7 +7587,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	"use strict";
 
-	if (  true && typeof module.exports === "object" ) {
+	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
 		// For CommonJS and CommonJS-like environments where a proper `window`
 		// is present, execute the factory and get jQuery.
@@ -18604,7 +18604,7 @@ return jQuery;
   var root = freeGlobal || freeSelf || Function('return this')();
 
   /** Detect free variable `exports`. */
-  var freeExports =  true && exports && !exports.nodeType && exports;
+  var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
 
   /** Detect free variable `module`. */
   var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
@@ -38722,7 +38722,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
           );
           err.name = 'Invariant Violation';
           throw err;
-        } else if ( true && typeof console !== 'undefined') {
+        } else if ("development" !== 'production' && typeof console !== 'undefined') {
           // Old behavior for people using React.PropTypes
           var cacheKey = componentName + ':' + propName;
           if (
@@ -41443,7 +41443,7 @@ function sanitizeURL(url) {
         throw Error("React has blocked a javascript: URL as a security precaution." + (ReactDebugCurrentFrame$1.getStackAddendum()));
       }
     }
-  } else if ( true && !didWarn && isJavaScriptProtocol.test(url)) {
+  } else if (true && !didWarn && isJavaScriptProtocol.test(url)) {
     didWarn = true;
     warning$1(false, 'A future version of React will block javascript: URLs as a security precaution. ' + 'Use event handlers instead if you can. If you need to generate unsafe HTML try ' + 'using dangerouslySetInnerHTML instead. React was passed %s.', JSON.stringify(url));
   }
@@ -46926,7 +46926,7 @@ function setInitialDOMProperties(tag, domElement, rootContainerElement, nextProp
       // on server rendering (but we *do* want to emit it in SSR).
     } else if (registrationNameModules.hasOwnProperty(propKey)) {
       if (nextProp != null) {
-        if ( true && typeof nextProp !== 'function') {
+        if (true && typeof nextProp !== 'function') {
           warnForInvalidEventListener(propKey, nextProp);
         }
 
@@ -47327,7 +47327,7 @@ function diffProperties(domElement, tag, lastRawProps, nextRawProps, rootContain
     } else if (registrationNameModules.hasOwnProperty(propKey)) {
       if (nextProp != null) {
         // We eagerly listen to this even though we haven't committed yet.
-        if ( true && typeof nextProp !== 'function') {
+        if (true && typeof nextProp !== 'function') {
           warnForInvalidEventListener(propKey, nextProp);
         }
 
@@ -47541,7 +47541,7 @@ function diffHydratedProperties(domElement, tag, rawProps, parentNamespace, root
       // TODO: Should we use domElement.firstChild.nodeValue to compare?
       if (typeof nextProp === 'string') {
         if (domElement.textContent !== nextProp) {
-          if ( true && !suppressHydrationWarning) {
+          if (true && !suppressHydrationWarning) {
             warnForTextDifference(domElement.textContent, nextProp);
           }
 
@@ -47549,7 +47549,7 @@ function diffHydratedProperties(domElement, tag, rawProps, parentNamespace, root
         }
       } else if (typeof nextProp === 'number') {
         if (domElement.textContent !== '' + nextProp) {
-          if ( true && !suppressHydrationWarning) {
+          if (true && !suppressHydrationWarning) {
             warnForTextDifference(domElement.textContent, nextProp);
           }
 
@@ -47558,13 +47558,13 @@ function diffHydratedProperties(domElement, tag, rawProps, parentNamespace, root
       }
     } else if (registrationNameModules.hasOwnProperty(propKey)) {
       if (nextProp != null) {
-        if ( true && typeof nextProp !== 'function') {
+        if (true && typeof nextProp !== 'function') {
           warnForInvalidEventListener(propKey, nextProp);
         }
 
         ensureListeningTo(rootContainerElement, propKey);
       }
-    } else if ( true && // Convince Flow we've calculated it (it's DEV-only in this method.)
+    } else if (true && // Convince Flow we've calculated it (it's DEV-only in this method.)
     typeof isCustomComponentTag === 'boolean') {
       // Validate that the properties correspond to their expected values.
       var serverValue = void 0;
@@ -49031,7 +49031,7 @@ function didNotMatchHydratedContainerTextInstance(parentContainer, textInstance,
   }
 }
 function didNotMatchHydratedTextInstance(parentType, parentProps, parentInstance, textInstance, text) {
-  if ( true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
+  if (true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
     warnForUnmatchedText(textInstance, text);
   }
 }
@@ -49046,7 +49046,7 @@ function didNotHydrateContainerInstance(parentContainer, instance) {
   }
 }
 function didNotHydrateInstance(parentType, parentProps, parentInstance, instance) {
-  if ( true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
+  if (true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
     if (instance.nodeType === ELEMENT_NODE) {
       warnForDeletedHydratableElement(parentInstance, instance);
     } else if (instance.nodeType === COMMENT_NODE) {// TODO: warnForDeletedHydratableSuspenseBoundary
@@ -49067,17 +49067,17 @@ function didNotFindHydratableContainerTextInstance(parentContainer, text) {
 }
 
 function didNotFindHydratableInstance(parentType, parentProps, parentInstance, type, props) {
-  if ( true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
+  if (true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
     warnForInsertedHydratedElement(parentInstance, type, props);
   }
 }
 function didNotFindHydratableTextInstance(parentType, parentProps, parentInstance, text) {
-  if ( true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
+  if (true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {
     warnForInsertedHydratedText(parentInstance, text);
   }
 }
 function didNotFindHydratableSuspenseInstance(parentType, parentProps, parentInstance) {
-  if ( true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {// TODO: warnForInsertedHydratedSuspense(parentInstance);
+  if (true && parentProps[SUPPRESS_HYDRATION_WARNING] !== true) {// TODO: warnForInsertedHydratedSuspense(parentInstance);
   }
 }
 function mountResponderInstance(responder, responderInstance, responderProps, responderState, instance) {
@@ -63246,7 +63246,7 @@ function finishConcurrentRender(root, finishedWork, exitStatus, expirationTime) 
         var hasNotProcessedNewUpdates = workInProgressRootLatestProcessedExpirationTime === Sync;
 
         if (hasNotProcessedNewUpdates && // do not delay if we're inside an act() scope
-        !( true && flushSuspenseFallbacksInTests && IsThisRendererActing.current)) {
+        !(true && flushSuspenseFallbacksInTests && IsThisRendererActing.current)) {
           // If we have not processed any new updates during this pass, then
           // this is either a retry of an existing fallback state or a
           // hidden tree. Hidden trees shouldn't be batched with other work
@@ -63308,7 +63308,7 @@ function finishConcurrentRender(root, finishedWork, exitStatus, expirationTime) 
         flushSuspensePriorityWarningInDEV();
 
         if ( // do not delay if we're inside an act() scope
-        !( true && flushSuspenseFallbacksInTests && IsThisRendererActing.current)) {
+        !(true && flushSuspenseFallbacksInTests && IsThisRendererActing.current)) {
           // We're suspended in a state that should be avoided. We'll try to
           // avoid committing it for as long as the timeouts let us.
           if (workInProgressRootHasPendingPing) {
@@ -63390,7 +63390,7 @@ function finishConcurrentRender(root, finishedWork, exitStatus, expirationTime) 
       {
         // The work completed. Ready to commit.
         if ( // do not delay if we're inside an act() scope
-        !( true && flushSuspenseFallbacksInTests && IsThisRendererActing.current) && workInProgressRootLatestProcessedExpirationTime !== Sync && workInProgressRootCanSuspendUsingConfig !== null) {
+        !(true && flushSuspenseFallbacksInTests && IsThisRendererActing.current) && workInProgressRootLatestProcessedExpirationTime !== Sync && workInProgressRootCanSuspendUsingConfig !== null) {
           // If we have exceeded the minimum loading delay, which probably
           // means we have shown a spinner already, we might have to suspend
           // a bit longer to ensure that the spinner is shown for
@@ -63533,7 +63533,7 @@ function flushDiscreteUpdates() {
   // those two cases. Need to fix this before exposing flushDiscreteUpdates
   // as a public API.
   if ((executionContext & (BatchedContext | RenderContext | CommitContext)) !== NoContext) {
-    if ( true && (executionContext & RenderContext) !== NoContext) {
+    if (true && (executionContext & RenderContext) !== NoContext) {
       warning$1(false, 'unstable_flushDiscreteUpdates: Cannot flush updates when React is ' + 'already rendering.');
     } // We're already rendering, so we can't synchronously flush pending work.
     // This is probably a nested event dispatch triggered by a lifecycle/effect,
@@ -64931,7 +64931,7 @@ function warnAboutUpdateOnUnmountedFiberInDEV(fiber) {
 
 var beginWork$$1;
 
-if ( true && replayFailedUnitOfWorkWithInvokeGuardedCallback) {
+if (true && replayFailedUnitOfWorkWithInvokeGuardedCallback) {
   var dummyFiber = null;
 
   beginWork$$1 = function (current$$1, unitOfWork, expirationTime) {
@@ -65359,7 +65359,7 @@ function injectInternals(internals) {
           hook.onCommitFiberRoot(rendererID, root, undefined, didError);
         }
       } catch (err) {
-        if ( true && !hasLoggedError) {
+        if (true && !hasLoggedError) {
           hasLoggedError = true;
           warningWithoutStack$1(false, 'React DevTools encountered an error: %s', err);
         }
@@ -65370,7 +65370,7 @@ function injectInternals(internals) {
       try {
         hook.onCommitFiberUnmount(rendererID, fiber);
       } catch (err) {
-        if ( true && !hasLoggedError) {
+        if (true && !hasLoggedError) {
           hasLoggedError = true;
           warningWithoutStack$1(false, 'React DevTools encountered an error: %s', err);
         }
@@ -67301,7 +67301,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71042,7 +71042,7 @@ function createFundamentalComponent(impl) {
   // We use responder as a Map key later on. When we have a bad
   // polyfill, then we can't use it as a key as the polyfill tries
   // to add a property to the object.
-  if ( true && !hasBadMapPolyfill) {
+  if (true && !hasBadMapPolyfill) {
     Object.freeze(impl);
   }
 
@@ -71082,7 +71082,7 @@ function createEventResponder(displayName, responderConfig) {
   // polyfill, then we can't use it as a key as the polyfill tries
   // to add a property to the object.
 
-  if ( true && !hasBadMapPolyfill) {
+  if (true && !hasBadMapPolyfill) {
     Object.freeze(eventResponder);
   }
 
@@ -73000,9 +73000,7 @@ function addStyle (obj, options) {
 
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
-	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css) 
-		 : options.transform.default(obj.css);
+	    result = options.transform(obj.css);
 
 	    if (result) {
 	    	// If transform returns a value, use that instead of the original css.
@@ -73374,7 +73372,7 @@ g = (function() {
 
 try {
 	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
+	g = g || Function("return this")() || (1, eval)("this");
 } catch (e) {
 	// This works if the window reference is available
 	if (typeof window === "object") g = window;
@@ -73438,8 +73436,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function LearnSubject() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  console.log(history);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -74574,11 +74570,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function LearnSubject() {
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
-
-  var History = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75821,7 +75812,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 try {
-  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
+  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
@@ -76752,10 +76743,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Dashboard/Viewer */ "./resources/js/Dashboard/Viewer.js");
 /* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./test */ "./resources/js/pages/test.js");
-/* harmony import */ var _Dashboard_component_Learn__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Dashboard/component/Learn */ "./resources/js/Dashboard/component/Learn.js");
-
-
 
 
 
@@ -76774,7 +76761,7 @@ function Index() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
     path: "/quiz",
     component: _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__["default"]
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
 }
 
 if (document.getElementById("example")) {
@@ -76915,44 +76902,6 @@ module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
 
 /***/ }),
 
-/***/ "./resources/js/pages/test.js":
-/*!************************************!*\
-  !*** ./resources/js/pages/test.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Test; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-function Test() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/netflix"
-  }, "Netflix")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/yahoo"
-  }, "Yahoo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/:id",
-    children: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Child, null)
-  })));
-}
-
-function Child() {
-  var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useParams"])(),
-      id = _useParams.id;
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Id: ", id));
-}
-
-/***/ }),
-
 /***/ "./resources/js/quiz/Timer.js":
 /*!************************************!*\
   !*** ./resources/js/quiz/Timer.js ***!
@@ -77048,7 +76997,7 @@ function Timer() {
 /*! exports provided: 0, 1, 2, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":1,\"name\":\"What temperature does water boil at?\",\"answer\":[{\"id\":1,\"answer\":\"apple\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"ball\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"dog\",\"correct\":0,\"marks\":1}]},{\"id\":2,\"name\":\"What temperature does ball boil at?\",\"answer\":[{\"id\":1,\"answer\":\"dog\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"ball\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"dog\",\"correct\":0,\"marks\":1}]},{\"id\":3,\"name\":\"What temperature does cat boil at?\",\"answer\":[{\"id\":1,\"answer\":\"apple\",\"correct\":1,\"marks\":1},{\"id\":2,\"answer\":\"cat\",\"correct\":0,\"marks\":1},{\"id\":3,\"answer\":\"dog\",\"correct\":0,\"marks\":1},{\"id\":4,\"answer\":\"ball\",\"correct\":0,\"marks\":1}]}]");
+module.exports = [{"id":1,"name":"What temperature does water boil at?","answer":[{"id":1,"answer":"apple","correct":1,"marks":1},{"id":2,"answer":"ball","correct":0,"marks":1},{"id":3,"answer":"cat","correct":0,"marks":1},{"id":4,"answer":"dog","correct":0,"marks":1}]},{"id":2,"name":"What temperature does ball boil at?","answer":[{"id":1,"answer":"dog","correct":1,"marks":1},{"id":2,"answer":"ball","correct":0,"marks":1},{"id":3,"answer":"cat","correct":0,"marks":1},{"id":4,"answer":"dog","correct":0,"marks":1}]},{"id":3,"name":"What temperature does cat boil at?","answer":[{"id":1,"answer":"apple","correct":1,"marks":1},{"id":2,"answer":"cat","correct":0,"marks":1},{"id":3,"answer":"dog","correct":0,"marks":1},{"id":4,"answer":"ball","correct":0,"marks":1}]}];
 
 /***/ }),
 
@@ -77093,7 +77042,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
+var start = false;
 function Newquiz(props) {
   var allQuestion = _question_json__WEBPACK_IMPORTED_MODULE_2__.length;
   var localData = localStorage.getItem('initialValue');
@@ -77381,8 +77330,8 @@ function useMarkCounter(myMarks) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
