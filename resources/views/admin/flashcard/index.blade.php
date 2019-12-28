@@ -8,11 +8,6 @@
 @endpush
 
 @section('contents')
-    <input value="+977" id="country_code" />
-    <input placeholder="phone number" id="phone_number"/>
-    <button onclick="smsLogin();">Login via SMS</button>
-
-
     <div class="row">
         <div class="col-12">
             <div class="card m-b-30">
@@ -29,16 +24,12 @@
                         <thead>
                         <tr>
                             <th>Sn</th>
-                            <th>Name</th>
-                            <th>Phone</th>
-                            <th>Mpin</th>
-                            <th>Verify</th>
+                            <th>Title</th>
                             <th>Status</th>
                             <th>Date</th>
                             <th>Action</th>
                         </tr>
                         </thead>
-
                         <tbody>
 
 
@@ -50,11 +41,8 @@
         </div> <!-- end col -->
     </div> <!-- end row -->
 
-@include('admin.user.add')
-    <div class="modal fade editquiz" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-
-    </div>
-    <div class="modal fade adduserinfo" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+@include('admin.flashcard.add')
+    <div class="modal fade editflashcard" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 
     </div>
 @endsection
@@ -91,7 +79,7 @@
                 bFilter: true,
                 bInfo: false,
                 bAutoWidth: false,
-                ajax: "{{ route('admin.json.user') }}",
+                ajax: "{{ route('admin.json.flashcard') }}",
                 columns: [
                     {
                         data: 'count',
@@ -100,28 +88,9 @@
                         }
                     },
                     {
-                        data: 'name',
+                        data: 'title',
                         render: function (data, type, row) {
-                            return row.name;
-                        }
-                    },
-                    {
-                        data: 'phone',
-                        render: function (data, type, row) {
-                            return row.phone;
-                        }
-                    },
-                    {
-                        data: 'mpin',
-                        render: function (data, type, row) {
-                            return row.mpin;
-                        }
-                    },
-                    {
-                        data: 'email_verified_at',
-                        render: function (data, type, row) {
-                            return data != null ? '<i class="ion-thumbsup text-primary"></i>' : '<i class="ion-thumbsdown text-danger"></i>';
-
+                            return row.title;
                         }
                     },
                     {data: 'status', name: 'status',
@@ -145,7 +114,6 @@
                         orderable: false,
                         render: function (data, type, row) {
                             var actions = '';
-                            actions += "<button type='submit' class='btn btn-primary btn-icon-text mr-2 p-1 btn-add-row' data-id=" + row.id + "><i class=' mdi mdi-database-plus btn-icon-prepend'></i></button>";
                             actions += "<button type='submit' class='btn btn-dark btn-icon-text mr-2 p-1 btn-edit-row' data-id=" + row.id + "><i class=' mdi mdi-grease-pencil btn-icon-prepend'></i></button>";
                             actions += "<button type='submit' class='btn btn-danger btn-icon-text p-1 btn-delete-row' data-id=" + row.id + "><i class=' mdi mdi-delete btn-icon-prepend'></i></button>";
                             return actions;
@@ -166,7 +134,7 @@
             var hideFormModal = $('#eduForm').val();
             console.log(hideFormModal);
 
-            var myUrl = "{{ route('admin.store.user') }}";
+            var myUrl = "{{ route('admin.store.flashcard') }}";
 
             $.each(params, function (i, val) {
                 form.append(val.name, val.value)
@@ -187,9 +155,6 @@
                     $("#eduFormSubmit").attr("disabled", true);
                     $('#eduFormSubmit').html('Loading...');
 
-
-
-
                 },
                 success: function (data) {
                     swal(
@@ -199,10 +164,6 @@
                             type: data.status,
                         }
                     );
-                    if(data.status == 'success'){
-                        $('#eduForm')[0].reset();
-                        $('.addnew').modal('hide');
-                    }
                     $('#edu-data-table').DataTable().ajax.reload();
                 },
                 error: function (err) {
@@ -220,78 +181,8 @@
 
                     $("#eduFormSubmit").attr("disabled", false);
                     $('#eduFormSubmit').html('Submit');
-                    $('.addnew').modal('hide');
-
-                }
-            });
-        });
-    </script>
-
-    <script>
-        $(document).on('submit', '#userInfoForm', function (e) {
-            e.preventDefault();
-            $(this).attr('disabled');
-            var form = new FormData($('#userInfoForm')[0]);
-            var params = $('#userInfoForm').serializeArray();
-
-            var hideFormModal = $('#userInfoForm').val();
-            console.log(hideFormModal);
-
-            var myUrl = "{{ route('admin.store.userinfo') }}";
-
-            $.each(params, function (i, val) {
-                form.append(val.name, val.value)
-            });
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                type: "POST",
-                url: myUrl,
-                contentType: false,
-                processData: false,
-                data: form,
-                beforeSend: function (data) {
-
-                    $("#eduFormSubmit").attr("disabled", true);
-                    $('#eduFormSubmit').html('Loading...');
-
-
-
-
-                },
-                success: function (data) {
-                    swal(
-                        {
-                            title: data.title,
-                            text: data.text,
-                            type: data.status,
-                        }
-                    );
-                    if(data.status == 'success'){
-                        $('#eduForm')[0].reset();
-                        $('.adduserinfo').modal('hide');
-                    }
-                    $('#edu-data-table').DataTable().ajax.reload();
-                },
-                error: function (err) {
-                    if (err.status == 422) {
-                        $('#eduFormSubmit').html('Submit');
-                        $("#eduFormSubmit").attr("disabled", false);
-                        $.each(err.responseJSON.errors, function (i, error) {
-                            var el = $(document).find('[name="' + i + '"]');
-                            el.after($('<span style="color: red;">' + error[0] + '</span>').fadeOut(15000));
-                        });
-                    }
-                },
-                complete: function () {
-
-
-                    $("#eduFormSubmit").attr("disabled", false);
-                    $('#eduFormSubmit').html('Submit');
-                    $('.adduserinfo').modal('hide');
+                    // $('.addnew').modal('hide');
+                    $('#eduForm')[0].reset();
 
                 }
             });
@@ -304,10 +195,10 @@
             $this = $(this);
             var id = $this.attr('data-id');
 
-            var tempEditUrl = "{{ route('admin.edit.user', ':id') }}";
+            var tempEditUrl = "{{ route('admin.edit.flashcard', ':id') }}";
             tempEditUrl = tempEditUrl.replace(':id', id);
             console.log(tempEditUrl);
-            var $modal = $('.editquiz');
+            var $modal = $('.editflashcard');
             $modal.load(tempEditUrl, function (response) {
                 $modal.modal('show');
             });
@@ -316,27 +207,74 @@
     </script>
 
     <script>
-        $(document).on("click", ".btn-add-row", function (e) {
+        $(document).on('submit', '#eduFormUpdate', function (e) {
             e.preventDefault();
-            $this = $(this);
-            var id = $this.attr('data-id');
+            $(this).attr('disabled');
+            var form = new FormData($('#eduFormUpdate')[0]);
+            var params = $('#eduFormUpdate').serializeArray();
 
-            var tempEditUrl = "{{ route('admin.add.userinfo', ':id') }}";
-            tempEditUrl = tempEditUrl.replace(':id', id);
-            console.log(tempEditUrl);
-            var $modal = $('.adduserinfo');
-            $modal.load(tempEditUrl, function (response) {
-                $modal.modal('show');
+            var hideFormModal = $('#eduFormUpdate').val();
+            console.log(hideFormModal);
+
+            var myUrl = "{{ route('admin.update.flashcard') }}";
+
+            $.each(params, function (i, val) {
+                form.append(val.name, val.value)
+            });
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: myUrl,
+                contentType: false,
+                processData: false,
+                data: form,
+                beforeSend: function (data) {
+
+                    $("#eduFormUpdate").attr("disabled", true);
+                    $('#eduFormUpdate').html('Loading...');
+
+                },
+                success: function (data) {
+                    swal(
+                        {
+                            title: data.title,
+                            text: data.text,
+                            type: data.status,
+                        }
+                    );
+                    $('#edu-data-table').DataTable().ajax.reload();
+                },
+                error: function (err) {
+                    if (err.status == 422) {
+                        $('#eduFormUpdate').html('Submit');
+                        $("#eduFormUpdate").attr("disabled", false);
+                        $.each(err.responseJSON.errors, function (i, error) {
+                            var el = $(document).find('[name="' + i + '"]');
+                            el.after($('<span style="color: red;">' + error[0] + '</span>').fadeOut(15000));
+                        });
+                    }
+                },
+                complete: function () {
+
+
+                    $("#eduFormUpdate").attr("disabled", false);
+                    $('#eduFormUpdate').html('Submit');
+                    $('.editflashcard').modal('hide');
+
+                }
             });
         });
-
     </script>
 
     <script>
         $(document).on('click', '.btn-chnage-status', function (e) {
             e.preventDefault();
             var id = $(this).attr("data-id");
-            var tempDeleteUrl = "{{ route('admin.changestatus.user', ':id') }}";
+            var tempDeleteUrl = "{{ route('admin.changestatus.flashcard', ':id') }}";
             tempDeleteUrl = tempDeleteUrl.replace(':id', id);
 
             $.ajaxSetup({
@@ -374,78 +312,10 @@
     </script>
 
     <script>
-        $(document).on('submit', '#eduFormUpdate', function (e) {
-            e.preventDefault();
-            $(this).attr('disabled');
-            var form = new FormData($('#eduFormUpdate')[0]);
-                var params = $('#eduFormUpdate').serializeArray();
-
-            var hideFormModal = $('#eduFormUpdate').val();
-            console.log(hideFormModal);
-
-            var myUrl = "{{ route('admin.update.user') }}";
-
-            $.each(params, function (i, val) {
-                form.append(val.name, val.value)
-            });
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                type: "POST",
-                url: myUrl,
-                contentType: false,
-                processData: false,
-                data: form,
-                beforeSend: function (data) {
-
-                    $("#eduFormUpdate").attr("disabled", true);
-                    $('#eduFormUpdate').html('Loading...');
-
-                },
-                success: function (data) {
-                    swal(
-                        {
-                            title: data.title,
-                            text: data.text,
-                            type: data.status,
-                        }
-                    );
-                    if(data.status == 'success'){
-                        $('#eduFormUpdate')[0].reset();
-                        $('.editquiz').modal('hide');
-                    }
-                    $('#edu-data-table').DataTable().ajax.reload();
-                },
-                error: function (err) {
-                    if (err.status == 422) {
-                        $('#eduFormUpdate').html('Submit');
-                        $("#eduFormUpdate").attr("disabled", false);
-                        $.each(err.responseJSON.errors, function (i, error) {
-                            var el = $(document).find('[name="' + i + '"]');
-                            el.after($('<span style="color: red;">' + error[0] + '</span>').fadeOut(15000));
-                        });
-                    }
-                },
-                complete: function () {
-
-
-                    $("#eduFormUpdate").attr("disabled", false);
-                    $('#eduFormUpdate').html('Submit');
-                    $('.editquiz').modal('hide');
-
-                }
-            });
-        });
-    </script>
-
-    <script>
         $(document).on('click', '.btn-delete-row', function (e) {
             e.preventDefault();
             var id = $(this).attr("data-id");
-            var tempDeleteUrl = "{{ route('admin.delete.user', ':id') }}";
+            var tempDeleteUrl = "{{ route('admin.delete.flashcard', ':id') }}";
             tempDeleteUrl = tempDeleteUrl.replace(':id', id);
 
             swal({

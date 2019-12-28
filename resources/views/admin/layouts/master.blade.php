@@ -22,7 +22,7 @@
     <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css">
 
     @stack('styles')
-
+    <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
 </head>
 
 
@@ -113,3 +113,4 @@
 
 </body>
 </html>
+

@@ -2,28 +2,26 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Model\Quiz;
+use App\Model\Note;
+use App\Model\UserInfo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 
-class QuizController extends Controller
+class NoteController extends Controller
 {
 
-
-
     public function getJson(){
-        $quizs = Quiz::all();
-
+        $notes = Note::all();
         $count = 1;
-
-        foreach ($quizs as $quiz){
-            $quiz->count = $count;
-            $quiz->date = $quiz->created_at->format('Y-M-d');
+        foreach ($notes as $note){
+            $note->count = $count;
+            $note->date = $note->created_at->format('Y-M-d');
+            $note->note_file = asset($note->file);
             $count++;
         }
-        return datatables($quizs)->toJson();
+        return datatables($notes)->toJson();
     }
-
 
     /**
      * Display a listing of the resource.
@@ -32,8 +30,7 @@ class QuizController extends Controller
      */
     public function index()
     {
-        $quizs = Quiz::all();
-        return view('admin.quiz.index', compact('quizs'));
+        return view('admin.note.index');
     }
 
     /**
@@ -54,22 +51,30 @@ class QuizController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request);
 
-        $quiz = new Quiz();
-        $quiz->title = $request->title;
-        $quiz->time = $request->time;
-        $quiz->description = $request->description;
-        $quiz->total_question = $request->total_question;
-        $quiz->status = $request->status;
+        $note = new Note();
+        $note->title = $request->title;
+        $note->status = $request->status;
+        $note->chapter_id = $request->chapter_id;
 
-        $return = $quiz->save();
+        if ($request->hasFile('file'))
+        {
 
-        if ($return){
+            $img=$request->file;
+            $fileName = time().".".$img->getClientOriginalExtension();
+            $destinationPath=public_path('note/');
+            $img->move($destinationPath, $fileName);
+            $note->file='note/'.$fileName;
+
+        }
+        $return = $note->save();
+
+        if($return){
+
             return response([
                 'status' => 'success',
                 'title' => 'Successfully Added.',
-                'text' => 'New Quiz Added to your list',
+                'text' => 'Note Successfully Added to  Your List!!',
             ]);
         }else{
             return response([
@@ -77,9 +82,8 @@ class QuizController extends Controller
                 'title' => 'Error!!',
                 'text' => 'Error While Adding!!',
             ]);
+
         }
-
-
     }
 
     /**
@@ -101,8 +105,8 @@ class QuizController extends Controller
      */
     public function edit($id)
     {
-        $quiz = Quiz::find($id);
-        return view('admin.quiz.edit', compact('quiz'));
+        $note = Note::find($id);
+        return view('admin.note.edit', compact('note'));
     }
 
     /**
@@ -114,21 +118,32 @@ class QuizController extends Controller
      */
     public function update(Request $request)
     {
-        $quiz_id = $request->quiz_id;
-        $quiz = Quiz::where('id', $quiz_id)->first();
-        $quiz->title = $request->title;
-        $quiz->time = $request->time;
-        $quiz->description = $request->description;
-        $quiz->total_question = $request->total_question;
-        $quiz->status = $request->status;
+        $note = Note::where('id', $request->note_id)->first();
+        $note->title = $request->title;
+        $note->status = $request->status;
+        $note->chapter_id = $request->chapter_id;
 
-        $return = $quiz->Update();
+        if ($request->hasFile('file'))
+        {
+            if ($note->file){
+                File::delete(public_path($note->file));
+            }
 
-        if ($return){
+            $img=$request->file;
+            $fileName = time().".".$img->getClientOriginalExtension();
+            $destinationPath=public_path('note/');
+            $img->move($destinationPath, $fileName);
+            $note->file='note/'.$fileName;
+
+        }
+        $return = $note->update();
+
+        if($return){
+
             return response([
                 'status' => 'success',
-                'title' => 'Successfully Update.',
-                'text' => 'Quiz Updated From Your List!!',
+                'title' => 'Successfully Updated.',
+                'text' => 'Note Successfully Updated From  Your List!!',
             ]);
         }else{
             return response([
@@ -136,6 +151,7 @@ class QuizController extends Controller
                 'title' => 'Error!!',
                 'text' => 'Error While Updating!!',
             ]);
+
         }
     }
 
@@ -145,42 +161,39 @@ class QuizController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-
-    public function changeStatus($id){
-
-        $quiz = Quiz::find($id);
-        if($quiz->status == 1){
-            $quiz->status = 0;
-        }else{
-            $quiz->status = 1;
-        }
-        $return = $quiz->update();
-
-        if($return){
-
-
-            return response([
-                'status' => 'success',
-            ]);
-        }
-    }
-
     public function destroy($id)
     {
-        $quiz = Quiz::find($id);
-        $return = $quiz->delete();
+        $note = Note::find($id);
+        $return = $note->delete();
         if ($return){
             return response([
                 'status' => 'Success',
                 'title' => 'Deleted',
-                'text' => 'Quiz Deleted From Your List!!',
+                'text' => 'User Deleted From Your List!!',
             ]);
         }else{
             return response([
                 'status' => 'error',
                 'title' => 'Error!!',
                 'text' => 'Error While Deleting!!',
+            ]);
+        }
+    }
+
+    public function changeStatus($id){
+
+        $note = Note::find($id);
+        if($note->status == 1){
+            $note->status = 0;
+        }else{
+            $note->status = 1;
+        }
+        $return = $note->update();
+
+        if($return){
+
+            return response([
+                'status' => 'success',
             ]);
         }
     }

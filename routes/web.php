@@ -49,6 +49,26 @@ Route::group([
     Route::get('/delete/user/{id}', 'UserController@destroy')->name('delete.user');
 
 
+    Route::get('/note', 'NoteController@index')->name('note');
+    Route::post('/store/note', 'NoteController@store')->name('store.note');
+    Route::get('/json/note', 'NoteController@getJson')->name('json.note');
+    Route::get('/edit/note/{id}', 'NoteController@edit')->name('edit.note');
+    Route::get('/changestatus/note/{id}', 'NoteController@changeStatus')->name('changestatus.note');
+    Route::post('/update/note', 'NoteController@update')->name('update.note');
+    Route::get('/delete/note/{id}', 'NoteController@destroy')->name('delete.note');
+
+
+    Route::get('/flashcard', 'FlashCardController@index')->name('flashcard');
+    Route::post('/store/flashcard', 'FlashCardController@store')->name('store.flashcard');
+    Route::get('/json/flashcard', 'FlashCardController@getJson')->name('json.flashcard');
+    Route::get('/edit/flashcard/{id}', 'FlashCardController@edit')->name('edit.flashcard');
+    Route::get('/changestatus/flashcard/{id}', 'FlashCardController@changeStatus')->name('changestatus.flashcard');
+    Route::post('/update/flashcard', 'FlashCardController@update')->name('update.flashcard');
+    Route::get('/delete/flashcard/{id}', 'FlashCardController@destroy')->name('delete.flashcard');
+
+
+
+
 
 
 

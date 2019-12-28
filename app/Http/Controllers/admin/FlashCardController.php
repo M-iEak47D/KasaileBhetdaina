@@ -2,28 +2,22 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Model\Quiz;
+use App\Model\FlashCard;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class QuizController extends Controller
+class FlashCardController extends Controller
 {
-
-
-
     public function getJson(){
-        $quizs = Quiz::all();
-
+        $flashcards = FlashCard::all();
         $count = 1;
-
-        foreach ($quizs as $quiz){
-            $quiz->count = $count;
-            $quiz->date = $quiz->created_at->format('Y-M-d');
+        foreach ($flashcards as $flashcard){
+            $flashcard->count = $count;
+            $flashcard->date = $flashcard->created_at->format('Y-M-d');
             $count++;
         }
-        return datatables($quizs)->toJson();
+        return datatables($flashcards)->toJson();
     }
-
 
     /**
      * Display a listing of the resource.
@@ -32,8 +26,7 @@ class QuizController extends Controller
      */
     public function index()
     {
-        $quizs = Quiz::all();
-        return view('admin.quiz.index', compact('quizs'));
+        return view('admin.flashcard.index');
     }
 
     /**
@@ -54,22 +47,31 @@ class QuizController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request);
 
-        $quiz = new Quiz();
-        $quiz->title = $request->title;
-        $quiz->time = $request->time;
-        $quiz->description = $request->description;
-        $quiz->total_question = $request->total_question;
-        $quiz->status = $request->status;
+        $flashcard = new FlashCard();
+        $flashcard->title = $request->title;
+        $flashcard->status = $request->status;
+        $flashcard->description = $request->description;
+        $flashcard->chapter_id = $request->chapter_id;
 
-        $return = $quiz->save();
+        if ($request->hasFile('image'))
+        {
 
-        if ($return){
+            $img=$request->image;
+            $fileName = time().".".$img->getClientOriginalExtension();
+            $destinationPath=public_path('flashcard/');
+            $img->move($destinationPath, $fileName);
+            $flashcard->image='flashcard/'.$fileName;
+
+        }
+        $return = $flashcard->save();
+
+        if($return){
+
             return response([
                 'status' => 'success',
                 'title' => 'Successfully Added.',
-                'text' => 'New Quiz Added to your list',
+                'text' => 'Flash Card Successfully Added to  Your List!!',
             ]);
         }else{
             return response([
@@ -77,9 +79,8 @@ class QuizController extends Controller
                 'title' => 'Error!!',
                 'text' => 'Error While Adding!!',
             ]);
+
         }
-
-
     }
 
     /**
@@ -101,8 +102,8 @@ class QuizController extends Controller
      */
     public function edit($id)
     {
-        $quiz = Quiz::find($id);
-        return view('admin.quiz.edit', compact('quiz'));
+        $flashcard = FlashCard::find($id);
+        return view('admin.flashcard.edit', compact('flashcard'));
     }
 
     /**
@@ -114,21 +115,21 @@ class QuizController extends Controller
      */
     public function update(Request $request)
     {
-        $quiz_id = $request->quiz_id;
-        $quiz = Quiz::where('id', $quiz_id)->first();
-        $quiz->title = $request->title;
-        $quiz->time = $request->time;
-        $quiz->description = $request->description;
-        $quiz->total_question = $request->total_question;
-        $quiz->status = $request->status;
+        $flashcard = FlashCard::where('id', $request->flashcard_id)->first();
+        $flashcard->title = $request->title;
+        $flashcard->status = $request->status;
+        $flashcard->description = $request->description;
+        $flashcard->chapter_id = $request->chapter_id;
 
-        $return = $quiz->Update();
 
-        if ($return){
+        $return = $flashcard->update();
+
+        if($return){
+
             return response([
                 'status' => 'success',
-                'title' => 'Successfully Update.',
-                'text' => 'Quiz Updated From Your List!!',
+                'title' => 'Successfully Updated.',
+                'text' => 'Flash Card Successfully Updated From  Your List!!',
             ]);
         }else{
             return response([
@@ -136,6 +137,7 @@ class QuizController extends Controller
                 'title' => 'Error!!',
                 'text' => 'Error While Updating!!',
             ]);
+
         }
     }
 
@@ -145,42 +147,39 @@ class QuizController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-
-    public function changeStatus($id){
-
-        $quiz = Quiz::find($id);
-        if($quiz->status == 1){
-            $quiz->status = 0;
-        }else{
-            $quiz->status = 1;
-        }
-        $return = $quiz->update();
-
-        if($return){
-
-
-            return response([
-                'status' => 'success',
-            ]);
-        }
-    }
-
     public function destroy($id)
     {
-        $quiz = Quiz::find($id);
-        $return = $quiz->delete();
+        $flashcard = FlashCard::find($id);
+        $return = $flashcard->delete();
         if ($return){
             return response([
                 'status' => 'Success',
                 'title' => 'Deleted',
-                'text' => 'Quiz Deleted From Your List!!',
+                'text' => 'User Deleted From Your List!!',
             ]);
         }else{
             return response([
                 'status' => 'error',
                 'title' => 'Error!!',
                 'text' => 'Error While Deleting!!',
+            ]);
+        }
+    }
+
+    public function changeStatus($id){
+
+        $flashcard = FlashCard::find($id);
+        if($flashcard->status == 1){
+            $flashcard->status = 0;
+        }else{
+            $flashcard->status = 1;
+        }
+        $return = $flashcard->update();
+
+        if($return){
+
+            return response([
+                'status' => 'success',
             ]);
         }
     }

@@ -18,6 +18,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+
+Route::group([
+    'namespace' => 'admin',
+    'as' => 'api.'
+], function() {
+    Route::post('store/question', 'QuestionController@store');
+});
+
+
 Route::group([
     'namespace' => 'api',
     'as' => 'api.'
@@ -29,6 +38,6 @@ Route::group([
     Route::post('validateotp', 'UserController@validateOTP');
     Route::post('savepassword', 'UserController@savePassword');
 
-    
+
 
 });

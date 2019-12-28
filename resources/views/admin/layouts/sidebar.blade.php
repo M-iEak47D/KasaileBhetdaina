@@ -62,6 +62,20 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{ route('admin.note') }}" class="waves-effect">
+                        <i class="dripicons-meter"></i>
+                        <span> Note <span class="badge badge-success badge-pill float-right">3</span></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin.flashcard') }}" class="waves-effect">
+                        <i class="dripicons-meter"></i>
+                        <span> Flash Card <span class="badge badge-success badge-pill float-right">3</span></span>
+                    </a>
+                </li>
+
 
             </ul>
         </div>
