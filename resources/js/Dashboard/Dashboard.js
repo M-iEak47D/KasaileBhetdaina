@@ -94,10 +94,10 @@ export default  function Dashboard (){
              <Link to="/test" className="test-class" onClick={handleActive}>
                  <i className="fa fa-file-alt"></i><span className="sideTab"> Test</span>
              </Link>
-             <Link to={`${url}/doubts`} className="test-class" onClick={handleActive}>
+             <Link to="/doubts" className="test-class" onClick={handleActive}>
              <i className="fa fa-comment"></i> <span className="sideTab"> Doubts</span>
              </Link>
-             <Link to={`${url}/bookmark`} className="test-class" onClick={handleActive}>
+             <Link to="/bookmark" className="test-class" onClick={handleActive}>
                  <i className="fa fa-bookmark"></i> <span className="sideTab"> Bookmarks</span>
                 </Link>
           
@@ -132,10 +132,10 @@ export default  function Dashboard (){
              <Link to="/test"  onClick={handleActive}>
        <i className="fa fa-file-alt"></i><span> Test</span>
        </Link>
-             <Link to={`${url}/doubts`} onClick={handleActive}>
+             <Link to="doubts" onClick={handleActive}>
                  <i className="fa fa-comment"></i> <span> Doubts</span>
                  </Link>
-             <Link to={`${url}/bookmark`} ><i className="fa fa-bookmark"></i> <span> Bookmarks</span></Link>
+             <Link to="/bookmark" ><i className="fa fa-bookmark"></i> <span> Bookmarks</span></Link>
          </div>
      </div>
      <div id="main">
@@ -156,27 +156,16 @@ export default  function Dashboard (){
          </div>
          <div className="main-content">
                  <Switch>
-<<<<<<< HEAD
-
-                 <Route  path="/practise" component={Practise} />
-                 <Route  path="/learn" component={Learn}  /> 
-                 <Route  path="/test" component={Test} />    
-                 {/* <Route  path='/learn/subject' component={LearnSubject} />   */}
-
-=======
                 
                  <Route  path="/practise" component={Practise} />
                  <Route path="/learn" component={Learn}  /> 
                  <Route  path="/test" component={Test} />
                  <Route path="/bookmark" component={Bookmark} />  
                  <Route path="/doubts" component={Doubts} />  
-                
-                     
-                
->>>>>>> 766a7f38cf30d7c744daf3e8046b97cce474e74f
+                           
                 </Switch>
          </div>
-    </div>  
+    </div>   
         </React.Fragment>
      )
 }
