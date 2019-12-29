@@ -1,86 +1,42 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
-use App\Model\Subject;
+use App\Model\Category;
+use App\Model\Content;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class SubjectController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $subjects = Subject::all();
-        return view('admin.subjects.index',compact('subjects'));
+        $subject_type = Category::where('slug','subject')->first();
+        $courses = Content::where('parent_id',0)->get();
+        return view('admin.subjects.index',compact('subject_type','courses'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function store(Request $request){
+        $type = Category::find($request->type);
+        $parent = Content::find($request->parent_id);
+        Content::create([
+           'name' => $request->name,
+           'type' => $request->type,
+           'parent_id' => $request->parent_id,
+            'code' => substr($type->slug,0,2).'-'.substr($parent->slug,0,2).'-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','Subject Added Successfully');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Subject  $subject
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Subject $subject)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Subject  $subject
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Subject $subject)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Subject  $subject
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Subject $subject)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Subject  $subject
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Subject $subject)
-    {
-        //
+    public function update(Request $request,$id){
+        $subject=Content::findOrFail($id);
+        $type = Category::find($request->type);
+        $parent = Content::find($request->parent_id);
+        $subject->slug = null;
+        $subject->update([
+            'name' => $request->name,
+            'parent_id' => $request->parent_id,
+            'code' => substr($type->slug,0,3).'-'.substr($parent->slug,0,3).'-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','Subject Edited Successfully');
     }
 }

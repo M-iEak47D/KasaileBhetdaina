@@ -31,6 +31,7 @@
                         <li><a href="{{ route('admin.courses') }}">Courses</a></li>
                         <li><a href="{{ route('admin.subjects') }}">Subjects</a></li>
                         <li><a href="{{ route('admin.chapters') }}">Chapters</a></li>
+                        <li><a href="{{ route('admin.questions') }}">Questions</a></li>
                     </ul>
                 </li>
 

@@ -14,3 +14,6 @@ require('./bootstrap');
  */
 
 require('./pages/Index');
+
+require('./admin/pages/QuestionAddForm');
+require('./admin/pages/QuestionEditForm');

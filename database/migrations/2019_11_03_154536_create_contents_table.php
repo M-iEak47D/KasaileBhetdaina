@@ -21,6 +21,7 @@ class CreateContentsTable extends Migration
             $table->integer('parent_id')->unsigned();
             $table->string('code')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -17,7 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->increments('id');
             $table->longText('name');
             $table->integer('chapter_id')->unsigned();
-            $table->json('year')->nullable();
+            $table->longText('year')->nullable();
             $table->boolean('importance')->default(0);
             $table->string('image')->nullable();
             $table->integer('marks')->default(1);

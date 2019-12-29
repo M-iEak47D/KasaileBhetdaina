@@ -189,6 +189,10 @@
         });
     </script>
 
+
+    <script>
+    </script>
+
     <script>
         $(document).on("click", ".btn-edit-row", function (e) {
             e.preventDefault();

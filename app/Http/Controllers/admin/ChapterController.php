@@ -1,86 +1,45 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
-use App\Model\Chapter;
+use App\Model\Category;
+use App\Model\Content;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ChapterController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $chapters = Chapter::all();
-        return view('admin.chapters.index',compact('chapters'));
+        $sub = Category::where('slug','subject')->first();
+        $chapter_type = Category::where('slug','chapter')->first();
+        $subjects = $sub->contents;
+        return view('admin.chapters.index',compact('subjects','chapter_type'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function store(Request $request){
+//        dd($request);
+        $parent = Content::findOrFail($request->parent_id);
+        $grandparent = $parent->parent;
+        Content::create([
+            'name' => $request->name,
+            'type' => $request->type,
+            'parent_id' => $request->parent_id,
+            'code' => 'ch-'.substr($grandparent->slug,0,3).'-'.substr($parent->slug,0,3),
+        ]);
+        return redirect()->back()->with('success','Chapter Created Successfully');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Model\Chapter  $chapter
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Chapter $chapter)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Chapter  $chapter
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Chapter $chapter)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\Chapter  $chapter
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Chapter $chapter)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Model\Chapter  $chapter
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Chapter $chapter)
-    {
-        //
+    public function update(Request $request,$id){
+        $content = Content::findOrFail($id);
+        $content->slug = null;
+        $parent = Content::findOrFail($request->parent_id);
+        $grandparent = $parent->parent;
+        $content->update([
+            'name' => $request->name,
+            'parent_id' => $request->parent_id,
+            'code' => 'ch-'.substr($grandparent->slug,0,3).'-'.substr($parent->slug,0,3),
+        ]);
+        return redirect()->back()->with('success','Chapter Edited Successfully');
     }
 }

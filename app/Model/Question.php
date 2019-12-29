@@ -19,6 +19,6 @@ class Question extends Model
     }
 
     public function chapter(){
-        return $this->belongsTo(Chapter::class,'chapter_id');
+        return $this->belongsTo(Content::class,'chapter_id');
     }
 }

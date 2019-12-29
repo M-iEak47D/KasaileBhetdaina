@@ -1,11 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Model\SubSubject;
+use App\Http\Resources\Note\NoteCollection;
+use App\Http\Resources\Note\NoteResource;
+use App\Model\Note;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class SubSubjectController extends Controller
+class NoteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +17,10 @@ class SubSubjectController extends Controller
      */
     public function index()
     {
-        $subSubjects = SubSubject::all();
-        return view('admin.subSubjects.index',compact('subSubjects'));
+        $Notes = Note::where('status', 1)->get();
+        return NoteResource::collection($Notes);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -42,10 +46,10 @@ class SubSubjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\SubSubject  $subSubject
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(SubSubject $subSubject)
+    public function show($id)
     {
         //
     }
@@ -53,10 +57,10 @@ class SubSubjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\SubSubject  $subSubject
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubSubject $subSubject)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +69,10 @@ class SubSubjectController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\SubSubject  $subSubject
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubSubject $subSubject)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +80,10 @@ class SubSubjectController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\SubSubject  $subSubject
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubSubject $subSubject)
+    public function destroy($id)
     {
         //
     }

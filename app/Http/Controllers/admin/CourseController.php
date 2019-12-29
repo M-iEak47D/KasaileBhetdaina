@@ -3,84 +3,67 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Model\Course;
+use App\Model\Category;
+use App\Model\Content;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $courses = Course::all();
-        return view('admin.courses.index',compact('courses'));
+        $class = Category::where('slug','class')->first();
+        $preparation = Category::where('slug','preparation')->first();
+        return view('admin.courses.index',compact('class','preparation'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store_class(Request $request)
     {
-        //
+        Content::create([
+            'name' => $request->name,
+            'type' => $request->type,
+            'parent_id' => 0,
+            'code' => 'cl-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','New Class Added');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Course  $course
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Course $course)
-    {
-        //
+    public function store_preparation(Request $request){
+        Content::create([
+            'name' => $request->name,
+            'type' => $request->type,
+            'parent_id' => 0,
+            'code' => 'pr-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','New Preparation Course Added');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Course  $course
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Course $course)
+    public function update_class(Request $request, $id)
     {
-        //
+        $course = Content::findOrFail($id);
+        $course->slug = null;
+        $course->update([
+            'name' => $request->name,
+            'code' => 'cl-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','Class Updated Successfully');
+    }
+    public function update_preparation(Request $request, $id)
+    {
+        $course = Content::findOrFail($id);
+        $course->slug = null;
+        $course->update([
+            'name' => $request->name,
+            'code' => 'pr-'.substr(strtolower($request->name),0,3),
+        ]);
+        return redirect()->back()->with('success','Preparation Course Updated Successfully');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Course  $course
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Course $course)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Course  $course
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Course $course)
+    public function destroy($id)
     {
         //
     }
