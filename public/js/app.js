@@ -75807,353 +75807,10 @@ function Dropdown(props) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Allpage/Navbar.js":
+/***/ "./resources/js/components/Allpage/Footer.js":
 /*!***************************************************!*\
-  !*** ./resources/js/components/Allpage/Navbar.js ***!
+  !*** ./resources/js/components/Allpage/Footer.js ***!
   \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dropdown */ "./resources/js/components/Allpage/Dropdown.js");
-
-
-function Navbar() {
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-    document.getElementById("myNav").style.width = "100%";
-  }
-  /* Close */
-
-
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "navbar",
-    className: "d-flex justify-content-between sticky  "
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logo-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
-    className: "img-fluid"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "nav d-none d-sm-block"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index.html",
-    className: "active"
-  }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#features"
-  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#blog"
-  }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "join-now"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "",
-    "data-toggle": "modal",
-    "data-target": "#join"
-  }, "Join Now")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "login"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "",
-    "data-toggle": "modal",
-    "data-target": "#login"
-  }, "Login"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "d-block d-sm-none",
-    onClick: openNav
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bars"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "myNav",
-    className: "overlay"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "javascript:void(0)",
-    className: "closebtn"
-  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "overlay-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index.html"
-  }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: " dropdown-toggle",
-    "data-toggle": "dropdown"
-  }, "Classes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown-menu"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "class.html"
-  }, "SEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "#"
-  }, "11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "#"
-  }, "12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: " dropdown-toggle",
-    "data-toggle": "dropdown"
-  }, "Preparation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dropdown-menu"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "preparation.html"
-  }, "Bridge Course"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "#"
-  }, "11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "dropdown-item",
-    href: "#"
-  }, "12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "dashboard.html"
-  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "quiz.html"
-  }, "Blog"))));
-}
-
-/***/ }),
-
-/***/ "./resources/js/components/Homepage/Banner.js":
-/*!****************************************************!*\
-  !*** ./resources/js/components/Homepage/Banner.js ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Banner() {
-  // invite code collapse in join form
-  function displayCode() {
-    document.getElementById('invite_code_collapse').style.display = 'block';
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "banner"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Better Education For a Better World"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subtitle d-sm-block d-none"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, vero nesciunt qui enim blanditiis"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "join-now-form container-fluid"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "country-code"
-  }, "+977")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-5 col-lg-5 col-5"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "phone-number"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "phone",
-    name: "phone number",
-    maxLength: "10"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-4 col-lg-4 col-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "submit"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "",
-    className: "button",
-    "data-toggle": "modal",
-    "data-target": "#join",
-    name: ""
-  }, "Join"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "app-download "
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "play-store"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/play-store.png */ "./resources/js/pages/images/play-store.png"),
-    className: "img-fluid"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "app-store"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/brand-apple.png */ "./resources/js/pages/images/brand-apple.png"),
-    className: "img-fluid"
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "banner-wave"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "wave-img",
-    src: __webpack_require__(/*! ../../pages/images/banner-wave.png */ "./resources/js/pages/images/banner-wave.png"),
-    alt: ""
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal join fade",
-    id: "join"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-dialog"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "button",
-    className: "close",
-    "data-dismiss": "modal"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-window-close mt-2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logo-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
-    className: "img-fluid"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "form-control",
-    placeholder: "Phone Number"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "form-control",
-    placeholder: "Your Name"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-center my-2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    href: "",
-    id: "invite_code",
-    onClick: displayCode
-  }, "I HAVE INVITE CODE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "invite_code_collapse",
-    style: {
-      display: 'none'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    name: "text",
-    type: "tel",
-    value: "",
-    placeholder: "Invite Code",
-    className: "form-control"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-success",
-    "data-dismiss": "modal",
-    "data-toggle": "modal",
-    "data-target": "#otp"
-  }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "",
-    "data-dismiss": "modal",
-    "data-toggle": "modal",
-    "data-target": "#login"
-  }, "I ALREADY HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal join fade",
-    id: "login"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-dialog"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "button",
-    className: "close",
-    "data-dismiss": "modal"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-window-close mt-2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logo-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
-    className: "img-fluid"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "form-control",
-    placeholder: "Phone Number"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "form-control",
-    placeholder: "Password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-success"
-  }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "",
-    "data-dismiss": "modal",
-    "data-toggle": "modal",
-    "data-target": "#join"
-  }, "I DON'T HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal join fade",
-    id: "otp"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-dialog"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "button",
-    className: "close",
-    "data-dismiss": "modal"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-window-close mt-2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "logo-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
-    className: "img-fluid"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Enter OTP Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "number",
-    className: "form-control",
-    placeholder: "OTP code"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-success"
-  }, "Jump In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, "Resend OTP code"))))))));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Banner);
-
-/***/ }),
-
-/***/ "./resources/js/components/Homepage/Footer.js":
-/*!****************************************************!*\
-  !*** ./resources/js/components/Homepage/Footer.js ***!
-  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -76264,6 +75921,619 @@ function Footer() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./resources/js/components/Allpage/Navbar.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/Allpage/Navbar.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dropdown */ "./resources/js/components/Allpage/Dropdown.js");
+/* harmony import */ var _Login_LoginModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Login/LoginModal */ "./resources/js/components/Login/LoginModal.js");
+/* harmony import */ var _Register_RegisterModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Register/RegisterModal */ "./resources/js/components/Register/RegisterModal.js");
+
+
+
+
+function Navbar() {
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.width = "100%";
+  }
+  /* Close */
+
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "navbar",
+    className: "d-flex justify-content-between sticky  "
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "nav d-none d-sm-block"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "index.html",
+    className: "active"
+  }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#features"
+  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#blog"
+  }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "join-now"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#join"
+  }, "Join Now")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "login"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#login"
+  }, "Login"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "d-block d-sm-none",
+    onClick: openNav
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-bars"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "myNav",
+    className: "overlay"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "javascript:void(0)",
+    className: "closebtn"
+  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overlay-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "index.html"
+  }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dropdown"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: " dropdown-toggle",
+    "data-toggle": "dropdown"
+  }, "Classes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dropdown-menu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "class.html"
+  }, "SEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "#"
+  }, "11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "#"
+  }, "12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dropdown"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: " dropdown-toggle",
+    "data-toggle": "dropdown"
+  }, "Preparation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dropdown-menu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "preparation.html"
+  }, "Bridge Course"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "#"
+  }, "11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "dropdown-item",
+    href: "#"
+  }, "12"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "dashboard.html"
+  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "quiz.html"
+  }, "Blog"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Login_LoginModal__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Register_RegisterModal__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Class/ClassBanner.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Class/ClassBanner.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Classbanner; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Classbanner() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "banner"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Hit SEE with your Knowledge"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subtitle d-sm-block d-none"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, vero nesciunt qui enim blanditiis"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "join-now-form container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "country-code"
+  }, "+977")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-5 col-lg-5 col-5"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "phone-number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "phone",
+    name: "phone number",
+    maxLength: "10"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-4 col-lg-4 col-4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "submit"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "button",
+    "data-toggle": "modal",
+    "data-target": "#join",
+    name: ""
+  }, "Join"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "banner-wave"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "wave-img",
+    src: "images/banner-wave.png",
+    alt: ""
+  })));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Class/ClassContent.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/Class/ClassContent.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Classcontent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Classcontent() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "class-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "syllabus-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Syllabus and Notes For SEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Science"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Mathematics"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo1",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo2"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Social"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo2",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "English"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo3",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "EPH"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo4",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo5"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Optional Maths"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo5",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Computer"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo6",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-xs-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject",
+    "data-toggle": "collapse",
+    "data-target": "#demo7"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-book"
+  }), "Account"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "demo7",
+    className: "collapse col-md-12 demo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Lorem ipsum dolor text.... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "View Notes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "mybtn",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overview-section container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Course Overview"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe culpa illo vero adipisci maiores consequuntur! Nobis tempora saepe ut sint distinctio totam laborum quo minima magnam quidem, doloremque, culpa facilis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perferendis veniam, possimus distinctio illo iure, amet sed earum unde quae voluptatum vel harum porro molestiae natus nam vitae neque cum! orem Lorem ipsum dolor sit amet, consectetur tempora saepe ut sint distinctio totam laborum quo minima magnam quidem, doloremque, culpa facilis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perferendis veniam, possimus distinctio illo iure, amet sed earum unde quae voluptatum vel harum porro molestiae natus nam vitae neque cum! orem Lorem ipsum dolor sit amet, consectetur tempora saepe ut sint distinctio totam laborum quo minima magnam quidem, doloremque, culpa facilis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi perferendis veniam, possimus distinctio illo iure, amet sed earum unde quae voluptatum vel harum porro molestiae natus nam vitae neque cum! orem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, accusamus rerum tempora porro adipisci eveniet quia molestias ad, facilis tenetur dolor, ullam iure voluptas eius animi sint odit laudantium totam.    ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Practise Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "select-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+    name: "",
+    id: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    value: ""
+  }, "Science"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    value: ""
+  }, "Maths"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    value: ""
+  }, "English")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "test-slider",
+    className: "owl-carousel"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Wave and Sound"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "1"), " Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-right"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Optics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "3"), " Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-right"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "5"), " Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-right"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Chemistry"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "test-wrapper d-flex justify-content-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "6"), " Test"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#myModal2"
+  }, "Take a Test ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-right"
+  }))))))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Homepage/Banner.js":
+/*!****************************************************!*\
+  !*** ./resources/js/components/Homepage/Banner.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+
+ // import LoginModal from "../Login/LoginModal"
+
+function Banner() {
+  // invite code collapse in join form
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "banner"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Better Education For a Better World"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subtitle d-sm-block d-none"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, vero nesciunt qui enim blanditiis"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "join-now-form container-fluid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "country-code"
+  }, "+977")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-5 col-lg-5 col-5"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "phone-number"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "phone",
+    name: "phone number",
+    maxLength: "10"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-4 col-lg-4 col-4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "submit"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "button",
+    "data-toggle": "modal",
+    "data-target": "#join",
+    name: ""
+  }, "Join"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "app-download "
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "play-store"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/play-store.png */ "./resources/js/pages/images/play-store.png"),
+    className: "img-fluid"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "app-store"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/brand-apple.png */ "./resources/js/pages/images/brand-apple.png"),
+    className: "img-fluid"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "banner-wave"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "wave-img",
+    src: __webpack_require__(/*! ../../pages/images/banner-wave.png */ "./resources/js/pages/images/banner-wave.png"),
+    alt: ""
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal join fade",
+    id: "otp"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-window-close mt-2"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Enter OTP Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "number",
+    className: "form-control",
+    placeholder: "OTP code"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success"
+  }, "Jump In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Resend OTP code"))))))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Banner);
 
 /***/ }),
 
@@ -76564,6 +76834,195 @@ function Testimonial() {
 
 /***/ }),
 
+/***/ "./resources/js/components/Login/LoginModal.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Login/LoginModal.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function LoginModal() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal join fade",
+    id: "login"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-window-close mt-2"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    placeholder: "Phone Number"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    placeholder: "Password"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success"
+  }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-dismiss": "modal",
+    "data-toggle": "modal",
+    "data-target": "#join"
+  }, "I DON'T HAVE ACCOUNT")))))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (LoginModal);
+
+/***/ }),
+
+/***/ "./resources/js/components/Register/RegisterModal.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/Register/RegisterModal.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RegisterModal; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function RegisterModal() {
+  function displayCode() {
+    document.getElementById('invite_code_collapse').style.display = 'block';
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal join fade",
+    id: "join"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-window-close mt-2"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo-box"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: __webpack_require__(/*! ../../pages/images/logo1.png */ "./resources/js/pages/images/logo1.png"),
+    className: "img-fluid"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    placeholder: "Phone Number"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    placeholder: "Your Name"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center my-2"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    href: "",
+    id: "invite_code",
+    onClick: displayCode
+  }, "I HAVE INVITE CODE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "invite_code_collapse",
+    style: {
+      display: 'none'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    name: "text",
+    type: "tel",
+    value: "",
+    placeholder: "Invite Code",
+    className: "form-control"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success",
+    "data-dismiss": "modal",
+    "data-toggle": "modal",
+    "data-target": "#otp"
+  }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-dismiss": "modal",
+    "data-toggle": "modal",
+    "data-target": "#login"
+  }, "I ALREADY HAVE ACCOUNT")))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/pages/Class.js":
+/*!*************************************!*\
+  !*** ./resources/js/pages/Class.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Class; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Class_ClassBanner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Class/ClassBanner */ "./resources/js/components/Class/ClassBanner.js");
+/* harmony import */ var _components_Class_ClassContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Class/ClassContent */ "./resources/js/components/Class/ClassContent.js");
+/* harmony import */ var _components_Allpage_Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Allpage/Navbar */ "./resources/js/components/Allpage/Navbar.js");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Homepage.css */ "./resources/js/pages/Homepage.css");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Homepage_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Homepage_Question__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Homepage/Question */ "./resources/js/components/Homepage/Question.js");
+/* harmony import */ var _components_Allpage_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Allpage/Footer */ "./resources/js/components/Allpage/Footer.js");
+
+
+
+
+
+
+
+
+function Class() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Allpage_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Class_ClassBanner__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Class_ClassContent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Question__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Allpage_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null));
+}
+
+/***/ }),
+
 /***/ "./resources/js/pages/Homepage.css":
 /*!*****************************************!*\
   !*** ./resources/js/pages/Homepage.css ***!
@@ -76611,7 +77070,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Homepage_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Allpage_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Allpage/Navbar */ "./resources/js/components/Allpage/Navbar.js");
 /* harmony import */ var _components_Homepage_Banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Homepage/Banner */ "./resources/js/components/Homepage/Banner.js");
-/* harmony import */ var _components_Homepage_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Homepage/Footer */ "./resources/js/components/Homepage/Footer.js");
+/* harmony import */ var _components_Allpage_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Allpage/Footer */ "./resources/js/components/Allpage/Footer.js");
 /* harmony import */ var _components_Homepage_Interactive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Homepage/Interactive */ "./resources/js/components/Homepage/Interactive.js");
 /* harmony import */ var _components_Homepage_Testimonial__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Homepage/Testimonial */ "./resources/js/components/Homepage/Testimonial.js");
 /* harmony import */ var _components_Homepage_Question__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Homepage/Question */ "./resources/js/components/Homepage/Question.js");
@@ -76626,7 +77085,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Homepage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Allpage_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Interactive__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Testimonial__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Question__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Allpage_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Interactive__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Testimonial__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Homepage_Question__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Allpage_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Homepage);
@@ -76648,10 +77107,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Homepage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Homepage */ "./resources/js/pages/Homepage.js");
-/* harmony import */ var _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Dashboard/Dashboard */ "./resources/js/Dashboard/Dashboard.js");
-/* harmony import */ var _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Dashboard/Viewer */ "./resources/js/Dashboard/Viewer.js");
-/* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Class */ "./resources/js/pages/Class.js");
+/* harmony import */ var _Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Dashboard/Dashboard */ "./resources/js/Dashboard/Dashboard.js");
+/* harmony import */ var _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Dashboard/Viewer */ "./resources/js/Dashboard/Viewer.js");
+/* harmony import */ var _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../quiz/quizlayout */ "./resources/js/quiz/quizlayout.js");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Homepage.css */ "./resources/js/pages/Homepage.css");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Homepage_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
 
 
 
@@ -76660,17 +77124,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Route"], {
     exact: true,
     path: "/",
     component: _Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Route"], {
+    path: "/class",
+    component: _Class__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Route"], {
     path: "/viewer",
-    component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    component: _Dashboard_Viewer__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Route"], {
     path: "/quiz",
-    component: _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_5__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+    component: _quiz_quizlayout__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
 }
 
 if (document.getElementById("example")) {

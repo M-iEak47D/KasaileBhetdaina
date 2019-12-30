@@ -1,5 +1,7 @@
 import React, { Component, useState, setState, useEffect } from 'react'
 import Dropdown from './Dropdown'
+import LoginModal from "../Login/LoginModal"
+import RegisterModal from "../Register/RegisterModal"
 
 
 
@@ -92,6 +94,8 @@ function closeNav() {
             <a href="quiz.html">Blog</a>
         </div>
     </div>
+    <LoginModal/>
+    <RegisterModal/>
 </React.Fragment>
 
     );

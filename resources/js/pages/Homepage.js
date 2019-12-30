@@ -6,7 +6,7 @@ import './Homepage.css';
 
 import Navbar from '../components/Allpage/Navbar';
 import Banner from '../components/Homepage/Banner';
-import Footer from '../components/Homepage/Footer';
+import Footer from '../components/Allpage/Footer';
 import Interactive from '../components/Homepage/Interactive';
 import Testimonial from '../components/Homepage/Testimonial';
 import Question from '../components/Homepage/Question';

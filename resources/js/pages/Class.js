@@ -1,8 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Classbanner from "../components/Class/ClassBanner"
+import Classcontent from "../components/Class/ClassContent"
+import Navbar from '../components/Allpage/Navbar';
+import './Homepage.css';
+import Question from "../components/Homepage/Question";
+import Footer from "../components/Allpage/Footer";
 
-function Class(){
+
+export default function Class(){
     return(
-        <div>This is a class Section</div>
+        <React.Fragment>
+            <Navbar />
+            <Classbanner />
+            <Classcontent />
+            <Question />
+            <Footer />
+        </React.Fragment>
     )
 }
