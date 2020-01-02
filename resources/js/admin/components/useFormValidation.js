@@ -6,7 +6,7 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
     const [chapters,setChapters] = useState([]);
 
     const [values, setValues] = useState(initial_state);
-    const [submitting, setSubmitting] = useState(false);
+    const [submitting, setSubmitting] = useState(false); 
     const [errors, setErrors] = useState({});
     const [yearRow,setYearRow] = useState([]);
 
@@ -31,7 +31,8 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
         setValues({
             ...values,
             [e.target.name]:e.target.value,
-        })
+        });
+        console.log(values);
     }
 
     function handleYearChange(e) {
@@ -152,12 +153,12 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
 
     function handleYearRemove(id,e) {
         e.preventDefault();
-        console.log(id);
-        // yearRow.splice(id, 1);
-        // if(yearRow === null){
-        //     e.target.closest("tr").remove();
-        // }
-        setYearRow(yearRow.filter((item,key) => key !== id))
+        const { year } = {...values};
+        setValues({
+            ...values,
+            year: year.filter((item, key) => key !== id)
+        });
+        setYearRow(yearRow.filter((item,key) => key !== id));
     }
 
     return {handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, handleYearRemove, setYearRow}

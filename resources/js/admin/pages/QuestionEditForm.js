@@ -82,7 +82,7 @@ export default function QuestionEdit() {
             var correct = 100;
             currentQuestion.answers.map((answer,index)=> {
                if(answer.correct === 1){
-                   correct = index;
+                   correct = index+1;
                }
             });
             if(correct !== 100) {
@@ -105,11 +105,22 @@ export default function QuestionEdit() {
             }
         }
     },[currentQuestion, subjects]);
+    
+  console.log(values);
+    const ImagePreview= useCallback(()=> { 
+            return <img className="question_add_image_preview" src={values.image.previewUrl}/>
+    
+        
+    },[values.image]);
+
+    useEffect(()=>{
+        
+    },[values.correct]);
 
 
     async function authenticateQuestion() {
         const { question, marks, correct, year, importance, answerA, answerB, answerC, answerD, chapter_id} = values;
-        const url = "/api/post_question_add";
+        const url = '/api'+window.location.pathname;
         const bodyFormData = new FormData();
         bodyFormData.set("question",question);
         bodyFormData.set("marks",marks);
@@ -138,20 +149,29 @@ export default function QuestionEdit() {
                     //handle success
                     console.log(response);
                     setSubmitting(false);
+                    window.location.replace(window.location.pathname+'/questions/')
                 })
                 .catch(function (response) {
                     //handle error
                     console.log('submit error'+response.message);
                     setLaravelError(response.message);
+                    setSubmitting(false);
                 });
         }
         catch (e) {
             console.log('submit error'.e);
             setLaravelError(e);
+            setSubmitting(false);
         }
     }
 
-
+    function handleCorrectChange(e){
+        const val=e.target.value;
+        setValues(prevState =>({
+            ...prevState,
+            correct: val,
+        }));
+    }
     return (
         <div className="card">
             <div className="card-body">
@@ -262,11 +282,12 @@ export default function QuestionEdit() {
                     </div>
                     { values.image.previewUrl &&
                     <div>
-                        <img className="question_add_image_preview" src={values.image.previewUrl}/>
+
                     </div>
                     }
                     <div className="form-group">
                         <label htmlFor="image">Image</label>
+                        <ImagePreview />
                         <input type="file" name="image" onChange={handleImageChange} id="image" className="form-control"/>
                     </div>
                     <br/>
@@ -296,9 +317,9 @@ export default function QuestionEdit() {
                                     />
                                 </td>
                                 <td>
-                                    <input type="radio" name="correct" defaultValue={1}
+                                    <input type="radio" name="correct" value={1}
                                            onChange={handleChange}
-                                            checked={values.correct === 1}
+                                            checked = {values.correct === 1}
                                     />
                                 </td>
                             </tr>
@@ -314,9 +335,9 @@ export default function QuestionEdit() {
                                     />
                                 </td>
                                 <td>
-                                    <input type="radio" name="correct" defaultValue={2}
+                                    <input type="radio" name="correct" value={2}
                                            onChange={handleChange}
-                                           checked={values.correct === 2}
+                                           checked = {values.correct === 2}
                                     />
                                 </td>
                             </tr>
@@ -332,9 +353,9 @@ export default function QuestionEdit() {
                                     />
                                 </td>
                                 <td>
-                                    <input type="radio" name="correct" defaultValue={3}
-                                           onChange={handleChange}
-                                           checked={values.correct === 3}
+                                    <input type="radio" name="correct" value={3}
+                                           onChange={(e)=>{handleCorrectChange(e)}}
+                                           checked = {values.correct === 3}
                                     />
                                 </td>
                             </tr>
@@ -350,9 +371,9 @@ export default function QuestionEdit() {
                                     />
                                 </td>
                                 <td>
-                                    <input type="radio" name="correct" defaultValue={4}
-                                           onChange={handleChange}
-                                           checked={values.correct === 4}
+                                    <input type="radio" name="correct" value={4}
+                                           onChange={(e)=>{handleCorrectChange(e)}}
+                                           checked = {values.correct === 4}
                                     />
                                 </td>
                             </tr>

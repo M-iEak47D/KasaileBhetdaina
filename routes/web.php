@@ -113,6 +113,8 @@ Route::group([
         Route::post('/store','QuestionController@store')->name('store_question');
         Route::get('/edit/{id}','QuestionController@edit')->name('edit_question');
     });
+
+    Route::get('/quiz/assign_questions/{id}','QuizQuestionController@assign')->name('question_assign');
 });
 
 

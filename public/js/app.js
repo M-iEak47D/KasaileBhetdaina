@@ -67294,7 +67294,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74234,6 +74234,7 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
   function handleChange(e) {
     console.log(e.target.value);
     setValues(_objectSpread({}, values, _defineProperty({}, e.target.name, e.target.value)));
+    console.log(values);
   }
 
   function handleYearChange(e) {
@@ -74363,11 +74364,15 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
 
   function handleYearRemove(id, e) {
     e.preventDefault();
-    console.log(id); // yearRow.splice(id, 1);
-    // if(yearRow === null){
-    //     e.target.closest("tr").remove();
-    // }
 
+    var _values3 = _objectSpread({}, values),
+        year = _values3.year;
+
+    setValues(_objectSpread({}, values, {
+      year: year.filter(function (item, key) {
+        return key !== id;
+      })
+    }));
     setYearRow(yearRow.filter(function (item, key) {
       return key !== id;
     }));
@@ -74932,7 +74937,7 @@ function QuestionEdit() {
       var correct = 100;
       currentQuestion.answers.map(function (answer, index) {
         if (answer.correct === 1) {
-          correct = index;
+          correct = index + 1;
         }
       });
 
@@ -74958,6 +74963,14 @@ function QuestionEdit() {
       }
     }
   }, [currentQuestion, subjects]);
+  console.log(values);
+  var ImagePreview = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(function () {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      className: "question_add_image_preview",
+      src: values.image.previewUrl
+    });
+  }, [values.image]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {}, [values.correct]);
 
   function authenticateQuestion() {
     var question, marks, correct, year, importance, answerA, answerB, answerC, answerD, chapter_id, url, bodyFormData;
@@ -74966,7 +74979,7 @@ function QuestionEdit() {
         switch (_context.prev = _context.next) {
           case 0:
             question = values.question, marks = values.marks, correct = values.correct, year = values.year, importance = values.importance, answerA = values.answerA, answerB = values.answerB, answerC = values.answerC, answerD = values.answerD, chapter_id = values.chapter_id;
-            url = "/api/post_question_add";
+            url = '/api' + window.location.pathname;
             bodyFormData = new FormData();
             bodyFormData.set("question", question);
             bodyFormData.set("marks", marks);
@@ -74997,14 +75010,16 @@ function QuestionEdit() {
               //handle success
               console.log(response);
               setSubmitting(false);
+              window.location.replace(window.location.pathname + '/questions/');
             })["catch"](function (response) {
               //handle error
               console.log('submit error' + response.message);
               setLaravelError(response.message);
+              setSubmitting(false);
             }));
 
           case 20:
-            _context.next = 26;
+            _context.next = 27;
             break;
 
           case 22:
@@ -75012,13 +75027,23 @@ function QuestionEdit() {
             _context.t0 = _context["catch"](17);
             console.log('submit error'.e);
             setLaravelError(_context.t0);
+            setSubmitting(false);
 
-          case 26:
+          case 27:
           case "end":
             return _context.stop();
         }
       }
     }, null, null, [[17, 22]]);
+  }
+
+  function handleCorrectChange(e) {
+    var val = e.target.value;
+    setValues(function (prevState) {
+      return _objectSpread({}, prevState, {
+        correct: val
+      });
+    });
   }
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -75108,14 +75133,11 @@ function QuestionEdit() {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Select Chapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ChapterDropdown, null)), errors.chapter_id && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "errorForm"
-  }, errors.chapter_id))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "question_add_image_preview",
-    src: values.image.previewUrl
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, errors.chapter_id))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "image"
-  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImagePreview, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "file",
     name: "image",
     onChange: handleImageChange,
@@ -75137,7 +75159,7 @@ function QuestionEdit() {
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "radio",
     name: "correct",
-    defaultValue: 1,
+    value: 1,
     onChange: handleChange,
     checked: values.correct === 1
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "B."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -75149,7 +75171,7 @@ function QuestionEdit() {
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "radio",
     name: "correct",
-    defaultValue: 2,
+    value: 2,
     onChange: handleChange,
     checked: values.correct === 2
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "C."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -75161,8 +75183,10 @@ function QuestionEdit() {
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "radio",
     name: "correct",
-    defaultValue: 3,
-    onChange: handleChange,
+    value: 3,
+    onChange: function onChange(e) {
+      handleCorrectChange(e);
+    },
     checked: values.correct === 3
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "D."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "text",
@@ -75173,8 +75197,10 @@ function QuestionEdit() {
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "radio",
     name: "correct",
-    defaultValue: 4,
-    onChange: handleChange,
+    value: 4,
+    onChange: function onChange(e) {
+      handleCorrectChange(e);
+    },
     checked: values.correct === 4
   })))))), errors.answer && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "errorForm"
@@ -76708,8 +76734,8 @@ function useMarkCounter(Score) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\noname company\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\noname company\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

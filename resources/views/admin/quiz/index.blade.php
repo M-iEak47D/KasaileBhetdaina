@@ -121,8 +121,11 @@
                         orderable: false,
                         render: function (data, type, row) {
                             var actions = '';
+                            var tempEditUrl = "{{ route('admin.question_assign', ':id') }}";
+                            tempEditUrl = tempEditUrl.replace(':id', row.id);
                             actions += "<button type='submit' class='btn btn-dark btn-icon-text mr-2 p-1 btn-edit-row' data-id=" + row.id + "><i class=' mdi mdi-grease-pencil btn-icon-prepend'></i></button>";
-                            actions += "<button type='submit' class='btn btn-danger btn-icon-text p-1 btn-delete-row' data-id=" + row.id + "><i class=' mdi mdi-delete btn-icon-prepend'></i></button>";
+                            actions += "<button type='submit' class='btn btn-danger btn-icon-text mr-2 p-1 btn-delete-row' data-id=" + row.id + "><i class=' mdi mdi-delete btn-icon-prepend'></i></button>";
+                            actions += "<a href='"+tempEditUrl+"' class='btn btn-primary btn-icon-text mr-2 p-1 btn-assignQues' data-id=" + row.id + "><i class=' mdi mdi-grid btn-icon-prepend'></i></button>";
                             return actions;
                         }
                     },
