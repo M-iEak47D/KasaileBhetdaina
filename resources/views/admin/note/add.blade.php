@@ -18,12 +18,19 @@
                         <input type="file" class="form-control" name="file" required/>
                     </div>
                     <div class="form-group">
-                        <label>Select Chapter</label>
-                        <select class="custom-select" name="chapter_id">
+                        <label>Select Class</label>
+                        <select class="custom-select selectforchild" data-type="class" name="class_id">
                             <option selected="">Select Chapter</option>
-                            <option value="1">Chapter 1</option>
-                            <option value="2">Chapter 2</option>
+                            @foreach($contents as $content)
+                            <option value="{{ $content->id }}">{{ $content->name }}</option>
+                                @endforeach
                         </select>
+                    </div>
+                    <div class="addsubject">
+
+                    </div>
+                    <div class="addchapter">
+
                     </div>
                     <div class="form-group">
                         <label>Status</label>

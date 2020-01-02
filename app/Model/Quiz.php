@@ -14,8 +14,18 @@ class Quiz extends Model
       'time',
       'description',
         'status',
-        'total_question'
+        'total_question',
+        'slug',
     ];
+
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
 
     public function Question(){
 

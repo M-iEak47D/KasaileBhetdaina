@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\Model\Content;
 use App\Model\FlashCard;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -26,7 +27,8 @@ class FlashCardController extends Controller
      */
     public function index()
     {
-        return view('admin.flashcard.index');
+        $contents = Content::where( 'parent_id', 0 )->get();
+        return view('admin.flashcard.index', compact('contents'));
     }
 
     /**

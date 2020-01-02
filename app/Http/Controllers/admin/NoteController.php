@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\Model\Content;
 use App\Model\Note;
 use App\Model\UserInfo;
 use Illuminate\Http\Request;
@@ -23,6 +24,9 @@ class NoteController extends Controller
         return datatables($notes)->toJson();
     }
 
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -30,8 +34,13 @@ class NoteController extends Controller
      */
     public function index()
     {
-        return view('admin.note.index');
+        $contents = Content::where( 'parent_id', 0 )->get();
+
+        return view('admin.note.index', compact('contents'));
     }
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -106,7 +115,20 @@ class NoteController extends Controller
     public function edit($id)
     {
         $note = Note::find($id);
-        return view('admin.note.edit', compact('note'));
+        $contents = Content::where( 'parent_id', 0 )->get();
+
+        $chapter_id = Content::where( 'id', $note->chapter_id )->first();
+        $subject_id = Content::where( 'id', $chapter_id->parent_id )->first();
+        $class_id = Content::where( 'id', $subject_id->parent_id )->first();
+
+        $content_id = [
+            'chapter_id' => $chapter_id->id,
+            'subject_id' => $subject_id->id,
+            'class_id' => $class_id->id,
+        ];
+
+
+        return view('admin.note.edit', compact('note', 'contents', 'content_id'));
     }
 
     /**
