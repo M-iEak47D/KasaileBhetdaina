@@ -33,14 +33,7 @@
             <h3 class="center">{{ $quiz->title }}</h3>
         </div>
         <div class="card-body">
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="">Subject</label>
-                    <select name="subject_id" id="">
-                        <option value="{{$subject->id}}">{{$subject->name}}</option>
-                    </select>
-                </div>
-            </form>
+            <div id="quiz_question_assign"></div>
         </div>
     </div>
 

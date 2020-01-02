@@ -75222,6 +75222,30 @@ if (document.getElementById("question-edit-form")) {
 
 /***/ }),
 
+/***/ "./resources/js/admin/pages/QuestionQuizAssign.js":
+/*!********************************************************!*\
+  !*** ./resources/js/admin/pages/QuestionQuizAssign.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return QuestionAssign; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function QuestionAssign() {}
+
+if (document.getElementById('quiz_question_assign')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(QuestionAssign, null), document.getElementById('quiz_question_assign'));
+}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -75247,6 +75271,8 @@ __webpack_require__(/*! ./pages/Index */ "./resources/js/pages/Index.js");
 __webpack_require__(/*! ./admin/pages/QuestionAddForm */ "./resources/js/admin/pages/QuestionAddForm.js");
 
 __webpack_require__(/*! ./admin/pages/QuestionEditForm */ "./resources/js/admin/pages/QuestionEditForm.js");
+
+__webpack_require__(/*! ./admin/pages/QuestionQuizAssign */ "./resources/js/admin/pages/QuestionQuizAssign.js");
 
 /***/ }),
 

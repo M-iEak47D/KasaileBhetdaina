@@ -17,3 +17,4 @@ require('./pages/Index');
 
 require('./admin/pages/QuestionAddForm');
 require('./admin/pages/QuestionEditForm');
+require('./admin/pages/QuestionQuizAssign');
