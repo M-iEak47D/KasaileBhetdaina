@@ -69,8 +69,10 @@ Route::group([
 
 
 
+//    select class,chapter,subject, in gobal controller
 
-
+    Route::get('/change/notecontent/', 'GobalController@changeNoteContent')->name('change.notecontent');
+    Route::get('/change/flashcardcontent/', 'GobalController@changeFlashCardContent')->name('change.flashcardcontent');
 
 
 

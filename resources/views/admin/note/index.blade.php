@@ -385,4 +385,42 @@
         });
     </script>
 
+    <script>
+        $(document).on("change", ".selectforchild", function (e) {
+            // e.preventDefault();
+            $this = $(this);
+            var type = $this.attr('data-type');
+            var id = $this.val();
+            var $divsubject = $('.addsubject');
+            var $divchapter = $('.addchapter');
+            var tempResponseUrl = "{{ route('admin.change.notecontent') }}";
+
+            $.ajax({
+                type: "GET",
+                url: tempResponseUrl,
+                data:{
+                  'id':id,
+                  'type':type,
+                },
+                beforeSend: function (data) {
+
+                },
+                success: function (data) {
+                    if(type==="class"){
+                        $divsubject.html(data);
+                    }
+                    if(type==="subject"){
+                        $divchapter.html(data);
+                    }
+
+
+
+                },
+            });
+            //
+
+        });
+
+    </script>
+
 @endpush
