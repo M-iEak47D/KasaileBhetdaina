@@ -349,7 +349,6 @@ display: none;
  
 }
 /* .banner .join-now-form .row{
-
 } */
 
 .banner .join-now-form .country-code {
@@ -962,20 +961,22 @@ text-decoration: none;
   color: white;
 }
 #quitModal .button-container  .yes{
-  background: #ff4e4e;
+  border-radius: 5px;
+  background: #09d6af;
   margin: 0px 15px;
   padding: 10px 30px;
 }
 #quitModal .button-container  .no{
-  background: #57d957;
+  background: #ff8888;
   margin: 0px 15px;
   padding: 10px 30px;
+  border-radius: 5px;
 }
 
-.test-section{
-  margin-top: 100px;
+.quiz .test-section{
+  margin-top: 10%;
 }
-.timer-container{
+.quiz .timer-container{
   margin:0px auto;
   position: absolute;
   width: 100%;
@@ -983,15 +984,15 @@ text-decoration: none;
   top: 0px;
 
 }
-.timer-wrapper{
+.quiz .timer-wrapper{
   margin:10px auto;
   width: 140px;
   height: 140px;
   background:white;
   border-radius: 50%;
-  box-shadow: 0px 5px #eaf3ec;
+  box-shadow:inset 0px 10px 6px #bdbfbd;
 }
-.timer-wrapper .time{
+.quiz .timer-wrapper .time{
   line-height: 5.5;
   font-size: 25px;
   color: #1ba01b;
@@ -999,62 +1000,80 @@ text-decoration: none;
   font-family: 'Righteous', cursive;
 }
 
-.question-container{
+.quiz .question-container{
   margin: 20px auto;
 }
-.question-title{
-  font-size: 24px;
-  color:green;
-  font-weight: bold;    
+.quiz .question-title{
+  font-size: 28px;
+  color:#757b75;
+  font-weight: bold; 
+  text-align: center;   
+}
+.quiz .answer-container{
+  margin-top: 45px;
 }
 /* .answer-container{
-
 } */
-.answer-wrapper{
-      border-radius: 5px;
-    padding: 10px 10px;
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 4px #cac5c5;
+.quiz .answer-wrapper{
+  border-radius: 50px;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-shadow: inset 3px 2px 6px 0px #b6acac;
 }
-.answer-wrapper:hover{
-  background-color: #ccffd8;
+.quiz .answer-wrapper:hover{
+  background: linear-gradient(90deg, rgb(11, 231, 136), rgb(9, 214, 175));
 }
-.answer-container  .active{
-  background-color: #ccffd8 !important;
+.quiz .answer-container  .active{
+  background: linear-gradient(90deg, rgb(11, 231, 136), rgb(9, 214, 175)) !important;
+}
+.quiz .answer-container  .wrong{
+  background: linear-gradient(90deg, red, brown) !important;
 }
 
-.option-number{
-  border: 0.5px solid #47b15f;
+.quiz .option-number{
   font-weight: bold;
   text-transform: uppercase;
-  padding:0px 7px;
-  margin:0 auto;
+  padding: 5px 15px;
+  margin-left: 15px;
   color: slategray;
-  border-radius: 5px;
-
-
+  box-shadow: 1px 1px 5px 0px #00503263;
+  border-radius: 50%;
+  font-size: 22px;
 }
-.option{
+.quiz .option{
   flex: 1;
+  padding-top: 10px;
   margin-left: 10px;
   font-size: 18px;
-  color: #069426;
+  color: #454545;
   font-weight: bold;
 }
-.option-tick{
+.quiz .option-tick{
   display: none;
   color: green;
+  padding-top: 10px;
 }
-.answer-wrapper:hover .option-number, .answer-container  .active .option-number{
-  padding: 0px 20px;
+.quiz .answer-wrapper:hover .option-number, .answer-container  .active .option-number{
+  padding: 6px 15px;
+  -webkit-transition: padding 0.2s ease-in;
   transition: padding 0.2s ease-in;
-  background-color: #1cb13e;
-  color: white;
+  background-color: #ffffff;
+  color: #06bc8e;
+  border: none;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px 1px #b4b2b2;
+  border-radius: 50%;
 }
-.answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{
+.quiz .answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{
   display: block;
+  margin: 5px auto 4px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 1px 2px 5px 1px #a09f9f;
 }
 .progress-container{
   position: fixed;
@@ -1067,16 +1086,19 @@ text-decoration: none;
   height: 30px;
 }
 .progress-container .progress .progress-bar{
-  background-color: #47b15f;
+ background: linear-gradient(45deg, rgb(11, 231, 136), rgb(9, 214, 175));
 }
 .quiz .button-section{
   margin: 30px auto;
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
 }
 .quiz .button-section .button-row{
   display: flex;
 }
 .quiz .button-section .button-row .prev-btn{
-  background:linear-gradient(235deg, #36ea5f, #00b693);
+  background:linear-gradient(45deg, rgb(11, 231, 136), rgb(9, 214, 175));
    padding-top: 8px;
   display: inline-block;
   border-radius: 5px;
@@ -1090,6 +1112,8 @@ text-decoration: none;
 .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
   color: #fff;
   font-size: 18px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {
   background:linear-gradient(45deg, #36ea5f, #00b693);
@@ -1172,6 +1196,73 @@ text-decoration: none;
     width: 40px;
   }
 }
+/* The side navigation menu */
+.quizsidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #e6e6e6; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.quizsidenav ul{
+  list-style: none;
+}
+.quizsidenav ul li{
+  background: white;
+  text-align: center;
+  padding-top: 6px;
+  color: #000;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#quizOpen{
+  position: absolute;
+    top: 18%;
+    left: 30px;
+    z-index: 1;
+    padding: 12px 12px;
+    font-size: 24px;
+    background: #fff;
+    color: #0ad8aa;
+    box-shadow: 0px 1px 5px 1px #afc7b5;
+    border-radius: 50px;
+}
+/* Position and style the close button (top right corner) */
+.quizsidenav .closebtn {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  color: #0adca2;
+  right: 25px;
+  font-weight: bold;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #quizmain {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .quizsidenav {padding-top: 15px;}
+  .quizsidenav a {font-size: 18px;}
+}
+
+/* end of quiz sidenav */
+
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -1447,4 +1538,47 @@ text-decoration: none;
   .preparation-section .curve-section .preparation-container {
     padding: 30px 25px;
 }
+}
+
+/* reset Password */
+
+.resetPassword-container .color-section{
+  height: 100vh;
+  background: linear-gradient(180deg, #2ad181, #009d98);
+}
+.resetPassword-container .nocolor-section{
+  height: 100vh;
+  
+}
+.resetPassword-container .resetPassword-wrapper{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #e8e8e8;
+}
+.resetPassword-container .resetPassword-wrapper .logo-box{
+  margin:0 auto;
+
+}
+.resetPassword-container .resetPassword-wrapper h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.resetPassword-container .resetPassword-wrapper .address{
+  text-align: center;
+  color: #fff;
+
+}
+.resetPassword-container .resetPassword-wrapper form .button-container{
+  text-align: right;
+}
+.resetPassword-container .resetPassword-wrapper form input[type="submit"] {
+color: white;
+background: #0dad91;
+padding: 5px 10px;
+border: none;
 }

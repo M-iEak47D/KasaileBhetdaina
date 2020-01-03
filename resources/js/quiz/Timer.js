@@ -26,7 +26,7 @@ function Timer() {
         },1000);
         return () => clearInterval(interval);
     },[Time])
-    console.log(Time)
+    // console.log(Time)
     return (
         <div className="timer-container">
             <div className="timer-wrapper">

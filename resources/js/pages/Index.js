@@ -7,6 +7,7 @@ import Viewer from '../Dashboard/Viewer';
 import Newquiz from "../quiz/quizlayout";
 import "./Homepage.css"
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import QuizResult from '../quiz/QuizResult';
 
 
 export default function Index(){
@@ -18,6 +19,7 @@ export default function Index(){
                 <Route path="/class" component={Class} />
                 <Route path="/viewer" component={Viewer} />
                 <Route path="/quiz" component={Newquiz} />
+                <Route path="/result" component={Newquiz} />
                 <Dashboard />
             </Switch>
           </BrowserRouter>

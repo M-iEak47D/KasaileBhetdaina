@@ -47,7 +47,7 @@ export default function TestSubject(){
                         </div>
                         </div>  
                         <div className="button-container">
-                            <Link to={`/quiz/physics`}> 
+                            <Link to={`/quiz`}> 
                                                 Take a Test
                                                 </Link>
                             </div>    

@@ -1,25 +1,25 @@
 [
     {   
         "id": 1,
-        "name": "What temperature does water boil at?",
+        "name": "What is the capital of Pakistan?",
         "answer": [
             {"id": 1,
-            "answer": "apple",
+            "answer": "Islamabad",
             "correct": 1,
             "marks": 1
             },
             {"id": 2,
-            "answer": "ball",
+            "answer": "Thimpu",
             "correct": 0,
             "marks": 1
              },
             {"id": 3,
-            "answer": "cat",
+            "answer": "Male",
             "correct": 0,
             "marks": 1
              },
              {"id": 4,
-             "answer": "dog",
+             "answer": "Kabul",
              "correct": 0,
              "marks": 1
             }
@@ -27,25 +27,25 @@
     },
     {   
         "id": 2,
-        "name": "What temperature does ball boil at?",
+        "name": "What is capital of Nepal?",
         "answer": [
             {"id": 1,
-            "answer": "dog",
-            "correct": 1,
+            "answer": "Pokhara",
+            "correct": 0,
             "marks": 1
             },
             {"id": 2,
-            "answer": "ball",
-            "correct": 0,
+            "answer": "Kathmandu",
+            "correct": 1,
             "marks": 1
              },
             {"id": 3,
-            "answer": "cat",
+            "answer": "Delhi",
             "correct": 0,
             "marks": 1
              },
              {"id": 4,
-             "answer": "dog",
+             "answer": "Undertaker",
              "correct": 0,
              "marks": 1
             }
@@ -53,25 +53,25 @@
     },
     {   
         "id": 3,
-        "name": "What temperature does cat boil at?",
+        "name": "What temperature does cat water at?",
         "answer": [
             {"id": 1,
-            "answer": "apple",
+            "answer": "100",
             "correct": 1,
             "marks": 1
             },
             {"id": 2,
-            "answer": "cat",
+            "answer": "0",
             "correct": 0,
             "marks": 1
              },
             {"id": 3,
-            "answer": "dog",
+            "answer": "50",
             "correct": 0,
             "marks": 1
              },
              {"id": 4,
-             "answer": "ball",
+             "answer": "-40",
              "correct": 0,
              "marks": 1
             }

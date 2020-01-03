@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import questions from "./question.json";
-import {useHistory} from 'react-router-dom';
+import {useHistory, Link, Route, Switch, useRouteMatch} from 'react-router-dom';
 import Timer from "./Timer"
+import Axios from "axios";
+import QuizResult from "./QuizResult"
 
 
 let start = false;
 export default function Newquiz(props) {
+    let {path, url} = useRouteMatch();
+    // console.log(path)
     const allQuestion = questions.length;
     const localData = localStorage.getItem('initialValue');
     const localActive = localStorage.getItem('active')
@@ -16,7 +20,7 @@ export default function Newquiz(props) {
     const totalMarks = localStorage.getItem('score');
     const [Score, setScore] = useState(totalMarks ? JSON.parse(totalMarks):[]);
     const [SpecificMark, setSpecificMark] = useState([]);
-    console.log(active)
+    // console.log(active)
     
 
      function handleChange(Correct,Index, activeId){
@@ -41,18 +45,25 @@ export default function Newquiz(props) {
         localStorage.setItem('active',JSON.stringify(active))
         localStorage.setItem('score', JSON.stringify(Score))   
     }
+   
+        
 
     const markCounter = useMarkCounter(Score)
+    // console.log(markCounter)
      
 
 
-    const[Total, setTotal] = useState(markCounter);
+    // const[Total, setTotal] = useState({markCounter});
+    // console.log(Total);
     
     function is_active(qid,aid){
         var value = false;
-        // console.log(active);
         active.map((active)=>{
-            if(active.questionId == qid && active.answerId == aid  ){  
+            
+        if(active == null){
+            return value;
+        }
+            else if(active.questionId == qid && active.answerId == aid  ){  
                 value = true ; 
             }
         });
@@ -61,6 +72,8 @@ export default function Newquiz(props) {
     let History = useHistory();
     
     return (
+        <React.Fragment>
+                <Route exact path={path}>
         <div>
             <div className="quiz">
                 <div className="quit-section">
@@ -98,7 +111,7 @@ export default function Newquiz(props) {
                     }}>
 
                         {/* Links               */}
-
+                    
                     </nav>
                     <Timer />
                 </div>
@@ -164,9 +177,10 @@ export default function Newquiz(props) {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
-                                <div className="answer-wrapper" onClick={() => handleChange(currentQuestion.initialQuestion.answer[2].correct,
-                                    currentQuestionIndex,
-                                    currentQuestion.initialQuestion.answer[3].id)}>
+                            <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answer[3].id) ? "active": "")}
+                                onClick={() => handleChange(currentQuestion.initialQuestion.answer[3].correct,
+                                currentQuestionIndex,
+                                currentQuestion.initialQuestion.answer[3].id)}>
                                     <div className="option-number">
                                         D
                                     </div>
@@ -205,9 +219,11 @@ export default function Newquiz(props) {
                                          onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}>
                                         <span> Next</span> <i className="fa fa-arrow-circle-right"></i>
                                     </div> :
-                                    <div className="next-btn" onClick={()=> FinishQuiz}>
+                                    <Link to={`${url}/result`}>
+                                    <div className="next-btn">
                                         <span> Finish </span> <i className="fa fa-arrow-circle-right"></i>
                                     </div>
+                                    </Link>
                             }
 
                         </div>
@@ -222,6 +238,11 @@ export default function Newquiz(props) {
                 </div>
             </div>
         </div>
+</Route>
+        <Route path={`${path}/result`} >
+        <QuizResult score={Score} active={active} total={markCounter}/>
+        </Route>  
+    </React.Fragment>
     );
 
 }
