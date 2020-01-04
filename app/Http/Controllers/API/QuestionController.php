@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Resources\Question\Question as QuestionResource;
+use App\Http\Resources\SubjectWithChapters\SubjectCollection;
 use App\Model\Category;
 use App\Model\Content;
 use App\Model\Question;
@@ -14,11 +15,12 @@ class QuestionController extends Controller
     public function edit($id){
         $question = Question::find($id);
         $type = Category::where('slug', 'subject')->first();
-        $subjects = Content::where('type', $type->id)->get();
-        foreach ($subjects as $subject) {
-            $chaps = $subject->children;
-            $subject->chapters = $chaps;
-        }
+        $subs = Content::where('type', $type->id)->get();
+//        foreach ($subjects as $subject) {
+//            $chaps = $subject->children;
+//            $subject->chapters = $chaps;
+//        }
+        $subjects = new SubjectCollection($subs);
         $question_resource = new QuestionResource($question);
         $subject_id = $question->chapter->parent->id;
         return $data = [

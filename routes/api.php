@@ -89,4 +89,12 @@ Route::group([
     Route::group(['prefix' => '/questions'], function () {
         Route::get('/edit/{id}', 'QuestionController@edit');
     });
+
+
+    Route::group(['prefix' => '/quiz'], function () {
+        Route::get('/get_subjects', 'QuizQuestionController@get_subjects');
+        Route::get('/get_questions/{id}','QuizQuestionController@get_questions');
+    });
+
 });
+

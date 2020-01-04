@@ -99,16 +99,16 @@
 <script src="{{ asset('admin/assets/pages/dashboard.js') }}"></script>
 <!-- App js -->
 <script src="{{ asset('admin/assets/js/app.js') }}"></script>
-<script>
-    jQuery(document).ready(function(){
-        $('.summernote').summernote({
-            height: 150,                 // set editor height
-            minHeight: null,             // set minimum height of editor
-            maxHeight: null,             // set maximum height of editor
-            focus: true                 // set focus to editable area after initializing summernote
-        });
-    });
-</script>
+{{--<script>--}}
+    {{--jQuery(document).ready(function(){--}}
+        {{--$('.summernote').summernote({--}}
+            {{--height: 150,                 // set editor height--}}
+            {{--minHeight: null,             // set minimum height of editor--}}
+            {{--maxHeight: null,             // set maximum height of editor--}}
+            {{--focus: true                 // set focus to editable area after initializing summernote--}}
+        {{--});--}}
+    {{--});--}}
+{{--</script>--}}
 @stack('scripts')
 
 </body>

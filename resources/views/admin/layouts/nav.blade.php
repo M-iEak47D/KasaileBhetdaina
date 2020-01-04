@@ -3,7 +3,7 @@
     <div class="topbar-left	d-none d-lg-block">
         <div class="text-center">
 
-            <a href="index.html" class="logo"><img src="assets/images/logo.png" height="20" alt="logo"></a>
+            <a href="index.html" class="logo"><img src="{{ asset('admin/assets/images/logo.png') }}" height="20" alt="logo"></a>
         </div>
     </div>
 
@@ -33,31 +33,31 @@
                     <div class="slimscroll" style="max-height: 230px;">
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon"><img src="assets/images/users/user-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                            <div class="notify-icon"><img src="{{ asset('admin/assets/images/users/user-2.jpg') }}" alt="user-img" class="img-fluid rounded-circle" /> </div>
                             <p class="notify-details"><b>Charles M. Jones</b><span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon"><img src="assets/images/users/user-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                            <div class="notify-icon"><img src="{{ asset('admin/assets/images/users/user-3.jpg') }}" alt="user-img" class="img-fluid rounded-circle" /> </div>
                             <p class="notify-details"><b>Thomas J. Mimms</b><span class="text-muted">You have 87 unread messages</span></p>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon"><img src="assets/images/users/user-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                            <div class="notify-icon"><img src="{{ asset('admin/assets/images/users/user-4.jpg') }}" alt="user-img" class="img-fluid rounded-circle" /> </div>
                             <p class="notify-details">Luis M. Konrad<span class="text-muted">It is a long established fact that a reader will</span></p>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon"><img src="assets/images/users/user-5.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                            <div class="notify-icon"><img src="{{ asset('admin/assets/images/users/user-5.jpg') }}" alt="user-img" class="img-fluid rounded-circle" /> </div>
                             <p class="notify-details"><b>Kendall E. Walker</b><span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <div class="notify-icon"><img src="assets/images/users/user-6.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                            <div class="notify-icon"><img src="{{ asset('admin/assets/images/users/user-6.jpg') }}" alt="user-img" class="img-fluid rounded-circle" /> </div>
                             <p class="notify-details"><b>David M. Ryan</b><span class="text-muted">You have 87 unread messages</span></p>
                         </a>
                     </div>
@@ -127,7 +127,7 @@
             <li class="list-inline-item dropdown notification-list">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
                    aria-haspopup="false" aria-expanded="false">
-                    <img src="assets/images/users/user-1.jpg" alt="user" class="rounded-circle">
+                    <img src="{{ asset('admin/assets/images/users/user-1.jpg') }}" alt="user" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
                     <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a>

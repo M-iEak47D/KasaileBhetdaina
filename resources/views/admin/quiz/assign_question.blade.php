@@ -3,6 +3,13 @@
 @push('styles')
 
     {{--Page specific styles--}}
+    <style>
+        .footer{
+            padding: 20px 30px !important;
+            background-color: #f9f9f9 !important;
+            color: #0a1832 !important;
+        }
+    </style>
 
 @endpush
 
@@ -14,8 +21,8 @@
             <div class="float-right page-breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Admin</a></li>
-                    <li class="breadcrumb-item"><a href="#">*Breadcrumb1*</a></li>
-                    <li class="breadcrumb-item active">*Breadcrumb2*</li>
+                    {{--<li class="breadcrumb-item"><a href="#">*Breadcrumb1*</a></li>--}}
+                    {{--<li class="breadcrumb-item active">*Breadcrumb2*</li>--}}
                 </ol>
             </div>
             <h5 class="page-title"> Assign Quiz Questions</h5>
@@ -42,6 +49,7 @@
 
 @push('scripts')
 
-    {{--Page specific scripts--}}
+    <script src="/js/app.js"></script>
+    {{--Page specific scripmts--}}
 
 @endpush

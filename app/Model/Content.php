@@ -37,5 +37,9 @@ class Content extends Model
         return $this->belongsTo(Content::class,'parent_id');
     }
 
+    public function questions(){
+        return $this->hasMany(Question::class,'chapter_id');
+    }
+
 
 }

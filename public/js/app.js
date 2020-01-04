@@ -74152,6 +74152,45 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/admin/components/SelectDropdown.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/admin/components/SelectDropdown.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SelectDropdown; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function SelectDropdown(props) {
+  var content = props.content;
+  var action = props.action;
+  var name = props.name;
+  var default_option = props.defaultOption;
+
+  if (content.length > 0) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+      name: name,
+      className: "form-control",
+      onChange: action
+    }, default_option && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+      value: ""
+    }, default_option), content.map(function (content, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        key: index,
+        value: content.id
+      }, content.name);
+    }));
+  } else {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Loading.....");
+  }
+}
+
+/***/ }),
+
 /***/ "./resources/js/admin/components/useFormValidation.js":
 /*!************************************************************!*\
   !*** ./resources/js/admin/components/useFormValidation.js ***!
@@ -75236,9 +75275,116 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_SelectDropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SelectDropdown */ "./resources/js/admin/components/SelectDropdown.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
-function QuestionAssign() {}
+
+
+
+function QuestionAssign() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      subjects = _useState2[0],
+      setSubjects = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      chapters = _useState4[0],
+      setChapters = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      questions = _useState6[0],
+      setQuestions = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    'subject_id': '',
+    'chapter_id': ''
+  }),
+      _useState8 = _slicedToArray(_useState7, 2),
+      values = _useState8[0],
+      setValues = _useState8[1];
+
+  console.log(questions);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/admin/quiz/get_subjects').then(function (response) {
+      console.log(response);
+      setSubjects(response.data); // setLoading(false)
+    });
+  }, []);
+
+  function handleSubjectChange(e) {
+    var selected_subject_id = e.target.value;
+    setValues(_objectSpread({}, values, _defineProperty({}, e.target.name, selected_subject_id)));
+    var selected_subject = subjects.filter(function (subject) {
+      return subject.id === parseInt(selected_subject_id);
+    });
+
+    if (selected_subject_id === "null" || selected_subject_id === "") {
+      setChapters([]);
+    } else {
+      setChapters(selected_subject[0]["chapters"]);
+    }
+  }
+
+  function handleChapterChange(e) {
+    var id = e.target.value;
+    setValues(_objectSpread({}, values, _defineProperty({}, e.target.name, id)));
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/admin/quiz/get_questions/' + id).then(function (response) {
+      console.log(response);
+      setQuestions(response.data);
+    });
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Select Subject:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SelectDropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "subject_id",
+    action: handleSubjectChange,
+    value: values.subject_id,
+    content: subjects,
+    defaultOption: "Select a Category"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Select a Chapter:"), chapters.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SelectDropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "chapter_id",
+    action: handleChapterChange,
+    content: chapters,
+    value: values.chapter_id,
+    defaultOption: "Select a Chapter"
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Select a Subject first.."))))), questions.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "table-responsive"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    className: "table"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "S.No"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Question"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, questions.map(function (question, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, question.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "ion-toggle"
+    }), " ")));
+  }))))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Select Above Options to View Questions To Assign")));
+}
 
 if (document.getElementById('quiz_question_assign')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(QuestionAssign, null), document.getElementById('quiz_question_assign'));
