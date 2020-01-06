@@ -2,11 +2,13 @@
 
 namespace App\Model;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Quiz extends Model
 {
+    use Sluggable;
     use SoftDeletes;
 
     protected $fillable =[
@@ -27,9 +29,8 @@ class Quiz extends Model
         ];
     }
 
-    public function Question(){
-
-        return $this->hasMany(Question::class);
+    public function questions(){
+        return $this->belongsToMany(Question::class,'question_quiz');
     }
 }
 

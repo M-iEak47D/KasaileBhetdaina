@@ -21,4 +21,8 @@ class Question extends Model
     public function chapter(){
         return $this->belongsTo(Content::class,'chapter_id');
     }
+
+    public function quiz(){
+        return $this->belongsToMany(Quiz::class,'question_quiz');
+    }
 }

@@ -2,55 +2,84 @@ import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import SelectDropdown from "../components/SelectDropdown";
+import useQuizValidation from "../components/useQuizValidation";
 
 export default function QuestionAssign() {
+    const [quiz,setQuiz] = useState([]);
     const [subjects, setSubjects] = useState([]);
     const [chapters, setChapters] = useState([]);
     const [questions, setQuestions] = useState([]);
+    const [belongsToQuiz, setBelongsToQuiz] = useState([]);
     const [values, setValues] = useState({
         'subject_id': '',
         'chapter_id': '',
+        'quiz_question_count': '',
     });
+    const {assigned, handleCheckboxClick, errors, submitting} = useQuizValidation(quiz,values.quiz_question_count, belongsToQuiz, setBelongsToQuiz);
 
-    console.log(questions);
+    console.log(values);
 
     useEffect(()=>{
-        axios.get('/api/admin/quiz/get_subjects')
+        const pathname = window.location.pathname;
+        const id = pathname.match(/(\d+)/);
+        axios.get('/api/admin/quiz/get_subjects/'+id[0])
             .then(response=>{
                 console.log(response);
-                setSubjects(response.data);
+                setSubjects(response.data.subjects);
+                setQuiz(response.data.quiz);
                 // setLoading(false)
             })
     },[]);
 
+    useEffect(()=>{
+        const pathname = window.location.pathname;
+        const id = pathname.match(/(\d+)/);
+        axios.get('/api/admin/quiz/get_subjects/'+id[0])
+            .then(response=>{
+                console.log(response);
+                setQuiz(response.data.quiz);
+                setValues({
+                    ...values,
+                    quiz_question_count:response.data.quiz_question_count,
+                });
+            })
+    },[errors]);
+
     function handleSubjectChange(e) {
         const selected_subject_id = e.target.value;
+        console.log(e.target);
         setValues({
             ...values,
-            [e.target.name]:selected_subject_id,
+            subject_id:parseInt(selected_subject_id),
+            chapter_id:'',
         });
         const selected_subject = subjects.filter((subject) =>
             subject.id === parseInt(selected_subject_id)
         );
         if(selected_subject_id === "null" || selected_subject_id === ""){
             setChapters([]);
+            setQuestions([]);
         }
         else {
             setChapters(selected_subject[0]["chapters"]);
+            setQuestions([]);
         }
     }
 
     function handleChapterChange(e) {
-        const id = e.target.value;
+        console.log(e.target);
+        const chapter_id = e.target.value;
         setValues({
             ...values,
-            [e.target.name]:id,
+            [e.target.name]:chapter_id,
         });
-        axios.get('/api/admin/quiz/get_questions/'+id).then(response=>{
+        axios.get('/api/admin/quiz/get_questions/'+quiz.id+'/'+chapter_id).then(response=>{
             console.log(response);
-            setQuestions(response.data);
+            setQuestions(response.data.questions);
+            setBelongsToQuiz(response.data.belongsToQuiz);
         });
     }
+
 
     return (
         <React.Fragment>
@@ -58,12 +87,12 @@ export default function QuestionAssign() {
                 <div className="col-md-6">
                     <div className="form-group">
                         <label>Select Subject:</label>
-                        <SelectDropdown name="subject_id" action={handleSubjectChange} value={values.subject_id} content={subjects} defaultOption = "Select a Category"/>
+                        <SelectDropdown key={"subject"} name="subject_id" action={handleSubjectChange} def_value={values.subject_id} content={subjects} defaultOption = "Select a Category"/>
                     </div>
                     <div className="form-group">
                         <label>Select a Chapter:</label>
                         { chapters.length > 0 ?
-                            <SelectDropdown name="chapter_id" action={handleChapterChange} content={chapters} value={values.chapter_id} defaultOption = "Select a Chapter"/>
+                            <SelectDropdown key={"chapter"} name="chapter_id" action={handleChapterChange} content={chapters} def_value={values.chapter_id} defaultOption = "Select a Chapter"/>
                             :
                             <div>
                                 <span>Select a Subject first..</span>
@@ -71,8 +100,16 @@ export default function QuestionAssign() {
                         }
                     </div>
                 </div>
+                <div className="col-md-6">
+                    { errors.limit &&
+                    <span className="alert alert-danger">{ errors.limit }</span>
+                    }
+                </div>
             </div>
-            { questions.length > 0 ?
+
+            {/*<div id="overlay" style={{display:(submitting ? "block" : "none")}}>Loading...</div>*/}
+
+            { questions.length > 0 && submitting===false ?
                 <div className="row">
                     <div className="table-responsive">
                         <table className="table">
@@ -87,13 +124,19 @@ export default function QuestionAssign() {
                             {
                                 questions.map((question,index)=>{
                                     return(
-                                        <tr>
+                                        <tr key={index}>
                                             <td>{index + 1}</td>
                                             <td>{question.name}</td>
                                             <td>
-                                                    {/*<button className="btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary"><i className="ion-toggle-filled"/> </button>*/}
-                                                    <button className="btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger"><i className="ion-toggle"/> </button>
-                                            </td>
+                                                { belongsToQuiz.length > 0 && belongsToQuiz.includes(question.id) ?
+                                                    <button onClick={handleCheckboxClick} value={question.id} id="remove_ques"
+                                                            className="btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary">
+                                                        Yes</button>
+                                                    : <button onClick={handleCheckboxClick} value={question.id} id="add_ques"
+                                                              className="btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger">
+                                                        No</button>
+                                                }
+                                                </td>
                                         </tr>
                                             )
                                 })
@@ -103,6 +146,7 @@ export default function QuestionAssign() {
                     </div>
                 </div>
                 :
+                (submitting === true) ? <span>Processing : </span>:
                 <div>
                     <span>Select Above Options to View Questions To Assign</span>
                 </div>

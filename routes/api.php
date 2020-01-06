@@ -92,8 +92,9 @@ Route::group([
 
 
     Route::group(['prefix' => '/quiz'], function () {
-        Route::get('/get_subjects', 'QuizQuestionController@get_subjects');
-        Route::get('/get_questions/{id}','QuizQuestionController@get_questions');
+        Route::get('/get_subjects/{quiz_id}', 'QuizQuestionController@get_subjects');
+        Route::get('/get_questions/{quiz_id}/{chapter_id}','QuizQuestionController@get_questions');
+        Route::post('/add_remove_ques/{quiz_id}/{question_id}','QuizQuestionController@attach_detach');
     });
 
 });

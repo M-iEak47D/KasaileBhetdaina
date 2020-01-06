@@ -10,6 +10,17 @@
             color: #0a1832 !important;
         }
     </style>
+    <style>
+        #overlay {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top:0;
+            left: 0;
+            background-color:#ccc;
+            z-index:9999;padding-top: 10px;
+        }
+    </style>
 
 @endpush
 
