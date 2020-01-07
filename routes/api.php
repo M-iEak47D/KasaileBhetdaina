@@ -36,7 +36,7 @@ Route::group([
 ], function() {
 
     Route::get('user', 'UserController@index');
-    Route::post('register', 'UserController@store');
+    Route::post('register', 'RegisterController@store');
     Route::post('login', 'UserController@login');
     Route::post('validateotp', 'UserController@validateOTP');
     Route::post('savepassword', 'UserController@savePassword');
@@ -46,6 +46,7 @@ Route::group([
 
     Route::get('notes', 'NoteController@index');
 
+    Route::get('flashcards', 'FlashCardController@index');
 
 });
 

@@ -13,7 +13,10 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./pages/Index');
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
 
-require('./admin/pages/QuestionAddForm');
-require('./admin/pages/QuestionEditForm');
+import Example from './register';
+
+render(<Example />, document.getElementById('root'));

@@ -17,8 +17,66 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $Notes = Note::where('status', 1)->get();
-        return NoteResource::collection($Notes);
+
+        $abc = "{
+data: [
+{
+id: 1,
+title: \"Amet pariatur Iste\",
+slug: \"amet-pariatur-iste\",
+description: null,
+chapter_id: 6,
+chapter: {
+name: \"Anatomy\",
+slug: \"anatomy\",
+code: \"ch-iom-bio\",
+id: 6
+},
+subject: {
+name: \"Biology\",
+slug: \"biology\",
+code: \"su-io-bio\",
+id: 4
+},
+class: {
+name: \"IOM\",
+slug: \"iom\",
+code: \"pr-iom\",
+id: 2
+}
+},
+{
+id: 2,
+title: \"Molestias provident\",
+slug: \"molestias-provident\",
+description: null,
+chapter_id: 5,
+chapter: {
+name: \"Algebra\",
+slug: \"algebra\",
+code: \"ch-see-mat\",
+id: 5
+},
+subject: {
+name: \"Math\",
+slug: \"math\",
+code: \"su-se-mat\",
+id: 3
+},
+class: {
+name: \"SEE\",
+slug: \"see\",
+code: \"cl-see\",
+id: 1
+}
+}
+]
+}";
+
+//        $Notes = Note::where('status', 1)->get();
+//        return NoteResource::collection($Notes);
+
+
     }
 
 
@@ -85,6 +143,7 @@ class NoteController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+
     }
 }

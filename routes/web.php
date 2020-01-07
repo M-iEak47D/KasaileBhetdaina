@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function (){
-    return view('admin.index');
+    return view('register');
 });
 
 Route::group([
