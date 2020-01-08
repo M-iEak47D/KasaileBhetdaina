@@ -5,14 +5,46 @@ namespace App\Http\Controllers\API;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Tymon\JWTAuth\Exceptions\JWTException;
+use Tymon\JWTAuth\JWTAuth;
 
+;
 class RegisterController extends Controller
 {
+
+
+    private function getToken($email, $password)
+    {
+        $token = null;
+        //$credentials = $request->only('email', 'password');
+        try {
+            if (!$token = JWTAuth::attempt( ['email'=>$email, 'password'=>$password])) {
+                return response()->json([
+                    'response' => 'error',
+                    'message' => 'Password or email is invalid',
+                    'token'=>$token
+                ]);
+            }
+        } catch (JWTException $e) {
+            return response()->json([
+                'response' => 'error',
+                'message' => 'Token creation failed',
+            ]);
+        }
+        return $token;
+    }
+
+
+
     public function store(Request $request){
 
 
 
-
+        return response([
+            'status' => 'success',
+            'message' => 'Check Your Mobile Inbox for OTP.',
+            'user_id' => 7,
+        ]);
 
 
 //        check user exist or not
@@ -95,19 +127,36 @@ class RegisterController extends Controller
     }
 
     public function validateOTP(Request $request){
-        $userID = $request->user_id;
-        $user = User::find($userID);
-        if($user->userOTP->otp == $request->otp){
-            return response([
-                'status' => 'success',
-                'message' => 'OTP Successfully Match.',
-                'user_id' => $user->id,
-            ]);
+//        dd($request);
+        if($request->user_id){
+            $userID = $request->user_id;
+            $user = User::find($userID);
+            if($user) {
+                if ($user->userOTP->otp == $request->otp) {
+                    return response([
+                        'status' => 'success',
+                        'message' => 'OTP Successfully Match.',
+                        'user_id' => $user->id,
+                    ]);
+                } else {
+                    return response([
+                        'status' => 'error',
+                        'message' => 'OTP cannot Match.',
+                        'user_id' => $user->id,
+                    ]);
+                }
+            }else {
+                return response([
+                    'status' => 'error',
+                    'message' => 'No User Found !!!',
+                    'user_id' => null,
+                ]);
+            }
         }else{
             return response([
                 'status' => 'error',
-                'message' => 'OTP cannot Match.',
-                'user_id' => $user->id,
+                'message' => 'No User Found !!!',
+                'user_id' => null,
             ]);
         }
 
@@ -121,9 +170,28 @@ class RegisterController extends Controller
 
         if($success){
 
-            $accessToken = $user->createToken('authToken')->accessToken;
 
-            return response(['user' => auth()->user(), 'access_token' => $accessToken]);
+            $token = self::getToken($user->phone, $request->password); // generate user token
+
+            if (!is_string($token)){
+                return response()->json([
+                    'status'=>'error',
+                    'message'=>'Token generation failed',
+                    'uer_id' => null,
+                ], 201);
+            }
+
+            $user->remember_token = $token;
+            $user->update();
+
+
+            return response([
+                'status' => 'success',
+                'message' => 'User Successfully Register',
+                'name' =>$user->name,
+                'user_id' => $user->id,
+                'auth_token' => $token,
+            ]);
         }else{
             return response([
                 'msg' => 'False',
