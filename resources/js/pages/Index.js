@@ -4,10 +4,10 @@ import Homepage from './Homepage';
 import Class from './Class';
 import Dashboard from '../Dashboard/Dashboard';
 import Viewer from '../Dashboard/Viewer';
-import Newquiz from "../quiz/quizlayout";
+import Newquiz from "../Dashboard/Quiz/quizlayout";
 import "./Homepage.css"
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
-import QuizResult from '../quiz/QuizResult';
+import Preparation from './Preparation';
 
 
 export default function Index(){
@@ -17,6 +17,7 @@ export default function Index(){
             <Switch>    
                 <Route exact path="/" component={Homepage} />
                 <Route path="/class" component={Class} />
+                <Route path="/preparation" component={Preparation} />
                 <Route path="/viewer" component={Viewer} />
                 <Route path="/quiz" component={Newquiz} />
                 <Route path="/result" component={Newquiz} />

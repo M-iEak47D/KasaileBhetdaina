@@ -1029,9 +1029,6 @@ text-decoration: none;
 .quiz .answer-container  .active{
   background: linear-gradient(90deg, rgb(11, 231, 136), rgb(9, 214, 175)) !important;
 }
-.quiz .answer-container  .wrong{
-  background: linear-gradient(90deg, red, brown) !important;
-}
 
 .quiz .option-number{
   font-weight: bold;
@@ -1542,15 +1539,15 @@ text-decoration: none;
 
 /* reset Password */
 
-.resetPassword-container .color-section{
+.setting-container .color-section{
   height: 100vh;
   background: linear-gradient(180deg, #2ad181, #009d98);
 }
-.resetPassword-container .nocolor-section{
+.setting-container .nocolor-section{
   height: 100vh;
   
 }
-.resetPassword-container .resetPassword-wrapper{
+.setting-container .resetPassword-wrapper{
   position: absolute;
   top: 25%;
   left: 25%;
@@ -1559,26 +1556,124 @@ text-decoration: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px #e8e8e8;
 }
-.resetPassword-container .resetPassword-wrapper .logo-box{
+.setting-container .resetPassword-wrapper .logo-box{
   margin:0 auto;
 
 }
-.resetPassword-container .resetPassword-wrapper h1{
+.setting-container .resetPassword-wrapper h1{
   text-align: center;
   margin-top: 30px;
   color: #fff;
 }
-.resetPassword-container .resetPassword-wrapper .address{
+.setting-container .resetPassword-wrapper .address{
   text-align: center;
   color: #fff;
 
 }
-.resetPassword-container .resetPassword-wrapper form .button-container{
+.setting-container .resetPassword-wrapper form .button-container{
   text-align: right;
 }
-.resetPassword-container .resetPassword-wrapper form input[type="submit"] {
+.setting-container .resetPassword-wrapper form input[type="submit"] {
 color: white;
 background: #0dad91;
 padding: 5px 10px;
 border: none;
+}
+
+/* classSelect */
+.setting-container .color-section{
+  height: 100vh;
+  background: linear-gradient(180deg, #2ad181, #009d98);
+}
+.setting-container .nocolor-section{
+  height: 100vh;
+  
+}
+.setting-container .classSelect-wrapper{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #e8e8e8;
+}
+
+.setting-container .classSelect-wrapper .class h3{
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.setting-container .classSelect-wrapper .class ul {
+  list-style: none;
+}
+.setting-container .classSelect-wrapper .class ul li{
+  padding: 10px 20px;
+  width: 80px;
+  text-align: center;
+  background:white;
+  display: inline-block;
+  margin:5px 5px;
+}
+.setting-container .classSelect-wrapper .preparation h3{
+  text-align: center;
+  margin-top: 30px;
+  color: #04915f;
+}
+.setting-container .classSelect-wrapper .preparation ul {
+  list-style: none;
+}
+.setting-container .classSelect-wrapper .preparation ul li{
+  padding: 10px 0px;
+  width: 120px;
+  text-align: center;
+  background: #26cc82;
+  display: inline-block;
+  margin: 5px 5px;
+  color: white;
+}
+
+/* subclass */
+.setting-container .subClass-wrapper{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #e8e8e8;
+}
+
+.setting-container .subClass-wrapper .faculty-class h3{
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.setting-container .subClass-wrapper .faculty-class ul {
+  list-style: none;
+}
+.setting-container .subClass-wrapper .faculty-class ul li{
+  padding: 10px 20px;
+  width: 80px;
+  text-align: center;
+  background:white;
+  display: inline-block;
+  margin:5px 5px;
+}
+.setting-container .subClass-wrapper .sub-class h3{
+  text-align: center;
+  margin-top: 30px;
+  color: #04915f;
+}
+.setting-container .subClass-wrapper .sub-class ul {
+  list-style: none;
+}
+.setting-container .subClass-wrapper .sub-class ul li{
+  padding: 10px 0px;
+  width: 120px;
+  text-align: center;
+  background: #26cc82;
+  display: inline-block;
+  margin: 5px 5px;
+  color: white;
 }

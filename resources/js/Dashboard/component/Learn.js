@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Switch, Route, useRouteMatch, useParams } from 'react-router-dom';
-import LearnSubject from '../Component/LearnSubject';
+import LearnSubject from '../Subject/LearnSubject';
 export default function Learn() {
 
     let { path, url } = useRouteMatch();

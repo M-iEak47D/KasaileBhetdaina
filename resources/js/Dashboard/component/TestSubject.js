@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link, Switch, Route, useRouteMatch, useHistory} from 'react-router-dom';
 
 
 export default function TestSubject(){
    let {path, url} = useRouteMatch();
     let History = useHistory();
+
+    const[attempt, setAttempt] = useState(3);
     return(
         <React.Fragment>
         <div className="main-subject-containter">
@@ -40,7 +42,7 @@ export default function TestSubject(){
                         </div>
                         <div className="attempt-container"> 
                         <div className="attempt">
-                                Attempt: 2
+                                Attempt: {attempt}
                         </div>
                         <div   className="remaining">
                             Remaining : 3
@@ -48,8 +50,8 @@ export default function TestSubject(){
                         </div>  
                         <div className="button-container">
                             <Link to={`/quiz`}> 
-                                                Take a Test
-                                                </Link>
+                                Take a Test
+                            </Link>
                             </div>    
                         
                         

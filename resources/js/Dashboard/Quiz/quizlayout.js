@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import questions from "./question.json";
-import {useHistory, Link, Route, Switch, useRouteMatch} from 'react-router-dom';
+import {useHistory, Link, Route, Switch, useRouteMatch, useLocation} from 'react-router-dom';
 import Timer from "./Timer"
 import Axios from "axios";
 import QuizResult from "./QuizResult"
@@ -9,8 +9,8 @@ import QuizResult from "./QuizResult"
 
 let start = false;
 export default function Newquiz(props) {
+
     let {path, url} = useRouteMatch();
-    // console.log(path)
     const allQuestion = questions.length;
     const localData = localStorage.getItem('initialValue');
     const localActive = localStorage.getItem('active')
@@ -68,9 +68,8 @@ export default function Newquiz(props) {
             }
         });
         return value;
-    }
-    let History = useHistory();
-    
+    }    
+   
     return (
         <React.Fragment>
                 <Route exact path={path}>

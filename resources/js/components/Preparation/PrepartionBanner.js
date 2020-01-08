@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-export default function Classbanner(){
+const PreparationBanner = () =>{
     return(
-        <div className="banner">
+            <div className="banner">
     <div className="title">
         Hit SEE with your Knowledge
     </div>
@@ -34,5 +34,7 @@ export default function Classbanner(){
     </div>
 </div>
    
-   )
+    )
 }
+
+export default PreparationBanner;

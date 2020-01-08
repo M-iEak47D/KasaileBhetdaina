@@ -2,6 +2,7 @@ import React, { Component, useState, setState, useEffect } from 'react'
 import Dropdown from './Dropdown'
 import LoginModal from "../Login/LoginModal"
 import RegisterModal from "../Register/RegisterModal"
+import OTPModal from '../Register/OTPModal';
 
 
 
@@ -52,7 +53,6 @@ function closeNav() {
             <a href="#blog">Blogs</a>
         </div>
         <div className="button-container">
-          
             <div className="join-now">
                 <a href="" data-toggle="modal" data-target="#join">Join Now</a>
             </div>

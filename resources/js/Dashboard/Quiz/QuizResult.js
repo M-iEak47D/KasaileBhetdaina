@@ -3,10 +3,14 @@ import ReactDOM from "react-dom";
 import Timer from "./Timer"
 import questions from "./question.json"
 import DisplayMark from "./DisplayMarks";
+import {useHistory, useLocation} from "react-router-dom"
+
 
 export default function QuizResult(props){
-    // console.log(props.active)
-    // console.log(props.score)
+
+    const history = useHistory();
+    const location = useLocation()
+   
     const myScore = props.score;
     const myActive = props.active;
     const myTotal = props.total;
@@ -18,11 +22,23 @@ export default function QuizResult(props){
     for(var i=0; i <= allQuestion-1; i++){
         questionMap.push(i);
     }     
-    // console.log(questionMap)
     
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const currentQuestion = useCurrentQuestion(currentQuestionIndex);
-    const [active, setActive] = useState(myActive)
+    const [active, setActive] = useState(myActive);
+
+    const place = {
+        pathname:'/learn'
+    }
+
+    useEffect(() => {
+        window.onpopstate = e =>{
+            history.replace(place);
+        }
+        if(history.action == "POP"){
+            history.replace(place)
+        }
+    }, [history])
 
 
 
@@ -121,11 +137,9 @@ export default function QuizResult(props){
                             </div>
                         </div>
                     </div>
-
                 </div>
                 )}
             </div>
-            
     )
 }
 

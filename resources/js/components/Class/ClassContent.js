@@ -31,8 +31,6 @@ export default function Classcontent(){
                                 <div className="button-container d-flex justify-content-between">
 
                                     <a href="" className="mybtn" data-toggle="modal" data-target="#myModal2">View Notes</a>
-
-
                                     <a href="" className="mybtn" data-toggle="modal" data-target="#myModal2">Take a Test</a>
 
                                 </div>
@@ -58,8 +56,6 @@ export default function Classcontent(){
                                 <div className="button-container d-flex justify-content-between">
 
                                     <a href="" className="mybtn" data-toggle="modal" data-target="#myModal2">View Notes</a>
-
-
                                     <a href="" className="mybtn" data-toggle="modal" data-target="#myModal2">Take a Test</a>
 
                                 </div>
