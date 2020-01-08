@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Model\UserInfo;
+use App\Model\UserOTP;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -36,7 +37,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'user_verified_at' => 'datetime',
     ];
 
 
@@ -45,9 +46,7 @@ class User extends Authenticatable
         return $this->hasOne(UserInfo::class);
     }
 
-    public function dataCollecton(){
-
-        return $this->belongsTo(User::class);
-
+    public function userOTP(){
+        return $this->hasOne(UserOTP::class);
     }
 }

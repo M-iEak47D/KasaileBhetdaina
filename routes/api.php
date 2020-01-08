@@ -36,16 +36,17 @@ Route::group([
 ], function() {
 
     Route::get('user', 'UserController@index');
-    Route::post('register', 'UserController@store');
-    Route::post('login', 'UserController@login');
-    Route::post('validateotp', 'UserController@validateOTP');
-    Route::post('savepassword', 'UserController@savePassword');
+    Route::post('register', 'RegisterController@store');
+    Route::post('login', 'RegisterController@login');
+    Route::post('validateotp', 'RegisterController@validateOTP');
+    Route::post('savepassword', 'RegisterController@savePassword');
 
 
 //    Note Jsondata
 
     Route::get('notes', 'NoteController@index');
 
+    Route::get('flashcards', 'FlashCardController@index');
 
 });
 
