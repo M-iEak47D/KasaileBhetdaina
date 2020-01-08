@@ -24,10 +24,12 @@ class QuizQuestionController extends Controller
         $type = Category::where('slug', 'subject')->first();
         $subs = Content::where('type', $type->id)->get();
         $subjects = new SubjectCollection($subs);
+        $belongsToQuiz = $quiz->questions->pluck('id');
         return response()->json([
             'subjects' => $subjects,
             'quiz' => $quiz->only(['id', 'total_question']),
             'quiz_question_count' => $count,
+            'belongsToQuiz' => $belongsToQuiz,
         ]);
     }
 

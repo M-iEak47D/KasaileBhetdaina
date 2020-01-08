@@ -42,6 +42,7 @@ export default function QuestionAssign() {
                     ...values,
                     quiz_question_count:response.data.quiz_question_count,
                 });
+                setBelongsToQuiz(response.data.belongsToQuiz);
             })
     },[errors]);
 
@@ -76,9 +77,24 @@ export default function QuestionAssign() {
         axios.get('/api/admin/quiz/get_questions/'+quiz.id+'/'+chapter_id).then(response=>{
             console.log(response);
             setQuestions(response.data.questions);
-            setBelongsToQuiz(response.data.belongsToQuiz);
         });
     }
+
+    const BelongsToQuiz = ({question}) =>{
+        if(belongsToQuiz.includes(question.id)) {
+            return(<button onClick={handleCheckboxClick} value={question.id} id="remove_ques"
+                    className="btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary">
+                Yes</button>
+            )
+        }
+        else{
+            return(<button onClick={handleCheckboxClick} value={question.id} id="add_ques"
+                      className="btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger">
+                No</button>
+            )
+        }
+    };
+    console.log(belongsToQuiz);
 
 
     return (
@@ -109,7 +125,7 @@ export default function QuestionAssign() {
 
             {/*<div id="overlay" style={{display:(submitting ? "block" : "none")}}>Loading...</div>*/}
 
-            { questions.length > 0 && submitting===false ?
+            { questions.length > 0 ?
                 <div className="row">
                     <div className="table-responsive">
                         <table className="table">
@@ -125,17 +141,10 @@ export default function QuestionAssign() {
                                 questions.map((question,index)=>{
                                     return(
                                         <tr key={index}>
-                                            <td>{index + 1}</td>
+                                            <td>{question.id}</td>
                                             <td>{question.name}</td>
                                             <td>
-                                                { belongsToQuiz.length > 0 && belongsToQuiz.includes(question.id) ?
-                                                    <button onClick={handleCheckboxClick} value={question.id} id="remove_ques"
-                                                            className="btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary">
-                                                        Yes</button>
-                                                    : <button onClick={handleCheckboxClick} value={question.id} id="add_ques"
-                                                              className="btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger">
-                                                        No</button>
-                                                }
+                                                <BelongsToQuiz key={question.id} question={question}/>
                                                 </td>
                                         </tr>
                                             )
@@ -146,7 +155,7 @@ export default function QuestionAssign() {
                     </div>
                 </div>
                 :
-                (submitting === true) ? <span>Processing : </span>:
+                // (submitting === true) ? <span>Processing : </span>:
                 <div>
                     <span>Select Above Options to View Questions To Assign</span>
                 </div>

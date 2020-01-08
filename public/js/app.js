@@ -75494,6 +75494,7 @@ function QuestionAssign() {
       setValues(_objectSpread({}, values, {
         quiz_question_count: response.data.quiz_question_count
       }));
+      setBelongsToQuiz(response.data.belongsToQuiz);
     });
   }, [errors]);
 
@@ -75524,10 +75525,30 @@ function QuestionAssign() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/admin/quiz/get_questions/' + quiz.id + '/' + chapter_id).then(function (response) {
       console.log(response);
       setQuestions(response.data.questions);
-      setBelongsToQuiz(response.data.belongsToQuiz);
     });
   }
 
+  var BelongsToQuiz = function BelongsToQuiz(_ref) {
+    var question = _ref.question;
+
+    if (belongsToQuiz.includes(question.id)) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: handleCheckboxClick,
+        value: question.id,
+        id: "remove_ques",
+        className: "btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary"
+      }, "Yes");
+    } else {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: handleCheckboxClick,
+        value: question.id,
+        id: "add_ques",
+        className: "btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger"
+      }, "No");
+    }
+  };
+
+  console.log(belongsToQuiz);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75554,7 +75575,7 @@ function QuestionAssign() {
     className: "col-md-6"
   }, errors.limit && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "alert alert-danger"
-  }, errors.limit))), questions.length > 0 && submitting === false ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, errors.limit))), questions.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "table-responsive"
@@ -75563,18 +75584,12 @@ function QuestionAssign() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "S.No"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Question"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, questions.map(function (question, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, question.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, belongsToQuiz.length > 0 && belongsToQuiz.includes(question.id) ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      onClick: handleCheckboxClick,
-      value: question.id,
-      id: "remove_ques",
-      className: "btn-chnage-status btn btn-sm btn-default text-primary btn-outline-primary"
-    }, "Yes") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      onClick: handleCheckboxClick,
-      value: question.id,
-      id: "add_ques",
-      className: "btn-chnage-status btn btn-sm btn-default text-danger btn-outline-danger"
-    }, "No")));
-  }))))) : submitting === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Processing : ") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Select Above Options to View Questions To Assign")));
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, question.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, question.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BelongsToQuiz, {
+      key: question.id,
+      question: question
+    })));
+  }))))) : // (submitting === true) ? <span>Processing : </span>:
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Select Above Options to View Questions To Assign")));
 }
 
 if (document.getElementById('quiz_question_assign')) {
