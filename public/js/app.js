@@ -82862,8 +82862,8 @@ module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
