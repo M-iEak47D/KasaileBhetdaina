@@ -1,6 +1,7 @@
 import React from 'react';
 import {useRouteMatch, Switch, Route} from 'react-router-dom';
 import "../../pages/Homepage.css"
+import Password from './Password';
 // import ClassSelect from './component/ClassSelect';
 
 export default function ResetPassword() {
@@ -22,9 +23,9 @@ export default function ResetPassword() {
                         <Route exact path={path} >
                             <Password />
                         </Route>
-                        <Route path={`${path}/selectClass`} >
+                        {/* <Route path={`${path}/selectClass`} >
                             <ClassSelect />
-                        </Route>
+                        </Route> */}
                    </Switch>
             </div>
         </React.Fragment>

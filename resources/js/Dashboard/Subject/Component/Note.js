@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom"
 
 const Note = () =>{
     return(
-        <div className="tab-pane container active" id="note">
+        <div className="tab-pane active" id="note">
             <div className="subject-content">
               <div className="chapter-wrapper d-flex justify-content-between">
                 <div className="chapter-title">

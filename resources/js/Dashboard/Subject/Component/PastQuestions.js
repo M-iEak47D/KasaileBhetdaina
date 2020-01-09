@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom";
 
 const PastQuestions = () =>{
     return(
-        <div className="tab-pane container fade" id="past-question">
+        <div className="tab-pane  fade" id="past-question">
             <div className="subject-content">
               <div className="chapter-wrapper d-flex justify-content-between">
                 <div className="chapter-title">

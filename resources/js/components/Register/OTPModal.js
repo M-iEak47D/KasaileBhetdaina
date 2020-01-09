@@ -1,11 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {useForm} from "react-hook-form";
+import {Link} from "react-router-dom"
+import axios from "axios";
 
-const OTPModal = ({catchResponse}) =>{
-    const{otp, handleSubmit, errors} = useForm();
-    const onSubmit = () => {
-
+const OTPModal = ({response}) =>{
+    const{register, handleSubmit, errors} = useForm();
+    const onSubmit = (values) => {
+        console.log(values)
+            axios({
+                method: 'post',
+                url: 'http://192.168.1.67:80/api/validateotp',
+                data: values
+            }).then(
+                response =>{
+                    console.log(response)
+                }
+            )
     }
         return(
          <div className="modal join fade" id="otp">
@@ -18,18 +29,26 @@ const OTPModal = ({catchResponse}) =>{
                     <img src={require('../../pages/images/logo1.png')} className="img-fluid" />
                 </div>
                     <div className="title">
-                        Enter OTP Code
+                        Enter OTP Code  
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
                             <input type="number" className="form-control" placeholder="OTP code" 
                                 name="otp" 
-                                ref={otp}/>
-                            <input type="hidden" name="user_id" value={catchResponse} ref={otp} />
+                                ref={register}
+                            />
                         </div>
+                        <input type="hidden" name="user_id" 
+                                value={response.user_id}
+                            ref={register} 
+                        />
                         
                         <div className="button-container">
-                            <button className="btn btn-success" type="submit">Jump In</button>
+                            <button className="btn btn-success" type="submit">
+                                <Link to="/set-password">
+                                Jump In
+                                </Link>
+                                </button>
                             <br />
                             <a href="#" >Resend OTP code</a>
                         </div>

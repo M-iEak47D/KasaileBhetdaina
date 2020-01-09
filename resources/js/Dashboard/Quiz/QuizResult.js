@@ -85,6 +85,9 @@ export default function QuizResult(props){
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
                                     </div>
+                                    <div className="option-wrong">
+                                        <i className="fa fa-times"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
@@ -102,6 +105,9 @@ export default function QuizResult(props){
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
                                     </div>
+                                    <div className="option-wrong">
+                                        <i className="fa fa-times"></i>
+                                    </div>
                                 </div>  
                             </div>
                             <div className="col-md-6 col-sm-6">
@@ -118,6 +124,9 @@ export default function QuizResult(props){
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
                                     </div>
+                                    <div className="option-wrong">
+                                        <i className="fa fa-times"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
@@ -132,6 +141,9 @@ export default function QuizResult(props){
                                     </div>
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
+                                    </div>
+                                    <div className="option-wrong">
+                                        <i className="fa fa-times"></i>
                                     </div>
                                 </div>
                             </div>
@@ -153,4 +165,3 @@ function useCurrentQuestion(initialValue) {
         initialQuestion
     }
 }
-

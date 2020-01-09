@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
+
 .logo-box{
   width: 100px;
   margin: 0 auto;
@@ -28,6 +29,14 @@ body {
   background: linear-gradient(45deg, #36ea5f, #00b693);
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 768px){
+  .order0{
+    order:0 !important;
+  }
+  .order1{
+    order:1 !important;
+  }
 }
 /* Style the navbar */
 #navbar {
@@ -80,7 +89,7 @@ body {
   margin-right: 30px;
   text-shadow: 1px 2px 3px #d6d5d5;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
   font-weight: 400;
   font-family: 'Righteous', cursive;
   position: relative;
@@ -243,7 +252,7 @@ display: none;
 
 @media (max-width:756px) {
   #navbar {
-    padding: 5px 10px;
+    padding: 10px;
   }
   #navbar .button-container .join-now {
     margin:5px auto;
@@ -436,7 +445,7 @@ display: none;
       background: #fbfbfb;
 }
 
-.join .modal-body:hover .title {
+.join .modal-body .title {
      color: #28a745;
     text-shadow: 1px 3px 4px #d1d9d4;
 }
@@ -574,15 +583,15 @@ background: #28a745;
 }
 
 .question-feature{
-padding: 90px 0px;
+padding: 30px 0px;
 
 }
 .analysis-feature{
-padding: 90px 0px;
+padding: 30px 0px;
 background: #f1fef18a;
 }
 .syllabus-feature{
-padding: 90px 0px;
+padding: 30px 0px;
 }
 
 @media (max-width: 756px)
@@ -741,7 +750,7 @@ padding: 90px 0px;
 /*-----------------app download container---------------*/
 .app-container{
   padding: 120px 60px;
-  background: #3cc95c;
+  background: linear-gradient(180deg, #36ea5f, #00b693);
 }
 .app-container .title{
   font-size: 40px;
@@ -779,7 +788,7 @@ padding: 5px 10px;
 /*----------------hit question-----------------*/
 .hit-question{
   padding: 60px 90px;
-  background: #3cc95c;
+  background: linear-gradient(180deg, #36ea5f, #00b693);
 
 }
 .hit-question .title{
@@ -1029,7 +1038,9 @@ text-decoration: none;
 .quiz .answer-container  .active{
   background: linear-gradient(90deg, rgb(11, 231, 136), rgb(9, 214, 175)) !important;
 }
-
+.quiz .answer-container  .wrong{
+  background: linear-gradient(90deg, red, brown) !important;
+}
 .quiz .option-number{
   font-weight: bold;
   text-transform: uppercase;
@@ -1053,6 +1064,11 @@ text-decoration: none;
   color: green;
   padding-top: 10px;
 }
+.quiz .option-wrong{
+  display: none;
+  color: green;
+  padding-top: 10px;
+}
 .quiz .answer-wrapper:hover .option-number, .answer-container  .active .option-number{
   padding: 6px 15px;
   -webkit-transition: padding 0.2s ease-in;
@@ -1064,7 +1080,26 @@ text-decoration: none;
   box-shadow: 1px 1px 5px 1px #b4b2b2;
   border-radius: 50%;
 }
+ .answer-container  .wrong .option-number{
+  padding: 6px 15px;
+  -webkit-transition: padding 0.2s ease-in;
+  transition: padding 0.2s ease-in;
+  background-color: #ffffff;
+  color: #06bc8e;
+  border: none;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px 1px #b4b2b2;
+  border-radius: 50%;
+}
 .quiz .answer-wrapper:hover .option-tick, .answer-container  .active .option-tick{
+  display: block;
+  margin: 5px auto 4px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 1px 2px 5px 1px #a09f9f;
+}
+.answer-container  .wrong .option-wrong{
   display: block;
   margin: 5px auto 4px auto;
   background: white;
@@ -1141,10 +1176,22 @@ text-decoration: none;
 
 @media (max-width: 768px)
 {
+  .quiz .test-section{
+    margin-top: 25%;
+  }
   .answer-wrapper{
   
   padding: 5px 5px;
   
+  }
+  .quiz .answer-wrapper{
+    margin-top: 0;
+  }
+  .quiz .answer-container{
+    margin-top: 30px;
+  }
+  .quiz .question-title{
+    font-size: 20px;
   }
   .quiz nav {
     height: 70px;
@@ -1164,6 +1211,9 @@ text-decoration: none;
   .quiz .quit-section {
     top:25px;
   }
+  .quiz .button-section{
+    margin:15px auto;
+  }
   .test-section {
     margin-top: 80px;
   }
@@ -1178,20 +1228,16 @@ text-decoration: none;
     margin: 20px auto 10px auto;
   }
   .quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
-  color: #47b15f;
+  color: #fff;
   font-size: 18px;
   }
-  .quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{
-    display: none;
-  }
+ 
   .quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{
   visibility: visible;
   opacity: 1;
   transition:  visibility 0s, opacity 0.4s linear;
   }
-  .quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{
-    width: 40px;
-  }
+  
 }
 /* The side navigation menu */
 .quizsidenav {
@@ -1469,6 +1515,10 @@ text-decoration: none;
 }
 /*--------mobile view---------------*/
 @media only screen and (max-width: 768px){
+  #quizOpen{
+    top:15%;
+    left: 15px;
+  }
   .class-section .syllabus-section{
     padding: 30px 0px 0px 0px;
   }
@@ -1643,22 +1693,35 @@ border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px #e8e8e8;
 }
-
+.setting-container .subClass-wrapper .faculty-class{
+  padding: 45px 0px;
+}
 .setting-container .subClass-wrapper .faculty-class h3{
   text-align: center;
   margin-top: 30px;
-  color: #fff;
+  color: #15b88c;
 }
 .setting-container .subClass-wrapper .faculty-class ul {
   list-style: none;
 }
 .setting-container .subClass-wrapper .faculty-class ul li{
   padding: 10px 20px;
-  width: 80px;
+  width: 120px;
   text-align: center;
-  background:white;
+  background: #26cc82;
   display: inline-block;
-  margin:5px 5px;
+  color: white;
+  margin: 5px 5px;
+}
+.setting-container .subClass-wrapper .faculty-class ul li a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.setting-container .subClass-wrapper .select-faculty h3{
+  padding-top: 35%;
+  text-align: center;
+  color: white;
 }
 .setting-container .subClass-wrapper .sub-class h3{
   text-align: center;
@@ -1676,4 +1739,215 @@ border: none;
   display: inline-block;
   margin: 5px 5px;
   color: white;
+}
+.setting-container .subClass-wrapper .sub-class ul li a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.setting-container .year-wrapper{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #e8e8e8;
+}
+.setting-container .year-wrapper .faculty-class ul {
+  list-style: none;
+  margin:15px auto;
+}
+.setting-container .year-wrapper .faculty-class ul li{
+  padding: 10px 10px;
+  width: 120px;
+  text-align: center;
+  background: #26cc82;
+  display: inline-block;
+  color: white;
+  margin: 5px 5px;
+}
+.setting-container .year-wrapper .faculty-class ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.setting-container .select-faculty h3{
+  padding-top: 30%;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 768px){
+  .setting-container .resetPassword-wrapper{
+    left: 5%;
+    right: 5%;
+    padding: 60px 15px 15px 15px;
+  }
+  .setting-container .resetPassword-wrapper h1{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .setting-container .classSelect-wrapper{
+    left: 5%;
+    right: 5%;
+  }
+  .setting-container .classSelect-wrapper .preparation h3, .setting-container .classSelect-wrapper .class h3{
+    font-size: 18px;
+  }
+  .setting-container .classSelect-wrapper .preparation ul{
+    padding: 0;
+  }
+  .setting-container .subClass-wrapper {
+    left: 5%;
+    right: 5%;
+  }
+  .setting-container .subClass-wrapper ul {
+    padding: 0;
+  }
+  .setting-container .subClass-wrapper .select-faculty h3{
+    padding-top: 120%;
+    padding-left: 15px;
+  }
+  .setting-container .year-wrapper{
+    top:15%;
+    left: 5%;
+    right: 5%;
+  }
+  .setting-container .select-faculty h3{
+    padding-top: 130%;
+    padding-left: 15px;
+  }
+  .setting-container .year-wrapper .faculty-class ul{
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Show 4th slide on md if col-md-4*/
+
+  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Show 3rd slide on sm if col-sm-6*/
+  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -50%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-item {
+      margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+      transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+/* LG */
+@media (min-width: 991px) {
+  /* show 4th item */
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+      display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;  /*change this with javascript in the future*/
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
 }

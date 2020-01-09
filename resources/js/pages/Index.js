@@ -8,6 +8,8 @@ import Newquiz from "../Dashboard/Quiz/quizlayout";
 import "./Homepage.css"
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Preparation from './Preparation';
+import ClassSelect from '../Dashboard/Profile/ClassSelect';
+import ResetPassword from '../Dashboard/Profile/ResetPassword';
 
 
 export default function Index(){
@@ -19,8 +21,9 @@ export default function Index(){
                 <Route path="/class" component={Class} />
                 <Route path="/preparation" component={Preparation} />
                 <Route path="/viewer" component={Viewer} />
+                <Route path="/change" component={ClassSelect} />
+                <Route path="/set-password" component={ResetPassword} />
                 <Route path="/quiz" component={Newquiz} />
-                <Route path="/result" component={Newquiz} />
                 <Dashboard />
             </Switch>
           </BrowserRouter>

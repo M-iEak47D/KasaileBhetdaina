@@ -13,14 +13,15 @@ export default function RegisterModal() {
       const onSubmit = (data) => {
         axios({
             method: 'post',
-            url: 'http://192.168.1.71:80/api/register',
+            url: 'http://192.168.1.67:80/api/register',
             data: data,
 
         }).then(
-            response => {
+        response => {
                 console.log(response);
                 setResponse(response.data);
                 setcatchResponse(true);
+                console.log(response)
             }
         )
     }
@@ -99,7 +100,7 @@ export default function RegisterModal() {
                 </div>
             </div>
         </div>
-        <OTPModal catchResponse={catchResponse} />
+        <OTPModal response={response} />
         </React.Fragment>
         
     );

@@ -69,11 +69,50 @@ export default function Newquiz(props) {
         });
         return value;
     }    
-   
+    function openQuiz() {
+        
+        document.getElementById("quizSideNav").style.width = "250px";
+       
+      }
+      
+      /* Set the width of the side navigation to 0 */
+      function closeQuiz() {
+        document.getElementById("quizSideNav").style.width = "0";
+       
+      }
+      let History = useHistory();
     return (
         <React.Fragment>
                 <Route exact path={path}>
         <div>
+        <span onClick = {openQuiz} id="quizOpen"><i class="fas fa-th-large"></i></span>
+        <div id="quizSideNav" className="quizsidenav">
+<div className="closebtn" onClick={closeQuiz}>&times;</div>
+    <ul>
+        
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        
+    
+    </ul>
+   
+</div>
             <div className="quiz">
                 <div className="quit-section">
                     <div className="quit">
@@ -261,6 +300,3 @@ function useMarkCounter(myMarks){
     const Total = myMarks.reduce((a,b) => a + b, 0)
     return Total; 
 }
-
-
-

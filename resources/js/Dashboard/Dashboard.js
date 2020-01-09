@@ -6,6 +6,7 @@ import Test from './component/Test';
 import { BrowserRouter as Router,Switch,Route, Link, useRouteMatch} from 'react-router-dom';
 import Bookmark from './component/Bookmark';    
 import Doubts from './component/Doubts';
+import Profile from './Profile/Profile';
 export default  function Dashboard (){
     function closeNav() {
         function myFunction(x) {
@@ -82,7 +83,7 @@ export default  function Dashboard (){
          <div className="title-name sideTab" style={{ width: "100%"}}>
              Hot Babe
              <div className="grade">| Class 10</div>
-             <a href="">Change ></a>
+             <Link to="/change">Change ></Link>
          </div>
          <div className="d-sm-block d-none">
             <Link to="/learn" className="active test-class"  onClick={(event) => {handleActive(event)}}> 
@@ -103,7 +104,7 @@ export default  function Dashboard (){
           
              <hr />
          </div>
-         <a href="#"><i className="fa fa-user"></i><span className="sideTab"> Profile</span></a>
+         <Link to="/profile" onClick={handleActive}><i className="fa fa-user"></i><span className="sideTab"> Profile</span></Link>
          <a href="#"><i className="fa fa-folder-open"></i> <span className="sideTab"> Syllabus</span></a>
          <a href="#"><i className="fa fa-cogs"></i> <span className="sideTab"> Setting</span></a>
          <a href="#"><i className="fab fa-facebook"></i> <span className="sideTab"> Share on Facebook</span></a>
@@ -155,14 +156,13 @@ export default  function Dashboard (){
              </div>
          </div>
          <div className="main-content">
-                 <Switch>
-                
+                 <Switch>       
                  <Route  path="/practise" component={Practise} />
                  <Route path="/learn" component={Learn}  /> 
                  <Route  path="/test" component={Test} />
                  <Route path="/bookmark" component={Bookmark} />  
-                 <Route path="/doubts" component={Doubts} />  
-                           
+                 <Route path="/doubts" component={Doubts} />
+                 <Route path="/profile" component={Profile} />         
                 </Switch>
          </div>
     </div>   
