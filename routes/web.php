@@ -120,6 +120,12 @@ Route::group([
 });
 
 
+Route::post('/save_password','CustomController@savePassword');
+Route::get('/get_token',function(){
+    return csrf_token();
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
