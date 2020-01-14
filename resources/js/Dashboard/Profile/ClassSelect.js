@@ -1,12 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom";
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, Redirect} from "react-router-dom";
+import { useAuth } from "../../Context/Auth";
 
 const ClassSelect = () => {
+  
+    
         return(
              <React.Fragment>
                             {/* <Switch>
                                 <Route exact path={path} > */}
+                                <div className="setting-container">
+               
+               <div className="row">
+                   <div className="col-6 color-section">
+
+                   </div>
+                   <div className="col-6 nocolor-section">
+
+                   </div>
+               </div>
                                 <div className="classSelect-wrapper">
                                 <div className="row">
                                 <div className="col-6">
@@ -48,6 +61,7 @@ const ClassSelect = () => {
                                     <SubClass />
                                 </Route> */}
                             {/* </Switch> */}
+                            </div>
                             </React.Fragment>
         )
 }

@@ -10,7 +10,6 @@ import Question from "../components/Homepage/Question";
 export default function Preparation(){
     return(
         <React.Fragment>
-            <Navbar />
             <PreparationBanner />
             <PreparationContent />
             <Question />

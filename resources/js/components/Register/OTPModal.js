@@ -1,24 +1,36 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom"
+import {Link, Switch, Route} from "react-router-dom"
 import axios from "axios";
+import ResetPassword from './ResetPassword'
+
 
 const OTPModal = ({response}) =>{
     const{register, handleSubmit, errors} = useForm();
+    const [dataResponse, SetResoponse] = useState();
+    const [closeOTP, setOTP] = useState(true)
     const onSubmit = (values) => {
         console.log(values)
             axios({
                 method: 'post',
-                url: 'http://192.168.1.67:80/api/validateotp',
+                url: 'http://192.168.1.250/api/validateotp',
                 data: values
             }).then(
                 response =>{
                     console.log(response)
+                    if(response.status === "success"){
+                     SetResoponse(dataResponse)
+                     document.querySelector(".modal-backdrop").style.display= "none"
+
+                    }
                 }
             )
     }
+    
+    
         return(
+            <React.Fragment>
          <div className="modal join fade" id="otp">
         <div className="modal-dialog">
             <div className="modal-content">
@@ -44,20 +56,20 @@ const OTPModal = ({response}) =>{
                         />
                         
                         <div className="button-container">
+                        <Link to="/set-password">
                             <button className="btn btn-success" type="submit">
-                                <Link to="/set-password">
-                                Jump In
-                                </Link>
-                                </button>
+                                     Jump In
+                            </button>
+                        </Link>
                             <br />
                             <a href="#" >Resend OTP code</a>
                         </div>
                     </form>
-                </div>
-            
+                </div>       
             </div>
         </div>
     </div>
+    </React.Fragment>
     )
 }
 

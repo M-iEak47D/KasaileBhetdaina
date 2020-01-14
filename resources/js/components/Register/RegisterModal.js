@@ -13,15 +13,15 @@ export default function RegisterModal() {
       const onSubmit = (data) => {
         axios({
             method: 'post',
-            url: 'http://192.168.1.67:80/api/register',
+            url: 'http://192.168.1.250/api/register',
             data: data,
 
         }).then(
         response => {
-                console.log(response);
+                // console.log(response);
                 setResponse(response.data);
                 setcatchResponse(true);
-                console.log(response)
+                // console.log(response)
             }
         )
     }

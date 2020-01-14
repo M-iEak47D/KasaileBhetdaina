@@ -3,6 +3,8 @@ import Dropdown from './Dropdown'
 import LoginModal from "../Login/LoginModal"
 import RegisterModal from "../Register/RegisterModal"
 import OTPModal from '../Register/OTPModal';
+import { Switch, Route } from 'react-router-dom';
+import PageNotFound from '../../pages/PageNotFound';
 
 
 

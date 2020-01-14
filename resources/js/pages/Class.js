@@ -11,7 +11,6 @@ import Footer from "../components/Allpage/Footer";
 export default function Class(){
     return(
         <React.Fragment>
-            <Navbar />
             <Classbanner />
             <Classcontent />
             <Question />

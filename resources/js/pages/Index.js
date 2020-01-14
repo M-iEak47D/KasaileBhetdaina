@@ -1,33 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from "react-dom";
-import Homepage from './Homepage';
-import Class from './Class';
 import Dashboard from '../Dashboard/Dashboard';
-import Viewer from '../Dashboard/Viewer';
-import Newquiz from "../Dashboard/Quiz/quizlayout";
 import "./Homepage.css"
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
-import Preparation from './Preparation';
+
+import PrivateRoute from './PrivateRoute';
+import { AuthContext, useAuth } from '../Context/Auth';
+import ResetPassword from '../Components/Register/ResetPassword';
 import ClassSelect from '../Dashboard/Profile/ClassSelect';
-import ResetPassword from '../Dashboard/Profile/ResetPassword';
+
 
 
 export default function Index(){
+    const [Authtoken, setAuthtoken] = useState(true)
+    const  setAuthtokens  = useAuth();
+
+    
     return(
         <React.Fragment>
+        <AuthContext.Provider value={{Authtoken}}>
          <BrowserRouter>
-            <Switch>    
-                <Route exact path="/" component={Homepage} />
-                <Route path="/class" component={Class} />
-                <Route path="/preparation" component={Preparation} />
-                <Route path="/viewer" component={Viewer} />
-                <Route path="/change" component={ClassSelect} />
-                <Route path="/set-password" component={ResetPassword} />
-                <Route path="/quiz" component={Newquiz} />
-                <Dashboard />
+            <Switch>
+                <Route path="/set-password" component={ResetPassword}  />
+                <PrivateRoute><Dashboard /></PrivateRoute>
             </Switch>
           </BrowserRouter>
-         </React.Fragment>
+          </AuthContext.Provider>
+         </React.Fragment> 
     )
 }
 
