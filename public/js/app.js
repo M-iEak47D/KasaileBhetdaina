@@ -82023,14 +82023,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ResetPassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ResetPassword */ "./resources/js/Components/Register/ResetPassword.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -82039,35 +82031,31 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var OTPModal = function OTPModal(_ref) {
-  var response = _ref.response;
+  var RegisterResponse = _ref.RegisterResponse;
 
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors;
+      errors = _useForm.errors; // const [OTPresponse, setOTPResponse] = useState("");
+  // const [closeOTP, setOTP] = useState(true)
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-      _useState2 = _slicedToArray(_useState, 2),
-      dataResponse = _useState2[0],
-      SetResoponse = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
-      _useState4 = _slicedToArray(_useState3, 2),
-      closeOTP = _useState4[0],
-      setOTP = _useState4[1];
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
 
   var onSubmit = function onSubmit(values) {
-    console.log(values);
     axios__WEBPACK_IMPORTED_MODULE_4___default()({
       method: 'post',
-      url: 'http://192.168.1.250/api/validateotp',
+      url: 'http://noname.hellonep.com/api/validateotp',
       data: values
     }).then(function (response) {
-      console.log(response);
-
-      if (response.status === "success") {
-        SetResoponse(dataResponse);
+      if (response.data.status === "success") {
         document.querySelector(".modal-backdrop").style.display = "none";
+        history.push({
+          pathname: '/set-password',
+          state: {
+            detail: response.data
+          }
+        });
       }
     });
   };
@@ -82107,16 +82095,14 @@ var OTPModal = function OTPModal(_ref) {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "hidden",
     name: "user_id",
-    value: response.user_id,
+    value: RegisterResponse.user_id,
     ref: register
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "/set-password"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
     type: "submit"
-  }, "Jump In")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Jump In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#"
   }, "Resend OTP code"))))))));
 };
@@ -82137,8 +82123,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Password; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/react-hook-form.es.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function Password() {
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+function Password(_ref) {
+  var user_id = _ref.user_id,
+      history = _ref.history;
+  console.log(history);
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      isLogged = _useState2[0],
+      setisLogged = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Err = _useState4[0],
+      setErr = _useState4[1];
+
+  var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
+      register = _useForm.register,
+      handleSubmit = _useForm.handleSubmit,
+      errors = _useForm.errors;
+
+  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])()); //  let history = useHistory();
+
+  var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
+      StorageToken = _useAuth.StorageToken,
+      Authtoken = _useAuth.Authtoken;
+
+  var onSubmit = function onSubmit(data) {
+    axios__WEBPACK_IMPORTED_MODULE_2___default()({
+      method: 'post',
+      url: 'http://noname.hellonep.com/api/savepassword',
+      data: data
+    }).then(function (response) {
+      console.log(response);
+
+      if (response.data.status === "success") {
+        StorageToken({
+          name: response.data.name,
+          token: response.data.auth_token,
+          user_id: response.data.user_id
+        });
+      }
+
+      setisLogged(true);
+    }).catch(function (e) {
+      setErr(true);
+    });
+  };
+
+  console.log(Authtoken);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (Authtoken != false && Authtoken != null) {
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Redirect"], {
+        to: "/learn"
+      });
+    }
+  }, [Authtoken]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "resetPassword-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -82155,24 +82213,25 @@ function Password() {
   }, "Sankhamul, Kathmandu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: "/setting/selectClass",
-    method: "get"
+    onSubmit: handleSubmit(onSubmit)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "New Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    name: "password",
+    type: "password",
+    ref: register
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "user_id",
+    value: user_id,
+    ref: register
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "submit",
-    value: "Add Password"
-  }))))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success",
+    type: "submit"
+  }, "Add Password"))))));
 }
 
 /***/ }),
@@ -82216,7 +82275,7 @@ function RegisterModal() {
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       _useState2 = _slicedToArray(_useState, 2),
-      response = _useState2[0],
+      RegisterResponse = _useState2[0],
       setResponse = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
@@ -82227,12 +82286,12 @@ function RegisterModal() {
   var onSubmit = function onSubmit(data) {
     axios({
       method: 'post',
-      url: 'http://192.168.1.250/api/register',
+      url: 'http://noname.hellonep.com/api/register',
       data: data
     }).then(function (response) {
-      // console.log(response);
       setResponse(response.data);
-      setcatchResponse(true); // console.log(response)
+      console.log(RegisterResponse);
+      setcatchResponse(true);
     });
   };
 
@@ -82338,7 +82397,7 @@ function RegisterModal() {
     "data-toggle": "modal",
     "data-target": "#login"
   }, "I ALREADY HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_OTPModal__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    response: response
+    RegisterResponse: RegisterResponse
   }));
 }
 
@@ -82365,9 +82424,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ResetPassword() {
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  var user_id = history.location.state.detail.user_id; // const path = {
+  //     pathname: "/"
+  // }
+  // useEffect(() => {
+  //     if (history.action != "PUSH") {
+  //         window.onpopstate = e => {
+  //             history.replace(path);
+  //         }
+  //         if (history.action == "POP") {
+  //             history.replace(path)
+  //         }
+  //     }
+  // }, [history])
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "setting-container"
@@ -82377,10 +82447,10 @@ function ResetPassword() {
     className: "col-6 color-section"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6 nocolor-section"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: path
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Password__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Password__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    user_id: user_id,
+    history: history
+  }))));
 }
 
 /***/ }),
@@ -84109,6 +84179,675 @@ function Profile() {
     type: "submit",
     value: "Update"
   }))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Quiz/DisplayMarks.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/Dashboard/Quiz/DisplayMarks.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DisplayMark; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function DisplayMark(props) {
+  // console.log(props)
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "time"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hour"
+  }, " ", props.total, " / ", props.fullMark))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Quiz/QuizResult.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Dashboard/Quiz/QuizResult.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return QuizResult; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Timer */ "./resources/js/Dashboard/Quiz/Timer.js");
+/* harmony import */ var _question_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./question.json */ "./resources/js/Dashboard/Quiz/question.json");
+var _question_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./question.json */ "./resources/js/Dashboard/Quiz/question.json", 1);
+/* harmony import */ var _DisplayMarks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DisplayMarks */ "./resources/js/Dashboard/Quiz/DisplayMarks.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+function QuizResult(props) {
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["useHistory"])();
+  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["useLocation"])();
+  var myScore = props.score;
+  var myActive = props.active;
+  var myTotal = props.total;
+  console.log(myActive);
+  localStorage.clear();
+  var questionMap = [];
+  var allQuestion = _question_json__WEBPACK_IMPORTED_MODULE_3__.length;
+
+  for (var i = 0; i <= allQuestion - 1; i++) {
+    questionMap.push(i);
+  }
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      currentQuestionIndex = _useState2[0],
+      setCurrentQuestionIndex = _useState2[1];
+
+  var currentQuestion = useCurrentQuestion(currentQuestionIndex);
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(myActive),
+      _useState4 = _slicedToArray(_useState3, 2),
+      active = _useState4[0],
+      setActive = _useState4[1];
+
+  var place = {
+    pathname: '/learn'
+  };
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    window.onpopstate = function (e) {
+      history.replace(place);
+    };
+
+    if (history.action == "POP") {
+      history.replace(place);
+    }
+  }, [history]);
+
+  function is_active(qid, aid) {
+    var value = false;
+    active.map(function (active) {
+      if (active.questionId == qid && active.answerId == aid) {
+        value = true;
+      }
+    });
+    return value;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "navbar navbar-expand-sm",
+    style: {
+      background: "linear-gradient(45deg, #0be788, #09d6af)",
+      boxShadow: "0px 2px 4px #a1a4a4"
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DisplayMarks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    fullMark: allQuestion,
+    total: myTotal
+  })), questionMap.map(function (question, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container test-section"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "question-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "question-title"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "question-number"
+    }, index + 1, "."), _question_json__WEBPACK_IMPORTED_MODULE_3__[index].name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "answer-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6 col-sm-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[0].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].correct == 1 ? "wrong" : "" : "")
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-number"
+    }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option"
+    }, _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-tick"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-check"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-wrong"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-times"
+    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6 col-sm-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[1].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].correct == 1 ? "wrong" : "" : "")
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-number"
+    }, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option"
+    }, _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-tick"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-check"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-wrong"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-times"
+    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6 col-sm-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[2].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].correct == 1 ? "wrong" : "" : "")
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-number"
+    }, "C"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option"
+    }, _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-tick"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-check"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-wrong"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-times"
+    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6 col-sm-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[3].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].correct == 1 ? "wrong" : "" : "")
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-number"
+    }, "D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option"
+    }, _question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-tick"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-check"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option-wrong"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-times"
+    })))))));
+  }));
+}
+
+function useCurrentQuestion(initialValue) {
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_question_json__WEBPACK_IMPORTED_MODULE_3__[initialValue]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      initialQuestion = _useState6[0],
+      setQuestions = _useState6[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setQuestions(_question_json__WEBPACK_IMPORTED_MODULE_3__[initialValue]);
+  }, [initialValue]);
+  return {
+    initialValue: initialValue,
+    initialQuestion: initialQuestion
+  };
+}
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Quiz/Timer.js":
+/*!**********************************************!*\
+  !*** ./resources/js/Dashboard/Quiz/Timer.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+function Timer() {
+  // var counter = 0;
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      Minute = _useState2[0],
+      setMinute = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Second = _useState4[0],
+      setSecond = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState6 = _slicedToArray(_useState5, 2),
+      Hour = _useState6[0],
+      setHour = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(10),
+      _useState8 = _slicedToArray(_useState7, 2),
+      Time = _useState8[0],
+      setTime = _useState8[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var interval = setInterval(function () {
+      if (Time != 0) {
+        setSecond(Time % 60);
+        setMinute(Math.floor(Time / 60 % 60));
+        setHour(Math.floor(Time / 60 / 60));
+        setTime(function (Time) {
+          return Time - 1;
+        });
+      } else {
+        setSecond(0);
+        setMinute(0);
+        setHour(0);
+        setTime(function (Time) {
+          return 0;
+        });
+      }
+    }, 1000);
+    return function () {
+      return clearInterval(interval);
+    };
+  }, [Time]);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "timer-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "time"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hour"
+  }, Hour), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "minute"
+  }, ":", Minute), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "second"
+  }, ":", Second))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Timer);
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Quiz/question.json":
+/*!***************************************************!*\
+  !*** ./resources/js/Dashboard/Quiz/question.json ***!
+  \***************************************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = [{"id":1,"name":"What is the capital of Pakistan?","answer":[{"id":1,"answer":"Islamabad","correct":1,"marks":1},{"id":2,"answer":"Thimpu","correct":0,"marks":1},{"id":3,"answer":"Male","correct":0,"marks":1},{"id":4,"answer":"Kabul","correct":0,"marks":1}]},{"id":2,"name":"What is capital of Nepal?","answer":[{"id":1,"answer":"Pokhara","correct":0,"marks":1},{"id":2,"answer":"Kathmandu","correct":1,"marks":1},{"id":3,"answer":"Delhi","correct":0,"marks":1},{"id":4,"answer":"Undertaker","correct":0,"marks":1}]},{"id":3,"name":"What temperature does cat water at?","answer":[{"id":1,"answer":"100","correct":1,"marks":1},{"id":2,"answer":"0","correct":0,"marks":1},{"id":3,"answer":"50","correct":0,"marks":1},{"id":4,"answer":"-40","correct":0,"marks":1}]}];
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Quiz/quizlayout.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Dashboard/Quiz/quizlayout.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Newquiz; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _question_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./question.json */ "./resources/js/Dashboard/Quiz/question.json");
+var _question_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./question.json */ "./resources/js/Dashboard/Quiz/question.json", 1);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Timer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Timer */ "./resources/js/Dashboard/Quiz/Timer.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _QuizResult__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./QuizResult */ "./resources/js/Dashboard/Quiz/QuizResult.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+var start = false;
+function Newquiz(props) {
+  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useRouteMatch"])(),
+      path = _useRouteMatch.path,
+      url = _useRouteMatch.url;
+
+  var allQuestion = _question_json__WEBPACK_IMPORTED_MODULE_2__.length;
+  var localData = localStorage.getItem('initialValue');
+  var localActive = localStorage.getItem('active');
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localActive ? JSON.parse(localActive) : []),
+      _useState2 = _slicedToArray(_useState, 2),
+      active = _useState2[0],
+      setActive = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localData ? JSON.parse(localData) : 0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      currentQuestionIndex = _useState4[0],
+      setCurrentQuestionIndex = _useState4[1];
+
+  var currentQuestion = useCurrentQuestion(currentQuestionIndex);
+  var totalMarks = localStorage.getItem('score');
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(totalMarks ? JSON.parse(totalMarks) : []),
+      _useState6 = _slicedToArray(_useState5, 2),
+      Score = _useState6[0],
+      setScore = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState8 = _slicedToArray(_useState7, 2),
+      SpecificMark = _useState8[0],
+      setSpecificMark = _useState8[1]; // console.log(active)
+
+
+  function handleChange(Correct, Index, activeId) {
+    active.filter(function (_ref) {
+      var datas = _extends({}, _ref);
+
+      return active[Index] = {
+        questionId: Index,
+        answerId: activeId
+      };
+    });
+    SpecificMark.filter(function (_ref2) {
+      var datas = _extends({}, _ref2);
+
+      return Score[Index] = Correct;
+    });
+    setSpecificMark([].concat(_toConsumableArray(SpecificMark), [{
+      index: Index,
+      correct: Correct
+    }]));
+    Score[Index] = Correct;
+    active[Index] = {
+      questionId: Index,
+      answerId: activeId
+    };
+    localStorage.setItem('active', JSON.stringify(active));
+    localStorage.setItem('score', JSON.stringify(Score));
+  }
+
+  var markCounter = useMarkCounter(Score); // console.log(markCounter)
+  // const[Total, setTotal] = useState({markCounter});
+  // console.log(Total);
+
+  function is_active(qid, aid) {
+    var value = false;
+    active.map(function (active) {
+      if (active == null) {
+        return value;
+      } else if (active.questionId == qid && active.answerId == aid) {
+        value = true;
+      }
+    });
+    return value;
+  }
+
+  function openQuiz() {
+    document.getElementById("quizSideNav").style.width = "250px";
+  }
+  /* Set the width of the side navigation to 0 */
+
+
+  function closeQuiz() {
+    document.getElementById("quizSideNav").style.width = "0";
+  }
+
+  var History = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+    exact: true,
+    path: path
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    onClick: openQuiz,
+    id: "quizOpen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    class: "fas fa-th-large"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "quizSideNav",
+    className: "quizsidenav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "closebtn",
+    onClick: closeQuiz
+  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "6"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "8"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "9"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "10"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "12"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "13"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "14"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "15"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "16"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "17"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "18"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quit-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quit"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    "data-toggle": "modal",
+    "data-target": "#quitModal"
+  }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-stop-circle"
+  }), " Quit"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal",
+    id: "quitModal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-dialog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, "Really, wanna quit it?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    onClick: History.goBack,
+    "data-dismiss": "modal",
+    className: "yes"
+  }, "Yes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "no",
+    "data-dismiss": "modal"
+  }, "No ")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "quiz-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "navbar navbar-expand-sm",
+    style: {
+      background: "linear-gradient(45deg, #0be788, #09d6af)",
+      boxShadow: "0px 2px 4px #a1a4a4"
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Timer__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container test-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "question-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "question-number"
+  }, currentQuestionIndex + 1, "."), currentQuestion.initialQuestion.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[0].id) ? "active" : ""),
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[0].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[0].id);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[0].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[1].id) ? "active" : ""),
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[1].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[1].id);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[1].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[2].id) ? "active" : ""),
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[2].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[2].id);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "C"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[2].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-6 col-sm-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "answer-wrapper" + ' ' + (is_active(currentQuestionIndex, currentQuestion.initialQuestion.answer[3].id) ? "active" : ""),
+    onClick: function onClick() {
+      return handleChange(currentQuestion.initialQuestion.answer[3].correct, currentQuestionIndex, currentQuestion.initialQuestion.answer[3].id);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-number"
+  }, "D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option"
+  }, currentQuestion.initialQuestion.answer[3].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "option-tick"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-check"
+  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button-row justify-content-between"
+  }, currentQuestionIndex > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "prev-btn",
+    onClick: function onClick() {
+      return setCurrentQuestionIndex(currentQuestionIndex - 1);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-left"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Previous")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "prev-btn",
+    style: {
+      display: "none"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-left"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Previous")), currentQuestionIndex + 1 != allQuestion ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "next-btn",
+    onClick: function onClick() {
+      return setCurrentQuestionIndex(currentQuestionIndex + 1);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Next"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-right"
+  })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/result")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "next-btn"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Finish "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-right"
+  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress-bar",
+    role: "progressbar",
+    style: {
+      width: currentQuestionIndex / allQuestion * 100 + "%"
+    },
+    "aria-valuenow": "75",
+    "aria-valuemin": "0",
+    "aria-valuemax": "100"
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+    path: "".concat(path, "/result")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_QuizResult__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    score: Score,
+    active: active,
+    total: markCounter
+  })));
+}
+
+function useCurrentQuestion(initialValue) {
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]),
+      _useState10 = _slicedToArray(_useState9, 2),
+      initialQuestion = _useState10[0],
+      setQuestions = _useState10[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    localStorage.setItem('initialValue', JSON.stringify(initialValue));
+    setQuestions(_question_json__WEBPACK_IMPORTED_MODULE_2__[initialValue]);
+  }, [initialValue]);
+  return {
+    initialValue: initialValue,
+    initialQuestion: initialQuestion
+  };
+}
+
+function useMarkCounter(myMarks) {
+  var Total = myMarks.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  return Total;
 }
 
 /***/ }),
@@ -86521,14 +87260,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ResetPassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ResetPassword */ "./resources/js/components/Register/ResetPassword.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -86537,35 +87268,31 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var OTPModal = function OTPModal(_ref) {
-  var response = _ref.response;
+  var RegisterResponse = _ref.RegisterResponse;
 
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors;
+      errors = _useForm.errors; // const [OTPresponse, setOTPResponse] = useState("");
+  // const [closeOTP, setOTP] = useState(true)
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-      _useState2 = _slicedToArray(_useState, 2),
-      dataResponse = _useState2[0],
-      SetResoponse = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
-      _useState4 = _slicedToArray(_useState3, 2),
-      closeOTP = _useState4[0],
-      setOTP = _useState4[1];
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
 
   var onSubmit = function onSubmit(values) {
-    console.log(values);
     axios__WEBPACK_IMPORTED_MODULE_4___default()({
       method: 'post',
-      url: 'http://192.168.1.250/api/validateotp',
+      url: 'http://noname.hellonep.com/api/validateotp',
       data: values
     }).then(function (response) {
-      console.log(response);
-
-      if (response.status === "success") {
-        SetResoponse(dataResponse);
+      if (response.data.status === "success") {
         document.querySelector(".modal-backdrop").style.display = "none";
+        history.push({
+          pathname: '/set-password',
+          state: {
+            detail: response.data
+          }
+        });
       }
     });
   };
@@ -86605,16 +87332,14 @@ var OTPModal = function OTPModal(_ref) {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "hidden",
     name: "user_id",
-    value: response.user_id,
+    value: RegisterResponse.user_id,
     ref: register
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "/set-password"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
     type: "submit"
-  }, "Jump In")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Jump In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#"
   }, "Resend OTP code"))))))));
 };
@@ -86635,8 +87360,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Password; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/react-hook-form.es.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function Password() {
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+function Password(_ref) {
+  var user_id = _ref.user_id,
+      history = _ref.history;
+  console.log(history);
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      isLogged = _useState2[0],
+      setisLogged = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      Err = _useState4[0],
+      setErr = _useState4[1];
+
+  var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
+      register = _useForm.register,
+      handleSubmit = _useForm.handleSubmit,
+      errors = _useForm.errors;
+
+  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])()); //  let history = useHistory();
+
+  var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
+      StorageToken = _useAuth.StorageToken,
+      Authtoken = _useAuth.Authtoken;
+
+  var onSubmit = function onSubmit(data) {
+    axios__WEBPACK_IMPORTED_MODULE_2___default()({
+      method: 'post',
+      url: 'http://noname.hellonep.com/api/savepassword',
+      data: data
+    }).then(function (response) {
+      console.log(response);
+
+      if (response.data.status === "success") {
+        StorageToken({
+          name: response.data.name,
+          token: response.data.auth_token,
+          user_id: response.data.user_id
+        });
+      }
+
+      setisLogged(true);
+    }).catch(function (e) {
+      setErr(true);
+    });
+  };
+
+  console.log(Authtoken);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (Authtoken != false && Authtoken != null) {
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Redirect"], {
+        to: "/learn"
+      });
+    }
+  }, [Authtoken]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "resetPassword-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -86653,24 +87450,25 @@ function Password() {
   }, "Sankhamul, Kathmandu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: "/setting/selectClass",
-    method: "get"
+    onSubmit: handleSubmit(onSubmit)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "New Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    name: "password",
+    type: "password",
+    ref: register
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "user_id",
+    value: user_id,
+    ref: register
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "submit",
-    value: "Add Password"
-  }))))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success",
+    type: "submit"
+  }, "Add Password"))))));
 }
 
 /***/ }),
@@ -86714,7 +87512,7 @@ function RegisterModal() {
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       _useState2 = _slicedToArray(_useState, 2),
-      response = _useState2[0],
+      RegisterResponse = _useState2[0],
       setResponse = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
@@ -86725,12 +87523,12 @@ function RegisterModal() {
   var onSubmit = function onSubmit(data) {
     axios({
       method: 'post',
-      url: 'http://192.168.1.250/api/register',
+      url: 'http://noname.hellonep.com/api/register',
       data: data
     }).then(function (response) {
-      // console.log(response);
       setResponse(response.data);
-      setcatchResponse(true); // console.log(response)
+      console.log(RegisterResponse);
+      setcatchResponse(true);
     });
   };
 
@@ -86836,7 +87634,7 @@ function RegisterModal() {
     "data-toggle": "modal",
     "data-target": "#login"
   }, "I ALREADY HAVE ACCOUNT"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_OTPModal__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    response: response
+    RegisterResponse: RegisterResponse
   }));
 }
 
@@ -86863,9 +87661,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ResetPassword() {
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+  var user_id = history.location.state.detail.user_id; // const path = {
+  //     pathname: "/"
+  // }
+  // useEffect(() => {
+  //     if (history.action != "PUSH") {
+  //         window.onpopstate = e => {
+  //             history.replace(path);
+  //         }
+  //         if (history.action == "POP") {
+  //             history.replace(path)
+  //         }
+  //     }
+  // }, [history])
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "setting-container"
@@ -86875,10 +87684,10 @@ function ResetPassword() {
     className: "col-6 color-section"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6 nocolor-section"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: path
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Password__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Password__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    user_id: user_id,
+    history: history
+  }))));
 }
 
 /***/ }),
@@ -87029,6 +87838,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Context/Auth */ "./resources/js/Context/Auth.js");
 /* harmony import */ var _Components_Register_ResetPassword__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Components/Register/ResetPassword */ "./resources/js/Components/Register/ResetPassword.js");
 /* harmony import */ var _Dashboard_Profile_ClassSelect__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Dashboard/Profile/ClassSelect */ "./resources/js/Dashboard/Profile/ClassSelect.js");
+/* harmony import */ var _Dashboard_Quiz_quizlayout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Dashboard/Quiz/quizlayout */ "./resources/js/Dashboard/Quiz/quizlayout.js");
+/* harmony import */ var _Dashboard_Quiz_QuizResult__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Dashboard/Quiz/QuizResult */ "./resources/js/Dashboard/Quiz/QuizResult.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -87046,18 +87857,33 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Index() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+  var token = localStorage.getItem('tokens');
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(token ? JSON.parse(token) : false),
       _useState2 = _slicedToArray(_useState, 2),
       Authtoken = _useState2[0],
-      setAuthtoken = _useState2[1];
+      setAuthtokens = _useState2[1];
 
-  var setAuthtokens = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_6__["useAuth"])();
+  var Tokens = function Tokens(data) {
+    localStorage.setItem('tokens', JSON.stringify(data));
+    setAuthtokens(token);
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Context_Auth__WEBPACK_IMPORTED_MODULE_6__["AuthContext"].Provider, {
     value: {
-      Authtoken: Authtoken
+      Authtoken: Authtoken,
+      StorageToken: Tokens
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "/quiz",
+    component: _Dashboard_Quiz_quizlayout__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "/quiz-result",
+    component: _Dashboard_Quiz_QuizResult__WEBPACK_IMPORTED_MODULE_10__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
     path: "/set-password",
     component: _Components_Register_ResetPassword__WEBPACK_IMPORTED_MODULE_7__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PrivateRoute__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_2__["default"], null))))));
@@ -87156,11 +87982,12 @@ var PrivateRoute = function PrivateRoute(_ref) {
   var children = _ref.children,
       rest = _objectWithoutProperties(_ref, ["children"]);
 
+  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])());
+
   var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
       Authtoken = _useAuth.Authtoken;
 
-  console.log(Authtoken); // console.log(isAuthenticated)
-
+  console.log();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], _extends({}, rest, {
     render: function render(_ref2) {
       var location = _ref2.location;
@@ -87343,8 +88170,8 @@ module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

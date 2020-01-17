@@ -7,21 +7,20 @@ import OTPModal from "./OTPModal";
 
 export default function RegisterModal() {
     const { register, handleSubmit, errors } = useForm();
-    const [response, setResponse] = useState("");
+    const [RegisterResponse, setResponse] = useState("");
     const [catchResponse, setcatchResponse] = useState("");
     
       const onSubmit = (data) => {
         axios({
             method: 'post',
-            url: 'http://192.168.1.250/api/register',
+            url: 'http://noname.hellonep.com/api/register',
             data: data,
 
         }).then(
         response => {
-                // console.log(response);
                 setResponse(response.data);
+                console.log(RegisterResponse);
                 setcatchResponse(true);
-                // console.log(response)
             }
         )
     }
@@ -100,7 +99,7 @@ export default function RegisterModal() {
                 </div>
             </div>
         </div>
-        <OTPModal response={response} />
+        <OTPModal RegisterResponse={RegisterResponse} />
         </React.Fragment>
         
     );

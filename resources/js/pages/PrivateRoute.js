@@ -8,9 +8,10 @@ import ViewNote from "../Dashboard/Subject/NoteViewer/ViewNote";
 
 
 const PrivateRoute = ({ children, ...rest }) => {
+    console.log(useAuth())
     const { Authtoken } = useAuth()  
-    console.log(Authtoken);
-    // console.log(isAuthenticated)
+    console.log();
+
     return(
     <Route {...rest} render={({location})=>(
         Authtoken ? (
@@ -21,7 +22,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         </Switch>
         )
         : (
-            <Route path="/" component={Homepage} />
+            <Route path="/" component={Homepage}    />
           )
         )}
         />  
