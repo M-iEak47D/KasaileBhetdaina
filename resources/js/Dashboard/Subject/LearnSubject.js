@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link, Switch, Route, useRouteMatch, useHistory } from 'react-router-dom';
 import Note from './Component/Note';
 import FlashCards from './Component/FlashCards';
@@ -6,6 +6,21 @@ import PastQuestions from './Component/PastQuestions';
 
 
 export default function LearnSubject() {
+  const {url, params} = useRouteMatch()
+  console.log(url)
+  const [chapter, setChapterResponse] = useState([]);
+  
+  useEffect(() => {
+    axios({
+      method: 'get',
+      url: 'http://noname.hellonep.com/api/chapters/'+params.subjectId,
+    }).then(
+      response => {
+        setChapterResponse(response.data.chapters)
+      }
+    )  
+  }, [])
+
   return (
     <React.Fragment>
       <div className="main-subject-containter">
@@ -35,7 +50,7 @@ export default function LearnSubject() {
           </ul>
       </div>
         <div className="tab-content">
-           <Note />
+           <Note chapterResponse={chapter} />
            <FlashCards />
            <PastQuestions />
         </div>

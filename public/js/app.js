@@ -8734,7 +8734,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato:700,900|Mukta:400,500,600&display=swap);", ""]);
 
 // module
-exports.push([module.i, "body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: \"Mukta\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    font-family: \"Lato\", sans-serif;\r\n}\r\n.mybtn {\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover {\r\n    background: linear-gradient(45deg, #36ea5f, #00b693);\r\n    color: white;\r\n    text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(180deg, #2ad181, #009d98);\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.userSidenav .sideTab {\r\n    display: inline-block;\r\n    padding-left: 10px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n}\r\n.userSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.userSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n.userSidenav .title-name + .sideTab {\r\n    width: 100%;\r\n}\r\n.userSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.userSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container {\r\n    position: fixed;\r\n    top: 0;\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.userSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.userSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.userSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.userSidenav .download-app .play-store,\r\n.userSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a,\r\n.userSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n}\r\n.userSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n    color: #000;\r\n}\r\n.userSidenav .active {\r\n    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#f8f8f942), to(#f8f8f9));\r\n    background: linear-gradient(90deg, transparent, #f8f8f942, #f8f8f9);\r\n    color: #ffffff;\r\n}\r\n\r\n.userSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 60px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .userSidenav .company-container .img-container {\r\n        width: 40px;\r\n    }\r\n    .userSidenav {\r\n        width: 0px;\r\n        background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n        background: linear-gradient(180deg, #2ad181, #009d98);\r\n        box-shadow: 3px 1px 5px #d7ddda;\r\n    }\r\n    .userSidenav .company-container {\r\n        position: relative;\r\n        padding: 15px 4px 8px 5px;\r\n        background: #25cb83;\r\n    }\r\n\r\n    .userSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .userSidenav a {\r\n        color: #fff;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .userSidenav .title-name {\r\n        color: #fff;\r\n        text-shadow: 1px 2px 3px #515050;\r\n    }\r\n    .userSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .userSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .userSidenav .footer-nav {\r\n        padding: 8px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .userSidenav .footer-nav a i {\r\n        display: block;\r\n        font-size: 20px;\r\n    }\r\n    .userSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .userSidenav .footer-nav .active {\r\n        color: #0bf183;\r\n    }\r\n    .userSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .userSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .userSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n    -webkit-transition: margin-left 0.5s;\r\n    transition: margin-left 0.5s;\r\n    margin-left: 250px;\r\n}\r\n.navbar {\r\n    height: 60px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 5px #e7e7e8;\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n}\r\n.navbar .invite {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .invite i,\r\n.navbar .logout i {\r\n    padding: 5px;\r\n}\r\n.navbar .invite a {\r\n    margin-right: -95px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #32c24d;\r\n}\r\n.navbar .invite:hover a {\r\n    margin-right: 20px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .logout a {\r\n    margin-right: -50px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #008862;\r\n}\r\n.navbar .logout:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar #view {\r\n    display: none;\r\n}\r\n.navbar #view i,\r\n.navbar #hide i {\r\n    font-size: 36px;\r\n    color: #2ad181;\r\n}\r\n@media (max-width: 756px) {\r\n    .navbar {\r\n        width: 100%;\r\n        height: 60px;\r\n        padding: 0px 15px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .navbar #view {\r\n        display: block;\r\n    }\r\n    .navbar #hide {\r\n        display: none;\r\n    }\r\n    .navbar #view i,\r\n    .navbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content {\r\n    padding: 60px 0px 0px 0px;\r\n    z-index: 0;\r\n}\r\n.main-title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #009d6db3;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    margin-top: 60px;\r\n}\r\n.sub-title {\r\n    font-size: 26px;\r\n    text-align: center;\r\n    margin-top: 30px;\r\n}\r\n.learn-subject {\r\n    padding: 30px 60px;\r\n}\r\n.learn-subject a {\r\n    text-decoration: none;\r\n}\r\n.learn-subject a:hover {\r\n    color: black;\r\n}\r\n.learn-subject .img-container {\r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i {\r\n    color: #31d285;\r\n    font-size: 40px;\r\n}\r\n.learn-subject .subject-container {\r\n    margin: 10px 15px 20px 15px;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 10px 1px #e2e2e4;\r\n}\r\n.learn-subject .subject-container:hover {\r\n    background: linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i {\r\n    color: white;\r\n    -webkit-transform: scale(1.3);\r\n            transform: scale(1.3);\r\n    -webkit-transition: -webkit-transform 0.3s ease-out;\r\n    transition: -webkit-transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title {\r\n    color: white;\r\n}\r\n.learn-subject .subject-container .title {\r\n    text-align: center;\r\n    margin: 5px auto;\r\n    color: #686868;\r\n    font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .main-content {\r\n        padding: 60px 15px 30px 15px;\r\n    }\r\n    .main-title {\r\n        margin-top: 30px;\r\n        font-size: 24px;\r\n    }\r\n    .learn-subject {\r\n        padding: 30px 0px;\r\n    }\r\n\r\n    .learn-subject .img-container {\r\n        padding: 15px;\r\n    }\r\n    .learn-subject .subject-container {\r\n        margin: 0px;\r\n        margin-bottom: 25px;\r\n    }\r\n    .learn-subject .img-container i {\r\n        font-size: 56px;\r\n    }\r\n    .learn-subject .subject-container .title {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject {\r\n    padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper {\r\n    margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 30px;\r\n    color: white;\r\n    border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i {\r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i {\r\n    margin-left: 40%;\r\n    -webkit-transition: margin-left 0.4s linear;\r\n    transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.practise-subject .practise-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n\r\n.practise-report {\r\n    padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next,\r\n.practise-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.practise-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .practise-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .practise-subject {\r\n        padding: 10px;\r\n    }\r\n    .practise-subject .practise-wrapper {\r\n        padding: 8px;\r\n    }\r\n    .practise-subject .practise-wrapper .icon-box {\r\n        height: 55px;\r\n        padding: 12px 15px;\r\n        margin-left: 10px;\r\n    }\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n.select-container {\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: end;\r\n            justify-content: flex-end;\r\n    margin: 40px 0px 20px 0px;\r\n}\r\n.select-container select {\r\n    border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option {\r\n    background: #eaf1ea !important;\r\n}\r\n.test {\r\n    box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test .title {\r\n    font-size: 20px;\r\n    text-align: center;\r\n    text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.test .test-wrapper a {\r\n    text-decoration: none;\r\n    color: green;\r\n    z-index: 1;\r\n}\r\n.owl-nav {\r\n    font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.owl-nav button {\r\n    background: #3cc95c !important;\r\n}\r\n.owl-nav button span {\r\n    color: #fff;\r\n    padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px) {\r\n    .test {\r\n        margin: 15px auto;\r\n    }\r\n    .owl-nav {\r\n        margin: 0px 15px;\r\n        z-index: 1;\r\n    }\r\n    .owl-nav {\r\n        top: 15%;\r\n        z-index: 1;\r\n        height: 70px;\r\n    }\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter {\r\n    background: #fff;\r\n}\r\n.subject-navbar {\r\n    padding: 75px 60px 15px 90px;\r\n    position: relative;\r\n\r\n    border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar .back {\r\n    position: absolute;\r\n    top: 30px;\r\n    font-size: 24px;\r\n    left: 30px;\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.subject-navbar .icon-box {\r\n    display: inline-block;\r\n    padding: 15px;\r\n    vertical-align: top;\r\n    background: white;\r\n    box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n    border-radius: 5px;\r\n    color: #25cb83;\r\n    font-size: 36px;\r\n}\r\n.subject-navbar .title-box {\r\n    display: inline-block;\r\n    padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2 {\r\n    line-height: 1;\r\n    margin-top: 5px;\r\n    margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav {\r\n    margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active,\r\n.nav-pills .show > .nav-link {\r\n    background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li {\r\n    padding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a {\r\n    color: #262828;\r\n}\r\n\r\n.subject-content {\r\n    margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper {\r\n    padding: 30px;\r\n\r\n    box-shadow: 0px 2px 3px #c7eadd;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title {\r\n    font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option {\r\n    text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a {\r\n    display: inline-block;\r\n    padding-right: 30px;\r\n    margin-top: 5px;\r\n    color: #2ad181;\r\n    font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover {\r\n    -webkit-transform: scale(1.2);\r\n            transform: scale(1.2);\r\n    -webkit-transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    color: #009d98;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .subject-navbar .icon-box {\r\n        font-size: 32px;\r\n        padding: 12px;\r\n    }\r\n    .subject-navbar {\r\n        padding: 60px 0 0 0;\r\n        display: inline-block;\r\n    }\r\n    .subject-navbar.d-flex {\r\n        display: inline-block !important;\r\n    }\r\n    .subject-navbar .back {\r\n        left: 15px;\r\n        top: 15px;\r\n    }\r\n    .subject-content {\r\n        margin-bottom: 45px;\r\n    }\r\n    .subject-content .chapter-wrapper {\r\n        padding: 30px 15px;\r\n    }\r\n    .subject-content .chapter-wrapper .option a {\r\n        padding-right: 0px;\r\n        padding-left: 20px;\r\n    }\r\n    .subject-navbar .nav-pills li {\r\n        padding-right: 5px;\r\n    }\r\n    .subject-content .chapter-wrapper .option {\r\n        display: -webkit-inline-box;\r\n        display: inline-flex;\r\n    }\r\n}\r\n/* slideshow */\r\n#flash {\r\n    padding: 45px;\r\n}\r\n#flash .chapter-title {\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n}\r\n#flash .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    #flash {\r\n        padding: 0;\r\n    }\r\n}\r\n.carousel-inner .carousel-box {\r\n    padding: 30px;\r\n    background: #f8f8f9;\r\n    color: #655d5d;\r\n    margin: 0px 5px;\r\n}\r\n.top-content .slick-slider button {\r\n    padding: 34px 0px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n}\r\n.top-content .slick-next:before,\r\n.top-content .slick-prev:before {\r\n    color: white;\r\n}\r\n.top-content .slick-next,\r\n.top-content .slick-prev {\r\n    width: 30px;\r\n    height: auto;\r\n}\r\n.top-content a {\r\n    text-decoration: none;\r\n    color: #655d5d;\r\n}\r\n.top-content .carousel-control-prev {\r\n    left: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n.top-content .carousel-control-next {\r\n    right: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n\r\n/*note viewer page */\r\n/* ------------------- The side note viewer navigation menu -------------------- */\r\n.viewerSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: #4a4a4a;\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: opacity 0.5s linear, width 0.3s linear;\r\n    transition: opacity 0.5s linear, width 0.3s linear;\r\n    padding-bottom: 30px;\r\n}\r\n.viewerSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.viewerSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.viewerSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.viewerSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n\r\n.viewerSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.viewerSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.viewerSidenav .company-container {\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 12px 15px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    background: #4a4a4a;\r\n}\r\n.viewerSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.viewerSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.viewerSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.viewerSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.viewerSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.viewerSidenav .download-app .play-store,\r\n.viewerSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.viewerSidenav .download-app .play-store a,\r\n.viewerSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n#viewer iframe {\r\n    border: none;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.viewerSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #ffffff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n}\r\n.viewerSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.viewerSidenav a:hover {\r\n    color: #000;\r\n}\r\n.viewerSidenav .active {\r\n    background: #fff;\r\n    color: #4a4a4a;\r\n    border-bottom-right-radius: 50px;\r\n    font-weight: bold;\r\n    border-top-right-radius: 50px;\r\n    margin-right: 20px;\r\n    box-shadow: 2px 2px 10px #0d0d0d, -4px -1px 10px #bababa;\r\n}\r\n\r\n.viewerSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.viewerSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.viewerSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .viewerSidenav .company-container .img-container {\r\n        width: 70px;\r\n    }\r\n    .viewerSidenav {\r\n        width: 0px;\r\n        background: #ffffff;\r\n    }\r\n    .viewerSidenav .company-container {\r\n        position: relative;\r\n        padding: 12px 5px 5px 5px;\r\n    }\r\n\r\n    .viewerSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .viewerSidenav a {\r\n        color: #3d3b3b;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .viewerSidenav .title-name {\r\n        color: #32c24d;\r\n        text-shadow: 1px 2px 3px #f4f1f1;\r\n    }\r\n    .viewerSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .viewerSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .viewerSidenav .footer-nav {\r\n        padding: 3px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .viewerSidenav .footer-nav a i {\r\n        display: block;\r\n    }\r\n    .viewerSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .viewerSidenav .footer-nav .active {\r\n        color: green;\r\n    }\r\n    .viewerSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .viewerSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .viewerSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n.main-content.viewer {\r\n    padding-top: 40px;\r\n}\r\n.viewerNavbar {\r\n    height: 40px;\r\n    background: #4a4a4a;\r\n\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n    padding: 8px 16px;\r\n}\r\n\r\n.viewerNavbar .close i {\r\n    padding: 5px;\r\n}\r\n\r\n.viewerNavbar .close {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    border-radius: 5px;\r\n}\r\n.viewerNavbar .close a {\r\n    margin-right: 10px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n.viewerNavbar .close:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.viewerNavbar #view {\r\n    display: none;\r\n}\r\n.viewerNavbar #view i,\r\n.viewerNavbar #hide i {\r\n    font-size: 24px;\r\n    color: #ffffff;\r\n}\r\n@media (max-width: 756px) {\r\n    .viewerNavbar {\r\n        width: 100%;\r\n        height: 40px;\r\n        padding: 8px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .viewerNavbar #view {\r\n        display: block;\r\n    }\r\n    .viewerNavbar #hide {\r\n        display: none;\r\n    }\r\n    .viewerNavbar #view i,\r\n    .viewerNavbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n    .main-content.viewer {\r\n        padding: 40px 0px 0px 0px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/* PractiseSubject */\r\n.practiseSubject {\r\n    padding: 30px 90px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 10px 30px;\r\n    margin-bottom: 10px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a {\r\n    text-decoration: none;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a:hover {\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name {\r\n    font-size: 24px;\r\n    color: black;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name span {\r\n    padding-right: 10px;\r\n    color: green;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress {\r\n    height: 8px;\r\n    width: 80%;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress .progress-bar {\r\n    background: -webkit-gradient(linear, left top, right top, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(90deg, #2ad181, #009d98);\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress-percent {\r\n    display: inline-block;\r\n    padding-left: 15px;\r\n    color: gray;\r\n    font-size: 12px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .level {\r\n    display: inline-block;\r\n    padding-left: 30px;\r\n    font-size: 12px;\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container {\r\n    vertical-align: middle;\r\n    padding-top: 15px;\r\n    text-align: right;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a {\r\n    border-radius: 5px;\r\n    border: 2px solid #fff;\r\n    color: #2ad181;\r\n    padding: 8px;\r\n    display: inline-block;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a:hover {\r\n    background: #2ad181;\r\n    color: white;\r\n    border: 2px solid #fff;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .practiseSubject {\r\n        padding: 30px 0px;\r\n    }\r\n}\r\n/* testsubject page */\r\n.testSubject {\r\n    padding: 30px 90px;\r\n}\r\n.testSubject .testSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 15px 30px;\r\n    margin-bottom: 10px;\r\n    text-align: center;\r\n}\r\n\r\n.testSubject .testSubjectWrapper .title {\r\n    font-size: 36px;\r\n    color: black;\r\n}\r\n.testSubject .testSubjectWrapper .subtitle {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-bottom: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .time {\r\n    color: green;\r\n    margin-bottom: 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 20px;\r\n    color: #019e97;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n    padding: 0px 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n    margin-left: 30px;\r\n    padding: 0px 15px;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n}\r\n.testSubject .testSubjectWrapper .button-container {\r\n    padding: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .button-container a {\r\n    padding: 10px 30px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    box-shadow: inset 3px 3px 7px 1px #e7eeeb;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .testSubject {\r\n        padding: 30px 0px;\r\n    }\r\n    .testSubject .testSubjectWrapper {\r\n        padding: 15px;\r\n    }\r\n    .testSubject .testSubjectWrapper .attempt-container {\r\n        padding: 10px 0px;\r\n    }\r\n}\r\n/* doubts-page */\r\n.doubts-container {\r\n    padding: 60px 90px;\r\n}\r\n.doubts-container .doubts-wrapper {\r\n    background: #32ea9b;\r\n    padding: 15px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box {\r\n    color: white;\r\n    padding-top: 10px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box i {\r\n    padding: 5px;\r\n    font-size: 36px;\r\n}\r\n.doubts-container .doubts-wrapper .title {\r\n    font-size: 16px;\r\n    color: black;\r\n    font-weight: bold;\r\n}\r\n.doubts-container .doubts-wrapper .subtitle {\r\n    font-size: 14px;\r\n    color: #fff;\r\n}\r\n.doubts-container .doubts-wrapper .button-container {\r\n    margin-top: 25px;\r\n    text-align: right;\r\n}\r\n.doubts-container .doubts-wrapper .button-container a {\r\n    padding: 10px 45px;\r\n    font-size: 16px;\r\n    border-radius: 25px;\r\n    font-weight: bold;\r\n    color: white;\r\n    box-shadow: 0px 0px 10px 2px #02a097;\r\n}\r\n#doubts {\r\n    padding: 0px 60px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    padding-top: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n#doubts .subject-wrapper {\r\n    box-shadow: 0px 0px 5px 1px #d7d5d5;\r\n    padding: 8px 30px;\r\n    background: white;\r\n    margin-bottom: 20px;\r\n    border-radius: 5px;\r\n}\r\n#doubts .subject-wrapper i {\r\n    padding: 10px;\r\n    color: #25cb83;\r\n    border-radius: 50%;\r\n    display: inline-block;\r\n    margin-right: 15px;\r\n    font-size: 18px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .subject-wrapper .subject-name {\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    color: black;\r\n    display: inline-block;\r\n}\r\n.doubts-container .modal-body {\r\n    background: #f0f0f0;\r\n}\r\n.doubts-container .modal-body .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .modal-body .img-container {\r\n    max-width: 200px;\r\n    max-height: 200px;\r\n    overflow: hidden;\r\n    margin: 0 auto;\r\n    padding: 5px;\r\n    border: 2px dashed #fff;\r\n}\r\n.doubts-container .modal-body input[type=\"file\"] {\r\n    margin-top: 40%;\r\n}\r\n.doubts-container .modal-body label {\r\n    margin-top: 30px;\r\n}\r\n.doubts-container .modal-body textarea {\r\n    width: 100%;\r\n    min-height: 100px;\r\n}\r\n.doubts-container .modal-body .btn-container {\r\n    text-align: right;\r\n}\r\n\r\n.doubts-container .modal-body .submitBtn {\r\n    padding: 8px 30px;\r\n    background: #11bc79;\r\n    color: white;\r\n    border: none;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.doubts-container .questionary-container {\r\n    margin: 30px auto;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper {\r\n    border-bottom: 1px dashed #dddddd;\r\n    padding: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body {\r\n    text-align: center;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body img {\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question {\r\n    font-size: 18px;\r\n    color: #000;\r\n    margin-bottom: 15px;\r\n    margin-top: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question .badge {\r\n    background: #1dc188;\r\n    padding: 5px;\r\n    color: white;\r\n    margin-left: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .answer {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-left: 30px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .updated-time {\r\n    font-size: 14px;\r\n    color: gray;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .doubts-container {\r\n        padding: 30px 0px;\r\n    }\r\n    .doubts-container .doubts-wrapper .button-container {\r\n        margin-top: 25px;\r\n        margin-bottom: 15px;\r\n        text-align: center;\r\n    }\r\n    .doubts-container\r\n        .questionary-container\r\n        .questionary-wrapper\r\n        .updated-time {\r\n        padding-top: 15px;\r\n    }\r\n}\r\n\r\n/* profile-page */\r\n.profile-wrapper {\r\n    background: #f2f0f0;\r\n}\r\n.profile-wrapper .top-wrapper {\r\n    padding: 60px;\r\n    position: relative;\r\n\r\n    margin-bottom: 60px;\r\n}\r\n.profile-wrapper .top-wrapper .profile-pic {\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n    position: absolute;\r\n    right: 45%;\r\n    top: 30px;\r\n    -webkit-transform: translateX(60px);\r\n            transform: translateX(60px);\r\n    box-shadow: 1px 1px 15px white;\r\n}\r\n.profile-wrapper .top-wrapper .text-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name {\r\n    font-size: 20px;\r\n    color: #21c686;\r\n    font-weight: bold;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name i {\r\n    color: #20c586;\r\n    padding-right: 5px;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .number {\r\n    font-size: 14px;\r\n    color: grey;\r\n}\r\n.profile-wrapper .personal-details,\r\n.profile-wrapper .account-details {\r\n    padding: 30px;\r\n}\r\n.profile-wrapper .title {\r\n    font-size: 24px;\r\n    color: #1ec387;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    margin-bottom: 15px;\r\n}\r\n.profile-wrapper form .form-group {\r\n    width: 45%;\r\n    margin-left: 30px;\r\n    display: inline-block;\r\n}\r\n.profile-wrapper form .form-group .form-control {\r\n    border: none !important;\r\n    box-shadow: inset 1px 2px 5px #9e9b9b;\r\n}\r\n.profile-wrapper form .button-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper form input[type=\"submit\"] {\r\n    background: #1bbe89;\r\n    color: white;\r\n    margin-right: 45px;\r\n    border: none;\r\n    border-radius: 50px;\r\n    padding: 10px 45px;\r\n    margin-top: 15px;\r\n    cursor: pointer;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .profile-wrapper .top-wrapper {\r\n        margin-bottom: -60px;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form .form-group {\r\n        width: 100%;\r\n        margin-left: 0%;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        margin-top: 80%;\r\n    }\r\n    .profile-wrapper form .button-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form input[type=\"submit\"] {\r\n        margin-right: 0px;\r\n    }\r\n}\r\n/* syllabus */\r\n.user-syllabus {\r\n    background: #f2f0f0;\r\n    padding: 60px;\r\n    min-height: calc(100vh - 60px);\r\n}\r\n.user-syllabus .title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #2ed485;\r\n    font-weight: bold;\r\n}\r\n.user-syllabus h2 {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    background: linear-gradient(119deg, #2ad181, #3bdf96);\r\n    text-align: center;\r\n    -webkit-filter: drop-shadow(0px -4px 0px #32d88b);\r\n            filter: drop-shadow(0px -4px 0px #32d88b);\r\n    padding: 12px;\r\n    border-bottom-left-radius: 5px;\r\n    border-bottom-right-radius: 5px;\r\n}\r\n.user-syllabus ul {\r\n    list-style: none;\r\n    font-size: 18px;\r\n}\r\n.user-syllabus ul li {\r\n    width: 100%;\r\n}\r\n.user-syllabus ul li span {\r\n    padding-right: 15px;\r\n}\r\n.user-syllabus .subject-wrapper {\r\n    margin-top: 60px;\r\n}\r\n.user-syllabus .subject-list {\r\n    box-shadow: 0px 0px 6px 2px #c9c7c7;\r\n    background: #fff;\r\n}\r\n.user-syllabus .nav-tabs .nav-item.show .nav-link,\r\n.nav-tabs .nav-link.active {\r\n    border: none;\r\n    color: #1fc388;\r\n    border-radius: 0px;\r\n    background: none;\r\n}\r\n.user-syllabus .nav-tabs {\r\n    border: none;\r\n}\r\n.user-syllabus a.nav-link {\r\n    color: #6c6b6b;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .user-syllabus .subject-wrapper {\r\n        margin-top: 30px;\r\n    }\r\n    .user-syllabus .subject-list {\r\n        margin: 15px;\r\n    }\r\n    .user-syllabus {\r\n        padding: 15px;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, "body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: \"Mukta\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    font-family: \"Lato\", sans-serif;\r\n}\r\n.mybtn {\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover {\r\n    background: linear-gradient(45deg, #36ea5f, #00b693);\r\n    color: white;\r\n    text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(180deg, #2ad181, #009d98);\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: all 0.6s ease-in-out;\r\n    transition: all 0.6s ease-in-out;\r\n    padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.userSidenav .sideTab {\r\n    display: inline-block;\r\n    padding-left: 10px;\r\n    visibility: visible;\r\n    opacity: 1;\r\n    -webkit-transition: visibility 0s ease 0s, opacity 0.5s linear 0s;\r\n    transition: visibility 0s ease 0s, opacity 0.5s linear 0s;\r\n}\r\n.userSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.userSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n.userSidenav .profile-container + .title-name {\r\n    height: 50px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav .title-name + .sideTab {\r\n    width: 100%;\r\n}\r\n.userSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.userSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container {\r\n    position: fixed;\r\n    top: 0;\r\n    width: 250px;\r\n    height: 60px;\r\n    overflow: hidden;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n    -webkit-transition: all 0.6s ease-in-out;\r\n    transition: all 0.6s ease-in-out;\r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.userSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.userSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.userSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.userSidenav .download-app .play-store,\r\n.userSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a,\r\n.userSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n    height: 45px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n    color: #000;\r\n}\r\n.userSidenav .active {\r\n    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#f8f8f942), to(#f8f8f9));\r\n    background: linear-gradient(90deg, transparent, #f8f8f942, #f8f8f9);\r\n    color: #ffffff;\r\n}\r\n\r\n.userSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 60px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .userSidenav .company-container .img-container {\r\n        width: 40px;\r\n    }\r\n    .userSidenav {\r\n        width: 0px;\r\n        background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n        background: linear-gradient(180deg, #2ad181, #009d98);\r\n        box-shadow: 3px 1px 5px #d7ddda;\r\n    }\r\n    .userSidenav .company-container {\r\n        position: relative;\r\n        padding: 15px 4px 8px 5px;\r\n        background: #25cb83;\r\n    }\r\n\r\n    .userSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .userSidenav a {\r\n        color: #fff;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .userSidenav .title-name {\r\n        color: #fff;\r\n        text-shadow: 1px 2px 3px #515050;\r\n    }\r\n    .userSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .userSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .userSidenav .footer-nav {\r\n        padding: 8px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .userSidenav .footer-nav a i {\r\n        display: block;\r\n        font-size: 20px;\r\n    }\r\n    .userSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .userSidenav .footer-nav .active {\r\n        color: #0bf183;\r\n    }\r\n    .userSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .userSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .userSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n    -webkit-transition: all 0.6s ease-in-out;\r\n    transition: all 0.6s ease-in-out;\r\n    margin-left: 250px;\r\n}\r\n.navbar {\r\n    height: 60px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 5px #e7e7e8;\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n}\r\n.navbar .invite {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .invite i,\r\n.navbar .logout i {\r\n    padding: 5px;\r\n}\r\n.navbar .invite a {\r\n    margin-right: -95px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #32c24d;\r\n}\r\n.navbar .invite:hover a {\r\n    margin-right: 20px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .logout a {\r\n    margin-right: -50px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #008862;\r\n}\r\n.navbar .logout:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar #view {\r\n    display: none;\r\n}\r\n.navbar #view i,\r\n.navbar #hide i {\r\n    font-size: 36px;\r\n    color: #2ad181;\r\n}\r\n@media (max-width: 756px) {\r\n    .navbar {\r\n        width: 100%;\r\n        height: 60px;\r\n        padding: 0px 15px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .navbar #view {\r\n        display: block;\r\n    }\r\n    .navbar #hide {\r\n        display: none;\r\n    }\r\n    .navbar #view i,\r\n    .navbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content {\r\n    padding: 60px 0px 0px 0px;\r\n    z-index: 0;\r\n}\r\n.main-title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #009d6db3;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    margin-top: 60px;\r\n}\r\n.sub-title {\r\n    font-size: 26px;\r\n    text-align: center;\r\n    margin-top: 30px;\r\n}\r\n.learn-subject {\r\n    padding: 30px 60px;\r\n}\r\n.learn-subject a {\r\n    text-decoration: none;\r\n}\r\n.learn-subject a:hover {\r\n    color: black;\r\n}\r\n.learn-subject .img-container {\r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i {\r\n    color: #31d285;\r\n    font-size: 40px;\r\n}\r\n.learn-subject .subject-container {\r\n    margin: 10px 15px 20px 15px;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 10px 1px #e2e2e4;\r\n}\r\n.learn-subject .subject-container:hover {\r\n    background: linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i {\r\n    color: white;\r\n    -webkit-transform: scale(1.3);\r\n            transform: scale(1.3);\r\n    -webkit-transition: -webkit-transform 0.3s ease-out;\r\n    transition: -webkit-transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title {\r\n    color: white;\r\n}\r\n.learn-subject .subject-container .title {\r\n    text-align: center;\r\n    margin: 5px auto;\r\n    color: #686868;\r\n    font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .main-content {\r\n        padding: 60px 15px 30px 15px;\r\n    }\r\n    .main-title {\r\n        margin-top: 30px;\r\n        font-size: 24px;\r\n    }\r\n    .learn-subject {\r\n        padding: 30px 0px;\r\n    }\r\n\r\n    .learn-subject .img-container {\r\n        padding: 15px;\r\n    }\r\n    .learn-subject .subject-container {\r\n        margin: 0px;\r\n        margin-bottom: 25px;\r\n    }\r\n    .learn-subject .img-container i {\r\n        font-size: 56px;\r\n    }\r\n    .learn-subject .subject-container .title {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject {\r\n    padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper {\r\n    margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 30px;\r\n    color: white;\r\n    border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i {\r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i {\r\n    margin-left: 40%;\r\n    -webkit-transition: margin-left 0.4s linear;\r\n    transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.practise-subject .practise-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n\r\n.practise-report {\r\n    padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next,\r\n.practise-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.practise-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .practise-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .practise-subject {\r\n        padding: 10px;\r\n    }\r\n    .practise-subject .practise-wrapper {\r\n        padding: 8px;\r\n    }\r\n    .practise-subject .practise-wrapper .icon-box {\r\n        height: 55px;\r\n        padding: 12px 15px;\r\n        margin-left: 10px;\r\n    }\r\n}\r\n\r\n/*---------------------test-section--------------*/\r\n\r\n.select-container {\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: end;\r\n            justify-content: flex-end;\r\n    margin: 40px 0px 20px 0px;\r\n}\r\n.select-container select {\r\n    border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option {\r\n    background: #eaf1ea !important;\r\n}\r\n.test {\r\n    box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test .title {\r\n    font-size: 20px;\r\n    text-align: center;\r\n    text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.test .test-wrapper a {\r\n    text-decoration: none;\r\n    color: green;\r\n    z-index: 1;\r\n}\r\n.owl-nav {\r\n    font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.owl-nav button {\r\n    background: #3cc95c !important;\r\n}\r\n.owl-nav button span {\r\n    color: #fff;\r\n    padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px) {\r\n    .test {\r\n        margin: 15px auto;\r\n    }\r\n    .owl-nav {\r\n        margin: 0px 15px;\r\n        z-index: 1;\r\n    }\r\n    .owl-nav {\r\n        top: 15%;\r\n        z-index: 1;\r\n        height: 70px;\r\n    }\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter {\r\n    background: #fff;\r\n}\r\n.subject-navbar {\r\n    padding: 75px 60px 15px 90px;\r\n    position: relative;\r\n\r\n    border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar .back {\r\n    position: absolute;\r\n    top: 30px;\r\n    font-size: 24px;\r\n    left: 30px;\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.subject-navbar .icon-box {\r\n    display: inline-block;\r\n    padding: 15px;\r\n    vertical-align: top;\r\n    background: white;\r\n    box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n    border-radius: 5px;\r\n    color: #25cb83;\r\n    font-size: 36px;\r\n}\r\n.subject-navbar .title-box {\r\n    display: inline-block;\r\n    padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2 {\r\n    line-height: 1;\r\n    margin-top: 5px;\r\n    margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav {\r\n    margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active,\r\n.nav-pills .show > .nav-link {\r\n    background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li {\r\n    padding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a {\r\n    color: #262828;\r\n}\r\n\r\n.subject-content {\r\n    margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper {\r\n    padding: 30px;\r\n\r\n    box-shadow: 0px 2px 3px #c7eadd;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title {\r\n    font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a:hover {\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option {\r\n    text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a {\r\n    display: inline-block;\r\n    padding-right: 30px;\r\n    margin-top: 5px;\r\n    color: #2ad181;\r\n    font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover {\r\n    -webkit-transform: scale(1.2);\r\n            transform: scale(1.2);\r\n    -webkit-transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    color: #009d98;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .subject-navbar .icon-box {\r\n        font-size: 32px;\r\n        padding: 12px;\r\n    }\r\n    .subject-navbar {\r\n        padding: 60px 0 0 0;\r\n        display: inline-block;\r\n    }\r\n    .subject-navbar.d-flex {\r\n        display: inline-block !important;\r\n    }\r\n    .subject-navbar .back {\r\n        left: 15px;\r\n        top: 15px;\r\n    }\r\n    .subject-content {\r\n        margin-bottom: 45px;\r\n    }\r\n    .subject-content .chapter-wrapper {\r\n        padding: 30px 15px;\r\n    }\r\n    .subject-content .chapter-wrapper .option a {\r\n        padding-right: 0px;\r\n        padding-left: 20px;\r\n    }\r\n    .subject-navbar .nav-pills li {\r\n        padding-right: 5px;\r\n    }\r\n    .subject-content .chapter-wrapper .option {\r\n        display: -webkit-inline-box;\r\n        display: inline-flex;\r\n    }\r\n}\r\n/* slideshow */\r\n#flash {\r\n    padding: 45px;\r\n}\r\n#flash .chapter-title {\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n}\r\n#flash .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    #flash {\r\n        padding: 0;\r\n    }\r\n}\r\n.carousel-inner .carousel-box {\r\n    padding: 30px;\r\n    background: #f8f8f9;\r\n    color: #655d5d;\r\n    margin: 0px 5px;\r\n}\r\n.top-content .slick-slider button {\r\n    padding: 34px 0px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n}\r\n.top-content .slick-next:before,\r\n.top-content .slick-prev:before {\r\n    color: white;\r\n}\r\n.top-content .slick-next,\r\n.top-content .slick-prev {\r\n    width: 30px;\r\n    height: auto;\r\n}\r\n.top-content a {\r\n    text-decoration: none;\r\n    color: #655d5d;\r\n}\r\n.top-content .carousel-control-prev {\r\n    left: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n.top-content .carousel-control-next {\r\n    right: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n\r\n/*note viewer page */\r\n/* ------------------- The side note viewer navigation menu -------------------- */\r\n.viewerSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: #4a4a4a;\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: opacity 0.5s linear, width 0.3s linear;\r\n    transition: opacity 0.5s linear, width 0.3s linear;\r\n    padding-bottom: 30px;\r\n}\r\n.viewerSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.viewerSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.viewerSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.viewerSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n\r\n.viewerSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.viewerSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.viewerSidenav .company-container {\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 12px 15px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    background: #4a4a4a;\r\n}\r\n.viewerSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.viewerSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.viewerSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.viewerSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.viewerSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.viewerSidenav .download-app .play-store,\r\n.viewerSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.viewerSidenav .download-app .play-store a,\r\n.viewerSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n#viewer iframe {\r\n    border: none;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.viewerSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #ffffff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n}\r\n.viewerSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.viewerSidenav a:hover {\r\n    color: #000;\r\n}\r\n.viewerSidenav .active {\r\n    background: #fff;\r\n    color: #4a4a4a;\r\n    border-bottom-right-radius: 50px;\r\n    font-weight: bold;\r\n    border-top-right-radius: 50px;\r\n    margin-right: 20px;\r\n    box-shadow: 2px 2px 10px #0d0d0d, -4px -1px 10px #bababa;\r\n}\r\n\r\n.viewerSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.viewerSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.viewerSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .viewerSidenav .company-container .img-container {\r\n        width: 70px;\r\n    }\r\n    .viewerSidenav {\r\n        width: 0px;\r\n        background: #ffffff;\r\n    }\r\n    .viewerSidenav .company-container {\r\n        position: relative;\r\n        padding: 12px 5px 5px 5px;\r\n    }\r\n\r\n    .viewerSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .viewerSidenav a {\r\n        color: #3d3b3b;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .viewerSidenav .title-name {\r\n        color: #32c24d;\r\n        text-shadow: 1px 2px 3px #f4f1f1;\r\n    }\r\n    .viewerSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .viewerSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .viewerSidenav .footer-nav {\r\n        padding: 3px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .viewerSidenav .footer-nav a i {\r\n        display: block;\r\n    }\r\n    .viewerSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .viewerSidenav .footer-nav .active {\r\n        color: green;\r\n    }\r\n    .viewerSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .viewerSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .viewerSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n.main-content.viewer {\r\n    padding-top: 40px;\r\n}\r\n.viewerNavbar {\r\n    height: 40px;\r\n    background: #4a4a4a;\r\n\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n    padding: 8px 16px;\r\n}\r\n\r\n.viewerNavbar .close i {\r\n    padding: 5px;\r\n}\r\n\r\n.viewerNavbar .close {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    border-radius: 5px;\r\n}\r\n.viewerNavbar .close a {\r\n    margin-right: 10px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n.viewerNavbar .close:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.viewerNavbar #view {\r\n    display: none;\r\n}\r\n.viewerNavbar #view i,\r\n.viewerNavbar #hide i {\r\n    font-size: 24px;\r\n    color: #ffffff;\r\n}\r\n@media (max-width: 756px) {\r\n    .viewerNavbar {\r\n        width: 100%;\r\n        height: 40px;\r\n        padding: 8px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .viewerNavbar #view {\r\n        display: block;\r\n    }\r\n    .viewerNavbar #hide {\r\n        display: none;\r\n    }\r\n    .viewerNavbar #view i,\r\n    .viewerNavbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n    .main-content.viewer {\r\n        padding: 40px 0px 0px 0px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/* PractiseSubject */\r\n.practiseSubject {\r\n    padding: 30px 90px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 10px 30px;\r\n    margin-bottom: 10px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a {\r\n    text-decoration: none;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a:hover {\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name {\r\n    font-size: 24px;\r\n    color: black;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name span {\r\n    padding-right: 10px;\r\n    color: green;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress {\r\n    height: 8px;\r\n    width: 80%;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress .progress-bar {\r\n    background: -webkit-gradient(linear, left top, right top, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(90deg, #2ad181, #009d98);\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress-percent {\r\n    display: inline-block;\r\n    padding-left: 15px;\r\n    color: gray;\r\n    font-size: 12px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .level {\r\n    display: inline-block;\r\n    padding-left: 30px;\r\n    font-size: 12px;\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container {\r\n    vertical-align: middle;\r\n    padding-top: 15px;\r\n    text-align: right;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a {\r\n    border-radius: 5px;\r\n    border: 2px solid #fff;\r\n    color: #2ad181;\r\n    padding: 8px;\r\n    display: inline-block;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a:hover {\r\n    background: #2ad181;\r\n    color: white;\r\n    border: 2px solid #fff;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .practiseSubject {\r\n        padding: 30px 0px;\r\n    }\r\n}\r\n/* testsubject page */\r\n.testSubject {\r\n    padding: 30px 90px;\r\n}\r\n.testSubject .testSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 15px 30px;\r\n    margin-bottom: 10px;\r\n    text-align: center;\r\n}\r\n\r\n.testSubject .testSubjectWrapper .title {\r\n    font-size: 36px;\r\n    color: black;\r\n}\r\n.testSubject .testSubjectWrapper .subtitle {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-bottom: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .time {\r\n    color: green;\r\n    margin-bottom: 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 20px;\r\n    color: #019e97;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n    padding: 0px 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n    margin-left: 30px;\r\n    padding: 0px 15px;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n}\r\n.testSubject .testSubjectWrapper .button-container {\r\n    padding: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .button-container a {\r\n    padding: 10px 30px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    box-shadow: inset 3px 3px 7px 1px #e7eeeb;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .testSubject {\r\n        padding: 30px 0px;\r\n    }\r\n    .testSubject .testSubjectWrapper {\r\n        padding: 15px;\r\n    }\r\n    .testSubject .testSubjectWrapper .attempt-container {\r\n        padding: 10px 0px;\r\n    }\r\n}\r\n/* doubts-page */\r\n.doubts-container {\r\n    padding: 60px 90px;\r\n}\r\n.doubts-container .doubts-wrapper {\r\n    background: #32ea9b;\r\n    padding: 15px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box {\r\n    color: white;\r\n    padding-top: 10px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box i {\r\n    padding: 5px;\r\n    font-size: 36px;\r\n}\r\n.doubts-container .doubts-wrapper .title {\r\n    font-size: 16px;\r\n    color: black;\r\n    font-weight: bold;\r\n}\r\n.doubts-container .doubts-wrapper .subtitle {\r\n    font-size: 14px;\r\n    color: #fff;\r\n}\r\n.doubts-container .doubts-wrapper .button-container {\r\n    margin-top: 25px;\r\n    text-align: right;\r\n}\r\n.doubts-container .doubts-wrapper .button-container a {\r\n    padding: 10px 45px;\r\n    font-size: 16px;\r\n    border-radius: 25px;\r\n    font-weight: bold;\r\n    color: white;\r\n    box-shadow: 0px 0px 10px 2px #02a097;\r\n}\r\n#doubts {\r\n    padding: 0px 60px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    padding-top: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n#doubts .subject-wrapper {\r\n    box-shadow: 0px 0px 5px 1px #d7d5d5;\r\n    padding: 8px 30px;\r\n    background: white;\r\n    margin-bottom: 20px;\r\n    border-radius: 5px;\r\n}\r\n#doubts .subject-wrapper i {\r\n    padding: 10px;\r\n    color: #25cb83;\r\n    border-radius: 50%;\r\n    display: inline-block;\r\n    margin-right: 15px;\r\n    font-size: 18px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .subject-wrapper .subject-name {\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    color: black;\r\n    display: inline-block;\r\n}\r\n.doubts-container .modal-body {\r\n    background: #f0f0f0;\r\n}\r\n.doubts-container .modal-body .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .modal-body .img-container {\r\n    max-width: 200px;\r\n    max-height: 200px;\r\n    overflow: hidden;\r\n    margin: 0 auto;\r\n    padding: 5px;\r\n    border: 2px dashed #fff;\r\n}\r\n.doubts-container .modal-body input[type=\"file\"] {\r\n    margin-top: 40%;\r\n}\r\n.doubts-container .modal-body label {\r\n    margin-top: 30px;\r\n}\r\n.doubts-container .modal-body textarea {\r\n    width: 100%;\r\n    min-height: 100px;\r\n}\r\n.doubts-container .modal-body .btn-container {\r\n    text-align: right;\r\n}\r\n\r\n.doubts-container .modal-body .submitBtn {\r\n    padding: 8px 30px;\r\n    background: #11bc79;\r\n    color: white;\r\n    border: none;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.doubts-container .questionary-container {\r\n    margin: 30px auto;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper {\r\n    border-bottom: 1px dashed #dddddd;\r\n    padding: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body {\r\n    text-align: center;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body img {\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question {\r\n    font-size: 18px;\r\n    color: #000;\r\n    margin-bottom: 15px;\r\n    margin-top: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question .badge {\r\n    background: #1dc188;\r\n    padding: 5px;\r\n    color: white;\r\n    margin-left: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .answer {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-left: 30px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .updated-time {\r\n    font-size: 14px;\r\n    color: gray;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .doubts-container {\r\n        padding: 30px 0px;\r\n    }\r\n    .doubts-container .doubts-wrapper .button-container {\r\n        margin-top: 25px;\r\n        margin-bottom: 15px;\r\n        text-align: center;\r\n    }\r\n    .doubts-container\r\n        .questionary-container\r\n        .questionary-wrapper\r\n        .updated-time {\r\n        padding-top: 15px;\r\n    }\r\n}\r\n\r\n/* profile-page */\r\n.profile-wrapper {\r\n    background: #f2f0f0;\r\n}\r\n.profile-wrapper .top-wrapper {\r\n    padding: 60px;\r\n    position: relative;\r\n\r\n    margin-bottom: 60px;\r\n}\r\n.profile-wrapper .top-wrapper .profile-pic {\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n    position: absolute;\r\n    right: 45%;\r\n    top: 30px;\r\n    -webkit-transform: translateX(60px);\r\n            transform: translateX(60px);\r\n    box-shadow: 1px 1px 15px white;\r\n}\r\n.profile-wrapper .top-wrapper .text-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name {\r\n    font-size: 20px;\r\n    color: #21c686;\r\n    font-weight: bold;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name i {\r\n    color: #20c586;\r\n    padding-right: 5px;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .number {\r\n    font-size: 14px;\r\n    color: grey;\r\n}\r\n.profile-wrapper .personal-details,\r\n.profile-wrapper .account-details {\r\n    padding: 30px;\r\n}\r\n.profile-wrapper .title {\r\n    font-size: 24px;\r\n    color: #1ec387;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    margin-bottom: 15px;\r\n}\r\n.profile-wrapper form .form-group {\r\n    width: 45%;\r\n    margin-left: 30px;\r\n    display: inline-block;\r\n}\r\n.profile-wrapper form .form-group .form-control {\r\n    border: none !important;\r\n    box-shadow: inset 1px 2px 5px #9e9b9b;\r\n}\r\n.profile-wrapper form .button-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper form input[type=\"submit\"] {\r\n    background: #1bbe89;\r\n    color: white;\r\n    margin-right: 45px;\r\n    border: none;\r\n    border-radius: 50px;\r\n    padding: 10px 45px;\r\n    margin-top: 15px;\r\n    cursor: pointer;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .profile-wrapper .top-wrapper {\r\n        margin-bottom: -60px;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form .form-group {\r\n        width: 100%;\r\n        margin-left: 0%;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        margin-top: 80%;\r\n    }\r\n    .profile-wrapper form .button-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form input[type=\"submit\"] {\r\n        margin-right: 0px;\r\n    }\r\n}\r\n/* syllabus */\r\n.user-syllabus {\r\n    background: #f2f0f0;\r\n    padding: 60px;\r\n    min-height: calc(100vh - 60px);\r\n}\r\n.user-syllabus .title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #2ed485;\r\n    font-weight: bold;\r\n}\r\n.user-syllabus h2 {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    background: linear-gradient(119deg, #2ad181, #3bdf96);\r\n    text-align: center;\r\n    -webkit-filter: drop-shadow(0px -4px 0px #32d88b);\r\n            filter: drop-shadow(0px -4px 0px #32d88b);\r\n    padding: 12px;\r\n    border-bottom-left-radius: 5px;\r\n    border-bottom-right-radius: 5px;\r\n}\r\n.user-syllabus ul {\r\n    list-style: none;\r\n    font-size: 18px;\r\n}\r\n.user-syllabus ul li {\r\n    width: 100%;\r\n}\r\n.user-syllabus ul li span {\r\n    padding-right: 15px;\r\n}\r\n.user-syllabus .subject-wrapper {\r\n    margin-top: 60px;\r\n}\r\n.user-syllabus .subject-list {\r\n    box-shadow: 0px 0px 6px 2px #c9c7c7;\r\n    background: #fff;\r\n}\r\n.user-syllabus .nav-tabs .nav-item.show .nav-link,\r\n.nav-tabs .nav-link.active {\r\n    border: none;\r\n    color: #1fc388;\r\n    border-radius: 0px;\r\n    background: none;\r\n}\r\n.user-syllabus .nav-tabs {\r\n    border: none;\r\n}\r\n.user-syllabus a.nav-link {\r\n    color: #6c6b6b;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .user-syllabus .subject-wrapper {\r\n        margin-top: 30px;\r\n    }\r\n    .user-syllabus .subject-list {\r\n        margin: 15px;\r\n    }\r\n    .user-syllabus {\r\n        padding: 15px;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -82023,6 +82023,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ResetPassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ResetPassword */ "./resources/js/Components/Register/ResetPassword.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -82036,9 +82044,17 @@ var OTPModal = function OTPModal(_ref) {
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors; // const [OTPresponse, setOTPResponse] = useState("");
-  // const [closeOTP, setOTP] = useState(true)
+      errors = _useForm.errors;
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      error = _useState2[0],
+      setError = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      responseError = _useState4[0],
+      setResponseError = _useState4[1];
 
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
 
@@ -82056,12 +82072,16 @@ var OTPModal = function OTPModal(_ref) {
             detail: response.data
           }
         });
+      } else {
+        setResponseError(response.data.message);
       }
+    }).catch(function (error) {
+      setError(error);
     });
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal join fade",
+    className: "modal join ",
     id: "otp"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-dialog"
@@ -82097,7 +82117,12 @@ var OTPModal = function OTPModal(_ref) {
     name: "user_id",
     value: RegisterResponse.user_id,
     ref: register
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), responseError && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      color: 'Red',
+      textAlign: 'center'
+    }
+  }, "*The OTP provided does not match"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
@@ -82144,9 +82169,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Password(_ref) {
   var user_id = _ref.user_id,
       history = _ref.history;
-  console.log(history);
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
       isLogged = _useState2[0],
       setisLogged = _useState2[1];
@@ -82159,9 +82183,9 @@ function Password(_ref) {
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors;
+      errors = _useForm.errors,
+      watch = _useForm.watch; //  let history = useHistory();
 
-  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])()); //  let history = useHistory();
 
   var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
       StorageToken = _useAuth.StorageToken,
@@ -82173,30 +82197,28 @@ function Password(_ref) {
       url: 'http://noname.hellonep.com/api/savepassword',
       data: data
     }).then(function (response) {
-      console.log(response);
-
+      // console.log(response.data.auth_token)
       if (response.data.status === "success") {
         StorageToken({
           name: response.data.name,
-          token: response.data.auth_token,
-          user_id: response.data.user_id
+          user_id: response.data.user_id,
+          class_id: response.data.class_id,
+          token: response.data.auth_token
         });
+        setisLogged(true);
       }
-
-      setisLogged(true);
     }).catch(function (e) {
       setErr(true);
     });
   };
 
-  console.log(Authtoken);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (Authtoken != false && Authtoken != null) {
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Redirect"], {
-        to: "/learn"
+    if (isLogged) {
+      history.push({
+        pathname: "/class-select"
       });
     }
-  }, [Authtoken]);
+  }, [Authtoken, isLogged]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "resetPassword-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -82221,12 +82243,27 @@ function Password(_ref) {
     name: "password",
     type: "password",
     ref: register
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "form-control",
+    name: "confirm_password",
+    type: "password",
+    ref: register({
+      validate: function validate(value) {
+        return value === watch('password');
+      }
+    })
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "hidden",
     name: "user_id",
     value: user_id,
     ref: register
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), errors.confirm_password && errors.confirm_password.type === "validate" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    style: {
+      color: 'Red'
+    }
+  }, "Password Don't Match"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
@@ -82276,12 +82313,13 @@ function RegisterModal() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       _useState2 = _slicedToArray(_useState, 2),
       RegisterResponse = _useState2[0],
-      setResponse = _useState2[1];
+      setResponse = _useState2[1]; // const [catchResponse, setcatchResponse] = useState("");
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
       _useState4 = _slicedToArray(_useState3, 2),
-      catchResponse = _useState4[0],
-      setcatchResponse = _useState4[1];
+      OTPController = _useState4[0],
+      setOTPController = _useState4[1];
 
   var onSubmit = function onSubmit(data) {
     axios({
@@ -82289,17 +82327,17 @@ function RegisterModal() {
       url: 'http://noname.hellonep.com/api/register',
       data: data
     }).then(function (response) {
-      setResponse(response.data);
-      console.log(RegisterResponse);
-      setcatchResponse(true);
+      console.log(response);
+
+      if (response.data.status === "success") {
+        setResponse(response.data);
+        console.log(RegisterResponse);
+        $("#join").modal('hide');
+        $("#otp").modal('show');
+      }
     });
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (catchResponse) {
-      $("#join").modal('hide');
-    }
-  }, [catchResponse]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal join fade",
     id: "join"
@@ -82389,7 +82427,6 @@ function RegisterModal() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
     "data-toggle": "modal",
-    "data-target": "#otp",
     type: "submit"
   }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "",
@@ -82623,7 +82660,6 @@ function Bookmark() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dashboard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/userStyle.css */ "./resources/js/Dashboard/assets/css/userStyle.css");
@@ -82688,22 +82724,32 @@ var routes = [{
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_PageNotFound__WEBPACK_IMPORTED_MODULE_8__["default"], null);
   }
 }];
-function Dashboard() {
+
+var Dashboard = function Dashboard() {
+  // console.log(SubjectResponse)
   function closeNav() {
     function myFunction(x) {
+      var userSideNav = document.getElementById("userSideNav");
+      var main = document.getElementById("main");
+
       if (x.matches) {
-        document.getElementById("userSideNav").style.width = "0";
+        userSideNav.style.width = "0";
       } else {
-        document.getElementById("userSideNav").style.width = "80px";
-        document.getElementById("main").style.marginLeft = "80px";
+        userSideNav.style.width = "80px";
+        userSideNav.style.left = "-170px";
+        userSideNav.style.marginLeft = "170px";
+        document.querySelectorAll(".title-name")[1].style.height = "0";
+        main.style.marginLeft = "80px";
         document.getElementById("view").style.display = "block";
-        document.getElementsByClassName('company-container')[0].style.width = "80px";
-        document.getElementsByClassName('navbar')[0].style.width = "calc(100% - 80px)";
+        document.getElementsByClassName("company-container")[0].style.width = "80px";
+        document.getElementsByClassName("navbar")[0].style.width = "calc(100% - 80px)";
         document.getElementById("hide").style.display = "none";
-        var elems = document.getElementsByClassName('sideTab');
+        var elems = document.getElementsByClassName("sideTab");
 
         for (var i = 0; i < elems.length; i++) {
-          elems[i].style.display = 'none';
+          // elems[i].style.display = "none";
+          elems[i].style.visibility = "hidden";
+          elems[i].style.opacity = "0";
         }
       }
     }
@@ -82716,23 +82762,32 @@ function Dashboard() {
 
   function openNav() {
     function myFunction(x) {
+      var userSideNav = document.getElementById("userSideNav");
+      var main = document.getElementById("main");
+
       if (x.matches) {
-        document.getElementById("userSideNav").style.width = "240px";
-        document.getElementById("main").style.marginLeft = "0px";
+        userSideNav.style.width = "240px";
+        main.style.marginLeft = "0px";
       } else {
-        document.getElementById("userSideNav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        userSideNav.style.left = "0px";
+        userSideNav.style.width = "250px";
+        userSideNav.style.marginLeft = "0px";
+        document.querySelectorAll(".title-name")[1].style.height = "50px";
+        main.style.marginLeft = "250px";
         document.getElementById("view").style.display = "none";
-        document.getElementsByClassName('navbar')[0].style.width = "calc(100% - 250px)";
-        document.getElementsByClassName('company-container')[0].style.width = "250px";
+        document.getElementsByClassName("navbar")[0].style.width = "calc(100% - 250px)";
+        document.getElementsByClassName("company-container")[0].style.width = "250px";
         document.getElementById("hide").style.display = "block";
-        var elems = document.getElementsByClassName('sideTab');
+        var elems = document.getElementsByClassName("sideTab"); // document.getElementsByClassName("title-name")[1].style.display =
+        //     "block";
 
-        for (var i = 0; i < elems.length; i++) {
-          elems[i].style.display = 'inline-block';
-        }
-
-        document.getElementsByClassName('title-name')[1].style.display = "block";
+        setTimeout(function () {
+          for (var i = 0; i < elems.length; i++) {
+            // elems[i].style.display = "inline-block";
+            elems[i].style.opacity = "1";
+            elems[i].style.visibility = "visible";
+          }
+        }, 350);
       }
     }
 
@@ -82749,8 +82804,7 @@ function Dashboard() {
 
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useRouteMatch"])(),
       path = _useRouteMatch.path,
-      url = _useRouteMatch.url; // const Apple = useRouting();
-
+      url = _useRouteMatch.url;
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "userSideNav",
@@ -82837,8 +82891,8 @@ function Dashboard() {
     className: "fa fa-user"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
+  }, " Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+    to: "/quiz"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-folder-open"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -82954,7 +83008,9 @@ function Dashboard() {
       children: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(route.main, null)
     });
   })))));
-}
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Dashboard);
 
 /***/ }),
 
@@ -83606,14 +83662,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _PractiseChapter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PractiseChapter */ "./resources/js/Dashboard/Practise/PractiseChapter.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
 function Practise() {
+  var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_4__["useAuth"])(),
+      Authtoken = _useAuth.Authtoken;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      PractiseResponse = _useState2[0],
+      setPractiseResponse = _useState2[1];
+
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
 
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://noname.hellonep.com/api/subjects/' + Authtoken.class_id).then(function (response) {
+      setPractiseResponse(response.data.subjects);
+    });
+  }, []);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: path
@@ -83623,135 +83705,42 @@ function Practise() {
     className: "practise-subject"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practise-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon-box",
-    style: {
-      backgroundColor: '#ffed6a'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-atom"
+  }, PractiseResponse.map(function (practise, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-3 col-lg-3 col-12",
+      key: index
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "practise-wrapper"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: "".concat(url, "/") + practise.slug
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-3 col-3"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "icon-box",
+      style: {
+        backgroundColor: '#ffed6a'
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-atom"
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-9 col-9"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "subject-name"
+    }, practise.name, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-caret-right"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-bar",
+      style: {
+        width: '70%'
+      }
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-percent"
+    }, "70%"))))));
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-9 col-9"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-name"
-  }, "Physics ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-caret-right"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practise-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon-box",
-    style: {
-      backgroundColor: '#ff8282'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-flask"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-9 col-9"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-name"
-  }, "Chemistry ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-caret-right"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practise-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon-box",
-    style: {
-      backgroundColor: '#6c97f9'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-dna"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-9 col-9"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-name"
-  }, "Biology ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-caret-right"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practise-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon-box",
-    style: {
-      backgroundColor: '#8af966'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-calculator"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-9 col-9"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-name"
-  }, "Maths ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-caret-right"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-title"
   }, "Your practise Report"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "practise-report"
@@ -83891,7 +83880,7 @@ function Practise() {
       color: 'red'
     }
   }))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "".concat(path, "/physics")
+    path: "".concat(path, "/:subjectId")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PractiseChapter__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 }
 
@@ -83910,13 +83899,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 function PractiseSubject() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
-      path = _useRouteMatch.path,
-      url = _useRouteMatch.url;
+      url = _useRouteMatch.url,
+      params = _useRouteMatch.params;
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      PractiseChapter = _useState2[0],
+      setPractiseChapter = _useState2[1]; //    console.log(params)
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios({
+      method: 'get',
+      url: 'http://noname.hellonep.com/api/chapters/' + params.subjectId
+    }).then(function (response) {
+      setPractiseChapter(response.data.chapters);
+    });
+  }, []);
   var History = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
@@ -83925,98 +83936,45 @@ function PractiseSubject() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     onClick: History.goBack,
     className: "back"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-arrow-left"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "top-subject-navbar"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-atom"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Physics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Maths"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "chapter-number"
   }, "10 Chapters")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "practiseSubject"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practiseSubjectWrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-name"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "1"), " Measurement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "level"
-  }, "Level ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 1/10"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/quiz/measurement"
-  }, "Take a Test"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practiseSubjectWrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-name"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2"), " Force"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "level"
-  }, "Level ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 1/10"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: '/quiz/physics'
-  }, "Take a Test"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "practiseSubjectWrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-name"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "3"), " Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: '70%'
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "level"
-  }, "Level ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 1/10")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, "Take a Test"))))))));
+  }, PractiseChapter.map(function (practise, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "practiseSubjectWrapper",
+      key: index
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "chapter-name"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "1"), " ", practise.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-bar",
+      style: {
+        width: '70%'
+      }
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-percent"
+    }, "70%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "level"
+    }, "Level ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 1/10"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "button-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: "/quiz/measurement"
+    }, "Take a Test")))));
+  }))));
 }
 
 /***/ }),
@@ -84036,12 +83994,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
 
 
 var ClassSelect = function ClassSelect() {
+  var token = localStorage.getItem('tokens');
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
+
+  var handleClassSubmit = function handleClassSubmit(data) {
+    axios__WEBPACK_IMPORTED_MODULE_4___default()({
+      method: 'post',
+      url: 'http://noname.hellonep.com/api/store/class',
+      data: {
+        class_id: data,
+        user_id: JSON.parse(token).user_id,
+        auth_token: JSON.parse(token).token
+      }
+    }).then(function (res) {
+      if (res.data.status === "success") {
+        var localstor = JSON.parse(localStorage.getItem('tokens'));
+        localstor.class_id = data;
+        localStorage.setItem('tokens', JSON.stringify(localstor));
+        history.push({
+          pathname: '/learn'
+        });
+      }
+    });
+  };
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      classResponse = _useState2[0],
+      setClassResponse = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get('http://noname.hellonep.com/api/classes').then(function (response) {
+      setClassResponse(response.data);
+    });
+  }, []);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "setting-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84058,7 +84061,14 @@ var ClassSelect = function ClassSelect() {
     className: "col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "class"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Enroll in Class:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "10"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "+2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "IOM"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "BBA"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "CA")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Enroll in Class:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, classResponse.map(function (myClass, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: index,
+      onClick: function onClick() {
+        return handleClassSubmit(myClass.id);
+      }
+    }, " ", myClass.name, " ");
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "preparation"
@@ -85008,103 +85018,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Note = function Note() {
+var Note = function Note(props) {
+  console.log(props.chapterResponse);
   return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tab-pane active",
     id: "note"
   }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-content"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-wrapper d-flex justify-content-between"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-title"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "01"), "Measurement"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-download"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/viewer"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-eye"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bookmark"
-  })))), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-wrapper d-flex justify-content-between"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-title"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "02"), "Force"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-download"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-eye"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bookmark"
-  })))), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-wrapper d-flex justify-content-between"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-title"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "03"), "Power"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-download"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-eye"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bookmark"
-  })))), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-wrapper d-flex justify-content-between"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-title"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "04"), "Heat"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-download"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-eye"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bookmark"
-  })))), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-wrapper d-flex justify-content-between"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chapter-title"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "05"), "Work"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-download"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-eye"
-  })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-bookmark"
-  }))))));
+  }, props.chapterResponse.map(function (chapter, index) {
+    return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "chapter-wrapper d-flex justify-content-between"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "chapter-title"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, index + 1), chapter.name), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "option"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-download"
+    })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/viewer"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-eye"
+    })), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#"
+    }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-bookmark"
+    }))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Note);
@@ -85226,9 +85167,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Subject_LearnSubject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Subject/LearnSubject */ "./resources/js/Dashboard/Subject/LearnSubject.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var _pages_PageNotFound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/PageNotFound */ "./resources/js/pages/PageNotFound.js");
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/css/userStyle.css */ "./resources/js/Dashboard/assets/css/userStyle.css");
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
- // import Dashboard from '../Dashboard';
+
+
+
+
+
 
 function Learn() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
@@ -85238,6 +85196,27 @@ function Learn() {
   var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
       subjectId = _useParams.subjectId;
 
+  var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_4__["useAuth"])(),
+      Authtoken = _useAuth.Authtoken;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      SubjectResponse = _useState2[0],
+      setSubjectResponse = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      loading = _useState4[0],
+      setLoading = _useState4[1]; // const fetch = async() => {
+  // await 
+  // }
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://noname.hellonep.com/api/subjects/' + Authtoken.class_id).then(function (response) {
+      setSubjectResponse(response.data.subjects);
+    }).then(setLoading(false));
+  }, []);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: path
@@ -85245,129 +85224,24 @@ function Learn() {
     className: "main-title"
   }, "What do you want to learn today?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container learn-subject"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, SubjectResponse.length === 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Loading...") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-atom"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Physics")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/chemistry")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-flask"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Chemistry")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-dna"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Biology")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-calculator"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Maths")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-book"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "English")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-users"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Social")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-mountain"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Nepali")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-laptop"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Computer")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-file-invoice"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "Account")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3 col-lg-3 col-6"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subject-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "img-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-pagelines"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "title"
-  }, "EPH"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, SubjectResponse.map(function (subject, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-3 col-lg-3 col-6"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: "".concat(url, "/") + subject.slug
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "subject-container",
+      key: index
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "img-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-atom"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "title"
+    }, subject.name))));
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "".concat(path, "/:subjectId")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Subject_LearnSubject__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 }
@@ -85390,12 +85264,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Component_Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Component/Note */ "./resources/js/Dashboard/Subject/Component/Note.js");
 /* harmony import */ var _Component_FlashCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Component/FlashCards */ "./resources/js/Dashboard/Subject/Component/FlashCards.js");
 /* harmony import */ var _Component_PastQuestions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Component/PastQuestions */ "./resources/js/Dashboard/Subject/Component/PastQuestions.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
 
 
 function LearnSubject() {
+  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
+      url = _useRouteMatch.url,
+      params = _useRouteMatch.params;
+
+  console.log(url);
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      chapter = _useState2[0],
+      setChapterResponse = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios({
+      method: 'get',
+      url: 'http://noname.hellonep.com/api/chapters/' + params.subjectId
+    }).then(function (response) {
+      setChapterResponse(response.data.chapters);
+    });
+  }, []);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85437,7 +85338,9 @@ function LearnSubject() {
     href: "#past-question"
   }, "Question Set")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tab-content"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_Note__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_FlashCards__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_PastQuestions__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_Note__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    chapterResponse: chapter
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_FlashCards__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Component_PastQuestions__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
 }
 
 /***/ }),
@@ -87260,6 +87163,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ResetPassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ResetPassword */ "./resources/js/components/Register/ResetPassword.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -87273,9 +87184,17 @@ var OTPModal = function OTPModal(_ref) {
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors; // const [OTPresponse, setOTPResponse] = useState("");
-  // const [closeOTP, setOTP] = useState(true)
+      errors = _useForm.errors;
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      error = _useState2[0],
+      setError = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      responseError = _useState4[0],
+      setResponseError = _useState4[1];
 
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
 
@@ -87293,12 +87212,16 @@ var OTPModal = function OTPModal(_ref) {
             detail: response.data
           }
         });
+      } else {
+        setResponseError(response.data.message);
       }
+    }).catch(function (error) {
+      setError(error);
     });
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "modal join fade",
+    className: "modal join ",
     id: "otp"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-dialog"
@@ -87334,7 +87257,12 @@ var OTPModal = function OTPModal(_ref) {
     name: "user_id",
     value: RegisterResponse.user_id,
     ref: register
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), responseError && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      color: 'Red',
+      textAlign: 'center'
+    }
+  }, "*The OTP provided does not match"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
@@ -87381,9 +87309,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Password(_ref) {
   var user_id = _ref.user_id,
       history = _ref.history;
-  console.log(history);
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
       isLogged = _useState2[0],
       setisLogged = _useState2[1];
@@ -87396,9 +87323,9 @@ function Password(_ref) {
   var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
       register = _useForm.register,
       handleSubmit = _useForm.handleSubmit,
-      errors = _useForm.errors;
+      errors = _useForm.errors,
+      watch = _useForm.watch; //  let history = useHistory();
 
-  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])()); //  let history = useHistory();
 
   var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
       StorageToken = _useAuth.StorageToken,
@@ -87410,30 +87337,28 @@ function Password(_ref) {
       url: 'http://noname.hellonep.com/api/savepassword',
       data: data
     }).then(function (response) {
-      console.log(response);
-
+      // console.log(response.data.auth_token)
       if (response.data.status === "success") {
         StorageToken({
           name: response.data.name,
-          token: response.data.auth_token,
-          user_id: response.data.user_id
+          user_id: response.data.user_id,
+          class_id: response.data.class_id,
+          token: response.data.auth_token
         });
+        setisLogged(true);
       }
-
-      setisLogged(true);
     }).catch(function (e) {
       setErr(true);
     });
   };
 
-  console.log(Authtoken);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (Authtoken != false && Authtoken != null) {
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Redirect"], {
-        to: "/learn"
+    if (isLogged) {
+      history.push({
+        pathname: "/class-select"
       });
     }
-  }, [Authtoken]);
+  }, [Authtoken, isLogged]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "resetPassword-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87458,12 +87383,27 @@ function Password(_ref) {
     name: "password",
     type: "password",
     ref: register
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "form-control",
+    name: "confirm_password",
+    type: "password",
+    ref: register({
+      validate: function validate(value) {
+        return value === watch('password');
+      }
+    })
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "hidden",
     name: "user_id",
     value: user_id,
     ref: register
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), errors.confirm_password && errors.confirm_password.type === "validate" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    style: {
+      color: 'Red'
+    }
+  }, "Password Don't Match"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
@@ -87513,12 +87453,13 @@ function RegisterModal() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       _useState2 = _slicedToArray(_useState, 2),
       RegisterResponse = _useState2[0],
-      setResponse = _useState2[1];
+      setResponse = _useState2[1]; // const [catchResponse, setcatchResponse] = useState("");
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
       _useState4 = _slicedToArray(_useState3, 2),
-      catchResponse = _useState4[0],
-      setcatchResponse = _useState4[1];
+      OTPController = _useState4[0],
+      setOTPController = _useState4[1];
 
   var onSubmit = function onSubmit(data) {
     axios({
@@ -87526,17 +87467,17 @@ function RegisterModal() {
       url: 'http://noname.hellonep.com/api/register',
       data: data
     }).then(function (response) {
-      setResponse(response.data);
-      console.log(RegisterResponse);
-      setcatchResponse(true);
+      console.log(response);
+
+      if (response.data.status === "success") {
+        setResponse(response.data);
+        console.log(RegisterResponse);
+        $("#join").modal('hide');
+        $("#otp").modal('show');
+      }
     });
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (catchResponse) {
-      $("#join").modal('hide');
-    }
-  }, [catchResponse]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal join fade",
     id: "join"
@@ -87626,7 +87567,6 @@ function RegisterModal() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success",
     "data-toggle": "modal",
-    "data-target": "#otp",
     type: "submit"
   }, "Join Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "",
@@ -87860,17 +87800,17 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function Index() {
-  var token = localStorage.getItem('tokens');
+  var Tokens = function Tokens(data) {
+    localStorage.setItem('tokens', JSON.stringify(data)); // setAuthtokens(token)
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(token ? JSON.parse(token) : false),
+    var token = JSON.parse(localStorage.getItem('tokens'));
+    setAuthtokens(token);
+  };
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Tokens.tokens ? Tokens.tokens : localStorage.getItem('tokens') ? JSON.parse(localStorage.getItem('tokens')) : false),
       _useState2 = _slicedToArray(_useState, 2),
       Authtoken = _useState2[0],
       setAuthtokens = _useState2[1];
-
-  var Tokens = function Tokens(data) {
-    localStorage.setItem('tokens', JSON.stringify(data));
-    setAuthtokens(token);
-  };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Context_Auth__WEBPACK_IMPORTED_MODULE_6__["AuthContext"].Provider, {
     value: {
@@ -87982,12 +87922,9 @@ var PrivateRoute = function PrivateRoute(_ref) {
   var children = _ref.children,
       rest = _objectWithoutProperties(_ref, ["children"]);
 
-  console.log(Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])());
-
   var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
       Authtoken = _useAuth.Authtoken;
 
-  console.log();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], _extends({}, rest, {
     render: function render(_ref2) {
       var location = _ref2.location;
@@ -88006,6 +87943,21 @@ var PrivateRoute = function PrivateRoute(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PrivateRoute);
+{
+  /* (Authtoken ? (Authtoken.class_id  == null ? 
+             <Switch>
+                 <Redirect to='/class-select '/>
+             </Switch>: 
+             <Route path="/" component={Homepage} />
+         ) : 
+         (Authtoken.class_id != null ? 
+         <Switch>
+         {children} 
+         </Switch>
+         :
+         <Route path="/" component={Homepage} />)
+         ) */
+}
 
 /***/ }),
 

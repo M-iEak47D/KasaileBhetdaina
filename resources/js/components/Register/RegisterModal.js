@@ -8,7 +8,8 @@ import OTPModal from "./OTPModal";
 export default function RegisterModal() {
     const { register, handleSubmit, errors } = useForm();
     const [RegisterResponse, setResponse] = useState("");
-    const [catchResponse, setcatchResponse] = useState("");
+    // const [catchResponse, setcatchResponse] = useState("");
+    const [OTPController, setOTPController] = useState();
     
       const onSubmit = (data) => {
         axios({
@@ -18,18 +19,18 @@ export default function RegisterModal() {
 
         }).then(
         response => {
+            console.log(response)
+                if(response.data.status === "success"){   
                 setResponse(response.data);
                 console.log(RegisterResponse);
-                setcatchResponse(true);
+                $("#join").modal('hide');
+                $("#otp").modal('show')
+                }
             }
         )
     }
     
-    useEffect(() => {
-        if(catchResponse) {
-            $("#join").modal('hide');
-        }
-    }, [catchResponse])
+    
 
     return (
         <React.Fragment>    
@@ -90,7 +91,7 @@ export default function RegisterModal() {
                                 </div>
                             </div> */}
                             <div className="button-container" >
-                                <button className="btn btn-success" data-toggle="modal" data-target="#otp" type="submit" >Join Now</button>
+                                <button className="btn btn-success" data-toggle="modal"  type="submit" >Join Now</button>
                                 <br />
                                 <a href="" data-dismiss="modal" data-toggle="modal" data-target="#login">I ALREADY HAVE ACCOUNT</a>
                             </div>

@@ -6,11 +6,9 @@ import { Redirect, useHistory } from 'react-router-dom';
 
 
  export default function Password({user_id, history}){
-     console.log(history);
-     const [isLogged, setisLogged] = useState()
+     const [isLogged, setisLogged] = useState(false)
      const [Err, setErr] = useState()
-     const {register, handleSubmit, errors} = useForm()
-     console.log(useAuth())
+     const {register, handleSubmit, errors, watch} = useForm()
 
     //  let history = useHistory();
      const {StorageToken, Authtoken} = useAuth()
@@ -22,28 +20,29 @@ import { Redirect, useHistory } from 'react-router-dom';
             data: data
         }).then(
             response =>{
-                console.log(response)
+                // console.log(response.data.auth_token)
                 if(response.data.status === "success"){
-                        StorageToken({
+                         StorageToken({
                             name: response.data.name,
+                            user_id: response.data.user_id,
+                            class_id: response.data.class_id,
                             token: response.data.auth_token,
-                            user_id: response.data.user_id
+
                         })
+                        setisLogged(true) 
                     }
-                    setisLogged(true) 
             }).catch(e =>{
                 setErr(true)
             });
      }
-     console.log(Authtoken)
 
       useEffect(() => {
-        
-         if(Authtoken != false && Authtoken !=null){
-                <Redirect to="/learn" />
-            }
-        
-     }, [Authtoken])
+        if(isLogged){
+            history.push({
+                pathname: "/class-select"
+            })
+        }
+     }, [Authtoken, isLogged])
 
     return(
          <div className="resetPassword-wrapper">
@@ -65,11 +64,16 @@ import { Redirect, useHistory } from 'react-router-dom';
                                            <label>New Password</label>
                                            <input className="form-control" name="password" type="password" ref={register} />
                                        </div>
-                                       {/* <div className="form-group">
+                                       <div className="form-group">
                                            <label>Confirm Password</label>
-                                           <input className="form-control" name="confirm_password" type="password" ref={register} />
-                                       </div> */}
+                                           <input className="form-control" name="confirm_password" type="password" ref={register({
+                                               validate: (value) => value === watch('password')
+                                           })} />
+                                       </div>
                                             <input type="hidden" name="user_id" value={user_id} ref={register} />
+                                        {errors.confirm_password && errors.confirm_password.type === "validate" &&
+                                        <span style={{color: 'Red'}}>Password Don't Match</span>
+                                        }
                                        <div className="button-container">
                                        <button className="btn btn-success" type="submit">
                                             Add Password

@@ -1,23 +1,58 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
-import {Switch, Route, Redirect} from "react-router-dom";
+import {Switch, Route, Redirect, useHistory} from "react-router-dom";
 import { useAuth } from "../../Context/Auth";
+import axios from "axios";
 
 const ClassSelect = () => {
-  
+    const token = localStorage.getItem('tokens')
+    let history = useHistory();
+
+    const handleClassSubmit = (data) => {
+        axios({
+            method: 'post',
+            url: 'http://noname.hellonep.com/api/store/class',
+            data: {
+               class_id: data,
+               user_id: JSON.parse(token).user_id,
+               auth_token: JSON.parse(token).token,
+            }
+        }).then(
+            res=>{
+                 if(res.data.status === "success"){
+                    const localstor = JSON.parse(localStorage.getItem('tokens'))
+                    localstor.class_id = data
+                    localStorage.setItem('tokens', JSON.stringify(localstor));
+                    history.push({
+                        pathname: '/learn'
+                    })
+                }
+            }
+        )
+    }
+    const [classResponse, setClassResponse] = useState([]);
     
+    
+  
+        useEffect(() => {
+            axios.get('http://noname.hellonep.com/api/classes').then(
+                response => {
+                setClassResponse(response.data)
+                })
+        }, [])
+        
+       
+      
+        
         return(
              <React.Fragment>
                             {/* <Switch>
                                 <Route exact path={path} > */}
-                                <div className="setting-container">
-               
+                                <div className="setting-container">  
                <div className="row">
                    <div className="col-6 color-section">
-
                    </div>
                    <div className="col-6 nocolor-section">
-
                    </div>
                </div>
                                 <div className="classSelect-wrapper">
@@ -29,12 +64,10 @@ const ClassSelect = () => {
                                            Enroll in Class:
                                     </h3>
                                     <ul>
-                                        <li>10</li>
-                                        <li>+2</li>
-                                        <li>IOM</li>
-                                        {/* <li><Link to={`${url}/ioe`} >IOE</Link></li> */}
-                                        <li>BBA</li>
-                                        <li>CA</li>
+                                        {classResponse.map((myClass, index) => 
+                                        <li key={index} onClick={() => handleClassSubmit(myClass.id)}> {myClass.name} </li>
+                                        )
+                                        }
                                     </ul>
                                 </div>
                                 

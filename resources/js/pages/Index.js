@@ -14,14 +14,15 @@ import QuizResult from '../Dashboard/Quiz/QuizResult';
 
 
 export default function Index(){
-    const token = localStorage.getItem('tokens')
-    const [Authtoken, setAuthtokens] = useState(token ? JSON.parse(token) : false);
-
     const Tokens = (data) => {
         localStorage.setItem('tokens',JSON.stringify(data))
-        setAuthtokens(token)
+        // setAuthtokens(token)
+        const token = JSON.parse(localStorage.getItem('tokens'));
+        setAuthtokens(token);
     }
-   
+    const [Authtoken, setAuthtokens] = useState(Tokens.tokens ? Tokens.tokens : (localStorage.getItem('tokens') ? 
+    JSON.parse(localStorage.getItem('tokens')): false));       
+
     return(
         <React.Fragment>
         <AuthContext.Provider value={{Authtoken, StorageToken: Tokens}}>

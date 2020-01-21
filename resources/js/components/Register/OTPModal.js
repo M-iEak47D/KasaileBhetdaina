@@ -8,8 +8,8 @@ import ResetPassword from './ResetPassword'
 
 const OTPModal = ({RegisterResponse}) =>{
     const{register, handleSubmit, errors} = useForm();
-    // const [OTPresponse, setOTPResponse] = useState("");
-    // const [closeOTP, setOTP] = useState(true)
+    const[error, setError] = useState()
+    const[responseError, setResponseError] = useState()
 
     let history = useHistory();
     const onSubmit = (values) => {
@@ -25,16 +25,19 @@ const OTPModal = ({RegisterResponse}) =>{
                          pathname: '/set-password',
                          state: {detail: response.data}
                     });
+                    }else{
+                        setResponseError(response.data.message)
                     }
-                }
-            )
+                }).catch(error => {
+                    setError(error)
+                })
     }
     
     
     
         return(
             <React.Fragment>
-         <div className="modal join fade" id="otp">
+         <div className="modal join " id="otp">
             <div className="modal-dialog">
             <div className="modal-content">
                     {/* <!-- Modal body --> */}
@@ -57,12 +60,13 @@ const OTPModal = ({RegisterResponse}) =>{
                                 value={RegisterResponse.user_id}
                             ref={register} 
                         />
-                        
+                        {responseError && 
+                            <div style={{color:'Red', textAlign:'center'}}>*The OTP provided does not match</div>}
                         <div className="button-container">
                             <button className="btn btn-success" type="submit">
                                 Jump In
                             </button>
-                        
+                           
                             <br />
                             <a href="#" >Resend OTP code</a>
                         </div>

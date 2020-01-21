@@ -41,7 +41,7 @@ h6 {
     background: linear-gradient(180deg, #2ad181, #009d98);
     overflow-x: hidden;
     -ms-overflow-style: none;
-    transition: 0.5s;
+    transition: all 0.6s ease-in-out;
     padding-bottom: 30px;
 }
 .userSidenav::-webkit-scrollbar {
@@ -51,7 +51,9 @@ h6 {
 .userSidenav .sideTab {
     display: inline-block;
     padding-left: 10px;
-    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s ease 0s, opacity 0.5s linear 0s;
 }
 .userSidenav .profile-container {
     text-align: center;
@@ -78,6 +80,10 @@ h6 {
     text-align: center !important;
     border-bottom: 1px solid #c7c7c7;
 }
+.userSidenav .profile-container + .title-name {
+    height: 50px;
+    overflow: hidden;
+}
 .userSidenav .title-name + .sideTab {
     width: 100%;
 }
@@ -98,9 +104,11 @@ h6 {
     position: fixed;
     top: 0;
     width: 250px;
+    height: 60px;
+    overflow: hidden;
     z-index: 9;
     padding: 5px 15px;
-    transition: 0.5s;
+    transition: all 0.6s ease-in-out;
     background: #27cd81;
 }
 .userSidenav .company-container .img-container {
@@ -146,6 +154,8 @@ h6 {
     display: block;
     transition: 0.1s;
     position: relative;
+    height: 45px;
+    overflow: hidden;
 }
 .userSidenav a::after {
     content: "";
@@ -254,7 +264,7 @@ h6 {
 }
 /*--------------------main-div---------------------------------*/
 #main {
-    transition: margin-left 0.5s;
+    transition: all 0.6s ease-in-out;
     margin-left: 250px;
 }
 .navbar {
@@ -682,6 +692,13 @@ h6 {
 }
 .subject-content .chapter-wrapper .chapter-title {
     font-size: 22px;
+}
+.subject-content .chapter-wrapper .chapter-title a {
+    color: black;
+    text-decoration: none;
+}
+.subject-content .chapter-wrapper .chapter-title a:hover {
+    color: #25cb83;
 }
 .subject-content .chapter-wrapper .chapter-title span {
     padding-right: 10px;

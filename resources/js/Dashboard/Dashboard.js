@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import './assets/css/userStyle.css';
 import Practise from './Practise/Practise';
 import Test from './MockTest/Test';
@@ -14,7 +14,7 @@ import ClassSelect from './Profile/ClassSelect';
 const routes = [
     {
         path: "/learn",
-        main: () => <Learn />
+        main: () => <Learn  />
 
     },
     {
@@ -54,63 +54,89 @@ const routes = [
 
 
 ]
-export default function Dashboard() {
-    function closeNav() {
-        function myFunction(x) {
-            if (x.matches) {
-                document.getElementById("userSideNav").style.width = "0";
+const Dashboard = () => {
+    
+            // console.log(SubjectResponse)
 
-            } else {
-                document.getElementById("userSideNav").style.width = "80px";
-                document.getElementById("main").style.marginLeft = "80px";
-                document.getElementById("view").style.display = "block";
-                document.getElementsByClassName('company-container')[0].style.width = "80px";
-                document.getElementsByClassName('navbar')[0].style.width = "calc(100% - 80px)";
-                document.getElementById("hide").style.display = "none";
-                var elems = document.getElementsByClassName('sideTab');
-                for (var i = 0; i < elems.length; i++) {
-                    elems[i].style.display = 'none';
+            function closeNav() {
+                function myFunction(x) {
+                    let userSideNav = document.getElementById("userSideNav");
+                    let main = document.getElementById("main");
+                    if (x.matches) {
+                        userSideNav.style.width = "0";
+                    } else {
+                        userSideNav.style.width = "80px";
+                        userSideNav.style.left = "-170px";
+                        userSideNav.style.marginLeft = "170px";
+                        document.querySelectorAll(".title-name")[1].style.height = "0";
+                        main.style.marginLeft = "80px";
+                        document.getElementById("view").style.display = "block";
+                        document.getElementsByClassName(
+                            "company-container"
+                        )[0].style.width = "80px";
+                        document.getElementsByClassName("navbar")[0].style.width =
+                            "calc(100% - 80px)";
+                        document.getElementById("hide").style.display = "none";
+        
+                        var elems = document.getElementsByClassName("sideTab");
+        
+                        for (var i = 0; i < elems.length; i++) {
+                            // elems[i].style.display = "none";
+                            elems[i].style.visibility = "hidden";
+                            elems[i].style.opacity = "0";
+                        }
+                    }
                 }
+                var x = window.matchMedia("(max-width: 756px)");
+                myFunction(x); // Call listener function at run time
+                x.addListener(myFunction);
             }
-
-
-        }
-        var x = window.matchMedia("(max-width: 756px)");
-        myFunction(x); // Call listener function at run time
-        x.addListener(myFunction);
-    }
-    function openNav() {
-        function myFunction(x) {
-            if (x.matches) {
-                document.getElementById("userSideNav").style.width = "240px";
-                document.getElementById("main").style.marginLeft = "0px";
-
-            } else {
-                document.getElementById("userSideNav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                document.getElementById("view").style.display = "none";
-                document.getElementsByClassName('navbar')[0].style.width = "calc(100% - 250px)";
-                document.getElementsByClassName('company-container')[0].style.width = "250px";
-                document.getElementById("hide").style.display = "block";
-                var elems = document.getElementsByClassName('sideTab');
-                for (var i = 0; i < elems.length; i++) {
-                    elems[i].style.display = 'inline-block';
+            function openNav() {
+                function myFunction(x) {
+                    let userSideNav = document.getElementById("userSideNav");
+                    let main = document.getElementById("main");
+                    if (x.matches) {
+                        userSideNav.style.width = "240px";
+                        main.style.marginLeft = "0px";
+                    } else {
+                        userSideNav.style.left = "0px";
+                        userSideNav.style.width = "250px";
+                        userSideNav.style.marginLeft = "0px";
+                        document.querySelectorAll(".title-name")[1].style.height =
+                            "50px";
+                        main.style.marginLeft = "250px";
+                        document.getElementById("view").style.display = "none";
+                        document.getElementsByClassName("navbar")[0].style.width =
+                            "calc(100% - 250px)";
+                        document.getElementsByClassName(
+                            "company-container"
+                        )[0].style.width = "250px";
+                        document.getElementById("hide").style.display = "block";
+                        var elems = document.getElementsByClassName("sideTab");
+        
+                        // document.getElementsByClassName("title-name")[1].style.display =
+                        //     "block";
+        
+                        setTimeout(function() {
+                            for (let i = 0; i < elems.length; i++) {
+                                // elems[i].style.display = "inline-block";
+                                elems[i].style.opacity = "1";
+                                elems[i].style.visibility = "visible";
+                            }
+                        }, 350);
+                    }
                 }
-                document.getElementsByClassName('title-name')[1].style.display = "block";
+                var x = window.matchMedia("(max-width: 700px)");
+                myFunction(x); // Call listener function at run time
+                x.addListener(myFunction);
             }
-        }
-        var x = window.matchMedia("(max-width: 700px)");
-        myFunction(x); // Call listener function at run time
-        x.addListener(myFunction);
-    }
     const handleActive = event => {
         $('#userSideNav a').removeClass('active');
         event.target.classList.add('active');
     }
 
     let { path, url } = useRouteMatch();
-    // const Apple = useRouting();
-
+        
     return (
         <React.Fragment>
             <div id="userSideNav" className="userSidenav">
@@ -153,7 +179,7 @@ export default function Dashboard() {
                     <hr />
                 </div>
                 <Link to="/profile" onClick={handleActive}><i className="fa fa-user"></i><span className="sideTab"> Profile</span></Link>
-                <a href="#"><i className="fa fa-folder-open"></i> <span className="sideTab"> Syllabus</span></a>
+                <Link to="/quiz"><i className="fa fa-folder-open"></i> <span className="sideTab"> Syllabus</span></Link>
                 <NavLink to="/class-select"><i className="fa fa-cogs"></i> <span className="sideTab"> Setting</span></NavLink>
                 <a href="#"><i className="fab fa-facebook"></i> <span className="sideTab"> Share on Facebook</span></a>
                 <hr />
@@ -206,17 +232,14 @@ export default function Dashboard() {
                 <div className="main-content">
                     <Switch>
                         <Route exact path="/">
-                            <Redirect to="/learn" />
-                        </Route>
-                        {/* <Route path="/class-select">
-                            <Redirect to="/class-select"/>
-                        </Route> */}
+                            <Redirect to="/learn"   />
+                        </Route>    
                         {routes.map((route, index) =>
                             <Route
                                 key={index}
                                 path={route.path}
-                                children={<route.main />}
-                            />)}
+                                children={<route.main   />}
+                        />)}
                     </Switch>
                 </div>
             </div>
@@ -227,3 +250,4 @@ export default function Dashboard() {
 
 
 
+export default Dashboard;

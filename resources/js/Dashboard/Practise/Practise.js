@@ -1,12 +1,23 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link , Switch , Route, useRouteMatch} from 'react-router-dom';
 import PractiseSubject from './PractiseChapter';
+import Axios from 'axios';
+import { useAuth } from '../../Context/Auth';
 
 export default function Practise(){
+    const {Authtoken} = useAuth()
+    
+    const [PractiseResponse, setPractiseResponse] = useState([])
     let {path, url} = useRouteMatch();
+    useEffect(() => {
+        Axios.get('http://noname.hellonep.com/api/subjects/'+ Authtoken.class_id).then(
+            response => {
+                setPractiseResponse(response.data.subjects)
+            }
+        )
+    },[])
     return(
         <React.Fragment>
-    
        <Switch>
             <Route exact path={path} >
             <div className="main-title">
@@ -14,10 +25,10 @@ export default function Practise(){
         </div>
         <div className="practise-subject">
             <div className="row">
-                <div className="col-md-3 col-lg-3 col-12">
-                
+                {PractiseResponse.map((practise, index)=>
+                <div className="col-md-3 col-lg-3 col-12" key={index}>  
                         <div className="practise-wrapper">
-                             <Link to={`${url}/physics`}>
+                             <Link to={`${url}/`+practise.slug}>
                             <div className="row">
                                 <div className="col-md-3 col-3">
                                     <div className="icon-box" style={{backgroundColor: '#ffed6a'}}>
@@ -26,7 +37,7 @@ export default function Practise(){
                                 </div>
                                 <div className="col-md-9 col-9">
                                     <div className="subject-name">
-                                        Physics <i className="fa fa-caret-right"></i>
+                                        {practise.name} <i className="fa fa-caret-right"></i>
                                     </div>
                                     <div className="progress">
                                       <div className="progress-bar" style={{width:'70%'}}></div>
@@ -36,88 +47,11 @@ export default function Practise(){
                                     </div>
                                 </div>
                             </div>
-                                        </Link>
+                        </Link>
                         </div>
     
                 </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                   
-                        <div className="practise-wrapper">
-                            <a href="">
-                            <div className="row">
-                                <div className="col-md-3 col-3">
-                                    <div className="icon-box" style={{backgroundColor: '#ff8282'}}>
-                                        <i className="fa fa-flask"></i>
-                                    </div>
-                                </div>
-                                <div className="col-md-9 col-9">
-                                    <div className="subject-name">
-                                        Chemistry <i className="fa fa-caret-right"></i>
-                                    </div>
-                                    <div className="progress">
-                                      <div className="progress-bar" style={{width:'70%'}}></div>
-                                    </div>
-                                    <div className="progress-percent">
-                                        70%
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                   
-                        <div className="practise-wrapper">
-                            <a href="">
-                            <div className="row">
-                                <div className="col-md-3 col-3">
-                                    <div className="icon-box" style={{backgroundColor: '#6c97f9'}}>
-                                        <i className="fa fa-dna"></i>
-                                    </div>
-                                </div>
-                                <div className="col-md-9 col-9">
-                                    <div className="subject-name">
-                                        Biology <i className="fa fa-caret-right"></i>
-                                    </div>
-                                    <div className="progress">
-                                      <div className="progress-bar" style={{width:'70%'}}></div>
-                                    </div>
-                                    <div className="progress-percent">
-                                        70%
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                    
-                </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                   
-                        <div className="practise-wrapper">
-                            <a href="">
-                            <div className="row">
-                                <div className="col-md-3 col-3">
-                                    <div className="icon-box" style={{backgroundColor: '#8af966'}}>
-                                        <i className="fa fa-calculator"></i>
-                                    </div>
-                                </div>
-                                <div className="col-md-9 col-9">
-                                    <div className="subject-name">
-                                        Maths <i className="fa fa-caret-right"></i>
-                                    </div>
-                                    <div className="progress">
-                                      <div className="progress-bar" style={{width:'70%'}}></div>
-                                    </div>
-                                    <div className="progress-percent">
-                                        70%
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                  
-                </div>
+                )}
             </div>
         </div>
         <div className="sub-title">
@@ -244,7 +178,7 @@ export default function Practise(){
     </div>
         
             </Route>
-            <Route path={`${path}/physics`} >
+            <Route path={`${path}/:subjectId`} >
                 <PractiseSubject />
             </Route>
         </Switch>
