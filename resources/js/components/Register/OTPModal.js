@@ -32,7 +32,8 @@ const OTPModal = ({RegisterResponse}) =>{
                     setError(error)
                 })
     }
-    
+
+   
     
     
         return(

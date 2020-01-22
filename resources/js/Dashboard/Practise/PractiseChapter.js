@@ -22,11 +22,11 @@ export default function PractiseSubject(){
         <div className="main-subject-containter">
             <div className="subject-navbar d-flex justify-content-between">
                 <a onClick={History.goBack} className="back">
-                  {/* <i className="fa fa-arrow-left"></i> */}
+                  <i className="fa fa-arrow-left"></i>
                   </a>
                 <div className="top-subject-navbar">
                     <div className="icon-box">
-                        {/* <i className="fa fa-atom"></i> */}
+                        <i className="fa fa-atom"></i>
                         </div>
                     <div className="title-box">
                     <h2>Maths</h2>
@@ -45,7 +45,7 @@ export default function PractiseSubject(){
                         <div className="chapter-name">
                             <span>1</span> {practise.name} 
                         </div>
-                        <div className="progress">
+                        <div className="p   rogress">
                             <div className="progress-bar" style={{width:'70%'}}></div>
                         </div>
                         <div className="progress-percent">

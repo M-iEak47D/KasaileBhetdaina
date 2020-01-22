@@ -42,10 +42,6 @@ const routes = [
         main: () => <Profile />
 
     },
-    // {
-    //     path: "/class-select",
-    //     main: () => <ClassSelect />
-    // },
     {
         path: "*",
         main: () => <PageNotFound />
@@ -56,8 +52,6 @@ const routes = [
 ]
 const Dashboard = () => {
     
-            // console.log(SubjectResponse)
-
             function closeNav() {
                 function myFunction(x) {
                     let userSideNav = document.getElementById("userSideNav");

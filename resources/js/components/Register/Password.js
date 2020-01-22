@@ -20,7 +20,6 @@ import { Redirect, useHistory } from 'react-router-dom';
             data: data
         }).then(
             response =>{
-                // console.log(response.data.auth_token)
                 if(response.data.status === "success"){
                          StorageToken({
                             name: response.data.name,

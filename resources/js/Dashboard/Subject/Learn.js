@@ -1,30 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Switch, Route, useRouteMatch, useParams } from 'react-router-dom';
 import LearnSubject from '../Subject/LearnSubject';
-import axios from 'axios';
 import { useAuth } from '../../Context/Auth';
 import PageNotFound from '../../pages/PageNotFound';
 import "../assets/css/userStyle.css"
+import Axios from 'axios';
 
 export default function Learn() {
     let { path, url } = useRouteMatch();
     let { subjectId } = useParams();
 
     const { Authtoken } = useAuth();
+    console.log(Authtoken)
 
     const [SubjectResponse, setSubjectResponse] = useState([])
     const [loading, setLoading] = useState(true)
-
-    // const fetch = async() => {
-        // await 
-    // }
+    let getUrl = 'http://noname.hellonep.com/api/subjects/'+(Authtoken.class_id)
+    
 
     useEffect(() => {
-        axios.get('http://noname.hellonep.com/api/subjects/' + Authtoken.class_id).then(
-            response => {
-                setSubjectResponse(response.data.subjects)
-            })
-            .then(setLoading(false))    }, [])
+        let source = Axios.CancelToken.source();
+
+        const loadData = async() => {
+            try{
+                const response = await Axios.get(getUrl,{
+                    cancelToken: source.token
+                });
+                setSubjectResponse(response.data.subjects);
+            } catch (error) {
+                if(Axios.isCancel(error)){
+                    console.log(error)
+                }else{
+                    throw error;
+                }
+            }
+    };
+    loadData();
+    return () =>{
+        source.cancel()
+    };
+}, [getUrl]);
 
     return (
         <React.Fragment>

@@ -11,7 +11,7 @@ export default function LearnSubject() {
   const [chapter, setChapterResponse] = useState([]);
   
   useEffect(() => {
-    axios({
+    axios({ 
       method: 'get',
       url: 'http://noname.hellonep.com/api/chapters/'+params.subjectId,
     }).then(
@@ -20,6 +20,7 @@ export default function LearnSubject() {
       }
     )  
   }, [])
+  
 
   return (
     <React.Fragment>
@@ -42,7 +43,7 @@ export default function LearnSubject() {
               <a className="nav-link active" data-toggle="pill" href="#note">Notes</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="pill" href="#flash">Flash Cards</a>
+              <a className="nav-link" data-toggle="pill" href="#flash" >Flash Cards</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" data-toggle="pill" href="#past-question">Question Set</a>

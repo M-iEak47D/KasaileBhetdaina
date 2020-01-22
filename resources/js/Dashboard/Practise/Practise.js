@@ -9,13 +9,32 @@ export default function Practise(){
     
     const [PractiseResponse, setPractiseResponse] = useState([])
     let {path, url} = useRouteMatch();
+    let getUrl = 'http://noname.hellonep.com/api/subjects/'+(Authtoken.class_id)
+    
+
     useEffect(() => {
-        Axios.get('http://noname.hellonep.com/api/subjects/'+ Authtoken.class_id).then(
-            response => {
-                setPractiseResponse(response.data.subjects)
+        let source = Axios.CancelToken.source();
+
+        const loadData = async() => {
+            try{
+                const response = await Axios.get(getUrl,{
+                    cancelToken: source.token
+                });
+                setPractiseResponse(response.data.subjects);
+            } catch (error) {
+                if(Axios.isCancel(error)){
+                    console.log(error)
+                }else{
+                    throw error;
+                }
             }
-        )
-    },[])
+    };
+    loadData();
+    return () =>{
+        source.cancel()
+    };
+}, [getUrl]);
+
     return(
         <React.Fragment>
        <Switch>
@@ -25,6 +44,8 @@ export default function Practise(){
         </div>
         <div className="practise-subject">
             <div className="row">
+            { PractiseResponse.length ===0 ? <h2>Loading...</h2> :
+                <React.Fragment>
                 {PractiseResponse.map((practise, index)=>
                 <div className="col-md-3 col-lg-3 col-12" key={index}>  
                         <div className="practise-wrapper">
@@ -49,9 +70,10 @@ export default function Practise(){
                             </div>
                         </Link>
                         </div>
-    
                 </div>
                 )}
+                </React.Fragment>
+            }
             </div>
         </div>
         <div className="sub-title">
