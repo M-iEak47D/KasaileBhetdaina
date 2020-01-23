@@ -39,7 +39,7 @@ export default function Temp() {
 
     async function authenticateQuestion() {
         const { question, marks, correct, year, importance, answerA, answerB, answerC, answerD, chapter_id, quiz_id} = values;
-        const url = "/api/post_question_add";
+        const url = "/api/admin/questions/post_question_add";
         const bodyFormData = new FormData();
         console.log(year);
         bodyFormData.set("question",question);

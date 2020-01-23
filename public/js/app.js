@@ -73704,7 +73704,7 @@ function Temp() {
         switch (_context.prev = _context.next) {
           case 0:
             question = values.question, marks = values.marks, correct = values.correct, year = values.year, importance = values.importance, answerA = values.answerA, answerB = values.answerB, answerC = values.answerC, answerD = values.answerD, chapter_id = values.chapter_id, quiz_id = values.quiz_id;
-            url = "/api/post_question_add";
+            url = "/api/admin/questions/post_question_add";
             bodyFormData = new FormData();
             console.log(year);
             bodyFormData.set("question", question);

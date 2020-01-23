@@ -52,7 +52,7 @@ Route::group([
 
 
 
-Route::middleware('cors')->get('/navs', function (){
+Route::get('/navs', function (){
     $categories = Category::where('slug','class')->orWhere('slug','preparation')->get();
     return new CategoryCollection($categories);
 });
@@ -79,7 +79,6 @@ Route::get('/subjects', function () {
 
 });
 
-Route::post('/post_question_add','API\IndexController@add_question');
 
 Route::group([
     'prefix' => '/admin',
@@ -88,6 +87,7 @@ Route::group([
 ], function () {
 
     Route::group(['prefix' => '/questions'], function () {
+        Route::post('/post_question_add','QuestionController@add_question');
         Route::get('/edit/{id}', 'QuestionController@edit');
     });
 
