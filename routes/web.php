@@ -106,6 +106,10 @@ Route::group([
         Route::post('/store','ChapterController@store')->name('store_chapter');
         Route::post('/destroy','ChapterController@destroy')->name('destroy_chapters');
         Route::post('/edit/{id}','ChapterController@update')->name('update_chapter');
+
+        //new added
+        Route::get('/assign_marks/{id}','ChapterController@assign')->name('assign_marks');
+        Route::post('/assign_marks/{id}','ChapterController@assign_weightage')->name('post_assign_marks');
     });
 
 

@@ -82,6 +82,8 @@
 
 
                                     <button class="btn btn-sm btn-danger">Delete</button>
+
+                                    <a class="btn btn-sm btn-secondary" href="{{route('admin.assign_marks',$chapter->id)}}" > Marks</button>
                                 </td>
                                 <td>{{ $chapter->code }}</td>
                             </tr>

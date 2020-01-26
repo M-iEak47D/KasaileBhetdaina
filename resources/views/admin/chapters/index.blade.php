@@ -102,5 +102,5 @@
 @section('scripts')
 
     {{--Page specific scripts--}}
-
+    
 @endsection

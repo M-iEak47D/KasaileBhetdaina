@@ -5,6 +5,7 @@ namespace App\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Model\MarksWeightage;
 
 class Content extends Model
 {
@@ -39,6 +40,10 @@ class Content extends Model
 
     public function questions(){
         return $this->hasMany(Question::class,'chapter_id');
+    }
+
+    public function marks_weightages(){
+        return $this->hasMany(MarksWeightage::class,'chapter_id');
     }
 
 
