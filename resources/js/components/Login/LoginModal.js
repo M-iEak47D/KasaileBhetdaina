@@ -3,7 +3,8 @@ import React from "react";
 function LoginModal(){
     return(
         
-<div className="modal join fade" id="login">
+<div className="modal join fade" id="login"  data-keyboard="false"
+                data-backdrop="static">
     <div className="modal-dialog">
         <div className="modal-content">
           

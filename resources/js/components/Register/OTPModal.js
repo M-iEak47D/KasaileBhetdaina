@@ -38,7 +38,8 @@ const OTPModal = ({RegisterResponse}) =>{
     
         return(
             <React.Fragment>
-         <div className="modal join " id="otp">
+         <div className="modal join " id="otp"  data-keyboard="false"
+                data-backdrop="static">
             <div className="modal-dialog">
             <div className="modal-content">
                     {/* <!-- Modal body --> */}

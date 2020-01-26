@@ -12,16 +12,19 @@ const PrivateRoute = ({ children, ...rest }) => {
 
     return(
     <Route {...rest} render={({location})=>(
-        Authtoken ? (
-        <Switch>
-        <Route path="/view-note" component={ViewNote} />
-        <Route path="/class-select" component={ClassSelect} /> 
-        {children}
-        </Switch>
-        )
-        : 
-        (
-            <Route path="/" component={Homepage}    />
+    (Authtoken ? ((Authtoken.class_id == null)? 
+            <Switch>
+            <Route path="/class-select" component={ClassSelect} />
+            <Redirect to="/class-select" />
+            </Switch>
+            :
+            <Switch>
+            <Route path="/class-select" component={ClassSelect} />
+            {children}
+            </Switch>
+        ) : 
+        <Route path="/" component={Homepage} />
+        
         )
           
         )}
@@ -31,18 +34,3 @@ const PrivateRoute = ({ children, ...rest }) => {
 
 export default PrivateRoute
 
-
-
-{/* (Authtoken ? (Authtoken.class_id  == null ? 
-            <Switch>
-                <Redirect to='/class-select '/>
-            </Switch>: 
-            <Route path="/" component={Homepage} />
-        ) : 
-        (Authtoken.class_id != null ? 
-        <Switch>
-        {children} 
-        </Switch>
-        :
-        <Route path="/" component={Homepage} />)
-        ) */}

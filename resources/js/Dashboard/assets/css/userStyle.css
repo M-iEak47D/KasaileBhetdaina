@@ -14,6 +14,7 @@ h5,
 h6 {
     font-family: "Lato", sans-serif;
 }
+
 .mybtn {
     background: linear-gradient(235deg, #36ea5f, #00b693);
     text-shadow: 1px 2px 3px #928e8e;
@@ -41,7 +42,7 @@ h6 {
     background: linear-gradient(180deg, #2ad181, #009d98);
     overflow-x: hidden;
     -ms-overflow-style: none;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.2s ease-in;
     padding-bottom: 30px;
 }
 .userSidenav::-webkit-scrollbar {
@@ -53,7 +54,7 @@ h6 {
     padding-left: 10px;
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s ease 0s, opacity 0.5s linear 0s;
+    transition: opacity 0.2s ease-in;
 }
 .userSidenav .profile-container {
     text-align: center;
@@ -108,7 +109,7 @@ h6 {
     overflow: hidden;
     z-index: 9;
     padding: 5px 15px;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.2s ease-in;
     background: #27cd81;
 }
 .userSidenav .company-container .img-container {
@@ -264,7 +265,7 @@ h6 {
 }
 /*--------------------main-div---------------------------------*/
 #main {
-    transition: all 0.6s ease-in-out;
+    transition: all 0.1s ease-in;
     margin-left: 250px;
 }
 .navbar {
@@ -394,7 +395,7 @@ h6 {
     padding: 15px;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 1px 0px 10px 1px #e2e2e4;
+    box-shadow: -5px -5px 15px #ffffff, 3px 3px 15px #dadadf;
 }
 .learn-subject .subject-container:hover {
     background: linear-gradient(135deg, #2ad181, #009d98);
@@ -496,7 +497,7 @@ h6 {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
-    box-shadow: 0px 0px 5px 1px #cecece;
+    box-shadow: -5px -5px 15px #fff, 5px 5px 15px #eaeaea;
 }
 .practise-report .report-wrapper .content-wrapper .overall-report {
     font-size: 120px;
@@ -551,7 +552,168 @@ h6 {
         margin-left: 10px;
     }
 }
+/* -test-front page */
+.test-subject {
+    padding: 90px 60px 30px 60px;
+}
+.test-subject .test-wrapper {
+    margin-top: 30px;
+    padding: 5px;
+    padding-top: 90px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 1px #ebe9e9;
+    position: relative;
+}
+.test-subject .test-wrapper .subWrap {
+    background: #fff;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    box-shadow: inset 3px 0px 20px -15px #8d8d8d;
+    right: 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 0px;
+}
+.test-subject .test-wrapper a {
+    text-decoration: none;
+    color: black;
+}
 
+.test-subject .test-wrapper .icon-box {
+    display: inline-block;
+    height: 50px;
+    margin-left: 5px;
+    padding: 10px 10px;
+    font-size: 40px;
+    color: #24c984;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.test-subject .test-wrapper .subject-name {
+    margin-bottom: 5px;
+}
+
+.test-subject .test-wrapper .progress {
+    height: 0.5rem;
+    border-radius: 0;
+}
+.test-subject .test-wrapper .progress .progress-bar {
+    background: linear-gradient(128deg, #2ad181, #4dfa68);
+}
+.test-subject .test-wrapper .progress-percent {
+    font-size: 12px;
+}
+.test-subject .test-wrapper .time {
+    color: #505050;
+
+    text-align: center;
+}
+.test-subject .test-wrapper .attempt-container {
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    color: #585858;
+}
+.test-subject .test-wrapper .attempt-container .attempt {
+    display: inline-block;
+
+    padding: 0px 15px;
+    text-align: center;
+}
+.test-subject .test-wrapper .attempt-container .remaining {
+    display: inline-block;
+
+    padding: 0px 15px;
+
+    text-align: center;
+}
+.test-subject .test-wrapper .button-container {
+    padding: 30px;
+    text-align: center;
+}
+.test-subject .test-wrapper .button-container a {
+    padding: 8px 15px;
+    background: white;
+    text-decoration: none;
+    color: #008862;
+    border-radius: 50px;
+    box-shadow: 3px 3px 7px 1px #e4e6e5;
+}
+.test-report {
+    padding: 15px 60px;
+}
+.test-report .report-wrapper {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 1px #cecece;
+}
+.test-report .report-wrapper .content-wrapper .overall-report {
+    font-size: 120px;
+    color: #00ce6f;
+    text-shadow: 1px 4px 5px #716e6e;
+    text-align: center;
+    font-family: "Righteous", cursive;
+}
+.test-report .report-wrapper .content-wrapper .overall-report .title {
+    font-size: 24px;
+    color: black;
+    text-shadow: none;
+}
+.test-report .report-wrapper .title {
+    text-align: center;
+}
+.test-report .report-wrapper .title .next,
+.test-report .report-wrapper .title .prev {
+    color: #32c24d;
+}
+.test-report .report-wrapper .title span {
+    cursor: pointer;
+}
+.test-report .report-wrapper .title .title-wrapper strong {
+    display: block;
+}
+.test-report .report-wrapper .footer-wrapper .title-wrapper {
+    margin-top: 20px;
+}
+.test-report .report-wrapper .footer-wrapper .title-wrapper .title {
+    width: 50%;
+    display: inline-block;
+}
+.test-report .report-wrapper .footer-wrapper .title-wrapper .title small {
+    display: block;
+}
+
+@media (max-width: 756px) {
+    .test-report {
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+    .test-subject {
+        padding: 10px;
+    }
+    .test-subject .test-wrapper {
+        padding: 90px 15px 15px 15px;
+        margin-top: 90px;
+    }
+    .test-subject .test-wrapper .icon-box {
+        font-size: 60px;
+        padding: 5px;
+    }
+    .test-subject .test-wrapper .subject-name {
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+    .test-subject .test-wrapper .attempt-container {
+        font-size: 18px;
+    }
+}
 /*---------------------test-section--------------*/
 
 .select-container {
@@ -730,6 +892,7 @@ h6 {
     }
     .subject-navbar.d-flex {
         display: inline-block !important;
+        width: 100%;
     }
     .subject-navbar .back {
         left: 15px;
@@ -739,7 +902,10 @@ h6 {
         margin-bottom: 45px;
     }
     .subject-content .chapter-wrapper {
-        padding: 30px 15px;
+        padding: 24px 15px;
+    }
+    .subject-content .chapter-wrapper .chapter-title {
+        font-size: 20px;
     }
     .subject-content .chapter-wrapper .option a {
         padding-right: 0px;
@@ -750,6 +916,11 @@ h6 {
     }
     .subject-content .chapter-wrapper .option {
         display: inline-flex;
+    }
+    .subject-navbar .nav {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
     }
 }
 /* slideshow */
@@ -1089,6 +1260,9 @@ h6 {
     .main-content.viewer {
         padding: 40px 0px 0px 0px;
     }
+    .userSidenav .active {
+        background: none;
+    }
 }
 @media screen and (max-height: 450px) {
     .userSidenav {
@@ -1263,7 +1437,7 @@ h6 {
     border-radius: 25px;
     font-weight: bold;
     color: white;
-    box-shadow: 0px 0px 10px 2px #02a097;
+    box-shadow: 0px 0px 15px 5px #fff;
 }
 #doubts {
     padding: 0px 60px;
@@ -1387,9 +1561,7 @@ h6 {
 }
 
 /* profile-page */
-.profile-wrapper {
-    background: #f2f0f0;
-}
+
 .profile-wrapper .top-wrapper {
     padding: 60px;
     position: relative;
@@ -1425,7 +1597,7 @@ h6 {
 }
 .profile-wrapper .personal-details,
 .profile-wrapper .account-details {
-    padding: 30px;
+    padding: 15px;
 }
 .profile-wrapper .title {
     font-size: 24px;
@@ -1468,7 +1640,7 @@ h6 {
         margin-left: 0%;
     }
     .profile-wrapper .top-wrapper .text-container {
-        margin-top: 80%;
+        margin-top: 70%;
     }
     .profile-wrapper form .button-container {
         text-align: center;
@@ -1539,4 +1711,21 @@ h6 {
     .user-syllabus {
         padding: 15px;
     }
+}
+
+.page-enter {
+    opacity: 0;
+}
+.page-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    transition-delay: 300ms;
+}
+.page-exit {
+    opacity: 1;
+}
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 600ms;
 }

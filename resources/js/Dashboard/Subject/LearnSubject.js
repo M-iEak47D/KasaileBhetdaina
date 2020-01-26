@@ -3,23 +3,29 @@ import { Link, Switch, Route, useRouteMatch, useHistory } from 'react-router-dom
 import Note from './Component/Note';
 import FlashCards from './Component/FlashCards';
 import PastQuestions from './Component/PastQuestions';
+import axios from "axios"
 
 
 export default function LearnSubject() {
   const {url, params} = useRouteMatch()
-  console.log(url)
+  // console.log(url)
   const [chapter, setChapterResponse] = useState([]);
+  const [getUrl, setUrl] = useState('chapters')
+
+  const handleSubmit = (data) => {
+    setUrl(data)
+  }
   
   useEffect(() => {
     axios({ 
       method: 'get',
-      url: 'http://noname.hellonep.com/api/chapters/'+params.subjectId,
+      url: 'http://noname.hellonep.com/api/'+getUrl+'/'+params.subjectId,
     }).then(
       response => {
-        setChapterResponse(response.data.chapters)
+        setChapterResponse(response.data)
       }
     )  
-  }, [])
+  }, [getUrl])
   
 
   return (
@@ -40,10 +46,10 @@ export default function LearnSubject() {
             </div>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="pill" href="#note">Notes</a>
+              <a className="nav-link active" data-toggle="pill" href="#note" onClick={() => handleSubmit('chapters')}>Notes</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="pill" href="#flash" >Flash Cards</a>
+              <a className="nav-link" data-toggle="pill" href="#flash" onClick={() => handleSubmit('flashcards')} >Flash Cards</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" data-toggle="pill" href="#past-question">Question Set</a>
@@ -52,12 +58,10 @@ export default function LearnSubject() {
       </div>
         <div className="tab-content">
            <Note chapterResponse={chapter} />
-           <FlashCards />
+           <FlashCards chapterResponse={chapter} />
            <PastQuestions />
         </div>
       </div>
-
-
 
     </React.Fragment>
   )

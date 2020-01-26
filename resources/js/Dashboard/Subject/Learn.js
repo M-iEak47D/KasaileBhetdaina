@@ -24,7 +24,8 @@ export default function Learn() {
         const loadData = async() => {
             try{
                 const response = await Axios.get(getUrl,{
-                    cancelToken: source.token
+                    cancelToken: source.token,
+                   
                 });
                 setSubjectResponse(response.data.subjects);
             } catch (error) {

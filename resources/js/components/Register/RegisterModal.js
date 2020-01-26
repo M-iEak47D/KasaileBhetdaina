@@ -26,6 +26,7 @@ export default function RegisterModal() {
                 $("#join").modal('hide');
                 $("#otp").modal('show')
                 }
+                
             }
         )
     }
@@ -34,7 +35,8 @@ export default function RegisterModal() {
 
     return (
         <React.Fragment>    
-        <div className="modal join fade" id="join">
+        <div className="modal join fade" id="join"  data-keyboard="false"
+                data-backdrop="static">
             <div className="modal-dialog">
                 <div className="modal-content">
                     {/* <!-- Modal body --> */}

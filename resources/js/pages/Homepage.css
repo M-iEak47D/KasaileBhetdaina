@@ -254,12 +254,12 @@ body {
     }
 
     #navbar .button-container .join-now a {
-        padding: 5px;
-        font-size: 12px;
+        padding: 10px;
+        font-size: 14px;
     }
     #navbar .button-container .login a {
-        padding: 5px 15px;
-        font-size: 12px;
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
     .logo-container img {
@@ -363,6 +363,7 @@ body {
 
 .banner .join-now-form .phone-number input {
     border: none;
+    width: 100%;
 }
 
 .banner .join-now-form .phone-number input:focus {
