@@ -8746,7 +8746,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato:700,900|Mukta:400,500,600&display=swap);", ""]);
 
 // module
-exports.push([module.i, "body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: \"Mukta\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    font-family: \"Lato\", sans-serif;\r\n}\r\n\r\n.mybtn {\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover {\r\n    background: linear-gradient(45deg, #36ea5f, #00b693);\r\n    color: white;\r\n    text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(180deg, #2ad181, #009d98);\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: all 0.2s ease-in;\r\n    transition: all 0.2s ease-in;\r\n    padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.userSidenav .sideTab {\r\n    display: inline-block;\r\n    padding-left: 10px;\r\n    visibility: visible;\r\n    opacity: 1;\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n}\r\n.userSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.userSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n.userSidenav .profile-container + .title-name {\r\n    height: 50px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav .title-name + .sideTab {\r\n    width: 100%;\r\n}\r\n.userSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.userSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container {\r\n    position: fixed;\r\n    top: 0;\r\n    width: 250px;\r\n    height: 60px;\r\n    overflow: hidden;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n    -webkit-transition: all 0.2s ease-in;\r\n    transition: all 0.2s ease-in;\r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.userSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.userSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.userSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.userSidenav .download-app .play-store,\r\n.userSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a,\r\n.userSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n    height: 45px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n    color: #000;\r\n}\r\n.userSidenav .active {\r\n    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#f8f8f942), to(#f8f8f9));\r\n    background: linear-gradient(90deg, transparent, #f8f8f942, #f8f8f9);\r\n    color: #ffffff;\r\n}\r\n\r\n.userSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 60px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .userSidenav .company-container .img-container {\r\n        width: 40px;\r\n    }\r\n    .userSidenav {\r\n        width: 0px;\r\n        background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n        background: linear-gradient(180deg, #2ad181, #009d98);\r\n        box-shadow: 3px 1px 5px #d7ddda;\r\n    }\r\n    .userSidenav .company-container {\r\n        position: relative;\r\n        padding: 15px 4px 8px 5px;\r\n        background: #25cb83;\r\n    }\r\n\r\n    .userSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .userSidenav a {\r\n        color: #fff;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .userSidenav .title-name {\r\n        color: #fff;\r\n        text-shadow: 1px 2px 3px #515050;\r\n    }\r\n    .userSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .userSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .userSidenav .footer-nav {\r\n        padding: 8px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .userSidenav .footer-nav a i {\r\n        display: block;\r\n        font-size: 20px;\r\n    }\r\n    .userSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .userSidenav .footer-nav .active {\r\n        color: #0bf183;\r\n    }\r\n    .userSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .userSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .userSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n    -webkit-transition: all 0.1s ease-in;\r\n    transition: all 0.1s ease-in;\r\n    margin-left: 250px;\r\n}\r\n.navbar {\r\n    height: 60px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 5px #e7e7e8;\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n}\r\n.navbar .invite {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .invite i,\r\n.navbar .logout i {\r\n    padding: 5px;\r\n}\r\n.navbar .invite a {\r\n    margin-right: -95px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #32c24d;\r\n}\r\n.navbar .invite:hover a {\r\n    margin-right: 20px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .logout a {\r\n    margin-right: -50px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #008862;\r\n}\r\n.navbar .logout:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar #view {\r\n    display: none;\r\n}\r\n.navbar #view i,\r\n.navbar #hide i {\r\n    font-size: 36px;\r\n    color: #2ad181;\r\n}\r\n@media (max-width: 756px) {\r\n    .navbar {\r\n        width: 100%;\r\n        height: 60px;\r\n        padding: 0px 15px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .navbar #view {\r\n        display: block;\r\n    }\r\n    .navbar #hide {\r\n        display: none;\r\n    }\r\n    .navbar #view i,\r\n    .navbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content {\r\n    padding: 60px 0px 0px 0px;\r\n    z-index: 0;\r\n}\r\n.main-title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #009d6db3;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    margin-top: 60px;\r\n}\r\n.sub-title {\r\n    font-size: 26px;\r\n    text-align: center;\r\n    margin-top: 30px;\r\n}\r\n.learn-subject {\r\n    padding: 30px 60px;\r\n}\r\n.learn-subject a {\r\n    text-decoration: none;\r\n}\r\n.learn-subject a:hover {\r\n    color: black;\r\n}\r\n.learn-subject .img-container {\r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i {\r\n    color: #31d285;\r\n    font-size: 40px;\r\n}\r\n.learn-subject .subject-container {\r\n    margin: 10px 15px 20px 15px;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    background: #fff;\r\n    box-shadow: -5px -5px 15px #ffffff, 3px 3px 15px #dadadf;\r\n}\r\n.learn-subject .subject-container:hover {\r\n    background: linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i {\r\n    color: white;\r\n    -webkit-transform: scale(1.3);\r\n            transform: scale(1.3);\r\n    -webkit-transition: -webkit-transform 0.3s ease-out;\r\n    transition: -webkit-transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title {\r\n    color: white;\r\n}\r\n.learn-subject .subject-container .title {\r\n    text-align: center;\r\n    margin: 5px auto;\r\n    color: #686868;\r\n    font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .main-content {\r\n        padding: 60px 15px 30px 15px;\r\n    }\r\n    .main-title {\r\n        margin-top: 30px;\r\n        font-size: 24px;\r\n    }\r\n    .learn-subject {\r\n        padding: 30px 0px;\r\n    }\r\n\r\n    .learn-subject .img-container {\r\n        padding: 15px;\r\n    }\r\n    .learn-subject .subject-container {\r\n        margin: 0px;\r\n        margin-bottom: 25px;\r\n    }\r\n    .learn-subject .img-container i {\r\n        font-size: 56px;\r\n    }\r\n    .learn-subject .subject-container .title {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject {\r\n    padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper {\r\n    margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 30px;\r\n    color: white;\r\n    border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i {\r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i {\r\n    margin-left: 40%;\r\n    -webkit-transition: margin-left 0.4s linear;\r\n    transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.practise-subject .practise-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n\r\n.practise-report {\r\n    padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: -5px -5px 15px #fff, 5px 5px 15px #eaeaea;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next,\r\n.practise-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.practise-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .practise-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .practise-subject {\r\n        padding: 10px;\r\n    }\r\n    .practise-subject .practise-wrapper {\r\n        padding: 8px;\r\n    }\r\n    .practise-subject .practise-wrapper .icon-box {\r\n        height: 55px;\r\n        padding: 12px 15px;\r\n        margin-left: 10px;\r\n    }\r\n}\r\n/* -test-front page */\r\n.test-subject {\r\n    padding: 90px 60px 30px 60px;\r\n}\r\n.test-subject .test-wrapper {\r\n    margin-top: 30px;\r\n    padding: 5px;\r\n    padding-top: 90px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n    position: relative;\r\n}\r\n.test-subject .test-wrapper .subWrap {\r\n    background: #fff;\r\n    position: absolute;\r\n    top: -60px;\r\n    left: 0;\r\n    box-shadow: inset 3px 0px 20px -15px #8d8d8d;\r\n    right: 0;\r\n    width: 50%;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    border-radius: 5px;\r\n    padding: 15px 0px;\r\n}\r\n.test-subject .test-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.test-subject .test-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 40px;\r\n    color: #24c984;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test-subject .test-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.test-subject .test-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.test-subject .test-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.test-subject .test-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n.test-subject .test-wrapper .time {\r\n    color: #505050;\r\n\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 14px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    color: #585858;\r\n}\r\n.test-subject .test-wrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n\r\n    padding: 0px 15px;\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n\r\n    padding: 0px 15px;\r\n\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .button-container {\r\n    padding: 30px;\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .button-container a {\r\n    padding: 8px 15px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    border-radius: 50px;\r\n    box-shadow: 3px 3px 7px 1px #e4e6e5;\r\n}\r\n.test-report {\r\n    padding: 15px 60px;\r\n}\r\n.test-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.test-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.test-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.test-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.test-report .report-wrapper .title .next,\r\n.test-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.test-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.test-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .test-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .test-subject {\r\n        padding: 10px;\r\n    }\r\n    .test-subject .test-wrapper {\r\n        padding: 90px 15px 15px 15px;\r\n        margin-top: 90px;\r\n    }\r\n    .test-subject .test-wrapper .icon-box {\r\n        font-size: 60px;\r\n        padding: 5px;\r\n    }\r\n    .test-subject .test-wrapper .subject-name {\r\n        margin-bottom: 0;\r\n        font-size: 24px;\r\n    }\r\n    .test-subject .test-wrapper .attempt-container {\r\n        font-size: 18px;\r\n    }\r\n}\r\n/*---------------------test-section--------------*/\r\n\r\n.select-container {\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: end;\r\n            justify-content: flex-end;\r\n    margin: 40px 0px 20px 0px;\r\n}\r\n.select-container select {\r\n    border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option {\r\n    background: #eaf1ea !important;\r\n}\r\n.test {\r\n    box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test .title {\r\n    font-size: 20px;\r\n    text-align: center;\r\n    text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.test .test-wrapper a {\r\n    text-decoration: none;\r\n    color: green;\r\n    z-index: 1;\r\n}\r\n.owl-nav {\r\n    font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.owl-nav button {\r\n    background: #3cc95c !important;\r\n}\r\n.owl-nav button span {\r\n    color: #fff;\r\n    padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px) {\r\n    .test {\r\n        margin: 15px auto;\r\n    }\r\n    .owl-nav {\r\n        margin: 0px 15px;\r\n        z-index: 1;\r\n    }\r\n    .owl-nav {\r\n        top: 15%;\r\n        z-index: 1;\r\n        height: 70px;\r\n    }\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter {\r\n    background: #fff;\r\n}\r\n.subject-navbar {\r\n    padding: 75px 60px 15px 90px;\r\n    position: relative;\r\n\r\n    border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar .back {\r\n    position: absolute;\r\n    top: 30px;\r\n    font-size: 24px;\r\n    left: 30px;\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.subject-navbar .icon-box {\r\n    display: inline-block;\r\n    padding: 15px;\r\n    vertical-align: top;\r\n    background: white;\r\n    box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n    border-radius: 5px;\r\n    color: #25cb83;\r\n    font-size: 36px;\r\n}\r\n.subject-navbar .title-box {\r\n    display: inline-block;\r\n    padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2 {\r\n    line-height: 1;\r\n    margin-top: 5px;\r\n    margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav {\r\n    margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active,\r\n.nav-pills .show > .nav-link {\r\n    background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li {\r\n    padding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a {\r\n    color: #262828;\r\n}\r\n\r\n.subject-content {\r\n    margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper {\r\n    padding: 30px;\r\n\r\n    box-shadow: 0px 2px 3px #c7eadd;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title {\r\n    font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a:hover {\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option {\r\n    text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a {\r\n    display: inline-block;\r\n    padding-right: 30px;\r\n    margin-top: 5px;\r\n    color: #2ad181;\r\n    font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover {\r\n    -webkit-transform: scale(1.2);\r\n            transform: scale(1.2);\r\n    -webkit-transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    color: #009d98;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .subject-navbar .icon-box {\r\n        font-size: 32px;\r\n        padding: 12px;\r\n    }\r\n    .subject-navbar {\r\n        padding: 60px 0 0 0;\r\n        display: inline-block;\r\n    }\r\n    .subject-navbar.d-flex {\r\n        display: inline-block !important;\r\n        width: 100%;\r\n    }\r\n    .subject-navbar .back {\r\n        left: 15px;\r\n        top: 15px;\r\n    }\r\n    .subject-content {\r\n        margin-bottom: 45px;\r\n    }\r\n    .subject-content .chapter-wrapper {\r\n        padding: 24px 15px;\r\n    }\r\n    .subject-content .chapter-wrapper .chapter-title {\r\n        font-size: 20px;\r\n    }\r\n    .subject-content .chapter-wrapper .option a {\r\n        padding-right: 0px;\r\n        padding-left: 20px;\r\n    }\r\n    .subject-navbar .nav-pills li {\r\n        padding-right: 5px;\r\n    }\r\n    .subject-content .chapter-wrapper .option {\r\n        display: -webkit-inline-box;\r\n        display: inline-flex;\r\n    }\r\n    .subject-navbar .nav {\r\n        display: -webkit-box;\r\n        display: flex;\r\n        text-align: center;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n    }\r\n}\r\n/* slideshow */\r\n#flash {\r\n    padding: 45px;\r\n}\r\n#flash .chapter-title {\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n}\r\n#flash .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    #flash {\r\n        padding: 0;\r\n    }\r\n}\r\n.carousel-inner .carousel-box {\r\n    padding: 30px;\r\n    background: #f8f8f9;\r\n    color: #655d5d;\r\n    margin: 0px 5px;\r\n}\r\n.top-content .slick-slider button {\r\n    padding: 34px 0px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n}\r\n.top-content .slick-next:before,\r\n.top-content .slick-prev:before {\r\n    color: white;\r\n}\r\n.top-content .slick-next,\r\n.top-content .slick-prev {\r\n    width: 30px;\r\n    height: auto;\r\n}\r\n.top-content a {\r\n    text-decoration: none;\r\n    color: #655d5d;\r\n}\r\n.top-content .carousel-control-prev {\r\n    left: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n.top-content .carousel-control-next {\r\n    right: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n\r\n/*note viewer page */\r\n/* ------------------- The side note viewer navigation menu -------------------- */\r\n.viewerSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: #4a4a4a;\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: opacity 0.5s linear, width 0.3s linear;\r\n    transition: opacity 0.5s linear, width 0.3s linear;\r\n    padding-bottom: 30px;\r\n}\r\n.viewerSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.viewerSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.viewerSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.viewerSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n\r\n.viewerSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.viewerSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.viewerSidenav .company-container {\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 12px 15px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    background: #4a4a4a;\r\n}\r\n.viewerSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.viewerSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.viewerSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.viewerSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.viewerSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.viewerSidenav .download-app .play-store,\r\n.viewerSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.viewerSidenav .download-app .play-store a,\r\n.viewerSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n#viewer iframe {\r\n    border: none;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.viewerSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #ffffff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n}\r\n.viewerSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.viewerSidenav a:hover {\r\n    color: #000;\r\n}\r\n.viewerSidenav .active {\r\n    background: #fff;\r\n    color: #4a4a4a;\r\n    border-bottom-right-radius: 50px;\r\n    font-weight: bold;\r\n    border-top-right-radius: 50px;\r\n    margin-right: 20px;\r\n    box-shadow: 2px 2px 10px #0d0d0d, -4px -1px 10px #bababa;\r\n}\r\n\r\n.viewerSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.viewerSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.viewerSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .viewerSidenav .company-container .img-container {\r\n        width: 70px;\r\n    }\r\n    .viewerSidenav {\r\n        width: 0px;\r\n        background: #ffffff;\r\n    }\r\n    .viewerSidenav .company-container {\r\n        position: relative;\r\n        padding: 12px 5px 5px 5px;\r\n    }\r\n\r\n    .viewerSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .viewerSidenav a {\r\n        color: #3d3b3b;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .viewerSidenav .title-name {\r\n        color: #32c24d;\r\n        text-shadow: 1px 2px 3px #f4f1f1;\r\n    }\r\n    .viewerSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .viewerSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .viewerSidenav .footer-nav {\r\n        padding: 3px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .viewerSidenav .footer-nav a i {\r\n        display: block;\r\n    }\r\n    .viewerSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .viewerSidenav .footer-nav .active {\r\n        color: green;\r\n    }\r\n    .viewerSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .viewerSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .viewerSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n.main-content.viewer {\r\n    padding-top: 40px;\r\n}\r\n.viewerNavbar {\r\n    height: 40px;\r\n    background: #4a4a4a;\r\n\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n    padding: 8px 16px;\r\n}\r\n\r\n.viewerNavbar .close i {\r\n    padding: 5px;\r\n}\r\n\r\n.viewerNavbar .close {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    border-radius: 5px;\r\n}\r\n.viewerNavbar .close a {\r\n    margin-right: 10px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n.viewerNavbar .close:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.viewerNavbar #view {\r\n    display: none;\r\n}\r\n.viewerNavbar #view i,\r\n.viewerNavbar #hide i {\r\n    font-size: 24px;\r\n    color: #ffffff;\r\n}\r\n@media (max-width: 756px) {\r\n    .viewerNavbar {\r\n        width: 100%;\r\n        height: 40px;\r\n        padding: 8px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .viewerNavbar #view {\r\n        display: block;\r\n    }\r\n    .viewerNavbar #hide {\r\n        display: none;\r\n    }\r\n    .viewerNavbar #view i,\r\n    .viewerNavbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n    .main-content.viewer {\r\n        padding: 40px 0px 0px 0px;\r\n    }\r\n    .userSidenav .active {\r\n        background: none;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/* PractiseSubject */\r\n.practiseSubject {\r\n    padding: 30px 90px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 10px 30px;\r\n    margin-bottom: 10px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a {\r\n    text-decoration: none;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a:hover {\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name {\r\n    font-size: 24px;\r\n    color: black;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name span {\r\n    padding-right: 10px;\r\n    color: green;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress {\r\n    height: 8px;\r\n    width: 80%;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress .progress-bar {\r\n    background: -webkit-gradient(linear, left top, right top, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(90deg, #2ad181, #009d98);\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress-percent {\r\n    display: inline-block;\r\n    padding-left: 15px;\r\n    color: gray;\r\n    font-size: 12px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .level {\r\n    display: inline-block;\r\n    padding-left: 30px;\r\n    font-size: 12px;\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container {\r\n    vertical-align: middle;\r\n    padding-top: 15px;\r\n    text-align: right;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a {\r\n    border-radius: 5px;\r\n    border: 2px solid #fff;\r\n    color: #2ad181;\r\n    padding: 8px;\r\n    display: inline-block;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a:hover {\r\n    background: #2ad181;\r\n    color: white;\r\n    border: 2px solid #fff;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .practiseSubject {\r\n        padding: 30px 0px;\r\n    }\r\n}\r\n/* testsubject page */\r\n.testSubject {\r\n    padding: 30px 90px;\r\n}\r\n.testSubject .testSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 15px 30px;\r\n    margin-bottom: 10px;\r\n    text-align: center;\r\n}\r\n\r\n.testSubject .testSubjectWrapper .title {\r\n    font-size: 36px;\r\n    color: black;\r\n}\r\n.testSubject .testSubjectWrapper .subtitle {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-bottom: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .time {\r\n    color: green;\r\n    margin-bottom: 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 20px;\r\n    color: #019e97;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n    padding: 0px 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n    margin-left: 30px;\r\n    padding: 0px 15px;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n}\r\n.testSubject .testSubjectWrapper .button-container {\r\n    padding: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .button-container a {\r\n    padding: 10px 30px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    box-shadow: inset 3px 3px 7px 1px #e7eeeb;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .testSubject {\r\n        padding: 30px 0px;\r\n    }\r\n    .testSubject .testSubjectWrapper {\r\n        padding: 15px;\r\n    }\r\n    .testSubject .testSubjectWrapper .attempt-container {\r\n        padding: 10px 0px;\r\n    }\r\n}\r\n/* doubts-page */\r\n.doubts-container {\r\n    padding: 60px 90px;\r\n}\r\n.doubts-container .doubts-wrapper {\r\n    background: #32ea9b;\r\n    padding: 15px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box {\r\n    color: white;\r\n    padding-top: 10px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box i {\r\n    padding: 5px;\r\n    font-size: 36px;\r\n}\r\n.doubts-container .doubts-wrapper .title {\r\n    font-size: 16px;\r\n    color: black;\r\n    font-weight: bold;\r\n}\r\n.doubts-container .doubts-wrapper .subtitle {\r\n    font-size: 14px;\r\n    color: #fff;\r\n}\r\n.doubts-container .doubts-wrapper .button-container {\r\n    margin-top: 25px;\r\n    text-align: right;\r\n}\r\n.doubts-container .doubts-wrapper .button-container a {\r\n    padding: 10px 45px;\r\n    font-size: 16px;\r\n    border-radius: 25px;\r\n    font-weight: bold;\r\n    color: white;\r\n    box-shadow: 0px 0px 15px 5px #fff;\r\n}\r\n#doubts {\r\n    padding: 0px 60px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    padding-top: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n#doubts .subject-wrapper {\r\n    box-shadow: 0px 0px 5px 1px #d7d5d5;\r\n    padding: 8px 30px;\r\n    background: white;\r\n    margin-bottom: 20px;\r\n    border-radius: 5px;\r\n}\r\n#doubts .subject-wrapper i {\r\n    padding: 10px;\r\n    color: #25cb83;\r\n    border-radius: 50%;\r\n    display: inline-block;\r\n    margin-right: 15px;\r\n    font-size: 18px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .subject-wrapper .subject-name {\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    color: black;\r\n    display: inline-block;\r\n}\r\n.doubts-container .modal-body {\r\n    background: #f0f0f0;\r\n}\r\n.doubts-container .modal-body .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .modal-body .img-container {\r\n    max-width: 200px;\r\n    max-height: 200px;\r\n    overflow: hidden;\r\n    margin: 0 auto;\r\n    padding: 5px;\r\n    border: 2px dashed #fff;\r\n}\r\n.doubts-container .modal-body input[type=\"file\"] {\r\n    margin-top: 40%;\r\n}\r\n.doubts-container .modal-body label {\r\n    margin-top: 30px;\r\n}\r\n.doubts-container .modal-body textarea {\r\n    width: 100%;\r\n    min-height: 100px;\r\n}\r\n.doubts-container .modal-body .btn-container {\r\n    text-align: right;\r\n}\r\n\r\n.doubts-container .modal-body .submitBtn {\r\n    padding: 8px 30px;\r\n    background: #11bc79;\r\n    color: white;\r\n    border: none;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.doubts-container .questionary-container {\r\n    margin: 30px auto;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper {\r\n    border-bottom: 1px dashed #dddddd;\r\n    padding: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body {\r\n    text-align: center;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body img {\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question {\r\n    font-size: 18px;\r\n    color: #000;\r\n    margin-bottom: 15px;\r\n    margin-top: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question .badge {\r\n    background: #1dc188;\r\n    padding: 5px;\r\n    color: white;\r\n    margin-left: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .answer {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-left: 30px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .updated-time {\r\n    font-size: 14px;\r\n    color: gray;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .doubts-container {\r\n        padding: 30px 0px;\r\n    }\r\n    .doubts-container .doubts-wrapper .button-container {\r\n        margin-top: 25px;\r\n        margin-bottom: 15px;\r\n        text-align: center;\r\n    }\r\n    .doubts-container\r\n        .questionary-container\r\n        .questionary-wrapper\r\n        .updated-time {\r\n        padding-top: 15px;\r\n    }\r\n}\r\n\r\n/* profile-page */\r\n\r\n.profile-wrapper .top-wrapper {\r\n    padding: 60px;\r\n    position: relative;\r\n\r\n    margin-bottom: 60px;\r\n}\r\n.profile-wrapper .top-wrapper .profile-pic {\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n    position: absolute;\r\n    right: 45%;\r\n    top: 30px;\r\n    -webkit-transform: translateX(60px);\r\n            transform: translateX(60px);\r\n    box-shadow: 1px 1px 15px white;\r\n}\r\n.profile-wrapper .top-wrapper .text-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name {\r\n    font-size: 20px;\r\n    color: #21c686;\r\n    font-weight: bold;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name i {\r\n    color: #20c586;\r\n    padding-right: 5px;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .number {\r\n    font-size: 14px;\r\n    color: grey;\r\n}\r\n.profile-wrapper .personal-details,\r\n.profile-wrapper .account-details {\r\n    padding: 15px;\r\n}\r\n.profile-wrapper .title {\r\n    font-size: 24px;\r\n    color: #1ec387;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    margin-bottom: 15px;\r\n}\r\n.profile-wrapper form .form-group {\r\n    width: 45%;\r\n    margin-left: 30px;\r\n    display: inline-block;\r\n}\r\n.profile-wrapper form .form-group .form-control {\r\n    border: none !important;\r\n    box-shadow: inset 1px 2px 5px #9e9b9b;\r\n}\r\n.profile-wrapper form .button-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper form input[type=\"submit\"] {\r\n    background: #1bbe89;\r\n    color: white;\r\n    margin-right: 45px;\r\n    border: none;\r\n    border-radius: 50px;\r\n    padding: 10px 45px;\r\n    margin-top: 15px;\r\n    cursor: pointer;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .profile-wrapper .top-wrapper {\r\n        margin-bottom: -60px;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form .form-group {\r\n        width: 100%;\r\n        margin-left: 0%;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        margin-top: 70%;\r\n    }\r\n    .profile-wrapper form .button-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form input[type=\"submit\"] {\r\n        margin-right: 0px;\r\n    }\r\n}\r\n/* syllabus */\r\n.user-syllabus {\r\n    background: #f2f0f0;\r\n    padding: 60px;\r\n    min-height: calc(100vh - 60px);\r\n}\r\n.user-syllabus .title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #2ed485;\r\n    font-weight: bold;\r\n}\r\n.user-syllabus h2 {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    background: linear-gradient(119deg, #2ad181, #3bdf96);\r\n    text-align: center;\r\n    -webkit-filter: drop-shadow(0px -4px 0px #32d88b);\r\n            filter: drop-shadow(0px -4px 0px #32d88b);\r\n    padding: 12px;\r\n    border-bottom-left-radius: 5px;\r\n    border-bottom-right-radius: 5px;\r\n}\r\n.user-syllabus ul {\r\n    list-style: none;\r\n    font-size: 18px;\r\n}\r\n.user-syllabus ul li {\r\n    width: 100%;\r\n}\r\n.user-syllabus ul li span {\r\n    padding-right: 15px;\r\n}\r\n.user-syllabus .subject-wrapper {\r\n    margin-top: 60px;\r\n}\r\n.user-syllabus .subject-list {\r\n    box-shadow: 0px 0px 6px 2px #c9c7c7;\r\n    background: #fff;\r\n}\r\n.user-syllabus .nav-tabs .nav-item.show .nav-link,\r\n.nav-tabs .nav-link.active {\r\n    border: none;\r\n    color: #1fc388;\r\n    border-radius: 0px;\r\n    background: none;\r\n}\r\n.user-syllabus .nav-tabs {\r\n    border: none;\r\n}\r\n.user-syllabus a.nav-link {\r\n    color: #6c6b6b;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .user-syllabus .subject-wrapper {\r\n        margin-top: 30px;\r\n    }\r\n    .user-syllabus .subject-list {\r\n        margin: 15px;\r\n    }\r\n    .user-syllabus {\r\n        padding: 15px;\r\n    }\r\n}\r\n\r\n.page-enter {\r\n    opacity: 0;\r\n}\r\n.page-enter-active {\r\n    opacity: 1;\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n    -webkit-transition-delay: 300ms;\r\n            transition-delay: 300ms;\r\n}\r\n.page-exit {\r\n    opacity: 1;\r\n}\r\n.page-exit-active {\r\n    opacity: 0;\r\n    -webkit-transition: opacity 0.5s ease-out;\r\n    transition: opacity 0.5s ease-out;\r\n    -webkit-transition-delay: 600ms;\r\n            transition-delay: 600ms;\r\n}\r\n", ""]);
+exports.push([module.i, "body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: \"Mukta\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    font-family: \"Lato\", sans-serif;\r\n}\r\n\r\n.mybtn {\r\n    background: linear-gradient(235deg, #36ea5f, #00b693);\r\n    text-shadow: 1px 2px 3px #928e8e;\r\n    color: white;\r\n    border-radius: 5px;\r\n    padding: 10px 15px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n}\r\n.mybtn:hover {\r\n    background: linear-gradient(45deg, #36ea5f, #00b693);\r\n    color: white;\r\n    text-decoration: none;\r\n}\r\n\r\n/* ------------------- The side navigation menu -------------------- */\r\n.userSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(180deg, #2ad181, #009d98);\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: all 0.2s ease-in;\r\n    transition: all 0.2s ease-in;\r\n    padding-bottom: 30px;\r\n}\r\n.userSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.userSidenav .sideTab {\r\n    display: inline-block;\r\n    padding-left: 10px;\r\n    visibility: visible;\r\n    opacity: 1;\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n}\r\n.userSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.userSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.userSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n.userSidenav .profile-container + .title-name {\r\n    height: 50px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav .title-name + .sideTab {\r\n    width: 100%;\r\n}\r\n.userSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.userSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.userSidenav .company-container {\r\n    position: fixed;\r\n    top: 0;\r\n    width: 250px;\r\n    height: 60px;\r\n    overflow: hidden;\r\n    z-index: 9;\r\n    padding: 5px 15px;\r\n    -webkit-transition: all 0.2s ease-in;\r\n    transition: all 0.2s ease-in;\r\n    background: #27cd81;\r\n}\r\n.userSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.userSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.userSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.userSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.userSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.userSidenav .download-app .play-store,\r\n.userSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.userSidenav .download-app .play-store a,\r\n.userSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.userSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n    height: 45px;\r\n    overflow: hidden;\r\n}\r\n.userSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.userSidenav a:hover {\r\n    color: #000;\r\n}\r\n.userSidenav .active {\r\n    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#f8f8f942), to(#f8f8f9));\r\n    background: linear-gradient(90deg, transparent, #f8f8f942, #f8f8f9);\r\n    color: #ffffff;\r\n}\r\n\r\n.userSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.userSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 60px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.userSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .userSidenav .company-container .img-container {\r\n        width: 40px;\r\n    }\r\n    .userSidenav {\r\n        width: 0px;\r\n        background: -webkit-gradient(linear, left top, left bottom, from(#2ad181), to(#009d98));\r\n        background: linear-gradient(180deg, #2ad181, #009d98);\r\n        box-shadow: 3px 1px 5px #d7ddda;\r\n    }\r\n    .userSidenav .company-container {\r\n        position: relative;\r\n        padding: 15px 4px 8px 5px;\r\n        background: #25cb83;\r\n    }\r\n\r\n    .userSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .userSidenav a {\r\n        color: #fff;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .userSidenav .title-name {\r\n        color: #fff;\r\n        text-shadow: 1px 2px 3px #515050;\r\n    }\r\n    .userSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .userSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .userSidenav .footer-nav {\r\n        padding: 8px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .userSidenav .footer-nav a i {\r\n        display: block;\r\n        font-size: 20px;\r\n    }\r\n    .userSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .userSidenav .footer-nav .active {\r\n        color: #0bf183;\r\n    }\r\n    .userSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .userSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .userSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n/*--------------------main-div---------------------------------*/\r\n#main {\r\n    -webkit-transition: all 0.1s ease-in;\r\n    transition: all 0.1s ease-in;\r\n    margin-left: 250px;\r\n}\r\n.navbar {\r\n    height: 60px;\r\n    background: #fff;\r\n    box-shadow: 1px 0px 5px #e7e7e8;\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n}\r\n.navbar .invite {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .invite i,\r\n.navbar .logout i {\r\n    padding: 5px;\r\n}\r\n.navbar .invite a {\r\n    margin-right: -95px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #32c24d;\r\n}\r\n.navbar .invite:hover a {\r\n    margin-right: 20px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar .logout {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    padding: 10px 0px 10px 15px;\r\n    border-radius: 5px;\r\n}\r\n.navbar .logout a {\r\n    margin-right: -50px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #008862;\r\n}\r\n.navbar .logout:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.navbar #view {\r\n    display: none;\r\n}\r\n.navbar #view i,\r\n.navbar #hide i {\r\n    font-size: 36px;\r\n    color: #2ad181;\r\n}\r\n@media (max-width: 756px) {\r\n    .navbar {\r\n        width: 100%;\r\n        height: 60px;\r\n        padding: 0px 15px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .navbar #view {\r\n        display: block;\r\n    }\r\n    .navbar #hide {\r\n        display: none;\r\n    }\r\n    .navbar #view i,\r\n    .navbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/*---------------------------------------Dynamic Page CSS---------------------*/\r\n.main-content {\r\n    padding: 60px 0px 0px 0px;\r\n    z-index: 0;\r\n}\r\n.main-title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #009d6db3;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    margin-top: 60px;\r\n}\r\n.sub-title {\r\n    font-size: 26px;\r\n    text-align: center;\r\n    margin-top: 30px;\r\n}\r\n.learn-subject {\r\n    padding: 30px 60px;\r\n}\r\n.learn-subject a {\r\n    text-decoration: none;\r\n}\r\n.learn-subject a:hover {\r\n    color: black;\r\n}\r\n.learn-subject .img-container {\r\n    color: white;\r\n    border-radius: 50px;\r\n    padding: 15px 0px 5px 0px;\r\n    text-align: center;\r\n}\r\n\r\n.learn-subject .img-container i {\r\n    color: #31d285;\r\n    font-size: 40px;\r\n}\r\n.learn-subject .subject-container {\r\n    margin: 10px 15px 20px 15px;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    background: #fff;\r\n    box-shadow: -5px -5px 15px #ffffff, 3px 3px 15px #dadadf;\r\n}\r\n.learn-subject .subject-container:hover {\r\n    background: linear-gradient(135deg, #2ad181, #009d98);\r\n}\r\n.learn-subject .subject-container:hover .img-container i {\r\n    color: white;\r\n    -webkit-transform: scale(1.3);\r\n            transform: scale(1.3);\r\n    -webkit-transition: -webkit-transform 0.3s ease-out;\r\n    transition: -webkit-transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out;\r\n    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\r\n}\r\n.learn-subject .subject-container:hover .title {\r\n    color: white;\r\n}\r\n.learn-subject .subject-container .title {\r\n    text-align: center;\r\n    margin: 5px auto;\r\n    color: #686868;\r\n    font-weight: bold;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .main-content {\r\n        padding: 60px 15px 30px 15px;\r\n    }\r\n    .main-title {\r\n        margin-top: 30px;\r\n        font-size: 24px;\r\n    }\r\n    .learn-subject {\r\n        padding: 30px 0px;\r\n    }\r\n\r\n    .learn-subject .img-container {\r\n        padding: 15px;\r\n    }\r\n    .learn-subject .subject-container {\r\n        margin: 0px;\r\n        margin-bottom: 25px;\r\n    }\r\n    .learn-subject .img-container i {\r\n        font-size: 56px;\r\n    }\r\n    .learn-subject .subject-container .title {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n}\r\n/*--------------------------practise-subject-----------------------*/\r\n.practise-subject {\r\n    padding: 30px 60px;\r\n}\r\n.practise-subject .practise-wrapper {\r\n    margin-top: 30px;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n}\r\n.practise-subject .practise-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.practise-subject .practise-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 30px;\r\n    color: white;\r\n    border-radius: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n.practise-subject .practise-wrapper .subject-name i {\r\n    margin-right: 5px;\r\n    color: #32c24d;\r\n}\r\n.practise-subject .practise-wrapper:hover .subject-name i {\r\n    margin-left: 40%;\r\n    -webkit-transition: margin-left 0.4s linear;\r\n    transition: margin-left 0.4s linear;\r\n}\r\n.practise-subject .practise-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.practise-subject .practise-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.practise-subject .practise-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n\r\n.practise-report {\r\n    padding: 15px 60px;\r\n}\r\n.practise-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: -5px -5px 15px #fff, 5px 5px 15px #eaeaea;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.practise-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.practise-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.practise-report .report-wrapper .title .next,\r\n.practise-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.practise-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.practise-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.practise-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .practise-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .practise-subject {\r\n        padding: 10px;\r\n    }\r\n    .practise-subject .practise-wrapper {\r\n        padding: 8px;\r\n    }\r\n    .practise-subject .practise-wrapper .icon-box {\r\n        height: 55px;\r\n        padding: 12px 15px;\r\n        margin-left: 10px;\r\n    }\r\n}\r\n/* -test-front page */\r\n.test-subject {\r\n    padding: 90px 60px 30px 60px;\r\n}\r\n.test-subject .test-wrapper {\r\n    margin: 60px auto;\r\n    padding: 5px;\r\n    padding-top: 90px;\r\n    border-radius: 5px;\r\n    background: #fff;\r\n    box-shadow: 0px 0px 5px 1px #ebe9e9;\r\n    position: relative;\r\n}\r\n.test-subject .test-wrapper .subWrap {\r\n    background: #fff;\r\n    position: absolute;\r\n    top: -60px;\r\n    left: 0;\r\n    box-shadow: inset 3px 0px 20px -15px #8d8d8d;\r\n    right: 0;\r\n    width: 50%;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    border-radius: 5px;\r\n    padding: 15px 0px;\r\n}\r\n.test-subject .test-wrapper a {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.test-subject .test-wrapper .icon-box {\r\n    display: inline-block;\r\n    height: 50px;\r\n    margin-left: 5px;\r\n    padding: 10px 10px;\r\n    font-size: 40px;\r\n    color: #24c984;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test-subject .test-wrapper .subject-name {\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.test-subject .test-wrapper .progress {\r\n    height: 0.5rem;\r\n    border-radius: 0;\r\n}\r\n.test-subject .test-wrapper .progress .progress-bar {\r\n    background: linear-gradient(128deg, #2ad181, #4dfa68);\r\n}\r\n.test-subject .test-wrapper .progress-percent {\r\n    font-size: 12px;\r\n}\r\n.test-subject .test-wrapper .time {\r\n    color: #505050;\r\n\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 14px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    color: #585858;\r\n}\r\n.test-subject .test-wrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n\r\n    padding: 0px 15px;\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n\r\n    padding: 0px 15px;\r\n\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .button-container {\r\n    padding: 30px;\r\n    text-align: center;\r\n}\r\n.test-subject .test-wrapper .button-container a {\r\n    padding: 8px 15px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    border-radius: 50px;\r\n    box-shadow: 3px 3px 7px 1px #e4e6e5;\r\n}\r\n.test-report {\r\n    padding: 15px 60px;\r\n}\r\n.test-report .report-wrapper {\r\n    background: #fff;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 5px 1px #cecece;\r\n}\r\n.test-report .report-wrapper .content-wrapper .overall-report {\r\n    font-size: 120px;\r\n    color: #00ce6f;\r\n    text-shadow: 1px 4px 5px #716e6e;\r\n    text-align: center;\r\n    font-family: \"Righteous\", cursive;\r\n}\r\n.test-report .report-wrapper .content-wrapper .overall-report .title {\r\n    font-size: 24px;\r\n    color: black;\r\n    text-shadow: none;\r\n}\r\n.test-report .report-wrapper .title {\r\n    text-align: center;\r\n}\r\n.test-report .report-wrapper .title .next,\r\n.test-report .report-wrapper .title .prev {\r\n    color: #32c24d;\r\n}\r\n.test-report .report-wrapper .title span {\r\n    cursor: pointer;\r\n}\r\n.test-report .report-wrapper .title .title-wrapper strong {\r\n    display: block;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper {\r\n    margin-top: 20px;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper .title {\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.test-report .report-wrapper .footer-wrapper .title-wrapper .title small {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 756px) {\r\n    .test-report {\r\n        padding: 15px 0;\r\n        margin-bottom: 30px;\r\n    }\r\n    .test-subject {\r\n        padding: 10px;\r\n    }\r\n    .test-subject .test-wrapper {\r\n        padding: 90px 15px 15px 15px;\r\n        margin-top: 90px;\r\n    }\r\n    .test-subject .test-wrapper .icon-box {\r\n        font-size: 60px;\r\n        padding: 5px;\r\n    }\r\n    .test-subject .test-wrapper .subject-name {\r\n        margin-bottom: 0;\r\n        font-size: 24px;\r\n    }\r\n    .test-subject .test-wrapper .attempt-container {\r\n        font-size: 18px;\r\n    }\r\n}\r\n/*---------------------test-section--------------*/\r\n\r\n.select-container {\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: end;\r\n            justify-content: flex-end;\r\n    margin: 40px 0px 20px 0px;\r\n}\r\n.select-container select {\r\n    border: 1px solid green;\r\n    padding: 8px 30px;\r\n    border-radius: 20px;\r\n    background: transparent;\r\n    color: green;\r\n    font-weight: bold;\r\n}\r\n.select-container select option {\r\n    background: #eaf1ea !important;\r\n}\r\n.test {\r\n    box-shadow: 1px 1px 15px 0px #dee5de;\r\n    background: #fff;\r\n    padding: 5px;\r\n    margin-top: 10px;\r\n    border-radius: 5px;\r\n    margin-bottom: 10px;\r\n}\r\n.test .title {\r\n    font-size: 20px;\r\n    text-align: center;\r\n    text-shadow: 1px 2px 3px #d6d6d6;\r\n}\r\n.test .test-wrapper a {\r\n    text-decoration: none;\r\n    color: green;\r\n    z-index: 1;\r\n}\r\n.owl-nav {\r\n    font-size: 40px;\r\n    top: 18%;\r\n    position: absolute;\r\n    left: 0;\r\n    height: 120px;\r\n    right: 0;\r\n    z-index: -1;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n    margin: 0px -30px;\r\n}\r\n.owl-nav button {\r\n    background: #3cc95c !important;\r\n}\r\n.owl-nav button span {\r\n    color: #fff;\r\n    padding: 0px 10px;\r\n}\r\n/*--------mobile view---------------*/\r\n@media only screen and (max-width: 768px) {\r\n    .test {\r\n        margin: 15px auto;\r\n    }\r\n    .owl-nav {\r\n        margin: 0px 15px;\r\n        z-index: 1;\r\n    }\r\n    .owl-nav {\r\n        top: 15%;\r\n        z-index: 1;\r\n        height: 70px;\r\n    }\r\n}\r\n\r\n/*----------------------end of class page----------------------*/\r\n/* subject page */\r\n.main-subject-containter {\r\n    background: #fff;\r\n}\r\n.subject-navbar {\r\n    padding: 75px 60px 15px 90px;\r\n    position: relative;\r\n\r\n    border-bottom: 2px solid #ffffff;\r\n}\r\n.subject-navbar .back {\r\n    position: absolute;\r\n    top: 30px;\r\n    font-size: 24px;\r\n    left: 30px;\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.subject-navbar .icon-box {\r\n    display: inline-block;\r\n    padding: 15px;\r\n    vertical-align: top;\r\n    background: white;\r\n    box-shadow: 0px 0px 5px 1px #d8d3d3;\r\n    border-radius: 5px;\r\n    color: #25cb83;\r\n    font-size: 36px;\r\n}\r\n.subject-navbar .title-box {\r\n    display: inline-block;\r\n    padding-left: 20px;\r\n}\r\n.subject-navbar .title-box h2 {\r\n    line-height: 1;\r\n    margin-top: 5px;\r\n    margin-bottom: 0px;\r\n}\r\n.subject-navbar .nav {\r\n    margin-top: 15px;\r\n}\r\n.subject-navbar .nav-pills .nav-link.active,\r\n.nav-pills .show > .nav-link {\r\n    background: white;\r\n    color: #26cc83;\r\n    border: 1px solid #b5d8c8bf;\r\n    box-shadow: 0px 5px 10px #a7ccbc;\r\n    border-radius: 10px;\r\n    border-bottom: 5px solid #4bc38e;\r\n}\r\n.subject-navbar .nav-pills li {\r\n    padding-right: 15px;\r\n}\r\n.subject-navbar .nav-pills li a {\r\n    color: #262828;\r\n}\r\n\r\n.subject-content {\r\n    margin-top: 30px;\r\n}\r\n.subject-content .chapter-wrapper {\r\n    padding: 30px;\r\n\r\n    box-shadow: 0px 2px 3px #c7eadd;\r\n    margin-bottom: 10px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title {\r\n    font-size: 22px;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title a:hover {\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n.subject-content .chapter-wrapper .option {\r\n    text-align: right;\r\n}\r\n.subject-content .chapter-wrapper .option a {\r\n    display: inline-block;\r\n    padding-right: 30px;\r\n    margin-top: 5px;\r\n    color: #2ad181;\r\n    font-size: 20px;\r\n}\r\n.subject-content .chapter-wrapper .option a:hover {\r\n    -webkit-transform: scale(1.2);\r\n            transform: scale(1.2);\r\n    -webkit-transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear;\r\n    transition: transform 0.3s ease-in-out, color 0.3s linear, -webkit-transform 0.3s ease-in-out;\r\n    color: #009d98;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .subject-navbar .icon-box {\r\n        font-size: 32px;\r\n        padding: 12px;\r\n    }\r\n    .subject-navbar {\r\n        padding: 60px 0 0 0;\r\n        display: inline-block;\r\n    }\r\n    .subject-navbar.d-flex {\r\n        display: inline-block !important;\r\n        width: 100%;\r\n    }\r\n    .subject-navbar .back {\r\n        left: 15px;\r\n        top: 15px;\r\n    }\r\n    .subject-content {\r\n        margin-bottom: 45px;\r\n    }\r\n    .subject-content .chapter-wrapper {\r\n        padding: 24px 15px;\r\n    }\r\n    .subject-content .chapter-wrapper .chapter-title {\r\n        font-size: 20px;\r\n    }\r\n    .subject-content .chapter-wrapper .option a {\r\n        padding-right: 0px;\r\n        padding-left: 20px;\r\n    }\r\n    .subject-navbar .nav-pills li {\r\n        padding-right: 5px;\r\n    }\r\n    .subject-content .chapter-wrapper .option {\r\n        display: -webkit-inline-box;\r\n        display: inline-flex;\r\n    }\r\n    .subject-navbar .nav {\r\n        display: -webkit-box;\r\n        display: flex;\r\n        text-align: center;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n    }\r\n}\r\n/* slideshow */\r\n#flash {\r\n    padding: 45px;\r\n}\r\n#flash .chapter-title {\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    font-size: 22px;\r\n}\r\n#flash .chapter-title span {\r\n    padding-right: 10px;\r\n    color: #25cb83;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    #flash {\r\n        padding: 0;\r\n    }\r\n}\r\n.carousel-inner .carousel-box {\r\n    padding: 30px;\r\n    background: #f8f8f9;\r\n    color: #655d5d;\r\n    margin: 0px 5px;\r\n}\r\n.top-content .slick-slider button {\r\n    padding: 34px 0px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n}\r\n.top-content .slick-next:before,\r\n.top-content .slick-prev:before {\r\n    color: white;\r\n}\r\n.top-content .slick-next,\r\n.top-content .slick-prev {\r\n    width: 30px;\r\n    height: auto;\r\n}\r\n.top-content a {\r\n    text-decoration: none;\r\n    color: #655d5d;\r\n}\r\n.top-content .carousel-control-prev {\r\n    left: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n.top-content .carousel-control-next {\r\n    right: -15px;\r\n    background: linear-gradient(45deg, #2ad181, #009d98);\r\n    width: 30px;\r\n    opacity: 1;\r\n}\r\n\r\n/*note viewer page */\r\n/* ------------------- The side note viewer navigation menu -------------------- */\r\n.viewerSidenav {\r\n    height: 100%;\r\n    width: 250px;\r\n    position: fixed;\r\n    z-index: 2;\r\n    top: 0;\r\n    left: 0;\r\n    background: #4a4a4a;\r\n    overflow-x: hidden;\r\n    -ms-overflow-style: none;\r\n    -webkit-transition: opacity 0.5s linear, width 0.3s linear;\r\n    transition: opacity 0.5s linear, width 0.3s linear;\r\n    padding-bottom: 30px;\r\n}\r\n.viewerSidenav::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.viewerSidenav .profile-container {\r\n    text-align: center;\r\n    padding: 20px 10px;\r\n    margin-top: 60px;\r\n}\r\n.viewerSidenav .profile-container .img-container {\r\n    width: 40%;\r\n    box-shadow: 0px 0px 5px 4px #5753538f;\r\n    margin: 0px auto;\r\n    overflow: hidden;\r\n    border-radius: 50%;\r\n}\r\n\r\n.viewerSidenav .title-name {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Lato\", sans-serif;\r\n    letter-spacing: 1px;\r\n    display: block;\r\n    text-align: center !important;\r\n    border-bottom: 1px solid #c7c7c7;\r\n}\r\n\r\n.viewerSidenav .title-name .grade {\r\n    font-size: 16px;\r\n    text-shadow: none;\r\n    display: inline-block;\r\n    color: black;\r\n}\r\n.viewerSidenav .title-name a {\r\n    display: block;\r\n    padding-left: 10px;\r\n    font-size: 13px;\r\n\r\n    padding: 0px 10px 0px 5px;\r\n}\r\n.viewerSidenav .company-container {\r\n    width: 250px;\r\n    z-index: 9;\r\n    padding: 12px 15px;\r\n    -webkit-transition: 0.5s;\r\n    transition: 0.5s;\r\n    background: #4a4a4a;\r\n}\r\n.viewerSidenav .company-container .img-container {\r\n    width: 50px;\r\n    display: inline-block;\r\n}\r\n.viewerSidenav .company-container .img-container img {\r\n    border-radius: 5px;\r\n}\r\n.viewerSidenav .company-container .title-name {\r\n    display: inline-block;\r\n    border: none;\r\n}\r\n.viewerSidenav .company-container .title-name span {\r\n    display: none;\r\n}\r\n.viewerSidenav .download-title {\r\n    font-size: 18px;\r\n    padding-bottom: 10px;\r\n    color: white;\r\n    text-shadow: 1px 2px 3px #3b3939;\r\n    font-family: \"Righteous\", cursive;\r\n    letter-spacing: 1px;\r\n    text-align: center !important;\r\n}\r\n.viewerSidenav .download-app .play-store,\r\n.viewerSidenav .download-app .app-store {\r\n    background: black;\r\n    margin: 0px 10px;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n.viewerSidenav .download-app .play-store a,\r\n.viewerSidenav .download-app .app-store a {\r\n    padding: 0px !important;\r\n}\r\n#viewer iframe {\r\n    border: none;\r\n}\r\n/* ---------The navigation menu links---------------- */\r\n.viewerSidenav a {\r\n    padding: 10px 8px 10px 32px;\r\n    text-decoration: none;\r\n    font-size: 16px;\r\n    color: #ffffff;\r\n    display: block;\r\n    -webkit-transition: 0.1s;\r\n    transition: 0.1s;\r\n    position: relative;\r\n}\r\n.viewerSidenav a::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: transparent;\r\n}\r\n\r\n.viewerSidenav a:hover {\r\n    color: #000;\r\n}\r\n.viewerSidenav .active {\r\n    background: #fff;\r\n    color: #4a4a4a;\r\n    border-bottom-right-radius: 50px;\r\n    font-weight: bold;\r\n    border-top-right-radius: 50px;\r\n    margin-right: 20px;\r\n    box-shadow: 2px 2px 10px #0d0d0d, -4px -1px 10px #bababa;\r\n}\r\n\r\n.viewerSidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    font-size: 36px;\r\n    margin-left: 50px;\r\n}\r\n.viewerSidenav .footer-nav {\r\n    position: fixed;\r\n    height: 55px;\r\n    display: none;\r\n    border-top: 1px solid #fff;\r\n\r\n    text-align: center;\r\n    background: #fff;\r\n    bottom: 0px;\r\n    width: 100%;\r\n}\r\n.viewerSidenav .footer-nav a {\r\n    display: inline-block;\r\n}\r\n@media (max-width: 756px) {\r\n    #userSideNav {\r\n        padding-bottom: 60px;\r\n    }\r\n    .viewerSidenav .company-container .img-container {\r\n        width: 70px;\r\n    }\r\n    .viewerSidenav {\r\n        width: 0px;\r\n        background: #ffffff;\r\n    }\r\n    .viewerSidenav .company-container {\r\n        position: relative;\r\n        padding: 12px 5px 5px 5px;\r\n    }\r\n\r\n    .viewerSidenav .profile-container {\r\n        margin-top: 0;\r\n    }\r\n    .viewerSidenav a {\r\n        color: #3d3b3b;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .viewerSidenav .title-name {\r\n        color: #32c24d;\r\n        text-shadow: 1px 2px 3px #f4f1f1;\r\n    }\r\n    .viewerSidenav .company-container .title-name span {\r\n        display: inline-block;\r\n        margin-left: 12px;\r\n    }\r\n    .viewerSidenav .company-container .title-name {\r\n        color: white;\r\n        text-shadow: 1px 2px 3px #767575;\r\n    }\r\n    .viewerSidenav .footer-nav {\r\n        padding: 3px 15px;\r\n        display: -webkit-box;\r\n        display: flex;\r\n        -webkit-box-pack: justify;\r\n                justify-content: space-between;\r\n        box-shadow: 0px -1px 5px #d2d2d2;\r\n    }\r\n    .viewerSidenav .footer-nav a i {\r\n        display: block;\r\n    }\r\n    .viewerSidenav .footer-nav a {\r\n        padding: 5px;\r\n        color: #3b3a3a;\r\n    }\r\n    .viewerSidenav .footer-nav .active {\r\n        color: green;\r\n    }\r\n    .viewerSidenav .footer-nav a span {\r\n        font-size: 14px;\r\n        font-weight: normal;\r\n    }\r\n    .viewerSidenav .title-name {\r\n        font-size: 16px;\r\n    }\r\n    .viewerSidenav .profile-container .img-container {\r\n        width: 40%;\r\n    }\r\n}\r\n.main-content.viewer {\r\n    padding-top: 40px;\r\n}\r\n.viewerNavbar {\r\n    height: 40px;\r\n    background: #4a4a4a;\r\n\r\n    position: fixed;\r\n    width: calc(100% - 250px);\r\n    z-index: 1;\r\n    padding: 8px 16px;\r\n}\r\n\r\n.viewerNavbar .close i {\r\n    padding: 5px;\r\n}\r\n\r\n.viewerNavbar .close {\r\n    display: block;\r\n    height: 44px;\r\n    overflow: hidden;\r\n\r\n    border-radius: 5px;\r\n}\r\n.viewerNavbar .close a {\r\n    margin-right: 10px;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n.viewerNavbar .close:hover a {\r\n    margin-right: 10px;\r\n    -webkit-transition: margin-right 0.3s linear;\r\n    transition: margin-right 0.3s linear;\r\n}\r\n.viewerNavbar #view {\r\n    display: none;\r\n}\r\n.viewerNavbar #view i,\r\n.viewerNavbar #hide i {\r\n    font-size: 24px;\r\n    color: #ffffff;\r\n}\r\n@media (max-width: 756px) {\r\n    .viewerNavbar {\r\n        width: 100%;\r\n        height: 40px;\r\n        padding: 8px;\r\n    }\r\n    #main {\r\n        margin-left: 0px;\r\n    }\r\n    .viewerNavbar #view {\r\n        display: block;\r\n    }\r\n    .viewerNavbar #hide {\r\n        display: none;\r\n    }\r\n    .viewerNavbar #view i,\r\n    .viewerNavbar #hide i {\r\n        font-size: 26px;\r\n    }\r\n    .main-content.viewer {\r\n        padding: 40px 0px 0px 0px;\r\n    }\r\n    .userSidenav .active {\r\n        background: none;\r\n    }\r\n}\r\n@media screen and (max-height: 450px) {\r\n    .userSidenav {\r\n        padding-top: 15px;\r\n    }\r\n    .userSidenav a {\r\n        font-size: 18px;\r\n    }\r\n}\r\n\r\n/* PractiseSubject */\r\n.practiseSubject {\r\n    padding: 30px 90px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 10px 30px;\r\n    margin-bottom: 10px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a {\r\n    text-decoration: none;\r\n}\r\n.practiseSubject .practiseSubjectWrapper a:hover {\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name {\r\n    font-size: 24px;\r\n    color: black;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .chapter-name span {\r\n    padding-right: 10px;\r\n    color: green;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress {\r\n    height: 8px;\r\n    width: 80%;\r\n    margin-bottom: 5px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress .progress-bar {\r\n    background: -webkit-gradient(linear, left top, right top, from(#2ad181), to(#009d98));\r\n    background: linear-gradient(90deg, #2ad181, #009d98);\r\n}\r\n.practiseSubject .practiseSubjectWrapper .progress-percent {\r\n    display: inline-block;\r\n    padding-left: 15px;\r\n    color: gray;\r\n    font-size: 12px;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .level {\r\n    display: inline-block;\r\n    padding-left: 30px;\r\n    font-size: 12px;\r\n    color: gray;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container {\r\n    vertical-align: middle;\r\n    padding-top: 15px;\r\n    text-align: right;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a {\r\n    border-radius: 5px;\r\n    border: 2px solid #fff;\r\n    color: #2ad181;\r\n    padding: 8px;\r\n    display: inline-block;\r\n}\r\n.practiseSubject .practiseSubjectWrapper .button-container a:hover {\r\n    background: #2ad181;\r\n    color: white;\r\n    border: 2px solid #fff;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .practiseSubject {\r\n        padding: 30px 0px;\r\n    }\r\n}\r\n/* testsubject page */\r\n.testSubject {\r\n    padding: 30px 90px;\r\n}\r\n.testSubject .testSubjectWrapper {\r\n    background: #f1fff9;\r\n    padding: 15px 30px;\r\n    margin-bottom: 10px;\r\n    text-align: center;\r\n}\r\n\r\n.testSubject .testSubjectWrapper .title {\r\n    font-size: 36px;\r\n    color: black;\r\n}\r\n.testSubject .testSubjectWrapper .subtitle {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-bottom: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .time {\r\n    color: green;\r\n    margin-bottom: 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container {\r\n    padding: 10px;\r\n    font-size: 20px;\r\n    color: #019e97;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .attempt {\r\n    display: inline-block;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n    padding: 0px 15px;\r\n}\r\n.testSubject .testSubjectWrapper .attempt-container .remaining {\r\n    display: inline-block;\r\n    margin-left: 30px;\r\n    padding: 0px 15px;\r\n    border-top: 1px solid #25cb83;\r\n    border-bottom: 1px solid #25cb83;\r\n}\r\n.testSubject .testSubjectWrapper .button-container {\r\n    padding: 30px;\r\n}\r\n.testSubject .testSubjectWrapper .button-container a {\r\n    padding: 10px 30px;\r\n    background: white;\r\n    text-decoration: none;\r\n    color: #008862;\r\n    box-shadow: inset 3px 3px 7px 1px #e7eeeb;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .testSubject {\r\n        padding: 30px 0px;\r\n    }\r\n    .testSubject .testSubjectWrapper {\r\n        padding: 15px;\r\n    }\r\n    .testSubject .testSubjectWrapper .attempt-container {\r\n        padding: 10px 0px;\r\n    }\r\n}\r\n/* doubts-page */\r\n.doubts-container {\r\n    padding: 60px 90px;\r\n}\r\n.doubts-container .doubts-wrapper {\r\n    background: #32ea9b;\r\n    padding: 15px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box {\r\n    color: white;\r\n    padding-top: 10px;\r\n}\r\n.doubts-container .doubts-wrapper .icon-box i {\r\n    padding: 5px;\r\n    font-size: 36px;\r\n}\r\n.doubts-container .doubts-wrapper .title {\r\n    font-size: 16px;\r\n    color: black;\r\n    font-weight: bold;\r\n}\r\n.doubts-container .doubts-wrapper .subtitle {\r\n    font-size: 14px;\r\n    color: #fff;\r\n}\r\n.doubts-container .doubts-wrapper .button-container {\r\n    margin-top: 25px;\r\n    text-align: right;\r\n}\r\n.doubts-container .doubts-wrapper .button-container a {\r\n    padding: 10px 45px;\r\n    font-size: 16px;\r\n    border-radius: 25px;\r\n    font-weight: bold;\r\n    color: white;\r\n    box-shadow: 0px 0px 15px 5px #fff;\r\n}\r\n#doubts {\r\n    padding: 0px 60px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    padding-top: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n#doubts .subject-wrapper {\r\n    box-shadow: 0px 0px 5px 1px #d7d5d5;\r\n    padding: 8px 30px;\r\n    background: white;\r\n    margin-bottom: 20px;\r\n    border-radius: 5px;\r\n}\r\n#doubts .subject-wrapper i {\r\n    padding: 10px;\r\n    color: #25cb83;\r\n    border-radius: 50%;\r\n    display: inline-block;\r\n    margin-right: 15px;\r\n    font-size: 18px;\r\n    background: #f0f0f0;\r\n}\r\n#doubts .subject-wrapper .subject-name {\r\n    font-size: 18px;\r\n    font-weight: bold;\r\n    color: black;\r\n    display: inline-block;\r\n}\r\n.doubts-container .modal-body {\r\n    background: #f0f0f0;\r\n}\r\n.doubts-container .modal-body .title {\r\n    font-size: 14px;\r\n    color: grey;\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .modal-body .img-container {\r\n    max-width: 200px;\r\n    max-height: 200px;\r\n    overflow: hidden;\r\n    margin: 0 auto;\r\n    padding: 5px;\r\n    border: 2px dashed #fff;\r\n}\r\n.doubts-container .modal-body input[type=\"file\"] {\r\n    margin-top: 40%;\r\n}\r\n.doubts-container .modal-body label {\r\n    margin-top: 30px;\r\n}\r\n.doubts-container .modal-body textarea {\r\n    width: 100%;\r\n    min-height: 100px;\r\n}\r\n.doubts-container .modal-body .btn-container {\r\n    text-align: right;\r\n}\r\n\r\n.doubts-container .modal-body .submitBtn {\r\n    padding: 8px 30px;\r\n    background: #11bc79;\r\n    color: white;\r\n    border: none;\r\n    margin-top: 30px;\r\n    border-radius: 5px;\r\n}\r\n.doubts-container .questionary-container {\r\n    margin: 30px auto;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper {\r\n    border-bottom: 1px dashed #dddddd;\r\n    padding: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body {\r\n    text-align: center;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .modal-body img {\r\n    margin-bottom: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question {\r\n    font-size: 18px;\r\n    color: #000;\r\n    margin-bottom: 15px;\r\n    margin-top: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .question .badge {\r\n    background: #1dc188;\r\n    padding: 5px;\r\n    color: white;\r\n    margin-left: 15px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .answer {\r\n    font-size: 14px;\r\n    color: gray;\r\n    margin-left: 30px;\r\n}\r\n.doubts-container .questionary-container .questionary-wrapper .updated-time {\r\n    font-size: 14px;\r\n    color: gray;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .doubts-container {\r\n        padding: 30px 0px;\r\n    }\r\n    .doubts-container .doubts-wrapper .button-container {\r\n        margin-top: 25px;\r\n        margin-bottom: 15px;\r\n        text-align: center;\r\n    }\r\n    .doubts-container\r\n        .questionary-container\r\n        .questionary-wrapper\r\n        .updated-time {\r\n        padding-top: 15px;\r\n    }\r\n}\r\n\r\n/* profile-page */\r\n\r\n.profile-wrapper .top-wrapper {\r\n    padding: 60px;\r\n    position: relative;\r\n\r\n    margin-bottom: 60px;\r\n}\r\n.profile-wrapper .top-wrapper .profile-pic {\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n    position: absolute;\r\n    right: 45%;\r\n    top: 30px;\r\n    -webkit-transform: translateX(60px);\r\n            transform: translateX(60px);\r\n    box-shadow: 1px 1px 15px white;\r\n}\r\n.profile-wrapper .top-wrapper .text-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name {\r\n    font-size: 20px;\r\n    color: #21c686;\r\n    font-weight: bold;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .name i {\r\n    color: #20c586;\r\n    padding-right: 5px;\r\n}\r\n.profile-wrapper .top-wrapper .text-container .number {\r\n    font-size: 14px;\r\n    color: grey;\r\n}\r\n.profile-wrapper .personal-details,\r\n.profile-wrapper .account-details {\r\n    padding: 15px;\r\n}\r\n.profile-wrapper .title {\r\n    font-size: 24px;\r\n    color: #1ec387;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    margin-bottom: 15px;\r\n}\r\n.profile-wrapper form .form-group {\r\n    width: 45%;\r\n    margin-left: 30px;\r\n    display: inline-block;\r\n}\r\n.profile-wrapper form .form-group .form-control {\r\n    border: none !important;\r\n    box-shadow: inset 1px 2px 5px #9e9b9b;\r\n}\r\n.profile-wrapper form .button-container {\r\n    text-align: right;\r\n}\r\n.profile-wrapper form input[type=\"submit\"] {\r\n    background: #1bbe89;\r\n    color: white;\r\n    margin-right: 45px;\r\n    border: none;\r\n    border-radius: 50px;\r\n    padding: 10px 45px;\r\n    margin-top: 15px;\r\n    cursor: pointer;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .profile-wrapper .top-wrapper {\r\n        margin-bottom: -60px;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form .form-group {\r\n        width: 100%;\r\n        margin-left: 0%;\r\n    }\r\n    .profile-wrapper .top-wrapper .text-container {\r\n        margin-top: 70%;\r\n    }\r\n    .profile-wrapper form .button-container {\r\n        text-align: center;\r\n    }\r\n    .profile-wrapper form input[type=\"submit\"] {\r\n        margin-right: 0px;\r\n    }\r\n}\r\n/* syllabus */\r\n.user-syllabus {\r\n    background: #f2f0f0;\r\n    padding: 60px;\r\n    min-height: calc(100vh - 60px);\r\n}\r\n.user-syllabus .title {\r\n    text-align: center;\r\n    font-size: 36px;\r\n    color: #2ed485;\r\n    font-weight: bold;\r\n}\r\n.user-syllabus h2 {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    background: linear-gradient(119deg, #2ad181, #3bdf96);\r\n    text-align: center;\r\n    -webkit-filter: drop-shadow(0px -4px 0px #32d88b);\r\n            filter: drop-shadow(0px -4px 0px #32d88b);\r\n    padding: 12px;\r\n    border-bottom-left-radius: 5px;\r\n    border-bottom-right-radius: 5px;\r\n}\r\n.user-syllabus ul {\r\n    list-style: none;\r\n    font-size: 18px;\r\n}\r\n.user-syllabus ul li {\r\n    width: 100%;\r\n}\r\n.user-syllabus ul li span {\r\n    padding-right: 15px;\r\n}\r\n.user-syllabus .subject-wrapper {\r\n    margin-top: 60px;\r\n}\r\n.user-syllabus .subject-list {\r\n    box-shadow: 0px 0px 6px 2px #c9c7c7;\r\n    background: #fff;\r\n}\r\n.user-syllabus .nav-tabs .nav-item.show .nav-link,\r\n.nav-tabs .nav-link.active {\r\n    border: none;\r\n    color: #1fc388;\r\n    border-radius: 0px;\r\n    background: none;\r\n}\r\n.user-syllabus .nav-tabs {\r\n    border: none;\r\n}\r\n.user-syllabus a.nav-link {\r\n    color: #6c6b6b;\r\n}\r\n@media screen and (max-width: 768px) {\r\n    .user-syllabus .subject-wrapper {\r\n        margin-top: 30px;\r\n    }\r\n    .user-syllabus .subject-list {\r\n        margin: 15px;\r\n    }\r\n    .user-syllabus {\r\n        padding: 15px;\r\n    }\r\n}\r\n\r\n.page-enter {\r\n    opacity: 0;\r\n}\r\n.page-enter-active {\r\n    opacity: 1;\r\n    -webkit-transition: opacity 0.2s ease-in;\r\n    transition: opacity 0.2s ease-in;\r\n    -webkit-transition-delay: 300ms;\r\n            transition-delay: 300ms;\r\n}\r\n.page-exit {\r\n    opacity: 1;\r\n}\r\n.page-exit-active {\r\n    opacity: 0;\r\n    -webkit-transition: opacity 0.5s ease-out;\r\n    transition: opacity 0.5s ease-out;\r\n    -webkit-transition-delay: 600ms;\r\n            transition-delay: 600ms;\r\n}\r\n", ""]);
 
 // exports
 
@@ -71865,6 +71865,17 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-loading-skeleton/dist/bundle.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-loading-skeleton/dist/bundle.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,r){ true?module.exports=r(__webpack_require__(/*! react */ "./node_modules/react/index.js")):undefined}(window,(function(e){return function(e){var r={};function t(n){if(r[n])return r[n].exports;var a=r[n]={i:n,l:!1,exports:{}};return e[n].call(a.exports,a,a.exports,t),a.l=!0,a.exports}return t.m=e,t.c=r,t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:n})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,r){if(1&r&&(e=t(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(t.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var a in e)t.d(n,a,function(r){return e[r]}.bind(null,a));return n},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},t.p="",t(t.s=1)}([function(r,t){r.exports=e},function(e,r,t){e.exports=t(2)},function(e,r,t){"use strict";t.r(r);var n=t(0),a=t.n(n);var i=function(){function e(e){this.isSpeedy=void 0===e.speedy||e.speedy,this.tags=[],this.ctr=0,this.nonce=e.nonce,this.key=e.key,this.container=e.container,this.before=null}var r=e.prototype;return r.insert=function(e){if(this.ctr%(this.isSpeedy?65e3:1)==0){var r,t=function(e){var r=document.createElement("style");return r.setAttribute("data-emotion",e.key),void 0!==e.nonce&&r.setAttribute("nonce",e.nonce),r.appendChild(document.createTextNode("")),r}(this);r=0===this.tags.length?this.before:this.tags[this.tags.length-1].nextSibling,this.container.insertBefore(t,r),this.tags.push(t)}var n=this.tags[this.tags.length-1];if(this.isSpeedy){var a=function(e){if(e.sheet)return e.sheet;for(var r=0;r<document.styleSheets.length;r++)if(document.styleSheets[r].ownerNode===e)return document.styleSheets[r]}(n);try{var i=105===e.charCodeAt(1)&&64===e.charCodeAt(0);a.insertRule(e,i?0:a.cssRules.length)}catch(e){0}}else n.appendChild(document.createTextNode(e));this.ctr++},r.flush=function(){this.tags.forEach((function(e){return e.parentNode.removeChild(e)})),this.tags=[],this.ctr=0},e}();var c=function(e){function r(e,r,n){var a=r.trim().split(b);r=a;var i=a.length,c=e.length;switch(c){case 0:case 1:var o=0;for(e=0===c?"":e[0]+" ";o<i;++o)r[o]=t(e,r[o],n).trim();break;default:var s=o=0;for(r=[];o<i;++o)for(var u=0;u<c;++u)r[s++]=t(e[u]+" ",a[o],n).trim()}return r}function t(e,r,t){var n=r.charCodeAt(0);switch(33>n&&(n=(r=r.trim()).charCodeAt(0)),n){case 38:return r.replace(p,"$1"+e.trim());case 58:return e.trim()+r.replace(p,"$1"+e.trim());default:if(0<1*t&&0<r.indexOf("\f"))return r.replace(p,(58===e.charCodeAt(0)?"":"$1")+e.trim())}return e+r}function n(e,r,t,i){var c=e+";",o=2*r+3*t+4*i;if(944===o){e=c.indexOf(":",9)+1;var s=c.substring(e,c.length-1).trim();return s=c.substring(0,e).trim()+s+";",1===E||2===E&&a(s,1)?"-webkit-"+s+s:s}if(0===E||2===E&&!a(c,1))return c;switch(o){case 1015:return 97===c.charCodeAt(10)?"-webkit-"+c+c:c;case 951:return 116===c.charCodeAt(3)?"-webkit-"+c+c:c;case 963:return 110===c.charCodeAt(5)?"-webkit-"+c+c:c;case 1009:if(100!==c.charCodeAt(4))break;case 969:case 942:return"-webkit-"+c+c;case 978:return"-webkit-"+c+"-moz-"+c+c;case 1019:case 983:return"-webkit-"+c+"-moz-"+c+"-ms-"+c+c;case 883:if(45===c.charCodeAt(8))return"-webkit-"+c+c;if(0<c.indexOf("image-set(",11))return c.replace(O,"$1-webkit-$2")+c;break;case 932:if(45===c.charCodeAt(4))switch(c.charCodeAt(5)){case 103:return"-webkit-box-"+c.replace("-grow","")+"-webkit-"+c+"-ms-"+c.replace("grow","positive")+c;case 115:return"-webkit-"+c+"-ms-"+c.replace("shrink","negative")+c;case 98:return"-webkit-"+c+"-ms-"+c.replace("basis","preferred-size")+c}return"-webkit-"+c+"-ms-"+c+c;case 964:return"-webkit-"+c+"-ms-flex-"+c+c;case 1023:if(99!==c.charCodeAt(8))break;return"-webkit-box-pack"+(s=c.substring(c.indexOf(":",15)).replace("flex-","").replace("space-between","justify"))+"-webkit-"+c+"-ms-flex-pack"+s+c;case 1005:return d.test(c)?c.replace(f,":-webkit-")+c.replace(f,":-moz-")+c:c;case 1e3:switch(r=(s=c.substring(13).trim()).indexOf("-")+1,s.charCodeAt(0)+s.charCodeAt(r)){case 226:s=c.replace(k,"tb");break;case 232:s=c.replace(k,"tb-rl");break;case 220:s=c.replace(k,"lr");break;default:return c}return"-webkit-"+c+"-ms-"+s+c;case 1017:if(-1===c.indexOf("sticky",9))break;case 975:switch(r=(c=e).length-10,o=(s=(33===c.charCodeAt(r)?c.substring(0,r):c).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|s.charCodeAt(7))){case 203:if(111>s.charCodeAt(8))break;case 115:c=c.replace(s,"-webkit-"+s)+";"+c;break;case 207:case 102:c=c.replace(s,"-webkit-"+(102<o?"inline-":"")+"box")+";"+c.replace(s,"-webkit-"+s)+";"+c.replace(s,"-ms-"+s+"box")+";"+c}return c+";";case 938:if(45===c.charCodeAt(5))switch(c.charCodeAt(6)){case 105:return s=c.replace("-items",""),"-webkit-"+c+"-webkit-box-"+s+"-ms-flex-"+s+c;case 115:return"-webkit-"+c+"-ms-flex-item-"+c.replace(A,"")+c;default:return"-webkit-"+c+"-ms-flex-line-pack"+c.replace("align-content","").replace(A,"")+c}break;case 973:case 989:if(45!==c.charCodeAt(3)||122===c.charCodeAt(4))break;case 931:case 953:if(!0===x.test(e))return 115===(s=e.substring(e.indexOf(":")+1)).charCodeAt(0)?n(e.replace("stretch","fill-available"),r,t,i).replace(":fill-available",":stretch"):c.replace(s,"-webkit-"+s)+c.replace(s,"-moz-"+s.replace("fill-",""))+c;break;case 962:if(c="-webkit-"+c+(102===c.charCodeAt(5)?"-ms-"+c:"")+c,211===t+i&&105===c.charCodeAt(13)&&0<c.indexOf("transform",10))return c.substring(0,c.indexOf(";",27)+1).replace(h,"$1-webkit-$2")+c}return c}function a(e,r){var t=e.indexOf(1===r?":":"{"),n=e.substring(0,3!==r?t:10);return t=e.substring(t+1,e.length-1),R(2!==r?n:n.replace(C,"$1"),t,r)}function i(e,r){var t=n(r,r.charCodeAt(0),r.charCodeAt(1),r.charCodeAt(2));return t!==r+";"?t.replace(w," or ($1)").substring(4):"("+r+")"}function c(e,r,t,n,a,i,c,o,u,l){for(var f,d=0,h=r;d<$;++d)switch(f=z[d].call(s,e,h,t,n,a,i,c,o,u,l)){case void 0:case!1:case!0:case null:break;default:h=f}if(h!==r)return h}function o(e){return void 0!==(e=e.prefix)&&(R=null,e?"function"!=typeof e?E=1:(E=2,R=e):E=0),o}function s(e,t){var o=e;if(33>o.charCodeAt(0)&&(o=o.trim()),o=[o],0<$){var s=c(-1,t,o,o,j,S,0,0,0,0);void 0!==s&&"string"==typeof s&&(t=s)}var f=function e(t,o,s,f,d){for(var h,b,p,k,w,A=0,C=0,x=0,O=0,z=0,R=0,G=p=h=0,M=0,T=0,I=0,W=0,q=s.length,D=q-1,F="",L="",B="",H="";M<q;){if(b=s.charCodeAt(M),M===D&&0!==C+O+x+A&&(0!==C&&(b=47===C?10:47),O=x=A=0,q++,D++),0===C+O+x+A){if(M===D&&(0<T&&(F=F.replace(l,"")),0<F.trim().length)){switch(b){case 32:case 9:case 59:case 13:case 10:break;default:F+=s.charAt(M)}b=59}switch(b){case 123:for(h=(F=F.trim()).charCodeAt(0),p=1,W=++M;M<q;){switch(b=s.charCodeAt(M)){case 123:p++;break;case 125:p--;break;case 47:switch(b=s.charCodeAt(M+1)){case 42:case 47:e:{for(G=M+1;G<D;++G)switch(s.charCodeAt(G)){case 47:if(42===b&&42===s.charCodeAt(G-1)&&M+2!==G){M=G+1;break e}break;case 10:if(47===b){M=G+1;break e}}M=G}}break;case 91:b++;case 40:b++;case 34:case 39:for(;M++<D&&s.charCodeAt(M)!==b;);}if(0===p)break;M++}switch(p=s.substring(W,M),0===h&&(h=(F=F.replace(u,"").trim()).charCodeAt(0)),h){case 64:switch(0<T&&(F=F.replace(l,"")),b=F.charCodeAt(1)){case 100:case 109:case 115:case 45:T=o;break;default:T=P}if(W=(p=e(o,T,p,b,d+1)).length,0<$&&(w=c(3,p,T=r(P,F,I),o,j,S,W,b,d,f),F=T.join(""),void 0!==w&&0===(W=(p=w.trim()).length)&&(b=0,p="")),0<W)switch(b){case 115:F=F.replace(y,i);case 100:case 109:case 45:p=F+"{"+p+"}";break;case 107:p=(F=F.replace(g,"$1 $2"))+"{"+p+"}",p=1===E||2===E&&a("@"+p,3)?"@-webkit-"+p+"@"+p:"@"+p;break;default:p=F+p,112===f&&(L+=p,p="")}else p="";break;default:p=e(o,r(o,F,I),p,f,d+1)}B+=p,p=I=T=G=h=0,F="",b=s.charCodeAt(++M);break;case 125:case 59:if(1<(W=(F=(0<T?F.replace(l,""):F).trim()).length))switch(0===G&&(h=F.charCodeAt(0),45===h||96<h&&123>h)&&(W=(F=F.replace(" ",":")).length),0<$&&void 0!==(w=c(1,F,o,t,j,S,L.length,f,d,f))&&0===(W=(F=w.trim()).length)&&(F="\0\0"),h=F.charCodeAt(0),b=F.charCodeAt(1),h){case 0:break;case 64:if(105===b||99===b){H+=F+s.charAt(M);break}default:58!==F.charCodeAt(W-1)&&(L+=n(F,h,b,F.charCodeAt(2)))}I=T=G=h=0,F="",b=s.charCodeAt(++M)}}switch(b){case 13:case 10:47===C?C=0:0===1+h&&107!==f&&0<F.length&&(T=1,F+="\0"),0<$*N&&c(0,F,o,t,j,S,L.length,f,d,f),S=1,j++;break;case 59:case 125:if(0===C+O+x+A){S++;break}default:switch(S++,k=s.charAt(M),b){case 9:case 32:if(0===O+A+C)switch(z){case 44:case 58:case 9:case 32:k="";break;default:32!==b&&(k=" ")}break;case 0:k="\\0";break;case 12:k="\\f";break;case 11:k="\\v";break;case 38:0===O+C+A&&(T=I=1,k="\f"+k);break;case 108:if(0===O+C+A+_&&0<G)switch(M-G){case 2:112===z&&58===s.charCodeAt(M-3)&&(_=z);case 8:111===R&&(_=R)}break;case 58:0===O+C+A&&(G=M);break;case 44:0===C+x+O+A&&(T=1,k+="\r");break;case 34:case 39:0===C&&(O=O===b?0:0===O?b:O);break;case 91:0===O+C+x&&A++;break;case 93:0===O+C+x&&A--;break;case 41:0===O+C+A&&x--;break;case 40:if(0===O+C+A){if(0===h)switch(2*z+3*R){case 533:break;default:h=1}x++}break;case 64:0===C+x+O+A+G+p&&(p=1);break;case 42:case 47:if(!(0<O+A+x))switch(C){case 0:switch(2*b+3*s.charCodeAt(M+1)){case 235:C=47;break;case 220:W=M,C=42}break;case 42:47===b&&42===z&&W+2!==M&&(33===s.charCodeAt(W+2)&&(L+=s.substring(W,M+1)),k="",C=0)}}0===C&&(F+=k)}R=z,z=b,M++}if(0<(W=L.length)){if(T=o,0<$&&(void 0!==(w=c(2,L,T,t,j,S,W,f,d,f))&&0===(L=w).length))return H+L+B;if(L=T.join(",")+"{"+L+"}",0!=E*_){switch(2!==E||a(L,2)||(_=0),_){case 111:L=L.replace(v,":-moz-$1")+L;break;case 112:L=L.replace(m,"::-webkit-input-$1")+L.replace(m,"::-moz-$1")+L.replace(m,":-ms-input-$1")+L}_=0}}return H+L+B}(P,o,t,0,0);return 0<$&&(void 0!==(s=c(-2,f,o,o,j,S,f.length,0,0,0))&&(f=s)),"",_=0,S=j=1,f}var u=/^\0+/g,l=/[\0\r\f]/g,f=/: */g,d=/zoo|gra/,h=/([,: ])(transform)/g,b=/,\r+?/g,p=/([\t\r\n ])*\f?&/g,g=/@(k\w+)\s*(\S*)\s*/,m=/::(place)/g,v=/:(read-only)/g,k=/[svh]\w+-[tblr]{2}/,y=/\(\s*(.*)\s*\)/g,w=/([\s\S]*?);/g,A=/-self|flex-/g,C=/[^]*?(:[rp][el]a[\w-]+)[^]*/,x=/stretch|:\s*\w+\-(?:conte|avail)/,O=/([^-])(image-set\()/,S=1,j=1,_=0,E=1,P=[],z=[],$=0,R=null,N=0;return s.use=function e(r){switch(r){case void 0:case null:$=z.length=0;break;default:if("function"==typeof r)z[$++]=r;else if("object"==typeof r)for(var t=0,n=r.length;t<n;++t)e(r[t]);else N=0|!!r}return e},s.set=o,void 0!==e&&o(e),s};function o(e){e&&s.current.insert(e+"}")}var s={current:null},u=function(e,r,t,n,a,i,c,u,l,f){switch(e){case 1:switch(r.charCodeAt(0)){case 64:return s.current.insert(r+";"),"";case 108:if(98===r.charCodeAt(2))return""}break;case 2:if(0===u)return r+"/*|*/";break;case 3:switch(u){case 102:case 112:return s.current.insert(t[0]+r),"";default:return r+(0===f?"/*|*/":"")}case-2:r.split("/*|*/}").forEach(o)}},l=function(e){void 0===e&&(e={});var r,t=e.key||"css";void 0!==e.prefix&&(r={prefix:e.prefix});var n=new c(r);var a,o={};a=e.container||document.head;var l,f=document.querySelectorAll("style[data-emotion-"+t+"]");Array.prototype.forEach.call(f,(function(e){e.getAttribute("data-emotion-"+t).split(" ").forEach((function(e){o[e]=!0})),e.parentNode!==a&&a.appendChild(e)})),n.use(e.stylisPlugins)(u),l=function(e,r,t,a){var i=r.name;s.current=t,n(e,r.styles),a&&(d.inserted[i]=!0)};var d={key:t,sheet:new i({key:t,container:a,nonce:e.nonce,speedy:e.speedy}),nonce:e.nonce,inserted:o,registered:{},insert:l};return d};var f=function(e){for(var r,t=e.length,n=t^t,a=0;t>=4;)r=1540483477*(65535&(r=255&e.charCodeAt(a)|(255&e.charCodeAt(++a))<<8|(255&e.charCodeAt(++a))<<16|(255&e.charCodeAt(++a))<<24))+((1540483477*(r>>>16)&65535)<<16),n=1540483477*(65535&n)+((1540483477*(n>>>16)&65535)<<16)^(r=1540483477*(65535&(r^=r>>>24))+((1540483477*(r>>>16)&65535)<<16)),t-=4,++a;switch(t){case 3:n^=(255&e.charCodeAt(a+2))<<16;case 2:n^=(255&e.charCodeAt(a+1))<<8;case 1:n=1540483477*(65535&(n^=255&e.charCodeAt(a)))+((1540483477*(n>>>16)&65535)<<16)}return n=1540483477*(65535&(n^=n>>>13))+((1540483477*(n>>>16)&65535)<<16),((n^=n>>>15)>>>0).toString(36)},d={animationIterationCount:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,msGridRow:1,msGridRowSpan:1,msGridColumn:1,msGridColumnSpan:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1};var h=/[A-Z]|^ms/g,b=/_EMO_([^_]+?)_([^]*?)_EMO_/g,p=function(e){return 45===e.charCodeAt(1)},g=function(e){var r={};return function(t){return void 0===r[t]&&(r[t]=e(t)),r[t]}}((function(e){return p(e)?e:e.replace(h,"-$&").toLowerCase()})),m=function(e,r){if(null==r||"boolean"==typeof r)return"";switch(e){case"animation":case"animationName":if("string"==typeof r)return r.replace(b,(function(e,r,t){return k={name:r,styles:t,next:k},r}))}return 1===d[e]||p(e)||"number"!=typeof r||0===r?r:r+"px"};function v(e,r,t,n){if(null==t)return"";if(void 0!==t.__emotion_styles)return t;switch(typeof t){case"boolean":return"";case"object":if(1===t.anim)return k={name:t.name,styles:t.styles,next:k},t.name;if(void 0!==t.styles){var a=t.next;if(void 0!==a)for(;void 0!==a;)k={name:a.name,styles:a.styles,next:k},a=a.next;return t.styles}return function(e,r,t){var n="";if(Array.isArray(t))for(var a=0;a<t.length;a++)n+=v(e,r,t[a],!1);else for(var i in t){var c=t[i];if("object"!=typeof c)null!=r&&void 0!==r[c]?n+=i+"{"+r[c]+"}":n+=g(i)+":"+m(i,c)+";";else if(!Array.isArray(c)||"string"!=typeof c[0]||null!=r&&void 0!==r[c[0]]){var o=v(e,r,c,!1);switch(i){case"animation":case"animationName":n+=g(i)+":"+o+";";break;default:n+=i+"{"+o+"}"}}else for(var s=0;s<c.length;s++)n+=g(i)+":"+m(i,c[s])+";"}return n}(e,r,t);case"function":if(void 0!==e){var i=k,c=t(e);return k=i,v(e,r,c,n)}default:if(null==r)return t;var o=r[t];return void 0===o||n?t:o}}var k,y=/label:\s*([^\s;\n{]+)\s*;/g;var w=function(e,r,t){if(1===e.length&&"object"==typeof e[0]&&null!==e[0]&&void 0!==e[0].styles)return e[0];var n=!0,a="";k=void 0;var i=e[0];null==i||void 0===i.raw?(n=!1,a+=v(t,r,i,!1)):a+=i[0];for(var c=1;c<e.length;c++)a+=v(t,r,e[c],46===a.charCodeAt(a.length-1)),n&&(a+=i[c]);y.lastIndex=0;for(var o,s="";null!==(o=y.exec(a));)s+="-"+o[1];return{name:f(a)+s,styles:a,next:k}};function A(e,r,t){var n="";return t.split(" ").forEach((function(t){void 0!==e[t]?r.push(e[t]):n+=t+" "})),n}var C=function(e,r,t){var n=e.key+"-"+r.name;if(!1===t&&void 0===e.registered[n]&&(e.registered[n]=r.styles),void 0===e.inserted[r.name]){var a=r;do{e.insert("."+n,a,e.sheet,!0);a=a.next}while(void 0!==a)}};function x(e,r){if(void 0===e.inserted[r.name])return e.insert("",r,e.sheet,!0)}function O(e,r,t){var n=[],a=A(e,n,t);return n.length<2?t:a+r(n)}var S=function e(r){for(var t="",n=0;n<r.length;n++){var a=r[n];if(null!=a){var i=void 0;switch(typeof a){case"boolean":break;case"object":if(Array.isArray(a))i=e(a);else for(var c in i="",a)a[c]&&c&&(i&&(i+=" "),i+=c);break;default:i=a}i&&(t&&(t+=" "),t+=i)}}return t},j=function(e){var r=l(e);r.sheet.speedy=function(e){this.isSpeedy=e},r.compat=!0;var t=function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];var a=w(t,r.registered,void 0!==this?this.mergedProps:void 0);return C(r,a,!1),r.key+"-"+a.name};return{css:t,cx:function(){for(var e=arguments.length,n=new Array(e),a=0;a<e;a++)n[a]=arguments[a];return O(r.registered,t,S(n))},injectGlobal:function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];var a=w(t,r.registered);x(r,a)},keyframes:function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];var a=w(t,r.registered),i="animation-"+a.name;return x(r,{name:a.name,styles:"@keyframes "+i+"{"+a.styles+"}"}),i},hydrate:function(e){e.forEach((function(e){r.inserted[e]=!0}))},flush:function(){r.registered={},r.inserted={},r.sheet.flush()},sheet:r.sheet,cache:r,getRegisteredStyles:A.bind(null,r.registered),merge:O.bind(null,r.registered,t)}}(),_=(j.flush,j.hydrate,j.cx,j.merge,j.getRegisteredStyles,j.injectGlobal,j.keyframes),E=j.css;j.sheet,j.cache;function P(){var e=$(["\n  background-color: ",";\n  background-image: linear-gradient(\n    90deg,\n    ",",\n    ",",\n    ","\n  );\n  background-size: 200px 100%;\n  background-repeat: no-repeat;\n  border-radius: 4px;\n  display: inline-block;\n  line-height: 1;\n  width: 100%;\n"]);return P=function(){return e},e}function z(){var e=$(["\n  0% {\n    background-position: -200px 0;\n  }\n  100% {\n    background-position: calc(200px + 100%) 0;\n  }\n"]);return z=function(){return e},e}function $(e,r){return r||(r=e.slice(0)),Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(r)}}))}var R=_(z()),N=E(P(),"#eee","#eee","#f5f5f5","#eee");function G(e){for(var r=e.count,t=e.duration,n=e.width,i=e.wrapper,c=e.height,o=e.circle,s=[],u=0;u<r;u++){var l={animation:"".concat(R," ")+String(t)+"s ease-in-out infinite"};null!==n&&(l.width=n),null!==c&&(l.height=c),null!==n&&null!==c&&o&&(l.borderRadius="50%"),s.push(a.a.createElement("span",{key:u,className:"".concat(N," react-loading-skeleton"),style:l},"‌"))}return a.a.createElement("span",null,i?s.map((function(e,r){return a.a.createElement(i,{key:r},e,"‌")})):s)}function M(e){return(M="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function T(){var e=function(e,r){r||(r=e.slice(0));return Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(r)}}))}(["\n      .react-loading-skeleton {\n        background-color: ",";\n        background-image: linear-gradient(\n          90deg,\n          ",",\n          ",",\n          ","\n        );\n      }\n    "]);return T=function(){return e},e}function I(e,r){for(var t=0;t<r.length;t++){var n=r[t];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}function W(e,r){return!r||"object"!==M(r)&&"function"!=typeof r?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):r}function q(e){return(q=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function D(e,r){return(D=Object.setPrototypeOf||function(e,r){return e.__proto__=r,e})(e,r)}G.defaultProps={count:1,duration:1.2,width:null,wrapper:null,height:null,circle:!1};var F,L,B,H=function(e){function r(){return function(e,r){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")}(this,r),W(this,q(r).apply(this,arguments))}var t,n,i;return function(e,r){if("function"!=typeof r&&null!==r)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(r&&r.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),r&&D(e,r)}(r,e),t=r,(n=[{key:"render",value:function(){var e=this.props,r=e.color,t=e.highlightColor,n=e.children,i=E(T(),r,r,t,r);return a.a.createElement("div",{className:i},n)}}])&&I(t.prototype,n),i&&I(t,i),r}(n.Component);B={color:"#eee",highlightColor:"#f5f5f5"},(L="defaultProps")in(F=H)?Object.defineProperty(F,L,{value:B,enumerable:!0,configurable:!0,writable:!0}):F[L]=B,t.d(r,"default",(function(){return G})),t.d(r,"SkeletonTheme",(function(){return H}))}])}));
+
+/***/ }),
+
 /***/ "./node_modules/react-router-dom/esm/react-router-dom.js":
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
@@ -83546,11 +83557,6 @@ var Dashboard = function Dashboard() {
     x.addListener(myFunction);
   }
 
-  var handleActive = function handleActive(event) {
-    $('#userSideNav a').removeClass('active');
-    event.target.classList.add('active');
-  };
-
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useRouteMatch"])(),
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
@@ -83591,56 +83597,48 @@ var Dashboard = function Dashboard() {
     to: "/class-select"
   }, "Change >")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-sm-block d-none"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/learn",
-    className: "active test-class",
-    onClick: function onClick(event) {
-      handleActive(event);
-    }
+    className: "test-class"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/practise",
-    className: "test-class",
-    onClick: handleActive
+    className: "test-class"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/test",
-    className: "test-class",
-    onClick: handleActive
+    className: "test-class"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/doubts",
-    className: "test-class",
-    onClick: handleActive
+    className: "test-class"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-comment"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Doubts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, " Doubts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/bookmark",
-    className: "test-class",
-    onClick: handleActive
+    className: "test-class"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-bookmark"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Bookmarks")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "/profile",
-    onClick: handleActive
+  }, " Bookmarks")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
+    to: "/profile"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, " Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/quiz"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-folder-open"
@@ -83684,32 +83682,28 @@ var Dashboard = function Dashboard() {
     className: "copywrite text-center mt-2"
   }, "\xA9 Copywrite EduNepal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/learn",
-    className: "active",
-    onClick: handleActive
+    className: "active"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-graduation-cap"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "/practise",
-    onClick: handleActive
+  }, " Learn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
+    to: "/practise"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-user-md"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "sideTab"
-  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "/test",
-    onClick: handleActive
+  }, " Practise")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
+    to: "/test"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-file-alt"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "doubts",
-    onClick: handleActive
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
+    to: "doubts"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-comment"
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Doubts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Doubts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["NavLink"], {
     to: "/bookmark"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-bookmark"
@@ -84027,6 +84021,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _TestSubject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TestSubject */ "./resources/js/Dashboard/MockTest/TestSubject.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/dist/bundle.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
@@ -84035,6 +84043,38 @@ function Test() {
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      testSub = _useState2[0],
+      setTestSubject = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      loading = _useState4[0],
+      setLoading = _useState4[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_3___default()({
+      method: "get",
+      url: "http://noname.hellonep.com/api/subjects/1"
+    }).then(function (response) {
+      setTestSubject(response.data.subjects);
+      setLoading(false);
+    });
+  }, []);
+
+  var handleTest = function handleTest(props) {
+    setReturnTest(props);
+    console.log(props);
+    console.log(returnTest); // axios({
+    //     method: "post",
+    //     url: "http://noname.hellonep.com/api/stpre/cla",
+    //     data: returnTest
+    // }).then(res => {
+    //     console.log(res);
+    // });
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: path
@@ -84042,157 +84082,164 @@ function Test() {
     className: "main-title"
   }, "Are you Ready for Exam?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "test-subject"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, loading ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-3 col-lg-3 col-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "test-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-atom"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    circle: "true",
+    width: "50px",
+    height: "50px"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-name pt-2"
-  }, "Physics")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contentWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "time"
-  }, "Time frame: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 30 min")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt"
-  }, "Attempt 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "remaining"
-  }, "Remaining 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/quiz"
-  }, "Take a Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: "70%"
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-3 col-lg-3 col-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "test-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-flask"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    circle: "true",
+    width: "50px",
+    height: "50px"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-name pt-2"
-  }, "Chemistry")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contentWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "time"
-  }, "Time frame: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 30 min")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt"
-  }, "Attempt 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "remaining"
-  }, "Remaining 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/quiz"
-  }, "Take a Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: "70%"
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-3 col-lg-3 col-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "test-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-dna"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    circle: "true",
+    width: "50px",
+    height: "50px"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-name pt-2"
-  }, "Biology")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contentWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "time"
-  }, "Time frame: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 30 min")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt"
-  }, "Attempt 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "remaining"
-  }, "Remaining 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/quiz"
-  }, "Take a Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: "70%"
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-3 col-lg-3 col-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "test-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "".concat(url, "/physics")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "icon-box"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-calculator"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    circle: "true",
+    width: "50px",
+    height: "50px"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-name pt-2"
-  }, "Maths")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contentWrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "time"
-  }, "Time frame: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 30 min")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "attempt"
-  }, "Attempt 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "remaining"
-  }, "Remaining 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/quiz"
-  }, "Take a Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "progress"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: "70%"
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-percent"
-  }, "70%"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_4___default.a, null)))))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, testSub.map(function (data, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-md-3 col-lg-3 col-12",
+      key: index
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "test-wrapper"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "subWrap"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "icon-box"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-flask"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "subject-name pt-2"
+    }, data.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "contentWrap"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "time"
+    }, "Time frame:", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " 30 min")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "attempt-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "attempt"
+    }, "Attempt 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "remaining"
+    }, "Remaining 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "button-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: "/quiz",
+      onClick: function onClick() {
+        return handleTest(data.name);
+      }
+    }, "Take a Test")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-bar",
+      style: {
+        width: "70%"
+      }
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "progress-percent"
+    }, "70%"))));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-title"
   }, "Your practise Report"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "practise-report"
@@ -84440,6 +84487,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/dist/bundle.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -84459,20 +84508,26 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 function Practise() {
   var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_5__["useAuth"])(),
       Authtoken = _useAuth.Authtoken;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
       _useState2 = _slicedToArray(_useState, 2),
-      PractiseResponse = _useState2[0],
-      setPractiseResponse = _useState2[1];
+      loading = _useState2[0],
+      setLoading = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      PractiseResponse = _useState4[0],
+      setPractiseResponse = _useState4[1];
 
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useRouteMatch"])(),
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
 
-  var getUrl = 'http://noname.hellonep.com/api/subjects/' + Authtoken.class_id;
+  var getUrl = "http://noname.hellonep.com/api/subjects/" + Authtoken.class_id;
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     var source = axios__WEBPACK_IMPORTED_MODULE_4___default.a.CancelToken.source();
 
@@ -84496,31 +84551,33 @@ function Practise() {
               case 3:
                 response = _context.sent;
                 setPractiseResponse(response.data.subjects);
-                _context.next = 14;
+                setLoading(false);
+                console.log(response.data.subjects);
+                _context.next = 16;
                 break;
 
-              case 7:
-                _context.prev = 7;
+              case 9:
+                _context.prev = 9;
                 _context.t0 = _context["catch"](0);
 
                 if (!axios__WEBPACK_IMPORTED_MODULE_4___default.a.isCancel(_context.t0)) {
-                  _context.next = 13;
+                  _context.next = 15;
                   break;
                 }
 
                 console.log(_context.t0);
-                _context.next = 14;
+                _context.next = 16;
                 break;
 
-              case 13:
+              case 15:
                 throw _context.t0;
 
-              case 14:
+              case 16:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 7]]);
+        }, _callee, null, [[0, 9]]);
       }));
 
       return function loadData() {
@@ -84540,9 +84597,187 @@ function Practise() {
     className: "main-title"
   }, "What do you want to practise today?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "practise-subject"
+  }, loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row"
-  }, PractiseResponse.length === 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Loading...") : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, PractiseResponse.map(function (practise, index) {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-12"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "practise-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-3"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    height: "50px",
+    width: "50px"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-9 col-9"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress",
+    style: {
+      marginBottom: "5px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "progress-percent"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null))))))) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, PractiseResponse.map(function (practise, index) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "col-md-3 col-lg-3 col-12",
       key: index
@@ -84557,7 +84792,7 @@ function Practise() {
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "icon-box",
       style: {
-        backgroundColor: '#ffed6a'
+        backgroundColor: "#ffed6a"
       }
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
       className: "fa fa-atom"
@@ -84572,7 +84807,7 @@ function Practise() {
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "progress-bar",
       style: {
-        width: '70%'
+        width: "70%"
       }
     })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "progress-percent"
@@ -84606,21 +84841,21 @@ function Practise() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Time"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 hrs"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-up",
     style: {
-      color: 'green'
+      color: "green"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Goals"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Accuracy"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "90%"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "col-md-4 col-lg-4 col-12"
@@ -84653,21 +84888,21 @@ function Practise() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Time"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 hrs"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-up",
     style: {
-      color: 'green'
+      color: "green"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Goals"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Accuracy"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "90%"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "col-md-4 col-lg-4 col-12"
@@ -84700,21 +84935,21 @@ function Practise() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Time"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 hrs"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-up",
     style: {
-      color: 'green'
+      color: "green"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Goals"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "1 "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("small", null, "Accuracy"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "90%"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-long-arrow-alt-down",
     style: {
-      color: 'red'
+      color: "red"
     }
   }))))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "".concat(path, "/:subjectId")
@@ -84748,25 +84983,30 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function PractiseSubject() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useRouteMatch"])(),
+      path = _useRouteMatch.path,
       url = _useRouteMatch.url,
-      params = _useRouteMatch.params;
+      params = _useRouteMatch.params; // let {params} = useParams();
+
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
       PractiseChapter = _useState2[0],
-      setPractiseChapter = _useState2[1]; //    console.log(params)
+      setPractiseChapter = _useState2[1]; // console.log(path);
 
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     axios({
-      method: 'get',
-      url: 'http://noname.hellonep.com/api/chapters/' + params.subjectId
+      method: "get",
+      url: "http://noname.hellonep.com/api/chapters/" + params.subjectId
     }).then(function (response) {
       setPractiseChapter(response.data.chapters);
     });
   }, []);
   var History = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: path
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-subject-containter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subject-navbar d-flex justify-content-between"
@@ -84802,7 +85042,7 @@ function PractiseSubject() {
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "progress-bar",
       style: {
-        width: '70%'
+        width: "70%"
       }
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "progress-percent"
@@ -84813,8 +85053,13 @@ function PractiseSubject() {
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "button-container"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      to: "/quiz/measurement"
+      to: "".concat(url, "/quiz")
     }, "Take a Test")))));
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    push: true,
+    path: "".concat(path, "/quiz")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Redirect"], {
+    to: "/quiz"
   }))));
 }
 
@@ -84852,7 +85097,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var ClassSelect = function ClassSelect() {
-  var token = localStorage.getItem('tokens');
+  var token = localStorage.getItem("tokens");
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -84867,8 +85112,8 @@ var ClassSelect = function ClassSelect() {
 
   var handleClassSubmit = function handleClassSubmit(data) {
     axios__WEBPACK_IMPORTED_MODULE_4___default()({
-      method: 'post',
-      url: 'http://noname.hellonep.com/api/store/class',
+      method: "post",
+      url: "http://noname.hellonep.com/api/store/class",
       data: {
         class_id: data,
         user_id: JSON.parse(token).user_id,
@@ -84904,15 +85149,15 @@ var ClassSelect = function ClassSelect() {
       setPreparationResponse = _useState6[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get('http://noname.hellonep.com/api/classes').then(function (response) {
-      setClassResponse(response.data.classess);
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("http://noname.hellonep.com/api/classes").then(function (response) {
+      setClassResponse(response.data.grades);
       setPreparationResponse(response.data.preparations);
     });
   }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (loading) {
       history.push({
-        pathname: '/learn'
+        pathname: "/learn"
       });
     }
   }, [Authtoken, loading]);
@@ -84967,103 +85212,367 @@ var ClassSelect = function ClassSelect() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Profile; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/react-hook-form.es.js");
+
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
 
 function Profile() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  // let { path, url } = useRouteMatch();
+  // let { subjectId } = useParams();
+  var _useAuth = Object(_Context_Auth__WEBPACK_IMPORTED_MODULE_3__["useAuth"])(),
+      Authtoken = _useAuth.Authtoken; // console.log(Authtoken);
+
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      UserResponse = _useState2[0],
+      setUserResponse = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      loading = _useState4[0],
+      setLoading = _useState4[1];
+
+  var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_4__["useForm"])(),
+      register = _useForm.register,
+      handleSubmit = _useForm.handleSubmit,
+      errors = _useForm.errors,
+      watch = _useForm.watch;
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      ProfileImage = _useState6[0],
+      setProfileImage = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState8 = _slicedToArray(_useState7, 2),
+      ResponseImage = _useState8[0],
+      setResponseImage = _useState8[1];
+
+  var getUrl = "http://noname.hellonep.com/api/user/" + Authtoken.user_id;
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    var source = axios__WEBPACK_IMPORTED_MODULE_2___default.a.CancelToken.source();
+
+    var loadData =
+    /*#__PURE__*/
+    function () {
+      var _ref = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(getUrl, {
+                  cancelToken: source.token
+                });
+
+              case 3:
+                response = _context.sent;
+                setUserResponse(response.data.user);
+                console.log(response.data.user);
+                setLoading(false);
+                _context.next = 16;
+                break;
+
+              case 9:
+                _context.prev = 9;
+                _context.t0 = _context["catch"](0);
+
+                if (!axios__WEBPACK_IMPORTED_MODULE_2___default.a.isCancel(_context.t0)) {
+                  _context.next = 15;
+                  break;
+                }
+
+                console.log(_context.t0);
+                _context.next = 16;
+                break;
+
+              case 15:
+                throw _context.t0;
+
+              case 16:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 9]]);
+      }));
+
+      return function loadData() {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    loadData();
+    return function () {
+      source.cancel();
+    };
+  }, [getUrl]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    axios__WEBPACK_IMPORTED_MODULE_2___default()({
+      method: "get",
+      url: "http://192.168.1.67/api/preview"
+    }).then(function (res) {
+      setResponseImage(res.data.profile_image);
+    }).catch(function (err) {
+      console.log(err);
+    });
+  }, []); // const [userData, setUserData] = useState(UserResponse);
+
+  ProfileImage.length != "0" ? console.log(ProfileImage) : console.log("no image");
+
+  var handleUserChange = function handleUserChange(e) {
+    return setUserResponse(_objectSpread({}, UserResponse, _defineProperty({}, e.target.name, [e.target.value])));
+  }; // const handleImageChange = e =>
+  //     setUserResponse({
+  //         ...UserResponse,
+  //         profile_image: e.target.files[0]
+  //     });
+
+
+  var handleImageChange = function handleImageChange(e) {
+    setProfileImage(e.target.files[0]);
+  }; // const onSubmit = data => console.log(data);
+
+
+  var onSubmit = function onSubmit(data) {
+    var _console;
+
+    // console.log(data);
+    var formData = new FormData();
+    formData.append("profile_image", ProfileImage);
+    formData.append("user_id", Authtoken.user_id);
+    formData.append("name", data.name);
+    formData.append("institution", data.institution);
+    formData.append("dob", data.dob);
+
+    (_console = console).log.apply(_console, _toConsumableArray(formData));
+
+    axios__WEBPACK_IMPORTED_MODULE_2___default()({
+      method: "post",
+      url: "http://192.168.1.67/api/trial",
+      headers: {
+        "Content-Type": "multipart/form-data"
+      },
+      data: formData // data: {
+      //     user_id: Authtoken.user_id,
+      //     class: Authtoken.class_id,
+      //     profile_image: formData,
+      //     name: data.name,
+      //     institution: data.institution,
+      //     dob: data.dob,
+      //     gender: data.gender,
+      //     address: data.address
+      // }
+      // data: data
+
+    }).then(function (res) {
+      console.log(res);
+    }).catch(function (err) {
+      return console.log(err);
+    }); // Axios.post(
+    //     "http://noname.hellonep.com/api/user/update",
+    //     {
+    //         data: {
+    //             user_id: Authtoken.user_id,
+    //             class: Authtoken.class_id,
+    //             profile_image: data.profile_image,
+    //             name: data.name,
+    //             institution: data.institution,
+    //             dob: data.dob,
+    //             gender: data.gender,
+    //             address: data.address
+    //         }
+    //     },
+    //     {
+    //         headers: {
+    //             accept: "application/json",
+    //             "Accept-Language": "en-US,en;q=0.8",
+    //             "Content-Type": "multipart/form-data"
+    //         }
+    //         // data: data
+    //     }
+    // )
+    //     .then(res => {
+    //         console.log(res);
+    //     })
+    //     .catch(err => console.log(err));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "profile-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "top-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "profile-pic"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ../assets/images/testimonial-1.jpg */ "./resources/js/Dashboard/assets/images/testimonial-1.jpg"),
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    // src={require(ProfileImage.length != "0"
+    //     ? ProfileImage
+    //     : "../assets/images/testimonial-1.jpg")}
+    src: ResponseImage.length != "0" ? ResponseImage : __webpack_require__(/*! ../assets/images/testimonial-1.jpg */ "./resources/js/Dashboard/assets/images/testimonial-1.jpg"),
     className: "img-fluid"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "text-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "name"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "fa fa-user"
-  }), "Hot Babe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), UserResponse.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "number"
-  }, "9841587582")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, UserResponse.phone)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "personal-details"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
-  }, "Personal Details"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Personal Details"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+    onSubmit: handleSubmit(onSubmit),
+    encType: "multipart/form-data"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Name"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "text"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "text",
+    value: UserResponse.name,
+    onChange: handleUserChange,
+    ref: register,
+    name: "name"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "School/College Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "School/College Name"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "text"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "text",
+    value: UserResponse.institution,
+    onChange: handleUserChange,
+    ref: register,
+    name: "institution"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Address"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "text"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "text",
+    value: UserResponse.address,
+    onChange: handleUserChange,
+    ref: register,
+    name: "address"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Birthday"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "text"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "date",
+    value: UserResponse.dob,
+    ref: register,
+    onChange: handleUserChange,
+    name: "dob"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Birthday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Profile"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "file",
+    id: "image",
+    accept: "image/png, image/jpeg",
+    onChange: handleImageChange,
+    name: "profile_image",
+    ref: register
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Gender"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
     className: "form-control",
-    type: "date"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Gender"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    className: "form-control"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Male"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Female"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Other"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    value: UserResponse.gender,
+    onChange: handleUserChange,
+    ref: register,
+    name: "gender"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "Female"
+  }, "Female"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "Male"
+  }, "Male"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "Other"
+  }, "Other"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "submit",
     value: "Save"
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "account-details"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
-  }, "Account Details"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Account Details"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Phone Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Phone Number"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
     type: "number",
-    placeholder: "9841587582",
-    disabled: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    placeholder: UserResponse.phone,
+    disabled: true,
+    name: "phone"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "email"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
     type: "email",
-    placeholder: "bishowraut@gmail.com",
-    disabled: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    placeholder: UserResponse.email,
+    disabled: true,
+    name: "email"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "New Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "New Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "password",
+    name: "new-password"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Confirm Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "password",
+    name: "confirm-password"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Old Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Old Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
-    type: "password"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    type: "password",
+    name: "old-password"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "submit",
     value: "Update"
   }))))));
@@ -85755,12 +86264,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Modal */ "./resources/js/Dashboard/Subject/Component/Modal.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
 
 var FlashCards = function FlashCards(props) {
-  console.log(props);
   var settings = {
     dots: false,
     infinite: true,
@@ -85790,6 +86308,13 @@ var FlashCards = function FlashCards(props) {
       }
     }]
   };
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+      _useState2 = _slicedToArray(_useState, 2),
+      modalId = _useState2[0],
+      setModalId = _useState2[1];
+
+  var id = 5;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tab-pane container fade",
     id: "flash"
@@ -85807,7 +86332,10 @@ var FlashCards = function FlashCards(props) {
     href: "",
     className: "question",
     "data-toggle": "modal",
-    "data-target": "#carouselModalTwo"
+    "data-target": "#modal",
+    onClick: function onClick() {
+      return setModalId(5);
+    }
   }, " ", "What is Force?", " "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "carousel-inner"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85816,7 +86344,10 @@ var FlashCards = function FlashCards(props) {
     href: "",
     className: "question",
     "data-toggle": "modal",
-    "data-target": "#carouselModalTwo"
+    "data-target": "#modal",
+    onClick: function onClick() {
+      return setModalId(6);
+    }
   }, " ", "What is Force?", " "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "carousel-inner"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85825,7 +86356,10 @@ var FlashCards = function FlashCards(props) {
     href: "",
     className: "question",
     "data-toggle": "modal",
-    "data-target": "#carouselModalTwo"
+    "data-target": "#modal",
+    onClick: function onClick() {
+      return setModalId(7);
+    }
   }, " ", "What is Force?", " "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "carousel-inner"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85837,8 +86371,50 @@ var FlashCards = function FlashCards(props) {
     "data-target": "#carouselModalTwo"
   }, " ", "What is Force?", " ")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal",
-    id: "carouselModalTwo"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "modal"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: modalId
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FlashCards);
+
+/***/ }),
+
+/***/ "./resources/js/Dashboard/Subject/Component/Modal.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/Dashboard/Subject/Component/Modal.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var Modal = function Modal(_ref) {
+  var id = _ref.id;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      modalId = _useState2[0],
+      setModalId = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setModalId(id);
+    console.log(modalId + "new data");
+  }, []);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-dialog"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal-content"
@@ -85848,14 +86424,18 @@ var FlashCards = function FlashCards(props) {
     type: "button",
     className: "close",
     "data-dismiss": "modal"
-  }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "What is Force?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\xD7"), id == 5 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "What is Force?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     style: {
       fontWeight: "lighter"
     }
-  }, " ", "Himal Ma Hiu", " "))))));
+  }, " ", "Himal Ma Hiu", " ")) : id == 6 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "What is Measurement?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      fontWeight: "lighter"
+    }
+  }, " ", "Himal Ma Hello", " ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "No thing to show")))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (FlashCards);
+/* harmony default export */ __webpack_exports__["default"] = (Modal);
 
 /***/ }),
 
@@ -85887,7 +86467,8 @@ var Note = function Note(_ref) {
     className: "subject-content"
   }, chapterResponse.chapters ? React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(React__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, chapterResponse.chapters.map(function (chapter, index) {
     return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "chapter-wrapper d-flex justify-content-between"
+      className: "chapter-wrapper d-flex justify-content-between",
+      key: index
     }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "chapter-title"
     }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, index + 1), chapter.name), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85905,7 +86486,7 @@ var Note = function Note(_ref) {
     }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
       className: "fa fa-bookmark"
     }))));
-  })) : React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " Loading ..  ")));
+  })) : React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " Loading .. ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Note);
@@ -86031,10 +86612,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Subject_LearnSubject__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Subject/LearnSubject */ "./resources/js/Dashboard/Subject/LearnSubject.js");
 /* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Context/Auth */ "./resources/js/Context/Auth.js");
 /* harmony import */ var _pages_PageNotFound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/PageNotFound */ "./resources/js/pages/PageNotFound.js");
-/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/css/userStyle.css */ "./resources/js/Dashboard/assets/css/userStyle.css");
-/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/dist/bundle.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/css/userStyle.css */ "./resources/js/Dashboard/assets/css/userStyle.css");
+/* harmony import */ var _assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_css_userStyle_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -86048,6 +86631,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -86079,9 +86663,9 @@ function Learn() {
       loading = _useState4[0],
       setLoading = _useState4[1];
 
-  var getUrl = 'http://noname.hellonep.com/api/subjects/' + Authtoken.class_id;
+  var getUrl = "http://noname.hellonep.com/api/subjects/" + Authtoken.class_id;
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    var source = axios__WEBPACK_IMPORTED_MODULE_7___default.a.CancelToken.source();
+    var source = axios__WEBPACK_IMPORTED_MODULE_8___default.a.CancelToken.source();
 
     var loadData =
     /*#__PURE__*/
@@ -86096,38 +86680,39 @@ function Learn() {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_7___default.a.get(getUrl, {
+                return axios__WEBPACK_IMPORTED_MODULE_8___default.a.get(getUrl, {
                   cancelToken: source.token
                 });
 
               case 3:
                 response = _context.sent;
                 setSubjectResponse(response.data.subjects);
-                _context.next = 14;
+                setLoading(false);
+                _context.next = 15;
                 break;
 
-              case 7:
-                _context.prev = 7;
+              case 8:
+                _context.prev = 8;
                 _context.t0 = _context["catch"](0);
 
-                if (!axios__WEBPACK_IMPORTED_MODULE_7___default.a.isCancel(_context.t0)) {
-                  _context.next = 13;
+                if (!axios__WEBPACK_IMPORTED_MODULE_8___default.a.isCancel(_context.t0)) {
+                  _context.next = 14;
                   break;
                 }
 
                 console.log(_context.t0);
-                _context.next = 14;
+                _context.next = 15;
                 break;
 
-              case 13:
+              case 14:
                 throw _context.t0;
 
-              case 14:
+              case 15:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 7]]);
+        }, _callee, null, [[0, 8]]);
       }));
 
       return function loadData() {
@@ -86147,16 +86732,114 @@ function Learn() {
     className: "main-title"
   }, "What do you want to learn today?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container learn-subject"
-  }, SubjectResponse.length === 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Loading...") : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, SubjectResponse.length === 0 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-3 col-lg-3 col-6"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "subject-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "img-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    circle: true,
+    height: 50,
+    width: 50
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, null))))) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row"
   }, SubjectResponse.map(function (subject, index) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-md-3 col-lg-3 col-6"
+      className: "col-md-3 col-lg-3 col-6",
+      key: index
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
       to: "".concat(url, "/") + subject.slug
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "subject-container",
-      key: index
+      className: "subject-container"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "img-container"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
@@ -88772,16 +89455,18 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function Index() {
   var Tokens = function Tokens(data) {
-    localStorage.setItem('tokens', JSON.stringify(data)); // setAuthtokens(token)
+    localStorage.setItem("tokens", JSON.stringify(data)); // setAuthtokens(token)
 
-    var token = JSON.parse(localStorage.getItem('tokens'));
+    var token = JSON.parse(localStorage.getItem("tokens"));
     setAuthtokens(token);
   };
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Tokens.tokens ? Tokens.tokens : localStorage.getItem('tokens') ? JSON.parse(localStorage.getItem('tokens')) : false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(Tokens.tokens ? Tokens.tokens : localStorage.getItem("tokens") ? JSON.parse(localStorage.getItem("tokens")) : false),
       _useState2 = _slicedToArray(_useState, 2),
       Authtoken = _useState2[0],
-      setAuthtokens = _useState2[1];
+      setAuthtokens = _useState2[1]; // let { path, url } = useRouteMatch();
+  // console.log(path);
+
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Context_Auth__WEBPACK_IMPORTED_MODULE_6__["AuthContext"].Provider, {
     value: {
@@ -88789,20 +89474,20 @@ function Index() {
       StorageToken: Tokens
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
-    path: "/quiz",
-    component: _Dashboard_Quiz_quizlayout__WEBPACK_IMPORTED_MODULE_9__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
     path: "/quiz-result",
     component: _Dashboard_Quiz_QuizResult__WEBPACK_IMPORTED_MODULE_10__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
     path: "/set-password",
     component: _Components_Register_ResetPassword__WEBPACK_IMPORTED_MODULE_7__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PrivateRoute__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_2__["default"], null))))));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PrivateRoute__WEBPACK_IMPORTED_MODULE_5__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "/quiz",
+    component: _Dashboard_Quiz_quizlayout__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_2__["default"], null))))));
 }
 
 if (document.getElementById("example")) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Index, null), document.getElementById("example"));
-}
+} // let { params } = useParams();
 
 /***/ }),
 
@@ -89080,8 +89765,8 @@ module.exports = "/images/testimonial-1.jpg?ba202affa006da0fa657fbbfd8ca2e20";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Xampp\htdocs\runningProject\EduNepal\KasaileBhetdaina\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

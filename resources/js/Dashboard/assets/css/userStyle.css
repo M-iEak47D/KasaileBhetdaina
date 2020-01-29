@@ -557,7 +557,7 @@ h6 {
     padding: 90px 60px 30px 60px;
 }
 .test-subject .test-wrapper {
-    margin-top: 30px;
+    margin: 60px auto;
     padding: 5px;
     padding-top: 90px;
     border-radius: 5px;

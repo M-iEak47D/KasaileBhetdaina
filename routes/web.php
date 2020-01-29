@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/{path?}', function($path = null){ return View::make('welcome'); })->where('path', '.*');
+
+
+ Route::get('/{path?}', function($path = null){ return View::make('welcome'); })->where('path', '.*');

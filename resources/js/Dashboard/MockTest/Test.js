@@ -1,186 +1,246 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Switch, Route, useRouteMatch, Redirect } from "react-router-dom";
 import TestSubject from "./TestSubject";
-
+import axios from "axios";
+import Skeleton from "react-loading-skeleton";
 
 export default function Test() {
     let { path, url } = useRouteMatch();
+    const [testSub, setTestSubject] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        axios({
+            method: "get",
+            url: "http://noname.hellonep.com/api/subjects/1"
+        }).then(response => {
+            setTestSubject(response.data.subjects);
+            setLoading(false);
+        });
+    }, []);
+    const handleTest = props => {
+        setReturnTest(props);
+        console.log(props);
+        console.log(returnTest);
+        // axios({
+        //     method: "post",
+        //     url: "http://noname.hellonep.com/api/stpre/cla",
+        //     data: returnTest
+        // }).then(res => {
+        //     console.log(res);
+        // });
+    };
+
     return (
         <React.Fragment>
             <Switch>
                 <Route exact path={path}>
                     <div className="main-title">Are you Ready for Exam?</div>
                     <div className="test-subject">
-                        <div className="row">
-                            <div className="col-md-3 col-lg-3 col-12">
-                                <div className="test-wrapper">
-                                    <Link to={`${url}/physics`}>
+                        {loading ? (
+                            <div className="row">
+                                <div className="col-md-3 col-lg-3 col-12">
+                                    <div className="test-wrapper">
                                         <div className="subWrap">
                                             <div className="icon-box">
-                                                <i className="fa fa-atom"></i>
+                                                <Skeleton
+                                                    circle="true"
+                                                    width="50px"
+                                                    height="50px"
+                                                />
                                             </div>
                                             <div className="subject-name pt-2">
-                                                Physics
+                                                <Skeleton />
                                             </div>
                                         </div>
                                         <div className="contentWrap">
                                             <div className="time">
-                                                Time frame: <span> 30 min</span>
+                                                <Skeleton />
                                             </div>
                                             <div className="attempt-container">
                                                 <div className="attempt">
-                                                    Attempt 2
-                                                    {/* Attempt: {attempt} */}
+                                                    <Skeleton />
                                                 </div>
                                                 <div className="remaining">
-                                                    Remaining 3
+                                                    <Skeleton />
                                                 </div>
                                             </div>
                                             <div className="button-container">
-                                                <Link to={`/quiz`}>
-                                                    Take a Test
-                                                </Link>
+                                                <Skeleton />
                                             </div>
                                             <div className="progress">
-                                                <div
-                                                    className="progress-bar"
-                                                    style={{ width: "70%" }}
-                                                ></div>
-                                            </div>
-                                            <div className="progress-percent">
-                                                70%
+                                                <Skeleton />
                                             </div>
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-12">
-                                <div className="test-wrapper">
-                                    <Link to={`${url}/physics`}>
+                                <div className="col-md-3 col-lg-3 col-12">
+                                    <div className="test-wrapper">
                                         <div className="subWrap">
                                             <div className="icon-box">
-                                                <i className="fa fa-flask"></i>
+                                                <Skeleton
+                                                    circle="true"
+                                                    width="50px"
+                                                    height="50px"
+                                                />
                                             </div>
                                             <div className="subject-name pt-2">
-                                                Chemistry
+                                                <Skeleton />
                                             </div>
                                         </div>
                                         <div className="contentWrap">
                                             <div className="time">
-                                                Time frame: <span> 30 min</span>
+                                                <Skeleton />
                                             </div>
                                             <div className="attempt-container">
                                                 <div className="attempt">
-                                                    Attempt 2
-                                                    {/* Attempt: {attempt} */}
+                                                    <Skeleton />
                                                 </div>
                                                 <div className="remaining">
-                                                    Remaining 3
+                                                    <Skeleton />
                                                 </div>
                                             </div>
                                             <div className="button-container">
-                                                <Link to={`/quiz`}>
-                                                    Take a Test
-                                                </Link>
+                                                <Skeleton />
                                             </div>
                                             <div className="progress">
-                                                <div
-                                                    className="progress-bar"
-                                                    style={{ width: "70%" }}
-                                                ></div>
-                                            </div>
-                                            <div className="progress-percent">
-                                                70%
+                                                <Skeleton />
                                             </div>
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-12">
-                                <div className="test-wrapper">
-                                    <Link to={`${url}/physics`}>
+                                <div className="col-md-3 col-lg-3 col-12">
+                                    <div className="test-wrapper">
                                         <div className="subWrap">
                                             <div className="icon-box">
-                                                <i className="fa fa-dna"></i>
+                                                <Skeleton
+                                                    circle="true"
+                                                    width="50px"
+                                                    height="50px"
+                                                />
                                             </div>
                                             <div className="subject-name pt-2">
-                                                Biology
+                                                <Skeleton />
                                             </div>
                                         </div>
                                         <div className="contentWrap">
                                             <div className="time">
-                                                Time frame: <span> 30 min</span>
+                                                <Skeleton />
                                             </div>
                                             <div className="attempt-container">
                                                 <div className="attempt">
-                                                    Attempt 2
-                                                    {/* Attempt: {attempt} */}
+                                                    <Skeleton />
                                                 </div>
                                                 <div className="remaining">
-                                                    Remaining 3
+                                                    <Skeleton />
                                                 </div>
                                             </div>
                                             <div className="button-container">
-                                                <Link to={`/quiz`}>
-                                                    Take a Test
-                                                </Link>
+                                                <Skeleton />
                                             </div>
                                             <div className="progress">
-                                                <div
-                                                    className="progress-bar"
-                                                    style={{ width: "70%" }}
-                                                ></div>
-                                            </div>
-                                            <div className="progress-percent">
-                                                70%
+                                                <Skeleton />
                                             </div>
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-12">
-                                <div className="test-wrapper">
-                                    <Link to={`${url}/physics`}>
+                                <div className="col-md-3 col-lg-3 col-12">
+                                    <div className="test-wrapper">
                                         <div className="subWrap">
                                             <div className="icon-box">
-                                                <i className="fa fa-calculator"></i>
+                                                <Skeleton
+                                                    circle="true"
+                                                    width="50px"
+                                                    height="50px"
+                                                />
                                             </div>
                                             <div className="subject-name pt-2">
-                                                Maths
+                                                <Skeleton />
                                             </div>
                                         </div>
                                         <div className="contentWrap">
                                             <div className="time">
-                                                Time frame: <span> 30 min</span>
+                                                <Skeleton />
                                             </div>
                                             <div className="attempt-container">
                                                 <div className="attempt">
-                                                    Attempt 2
-                                                    {/* Attempt: {attempt} */}
+                                                    <Skeleton />
                                                 </div>
                                                 <div className="remaining">
-                                                    Remaining 3
+                                                    <Skeleton />
                                                 </div>
                                             </div>
                                             <div className="button-container">
-                                                <Link to={`/quiz`}>
-                                                    Take a Test
-                                                </Link>
+                                                <Skeleton />
                                             </div>
                                             <div className="progress">
-                                                <div
-                                                    className="progress-bar"
-                                                    style={{ width: "70%" }}
-                                                ></div>
-                                            </div>
-                                            <div className="progress-percent">
-                                                70%
+                                                <Skeleton />
                                             </div>
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        ) : (
+                            <div className="row">
+                                {testSub.map((data, index) => {
+                                    return (
+                                        <div
+                                            className="col-md-3 col-lg-3 col-12"
+                                            key={index}
+                                        >
+                                            <div className="test-wrapper">
+                                                <div className="subWrap">
+                                                    <div className="icon-box">
+                                                        <i className="fa fa-flask"></i>
+                                                    </div>
+                                                    <div className="subject-name pt-2">
+                                                        {data.name}
+                                                    </div>
+                                                </div>
+                                                <div className="contentWrap">
+                                                    <div className="time">
+                                                        Time frame:{" "}
+                                                        <span> 30 min</span>
+                                                    </div>
+                                                    <div className="attempt-container">
+                                                        <div className="attempt">
+                                                            Attempt 2
+                                                            {/* Attempt: {attempt} */}
+                                                        </div>
+                                                        <div className="remaining">
+                                                            Remaining 3
+                                                        </div>
+                                                    </div>
+                                                    <div className="button-container">
+                                                        <Link
+                                                            to={`/quiz`}
+                                                            onClick={() =>
+                                                                handleTest(
+                                                                    data.name
+                                                                )
+                                                            }
+                                                        >
+                                                            Take a Test
+                                                        </Link>
+                                                    </div>
+                                                    <div className="progress">
+                                                        <div
+                                                            className="progress-bar"
+                                                            style={{
+                                                                width: "70%"
+                                                            }}
+                                                        ></div>
+                                                    </div>
+                                                    <div className="progress-percent">
+                                                        70%
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        )}
                     </div>
                     <div className="sub-title">Your practise Report</div>
                     <div className="practise-report">

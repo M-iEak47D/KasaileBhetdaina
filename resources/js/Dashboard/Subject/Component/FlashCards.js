@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import Modal from "./Modal";
 
-const FlashCards = (props) => {
-    console.log(props)
+const FlashCards = props => {
+   
     const settings = {
         dots: false,
         infinite: true,
@@ -16,8 +17,7 @@ const FlashCards = (props) => {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-
+                    slidesToScroll: 3
                 }
             },
             {
@@ -25,7 +25,7 @@ const FlashCards = (props) => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    infinite: true,
+                    infinite: true
                 }
             },
             {
@@ -38,9 +38,10 @@ const FlashCards = (props) => {
             }
         ]
     };
+    const [modalId, setModalId] = useState({});
+    let id = 5;
     return (
         <div className="tab-pane container fade" id="flash">
-            
             <div className="chapter-title">
                 <span>01</span>Measurement
             </div>
@@ -53,7 +54,8 @@ const FlashCards = (props) => {
                                     href=""
                                     className="question"
                                     data-toggle="modal"
-                                    data-target="#carouselModalTwo"
+                                    data-target={"#modal"}
+                                    onClick={() => setModalId(5)}
                                 >
                                     {" "}
                                     What is Force?{" "}
@@ -66,7 +68,8 @@ const FlashCards = (props) => {
                                     href=""
                                     className="question"
                                     data-toggle="modal"
-                                    data-target="#carouselModalTwo"
+                                    data-target={"#modal"}
+                                    onClick={() => setModalId(6)}
                                 >
                                     {" "}
                                     What is Force?{" "}
@@ -79,7 +82,8 @@ const FlashCards = (props) => {
                                     href=""
                                     className="question"
                                     data-toggle="modal"
-                                    data-target="#carouselModalTwo"
+                                    data-target={"#modal"}
+                                    onClick={() => setModalId(7)}
                                 >
                                     {" "}
                                     What is Force?{" "}
@@ -102,29 +106,12 @@ const FlashCards = (props) => {
                     </Slider>
                 </div>
             </div>
-            
-            <div className="modal" id="carouselModalTwo">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-body">
-                            <button
-                                type="button"
-                                className="close"
-                                data-dismiss="modal"
-                            >
-                                &times;
-                            </button>
-                            <strong>What is Force?</strong>
-                            <p style={{ fontWeight: "lighter" }}>
-                                {" "}
-                                Himal Ma Hiu{" "}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div className="modal" id={"modal"}>
+                <Modal id={modalId} />
             </div>
         </div>
     );
 };
 
 export default FlashCards;
+
