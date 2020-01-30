@@ -4,7 +4,7 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
 
     const [subjects,setSubjects] = useState([]);
     const [chapters,setChapters] = useState([]);
-
+    const [marksArray, setMarksArray] = useState([]);
     const [values, setValues] = useState(initial_state);
     const [submitting, setSubmitting] = useState(false); 
     const [errors, setErrors] = useState({});
@@ -92,14 +92,12 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
         }
         else {
             return (<span>Loading...</span>);
-
         }
     };
 
     function handleSubjectChange(e) {
         // const id = e.target[event.target.selectedIndex].getAttribute("data-id");
         const id = e.target.value;
-        console.log(id);
         const selected_subject = subjects.filter((subject) =>
             subject.id === parseInt(id)
         );
@@ -112,11 +110,28 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
         }
     }
 
+    function handleChapterChange(e){
+        const id=e.target.value;
+        const selected_chapter = chapters.filter((chapter) =>
+            chapter.id == parseInt(id)
+        )
+        if(id == "null"){
+            setMarksArray([]);
+        }
+        else{
+            setValues({
+                ...values,
+                [e.target.name]:id,
+            });
+            setMarksArray(selected_chapter[0]["marks"]);
+        }
+    }
+
 
     const ChapterDropdown = () => {
         if(chapters.length > 0){
             return (
-                <select name="chapter_id" className="form-control" onChange={handleChange} value={values.chapter_id}>
+                <select name="chapter_id" className="form-control" onChange={handleChapterChange} value={values.chapter_id}>
                     <option value="null">Select a Chapter</option>
                     {chapters.map((chapter, index) =>
                         <option value={chapter.id} data-id={chapter.id}
@@ -124,13 +139,36 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
                     )}
                 </select>
             )
-
         }
         else {
             return (<span className="errorForm">&nbsp;&nbsp;(Select a subject first...)</span>);
 
         }
     };
+
+    const MarksDropdown = () => {
+        if(Number.isInteger(parseInt(values.chapter_id))){
+            if(marksArray.length > 0){
+                return (
+                    <select name="marks" className="form-control" onChange={handleChange} value={values.marks}>
+                        <option value="null">Select Marks</option>
+                        {marksArray.map((mark, index) =>
+                            <option value={mark} data-id={mark}
+                                    key={index} >{mark}</option>
+                        )}
+                    </select>
+                )
+
+            }
+            else{
+                return (<span className="errorForm">&nbsp;&nbsp;(Marks Not Assigned for this Chapter...)</span>);
+            }
+        }
+        else {
+            return (<span className="errorForm">&nbsp;&nbsp;(Select a chapter first...)</span>);
+
+        }
+    }
 
     function handleYearAdd(e){
         e.preventDefault();
@@ -161,7 +199,7 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
         setYearRow(yearRow.filter((item,key) => key !== id));
     }
 
-    return {handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, handleYearRemove, setYearRow}
+    return {handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, chapters, handleYearRemove, setYearRow, MarksDropdown, setMarksArray}
 }
 
 export default useFormValidation;

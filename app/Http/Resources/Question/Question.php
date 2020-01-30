@@ -19,7 +19,7 @@ class Question extends JsonResource
         return [
             'id'=>$this->id,
             'name'=>$this->name,
-            'image' => isset($this->image) && $this->image!="" ? '127.0.0.1:8000'.$this->image : "",
+            'image' => isset($this->image) && $this->image!="" ? 'http://192.168.1.67'.$this->image : "",
             'marks' => $this->marks,
             'chapter_id' => $this->chapter_id,
             'importance' => $this->importance,

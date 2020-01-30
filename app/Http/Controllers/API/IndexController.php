@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Model\Answer;
 use App\Model\Category;
+use App\Model\Content;
 use App\Model\Question;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -64,4 +65,49 @@ class IndexController extends Controller
 
     }
 
+    public function get_quiz_of_subject($id){
+        $subject = Content::findOrFail($id);
+        dd($subject);
+        $chapters = $subject->children;
+        // $questions = [];
+        foreach($chapters as $chapter){
+            foreach($chapter->marks_weightages as $mw){
+                $questions = Question::where('chapter_id',$chapter->id)->where('marks',$mw)->inRandomOrder()->limit(1)->get();
+                // $ques = get_question($mw, $mw->chapter);
+                dd($questions);
+                //check repetition % with user Log!
+            }
+        }
+    }
+
+    // public function get_question($mw, $chapter){
+    //     $questions = Question::where('chapter_id',$chapter->id)->where('marks',$mw)->inRandomOrder()->limit(1)->get();
+    //     //check repetition
+
+    // }
+    
+    public function trial(Request $request){
+        if($request->hasFile('profile_image')){
+            $image = $request->file('profile_image');
+            $filename = time().'.'.$image->getClientOriginalExtension();
+            $path = 'test/';
+            if($image->move(public_path().'/'.$path,$filename)){
+                return response()->json('File found and saved',200);  
+            }
+            else{
+                return response()->json('File found and but not saved',200);
+            }
+        }
+        else{
+            return response()->json('File Not found',200);
+        }
+    }
+    
+    public function preview(){
+        $data = [
+            'name'=>"Check",
+            'profile_image'=>'http://192.168.1.67/test/blue_dress.jpg'
+        ];
+        return $data;
+    }
 }

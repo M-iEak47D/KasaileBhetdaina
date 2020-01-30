@@ -15,11 +15,13 @@ class Chapter extends JsonResource
      */
     public function toArray($request)
     {
+        $marks = $this->marks_weightages->pluck('marks');
         return [
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
             'code' => $this->code,
+            'marks' => $marks,
         ];
     }
 }

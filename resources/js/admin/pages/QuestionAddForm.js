@@ -7,7 +7,6 @@ import validateQuestion from "../components/validateQuestion"
 const INITIAL_STATE = {
     "question": "",
     "marks": "",
-
     "answerA" : "",
     "answerB" : "",
     "answerC" : "",
@@ -23,7 +22,7 @@ const INITIAL_STATE = {
 };
 
 export default function Temp() {
-    const { handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters } = useFormValidation(INITIAL_STATE, validateQuestion, authenticateQuestion);
+    const { handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, MarksDropdown } = useFormValidation(INITIAL_STATE, validateQuestion, authenticateQuestion);
     const [laravelError, setLaravelError] = useState(null);
 
     useEffect(()=>{
@@ -111,19 +110,6 @@ export default function Temp() {
                     <div className={"row"}>
                         <div className={"col-md-6"}>
                             <div className="form-group">
-                                <label htmlFor="marks">Enter Marks:</label>
-                                <input
-                                    type="number"
-                                    id="demo0"
-                                    name="marks"
-                                    className="form-control"
-                                    value={values.marks}
-                                    onChange={handleChange
-                                    }
-                                />
-                                { errors.marks && <span className="errorForm">{errors.marks}</span> }
-                            </div>
-                            <div className="form-group">
                                 <label htmlFor="year">Enter Year</label>
                                 <div className="row">
                                     <div className="col-md-12">
@@ -193,11 +179,9 @@ export default function Temp() {
                             </div>
                             { errors.chapter_id && <span className="errorForm">{errors.chapter_id}</span>}
                             <div className="form-group">
-                                <label>Assign to Quiz?</label>
-                                <select name="quiz_id" value={values.quiz_id} onChange={handleChange} class="form-control">
-                                    <option value="1">Quiz Physics</option>
-                                    <option value="2">Quiz Biology</option>
-                                </select>
+                                <label htmlFor="marks">Enter Marks:</label>
+                                <MarksDropdown/>
+                                { errors.marks && <span className="errorForm">{errors.marks}</span> }
                             </div>
                         </div>
                     </div>

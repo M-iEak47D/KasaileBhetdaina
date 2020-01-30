@@ -16,8 +16,11 @@ export default function validateQuestion(values) {
 
     //marks errors
     if (!values.marks) {
+        errors.marks = '*Select a Marks first';
+    }else if (values.marks == null){
         errors.marks = '*Required';
-    } else if (values.marks < 0) {
+    } 
+    else if (values.marks < 0) {
         errors.marks = '*Value must be more than 0';
     }
 

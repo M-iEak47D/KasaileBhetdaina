@@ -2,6 +2,7 @@
 
 use App\Http\Resources\Category\CategoryCollection;
 use App\Http\Resources\Question\QuestionCollection;
+use App\Http\Resources\SubjectWithChapters\SubjectCollection;
 use App\Model\Category;
 use App\Model\Content;
 use App\Model\Question;
@@ -22,12 +23,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group([
-    'namespace' => 'admin',
-    'as' => 'api.'
-], function() {
-    Route::post('store/question', 'QuestionController@store');
-});
+// Route::group([
+//     'namespace' => 'admin',
+//     'as' => 'api.'
+// ], function() {
+//     Route::post('store/question', 'QuestionController@store');
+// });
 
 
 Route::group([
@@ -70,13 +71,9 @@ Route::middleware('cors')->get('/store/question',function (){
 
 Route::get('/subjects', function () {
     $type = Category::where('slug', 'subject')->first();
-    $subjects = Content::where('type', $type->id)->get();
-    foreach ($subjects as $subject) {
-        $chaps = $subject->children;
-        $subject->chapters = $chaps;
-    }
+    $subs = Content::where('type', $type->id)->get();
+    $subjects = new SubjectCollection($subs);
     return $subjects;
-
 });
 
 
@@ -89,6 +86,7 @@ Route::group([
     Route::group(['prefix' => '/questions'], function () {
         Route::post('/post_question_add','QuestionController@add_question');
         Route::get('/edit/{id}', 'QuestionController@edit');
+        Route::post('/edit/{id}', 'QuestionController@update');
     });
 
 
@@ -100,3 +98,8 @@ Route::group([
 
 });
 
+//test apis
+Route::get('/package/{id}','API\IndexController@get_quiz_of_subject');
+
+Route::post('/trial','API\IndexController@trial');
+Route::get('/preview','API\IndexController@preview');

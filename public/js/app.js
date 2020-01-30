@@ -73228,25 +73228,30 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
       chapters = _useState4[0],
       setChapters = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(initial_state),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState6 = _slicedToArray(_useState5, 2),
-      values = _useState6[0],
-      setValues = _useState6[1];
+      marksArray = _useState6[0],
+      setMarksArray = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(initial_state),
       _useState8 = _slicedToArray(_useState7, 2),
-      submitting = _useState8[0],
-      setSubmitting = _useState8[1];
+      values = _useState8[0],
+      setValues = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState10 = _slicedToArray(_useState9, 2),
-      errors = _useState10[0],
-      setErrors = _useState10[1];
+      submitting = _useState10[0],
+      setSubmitting = _useState10[1];
 
-  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
       _useState12 = _slicedToArray(_useState11, 2),
-      yearRow = _useState12[0],
-      setYearRow = _useState12[1];
+      errors = _useState12[0],
+      setErrors = _useState12[1];
+
+  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState14 = _slicedToArray(_useState13, 2),
+      yearRow = _useState14[0],
+      setYearRow = _useState14[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (submitting) {
@@ -73335,7 +73340,6 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
   function handleSubjectChange(e) {
     // const id = e.target[event.target.selectedIndex].getAttribute("data-id");
     var id = e.target.value;
-    console.log(id);
     var selected_subject = subjects.filter(function (subject) {
       return subject.id === parseInt(id);
     });
@@ -73348,12 +73352,26 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
     }
   }
 
+  function handleChapterChange(e) {
+    var id = e.target.value;
+    var selected_chapter = chapters.filter(function (chapter) {
+      return chapter.id == parseInt(id);
+    });
+
+    if (id == "null") {
+      setMarksArray([]);
+    } else {
+      setValues(_objectSpread({}, values, _defineProperty({}, e.target.name, id)));
+      setMarksArray(selected_chapter[0]["marks"]);
+    }
+  }
+
   var ChapterDropdown = function ChapterDropdown() {
     if (chapters.length > 0) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         name: "chapter_id",
         className: "form-control",
-        onChange: handleChange,
+        onChange: handleChapterChange,
         value: values.chapter_id
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "null"
@@ -73368,6 +73386,35 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "errorForm"
       }, "\xA0\xA0(Select a subject first...)");
+    }
+  };
+
+  var MarksDropdown = function MarksDropdown() {
+    if (Number.isInteger(parseInt(values.chapter_id))) {
+      if (marksArray.length > 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+          name: "marks",
+          className: "form-control",
+          onChange: handleChange,
+          value: values.marks
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+          value: "null"
+        }, "Select Marks"), marksArray.map(function (mark, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+            value: mark,
+            "data-id": mark,
+            key: index
+          }, mark);
+        }));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "errorForm"
+        }, "\xA0\xA0(Marks Not Assigned for this Chapter...)");
+      }
+    } else {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "errorForm"
+      }, "\xA0\xA0(Select a chapter first...)");
     }
   };
 
@@ -73425,8 +73472,11 @@ function useFormValidation(initial_state, validate, authenticateQuestion) {
     setSubjects: setSubjects,
     subjects: subjects,
     setChapters: setChapters,
+    chapters: chapters,
     handleYearRemove: handleYearRemove,
-    setYearRow: setYearRow
+    setYearRow: setYearRow,
+    MarksDropdown: MarksDropdown,
+    setMarksArray: setMarksArray
   };
 }
 
@@ -73566,6 +73616,8 @@ function validateQuestion(values) {
 
 
   if (!values.marks) {
+    errors.marks = '*Select a Marks first';
+  } else if (values.marks == null) {
     errors.marks = '*Required';
   } else if (values.marks < 0) {
     errors.marks = '*Value must be more than 0';
@@ -73683,7 +73735,8 @@ function Temp() {
       yearRow = _useFormValidation.yearRow,
       setSubjects = _useFormValidation.setSubjects,
       subjects = _useFormValidation.subjects,
-      setChapters = _useFormValidation.setChapters;
+      setChapters = _useFormValidation.setChapters,
+      MarksDropdown = _useFormValidation.MarksDropdown;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
       _useState2 = _slicedToArray(_useState, 2),
@@ -73792,19 +73845,6 @@ function Temp() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: "marks"
-  }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "number",
-    id: "demo0",
-    name: "marks",
-    className: "form-control",
-    value: values.marks,
-    onChange: handleChange
-  }), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "errorForm"
-  }, errors.marks)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "year"
   }, "Enter Year"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row"
@@ -73850,16 +73890,11 @@ function Temp() {
     className: "errorForm"
   }, errors.chapter_id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Assign to Quiz?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-    name: "quiz_id",
-    value: values.quiz_id,
-    onChange: handleChange,
-    "class": "form-control"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-    value: "1"
-  }, "Quiz Physics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-    value: "2"
-  }, "Quiz Biology"))))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "marks"
+  }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MarksDropdown, null), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "errorForm"
+  }, errors.marks)))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     className: "question_add_image_preview",
     src: values.image.previewUrl
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -74020,14 +74055,17 @@ function QuestionEdit() {
       setSubmitting = _useFormValidation.setSubmitting,
       ChapterDropdown = _useFormValidation.ChapterDropdown,
       SubjectDropdown = _useFormValidation.SubjectDropdown,
+      MarksDropdown = _useFormValidation.MarksDropdown,
       handleYearAdd = _useFormValidation.handleYearAdd,
       Prow = _useFormValidation.Prow,
       yearRow = _useFormValidation.yearRow,
       setSubjects = _useFormValidation.setSubjects,
       subjects = _useFormValidation.subjects,
       setChapters = _useFormValidation.setChapters,
+      chapters = _useFormValidation.chapters,
       handleYearRemove = _useFormValidation.handleYearRemove,
-      setYearRow = _useFormValidation.setYearRow;
+      setYearRow = _useFormValidation.setYearRow,
+      setMarksArray = _useFormValidation.setMarksArray;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
       _useState2 = _slicedToArray(_useState, 2),
@@ -74121,10 +74159,18 @@ function QuestionEdit() {
           setChapters([]);
         } else {
           setChapters(selected_subject[0].chapters);
+          var chapter_id = currentQuestion.chapter_id;
+
+          if (chapters.length > 0) {
+            var selected_chapter = chapters.filter(function (chapter) {
+              return chapter.id === parseInt(chapter_id);
+            });
+            setMarksArray(selected_chapter[0].marks);
+          }
         }
       }
     }
-  }, [currentQuestion, subjects]);
+  }, [currentQuestion, subjects, chapters]);
   console.log(values);
   var ImagePreview = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(function () {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
@@ -74172,7 +74218,7 @@ function QuestionEdit() {
               //handle success
               console.log(response);
               setSubmitting(false);
-              window.location.replace(window.location.pathname + '/questions/');
+              window.location.replace('http://' + window.location.hostname + '/admin/questions/');
             })["catch"](function (response) {
               //handle error
               console.log('submit error' + response.message);
@@ -74237,19 +74283,6 @@ function QuestionEdit() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: "marks"
-  }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "number",
-    id: "demo0",
-    name: "marks",
-    className: "form-control",
-    value: values.marks,
-    onChange: handleChange
-  }), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "errorForm"
-  }, errors.marks)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "year"
   }, "Enter Year"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row"
@@ -74293,9 +74326,15 @@ function QuestionEdit() {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Select a Subject"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SubjectDropdown, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Select Chapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ChapterDropdown, null)), errors.chapter_id && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Select Chapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ChapterDropdown, null), errors.chapter_id && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "errorForm"
-  }, errors.chapter_id))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, errors.chapter_id)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "marks"
+  }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MarksDropdown, null), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "errorForm"
+  }, errors.marks)))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "image"

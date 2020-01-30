@@ -24,7 +24,7 @@ const INITIAL_STATE = {
 
 export default function QuestionEdit() {
 
-    const { handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, handleYearRemove, setYearRow } = useFormValidation(INITIAL_STATE, validateQuestion, authenticateQuestion);
+    const { handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, MarksDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, chapters, handleYearRemove, setYearRow, setMarksArray } = useFormValidation(INITIAL_STATE, validateQuestion, authenticateQuestion);
     const [laravelError, setLaravelError] = useState(null);
     const [currentQuestion, setCurrentQuestion] = useState([]);
 
@@ -101,10 +101,17 @@ export default function QuestionEdit() {
                 }
                 else {
                     setChapters(selected_subject[0].chapters);
+                    const chapter_id = currentQuestion.chapter_id;
+                        if(chapters.length > 0){
+                        const selected_chapter = chapters.filter((chapter) =>
+                            chapter.id === parseInt(chapter_id)
+                        );
+                        setMarksArray(selected_chapter[0].marks);
+                    }
                 }
             }
         }
-    },[currentQuestion, subjects]);
+    },[currentQuestion, subjects, chapters]);
     
   console.log(values);
     const ImagePreview= useCallback(()=> { 
@@ -149,7 +156,7 @@ export default function QuestionEdit() {
                     //handle success
                     console.log(response);
                     setSubmitting(false);
-                    window.location.replace(window.location.pathname+'/questions/')
+                    window.location.replace('http://'+window.location.hostname+'/admin/questions/');
                 })
                 .catch(function (response) {
                     //handle error
@@ -195,19 +202,6 @@ export default function QuestionEdit() {
                     </div>
                     <div className={"row"}>
                         <div className={"col-md-6"}>
-                            <div className="form-group">
-                                <label htmlFor="marks">Enter Marks:</label>
-                                <input
-                                    type="number"
-                                    id="demo0"
-                                    name="marks"
-                                    className="form-control"
-                                    value={values.marks}
-                                    onChange={handleChange
-                                    }
-                                />
-                                { errors.marks && <span className="errorForm">{errors.marks}</span> }
-                            </div>
                             <div className="form-group">
                                 <label htmlFor="year">Enter Year</label>
                                 <div className="row">
@@ -276,8 +270,13 @@ export default function QuestionEdit() {
                             <div className="form-group">
                                 <label>Select Chapter</label>
                                 <ChapterDropdown/>
-                            </div>
                             { errors.chapter_id && <span className="errorForm">{errors.chapter_id}</span>}
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="marks">Enter Marks:</label>
+                                <MarksDropdown/>
+                                { errors.marks && <span className="errorForm">{errors.marks}</span> }
+                            </div>
                         </div>
                     </div>
                     { values.image.previewUrl &&
