@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import Modal from "./Modal";
 
 const FlashCards = props => {
-   
     const settings = {
         dots: false,
         infinite: true,
@@ -114,4 +113,3 @@ const FlashCards = props => {
 };
 
 export default FlashCards;
-

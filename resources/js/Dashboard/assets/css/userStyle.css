@@ -989,11 +989,18 @@ h6 {
     background: #4a4a4a;
     overflow-x: hidden;
     -ms-overflow-style: none;
-    transition: opacity 0.5s linear, width 0.3s linear;
+    transition: all 0.2s ease-in;
     padding-bottom: 30px;
 }
 .viewerSidenav::-webkit-scrollbar {
     display: none;
+}
+.userSidenav .sideTab {
+    display: inline-block;
+    padding-left: 10px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
 }
 
 .viewerSidenav .profile-container {
@@ -1138,32 +1145,37 @@ h6 {
         padding-bottom: 60px;
     }
     .viewerSidenav .company-container .img-container {
-        width: 70px;
+        width: 50px;
+        margin: 0 5px;
     }
     .viewerSidenav {
         width: 0px;
-        background: #ffffff;
+        background: #4a4a4a;
     }
     .viewerSidenav .company-container {
         position: relative;
-        padding: 12px 5px 5px 5px;
+        padding: 20px 5px 5px 5px;
+        margin-bottom: 30px;
     }
 
     .viewerSidenav .profile-container {
         margin-top: 0;
     }
     .viewerSidenav a {
-        color: #3d3b3b;
+        color: #fff;
         font-weight: bold;
+        border-bottom: dashed #646464;
     }
 
     .viewerSidenav .title-name {
-        color: #32c24d;
-        text-shadow: 1px 2px 3px #f4f1f1;
+        color: white;
+        margin: 0 10px;
+        text-shadow: none;
     }
     .viewerSidenav .company-container .title-name span {
         display: inline-block;
-        margin-left: 12px;
+        margin-left: 25px;
+        font-size: 20px;
     }
     .viewerSidenav .company-container .title-name {
         color: white;
