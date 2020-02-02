@@ -7,7 +7,9 @@ use App\Model\Category;
 use App\Model\Content;
 use App\Model\Question;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\Question\QuestionCollection;
 
 class IndexController extends Controller
 {
@@ -65,26 +67,56 @@ class IndexController extends Controller
 
     }
 
-    public function get_quiz_of_subject($id){
-        $subject = Content::findOrFail($id);
-        dd($subject);
+    public function get_quiz_of_subject($subject_id){
+        //
+        $subject = Content::findOrFail($subject_id);
+        // dd($subject);
         $chapters = $subject->children;
-        // $questions = [];
+        $questions_for_quiz = new Collection();
         foreach($chapters as $chapter){
-            foreach($chapter->marks_weightages as $mw){
-                $questions = Question::where('chapter_id',$chapter->id)->where('marks',$mw)->inRandomOrder()->limit(1)->get();
-                // $ques = get_question($mw, $mw->chapter);
-                dd($questions);
-                //check repetition % with user Log!
-            }
+            //find question_id of this chapter's question attempted by user
+                $filter_layer_1 = $chapter->questions;
+                $chapterwise_question = new Collection();
+                foreach($chapter->marks_weightages as $mw){
+                    $filter_layer_2 = $filter_layer_1->where('marks', $mw->marks);
+                    // return $filter_layer_2;
+                    $chapter_attempted_question_id = [16,37,44];
+                    $iteration_attempt = 0;
+                    $reps = 0;
+                    while(1){
+                        $questions = $filter_layer_2->random($mw->quantity); // The amount of items you wish to receive
+                        // $ques = get_question($mw, $mw->chapter);
+                        //check repetition % with user Log!
+                        $generated_ids = $questions->pluck('id')->toArray();
+                        // return $generated_ids;
+                        $generated_ids_count = $questions->count();
+                        $repitions = count(array_intersect($generated_ids,$chapter_attempted_question_id));
+                        // return $repitions;
+                        try{
+                            if($generated_ids_count == 0){
+                                throw new \Exception("Divisible by zero");
+                            }
+                            $reps = ($repitions/$generated_ids_count)*100;
+                             
+                        }catch(\Exception $e){
+                            $reps = 0;
+                        };
+                        // dd($reps);
+                        $iteration_attempt++;
+                        // dd($iteration_attempt);
+                        if($reps<30 || $iteration_attempt >=3){
+                            break;
+                        }
+                    }
+                    $chapterwise_question = $chapterwise_question->merge($questions);
+                }
+                // dd($chapterwise_question);                
+            $questions_for_quiz = $questions_for_quiz->merge($chapterwise_question);
         }
+        $final_questions =  new QuestionCollection($questions_for_quiz);
+        dd($final_questions);
     }
 
-    // public function get_question($mw, $chapter){
-    //     $questions = Question::where('chapter_id',$chapter->id)->where('marks',$mw)->inRandomOrder()->limit(1)->get();
-    //     //check repetition
-
-    // }
     
     public function trial(Request $request){
         if($request->hasFile('profile_image')){

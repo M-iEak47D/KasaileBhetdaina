@@ -73687,7 +73687,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_useFormValidation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/useFormValidation */ "./resources/js/admin/components/useFormValidation.js");
 /* harmony import */ var _components_validateQuestion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/validateQuestion */ "./resources/js/admin/components/validateQuestion.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_6__);
 
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
@@ -73696,6 +73700,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -73719,6 +73724,8 @@ var INITIAL_STATE = {
   "quiz_id": ""
 };
 function Temp() {
+  var _React$createElement;
+
   var _useFormValidation = Object(_components_useFormValidation__WEBPACK_IMPORTED_MODULE_4__["default"])(INITIAL_STATE, _components_validateQuestion__WEBPACK_IMPORTED_MODULE_5__["default"], authenticateQuestion),
       handleChange = _useFormValidation.handleChange,
       handleImageChange = _useFormValidation.handleImageChange,
@@ -73742,6 +73749,11 @@ function Temp() {
       _useState2 = _slicedToArray(_useState, 2),
       laravelError = _useState2[0],
       setLaravelError = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(Date.now()),
+      _useState4 = _slicedToArray(_useState3, 2),
+      image_key = _useState4[0],
+      setImageKey = _useState4[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/subjects').then(function (response) {
@@ -73788,7 +73800,13 @@ function Temp() {
               //handle success
               console.log(response);
               setSubmitting(false);
-              document.getElementById("add_question_form")[0].reset();
+              setValues(INITIAL_STATE);
+              setImageKey(Date.now());
+              jquery__WEBPACK_IMPORTED_MODULE_6___default()("input:radio").each(function () {
+                this.checked = false;
+              }); // $("#image_upload").val(null);
+
+              jquery__WEBPACK_IMPORTED_MODULE_6___default()("#image_preview").attr('src', null); // document.getElementById("add_question_form")[0].reset();
             })["catch"](function (response) {
               //handle error
               console.log('submit error' + response.message);
@@ -73895,19 +73913,19 @@ function Temp() {
   }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MarksDropdown, null), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "errorForm"
   }, errors.marks)))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    id: "image_preview",
     className: "question_add_image_preview",
     src: values.image.previewUrl
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "image"
-  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", (_React$createElement = {
+    id: "image_upload",
     type: "file",
     name: "image",
-    onChange: handleImageChange,
-    id: "image",
-    className: "form-control"
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    onChange: handleImageChange
+  }, _defineProperty(_React$createElement, "id", "image"), _defineProperty(_React$createElement, "className", "form-control"), _defineProperty(_React$createElement, "key", image_key), _React$createElement))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "answers"
   }, "Answers:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "table-responsive"
@@ -74177,8 +74195,9 @@ function QuestionEdit() {
       className: "question_add_image_preview",
       src: values.image.previewUrl
     });
-  }, [values.image]);
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {}, [values.correct]);
+  }, [values.image]); // const ImagePreview = () => { 
+  //     return (<img className="question_add_image_preview" src={values.image.previewUrl}/>);
+  // }
 
   function authenticateQuestion() {
     var question, marks, correct, year, importance, answerA, answerB, answerC, answerD, chapter_id, url, bodyFormData;
@@ -74334,11 +74353,11 @@ function QuestionEdit() {
     htmlFor: "marks"
   }, "Enter Marks:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MarksDropdown, null), errors.marks && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "errorForm"
-  }, errors.marks)))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, errors.marks)))), values.image.previewUrl && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImagePreview, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "image"
-  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImagePreview, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  }, "Image"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "file",
     name: "image",
     onChange: handleImageChange,

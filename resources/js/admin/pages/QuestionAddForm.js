@@ -3,6 +3,7 @@ import axios from "axios";
 import ReactDOM from "react-dom";
 import useFormValidation from "../components/useFormValidation";
 import validateQuestion from "../components/validateQuestion"
+import $ from "jquery";
 
 const INITIAL_STATE = {
     "question": "",
@@ -24,6 +25,7 @@ const INITIAL_STATE = {
 export default function Temp() {
     const { handleChange, handleImageChange, values, setValues, handleSubmit, errors, submitting, setSubmitting, ChapterDropdown, SubjectDropdown, handleYearAdd, Prow, yearRow ,setSubjects, subjects, setChapters, MarksDropdown } = useFormValidation(INITIAL_STATE, validateQuestion, authenticateQuestion);
     const [laravelError, setLaravelError] = useState(null);
+    const [image_key, setImageKey] = useState(Date.now());
 
     useEffect(()=>{
         axios.get('/api/subjects')
@@ -68,7 +70,14 @@ export default function Temp() {
                     //handle success
                     console.log(response);
                     setSubmitting(false);
-                    document.getElementById("add_question_form")[0].reset();
+                    setValues(INITIAL_STATE);
+                    setImageKey(Date.now())
+                    $("input:radio").each(function(){
+                        this.checked = false;  
+                    });
+                    // $("#image_upload").val(null);
+                    $("#image_preview").attr('src', null);
+                    // document.getElementById("add_question_form")[0].reset();
                 })
                 .catch(function (response) {
                     //handle error
@@ -187,12 +196,12 @@ export default function Temp() {
                     </div>
                     { values.image.previewUrl &&
                         <div>
-                            <img className="question_add_image_preview" src={values.image.previewUrl}/>
+                            <img id="image_preview" className="question_add_image_preview" src={values.image.previewUrl}/>
                         </div>
                     }
                     <div className="form-group">
                         <label htmlFor="image">Image</label>
-                        <input type="file" name="image" onChange={handleImageChange} id="image" className="form-control"/>
+                        <input id="image_upload" type="file" name="image" onChange={handleImageChange} id="image" className="form-control" key={image_key}/>
                     </div>
                     <br/>
                     <hr/>

@@ -66,7 +66,7 @@ class ChapterController extends Controller
                 $weightage->name = $content["name"];
                 $weightage->save();
             }
-            return redirect()->back()->with('success','Marks Weightage Assigned');
+            return redirect('/admin/chapters')->with('success','Marks Weightage Assigned');
         }
         return redirect()->back();
     }   

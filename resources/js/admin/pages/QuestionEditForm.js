@@ -114,16 +114,14 @@ export default function QuestionEdit() {
     },[currentQuestion, subjects, chapters]);
     
   console.log(values);
-    const ImagePreview= useCallback(()=> { 
-            return <img className="question_add_image_preview" src={values.image.previewUrl}/>
-    
-        
+
+    const ImagePreview = useCallback(()=> { 
+            return <img className="question_add_image_preview" src={values.image.previewUrl}/> 
     },[values.image]);
 
-    useEffect(()=>{
-        
-    },[values.correct]);
-
+    // const ImagePreview = () => { 
+    //     return (<img className="question_add_image_preview" src={values.image.previewUrl}/>);
+    // }
 
     async function authenticateQuestion() {
         const { question, marks, correct, year, importance, answerA, answerB, answerC, answerD, chapter_id} = values;
@@ -280,13 +278,10 @@ export default function QuestionEdit() {
                         </div>
                     </div>
                     { values.image.previewUrl &&
-                    <div>
-
-                    </div>
+                        <ImagePreview />
                     }
                     <div className="form-group">
                         <label htmlFor="image">Image</label>
-                        <ImagePreview />
                         <input type="file" name="image" onChange={handleImageChange} id="image" className="form-control"/>
                     </div>
                     <br/>
