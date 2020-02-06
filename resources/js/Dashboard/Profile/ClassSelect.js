@@ -11,6 +11,7 @@ const ClassSelect = () => {
     let history = useHistory();
 
     const handleClassSubmit = (data) => {
+        console.log(data)
         axios({
             method: 'post',
             url: 'http://noname.hellonep.com/api/store/class',
@@ -29,7 +30,7 @@ const ClassSelect = () => {
                     StorageToken({
                         name: res.data.name,
                         user_id: res.data.user_id,
-                        class_id: res.data.class_id,
+                        class_id: data,
                         token: res.data.auth_token,
 
                     })
@@ -45,7 +46,8 @@ const ClassSelect = () => {
     useEffect(() => {
         axios.get('http://noname.hellonep.com/api/classes').then(
             response => {
-                setClassResponse(response.data.classess)
+                console.log(response)
+                setClassResponse(response.data.grades)
                 setPreparationResponse(response.data.preparations)
             })
     }, [])

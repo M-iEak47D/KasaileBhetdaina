@@ -1,13 +1,16 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
+import { useHistory, Link } from "react-router-dom";
 
-function Timer() {
+export default function Timer({url}) {
 
-    // var counter = 0;
+    let history = useHistory();
+
     const [Minute, setMinute] = useState(0);
     const [Second, setSecond] = useState(0);
     const [Hour, setHour] = useState(0); 
     const [Time, setTime] = useState(10)
+    
 
     useEffect(() => {
         const interval =  setInterval(function(){
@@ -22,6 +25,12 @@ function Timer() {
                 setMinute(0);
                 setHour(0);
                 setTime(Time=> 0)
+                history.push({
+                    pathname: url+"/result",
+                    state: {
+
+                    }
+                })
             }
         },1000);
         return () => clearInterval(interval);
@@ -41,4 +50,3 @@ function Timer() {
     );
 }
 
-export default Timer;

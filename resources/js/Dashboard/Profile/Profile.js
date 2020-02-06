@@ -1,6 +1,37 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { useAuth } from '../../Context/Auth';
+import Axios from "axios";
 
 export default function Profile() {
+
+    const {Authtoken} = useAuth()
+    const [userResponse, setUserResponse] = useState();
+
+    let getUrl = "http://noname.hellonep.com/api/user/"+(Authtoken.user_id);
+
+   useEffect(() => {
+        let source = Axios.CancelToken.source();
+
+        const loadData = async() => {
+            try{
+                const response = await Axios.get(getUrl,{
+                    cancelToken: source.token,
+                   
+                });
+                setUserResponse(response.data.subjects);
+            } catch (error) {
+                if(Axios.isCancel(error)){
+                    console.log(error)
+                }else{
+                    throw error;
+                }
+            }
+    };
+    loadData();
+    return () =>{
+        source.cancel()
+    };
+}, [getUrl]);
 
     return (
         <React.Fragment>

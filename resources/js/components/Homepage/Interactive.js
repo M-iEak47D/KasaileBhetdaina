@@ -29,7 +29,7 @@ function Interactive(){
     <div className="analysis-feature">
         <div className="container h-100">
             <div className="row h-100 justify-content-center align-items-center">
-                <div className="col-md-7">
+                <div className="col-md-7 order1">
                     <div className="feature-container">
                         <div className="title">
                             Unlimited Practice and In-depth Analysis
@@ -42,7 +42,7 @@ function Interactive(){
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 order0">
                     <img src={require('../../pages/images/analysis.jpg')} alt="" className="img-fluid" />
                 </div>
             </div>

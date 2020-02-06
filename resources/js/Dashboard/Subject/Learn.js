@@ -11,7 +11,7 @@ export default function Learn() {
     let { subjectId } = useParams();
 
     const { Authtoken } = useAuth();
-    console.log(Authtoken)
+    console.log(Authtoken)  
 
     const [SubjectResponse, setSubjectResponse] = useState([])
     const [loading, setLoading] = useState(true)

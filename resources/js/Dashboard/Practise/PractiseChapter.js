@@ -1,24 +1,35 @@
 import React, {useState, useEffect} from 'react';
-import {Link, Switch, Route, useRouteMatch, useHistory} from 'react-router-dom';
+import {Link, Switch, Route, useRouteMatch, useHistory, useParams, useLocation} from 'react-router-dom';
+import PractiseQuiz from './PractiseQuiz'
+import { useAuth } from '../../Context/Auth';
 
 
 export default function PractiseSubject(){
-   let { url, params} = useRouteMatch();
+   let { path, url, params} = useRouteMatch();
+   console.log(url)
+   let {chapterId}= useParams();
    const [PractiseChapter, setPractiseChapter] = useState([])
+   let {Authtoken} = useAuth();
 //    console.log(params)
     useEffect(() => {
     axios({
       method: 'get',
       url: 'http://noname.hellonep.com/api/chapters/'+params.subjectId,
     }).then(
-      response => {
+      response => { 
         setPractiseChapter(response.data.chapters)
       }
     )  
   }, [])
     let History = useHistory();
+    const startTest = (slug) => {
+        // console.log(slug)
+        History.replace('/'+Authtoken.class_id+'/'+slug+'/practise')
+    }
     return(
         <React.Fragment>
+        <Switch>
+                <Route exact path={path}>
         <div className="main-subject-containter">
             <div className="subject-navbar d-flex justify-content-between">
                 <a onClick={History.goBack} className="back">
@@ -58,7 +69,7 @@ export default function PractiseSubject(){
                         </div>
                         <div className="col-md-6">
                                 <div className="button-container">
-                                    <Link to={`/quiz/measurement`}>Take a Test</Link>
+                                    <Link onClick={() => startTest(practise.slug)}>Take a Test</Link>
                                     </div>    
                         </div>
                     </div>
@@ -69,9 +80,9 @@ export default function PractiseSubject(){
               
            </div>
         </div>
-         
-         
-      
+        </Route>
+        {/* <Route path={`${path}/:chapterId`} component={PractiseQuiz} /> */}
+        </Switch>
         </React.Fragment> 
        
         

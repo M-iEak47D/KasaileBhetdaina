@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from "react";
-import ReactDOM from "react-dom";
-import Timer from "./Timer"
-import questions from "./question.json"
-import DisplayMark from "./DisplayMarks";
 import {useHistory, useLocation} from "react-router-dom"
+import DisplayMark from "../Quiz/DisplayMarks";
+
 
 
 export default function QuizResult(props){

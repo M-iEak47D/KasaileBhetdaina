@@ -8,9 +8,8 @@ import axios from "axios"
 
 export default function LearnSubject() {
   const {url, params} = useRouteMatch()
-  // console.log(url)
   const [chapter, setChapterResponse] = useState([]);
-  const [getUrl, setUrl] = useState('chapters')
+  const [getUrl, setUrl] = useState('notes')
 
   const handleSubmit = (data) => {
     setUrl(data)
@@ -46,20 +45,20 @@ export default function LearnSubject() {
             </div>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a className="nav-link active" data-toggle="pill" href="#note" onClick={() => handleSubmit('chapters')}>Notes</a>
+              <a className="nav-link active" data-toggle="pill" href="#note" onClick={() => handleSubmit('notes')}>Notes</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" data-toggle="pill" href="#flash" onClick={() => handleSubmit('flashcards')} >Flash Cards</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-toggle="pill" href="#past-question">Question Set</a>
+              <a className="nav-link" data-toggle="pill" href="#past-question" onClick={() => handleSubmit('questionsets') }>Question Set</a>
             </li>
           </ul>
       </div>
         <div className="tab-content">
            <Note chapterResponse={chapter} />
-           <FlashCards chapterResponse={chapter} />
-           <PastQuestions />
+           <FlashCards FlashcardResponse={chapter} />
+           <PastQuestions QuestionResponse={chapter} />
         </div>
       </div>
 

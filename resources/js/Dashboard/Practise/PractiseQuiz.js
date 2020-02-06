@@ -1,33 +1,73 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
-import questions from "./question.json";
 import {useHistory, Link, Route, Switch, useRouteMatch, useLocation} from 'react-router-dom';
-import Timer from "./Timer"
-// import Axios from "axios";
-import QuizResult from "./QuizResult"
+import Practise from "./Practise"
+import Axios from "axios";
+import { useAuth } from "../../Context/Auth";
+import Timer from "../Quiz/Timer";
+import PractiseResult from './PractiseResult';
+
 
 
 let start = false;
 export default function Newquiz(props) {
 
-    let {path, url} = useRouteMatch();
+    let {path, url, params} = useRouteMatch();
+    let {Authtoken} = useAuth();
+
+    const [questions, setGetQuestion] = useState([])
+    const [quizLength, setQuizLength] = useState(0)
+
+    const getUrl = 'http://noname.hellonep.com/api/practise/'+params.chapterId 
+    let history = useHistory(); 
+
+    useEffect(() => {
+        if(params.class_id != Authtoken.class_id ){
+            history.push({
+                pathname: '/practise'
+            })
+        }
+        let source = Axios.CancelToken.source();
+
+        const loadData = async() => {
+            try{
+                const response = await Axios.get(getUrl, {
+                    cancelToken: source.token,
+                   
+                });
+                setGetQuestion(response.data.data);
+                setQuizLength(response.data.data.length);
+            } catch (error) {
+                if(Axios.isCancel(error)){
+                    console.log(error)
+                }else{
+                    throw error;
+                }
+            }
+    };
+    loadData();
+    return () =>{
+        source.cancel()
+    };
+
+    }, [getUrl])
+
     const allQuestion = questions.length;
     const localData = localStorage.getItem('initialValue');
     const localActive = localStorage.getItem('active')
     const [active, setActive] = useState(localActive ? JSON.parse(localActive):[]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(localData ? JSON.parse(localData) :0);
 
-    const currentQuestion = useCurrentQuestion(currentQuestionIndex);
+    const currentQuestion = useCurrentQuestion(currentQuestionIndex, questions, quizLength);
     
     const totalMarks = localStorage.getItem('score');
     const [Score, setScore] = useState(totalMarks ? JSON.parse(totalMarks):[]);
     const [SpecificMark, setSpecificMark] = useState([]);
-    // console.log(active)
     
 
      function handleChange(Correct,Index, activeId){
         active.filter(({...datas})=>(
-            active[Index] = {questionId: Index,answerId: activeId}
+            active[Index] = {questionId: currentQuestion.initialQuestion.id,answerId: activeId, indexId: Index}
         ))    
        
              
@@ -43,16 +83,16 @@ export default function Newquiz(props) {
         ]);
         
         Score[Index] = Correct
-        active[Index] = {questionId: Index,answerId: activeId}
+        active[Index] = {questionId: currentQuestion.initialQuestion.id,answerId: activeId, indexId: Index}
         localStorage.setItem('active',JSON.stringify(active))
         localStorage.setItem('score', JSON.stringify(Score))   
     }
-   
     
+
+        
 
     const markCounter = useMarkCounter(Score)
-
-    
+         
     function is_active(qid,aid){
         var value = false;
         active.map((active)=>{
@@ -60,7 +100,7 @@ export default function Newquiz(props) {
         if(active == null){
             return value;
         }
-            else if(active.questionId == qid && active.answerId == aid  ){  
+            else if(active.indexId == qid && active.answerId == aid  ){  
                 value = true ; 
             }
         });
@@ -78,6 +118,49 @@ export default function Newquiz(props) {
        
       }
       let History = useHistory();
+
+      function SubmitPractise(){
+        // console.log(questions)
+        const PractiseData = 
+            JSON.parse(localStorage.getItem('active'))
+        PractiseData.filter(({...datas}, index)=>
+            {if(PractiseData[index] == null){
+                PractiseData[index] = {
+                    questionId: questions[index].id,
+                    answerId: null
+                };
+             }
+            }
+        )
+        console.log(PractiseData)
+        axios({
+            method: 'post',
+            url: 'http://noname.hellonep.com/api/practise/store',
+            data: {
+                user_id: Authtoken.user_id,
+                practise: PractiseData
+                
+            }
+        }).then(
+            response => {
+                console.log(response)
+            }
+        )
+    }
+    const items = []
+    let QuestionPosition = JSON.parse(totalMarks)
+
+    for(let i = 1; i <= quizLength; i++){
+        items.push(<li key={i} onClick={() => JumpQuestion(i)}
+                    className={(QuestionPosition[i-1]) === null ? "wrong" : "active"}>
+            {i}</li>)
+    }
+
+    const JumpQuestion = (i) => {
+        setCurrentQuestionIndex(i-1)
+    }
+        
+
     return (
         <React.Fragment>
                 <Route exact path={path}>
@@ -86,9 +169,7 @@ export default function Newquiz(props) {
         <div id="quizSideNav" className="quizsidenav">
 <div className="closebtn" onClick={closeQuiz}>&times;</div>
     <ul>
-        for(i=0; ){
-        <li></li>
-        }
+        {items}
     </ul>
    
 </div>
@@ -126,34 +207,32 @@ export default function Newquiz(props) {
                         background: "linear-gradient(45deg, #0be788, #09d6af)",
                         boxShadow: "0px 2px 4px #a1a4a4"
                     }}>
-
-                        {/* Links               */}
-                    
                     </nav>
                     <Timer url={url} />
                 </div>
-
-                {/* <!--  <div id="main"> -->       */}
+                
+                { questions.length > 0 ?
+                <>
                 <div className="container test-section">
                     <div className="question-container">
-
                         <div className="question-title">
                             <span className="question-number">{currentQuestionIndex + 1}.</span>
-                            {currentQuestion.initialQuestion.name}
+                            {currentQuestion.initialQuestion && currentQuestion.initialQuestion.name}
                         </div>
                     </div>
                     <div className="answer-container">
+                        {currentQuestion.initialQuestion &&
                         <div className="row">
                             <div className="col-md-6 col-sm-6">
-                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answer[0].id) ? "active": "")}
-                                    onClick={() => handleChange(currentQuestion.initialQuestion.answer[0].correct,
+                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answers[0].id) ? "active": "")}
+                                    onClick={() => handleChange(currentQuestion.initialQuestion.answers[0].correct,
                                     currentQuestionIndex,
-                                    currentQuestion.initialQuestion.answer[0].id)}>
+                                    currentQuestion.initialQuestion.answers[0].id)}>
                                     <div className="option-number">
                                         A
                                     </div>
                                     <div className="option" >
-                                        {currentQuestion.initialQuestion.answer[0].answer}
+                                        {currentQuestion.initialQuestion.answers[0].name}
                                     </div>
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
@@ -161,15 +240,15 @@ export default function Newquiz(props) {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
-                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answer[1].id) ? "active": "")}
-                                 onClick={() => handleChange(currentQuestion.initialQuestion.answer[1].correct,
+                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answers[1].id) ? "active": "")}
+                                 onClick={() => handleChange(currentQuestion.initialQuestion.answers[1].correct,
                                  currentQuestionIndex,
-                                 currentQuestion.initialQuestion.answer[1].id)}>
+                                 currentQuestion.initialQuestion.answers[1].id)}>
                                     <div className="option-number" >
                                         B
                                     </div>
                                     <div className="option">
-                                        {currentQuestion.initialQuestion.answer[1].answer}
+                                        {currentQuestion.initialQuestion.answers[1].name}
                                     </div>
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
@@ -177,15 +256,15 @@ export default function Newquiz(props) {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
-                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answer[2].id) ? "active": "")}
-                                onClick={() => handleChange(currentQuestion.initialQuestion.answer[2].correct,
+                                <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answers[2].id) ? "active": "")}
+                                onClick={() => handleChange(currentQuestion.initialQuestion.answers[2].correct,
                                 currentQuestionIndex,
-                                currentQuestion.initialQuestion.answer[2].id)}>
+                                currentQuestion.initialQuestion.answers[2].id)}>
                                     <div className="option-number">
                                         C
                                     </div>
                                     <div className="option">
-                                        {currentQuestion.initialQuestion.answer[2].answer}
+                                        {currentQuestion.initialQuestion.answers[2].name}
 
                                     </div>
                                     <div className="option-tick">
@@ -194,15 +273,15 @@ export default function Newquiz(props) {
                                 </div>
                             </div>
                             <div className="col-md-6 col-sm-6">
-                            <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answer[3].id) ? "active": "")}
-                                onClick={() => handleChange(currentQuestion.initialQuestion.answer[3].correct,
+                            <div className={"answer-wrapper" +' '+ (is_active(currentQuestionIndex,currentQuestion.initialQuestion.answers[3].id) ? "active": "")}
+                                onClick={() => handleChange(currentQuestion.initialQuestion.answers[3].correct,
                                 currentQuestionIndex,
-                                currentQuestion.initialQuestion.answer[3].id)}>
+                                currentQuestion.initialQuestion.answers[3].id)}>
                                     <div className="option-number">
                                         D
                                     </div>
                                     <div className="option">
-                                        {currentQuestion.initialQuestion.answer[3].answer}
+                                        {currentQuestion.initialQuestion.answers[3].name}
                                     </div>
                                     <div className="option-tick">
                                         <i className="fa fa-check"></i>
@@ -210,6 +289,7 @@ export default function Newquiz(props) {
                                 </div>
                             </div>
                         </div>
+                        }
                     </div>
 
                 </div>
@@ -238,14 +318,16 @@ export default function Newquiz(props) {
                                     </div> :
                                     <Link to={`${url}/result`}>
                                     <div className="next-btn">
-                                        <span> Finish </span> <i className="fa fa-arrow-circle-right"></i>
+                                        <a href="" onClick={() => SubmitPractise}><span> Finish </span> <i className="fa fa-arrow-circle-right"></i></a>
                                     </div>
                                     </Link>
                             }
-
                         </div>
                     </div>
                 </div>
+                </>
+                : <span>Loading....</span>
+                }
             </div>
             
             <div className="progress-container">
@@ -257,25 +339,30 @@ export default function Newquiz(props) {
         </div>
 </Route>
         <Route path={`${path}/result`} >
-            <QuizResult score={Score} active={active} total={markCounter}/>
+        <PractiseResult score={Score} active={active} total={markCounter}/>
         </Route>  
     </React.Fragment>
     );
 
 }
 
-function useCurrentQuestion(initialValue) {
+function useCurrentQuestion(initialValue, questions, quizLength) {
+    console.log(questions)
+    const allQuestion = questions.length;
     const [initialQuestion, setQuestions] = useState(questions[initialValue]);
     useEffect(() => {
         localStorage.setItem('initialValue', JSON.stringify(initialValue))
         setQuestions(questions[initialValue]);
-    }, [initialValue]);
+    }, [initialValue, quizLength]);
     return {
         initialValue,
-        initialQuestion
+        initialQuestion,
+        allQuestion
     }
 }
+
 function useMarkCounter(myMarks){
     const Total = myMarks.reduce((a,b) => a + b, 0)
     return Total; 
 }
+

@@ -51,6 +51,8 @@ const routes = [
 
 ]
 const Dashboard = () => {
+
+            
     
             function closeNav() {
                 function myFunction(x) {
@@ -130,6 +132,13 @@ const Dashboard = () => {
     }
 
     let { path, url } = useRouteMatch();
+
+    const HandleLogout = () => {
+        localStorage.removeItem('tokens');
+        history.push({
+            pathname: '/'
+        })
+    }
         
     return (
         <React.Fragment>
@@ -219,7 +228,7 @@ const Dashboard = () => {
                             <a href=""><i className="fa fa-gift"></i> <span>Invite & Earn</span></a>
                         </div>
                         <div className="logout">
-                            <a href=""><i className="fa fa-power-off"></i> <span>Logout</span></a>
+                            <Link onClick={HandleLogout}><span ><i className="fa fa-power-off"></i> Logout</span></Link>
                         </div>
                     </div>
                 </div>
@@ -237,7 +246,7 @@ const Dashboard = () => {
                     </Switch>
                 </div>
             </div>
-
+                            
         </React.Fragment>
     )
 }
