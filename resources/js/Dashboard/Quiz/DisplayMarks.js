@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 export default function DisplayMark(props){
-    // console.log(props)
+    console.log(props)
     return(
         <div className="timer-container">
             <div className="timer-wrapper">

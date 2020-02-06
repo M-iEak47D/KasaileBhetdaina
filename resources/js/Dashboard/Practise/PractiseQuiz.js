@@ -19,7 +19,9 @@ export default function Newquiz(props) {
     const [quizLength, setQuizLength] = useState(0)
 
     const getUrl = 'http://noname.hellonep.com/api/practise/'+params.chapterId 
-    let history = useHistory(); 
+    let history = useHistory();
+    const localActive = localStorage.getItem('active')
+    const [active, setActive] = useState(localActive ? JSON.parse(localActive):[]);
 
     useEffect(() => {
         if(params.class_id != Authtoken.class_id ){
@@ -37,6 +39,14 @@ export default function Newquiz(props) {
                 });
                 setGetQuestion(response.data.data);
                 setQuizLength(response.data.data.length);
+                for(let i=0; i<response.data.data.length; i++){
+                    active.push(null);
+                }
+                if(!localStorage.getItem('active')){
+                localStorage.setItem('active',JSON.stringify(active))
+                setActive(active)
+                }
+
             } catch (error) {
                 if(Axios.isCancel(error)){
                     console.log(error)
@@ -54,8 +64,6 @@ export default function Newquiz(props) {
 
     const allQuestion = questions.length;
     const localData = localStorage.getItem('initialValue');
-    const localActive = localStorage.getItem('active')
-    const [active, setActive] = useState(localActive ? JSON.parse(localActive):[]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(localData ? JSON.parse(localData) :0);
 
     const currentQuestion = useCurrentQuestion(currentQuestionIndex, questions, quizLength);
@@ -113,14 +121,15 @@ export default function Newquiz(props) {
       }
       
       /* Set the width of the side navigation to 0 */
-      function closeQuiz() {
+    function closeQuiz() {
         document.getElementById("quizSideNav").style.width = "0";
        
       }
       let History = useHistory();
 
-      function SubmitPractise(){
-        // console.log(questions)
+      const submitPractise = () =>{
+        console.log("apple")  
+        // e.preventDefault();
         const PractiseData = 
             JSON.parse(localStorage.getItem('active'))
         PractiseData.filter(({...datas}, index)=>
@@ -132,18 +141,16 @@ export default function Newquiz(props) {
              }
             }
         )
-        console.log(PractiseData)
         axios({
             method: 'post',
             url: 'http://noname.hellonep.com/api/practise/store',
             data: {
                 user_id: Authtoken.user_id,
-                practise: PractiseData
-                
+                practise: PractiseData            
             }
         }).then(
             response => {
-                console.log(response)
+                console.log("apple",response)
             }
         )
     }
@@ -152,7 +159,7 @@ export default function Newquiz(props) {
 
     for(let i = 1; i <= quizLength; i++){
         items.push(<li key={i} onClick={() => JumpQuestion(i)}
-                    className={(QuestionPosition[i-1]) === null ? "wrong" : "active"}>
+                    className={(QuestionPosition != null ? ((QuestionPosition[i-1]) === null ? "wrong" : "active") : "")}>
             {i}</li>)
     }
 
@@ -194,10 +201,6 @@ export default function Newquiz(props) {
             <a href="" className="no" data-dismiss="modal" >No </a>
         </div>    
       </div>
-
-    
-     
-
     </div>
   </div>
 </div>
@@ -314,13 +317,13 @@ export default function Newquiz(props) {
                                 currentQuestionIndex + 1 != allQuestion ?
                                     <div className="next-btn"
                                          onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}>
-                                        <span> Next</span> <i className="fa fa-arrow-circle-right"></i>
+                                        <span> Next</span> <i className="fa fa-arrow-circle-right" />
                                     </div> :
-                                    <Link to={`${url}/result`}>
-                                    <div className="next-btn">
-                                        <a href="" onClick={() => SubmitPractise}><span> Finish </span> <i className="fa fa-arrow-circle-right"></i></a>
+                                    <div className="next-btn" onClick={submitPractise}>
+                                            <span> Finish </span>
+                                             <i className="fa fa-arrow-circle-right"/>
+                                        
                                     </div>
-                                    </Link>
                             }
                         </div>
                     </div>
@@ -347,7 +350,6 @@ export default function Newquiz(props) {
 }
 
 function useCurrentQuestion(initialValue, questions, quizLength) {
-    console.log(questions)
     const allQuestion = questions.length;
     const [initialQuestion, setQuestions] = useState(questions[initialValue]);
     useEffect(() => {

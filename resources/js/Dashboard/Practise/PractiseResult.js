@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 import {useHistory, useLocation} from "react-router-dom"
 import DisplayMark from "../Quiz/DisplayMarks";
+import questions from "../Quiz/question.json"
 
 
 
-export default function QuizResult(props){
+export default function PractiseResult(props){
     
     const history = useHistory();
     const location = useLocation()
@@ -12,8 +13,6 @@ export default function QuizResult(props){
     const myScore = props.score;
     const myActive = props.active;
     const myTotal = props.total;
-    console.log(myActive)
-    // localStorage.clear();
     const questionMap = [];
     const allQuestion = questions.length;
     
@@ -41,9 +40,7 @@ export default function QuizResult(props){
 
     function is_active(qid,aid){
         var value = false;
-        console.log('active', active)
             active.map((active)=>{
-            console.log("active", active)
             if(active.questionId == qid && active.answerId == aid  ){  
                 value = true ; 
             }

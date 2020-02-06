@@ -9,7 +9,7 @@ export default function Timer({url}) {
     const [Minute, setMinute] = useState(0);
     const [Second, setSecond] = useState(0);
     const [Hour, setHour] = useState(0); 
-    const [Time, setTime] = useState(10)
+    const [Time, setTime] = useState(500)
     
 
     useEffect(() => {

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Link, Switch, Route, useRouteMatch, useHistory } from 'react-router-dom';
+import { Link, Switch, Route, useRouteMatch, useHistory, useLocation } from 'react-router-dom';
 import Note from './Component/Note';
 import FlashCards from './Component/FlashCards';
 import PastQuestions from './Component/PastQuestions';
