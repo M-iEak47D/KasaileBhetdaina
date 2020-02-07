@@ -83547,6 +83547,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_PageNotFound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../pages/PageNotFound */ "./resources/js/pages/PageNotFound.js");
 /* harmony import */ var _Subject_Learn__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Subject/Learn */ "./resources/js/Dashboard/Subject/Learn.js");
 /* harmony import */ var _Profile_ClassSelect__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Profile/ClassSelect */ "./resources/js/Dashboard/Profile/ClassSelect.js");
+/* harmony import */ var _Context_Auth__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../Context/Auth */ "./resources/js/Context/Auth.js");
+
 
 
 
@@ -83674,6 +83676,8 @@ var Dashboard = function Dashboard() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useRouteMatch"])(),
       path = _useRouteMatch.path,
       url = _useRouteMatch.url;
+
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
 
   var HandleLogout = function HandleLogout() {
     localStorage.removeItem('tokens');
@@ -83866,7 +83870,8 @@ var Dashboard = function Dashboard() {
     className: "fa fa-gift"
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Invite & Earn"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logout"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
     onClick: HandleLogout
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-power-off"
@@ -85046,14 +85051,24 @@ function Newquiz(props) {
       quizLength = _useState4[0],
       setQuizLength = _useState4[1];
 
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      ResultResponse = _useState6[0],
+      setResultResponse = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState8 = _slicedToArray(_useState7, 2),
+      Finish = _useState8[0],
+      setFinish = _useState8[1];
+
   var getUrl = 'http://noname.hellonep.com/api/practise/' + params.chapterId;
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
   var localActive = localStorage.getItem('active');
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(localActive ? JSON.parse(localActive) : []),
-      _useState6 = _slicedToArray(_useState5, 2),
-      active = _useState6[0],
-      setActive = _useState6[1];
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(localActive ? JSON.parse(localActive) : []),
+      _useState10 = _slicedToArray(_useState9, 2),
+      active = _useState10[0],
+      setActive = _useState10[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     if (params.class_id != Authtoken.class_id) {
@@ -85086,40 +85101,40 @@ function Newquiz(props) {
                 setGetQuestion(response.data.data);
                 setQuizLength(response.data.data.length);
 
-                for (i = 0; i < response.data.data.length; i++) {
-                  active.push(null);
-                }
-
                 if (!localStorage.getItem('active')) {
+                  for (i = 0; i < response.data.data.length; i++) {
+                    active.push(null);
+                  }
+
                   localStorage.setItem('active', JSON.stringify(active));
                   setActive(active);
                 }
 
-                _context.next = 17;
+                _context.next = 16;
                 break;
 
-              case 10:
-                _context.prev = 10;
+              case 9:
+                _context.prev = 9;
                 _context.t0 = _context["catch"](0);
 
                 if (!axios__WEBPACK_IMPORTED_MODULE_5___default.a.isCancel(_context.t0)) {
-                  _context.next = 16;
+                  _context.next = 15;
                   break;
                 }
 
                 console.log(_context.t0);
-                _context.next = 17;
+                _context.next = 16;
                 break;
 
-              case 16:
+              case 15:
                 throw _context.t0;
 
-              case 17:
+              case 16:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 10]]);
+        }, _callee, null, [[0, 9]]);
       }));
 
       return function loadData() {
@@ -85135,23 +85150,23 @@ function Newquiz(props) {
   var allQuestion = questions.length;
   var localData = localStorage.getItem('initialValue');
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(localData ? JSON.parse(localData) : 0),
-      _useState8 = _slicedToArray(_useState7, 2),
-      currentQuestionIndex = _useState8[0],
-      setCurrentQuestionIndex = _useState8[1];
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(localData ? JSON.parse(localData) : 0),
+      _useState12 = _slicedToArray(_useState11, 2),
+      currentQuestionIndex = _useState12[0],
+      setCurrentQuestionIndex = _useState12[1];
 
   var currentQuestion = useCurrentQuestion(currentQuestionIndex, questions, quizLength);
   var totalMarks = localStorage.getItem('score');
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(totalMarks ? JSON.parse(totalMarks) : []),
-      _useState10 = _slicedToArray(_useState9, 2),
-      Score = _useState10[0],
-      setScore = _useState10[1];
+  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(totalMarks ? JSON.parse(totalMarks) : []),
+      _useState14 = _slicedToArray(_useState13, 2),
+      Score = _useState14[0],
+      setScore = _useState14[1];
 
-  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
-      _useState12 = _slicedToArray(_useState11, 2),
-      SpecificMark = _useState12[0],
-      setSpecificMark = _useState12[1];
+  var _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState16 = _slicedToArray(_useState15, 2),
+      SpecificMark = _useState16[0],
+      setSpecificMark = _useState16[1];
 
   function handleChange(Correct, Index, activeId) {
     active.filter(function (_ref2) {
@@ -85230,10 +85245,21 @@ function Newquiz(props) {
         practise: PractiseData
       }
     }).then(function (response) {
-      console.log("apple", response);
+      if (response.data.status === "success") {
+        setResultResponse(response.data.data);
+        setFinish(true);
+      }
     });
   };
 
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (Finish) {
+      history.push({
+        pathname: url + '/result',
+        state: ResultResponse
+      });
+    }
+  }, [ResultResponse, Finish]);
   var items = [];
   var QuestionPosition = JSON.parse(totalMarks);
 
@@ -85437,19 +85463,17 @@ function Newquiz(props) {
   }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
     path: "".concat(path, "/result")
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PractiseResult__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    score: Score,
-    active: active,
-    total: markCounter
+    result: ResultResponse
   })));
 }
 
 function useCurrentQuestion(initialValue, questions, quizLength) {
   var allQuestion = questions.length;
 
-  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(questions[initialValue]),
-      _useState14 = _slicedToArray(_useState13, 2),
-      initialQuestion = _useState14[0],
-      setQuestions = _useState14[1];
+  var _useState17 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(questions[initialValue]),
+      _useState18 = _slicedToArray(_useState17, 2),
+      initialQuestion = _useState18[0],
+      setQuestions = _useState18[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     localStorage.setItem('initialValue', JSON.stringify(initialValue));
@@ -85485,45 +85509,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Quiz_DisplayMarks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Quiz/DisplayMarks */ "./resources/js/Dashboard/Quiz/DisplayMarks.js");
-/* harmony import */ var _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Quiz/question.json */ "./resources/js/Dashboard/Quiz/question.json");
-var _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../Quiz/question.json */ "./resources/js/Dashboard/Quiz/question.json", 1);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-
-function PractiseResult(props) {
+function PractiseResult(_ref) {
+  var result = _ref.result;
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
-  var myScore = props.score;
-  var myActive = props.active;
-  var myTotal = props.total;
-  var questionMap = [];
-  var allQuestion = _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__.length;
-
-  for (var i = 0; i <= allQuestion - 1; i++) {
-    questionMap.push(i);
-  }
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState2 = _slicedToArray(_useState, 2),
-      currentQuestionIndex = _useState2[0],
-      setCurrentQuestionIndex = _useState2[1];
-
-  var currentQuestion = useCurrentQuestion(currentQuestionIndex);
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(myActive),
-      _useState4 = _slicedToArray(_useState3, 2),
-      active = _useState4[0],
-      setActive = _useState4[1];
-
   var place = {
     pathname: '/learn'
   };
@@ -85536,17 +85527,6 @@ function PractiseResult(props) {
       history.replace(place);
     }
   }, [history]);
-
-  function is_active(qid, aid) {
-    var value = false;
-    active.map(function (active) {
-      if (active.questionId == qid && active.answerId == aid) {
-        value = true;
-      }
-    });
-    return value;
-  }
-
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "quiz"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85557,10 +85537,7 @@ function PractiseResult(props) {
       background: "linear-gradient(45deg, #0be788, #09d6af)",
       boxShadow: "0px 2px 4px #a1a4a4"
     }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Quiz_DisplayMarks__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    fullMark: allQuestion,
-    total: myTotal
-  })), questionMap.map(function (question, index) {
+  })), result.map(function (question, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "container test-section"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -85569,91 +85546,35 @@ function PractiseResult(props) {
       className: "question-title"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "question-number"
-    }, index + 1, "."), _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, index + 1, "."), question.name), question.selected == null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      style: {
+        color: 'red'
+      }
+    }, "The Question Was Not attempted") : ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "answer-container"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "row"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 col-sm-6"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[0].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].correct == 1 ? "wrong" : "" : "")
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-number"
-    }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option"
-    }, _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[0].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-tick"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-check"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-wrong"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-times"
-    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 col-sm-6"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[1].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].correct == 1 ? "wrong" : "" : "")
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-number"
-    }, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option"
-    }, _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[1].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-tick"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-check"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-wrong"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-times"
-    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 col-sm-6"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[2].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].correct == 1 ? "wrong" : "" : "")
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-number"
-    }, "C"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option"
-    }, _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[2].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-tick"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-check"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-wrong"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-times"
-    })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 col-sm-6"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "answer-wrapper" + ' ' + (is_active(index, currentQuestion.initialQuestion.answer[3].id) ? myScore[index] == 1 ? "active" : "wrong" : "") + ' ' + (myScore[index] == 0 ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].correct == 1 ? "active" : "" : "") + ' ' + (myScore[index] == null ? _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].correct == 1 ? "wrong" : "" : "")
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-number"
-    }, "D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option"
-    }, _Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[index].answer[3].answer), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-tick"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-check"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "option-wrong"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: "fa fa-times"
-    })))))));
+    }, question.questionAnswers.map(function (answer, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6 col-sm-6",
+        key: index + 1
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "answer-wrapper" + ' ' + (answer.correct == 1 ? 'active' : '') + ' ' + (answer.id == question.selected && answer.correct == 0 ? 'wrong' : ' ')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "option-number"
+      }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "option"
+      }, answer.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "option-tick"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-check"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "option-wrong"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-times"
+      }))));
+    }))));
   }));
-}
-
-function useCurrentQuestion(initialValue) {
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[initialValue]),
-      _useState6 = _slicedToArray(_useState5, 2),
-      initialQuestion = _useState6[0],
-      setQuestions = _useState6[1];
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setQuestions(_Quiz_question_json__WEBPACK_IMPORTED_MODULE_3__[initialValue]);
-  }, [initialValue]);
-  return {
-    initialValue: initialValue,
-    initialQuestion: initialQuestion
-  };
 }
 
 /***/ }),

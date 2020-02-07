@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './assets/css/userStyle.css';
 import Practise from './Practise/Practise';
 import Test from './MockTest/Test';
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, Redirect, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, Redirect, NavLink, useHistory } from 'react-router-dom';
 import Bookmark from './Bookmark/Bookmark';
 import Doubts from './Doubts/Doubts';
 import Profile from './Profile/Profile';
 import PageNotFound from '../pages/PageNotFound';
 import Learn from './Subject/Learn';
 import ClassSelect from './Profile/ClassSelect';
+import { useAuth } from '../Context/Auth';
 
 
 const routes = [
@@ -132,12 +133,13 @@ const Dashboard = () => {
     }
 
     let { path, url } = useRouteMatch();
+    let history = useHistory();
 
-    const HandleLogout = () => {
+    const HandleLogout = () => {      
         localStorage.removeItem('tokens');
         history.push({
-            pathname: '/'
-        })
+            pathname:'/'
+        })    
     }
         
     return (
@@ -228,7 +230,7 @@ const Dashboard = () => {
                             <a href=""><i className="fa fa-gift"></i> <span>Invite & Earn</span></a>
                         </div>
                         <div className="logout">
-                            <Link onClick={HandleLogout}><span ><i className="fa fa-power-off"></i> Logout</span></Link>
+                            <a href="" onClick={HandleLogout}><span ><i className="fa fa-power-off"></i> Logout</span></a>
                         </div>
                     </div>
                 </div>

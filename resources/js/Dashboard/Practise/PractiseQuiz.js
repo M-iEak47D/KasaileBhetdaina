@@ -17,7 +17,8 @@ export default function Newquiz(props) {
 
     const [questions, setGetQuestion] = useState([])
     const [quizLength, setQuizLength] = useState(0)
-
+    const [ResultResponse, setResultResponse] = useState([])
+    const [Finish, setFinish] = useState(false)
     const getUrl = 'http://noname.hellonep.com/api/practise/'+params.chapterId 
     let history = useHistory();
     const localActive = localStorage.getItem('active')
@@ -39,12 +40,12 @@ export default function Newquiz(props) {
                 });
                 setGetQuestion(response.data.data);
                 setQuizLength(response.data.data.length);
+                if(!localStorage.getItem('active')){
                 for(let i=0; i<response.data.data.length; i++){
                     active.push(null);
                 }
-                if(!localStorage.getItem('active')){
-                localStorage.setItem('active',JSON.stringify(active))
-                setActive(active)
+                 localStorage.setItem('active',JSON.stringify(active))
+                 setActive(active)
                 }
 
             } catch (error) {
@@ -150,10 +151,23 @@ export default function Newquiz(props) {
             }
         }).then(
             response => {
-                console.log("apple",response)
+                if(response.data.status === "success"){
+                 setResultResponse(response.data.data)
+                 setFinish(true)
+                }
             }
-        )
+        ) 
     }
+
+    useEffect(() => {
+        if(Finish){
+        history.push({
+            pathname: url+'/result',
+            state: ResultResponse
+        })
+    }
+    }, [ResultResponse, Finish])
+
     const items = []
     let QuestionPosition = JSON.parse(totalMarks)
 
@@ -316,7 +330,8 @@ export default function Newquiz(props) {
                             {
                                 currentQuestionIndex + 1 != allQuestion ?
                                     <div className="next-btn"
-                                         onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}>
+                                         onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}
+                                         >
                                         <span> Next</span> <i className="fa fa-arrow-circle-right" />
                                     </div> :
                                     <div className="next-btn" onClick={submitPractise}>
@@ -342,9 +357,9 @@ export default function Newquiz(props) {
         </div>
 </Route>
         <Route path={`${path}/result`} >
-        <PractiseResult score={Score} active={active} total={markCounter}/>
+            <PractiseResult result={ResultResponse}/>
         </Route>  
-    </React.Fragment>
+    </React.Fragment> 
     );
 
 }
